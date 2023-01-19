@@ -1,0 +1,18 @@
+{
+    "context": {
+        "expression": "user.role === 'chw' && user._id != contact._id && summary.alive && summary.isFamilyPerson && !summary.muted && summary.show_pregnancy_form && (contact.type === 'person' && (!contact.date_of_birth || ((ageInYears(contact) >= 12 && ageInYears(contact) < 60) && (!contact.sex || contact.sex === 'female' || contact.sex === 'femme' || contact.sex === 'Femme'))))",
+        "person": true,
+        "place": false
+    },
+    "icon": "family",
+    "title": [
+      {
+        "locale": "en",
+        "content": "Pregnancy and Family Planning"
+      },
+      {
+        "locale": "fr",
+        "content": "Grossesse et PF"
+      }
+    ]
+}

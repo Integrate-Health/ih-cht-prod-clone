@@ -1,0 +1,19 @@
+{
+    "context": {
+        "expression": "contact.type === 'clinic' && user.role === 'chw' && user._id != contact._id && summary.alive && !summary.isFamilyPerson && !summary.muted",
+        "person": false,
+        "place": true
+    },
+    "icon": "children",
+    "title": [
+      {
+        "locale": "en",
+        "content": "Home Visit"
+      },
+      {
+        "locale": "fr",
+        "content": "Recherche active"
+        
+      }
+    ]
+}

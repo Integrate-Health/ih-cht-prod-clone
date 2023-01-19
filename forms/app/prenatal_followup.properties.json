@@ -1,0 +1,18 @@
+{
+    "context": {
+        "expression": "user.role === 'chw' && user._id != contact._id && summary.alive && summary.isFamilyPerson && !summary.muted && (contact.type === 'person' && (!contact.date_of_birth || ((ageInYears(contact) >= 12 && ageInYears(contact) < 60) && (!contact.sex || contact.sex === 'female' || contact.sex === 'femme' || contact.sex === 'Femme'))))",
+        "person": false,
+        "place": false
+    },
+    "icon": "family",
+    "title": [
+      {
+        "locale": "en",
+        "content": "Prenatal Follow Up "
+      },
+      {
+        "locale": "fr",
+        "content": "Suivi prénatal"
+      }
+    ]
+}

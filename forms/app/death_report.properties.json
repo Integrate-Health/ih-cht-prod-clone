@@ -1,0 +1,18 @@
+{
+    "context": {
+        "expression": "user.role === 'chw' && user._id != contact._id && summary.alive && summary.isFamilyPerson && !summary.muted && contact.type === 'person'",
+        "person": true,
+        "place": false
+    },
+    "icon": "icon-death-general",
+    "title": [
+      {
+        "locale": "en",
+        "content": "Death report"
+      },
+      {
+        "locale": "fr",
+        "content": "Rapport de décès"
+      }
+    ]
+}

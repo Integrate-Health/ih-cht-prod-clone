@@ -1,0 +1,18 @@
+{
+    "context": {
+        "person": true,
+        "place": false,
+        "expression": "user.role === 'chw' && user._id != contact._id && !summary.alive && summary.isFamilyPerson && !summary.muted && contact.type === 'person'"
+    },
+    "icon": "icon-person",
+    "title": [
+        {
+          "locale": "en",
+          "content": "Undo death report"
+        },
+        {
+          "locale": "fr",
+          "content": "Annuler le rapport de décès"
+        }
+      ]
+}

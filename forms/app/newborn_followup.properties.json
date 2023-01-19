@@ -1,0 +1,18 @@
+{
+    "context": {
+        "expression": "user.role === 'chw' && user._id != contact._id && summary.alive && summary.isFamilyPerson && !summary.muted && (contact.type === 'person' && (!contact.date_of_birth || ageInDays(contact) < 60))",
+        "person": true,
+        "place": false
+    },
+    "icon": "infant",
+    "title": [
+      {
+        "locale": "en",
+        "content": "Child < 2 month Follow Up"
+      },
+      {
+        "locale": "fr",
+        "content": "Suivi enfant < 2 mois"
+      }
+    ]
+}

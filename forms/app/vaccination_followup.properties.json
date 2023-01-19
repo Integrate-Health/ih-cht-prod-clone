@@ -1,0 +1,18 @@
+{
+    "context": {
+        "expression": "user.role === 'chw' && user._id != contact._id && summary.alive && summary.isFamilyPerson && !summary.muted && (contact.type === 'person' && (!contact.date_of_birth || ageInDays(contact) <= 730))",
+        "person": false,
+        "place": false
+    },
+    "icon": "immunization",
+    "title": [
+        {
+          "locale": "en",
+          "content": "Vaccination Follow Up "
+        },
+        {
+          "locale": "fr",
+          "content": "Suivi Vaccination"
+        }
+      ]
+}

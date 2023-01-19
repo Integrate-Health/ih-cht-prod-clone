@@ -1,0 +1,853 @@
+{
+  "locales": [
+    {
+      "code": "en",
+      "name": "English"
+    },
+    {
+      "code": "fr",
+      "name": "Français (French)"
+    }
+  ],
+  "locale": "fr",
+  "locale_outgoing": "fr",
+  "muvuku_webapp_url": "/medic-reporter/_design/medic-reporter/_rewrite/?_embed_mode=2&_locale=en#/generic-anc.json",
+  "date_format": "ddd, MMM Do, YYYY",
+  "reported_date_format": "ddd, MMM Do, YYYY [at] h:mm A",
+  "forms_only_mode": false,
+  "default_responses": {
+    "start_date": "2015-01-01"
+  },
+  "district_admins_access_unallocated_messages": false,
+  "public_access": false,
+  "default_country_code": "228",
+  "gateway_number": "+22892645651",
+  "dhis_data_sets": [
+    {
+      "id": "VMuFODsyWaO",
+      "translation_key": "dhis.dataset.monthly.integration"
+    }
+  ],
+  "kujua-reporting": [
+    {
+      "code": "",
+      "reporting_freq": "weekly"
+    }
+  ],
+  "anc_forms": {
+    "registration": "R",
+    "registrationLmp": "P",
+    "visit": "V",
+    "delivery": "D",
+    "flag": "F"
+  },
+  "schedule_morning_hours": 6,
+  "schedule_morning_minutes": 0,
+  "schedule_evening_hours": 23,
+  "schedule_evening_minutes": 0,
+  "synthetic_date": "",
+  "contact_display_short": "family.name",
+  "permissions": {
+    "can_export_messages": [
+      "program_manager"
+    ],
+    "can_export_forms": [
+      "program_manager"
+    ],
+    "can_export_contacts": [
+      "program_manager"
+    ],
+    "can_export_feedback": [
+      "program_manager"
+    ],
+    "can_view_analytics": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_data_records": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_unallocated_data_records": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_users": [
+      "program_manager"
+    ],
+    "can_edit": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_log_out_on_android": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager"
+    ],
+    "can_update_messages": [
+      "program_manager"
+    ],
+    "can_update_users": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager"
+    ],
+    "can_update_people": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_update_places": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_create_records": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_access_gateway_api": [
+      "program_manager"
+    ],
+    "can_create_users": [
+      "program_manager"
+    ],
+    "can_create_people": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_create_places": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_tasks": [
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_view_tasks_tab": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_configure": [
+      "program_manager"
+    ],
+    "can_view_messages": [
+      "program_manager"
+    ],
+    "can_view_messages_tab": [
+      "program_manager"
+    ],
+    "can_view_reports": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_tasks_group": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_reports_tab": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_analytics_tab": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_contacts": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_contacts_tab": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_edit_profile": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_delete_reports": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager"
+    ],
+    "can_bulk_delete_reports": [
+      "program_manager"
+    ],
+    "can_update_reports": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_upgrade": [
+      "program_manager"
+    ],
+    "can_delete_contacts": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager"
+    ],
+    "can_delete_messages": [
+      "program_manager"
+    ],
+    "can_delete_users": [
+      "program_manager"
+    ],
+    "can_view_message_action": [
+      "program_manager"
+    ],
+    "can_view_call_action": [
+      "program_manager"
+    ],
+    "can_verify_reports": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager"
+    ],
+    "can_view_last_visited_date": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_write_wealth_quintiles": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_outgoing_messages": [
+      "program_manager"
+    ],
+    "can_export_all": [
+      "program_manager"
+    ],
+    "can_view_uhc_stats": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_edit_verification": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_export_dhis": [
+      "program_manager"
+    ],
+    "can_aggregate_targets": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager"
+    ]
+  },
+  "setup_complete": true,
+  "care_coordinator": "chw",
+  "anc_registration_lmp": true,
+  "statistics_submission": "none",
+  "outgoing_phone_replace": {
+    "match": "",
+    "replace": ""
+  },
+  "outgoing_phone_filters": [
+    {
+      "match": "",
+      "replace": ""
+    }
+  ],
+  "id_format": "1111",
+  "statistics_submission_number": "",
+  "replication_depth": [
+    {
+      "role": "program_manager",
+      "depth": 1,
+      "report_depth": 1
+    },
+    {
+      "role": "chw_supervisor",
+      "depth": 4,
+      "report_depth": 3
+    },
+    {
+      "role": "chw",
+      "depth": 3,
+      "report_depth": 2
+    }
+  ],
+  "alerts": [
+    {
+      "form": "",
+      "condition": "",
+      "message": "",
+      "recipient": ""
+    }
+  ],
+  "reminders": [
+    {
+      "form": "",
+      "text_expression": "",
+      "cron": "",
+      "mute_after_form_for": "",
+      "message": ""
+    }
+  ],
+  "registrations": [
+    {
+      "form": "P",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_patient_id",
+          "params": "",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "add_expected_date",
+          "params": "lmp_date",
+          "bool_expr": "doc.fields.last_menstrual_period"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "ANC Reminders LMP",
+          "bool_expr": "doc.fields.last_menstrual_period"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_name",
+            "rule": "lenMin(1) && lenMax(30)",
+            "message": [
+              {
+                "content": "{{#patient_name}}The registration format is incorrect. Please try again with a name of 30 characters or less.{{/patient_name}}{{^patient_name}}The registration format is incorrect. Please try again ensuring that the message ends with the mother's name.{{/patient_name}}.",
+                "locale": "en"
+              },
+              {
+                "content": "{{#patient_name}}Le format d'enregistrement est incorrect. SVP réessayer avec le nom de la mère ayant un maximum de 30 caractères.{{/patient_name}}{{^patient_name}}Le format d'enregistrement est incorrect. SVP réessayer en incluant le nom de la mère à la fin du message.{{/patient_name}}.",
+                "locale": "fr"
+              }
+            ]
+          },
+          {
+            "property": "last_menstrual_period",
+            "rule": "(integer && min(0) && max(42))",
+            "message": [
+              {
+                "content": "The registration format for '{{patient_name}}' is incorrect, please ensure that LMP is a number between 0 and 42.",
+                "locale": "en"
+              },
+              {
+                "content": "L'inscription pour '{{patient_name}}' n'est pas valide. Assurez vous que le nombre de semaines depuis les dernières règles est entre 0 et 42.",
+                "locale": "fr"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "message": [
+            {
+              "content": "Thank you for registering {{patient_name}}. Their pregnancy ID is {{patient_id}}, and EDD is {{#date}}{{expected_date}}{{/date}}",
+              "locale": "en"
+            },
+            {
+              "content": "Merci pour avoir inscrit {{patient_name}}. Son code est le {{patient_id}}, et la date présumée de l'accouchement est le {{#date}}{{expected_date}}{{/date}}",
+              "locale": "fr"
+            }
+          ],
+          "recipient": "reporting_unit"
+        }
+      ]
+    },
+    {
+      "form": "R",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_patient_id",
+          "params": "",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "ANC Reminders",
+          "bool_expr": ""
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_name",
+            "rule": "lenMin(1) && lenMax(30)",
+            "message": [
+              {
+                "content": "{{#patient_name}}The registration format is incorrect, ensure the message starts with R followed by space and the mother's name (maximum of 30 characters).{{/patient_name}}{{^patient_name}}The registration format is incorrect. ensure the message starts with R followed by space and the mother's name.{{/patient_name}}.",
+                "locale": "en"
+              },
+              {
+                "content": "{{#patient_name}}Le format d'enregistrement est incorrect. SVP réessayer avec le nom de la mère ayant un maximum de 30 caractères.{{/patient_name}}{{^patient_name}}Le format d'enregistrement est incorrect. SVP réessayer en incluant le nom de la mère à la fin du message.{{/patient_name}}.",
+                "locale": "fr"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "message": [
+            {
+              "content": "Thank you {{contact.name}} for registering {{patient_name}}. Pregnancy ID is {{patient_id}}.",
+              "locale": "en"
+            },
+            {
+              "content": "Merci {{contact.name}} pour avoir inscrit {{patient_name}}. Son code d'identification pour cette grossesse est le {{patient_id}}.",
+              "locale": "fr"
+            }
+          ],
+          "recipient": "reporting_unit"
+        }
+      ]
+    }
+  ],
+  "patient_reports": [
+    {
+      "form": "V",
+      "name": "Visits (SMS)",
+      "format": "V <patientid>",
+      "silence_type": "ANC Reminders, ANC Reminders LMP",
+      "silence_for": "8 days",
+      "fields": [
+        {
+          "field_name": "",
+          "title": ""
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5}$')",
+            "message": [
+              {
+                "content": "{{#patient_id}}The ID number submitted is incorrect, it should be 5 numbers, please submit a valid ID.{{/patient_id}}{{^patient_id}}The message format is incorrect. Please ensure send a message start with V followed by space then the woman's ID.{{/patient_id}}",
+                "locale": "en"
+              },
+              {
+                "content": "{{#patient_id}}Le numéro d'identification doit être 5 chiffres. SVP réessayez avec un code d'identification valide.{{/patient_id}}{{^patient_id}}Le message manque le numéro d'identification. SVP réessayez avec la lettre V suivi d'un espace ensuite le code d'identification du patient.{{/patient_id}}",
+                "locale": "fr"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "message": [
+            {
+              "content": "Thank you {{contact.name}}, visit for {{patient_name}} ({{patient_id}}) has been recorded.",
+              "locale": "en"
+            },
+            {
+              "content": "Merci {{contact.name}}, nous avons pris note de la visite de {{patient_name}} ({{patient_id}}).",
+              "locale": "fr"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        },
+        {
+          "message": [
+            {
+              "content": "No woman with ID number '{{patient_id}}' found. Verify the ID and resend the message.",
+              "locale": "en"
+            },
+            {
+              "content": "Aucun patient a été trouvé avec le numéro d'identification '{{patient_id}}'. Vérifier le code d'identification et réessayer",
+              "locale": "fr"
+            }
+          ],
+          "event_type": "registration_not_found",
+          "recipient": "reporting_unit"
+        }
+      ]
+    },
+    {
+      "form": "D",
+      "name": "Visits",
+      "format": "D <patientid>",
+      "silence_type": "ANC Reminders, ANC Reminders LMP",
+      "silence_for": "",
+      "fields": [
+        {
+          "field_name": "",
+          "title": ""
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5}$')",
+            "message": [
+              {
+                "content": "{{#patient_id}}The ID number submitted is incorrect, it should be 5 numbers, please submit a valid ID.{{/patient_id}}{{^patient_id}}The message format is incorrect. Please ensure the message ends with the woman's 5 digit ID.{{/patient_id}}",
+                "locale": "en"
+              },
+              {
+                "content": "{{#patient_id}}Le numéro d'identification doit être 5 chiffres. SVP réessayez avec un code d'identification valide.{{/patient_id}}{{^patient_id}}Le message manque le numéro d'identification. SVP réessayez avec la lettre D suivi d'un espace ensuite le code d'identification du patient.{{/patient_id}}",
+                "locale": "fr"
+              }
+            ]
+          },
+          {
+            "property": "delivery_code",
+            "rule": "regex('^(F|f|S|s|Ns|NS|ns|nS)$')",
+            "message": [
+              {
+                "content": "{{#delivery_code}}The delivery code was not understood. Please use code 'F' for facility, 'S' for homebirth with Skilled Birth Attendant, 'NS' for birth without SBA.{{/delivery_code}}{{^delivery_code}}The delivery code was missing. Please use code 'F' for facility, 'S' for homebirth with Skilled Birth Attendant, 'NS' for birth without SBA.{{/delivery_code}}",
+                "locale": "en"
+              },
+              {
+                "content": "{{#delivery_code}}Le code pour l'accouchement est invalide. Utilisez 'F' si en clinique, 'S' si avec sagefemme, sinon 'NS'.{{/delivery_code}}{{^delivery_code}}Il manque le code pour l'accouchement. Utilisez 'F' si en clinique, 'S' si avec sagefemme, sinon 'NS'.{{/delivery_code}}",
+                "locale": "fr"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "message": [
+            {
+              "content": "Thank you {{contact.name}} for reporting on {{patient_name}} ({{patient_id}}).",
+              "locale": "en"
+            },
+            {
+              "content": "Merci {{contact.name}} pour l'information concernant {{patient_name}} ({{patient_id}}).",
+              "locale": "fr"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        },
+        {
+          "message": [
+            {
+              "content": "No woman with ID number '{{patient_id}}' found. Verify the ID and resend the message.",
+              "locale": "en"
+            },
+            {
+              "content": "Aucun patient a été trouvé avec le numéro d'identification '{{patient_id}}'. Vérifier le code d'identification et réessayer",
+              "locale": "fr"
+            }
+          ],
+          "event_type": "registration_not_found",
+          "recipient": "reporting_unit"
+        }
+      ]
+    },
+    {
+      "form": "F",
+      "name": "Flag",
+      "format": "F <patientid>",
+      "silence_type": "",
+      "silence_for": "",
+      "fields": [
+        {
+          "field_name": "",
+          "title": ""
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5}$')",
+            "message": [
+              {
+                "content": "{{#patient_id}}The ID number submitted is incorrect, it should be 5 numbers, please submit a valid ID.{{/patient_id}}{{^patient_id}}The message format is incorrect. Please ensure send a message start with F followed by space then the woman's ID.{{/patient_id}}",
+                "locale": "en"
+              },
+              {
+                "content": "{{#patient_id}}Le numéro d'identification doit être 5 chiffres. SVP réessayez avec un code d'identification valide.{{/patient_id}}{{^patient_id}}Le message manque le numéro d'identification. SVP réessayez avec la lettre F suivi d'un espace ensuite le code d'identification du patient.{{/patient_id}}",
+                "locale": "fr"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "message": [
+            {
+              "content": "We have added {{patient_name}} ({{patient_id}}) to the flagged pregnancy list. If this is an emergency, please refer her to the clinic immediately.",
+              "locale": "en"
+            },
+            {
+              "content": "Nous avons pris note du statut de {{patient_name}} ({{patient_id}}). Si ceci est une urgence assurez vous qu'elle va à la clinique immédiatement.",
+              "locale": "fr"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        },
+        {
+          "message": [
+            {
+              "content": "No woman with ID number '{{patient_id}}' found. Verify the ID and resend the message.",
+              "locale": "en"
+            },
+            {
+              "content": "Aucun patient a été trouvé avec le numéro d'identification '{{patient_id}}'. Vérifier le code d'identification et réessayer",
+              "locale": "fr"
+            }
+          ],
+          "event_type": "registration_not_found",
+          "recipient": "reporting_unit"
+        }
+      ]
+    }
+  ],
+  "notifications": {
+    "off_form": "OFF",
+    "on_form": "ON",
+    "confirm_deactivation": false,
+    "validations": {
+      "join_responses": false,
+      "list": [
+        {
+          "property": "patient_id",
+          "rule": "regex('^[0-9]{5}$')",
+          "message": [
+            {
+              "content": "{{#patient_id}}The ID number submitted is incorrect, it should be 5 numbers, please submit a valid ID.{{/patient_id}}{{^patient_id}}The message format is incorrect. Please ensure the message begins with ON or OFF followed by space then the woman's ID.{{/patient_id}}",
+              "locale": "en"
+            },
+            {
+              "content": "{{#patient_id}}Le numéro d'identification doit être 5 chiffres. SVP réessayez avec un code d'identification valide.{{/patient_id}}{{^patient_id}}Le message manque le numéro d'identification. SVP réessayez avec le mot ON ou OFF suivi d'un espace ensuite le code d'identification du patient.{{/patient_id}}",
+              "locale": "fr"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message": [
+          {
+            "content": "No further notifications regarding {{patient_name}} will be sent until you submit 'ON {{patient_id}}'.",
+            "locale": "en"
+          },
+          {
+            "content": "Les messages pour {{patient_name}} ont été arrêtés. Pour réactiver envoyez 'ON {{patient_id}}'.",
+            "locale": "fr"
+          }
+        ],
+        "event_type": "on_mute",
+        "recipient": "reporting_unit"
+      },
+      {
+        "message": [
+          {
+            "content": "Thank you {{contact.name}}, record for {{patient_name}} ({{patient_id}}) has been reactivated. Notifications regarding this patient will resume.",
+            "locale": "en"
+          },
+          {
+            "content": "Merci {{contact.name}}, les messages pour {{patient_name}} ({{patient_id}}) ont été réactivés.",
+            "locale": "fr"
+          }
+        ],
+        "event_type": "on_unmute",
+        "recipient": "reporting_unit"
+      },
+      {
+        "message": [
+          {
+            "content": "No patient with ID number '{{patient_id}}' found.",
+            "locale": "en"
+          },
+          {
+            "content": "Aucun patient a été trouvé avec le numéro d'identification '{{patient_id}}'.",
+            "locale": "fr"
+          }
+        ],
+        "event_type": "patient_not_found",
+        "recipient": "reporting_unit"
+      }
+    ]
+  },
+  "transitions": {
+    "accept_patient_reports": {
+      "load": "./transitions/accept_patient_reports.js"
+    },
+    "conditional_alerts": {
+      "load": "./transitions/conditional_alerts.js"
+    },
+    "default_responses": {
+      "load": "./transitions/default_responses.js"
+    },
+    "update_sent_by": {
+      "load": "./transitions/update_sent_by.js"
+    },
+    "registration": {
+      "load": "./transitions/registration.js"
+    },
+    "update_clinics": {
+      "load": "./transitions/update_clinics.js"
+    },
+    "update_notifications": {
+      "load": "./transitions/update_notifications.js"
+    },
+    "update_scheduled_reports": {
+      "load": "./transitions/update_scheduled_reports.js"
+    },
+    "update_sent_forms": {
+      "load": "./transitions/update_sent_forms.js"
+    },
+    "generate_patient_id_on_people": true,
+    "death_reporting": true
+  },
+  "death_reporting": {
+    "mark_deceased_forms": [
+      "death_report"
+    ],
+    "undo_deceased_forms": [
+      "undo_death_report"
+    ]
+  },
+  "_version": "2.9.0-alpha.4523",
+  "place_hierarchy_types": [
+    "district_hospital",
+    "health_center"
+  ],
+  "roles": {
+    "program_manager": {
+      "name": "usertype.program-manager"
+    },
+    "supervisors_manager": {
+      "name": "usertype.supervisors-manager",
+      "offline": true
+    },
+    "chw_supervisor": {
+      "name": "usertype.chw-supervisor",
+      "offline": true
+    },
+    "chw": {
+      "name": "usertype.chw",
+      "offline": true
+    }
+  },
+  "uhc": {
+    "contacts_default_sort": "last_visited_date",
+    "visit_count": {
+      "month_start_date": 21,
+      "visit_count_goal": 1
+    }
+  },
+  "changes_controller": {
+    "reiterate_changes": true,
+    "changes_limit": 100,
+    "debounce_interval": 200
+  },
+  "task_days_overdue": true,
+  "contact_types": [
+    {
+      "id": "district_hospital",
+      "name_key": "contact.type.district_hospital",
+      "group_key": "contact.type.district_hospital.plural",
+      "create_key": "contact.type.district_hospital.new",
+      "edit_key": "contact.type.district_hospital.edit",
+      "icon": "medic-district-hospital",
+      "create_form": "form:contact:district_hospital:create",
+      "edit_form": "form:contact:district_hospital:edit"
+    },
+    {
+      "id": "health_center",
+      "name_key": "contact.type.health_center",
+      "group_key": "contact.type.health_center.plural",
+      "create_key": "contact.type.health_center.new",
+      "edit_key": "contact.type.health_center.edit",
+      "parents": [
+        "district_hospital"
+      ],
+      "icon": "medic-health-center",
+      "create_form": "form:contact:health_center:create",
+      "edit_form": "form:contact:health_center:edit"
+    },
+    {
+      "id": "clinic",
+      "name_key": "contact.type.clinic",
+      "group_key": "contact.type.clinic.plural",
+      "create_key": "contact.type.clinic.new",
+      "edit_key": "contact.type.clinic.edit",
+      "parents": [
+        "health_center"
+      ],
+      "icon": "medic-clinic",
+      "create_form": "form:contact:clinic:create",
+      "edit_form": "form:contact:clinic:edit",
+      "count_visits": true
+    },
+    {
+      "id": "person",
+      "name_key": "contact.type.person",
+      "group_key": "contact.type.person.plural",
+      "create_key": "contact.type.person.new",
+      "edit_key": "contact.type.person.edit",
+      "primary_contact_key": "clinic.field.contact",
+      "parents": [
+        "district_hospital",
+        "health_center",
+        "clinic"
+      ],
+      "icon": "person",
+      "create_form": "form:contact:person:create",
+      "edit_form": "form:contact:person:edit",
+      "person": true,
+      "sort_by_dob":true
+    }
+  ]
+}

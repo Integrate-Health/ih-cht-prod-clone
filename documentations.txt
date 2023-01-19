@@ -1,0 +1,36 @@
+
+
+############## PROD ##############
+sudo docker cp ../ssl/server.crt medic-os:/srv/settings/medic-core/nginx/private/default.crt
+sudo docker cp ../ssl/server.key medic-os:/srv/settings/medic-core/nginx/private/default.key
+
+sudo cht --url=https://medic:IntHea2004@portal-integratehealth.org:444 --accept-self-signed-certs
+
+sudo docker-compose -f docker-compose-prod.yml up -d
+
+
+
+
+############## PROD-CLONE ##############
+
+sudo docker cp ../ssl/server.crt prod-clone_medic-os_1:/srv/settings/medic-core/nginx/private/default.crt
+sudo docker cp ../ssl/server.key prod-clone_medic-os_1:/srv/settings/medic-core/nginx/private/default.key
+
+cd cht-core/ih-cht-prod-clone
+
+sudo cht --url=https://medic:IntHea2004@portal-integratehealth.org:666 --accept-self-signed-certs
+
+sudo docker-compose --env-file ./.env-prod-clone -f docker-compose-prod-clone.yml up -d
+
+
+
+
+############## DEV ##############
+
+cd cht-core/ih-cht-dev
+
+sudo cht --url=https://medic:IntHea2004@portal-integratehealth.org:888 --accept-self-signed-certs
+
+sudo docker-compose --env-file ./.env-dev -f docker-compose-dev.yml up -d
+
+

@@ -1,0 +1,18 @@
+{
+    "context": {
+        "place": false,
+        "person": false,
+        "expression": "user.role === 'chw' && user._id != contact._id && summary.alive && summary.isFamilyPerson && !summary.muted && (contact.type === 'person' && (!contact.date_of_birth || (ageInDays(contact) >= 60 && ageInDays(contact) <= 1825)))"
+    },
+    "icon": "followup",
+    "title": [
+      {
+        "locale": "en",
+        "content": "Referal Follow Up"
+      },
+      {
+        "locale": "fr",
+        "content": "Suivi Référence PCIME"
+      }
+    ]
+}

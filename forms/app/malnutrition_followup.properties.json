@@ -1,0 +1,18 @@
+{
+    "context": {
+        "expression": "user.role === 'chw' && user._id != contact._id && summary.alive && summary.isFamilyPerson && !summary.muted && (contact.type === 'person' && (!contact.date_of_birth || (60 <= ageInDays(contact) && ageInDays(contact) <= 1825)))",
+        "person": false,
+        "place": false
+    },
+    "icon": "family",
+    "title": [
+      {
+        "locale": "en",
+        "content": "Malnutrition Follow Up"
+      },
+      {
+        "locale": "fr",
+        "content": "Suivi malnutrition"
+      }
+    ]
+}
