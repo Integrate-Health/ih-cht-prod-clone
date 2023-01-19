@@ -743,7 +743,8 @@ function getAgeInDays(contact) {
 }
 
 function isVaccinAgeLimit(contact) {
-  var age = getAgeInDays(c);
+  var age = getAgeInDays(contact);
+  console.log(`age: ${age}`);
   return age !== null && age < 730;
 }
 

@@ -222,7 +222,7 @@ function getVaccinationConfig(c){
     t_task_to_perform: task_to_perform
   });
 
-  const resolvedIf = (vaccinationArray.length === 0 && !isEmpty) || task_to_perform === `close_out` || isVaccinAgeLimit(c);
+  const resolvedIf = (vaccinationArray.length === 0 && !isEmpty) || task_to_perform === `close_out` || !isVaccinAgeLimit(c);
 
   return {nextVisitDate: reportedDate, resheduleTask: resheduleTask, resolvedIf: resolvedIf, priority_label:priority_label, displayIf: vaccinationArray.length > 0, content:content[0]};    
 }
