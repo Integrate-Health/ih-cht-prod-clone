@@ -33,5 +33,6 @@
     "on": "icon-messages-on@2x.png",
     "pregnancy": "icon-people-woman-pregnant@2x.png",
     "risk": "icon-healthcare-warning@2x.png",
-    "icon-death-general": "icon-death-general.png"
+    "icon-death-general": "icon-death-general.png",
+    "reschedule": "icon-calendar.png"
 }

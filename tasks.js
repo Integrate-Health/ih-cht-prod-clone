@@ -5,7 +5,6 @@
 /* eslint-env es6 */
 
 const {
-  canApplies,
   getNewbornConfig,
   getPcimeTreatmentFollowUpConfig,
   getReferalFollowUpConfig,
@@ -14,104 +13,111 @@ const {
   getPrenatalConfig,
   getFamilyPlanningFirstFollowupConfig,
   getFamilyPlanningFollowupConfig,
-  getVaccinationConfig,
   getPriority,
   isFormArraySubmittedInWindow,
   getMostRecentReport,
   R_Date,
   isPregnant,
-  addDays,
   isChildUnder5,
-  fackDate,
 } = require(`./tasks-extras`);
 
-const { isExist, isAlive, isTrue, isChws, isVaccinAgeLimit } = require(`./utils`);
+const {
+  notNull,
+  canApplies,
+  isChws,
+} = require(`./utils`);
 
 module.exports = [
-  {
-    name: `vaccination-followup`,
-    icon: `immunization`,
-    title: `child.vaccination.followup`,
-    appliesTo: `contacts`,
-    // appliesToType: [`person`],
-    contactLabel: (c) => c.contact.name,
-    appliesIf: function (c) {
-      return isChws(user) && isVaccinAgeLimit(c) && isAlive(c) && !isTrue(c.contact.deleted) && c.contact.type === `person`;
-    },
-    actions: [
-      {
-        type: `report`,
-        form: `vaccination_followup`,
-        label: `vaccination.followup`,
-        // Pass content that will be used within the task form
-        modifyContent: function (content, c) {
-          const cst = getVaccinationConfig(c).content;
-          content.source = cst.source;
-          content.source_id = cst.source_id;
-          content.contact = cst.contact;
-          content.t_vaccinal_status_BCG = cst.t_vaccinal_status_BCG;
-          content.t_vaccinal_status_VPO_0 = cst.t_vaccinal_status_VPO_0;
-          content.t_vaccinal_status_DTC_B1 = cst.t_vaccinal_status_DTC_B1;
-          content.t_vaccinal_status_VPO_1 = cst.t_vaccinal_status_VPO_1;
-          content.t_vaccinal_status_pneumo_1 = cst.t_vaccinal_status_pneumo_1;
-          content.t_vaccinal_status_rota_1 = cst.t_vaccinal_status_rota_1;
-          content.t_vaccinal_status_DTC_B2 = cst.t_vaccinal_status_DTC_B2;
-          content.t_vaccinal_status_VPO_2 = cst.t_vaccinal_status_VPO_2;
-          content.t_vaccinal_status_pneumo_2 = cst.t_vaccinal_status_pneumo_2;
-          content.t_vaccinal_status_rota_2 = cst.t_vaccinal_status_rota_2;
-          content.t_vaccinal_status_DTC_B3 = cst.t_vaccinal_status_DTC_B3;
-          content.t_vaccinal_status_VPO_3 = cst.t_vaccinal_status_VPO_3;
-          content.t_vaccinal_status_pneumo_3 = cst.t_vaccinal_status_pneumo_3;
-          content.t_vaccinal_status_vpi = cst.t_vaccinal_status_vpi;
-          content.t_vaccinal_status_RR1 = cst.t_vaccinal_status_RR1;
-          content.t_vaccinal_status_VAA = cst.t_vaccinal_status_VAA;
-          content.t_vaccinal_status_vit_A = cst.t_vaccinal_status_vit_A;
-          content.t_vaccinal_status_RR2 = cst.t_vaccinal_status_RR2;
-          content.t_vaccinal_status_MEG = cst.t_vaccinal_status_MEG;
-          content.t_task_to_perform = cst.t_task_to_perform;
-        },
-      },
-    ],
-    events: [
-      {
-        id: `vaccination-followup-x`,
-        // days: 1,
-        start: 0,
-        end: 0,
-        dueDate: function (event, c) {
-          return new Date(Date.now());
-          //##################################
-          // const elm = getVaccinationConfig(c);
-          // const mrr = getMostRecentReport(c.reports, [`vaccination_followup`]);
-          // const now = new Date(Date.now());
-          // if (isExist(mrr) && isExist(elm.nextVisitDate) && elm.resheduleTask) {
-          //   const nextVisitDate = addDays((new Date(elm.nextVisitDate)), 7);
-          //   if (nextVisitDate >= now) return nextVisitDate;
-          // }
-          // return now;
-          //#################################
-          // const dob = new Date(c.contact.date_of_birth);
-          // const dta = 1826 - getAgeInDays(c);
-          // if (dta > 0) return new Date(addDays(dob, dta));
-          // return fackDate;
-        }
-      }
-    ],
-    priority: (c) => getPriority(getVaccinationConfig(c)),
+  // {
+  //   name: `vaccination-followup`,
+  //   icon: `immunization`,
+  //   title: `child.vaccination.followup`,
+  //   appliesTo: `contacts`,
+  //   // appliesToType: [`person`],
+  //   contactLabel: (c) => c.contact.name,
+  //   appliesIf: function (c) {
+  //     return (
+  //       isChws(user) &&
+  //       isVaccinAgeLimit(c) &&
+  //       isAlive(c.contact, c.reports) &&
+  //       !isTrue(c.contact.deleted) &&
+  //       c.contact.type === `person`
+  //     );
+  //   },
+  //   actions: [
+  //     {
+  //       type: `report`,
+  //       form: `vaccination_followup`,
+  //       label: `vaccination.followup`,
+  //       // Pass content that will be used within the task form
+  //       modifyContent: function (content, c) {
+  //         const cst = getVaccinationConfig(c).content;
+  //         content.source = cst.source;
+  //         content.source_id = cst.source_id;
+  //         content.contact = cst.contact;
+  //         content.t_vaccinal_status_BCG = cst.t_vaccinal_status_BCG;
+  //         content.t_vaccinal_status_VPO_0 = cst.t_vaccinal_status_VPO_0;
+  //         content.t_vaccinal_status_DTC_B1 = cst.t_vaccinal_status_DTC_B1;
+  //         content.t_vaccinal_status_VPO_1 = cst.t_vaccinal_status_VPO_1;
+  //         content.t_vaccinal_status_pneumo_1 = cst.t_vaccinal_status_pneumo_1;
+  //         content.t_vaccinal_status_rota_1 = cst.t_vaccinal_status_rota_1;
+  //         content.t_vaccinal_status_DTC_B2 = cst.t_vaccinal_status_DTC_B2;
+  //         content.t_vaccinal_status_VPO_2 = cst.t_vaccinal_status_VPO_2;
+  //         content.t_vaccinal_status_pneumo_2 = cst.t_vaccinal_status_pneumo_2;
+  //         content.t_vaccinal_status_rota_2 = cst.t_vaccinal_status_rota_2;
+  //         content.t_vaccinal_status_DTC_B3 = cst.t_vaccinal_status_DTC_B3;
+  //         content.t_vaccinal_status_VPO_3 = cst.t_vaccinal_status_VPO_3;
+  //         content.t_vaccinal_status_pneumo_3 = cst.t_vaccinal_status_pneumo_3;
+  //         content.t_vaccinal_status_vpi = cst.t_vaccinal_status_vpi;
+  //         content.t_vaccinal_status_RR1 = cst.t_vaccinal_status_RR1;
+  //         content.t_vaccinal_status_VAA = cst.t_vaccinal_status_VAA;
+  //         content.t_vaccinal_status_vit_A = cst.t_vaccinal_status_vit_A;
+  //         content.t_vaccinal_status_RR2 = cst.t_vaccinal_status_RR2;
+  //         content.t_vaccinal_status_MEG = cst.t_vaccinal_status_MEG;
+  //         content.t_task_to_perform = cst.t_task_to_perform;
+  //       },
+  //     },
+  //   ],
+  //   events: [
+  //     {
+  //       id: `vaccination-followup-x`,
+  //       // days: 1,
+  //       start: 0,
+  //       end: 0,
+  //       dueDate: function (event, c) {
+  //         return new Date(Date.now());
+  //         //##################################
+  //         // const elm = getVaccinationConfig(c);
+  //         // const mrr = getMostRecentReport(c.reports, [`vaccination_followup`]);
+  //         // const now = new Date(Date.now());
+  //         // if (notNull(mrr) && notNull(elm.nextVisitDate) && elm.resheduleTask) {
+  //         //   const nextVisitDate = addDays((new Date(elm.nextVisitDate)), 7);
+  //         //   if (nextVisitDate >= now) return nextVisitDate;
+  //         // }
+  //         // return now;
+  //         //#################################
+  //         // const dob = new Date(c.contact.date_of_birth);
+  //         // const dta = 1826 - getAgeInDays(c);
+  //         // if (dta > 0) return new Date(addDays(dob, dta));
+  //         // return fackDate;
+  //       },
+  //     },
+  //   ],
+  //   priority: (c) => getPriority(getVaccinationConfig(c)),
 
-    resolvedIf: function (c, r, event, dueDate) {
-      const elm = getVaccinationConfig(c);
-      // const mrr = getMostRecentReport(c.reports, [`vaccination_followup`]);
-      // var isResolve = false;
-      // if (isExist(mrr) && isExist(elm.nextVisitDate) && elm.resheduleTask) {
-      //   const nextVisitDate = addDays((new Date(elm.nextVisitDate)), 7);
-      //   if (nextVisitDate >= (new Date(Date.now()))) {
-      //     isResolve = isFormArraySubmittedInWindow(c.reports, [`vaccination_followup`], addDays(dueDate, -2).getTime(), addDays(dueDate, 0).getTime());
-      //   }
-      // }
-      return elm.resolvedIf;
-    },
-  },
+  //   resolvedIf: function (c, r, event, dueDate) {
+  //     const elm = getVaccinationConfig(c);
+  //     // const mrr = getMostRecentReport(c.reports, [`vaccination_followup`]);
+  //     // var isResolve = false;
+  //     // if (notNull(mrr) && notNull(elm.nextVisitDate) && elm.resheduleTask) {
+  //     //   const nextVisitDate = addDays((new Date(elm.nextVisitDate)), 7);
+  //     //   if (nextVisitDate >= (new Date(Date.now()))) {
+  //     //     isResolve = isFormArraySubmittedInWindow(c.reports, [`vaccination_followup`], addDays(dueDate, -2).getTime(), addDays(dueDate, 0).getTime());
+  //     //   }
+  //     // }
+  //     return elm.resolvedIf;
+  //   },
+  // },
   {
     name: `newborn-followup`,
     icon: `newborn`,
@@ -119,8 +125,13 @@ module.exports = [
     appliesTo: `reports`,
     // appliesToType: [`newborn_followup`],
     contactLabel: (c, r) => c.contact.name,
-    appliesIf: function (c, r){
-      return isChws(user) && (isChildUnder5(c) && canApplies(c, r, [`newborn_followup`]) && getNewbornConfig(c, r).displayIf);
+    appliesIf: function (c, r) {
+      return (
+        isChws(user) &&
+        isChildUnder5(c) &&
+        canApplies(c, r, [`newborn_followup`]) &&
+        getNewbornConfig(c, r).displayIf
+      );
     },
     actions: [
       {
@@ -138,28 +149,22 @@ module.exports = [
         },
       },
     ],
-    events: [0, 1, 2].map(eventPosition => ({
-      id: `newborn-followup-${eventPosition}`,
+    events: [{
+      id: `newborn-followup`,
       // days: 7,
-      start: eventPosition === 0 ? 0 : 3,
-      end: eventPosition === 0 ? 1 : 3,
+      start: 3,
+      end: 3,
       dueDate: function (event, c, r) {
-        const elm = getNewbornConfig(c, r);
-        if (elm.eventIndex === 0 && eventPosition === 0) return new Date(addDays(elm.nextVisitDate, 1));
-        if (elm.eventIndex === 1 && eventPosition === 1) return new Date(addDays(elm.nextVisitDate, 7));
-        if (elm.eventIndex === 2 && eventPosition === 2) return new Date(addDays(elm.nextVisitDate, 14));
-        return fackDate;
-      }
-    })),
+        return getNewbornConfig(c, r).nextVisitDate;
+      },
+    }],
     priority: (c, r) => getPriority(getNewbornConfig(c, r)),
     resolvedIf: function (c, r, event, dueDate) {
-      return (
-        isFormArraySubmittedInWindow(
-          c.reports,
-          [`newborn_followup`],
-          R_Date(dueDate, event),
-          R_Date(dueDate, event, true)
-        )
+      return isFormArraySubmittedInWindow(
+        c.reports,
+        [`newborn_followup`],
+        R_Date(dueDate, event),
+        R_Date(dueDate, event, true)
       );
     },
   },
@@ -170,7 +175,16 @@ module.exports = [
     appliesTo: `reports`,
     // appliesToType: [`pcime_c_asc`, `pcime_c_followup`],
     appliesIf: function (c, r) {
-      return isChws(user) && (isChildUnder5(c) && canApplies(c, r, [`pcime_c_asc`, `pcime_c_followup`]) && getPcimeTreatmentFollowUpConfig(c, r).displayIf);
+      return (
+        isChws(user) &&
+        isChildUnder5(c) &&
+        canApplies(c, r, [
+          `pcime_c_asc`,
+          `usp_pcime_followup`,
+          `pcime_c_followup`,
+        ]) &&
+        getPcimeTreatmentFollowUpConfig(c, r).displayIf
+      );
     },
     contactLabel: (c, r) => c.contact.name,
     actions: [
@@ -188,40 +202,37 @@ module.exports = [
           content.t_treat_for_diarrhea = cst.t_treat_for_diarrhea;
           content.t_treat_for_fever = cst.t_treat_for_fever;
           content.t_treat_for_pneumonia = cst.t_treat_for_pneumonia;
+          content.t_has_cough_cold = cst.t_has_cough_cold;
           content.t_has_been_referred = cst.t_has_been_referred;
           content.t_non_malaria_fever = cst.t_non_malaria_fever;
           content.t_malaria_fever = cst.t_malaria_fever;
           content.t_resp_rate = cst.t_resp_rate;
           content.t_last_visit_temperature = cst.t_last_visit_temperature;
           content.t_last_visit_weight = cst.t_last_visit_weight;
-          content.t_last_visit_child_brachial_perimeter = cst.t_last_visit_child_brachial_perimeter;
-          content.t_has_been_malnutrition_referred = cst.t_has_been_malnutrition_referred;
+          content.t_last_visit_child_brachial_perimeter =
+            cst.t_last_visit_child_brachial_perimeter;
+          content.t_has_been_malnutrition_referred =
+            cst.t_has_been_malnutrition_referred;
           content.t_has_malnutrition = cst.t_has_malnutrition;
-          
         },
       },
     ],
-    events: [0, 1].map(eventPosition => ({
-      id: `pcime-treatment-followup-${eventPosition}`,
+    events: [{
+      id: `pcime-treatment-followup`,
       // days: 7,
-      start: eventPosition === 0 ? 0 : 1,
-      end: eventPosition === 0 ? 2 : 3,
+      start: 0,
+      end: 4,
       dueDate: function (event, c, r) {
-        const elm = getPcimeTreatmentFollowUpConfig(c, r);
-        if (elm.eventIndex === 0 && eventPosition === 0) return new Date(addDays(elm.nextVisitDate, 1));
-        if (elm.eventIndex === 1 && eventPosition === 1) return new Date(addDays(elm.nextVisitDate, 2));
-        return fackDate;
-      }
-    })),
+        return getPcimeTreatmentFollowUpConfig(c, r).nextVisitDate;
+      },
+    }],
     priority: (c, r) => getPriority(getPcimeTreatmentFollowUpConfig(c, r)),
     resolvedIf: function (c, r, event, dueDate) {
-      return (
-        isFormArraySubmittedInWindow(
-          c.reports,
-          [`pcime_c_followup`],
-          R_Date(dueDate, event),
-          R_Date(dueDate, event, true)
-        )
+      return isFormArraySubmittedInWindow(
+        c.reports,
+        [`pcime_c_followup`],
+        R_Date(dueDate, event),
+        R_Date(dueDate, event, true)
       );
     },
   },
@@ -232,7 +243,18 @@ module.exports = [
     appliesTo: `reports`,
     // appliesToType: [`pcime_c_asc`, `pcime_c_followup`],
     appliesIf: function (c, r) {
-      return isChws(user) && (isChildUnder5(c) && canApplies(c, r, [`pcime_c_asc`, `pcime_c_followup`, `pcime_c_referral`, `malnutrition_followup`]) && getReferalFollowUpConfig(c, r).displayIf);
+      return (
+        isChws(user) &&
+        isChildUnder5(c) &&
+        canApplies(c, r, [
+          `pcime_c_asc`,
+          `usp_pcime_followup`,
+          `pcime_c_followup`,
+          `pcime_c_referral`,
+          `malnutrition_followup`,
+        ]) &&
+        getReferalFollowUpConfig(c, r).displayIf
+      );
     },
     contactLabel: (c, r) => c.contact.name,
     actions: [
@@ -253,26 +275,22 @@ module.exports = [
         },
       },
     ],
-    events: [0].map(eventPosition => ({
-      id: `pcime-referal-followup-${eventPosition}`,
+    events: [{
+      id: `pcime-referal-followup`,
       // days: 7,
       start: 0,
-      end: 2,
+      end: 4,
       dueDate: function (event, c, r) {
-        const elm = getReferalFollowUpConfig(c, r);
-        if (elm.eventIndex === 0 && eventPosition === 0) return new Date(addDays(elm.nextVisitDate, 1));
-        return fackDate;
-      }
-    })),
+        return getReferalFollowUpConfig(c, r).nextVisitDate;
+      },
+    }],
     priority: (c, r) => getPriority(getReferalFollowUpConfig(c, r)),
     resolvedIf: function (c, r, event, dueDate) {
-      return (
-        isFormArraySubmittedInWindow(
-          c.reports,
-          [`pcime_c_referral`],
-          R_Date(dueDate, event),
-          R_Date(dueDate, event, true)
-        )
+      return isFormArraySubmittedInWindow(
+        c.reports,
+        [`pcime_c_referral`],
+        R_Date(dueDate, event),
+        R_Date(dueDate, event, true)
       );
     },
   },
@@ -284,7 +302,16 @@ module.exports = [
     // appliesToType: [`pcime_c_asc`, `malnutrition_followup`],
     contactLabel: (c, r) => c.contact.name,
     appliesIf: function (c, r) {
-      return isChws(user) && (isChildUnder5(c) && canApplies(c, r, [`pcime_c_asc`, `malnutrition_followup`]) && getPcimeTreatmentMalnutritionConfig(c, r).displayIf);
+      return (
+        isChws(user) &&
+        isChildUnder5(c) &&
+        canApplies(c, r, [
+          `pcime_c_asc`,
+          // `usp_pcime_followup`,
+          `malnutrition_followup`,
+        ]) &&
+        getPcimeTreatmentMalnutritionConfig(c, r).displayIf
+      );
     },
     actions: [
       {
@@ -306,33 +333,29 @@ module.exports = [
       },
     ],
 
-    events: [0, 1, 2, 3, 4, 5, 6].map(eventPosition => ({
-      id: `malnutrition-followup-${eventPosition}`,
+    events: [{
+      id: `malnutrition-followup`,
       // days: 14,
-      start: eventPosition === 0 ? 0 : 1,
-      end: eventPosition < 4 ? 3 : 2,
+      start: 0,
+      end: 4,
       dueDate: function (event, c, r) {
-        const elm = getPcimeTreatmentMalnutritionConfig(c, r);
-        if (elm.eventIndex === 0 && eventPosition === 0) return new Date(addDays(elm.nextVisitDate, 1));
-        if (elm.eventIndex === 1 && eventPosition === 1) return new Date(addDays(elm.nextVisitDate, 7));
-        if (elm.eventIndex === 2 && eventPosition === 2) return new Date(addDays(elm.nextVisitDate, 14));
-        if (elm.eventIndex === 3 && eventPosition === 3) return new Date(addDays(elm.nextVisitDate, 21));
-        if (elm.eventIndex === 4 && eventPosition === 4) return new Date(addDays(elm.nextVisitDate, 28));
-        if (elm.eventIndex === 5 && eventPosition === 5) return new Date(addDays(elm.nextVisitDate, 42));
-        if (elm.eventIndex === 6 && eventPosition === 6) return new Date(addDays(elm.nextVisitDate, 56));
-        return fackDate;
-      }
-    })),
+        return getPcimeTreatmentMalnutritionConfig(c, r).nextVisitDate;
+      },
+    }],
     priority: (c, r) => getPriority(getPcimeTreatmentMalnutritionConfig(c, r)),
     resolvedIf: function (c, r, event, dueDate) {
       var newestMalnutritionCloseOutField = false;
-      const newestMalnutrition = getMostRecentReport(c.reports, [`malnutrition_followup`]);
-      if (isExist(newestMalnutrition) && isExist(newestMalnutrition.fields)) {
-        newestMalnutritionCloseOutField = newestMalnutrition.fields.close_out === `true`;
+      const newestMalnutrition = getMostRecentReport(c.reports, [
+        `malnutrition_followup`,
+      ]);
+      if (notNull(newestMalnutrition) && notNull(newestMalnutrition.fields)) {
+        newestMalnutritionCloseOutField =
+          newestMalnutrition.fields.close_out === `true`;
       }
-      
-      return ( 
-        newestMalnutritionCloseOutField || isFormArraySubmittedInWindow(
+
+      return (
+        newestMalnutritionCloseOutField ||
+        isFormArraySubmittedInWindow(
           c.reports,
           [`malnutrition_followup`],
           R_Date(dueDate, event),
@@ -348,8 +371,13 @@ module.exports = [
     appliesTo: `reports`,
     // appliesToType: [`delivery`, `postnatal_followup`],
     contactLabel: (c, r) => c.contact.name,
-    appliesIf: function (c, r){
-      return isChws(user) && (!isPregnant(c, c.reports, r) && canApplies(c, r, [`delivery`, `postnatal_followup`]) && getPostnatalConfig(c, r).displayIf);
+    appliesIf: function (c, r) {
+      return (
+        isChws(user) &&
+        !isPregnant(c.reports) &&
+        canApplies(c, r, [`delivery`, `postnatal_followup`]) &&
+        getPostnatalConfig(c, r).displayIf
+      );
     },
     actions: [
       {
@@ -370,22 +398,21 @@ module.exports = [
         },
       },
     ],
-    events: [0, 1].map(eventPosition => ({
-      id: `postnatal-followup-${eventPosition}`,
+    events: [{
+      id: `postnatal-followup`,
       // days: 7,
-      start: eventPosition === 0 ? 3 : 0,
-      end: 5,
+      start: 3,
+      end: 10,
       dueDate: function (event, c, r) {
-        const elm = getPostnatalConfig(c, r);
-        if (elm.eventIndex === 0 && eventPosition === 0) return new Date(addDays(elm.nextVisitDate, 7));
-        if (elm.eventIndex === 1 && eventPosition === 1) return new Date(addDays(elm.nextVisitDate, 0));
-        return fackDate;
-      }
-    })),
+        return getPostnatalConfig(c, r).nextVisitDate;
+      },
+    }],
     priority: (c, r) => getPriority(getPostnatalConfig(c, r)),
     resolvedIf: function (c, r, event, dueDate) {
+      const elm = getPostnatalConfig(c, r);
       return (
-        isPregnant(c, c.reports, r) ||
+        elm.close_out === `true` ||
+        isPregnant(c.reports) ||
         isFormArraySubmittedInWindow(
           c.reports,
           [`postnatal_followup`],
@@ -403,8 +430,9 @@ module.exports = [
     // appliesToType: [`prenatal_followup`, `pregnancy_family_planning`],
     contactLabel: (c, r) => c.contact.name,
     appliesIf: function (c, r) {
-      return isChws(user) && (
-        isPregnant(c, c.reports, r) &&
+      return (
+        isChws(user) &&
+        isPregnant(c.reports) &&
         canApplies(c, r, [`prenatal_followup`, `pregnancy_family_planning`]) &&
         getPrenatalConfig(c, r).displayIf
       );
@@ -427,23 +455,21 @@ module.exports = [
         },
       },
     ],
-    events: [0, 1, 2].map(eventPosition => ({
-      id: `prenatal-followup-${eventPosition}`,
+    events: [{
+      id: `prenatal-followup`,
       // days: 7,
-      start: eventPosition === 1 ? 0 : 4,
-      end: eventPosition === 2 ? 10 : 5,
+      start: 3,
+      end: 10,
       dueDate: function (event, c, r) {
-        const elm = getPrenatalConfig(c, r);
-        if (elm.eventIndex === 0 && eventPosition === 0) return new Date(addDays(elm.nextVisitDate, 7));
-        if (elm.eventIndex === 1 && eventPosition === 1) return new Date(addDays(elm.nextVisitDate, 0));
-        if (elm.eventIndex === 2 && eventPosition === 2) return new Date(addDays(elm.nextVisitDate, 0));
-        return fackDate;
-      }
-    })),
+        return getPrenatalConfig(c, r).nextVisitDate;
+      },
+    }],
     priority: (c, r) => getPriority(getPrenatalConfig(c, r)),
     resolvedIf: function (c, r, event, dueDate) {
+      const elm = getPrenatalConfig(c, r);
       return (
-        !isPregnant(c, c.reports, r) ||
+        elm.close_out === `true` ||
+        !isPregnant(c.reports) ||
         isFormArraySubmittedInWindow(
           c.reports,
           [`prenatal_followup`],
@@ -461,8 +487,9 @@ module.exports = [
     // appliesToType: [`pregnancy_family_planning`, `fp_followup_danger_sign_check`, `fp_follow_up_renewal`],
     contactLabel: (c, r) => c.contact.name,
     appliesIf: function (c, r) {
-      return isChws(user) && (
-        !isPregnant(c, c.reports, r) &&
+      return (
+        isChws(user) &&
+        !isPregnant(c.reports) &&
         canApplies(c, r, [
           `pregnancy_family_planning`,
           `fp_followup_danger_sign_check`,
@@ -487,22 +514,19 @@ module.exports = [
         },
       },
     ],
-    events: [0, 1].map(eventPosition => ({
-      id: `danger-signs-check-${eventPosition}`,
+    events: [{
+      id: `danger-signs-check`,
       // days: 7,
       start: 4,
-      end: 10,
+      end: 5,
       dueDate: function (event, c, r) {
-        const elm = getFamilyPlanningFirstFollowupConfig(c, r);
-        if (elm.eventIndex === 0 && eventPosition === 0 && elm.priority_label === `oral.combination.pill`) return new Date(addDays(elm.nextVisitDate, 7));
-        if (elm.eventIndex === 1 && eventPosition === 1 && elm.priority_label === `injectible`) return new Date(addDays(elm.nextVisitDate, 30));
-        return fackDate;
-      }
-    })),
+        return getFamilyPlanningFirstFollowupConfig(c, r).nextVisitDate;
+      },
+    }],
     priority: (c, r) => getPriority(getFamilyPlanningFirstFollowupConfig(c, r)),
     resolvedIf: function (c, r, event, dueDate) {
       return (
-        isPregnant(c, c.reports, r) ||
+        isPregnant(c.reports) ||
         isFormArraySubmittedInWindow(
           c.reports,
           [`fp_followup_danger_sign_check`],
@@ -515,16 +539,18 @@ module.exports = [
   {
     name: `family-planning-followup`,
     icon: `treatment`,
-    title: `fp.followup`,
+    title: `fp.followup.renewal`,
     appliesTo: `reports`,
     // appliesToType: [`fp_followup_danger_sign_check`, `fp_follow_up_renewal`],
     contactLabel: (c, r) => c.contact.name,
     appliesIf: function (c, r) {
-      return isChws(user) && (
-        !isPregnant(c, c.reports, r) &&
+      return (
+        isChws(user) &&
+        !isPregnant(c.reports) &&
         canApplies(c, r, [
-          `fp_followup_danger_sign_check`,
+          `pregnancy_family_planning`,
           `fp_follow_up_renewal`,
+          // `fp_followup_danger_sign_check`,
         ]) &&
         getFamilyPlanningFollowupConfig(c, r).displayIf
       );
@@ -533,7 +559,7 @@ module.exports = [
       {
         type: `report`,
         form: `fp_follow_up_renewal`,
-        label: `fp.followup`,
+        label: `fp.followup.renewal`,
         modifyContent: function (content, c, r, event) {
           const cst = getFamilyPlanningFollowupConfig(c, r).content;
           content.source = cst.source;
@@ -544,24 +570,19 @@ module.exports = [
         },
       },
     ],
-    events: [0, 1, 2, 3].map(eventPosition => ({
-      id: `fp-follow-up-renewal-${eventPosition}`,
+    events: [{
+      id: `fp-follow-up-renewal`,
       // days: 7,
       start: 4,
-      end: 10,
+      end: 5,
       dueDate: function (event, c, r) {
-        const elm = getFamilyPlanningFollowupConfig(c, r);
-        if (elm.eventIndex === 0 && eventPosition === 0 && elm.priority_label === `oral.combination.pill`) return new Date(addDays(elm.nextVisitDate, 19));
-        if (elm.eventIndex === 1 && eventPosition === 1 && elm.priority_label === `oral.combination.pill`) return new Date(addDays(elm.nextVisitDate, 28));
-        if (elm.eventIndex === 2 && eventPosition === 2 && elm.priority_label === `injectible`) return new Date(addDays(elm.nextVisitDate, 60));
-        if (elm.eventIndex === 3 && eventPosition === 3 && elm.priority_label === `injectible`) return new Date(addDays(elm.nextVisitDate, 90));
-        return fackDate;
-      }
-    })),
+        return getFamilyPlanningFollowupConfig(c, r).nextVisitDate;
+      },
+    }],
     priority: (c, r) => getPriority(getFamilyPlanningFollowupConfig(c, r)),
     resolvedIf: function (c, r, event, dueDate) {
       return (
-        isPregnant(c, c.reports, r) ||
+        isPregnant(c.reports) ||
         isFormArraySubmittedInWindow(
           c.reports,
           [`fp_follow_up_renewal`],
@@ -572,4 +593,3 @@ module.exports = [
     },
   },
 ];
-

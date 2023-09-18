@@ -2,29 +2,27 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 /* eslint-disable no-var */
-const { getMostRecentReport, isExist } = require(`./utils`);
+const { getMostRecentReport, notNull, isReportValid } = require(`./utils`);
 
 function getPcimeConstantsValue(allReports) {
   var result = [];
-  const lastPcimeReport = getMostRecentReport(allReports, [`pcime_c_asc`]);
-  if (isExist(lastPcimeReport)) {
-    if (isExist(lastPcimeReport.fields)) {
-      if (isExist(lastPcimeReport.fields.s_constant)) {
-        var pb = lastPcimeReport.fields.s_constant.s_constant_child_brachial_perimeter;
-        var weight = lastPcimeReport.fields.s_constant.s_constant_child_weight;
-        var temperature = lastPcimeReport.fields.s_constant.s_constant_child_temperature;
-        var applyIf = !isExist(pb) && !isExist(weight) && !isExist(temperature) ? false : true;
-        result.push({ appliesIf: applyIf, pb: pb, weight: weight, temperature: temperature});
-      }
-    }
+  const lastReport = getMostRecentReport(allReports, [
+    `pcime_c_asc`,
+    `usp_pcime_followup`,
+  ]);
+  var pb, weight, temperature, applyIf;
+
+  if (isReportValid(lastReport) && notNull(lastReport.fields.s_constant)) {
+      pb = lastReport.fields.s_constant.s_constant_child_brachial_perimeter;
+      weight = lastReport.fields.s_constant.s_constant_child_weight;
+      temperature = lastReport.fields.s_constant.s_constant_child_temperature;
+      // applyIf = !notNull(pb) && !notNull(weight) && !notNull(temperature) ? false : true;
   }
-  return result.length > 0 ? result[0] : {};
+  return { appliesIf: true, pb: pb, weight: weight, temperature: temperature };
 }
 
 module.exports = {
-  getMostRecentReport, 
-  isExist, 
-  getPcimeConstantsValue
+  getPcimeConstantsValue,
 };
 
 // function getSubsequentVisits(reports, report) {

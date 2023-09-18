@@ -273,6 +273,21 @@
       "program_manager",
       "chw_supervisor",
       "supervisors_manager"
+    ],
+    "can_default_facility_filter": [
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_old_action_bar": [
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_old_filter_and_search": [
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
     ]
   },
   "setup_complete": true,
@@ -293,17 +308,7 @@
   "statistics_submission_number": "",
   "replication_depth": [
     {
-      "role": "program_manager",
-      "depth": 1,
-      "report_depth": 1
-    },
-    {
       "role": "chw_supervisor",
-      "depth": 4,
-      "report_depth": 3
-    },
-    {
-      "role": "chw",
       "depth": 3,
       "report_depth": 2
     }
@@ -756,7 +761,8 @@
     ],
     "undo_deceased_forms": [
       "undo_death_report"
-    ]
+    ],
+    "date_field": "fields.s_death.s_death_date"
   },
   "_version": "2.9.0-alpha.4523",
   "place_hierarchy_types": [

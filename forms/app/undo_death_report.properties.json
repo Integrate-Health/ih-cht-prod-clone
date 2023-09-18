@@ -1,8 +1,8 @@
 {
     "context": {
+      "expression": "user.role === 'chw' && user._id !== contact._id && !summary.alive && summary.is_family_person && !summary.muted && contact.type === 'person' && ageInYears(contact) < 100",
         "person": true,
-        "place": false,
-        "expression": "user.role === 'chw' && user._id != contact._id && !summary.alive && summary.isFamilyPerson && !summary.muted && contact.type === 'person'"
+        "place": false
     },
     "icon": "icon-person",
     "title": [
