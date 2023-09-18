@@ -26,7 +26,6 @@ module.exports = {
     const USER_ROLES = ['supervisors_manager','chw_supervisor', 'chw'];
     
 
-
     if (userCtx.roles.includes("supervisors_manager") || userCtx.roles.includes("chw_supervisor")) {
       // const allDocsToPurge = reports.filter(r => r.reported_date < old30).map(r => r._id);
       // return [...allDocsToPurge];

@@ -4,6 +4,7 @@
 /* eslint-disable no-var */
 const { getMostRecentReport, notNull, isReportValid } = require(`./utils`);
 
+
 function getPcimeConstantsValue(allReports) {
   var result = [];
   const lastReport = getMostRecentReport(allReports, [

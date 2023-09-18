@@ -29,6 +29,7 @@ const deathReport = getMostRecentReport(allReports, [`death_report`]);
 const pcimeConstance = getPcimeConstantsValue(allReports);
 const vaccination = getMostRecentVaccinationData(thisContact, allReports);
 
+
 function isFamilyPerson() {
   try {
     if (notNull(thisLineage)) {

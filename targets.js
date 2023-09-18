@@ -18,6 +18,7 @@ const {
 
 const { isFormBetween21and20, getChildPatologie, isAlive } = require(`./utils`);
 
+
 // const {getChildPatologie, getChildPatologiePromptitude, getDateInFormat, startEnd21and20Date } = require(`./utils`);
 
 // const periode = startEnd21and20Date('fr');

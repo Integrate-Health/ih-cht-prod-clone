@@ -454,6 +454,7 @@ function getMostRecentReport(reports, forms) {
   return result;
 }
 
+
 function isFormArraySubmittedInWindow(
   reports,
   formArray,

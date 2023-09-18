@@ -236,6 +236,7 @@ module.exports = [
       );
     },
   },
+  
   {
     name: `pcime-referal-followup`,
     icon: `treatment`,

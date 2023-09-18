@@ -88,7 +88,6 @@ function getQualityMonitoringCount(reports) {
   return reports.filter((r) => r.form === `chv_quality_monitoring`).length;
 }
 
-
 function hasAllVisitActionsMonthly(report) {
   if (home_actions_forms.includes(report.form)) {
     return isBetween21and20(report.reported_date);

@@ -1,2 +1,2 @@
 # ih-cht-app-module
-# ih-cht-prod-clone
+# ih-chws-cht-app
