@@ -454,7 +454,6 @@ function getMostRecentReport(reports, forms) {
   return result;
 }
 
-
 function isFormArraySubmittedInWindow(
   reports,
   formArray,
@@ -602,26 +601,62 @@ function isAlive(contact, reports) {
 }
 
 function isPregnant(reports) {
-  const lastReport = getMostRecentReport(reports, [
+  const r = getMostRecentReport(reports, [
     `pregnancy_family_planning`,
     `prenatal_followup`,
     `delivery`,
     `postnatal_followup`,
   ]);
-  if (isReportValid(lastReport)) {
-    if ([`delivery`, `postnatal_followup`].includes(lastReport.form)) {
+
+  if (isReportValid(r)) {
+    if ([`delivery`, `postnatal_followup`].includes(r.form)) {
       return false;
-    } else if (lastReport.form === `prenatal_followup`) {
-      return getField(lastReport, `close_out`) !== `true`;
-    } else if (lastReport.form === `pregnancy_family_planning`) {
+    } else if (r.form === `prenatal_followup` && notNull(getField(r, `reschedule_task`))) {
+        const close_out = getField(r, `close_out`);
+        const w_available = getField(r, `reschedule_task.is_woman_available`);
+        var nDate;
+
+        if (w_available === `no`) {
+          const rDate = getField(r, `reschedule_task.s_date_to_reschedule`);
+          if (rDate !== `` && rDate !== null && rDate !== `null`) {
+            nDate = new Date(rDate);
+          }
+        } else if (w_available === `yes` && close_out !== `true`) {
+          if (notNull(getField(r, `s_vad_1`))) {
+            if (notNull(getField(r, `s_vad_1.s_anc_next_anc`))) {
+              nDate = addDays(
+                new Date(getField(r, `s_vad_1.s_anc_next_anc`)),
+                7
+              );
+            } else {
+              nDate = addDays(new Date(getField(r, `s_vad_1.s_anc_1_date`)), 7);
+            }
+          } else if (notNull(getField(r, `s_vad_2`))) {
+            if (notNull(getField(r, `s_vad_2.s_anc_2_date`))) {
+              nDate = addDays(new Date(getField(r, `s_vad_2.s_anc_2_date`)), 7);
+            }
+          } else if (notNull(getField(r, `s_vad_3`))) {
+            if (notNull(getField(r, `s_vad_3.s_anc_3_date`))) {
+              nDate = addDays(new Date(getField(r, `s_vad_3.s_anc_3_date`)), 7);
+            }
+          } else if (notNull(getField(r, `s_vad_4`))) {
+            if (notNull(getField(r, `s_vad_4.s_anc_4_date`))) {
+              nDate = addDays(new Date(getField(r, `s_vad_4.s_anc_4_date`)), 7);
+            }
+          }
+        }
+
+        if (notNull(nDate) && new Date() > addDays(nDate, 10)) {
+          return false;
+        }
+        return close_out !== `true`;
+
+    } else if (r.form === `pregnancy_family_planning`) {
       const pregnant_1 =
-        getField(lastReport, `s_reg_pregnancy_screen.s_reg_urine_result`) ===
-        `positive`;
+        getField(r, `s_reg_pregnancy_screen.s_reg_urine_result`) === `positive`;
       const pregnant_2 =
-        getField(
-          lastReport,
-          `s_reg_pregnancy_screen.s_reg_why_urine_test_not_done`
-        ) === `already_pregnant`;
+        getField(r, `s_reg_pregnancy_screen.s_reg_why_urine_test_not_done`) ===
+        `already_pregnant`;
       return (isTrue(pregnant_1) || isTrue(pregnant_2)) === true;
     }
   }
@@ -651,30 +686,33 @@ function isActiveFamilyPlanning(contact, report, method = `all`) {
     if (isReportValid(r)) {
       const chosen_fp_method = getField(r, `fp_method`);
 
-    if (r.form === `fp_followup_danger_sign_check`) {
-      if (notNull(getField(r, `s_side_effects`))) {
-        isFound =
-          r.fields.continue_with_fp === `yes` &&
-          r.fields.s_side_effects.s_pregnancy_result !== `positive`;
+      if (r.form === `fp_followup_danger_sign_check`) {
+        if (notNull(getField(r, `s_side_effects`))) {
+          isFound =
+            r.fields.continue_with_fp === `yes` &&
+            r.fields.s_side_effects.s_pregnancy_result !== `positive`;
+        }
+      } else if (r.form === `fp_follow_up_renewal`) {
+        if (notNull(r.fields.checklist1)) {
+          isFound =
+            r.fields.checklist1.s_renew_method === `yes` &&
+            r.fields.stop_fp !== `yes`;
+        }
+      } else if (r.form === `pregnancy_family_planning`) {
+        if (
+          notNull(r.fields.s_fam_plan_screen) &&
+          notNull(r.fields.family_planning_reg)
+        ) {
+          isFound =
+            r.fields.s_fam_plan_screen.s_have_counsel_on_planning === `yes` &&
+            r.fields.family_planning_reg.s_chw_usp === `yes`;
+        }
       }
-    } else if (r.form === `fp_follow_up_renewal`) {
-      if (notNull(r.fields.checklist1)) {
-        isFound =
-          r.fields.checklist1.s_renew_method === `yes` &&
-          r.fields.stop_fp !== `yes`;
-      }
-    } else if (r.form === `pregnancy_family_planning`) {
-      if (
-        notNull(r.fields.s_fam_plan_screen) &&
-        notNull(r.fields.family_planning_reg)
-      ) {
-        isFound =
-          r.fields.s_fam_plan_screen.s_have_counsel_on_planning === `yes` &&
-          r.fields.family_planning_reg.s_chw_usp === `yes`;
-      }
-    }
 
-    return isFound && (method === `all` ? true : chosen_fp_method === method) === true;
+      return (
+        isFound &&
+        (method === `all` ? true : chosen_fp_method === method) === true
+      );
     }
   }
 
@@ -852,7 +890,7 @@ function isActiveOralCombinationPillFamilyPlanning(contact, report) {
 function isActiveInjectibleFamilyPlanning(contact, report) {
   return isActiveFamilyPlanning(contact, report, `injectible`);
 }
- 
+
 function getAgeInMilliseconds(contact) {
   if (notNull(contact.contact.date_of_birth)) {
     const birthDate = new Date(contact.contact.date_of_birth);
