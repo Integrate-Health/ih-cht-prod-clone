@@ -167,10 +167,7 @@ function lastDayOfMonth(dateObj) {
 
 function isBetween21and20(date) {
   var betweenDate = startEnd21and20Date();
-  return (
-    isGreaterOrEqual(date, betweenDate.start_date) &&
-    isLessOrEqual(date, betweenDate.end_date)
-  );
+  return (isGreaterOrEqual(date, betweenDate.start_date) && isLessOrEqual(date, betweenDate.end_date));
 }
 
 // function isBetween21and20(date) {
@@ -612,7 +609,11 @@ function isPregnant(reports) {
     if ([`delivery`, `postnatal_followup`].includes(r.form)) {
       return false;
     } else if (r.form === `prenatal_followup` && notNull(getField(r, `reschedule_task`))) {
-        const close_out = getField(r, `close_out`);
+       
+      const close_out = getField(r, `s_today_task.s_task_to_perform`) === `close_out`;
+
+        
+
         const w_available = getField(r, `reschedule_task.is_woman_available`);
         var nDate;
 
@@ -621,7 +622,7 @@ function isPregnant(reports) {
           if (rDate !== `` && rDate !== null && rDate !== `null`) {
             nDate = new Date(rDate);
           }
-        } else if (w_available === `yes` && close_out !== `true`) {
+        } else if (w_available === `yes` && close_out !== true) {
           if (notNull(getField(r, `s_vad_1`))) {
             if (notNull(getField(r, `s_vad_1.s_anc_next_anc`))) {
               nDate = addDays(
@@ -649,7 +650,7 @@ function isPregnant(reports) {
         if (notNull(nDate) && new Date() > addDays(nDate, 10)) {
           return false;
         }
-        return close_out !== `true`;
+        return close_out !== true;
 
     } else if (r.form === `pregnancy_family_planning`) {
       const pregnant_1 =
@@ -920,10 +921,6 @@ function getAgeInMonths(contact, round = false) {
   return null;
 }
 
-function hasAvailableStock(contact, reports) {
-  return true;
-}
-
 function isChildUnder5(contact) {
   var childAge = getAgeInMonths(contact);
   if (childAge !== null) {
@@ -1001,7 +998,6 @@ module.exports = {
   canApplies,
   MaxVal,
   isReportValid,
-  hasAvailableStock,
   getTaskStart,
   isDelivery,
   isPregnancyForm,

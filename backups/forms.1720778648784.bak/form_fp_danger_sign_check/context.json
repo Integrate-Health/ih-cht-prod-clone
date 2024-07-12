@@ -1,0 +1,5 @@
+{
+  "expression": "user.role === 'reco' && user._id !== contact._id && !summary.isPregnant && summary.alive && summary.is_family_person && !summary.muted && contact.type === 'person' && ageInYears(contact) >= 11 && ageInYears(contact) < 70 && contact.sex === 'female'",
+  "person": false,
+  "place": false
+}

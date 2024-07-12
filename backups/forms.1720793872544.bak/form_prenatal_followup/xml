@@ -1,0 +1,3150 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Suivi de la Femme Enceinte</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/prenatal_followup/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/prenatal_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/prenatal_followup/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/prenatal_followup/inputs/t_follow_up_count:label">
+            <value>Follow up count</value>
+          </text>
+          <text id="/prenatal_followup/inputs/t_close_out:label">
+            <value>Mother close out</value>
+          </text>
+          <text id="/prenatal_followup/inputs/t_week_since_lmp:label">
+            <value>Week since LMP</value>
+          </text>
+          <text id="/prenatal_followup/inputs/t_delivery_date:label">
+            <value>Delivery date</value>
+          </text>
+          <text id="/prenatal_followup/inputs/contact/_id:label">
+            <value>What is the patient name?</value>
+          </text>
+          <text id="/prenatal_followup/inputs/contact/_id:hint">
+            <value>select a person from the list</value>
+          </text>
+          <text id="/prenatal_followup/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/prenatal_followup/inputs/contact/date_of_birth:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/prenatal_followup/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/prenatal_followup/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/prenatal_followup/patient_age_in_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/prenatal_followup/patient_age_in_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/prenatal_followup/patient_age_in_days:label">
+            <value>Days old</value>
+          </text>
+          <text id="/prenatal_followup/patient_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/prenatal_followup/patient_name:label">
+            <value>Patient Name</value>
+          </text>
+          <text id="/prenatal_followup/patient_sex:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/prenatal_followup/patient_sex_en:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/prenatal_followup/patient_sex_fr:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/prenatal_followup/visited_contact_uuid:label">
+            <value>Family Id</value>
+          </text>
+          <text id="/prenatal_followup/delivery_date:label">
+            <value>Delivery date</value>
+          </text>
+          <text id="/prenatal_followup/reschedule_task:label">
+            <value>Reschedule follow-up</value>
+          </text>
+          <text id="/prenatal_followup/reschedule_task/is_woman_available:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/reschedule_task/is_woman_available:label">
+            <value>Is the woman available?</value>
+          </text>
+          <text id="/prenatal_followup/reschedule_task/is_woman_available/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/reschedule_task/is_woman_available/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/reschedule_task/s_date_to_reschedule:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/reschedule_task/s_date_to_reschedule:label">
+            <value>For what day do you want to reprogram the task?</value>
+          </text>
+          <text id="/prenatal_followup/s_today_task:label">
+            <value>Task to perform</value>
+          </text>
+          <text id="/prenatal_followup/s_today_task/s_task_to_perform:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_today_task/s_task_to_perform:label">
+            <value>What task do you want to perform?</value>
+          </text>
+          <text id="/prenatal_followup/s_today_task/s_task_to_perform/follow_up:label">
+            <value>Followup</value>
+          </text>
+          <text id="/prenatal_followup/s_today_task/s_task_to_perform/close_out:label">
+            <value>Close out</value>
+          </text>
+          <text id="/prenatal_followup/s_intro:label">
+            <value>Introduction</value>
+          </text>
+          <text id="/prenatal_followup/s_intro/s_program:label">
+            <value>Please explain the Pregnant Women Follow up Program</value>
+          </text>
+          <text id="/prenatal_followup/s_ds:label">
+            <value>Danger signs</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/s_danger_signs:label">
+            <value>&lt;i&gt;Please check one by one if the woman has one of the following danger signs &lt;/i&gt;</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/s_danger_signs:hint">
+            <value>Go through each one of them and select all that apply</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_edema:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_edema:label">
+            <value>Edema</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_edema/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_edema/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fever:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fever/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fever/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_headaches:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_headaches:label">
+            <value>Headaches</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_headaches/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_headaches/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_upper_abdominal_pain:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_upper_abdominal_pain:label">
+            <value>Pain in the upper abdomen</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_upper_abdominal_pain/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_upper_abdominal_pain/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_swelling_abdominal_pain:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_swelling_abdominal_pain:label">
+            <value>Swelling or lower abdominal pain</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_swelling_abdominal_pain/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_swelling_abdominal_pain/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fetal_movement:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fetal_movement:label">
+            <value>Absence of fetal movements</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fetal_movement/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fetal_movement/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vertigo:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vertigo:label">
+            <value>Vertigo</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vertigo/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vertigo/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_water_losses:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_water_losses:label">
+            <value>Water break</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_water_losses/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_water_losses/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vaginal_bleeding:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vaginal_bleeding:label">
+            <value>Vaginal bleeding</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vaginal_bleeding/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vaginal_bleeding/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vaginal_discharge:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vaginal_discharge:label">
+            <value>Smelly or abnormal vaginal discharge</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vaginal_discharge/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vaginal_discharge/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_pain_urinating:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_pain_urinating:label">
+            <value>Pain when she urinates</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_pain_urinating/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_pain_urinating/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_extreme_fatigue:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_extreme_fatigue:label">
+            <value>Extreme fatigue</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_extreme_fatigue/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_extreme_fatigue/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fast_breathing:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fast_breathing:label">
+            <value>Difficult or fast breathing</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fast_breathing/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fast_breathing/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_pallor_conjunctiva:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_pallor_conjunctiva:label">
+            <value>Pallor of conjunctiva</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_pallor_conjunctiva/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_pallor_conjunctiva/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_stool_color:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_stool_color:label">
+            <value>Change of stool color</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_stool_color/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_stool_color/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_cold_skin:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_cold_skin:label">
+            <value>Cold skin</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_cold_skin/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_cold_skin/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_convulsions:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_convulsions/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_convulsions/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/advise_mother_danger_signs:label">
+            <value>Advise the mother on identifying the danger signs and making sure that she immediately goes to the health facility if any of the danger signs is identified</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/able_to_continue:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/able_to_continue:label">
+            <value>Is it possible to continue follow up?</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/able_to_continue/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/able_to_continue/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1:label">
+            <value>HOME VISIT</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_visit:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_visit:label">
+            <value>Have you done your first ANC clinic visit?</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_visit/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_visit/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_already_done:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_already_done:label">
+            <value>When was the first ANC Visit done?</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_planned:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_planned:label">
+            <value>Is the first ANC visit sheduled?</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_planned/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_planned/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/n_discuss_anc_date:label">
+            <value>Discuss with the woman to schedule a date for ANC 1</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_date:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_date:label">
+            <value>When is the first ANC visit planned?</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_done:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_done:label">
+            <value>Did The patient go to the Health facility?</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_done/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_done/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc:label">
+            <value>Why was the ANC visit not done?</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/forget:label">
+            <value>Forgotten</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/no_time:label">
+            <value>Lack of tine</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/not_motivated:label">
+            <value>Not motivated</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/no_money:label">
+            <value>Lack of money</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/refusal:label">
+            <value>Refusal</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/end_of_follow_up:label">
+            <value>End of follow up</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/date_not_reached:label">
+            <value>ANC 1 scheduled date has not arrived yet</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/from_care_providers:label">
+            <value>From care providers</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_specify_why_not_anc:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_specify_why_not_anc:label">
+            <value>Specify:</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_next_anc:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_next_anc:label">
+            <value>When is the next ANC visit planned?</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_number:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_number:label">
+            <value>How many ANC visits in total have you attended so far?</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis:label">
+            <value>VAT, FAF, AND ANALYSIS</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_vat:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_vat:label">
+            <value>Did the woman do her VAT doses?</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_vat/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_vat/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_number_vat:jr:constraintMsg">
+            <value>The number should be between 1 and 5</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_number_vat:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_number_vat:label">
+            <value>How many doses of VAT were made?</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_faf:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_faf:label">
+            <value>Is the woman under the supplementation in FAF?</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_faf/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_faf/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_congrats_faf:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_congrats_faf:label">
+            <value>Congratulate the woman</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_advices_faf:label">
+            <value>Counsel about Iron and Folic</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_analysis:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_analysis:label">
+            <value>Did the woman perform her analysis?</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_analysis/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_analysis/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_congrats_analysis:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_congrats_analysis:label">
+            <value>Congratulate the woman</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_counsel_analysis:label">
+            <value>Advice the woman on analysis</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery:label">
+            <value>Referred for delivey</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_pregnancy_book:label">
+            <value>Does the woman have a pregnancy book?</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_pregnancy_book/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_pregnancy_book/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_referred:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_referred:label">
+            <value>Is the woman referred to a Health Facility for delivery?</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_referred/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_referred/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location:label">
+            <value>Where?</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location/cms:label">
+            <value>CMS</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location/sos:label">
+            <value>SOS</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location/chp:label">
+            <value>CHP</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location/private_clinic:label">
+            <value>Private Clinic</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location/chr:label">
+            <value>CHR</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location/chu:label">
+            <value>CHU</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_other_location:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_other_location:label">
+            <value>Specify other:</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan:label">
+            <value>DELIVERY REFERRAL</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_delivery_plan_intro:label">
+            <value>Please start introduction of delivery plan</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_givebirth_1:label">
+            <value>Did you give birth previously?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_givebirth_1/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_givebirth_1/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_where_give_birth_1:label">
+            <value>Where did you give birth?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_where_give_birth_1/home:label">
+            <value>Home</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_where_give_birth_1/health_facility:label">
+            <value>Health Facility</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_congratule:label">
+            <value>Congratulate mother</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_counselling:label">
+            <value>Advice for behavior change ?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_experience:label">
+            <value>How was your experience?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_experience/bad:label">
+            <value>Bad</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_experience/good:label">
+            <value>Good</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_worries:label">
+            <value>Did you fear to deliver at the Health facility?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_worries/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_worries/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_concerns:label">
+            <value>What are the concerns?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_where_to_give_birth:label">
+            <value>Where do you want to give birth ?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_where_to_give_birth/home:label">
+            <value>Home</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_where_to_give_birth/health_facility:label">
+            <value>Health Facility</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_congrats_encourage:label">
+            <value>Congratulate and encourage</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_advices_alert:label">
+            <value>Advice about risks of home delivery</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_transportation:label">
+            <value>What means of transportation will you use to get to this health center?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_transportation/motocycle:label">
+            <value>Motocycle</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_transportation/car:label">
+            <value>Car</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_transportation/horse_cart:label">
+            <value>Horse Cart</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_transportation/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_other_transportation:label">
+            <value>Specify other:</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_costs:label">
+            <value>How much does it cost?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_save_monney:label">
+            <value>How are you going to save money for these expenses?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_going_to_usp:label">
+            <value>When do you think is time to go to USP?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_going_to_usp/contractions:label">
+            <value>Contractions</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_going_to_usp/vaginal_discharge:label">
+            <value>Abnormal vaginal discharge</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_going_to_usp/water_break:label">
+            <value>Water pocket break</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who:label">
+            <value>With whom are you going to USP?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/husband:label">
+            <value>Husband</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/mother:label">
+            <value>Mother</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/father:label">
+            <value>Father</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/son:label">
+            <value>Son</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/daughter:label">
+            <value>Daughter</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/niece:label">
+            <value>Niece</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/nephew:label">
+            <value>Nephew</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/sister:label">
+            <value>Sister</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/brother:label">
+            <value>Brother</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/grand_mother:label">
+            <value>Grand-Mother</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/grand_father:label">
+            <value>Grand-Father</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/alone:label">
+            <value>Alone</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper:label">
+            <value>Who will help you in the house?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/husband:label">
+            <value>Husband</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/mother:label">
+            <value>Mother</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/father:label">
+            <value>Father</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/son:label">
+            <value>Son</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/daughter:label">
+            <value>Daughter</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/niece:label">
+            <value>Niece</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/nephew:label">
+            <value>Nephew</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/sister:label">
+            <value>Sister</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/brother:label">
+            <value>Brother</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/grand_mother:label">
+            <value>Grand-Mother</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/grand_father:label">
+            <value>Grand-Father</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_materials:label">
+            <value>These are the things you should plan to bring to the health facility:
+
+- Carnet bébé-maman
+- Argent
+- Eau de javel
+- Détol
+- Pain de savon
+- Omo
+- Pomade vaseline
+- Pagnes/morceaux de pagne en coton
+- Habils de nouveau-né
+- Sceau, pot, basine
+- Autre</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out:label">
+            <value>Close Out</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out:label">
+            <value>Why do you want to close this follow up?</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out/delivery:label">
+            <value>Delivery</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out/woman_dead:label">
+            <value>Woman dead</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out/abortion:label">
+            <value>Abortion</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out/miscarriage:label">
+            <value>Miscarriage</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out_other:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out_other:label">
+            <value>Specify other:</value>
+          </text>
+          <text id="/prenatal_followup/group_summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_details:label">
+            <value>Patient Details&lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /prenatal_followup/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /prenatal_followup/patient_sex_en "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /prenatal_followup/patient_age_display "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_signs_symptoms:label">
+            <value>Signs and Symptoms&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/mother_danger_signs:label">
+            <value>Danger signs</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_edema:label">
+            <value>Edema</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_headaches:label">
+            <value>Headaches</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_upper_abdominal_pain:label">
+            <value>Pain in the upper abdomen</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_swelling_abdominal_pain:label">
+            <value>Swelling or pain in the lower abdomen</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_fetal_movement:label">
+            <value>Fetal movements become absent</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_vertigo:label">
+            <value>Vertigo</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_water_losses:label">
+            <value>Water losses
+Fear of heights</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_vaginal_bleeding:label">
+            <value>Vaginal bleeding</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_vaginal_discharge:label">
+            <value>Smelly or abnormal vaginal discharge</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_pain_urinating:label">
+            <value>Pain when urinating
+Malodorous or abnormal vaginal discharge</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_extreme_fatigue:label">
+            <value>Extreme fatigue</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_fast_breathing:label">
+            <value>Breathing difficult or fast</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_pallor_conjunctiva:label">
+            <value>Pallor of conjunctiva</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_stool_color:label">
+            <value>Changing stool color</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_cold_skin:label">
+            <value>Cold skin</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/mother_no_danger_signs:label">
+            <value>No danger signs</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_patient_done_VAT:label">
+            <value><output value=" /prenatal_followup/patient_name "/> has done VAT</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_patient_done_FAF:label">
+            <value><output value=" /prenatal_followup/patient_name "/> has done FAF</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_patient_done_ANALYSIS:label">
+            <value><output value=" /prenatal_followup/patient_name "/> has done the analysis</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_patient_not_done_VAT:label">
+            <value><output value=" /prenatal_followup/patient_name "/> has not done VAT</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_patient_not_done_FAF:label">
+            <value><output value=" /prenatal_followup/patient_name "/> has not done FAF</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_patient_not_done_ANALYSIS:label">
+            <value><output value=" /prenatal_followup/patient_name "/> has not done the analysis</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_referral/r_refer_to_usp:label">
+            <value>Refer to USP&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_referral/mother_referral_note_1:label">
+            <value>&lt;b&gt;Refer <output value=" /prenatal_followup/patient_name "/> to USP for danger signs&lt;/b&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_referral/mother_referral_note_2:label">
+            <value>&lt;b&gt;Refer <output value=" /prenatal_followup/patient_name "/> to USP for missed ANC Visits&lt;/b&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_referral/r_refer_for_VAT:label">
+            <value>&amp;lt;b&amp;gt; Refer $ {patient_name} to the USP for VAT &amp;lt;/b&amp;gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_referral/r_refer_for_FAF:label">
+            <value>&amp;lt;b&amp;gt; Refer $ {patient_name} to USP for FAF supplementation &amp;lt;/b&amp;gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/s_have_you_refer_child:label">
+            <value>Did you refer the patient?</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/s_have_you_refer_child/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/s_have_you_refer_child/no:label">
+            <value>No</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/s_why_not:label">
+            <value>Why?</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_instructions/r_special_instructions:label">
+            <value>Special Instructions&lt;i class = "fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_instructions/last_followup_instruction:label">
+            <value>&lt;b&gt; Inform the woman that the follow-up visits are now ending. &lt;/b&gt; &lt;/br&gt; &lt;b&gt; Also inform the woman that if she notices a minor problem, she should contact you IMMEDIATELY. &lt;/b&gt; &lt;/br&gt; &lt;b&gt; Submitting this form will close the follow-up of the woman after giving birth. There will be no more follow-up reminders for the woman. &lt;/B&gt; &lt;/br&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_instructions/r_car_advices:label">
+            <value>Recognize signs for which you need to contact the ASC or go to USP immediately</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_instructions/close_out_note:label">
+            <value>&lt;b&gt;Clicking submit will close out prenatal follow-ups for the mother, <output value=" /prenatal_followup/patient_name "/>. No more follow up reminders will appear for her.&lt;/b&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_instructions/close_out_note_2:label">
+            <value>&lt;b&gt; Submitting this form will close prenatal follow-up for <output value=" /prenatal_followup/patient_name "/> and begin postnatal follow-up. Please fill out the Childbirth Form and begin monitoring the postnatal followup &lt;/b&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_followup/r_next_visit:label">
+            <value>Next Visit&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_followup/summary_reschedule_follow_up:label">
+            <value>Follow up reschedule to: <output value=" /prenatal_followup/reschedule_task/s_date_to_reschedule "/></value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_followup/summary_healthy_follow_up:label">
+            <value>Follow up: <output value=" /prenatal_followup/next_anc_visit_follow_up_date "/></value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_followup/summary_referral_follow_up:label">
+            <value>Follow up within 24 hours</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_number:jr:constraintMsg">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/prenatal_followup/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/prenatal_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/prenatal_followup/inputs/source_id:label">
+            <value>Source de l'ID</value>
+          </text>
+          <text id="/prenatal_followup/inputs/t_follow_up_count:label">
+            <value>Nombre de suivi</value>
+          </text>
+          <text id="/prenatal_followup/inputs/t_close_out:label">
+            <value>Clôture suivi de la mère</value>
+          </text>
+          <text id="/prenatal_followup/inputs/t_week_since_lmp:label">
+            <value>Age de la grossesse</value>
+          </text>
+          <text id="/prenatal_followup/inputs/t_delivery_date:label">
+            <value>Delivery date</value>
+          </text>
+          <text id="/prenatal_followup/inputs/contact/_id:label">
+            <value>Quel est le nom du patient?</value>
+          </text>
+          <text id="/prenatal_followup/inputs/contact/_id:hint">
+            <value>Séléctionner une personne dans la liste</value>
+          </text>
+          <text id="/prenatal_followup/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/prenatal_followup/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/prenatal_followup/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/prenatal_followup/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/prenatal_followup/patient_age_in_years:label">
+            <value>Années</value>
+          </text>
+          <text id="/prenatal_followup/patient_age_in_months:label">
+            <value>Mois</value>
+          </text>
+          <text id="/prenatal_followup/patient_age_in_days:label">
+            <value>Jours</value>
+          </text>
+          <text id="/prenatal_followup/patient_id:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/patient_id:label">
+            <value>Identifiant du patient</value>
+          </text>
+          <text id="/prenatal_followup/patient_name:label">
+            <value>Nom du patient</value>
+          </text>
+          <text id="/prenatal_followup/patient_sex:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/prenatal_followup/patient_sex_en:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/prenatal_followup/patient_sex_fr:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/prenatal_followup/visited_contact_uuid:label">
+            <value>Identifiant de la famille</value>
+          </text>
+          <text id="/prenatal_followup/delivery_date:label">
+            <value>Date d'accouchement</value>
+          </text>
+          <text id="/prenatal_followup/reschedule_task:label">
+            <value>Reprogrammer ce suivi</value>
+          </text>
+          <text id="/prenatal_followup/reschedule_task/is_woman_available:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/reschedule_task/is_woman_available:label">
+            <value>La femme est-elle disponible?</value>
+          </text>
+          <text id="/prenatal_followup/reschedule_task/is_woman_available/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/reschedule_task/is_woman_available/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/reschedule_task/s_date_to_reschedule:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/reschedule_task/s_date_to_reschedule:label">
+            <value>Pour quel jour voulez-vous reprogrammer la tâche?</value>
+          </text>
+          <text id="/prenatal_followup/s_today_task:label">
+            <value>Tâches d'aujourd'hui</value>
+          </text>
+          <text id="/prenatal_followup/s_today_task/s_task_to_perform:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_today_task/s_task_to_perform:label">
+            <value>Quelle est la tâche à effectuer?</value>
+          </text>
+          <text id="/prenatal_followup/s_today_task/s_task_to_perform/follow_up:label">
+            <value>Suivi</value>
+          </text>
+          <text id="/prenatal_followup/s_today_task/s_task_to_perform/close_out:label">
+            <value>Clôture</value>
+          </text>
+          <text id="/prenatal_followup/s_intro:label">
+            <value>Introduction</value>
+          </text>
+          <text id="/prenatal_followup/s_intro/s_program:label">
+            <value>Expliquer le programme de suivi de la femme enceinte</value>
+          </text>
+          <text id="/prenatal_followup/s_ds:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/s_danger_signs:label">
+            <value>&lt;i&gt;Merci de demander si la femme présente un ou plusieurs de ces signes de danger&lt;/i&gt;</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/s_danger_signs:hint">
+            <value>Vérifier un après un et sélectionner tout ce qui s'applique</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_edema:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_edema:label">
+            <value>Œdèmes des membres ou du visage</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_edema/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_edema/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fever:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fever:label">
+            <value>Fièvre</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fever/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fever/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_headaches:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_headaches:label">
+            <value>Maux de tête</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_headaches/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_headaches/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_upper_abdominal_pain:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_upper_abdominal_pain:label">
+            <value>Douleur de l'abdomen supérieur</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_upper_abdominal_pain/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_upper_abdominal_pain/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_swelling_abdominal_pain:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_swelling_abdominal_pain:label">
+            <value>Gonflement ou douleur du bas ventre</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_swelling_abdominal_pain/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_swelling_abdominal_pain/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fetal_movement:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fetal_movement:label">
+            <value>Mouvements du fœtus deviennent absents</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fetal_movement/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fetal_movement/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vertigo:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vertigo:label">
+            <value>Vertige</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vertigo/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vertigo/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_water_losses:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_water_losses:label">
+            <value>Pertes d'eau</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_water_losses/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_water_losses/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vaginal_bleeding:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vaginal_bleeding:label">
+            <value>Saignements vaginaux</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vaginal_bleeding/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vaginal_bleeding/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vaginal_discharge:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vaginal_discharge:label">
+            <value>Pertes vaginales malodorantes ou anormales</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vaginal_discharge/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_vaginal_discharge/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_pain_urinating:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_pain_urinating:label">
+            <value>Douleur quand elle urine</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_pain_urinating/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_pain_urinating/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_extreme_fatigue:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_extreme_fatigue:label">
+            <value>Fatigue extrême</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_extreme_fatigue/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_extreme_fatigue/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fast_breathing:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fast_breathing:label">
+            <value>Respiration difficile ou rapide</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fast_breathing/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_fast_breathing/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_pallor_conjunctiva:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_pallor_conjunctiva:label">
+            <value>Pâleur des conjonctives</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_pallor_conjunctiva/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_pallor_conjunctiva/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_stool_color:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_stool_color:label">
+            <value>Changement de la couleur des selles</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_stool_color/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_stool_color/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_cold_skin:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_cold_skin:label">
+            <value>Peau froide</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_cold_skin/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_cold_skin/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_convulsions:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_convulsions/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/danger_signs_convulsions/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/advise_mother_danger_signs:label">
+            <value>Conseillez à la mère sur l'identification des signes de danger et de veiller à ce qu'elle se rende immédiatement au centre de santé si elle identifie l'un des signes de danger</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/able_to_continue:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/able_to_continue:label">
+            <value>Est-il possible de continuer le suivi?</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/able_to_continue/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_ds/able_to_continue/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1:label">
+            <value>VAD</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_visit:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_visit:label">
+            <value>Est-ce que la CPN 1 est effectuée?</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_visit/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_visit/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_already_done:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_already_done:label">
+            <value>Quand est-ce que la CPN 1 a été effectuée?</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_planned:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_planned:label">
+            <value>Est-ce que la CPN 1 est déjà programmée ?</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_planned/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_planned/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/n_discuss_anc_date:label">
+            <value>Discute avec la femme pour programmer une date pour la CPN 1</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_date:label">
+            <value>Quelle est la date programmée pour la CPN 1?</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_done:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_done:label">
+            <value>Est-ce que la femme est allée à la CPN ?</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_done/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_1_done/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc:label">
+            <value>Pourquoi la CPN n'a-t-elle pas été réalisée?</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/forget:label">
+            <value>Oubli</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/no_time:label">
+            <value>manque de temps</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/not_motivated:label">
+            <value>Pas motivée</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/no_money:label">
+            <value>Manque d'argent</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/refusal:label">
+            <value>Refus</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/end_of_follow_up:label">
+            <value>Fin de suivi</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/date_not_reached:label">
+            <value>La date programmée de la CPN 1 n'est pas encore arrivée</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/from_care_providers:label">
+            <value>Emanant des prestataires</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_why_not_anc/other:label">
+            <value>Emanant des prestataires</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_specify_why_not_anc:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_specify_why_not_anc:label">
+            <value>Spécifier:</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_next_anc:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_next_anc:label">
+            <value>Quelle est la date programmée pour la prochaine CPN?</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_number:jr:constraintMsg">
+            <value>Le nombre doit être compris entre 0 et 8</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_number:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_vad_1/s_anc_number:label">
+            <value>Quel est le nombre de CPN effectuées?</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis:label">
+            <value>VAT, FAF et ANALYSES</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_vat:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_vat:label">
+            <value>Est-ce que la femme a fait ses doses de VAT?</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_vat/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_vat/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_number_vat:jr:constraintMsg">
+            <value>Le nombre doit être compris entre 1 et 5</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_number_vat:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_number_vat:label">
+            <value>Combien de doses de VAT ont été faites?</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_faf:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_faf:label">
+            <value>Est-ce que la femme est sous la supplémentation en FAF?</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_faf/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_faf/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_congrats_faf:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_congrats_faf:label">
+            <value>Féliciter la femme</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_advices_faf:label">
+            <value>Conseiller la femme sur l'importance du fer et de l'acide folique</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_analysis:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_analysis:label">
+            <value>Est-ce que la femme a fait ses analyses?</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_analysis/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_analysis/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_congrats_analysis:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_congrats_analysis:label">
+            <value>Féliciter la femme</value>
+          </text>
+          <text id="/prenatal_followup/s_vat_faf_analysis/s_counsel_analysis:label">
+            <value>Conseiller la femme sur l'importance des analyses</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery:label">
+            <value>Référence pour Accouchement</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_pregnancy_book:label">
+            <value>Est-ce que la femme a un carnet de santé ?</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_pregnancy_book/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_pregnancy_book/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_referred:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_referred:label">
+            <value>Est-ce que la femme a été référée à un autre centre de santé pour accoucher?</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_referred/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_referred/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location:label">
+            <value>Quel est le lieu de référence?</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location/cms:label">
+            <value>CMS</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location/sos:label">
+            <value>SOS</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location/chp:label">
+            <value>CHP</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location/private_clinic:label">
+            <value>Clinique Privée</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location/chr:label">
+            <value>CHR</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location/chu:label">
+            <value>CHU</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_location/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_other_location:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_referred_delivery/s_other_location:label">
+            <value>Spécifier:</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan:label">
+            <value>Plan d'Accouchement</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_delivery_plan_intro:label">
+            <value>Merci d'introduire le plan d'accouchement</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_givebirth_1:label">
+            <value>Avez-vous déjà accouché une fois?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_givebirth_1/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_givebirth_1/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_where_give_birth_1:label">
+            <value>Où est-ce que vous aviez accouché?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_where_give_birth_1/home:label">
+            <value>Domicile</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_where_give_birth_1/health_facility:label">
+            <value>Centre de Santé</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_congratule:label">
+            <value>Féliciter</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_counselling:label">
+            <value>Conseiller pour un changement de Comportement</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_experience:label">
+            <value>Comment était votre expérience?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_experience/bad:label">
+            <value>Mauvaise</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_experience/good:label">
+            <value>Bonne</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_worries:label">
+            <value>Est-ce que vous avez des inquiétudes sur le fait d'accoucher dans un centre de santé?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_worries/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_worries/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_concerns:label">
+            <value>Quelles sont ces inquiétudes?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_where_to_give_birth:label">
+            <value>Où voulez-vous accoucher?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_where_to_give_birth/home:label">
+            <value>Domicile</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_where_to_give_birth/health_facility:label">
+            <value>Centre de Santé</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_congrats_encourage:label">
+            <value>Féliciter et encourager la femme à accoucher à l'USP</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_advices_alert:label">
+            <value>Conseiller et dire les conséquences d'une telle décision</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_transportation:label">
+            <value>Quel moyen de transport allez-vous utiliser pour arriver à ce centre de santé?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_transportation/motocycle:label">
+            <value>Moto</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_transportation/car:label">
+            <value>Voiture</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_transportation/horse_cart:label">
+            <value>Charette</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_transportation/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_other_transportation:label">
+            <value>Spécifier:</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_costs:label">
+            <value>Combien cela peut vous coûter?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_save_monney:label">
+            <value>Comment pensez-vous economiser dès maintenant pour ces dépenses?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_going_to_usp:label">
+            <value>Quand est-ce que vous pensez aller au centre de santé pour accoucher?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_going_to_usp/contractions:label">
+            <value>Contractions</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_going_to_usp/vaginal_discharge:label">
+            <value>Perte vaginale anormale</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_going_to_usp/water_break:label">
+            <value>Rupture de la poche des eaux</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who:label">
+            <value>Avec qui irez-vous le jour d'accouchement pour vous soutenir?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/husband:label">
+            <value>Epoux</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/mother:label">
+            <value>Mère</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/father:label">
+            <value>Père</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/son:label">
+            <value>Fils</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/daughter:label">
+            <value>Fille</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/niece:label">
+            <value>Nièce</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/nephew:label">
+            <value>Neveu</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/sister:label">
+            <value>Sœur</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/brother:label">
+            <value>Frère</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/grand_mother:label">
+            <value>Grand-mère</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/grand_father:label">
+            <value>Grand-père</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/alone:label">
+            <value>Seule</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_with_who/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper:label">
+            <value>Qui va vous aider à prendre soin de la maison et les autres enfants pendant votre absence?</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/husband:label">
+            <value>Epoux</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/mother:label">
+            <value>Mère</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/father:label">
+            <value>Père</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/son:label">
+            <value>Fils</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/daughter:label">
+            <value>Fille</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/niece:label">
+            <value>Nièce</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/nephew:label">
+            <value>Neveu</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/sister:label">
+            <value>Sœur</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/brother:label">
+            <value>Frère</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/grand_mother:label">
+            <value>Grand-mère</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/grand_father:label">
+            <value>Grand-père</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_helper/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/prenatal_followup/s_delivery_plan/s_materials:label">
+            <value>Ce que vous devez prévoir d'apporter au centre de santé:
+- Carnet bébé-maman
+- Argent
+- Eau de javel
+- Détol
+- Pain de savon
+- Omo
+- Pomade vaseline
+- Pagnes/morceaux de pagne en coton
+- Habils de nouveau-né
+- Sceau, pot, basine
+- Autre</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out:label">
+            <value>Clôture</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out:label">
+            <value>Pourquoi voulez-vous clôre ce suivi?</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out/delivery:label">
+            <value>Accouchement</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out/woman_dead:label">
+            <value>Femme décédée</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out/abortion:label">
+            <value>Avortement</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out/miscarriage:label">
+            <value>Fausse Couche</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out_other:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/prenatal_followup/s_close_out/s_why_close_out_other:label">
+            <value>Spécifier:</value>
+          </text>
+          <text id="/prenatal_followup/group_summary:label">
+            <value>SUMMARY</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_details:label">
+            <value>Détails du Patient</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /prenatal_followup/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /prenatal_followup/patient_sex_fr "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /prenatal_followup/patient_age_display_fr "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_signs_symptoms:label">
+            <value>Signes &amp; Symptômes&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/mother_danger_signs:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_edema:label">
+            <value>Œdèmes des membres ou du visage</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_fever:label">
+            <value>Fièvre</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_headaches:label">
+            <value>Maux de tète persistants</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_upper_abdominal_pain:label">
+            <value>Douleur de l'abdomen supérieur</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_swelling_abdominal_pain:label">
+            <value>Gonflement ou douleur du bas ventre</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_fetal_movement:label">
+            <value>Mouvements du fœtus deviennent absents</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_vertigo:label">
+            <value>Vertige</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_water_losses:label">
+            <value>Pertes d'eau</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_vaginal_bleeding:label">
+            <value>Saignements vaginaux</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_vaginal_discharge:label">
+            <value>Pertes vaginales malodorantes ou anormales</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_pain_urinating:label">
+            <value>Douleur quand elle urine</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_extreme_fatigue:label">
+            <value>Fatigue extrême</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_fast_breathing:label">
+            <value>Respiration difficile ou rapide</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_pallor_conjunctiva:label">
+            <value>Pâleur des conjonctives</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_stool_color:label">
+            <value>Changement de la couleur des selles</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_cold_skin:label">
+            <value>Peau froide</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_danger_signs_convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/mother_no_danger_signs:label">
+            <value>Absence de Signes de danger</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_patient_done_VAT:label">
+            <value><output value=" /prenatal_followup/patient_name "/> a fait ses dosages VAT</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_patient_done_FAF:label">
+            <value><output value=" /prenatal_followup/patient_name "/> est sous la supplementation en FAF</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_patient_done_ANALYSIS:label">
+            <value><output value=" /prenatal_followup/patient_name "/> a fait ses analyses</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_patient_not_done_VAT:label">
+            <value><output value=" /prenatal_followup/patient_name "/> n'a pas fait ses dosages VAT</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_patient_not_done_FAF:label">
+            <value><output value=" /prenatal_followup/patient_name "/> n'est pas sous la supplementation en FAF</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_signs/r_patient_not_done_ANALYSIS:label">
+            <value><output value=" /prenatal_followup/patient_name "/> n'a pas fait ses analyses</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_referral/r_refer_to_usp:label">
+            <value>Référence à l'USP&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_referral/mother_referral_note_1:label">
+            <value>&lt;b&gt;Referer <output value=" /prenatal_followup/patient_name "/> à l'USP pour signes de danger ci-dessus&lt;/b&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_referral/mother_referral_note_2:label">
+            <value>&lt;b&gt;Referer <output value=" /prenatal_followup/patient_name "/> à l'USP pour CPN manqués&lt;/b&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_referral/r_refer_for_VAT:label">
+            <value>&lt;b&gt;Referer <output value=" /prenatal_followup/patient_name "/> à l'USP pour VAT&lt;/b&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_referral/r_refer_for_FAF:label">
+            <value>&lt;b&gt;Referer <output value=" /prenatal_followup/patient_name "/> à l'USP pour Suplementation en FAF&lt;/b&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/s_have_you_refer_child:label">
+            <value>Est-ce que vous avez référé la femme ?</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/s_have_you_refer_child/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/s_have_you_refer_child/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/s_why_not:label">
+            <value>Pour quelle raison?</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_instructions/r_special_instructions:label">
+            <value>Instructions spéciales&lt;i class = "fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_instructions/last_followup_instruction:label">
+            <value>&lt;b&gt;Informer la femme que aujourd'hui prend fin les visites de suivi.&lt;/b&gt;&lt;/br&gt;&lt;b&gt;Informer également la femme que si elle constate un problème minime que soit qu'elle vous contacte IMMÉDIATEMENT.&lt;/b&gt;&lt;/br&gt;&lt;b&gt;Soumettre ce formulaire va fermer le suivi de la femme après accouchement. Il n'y aura plus de rappels de suivi pour la femme.&lt;/b&gt;&lt;/br&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_instructions/r_car_advices:label">
+            <value>Reconnaître les signes pour lesquels il faut contacter l'ASC ou aller à l'USP immédiatement</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_instructions/close_out_note:label">
+            <value>&lt;b&gt;Soumettre ce formulaire va fermer le suivi prenatal pour <output value=" /prenatal_followup/patient_name "/>. Y'aura plus de rappels de suivi pour elle&lt;b&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_instructions/close_out_note_2:label">
+            <value>&lt;b&gt;Soumettre ce formulaire va fermer le suivi prenatal pour <output value=" /prenatal_followup/patient_name "/> et commencer le suivi postnatal. Merci de renseigner le formulaire Accouchement et commencer le suivi de la femme après accouchement&lt;b&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_followup/r_next_visit:label">
+            <value>Prochaine visite&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_followup/summary_reschedule_follow_up:label">
+            <value>Suivi reprogrammé au: <output value=" /prenatal_followup/reschedule_task/s_date_to_reschedule "/></value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_followup/summary_healthy_follow_up:label">
+            <value>Suivi : <output value=" /prenatal_followup/next_anc_visit_follow_up_date "/></value>
+          </text>
+          <text id="/prenatal_followup/group_summary/r_followup/summary_referral_follow_up:label">
+            <value>Suivi dans 24 heures</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <prenatal_followup id="prenatal_followup" prefix="J1!prenatal_followup!" delimiter="#" version="2024-07-12  10-19">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_follow_up_count/>
+            <t_close_out/>
+            <t_week_since_lmp/>
+            <t_delivery_date/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent/>
+            </contact>
+          </inputs>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_age_display_fr/>
+          <patient_id/>
+          <patient_name/>
+          <patient_sex/>
+          <patient_sex_en/>
+          <patient_sex_fr/>
+          <visited_contact_uuid/>
+          <delivery_date/>
+          <display_delivery_date/>
+          <follow_up_count/>
+          <follow_up_count_label_fr/>
+          <has_danger_signs/>
+          <dif_anc_1_date/>
+          <refer_vat_faf/>
+          <week_since_lmp/>
+          <referral/>
+          <next_anc_visit_follow_up_date/>
+          <close_out/>
+          <reschedule_task>
+            <is_woman_available/>
+            <s_date_to_reschedule/>
+          </reschedule_task>
+          <s_today_task>
+            <s_task_to_perform/>
+          </s_today_task>
+          <s_intro>
+            <s_program/>
+          </s_intro>
+          <s_ds>
+            <s_danger_signs/>
+            <danger_signs_edema/>
+            <danger_signs_fever/>
+            <danger_signs_headaches/>
+            <danger_signs_upper_abdominal_pain/>
+            <danger_signs_swelling_abdominal_pain/>
+            <danger_signs_fetal_movement/>
+            <danger_signs_vertigo/>
+            <danger_signs_water_losses/>
+            <danger_signs_vaginal_bleeding/>
+            <danger_signs_vaginal_discharge/>
+            <danger_signs_pain_urinating/>
+            <danger_signs_extreme_fatigue/>
+            <danger_signs_fast_breathing/>
+            <danger_signs_pallor_conjunctiva/>
+            <danger_signs_stool_color/>
+            <danger_signs_cold_skin/>
+            <danger_signs_convulsions/>
+            <advise_mother_danger_signs/>
+            <able_to_continue/>
+          </s_ds>
+          <s_vad_1>
+            <s_anc_1_visit/>
+            <s_anc_1_already_done/>
+            <s_anc_1_planned/>
+            <n_discuss_anc_date/>
+            <s_anc_1_date/>
+            <s_anc_1_done/>
+            <s_why_not_anc/>
+            <s_specify_why_not_anc/>
+            <s_anc_next_anc/>
+            <s_anc_number/>
+          </s_vad_1>
+          <s_vat_faf_analysis>
+            <s_vat/>
+            <s_number_vat/>
+            <s_faf/>
+            <s_congrats_faf/>
+            <s_advices_faf/>
+            <s_analysis/>
+            <s_congrats_analysis/>
+            <s_counsel_analysis/>
+          </s_vat_faf_analysis>
+          <s_referred_delivery>
+            <s_pregnancy_book/>
+            <s_referred/>
+            <s_location/>
+            <s_other_location/>
+          </s_referred_delivery>
+          <s_delivery_plan>
+            <s_delivery_plan_intro/>
+            <s_givebirth_1/>
+            <s_where_give_birth_1/>
+            <s_congratule/>
+            <s_counselling/>
+            <s_experience/>
+            <s_worries/>
+            <s_concerns/>
+            <s_where_to_give_birth/>
+            <s_congrats_encourage/>
+            <s_advices_alert/>
+            <s_transportation/>
+            <s_other_transportation/>
+            <s_costs/>
+            <s_save_monney/>
+            <s_going_to_usp/>
+            <s_with_who/>
+            <s_helper/>
+            <s_materials/>
+          </s_delivery_plan>
+          <s_close_out>
+            <s_why_close_out/>
+            <s_why_close_out_other/>
+          </s_close_out>
+          <group_summary>
+            <r_details/>
+            <r_patient_info/>
+            <r_signs>
+              <r_signs_symptoms/>
+              <mother_danger_signs/>
+              <r_danger_signs_edema/>
+              <r_danger_signs_fever/>
+              <r_danger_signs_headaches/>
+              <r_danger_signs_upper_abdominal_pain/>
+              <r_danger_signs_swelling_abdominal_pain/>
+              <r_danger_signs_fetal_movement/>
+              <r_danger_signs_vertigo/>
+              <r_danger_signs_water_losses/>
+              <r_danger_signs_vaginal_bleeding/>
+              <r_danger_signs_vaginal_discharge/>
+              <r_danger_signs_pain_urinating/>
+              <r_danger_signs_extreme_fatigue/>
+              <r_danger_signs_fast_breathing/>
+              <r_danger_signs_pallor_conjunctiva/>
+              <r_danger_signs_stool_color/>
+              <r_danger_signs_cold_skin/>
+              <r_danger_signs_convulsions/>
+              <mother_no_danger_signs/>
+              <r_patient_done_VAT/>
+              <r_patient_done_FAF/>
+              <r_patient_done_ANALYSIS/>
+              <r_patient_not_done_VAT/>
+              <r_patient_not_done_FAF/>
+              <r_patient_not_done_ANALYSIS/>
+            </r_signs>
+            <r_referral>
+              <r_refer_to_usp/>
+              <mother_referral_note_1/>
+              <mother_referral_note_2/>
+              <r_refer_for_VAT/>
+              <r_refer_for_FAF/>
+            </r_referral>
+            <s_have_you_refer_child/>
+            <s_why_not/>
+            <r_instructions>
+              <r_special_instructions/>
+              <last_followup_instruction/>
+              <r_car_advices/>
+              <close_out_note/>
+              <close_out_note_2/>
+            </r_instructions>
+            <r_followup>
+              <r_next_visit/>
+              <summary_reschedule_follow_up/>
+              <summary_healthy_follow_up/>
+              <summary_referral_follow_up/>
+            </r_followup>
+          </group_summary>
+          <meta>
+            <instanceID/>
+          </meta>
+        </prenatal_followup>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/prenatal_followup/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/prenatal_followup/inputs/source" type="string"/>
+      <bind nodeset="/prenatal_followup/inputs/source_id" type="string"/>
+      <bind nodeset="/prenatal_followup/inputs/t_follow_up_count" type="string"/>
+      <bind nodeset="/prenatal_followup/inputs/t_close_out" type="string"/>
+      <bind nodeset="/prenatal_followup/inputs/t_week_since_lmp" type="string"/>
+      <bind nodeset="/prenatal_followup/inputs/t_delivery_date" type="string"/>
+      <bind nodeset="/prenatal_followup/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/prenatal_followup/inputs/contact/name" type="string"/>
+      <bind nodeset="/prenatal_followup/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/prenatal_followup/inputs/contact/sex" type="string"/>
+      <bind nodeset="/prenatal_followup/inputs/contact/parent" type="string"/>
+      <bind nodeset="/prenatal_followup/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /prenatal_followup/inputs/contact/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/prenatal_followup/patient_age_in_months" type="string" calculate="difference-in-months(  /prenatal_followup/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/prenatal_followup/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /prenatal_followup/inputs/contact/date_of_birth ) )"/>
+      <bind nodeset="/prenatal_followup/patient_age_display" type="string" calculate="concat(concat( /prenatal_followup/patient_age_in_years , if( /prenatal_followup/patient_age_in_years =1,' year and ',' years and ')),concat( /prenatal_followup/patient_age_in_months  mod 12, if(( /prenatal_followup/patient_age_in_months  mod 12)=1,' month old',' months old')))"/>
+      <bind nodeset="/prenatal_followup/patient_age_display_fr" type="string" calculate="concat(concat( /prenatal_followup/patient_age_in_years , if( /prenatal_followup/patient_age_in_years =1,' an et ',' ans et ')),concat( /prenatal_followup/patient_age_in_months  mod 12, if(( /prenatal_followup/patient_age_in_months  mod 12)=1,' mois',' mois')))"/>
+      <bind nodeset="/prenatal_followup/patient_id" type="string" required="true()" calculate="../inputs/contact/_id" jr:requiredMsg="jr:itext('/prenatal_followup/patient_id:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/prenatal_followup/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/prenatal_followup/patient_sex_en" type="string" calculate="if( /prenatal_followup/patient_sex  = 'male' or  /prenatal_followup/patient_sex  = 'homme' or  /prenatal_followup/patient_sex  = 'Homme', 'Male', if( /prenatal_followup/patient_sex  = 'female' or  /prenatal_followup/patient_sex  = 'femme' or  /prenatal_followup/patient_sex  = 'Femme', 'Female', ''))"/>
+      <bind nodeset="/prenatal_followup/patient_sex_fr" type="string" calculate="if( /prenatal_followup/patient_sex  = 'male' or  /prenatal_followup/patient_sex  = 'homme' or  /prenatal_followup/patient_sex  = 'Homme', 'Homme', if( /prenatal_followup/patient_sex  = 'female' or  /prenatal_followup/patient_sex  = 'femme' or  /prenatal_followup/patient_sex  = 'Femme', 'Femme', ''))"/>
+      <bind nodeset="/prenatal_followup/visited_contact_uuid" type="string" required="true()" calculate="../inputs/contact/parent"/>
+      <bind nodeset="/prenatal_followup/delivery_date" type="string" calculate="concat(../inputs/t_delivery_date,'')"/>
+      <bind nodeset="/prenatal_followup/display_delivery_date" type="string" calculate="format-date-time( /prenatal_followup/delivery_date , &quot;%Y-%n-%e&quot;)"/>
+      <bind nodeset="/prenatal_followup/follow_up_count" type="string" calculate="number(../inputs/t_follow_up_count)"/>
+      <bind nodeset="/prenatal_followup/follow_up_count_label_fr" type="string" calculate="if( /prenatal_followup/follow_up_count  = 1, &quot;Suivi 48 Heures&quot;, if( /prenatal_followup/follow_up_count  = 2, &quot;Suivi 5 jours&quot;, if( /prenatal_followup/follow_up_count  = 3, &quot;Suivi 12 jours&quot;, if( /prenatal_followup/follow_up_count  = 4, &quot;Suivi 19 jours&quot;, if( /prenatal_followup/follow_up_count  = 5, &quot;Suivi 26 jours&quot;, if( /prenatal_followup/follow_up_count  = 6, &quot;Suivi 33 jours&quot;, if( /prenatal_followup/follow_up_count  = 7, &quot;Suivi 40 jours&quot;, if( /prenatal_followup/follow_up_count  = 8, &quot;Suivi 48 jours&quot;, &quot;&quot;))))))))"/>
+      <bind nodeset="/prenatal_followup/has_danger_signs" type="string" calculate="if( /prenatal_followup/s_ds/danger_signs_edema  = 'yes' or  /prenatal_followup/s_ds/danger_signs_fever  = 'yes' or  /prenatal_followup/s_ds/danger_signs_headaches  = 'yes' or  /prenatal_followup/s_ds/danger_signs_upper_abdominal_pain  = 'yes' or  /prenatal_followup/s_ds/danger_signs_swelling_abdominal_pain  = 'yes' or  /prenatal_followup/s_ds/danger_signs_fetal_movement  = 'yes' or  /prenatal_followup/s_ds/danger_signs_vertigo  = 'yes' or  /prenatal_followup/s_ds/danger_signs_water_losses  = 'yes' or  /prenatal_followup/s_ds/danger_signs_vaginal_bleeding  = 'yes' or  /prenatal_followup/s_ds/danger_signs_vaginal_discharge  = 'yes' or  /prenatal_followup/s_ds/danger_signs_pain_urinating  = 'yes' or  /prenatal_followup/s_ds/danger_signs_extreme_fatigue  = 'yes' or  /prenatal_followup/s_ds/danger_signs_fast_breathing  = 'yes' or  /prenatal_followup/s_ds/danger_signs_pallor_conjunctiva  = 'yes' or  /prenatal_followup/s_ds/danger_signs_stool_color  = 'yes' or  /prenatal_followup/s_ds/danger_signs_cold_skin  = 'yes' or  /prenatal_followup/s_ds/danger_signs_convulsions  = 'yes','true','false')"/>
+      <bind nodeset="/prenatal_followup/dif_anc_1_date" type="string" calculate="floor(decimal-date-time( if( /prenatal_followup/follow_up_count &gt;1, /prenatal_followup/s_vad_1/s_anc_next_anc ,coalesce( /prenatal_followup/s_vad_1/s_anc_1_date ,  /prenatal_followup/s_vad_1/s_anc_next_anc ))) - decimal-date-time(today()))"/>
+      <bind nodeset="/prenatal_followup/refer_vat_faf" type="string" calculate=" /prenatal_followup/dif_anc_1_date "/>
+      <bind nodeset="/prenatal_followup/week_since_lmp" type="string" calculate="number( /prenatal_followup/inputs/t_week_since_lmp )"/>
+      <bind nodeset="/prenatal_followup/referral" type="string" calculate=" /prenatal_followup/has_danger_signs  = 'true' or ( /prenatal_followup/s_vad_1/s_anc_1_planned  = 'no' and  /prenatal_followup/s_vad_1/s_anc_1_visit  = 'no') or (( /prenatal_followup/s_vat_faf_analysis/s_vat  = 'no' or  /prenatal_followup/s_vat_faf_analysis/s_faf  = 'no') and ( /prenatal_followup/dif_anc_1_date  &gt; 7))"/>
+      <bind nodeset="/prenatal_followup/next_anc_visit_follow_up_date" type="string" calculate="format-date-time(date-time(decimal-date-time( /prenatal_followup/s_vad_1/s_anc_next_anc )+7),&quot;%b %e, %Y&quot;)"/>
+      <bind nodeset="/prenatal_followup/close_out" type="string" calculate="if( /prenatal_followup/s_today_task/s_task_to_perform  = 'close_out', 'true', 'false')"/>
+      <bind nodeset="/prenatal_followup/reschedule_task/is_woman_available" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/reschedule_task/is_woman_available:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/reschedule_task/s_date_to_reschedule" type="date" relevant=" /prenatal_followup/reschedule_task/is_woman_available  = 'no'" required="true()" constraint=". &gt; today()" jr:requiredMsg="jr:itext('/prenatal_followup/reschedule_task/s_date_to_reschedule:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_today_task" relevant=" /prenatal_followup/reschedule_task/is_woman_available  = 'yes'"/>
+      <bind nodeset="/prenatal_followup/s_today_task/s_task_to_perform" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_today_task/s_task_to_perform:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_intro" relevant="( /prenatal_followup/s_today_task/s_task_to_perform ='follow_up' and  /prenatal_followup/follow_up_count = 1)"/>
+      <bind nodeset="/prenatal_followup/s_intro/s_program" readonly="true()" type="string"/>
+      <bind nodeset="/prenatal_followup/s_ds" relevant=" /prenatal_followup/s_today_task/s_task_to_perform ='follow_up'"/>
+      <bind nodeset="/prenatal_followup/s_ds/s_danger_signs" readonly="true()" type="string"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_edema" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_edema:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_fever" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_fever:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_headaches" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_headaches:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_upper_abdominal_pain" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_upper_abdominal_pain:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_swelling_abdominal_pain" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_swelling_abdominal_pain:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_fetal_movement" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_fetal_movement:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_vertigo" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_vertigo:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_water_losses" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_water_losses:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_vaginal_bleeding" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_vaginal_bleeding:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_vaginal_discharge" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_vaginal_discharge:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_pain_urinating" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_pain_urinating:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_extreme_fatigue" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_extreme_fatigue:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_fast_breathing" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_fast_breathing:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_pallor_conjunctiva" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_pallor_conjunctiva:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_stool_color" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_stool_color:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_cold_skin" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_cold_skin:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/danger_signs_convulsions" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/danger_signs_convulsions:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_ds/advise_mother_danger_signs" readonly="true()" type="string"/>
+      <bind nodeset="/prenatal_followup/s_ds/able_to_continue" type="select1" relevant=" /prenatal_followup/has_danger_signs ='true'" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_ds/able_to_continue:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_vad_1" relevant=" /prenatal_followup/reschedule_task/is_woman_available  = 'yes' and ((( /prenatal_followup/s_today_task/s_task_to_perform  = 'follow_up') and ( /prenatal_followup/s_ds/able_to_continue  = 'yes' or  /prenatal_followup/s_ds/able_to_continue  = '')))"/>
+      <bind nodeset="/prenatal_followup/s_vad_1/s_anc_1_visit" type="select1" relevant=" /prenatal_followup/follow_up_count = 1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_vad_1/s_anc_1_visit:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_vad_1/s_anc_1_already_done" type="date" relevant=" /prenatal_followup/s_vad_1/s_anc_1_visit = 'yes'" required="true()" constraint=". &lt;= today()" jr:requiredMsg="jr:itext('/prenatal_followup/s_vad_1/s_anc_1_already_done:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_vad_1/s_anc_1_planned" type="select1" relevant=" /prenatal_followup/s_vad_1/s_anc_1_visit  = 'no'" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_vad_1/s_anc_1_planned:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_vad_1/n_discuss_anc_date" readonly="true()" type="string" relevant=" /prenatal_followup/s_vad_1/s_anc_1_planned ='no'"/>
+      <bind nodeset="/prenatal_followup/s_vad_1/s_anc_1_date" type="date" relevant=" /prenatal_followup/s_vad_1/s_anc_1_planned  = 'yes'" required="true()" constraint=". &gt;= today()" jr:requiredMsg="jr:itext('/prenatal_followup/s_vad_1/s_anc_1_date:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_vad_1/s_anc_1_done" type="select1" relevant=" /prenatal_followup/follow_up_count &gt;1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_vad_1/s_anc_1_done:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_vad_1/s_why_not_anc" type="select1" relevant=" /prenatal_followup/s_vad_1/s_anc_1_visit  = 'no' or  /prenatal_followup/s_vad_1/s_anc_1_done  = 'no'" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_vad_1/s_why_not_anc:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_vad_1/s_specify_why_not_anc" type="string" relevant=" /prenatal_followup/s_vad_1/s_why_not_anc  = 'other'" jr:requiredMsg="jr:itext('/prenatal_followup/s_vad_1/s_specify_why_not_anc:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_vad_1/s_anc_next_anc" type="date" relevant=" /prenatal_followup/s_vad_1/s_anc_1_visit = 'yes' or  /prenatal_followup/follow_up_count &gt;1" required="true()" constraint=". &gt;= today()" jr:requiredMsg="jr:itext('/prenatal_followup/s_vad_1/s_anc_next_anc:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_vad_1/s_anc_number" type="int" relevant=" /prenatal_followup/s_vad_1/s_anc_1_visit ='yes' or  /prenatal_followup/follow_up_count &gt;1" constraint=". &gt;= 0 and . &lt;= 8" required="true()" jr:constraintMsg="jr:itext('/prenatal_followup/s_vad_1/s_anc_number:jr:constraintMsg')" jr:requiredMsg="jr:itext('/prenatal_followup/s_vad_1/s_anc_number:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_vat_faf_analysis" relevant=" /prenatal_followup/reschedule_task/is_woman_available  = 'yes' and ((( /prenatal_followup/s_today_task/s_task_to_perform  = 'follow_up') and ( /prenatal_followup/s_ds/able_to_continue  = 'yes' or  /prenatal_followup/s_ds/able_to_continue  = ''))) and  /prenatal_followup/s_vad_1/s_anc_number  &gt;0"/>
+      <bind nodeset="/prenatal_followup/s_vat_faf_analysis/s_vat" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_vat:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_vat_faf_analysis/s_number_vat" type="int" relevant=" /prenatal_followup/s_vat_faf_analysis/s_vat  = 'yes'" constraint=". &gt; 0 and . &lt;= 5" required="true()" jr:constraintMsg="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_number_vat:jr:constraintMsg')" jr:requiredMsg="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_number_vat:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_vat_faf_analysis/s_faf" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_faf:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_vat_faf_analysis/s_congrats_faf" readonly="true()" type="string" relevant=" /prenatal_followup/s_vat_faf_analysis/s_faf ='yes'" jr:requiredMsg="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_congrats_faf:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_vat_faf_analysis/s_advices_faf" readonly="true()" type="string" relevant=" /prenatal_followup/s_vat_faf_analysis/s_faf ='no'"/>
+      <bind nodeset="/prenatal_followup/s_vat_faf_analysis/s_analysis" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_analysis:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_vat_faf_analysis/s_congrats_analysis" readonly="true()" type="string" relevant=" /prenatal_followup/s_vat_faf_analysis/s_analysis ='yes'" jr:requiredMsg="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_congrats_analysis:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_vat_faf_analysis/s_counsel_analysis" readonly="true()" type="string" relevant=" /prenatal_followup/s_vat_faf_analysis/s_analysis ='no'"/>
+      <bind nodeset="/prenatal_followup/s_referred_delivery" relevant=" /prenatal_followup/reschedule_task/is_woman_available  = 'yes' and ((( /prenatal_followup/s_today_task/s_task_to_perform  = 'follow_up') and ( /prenatal_followup/s_ds/able_to_continue  = 'yes' or  /prenatal_followup/s_ds/able_to_continue  = ''))) and  /prenatal_followup/s_vad_1/s_anc_number  &gt;0"/>
+      <bind nodeset="/prenatal_followup/s_referred_delivery/s_pregnancy_book" type="select1"/>
+      <bind nodeset="/prenatal_followup/s_referred_delivery/s_referred" type="select1" relevant=" /prenatal_followup/s_referred_delivery/s_pregnancy_book ='yes'" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_referred_delivery/s_referred:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_referred_delivery/s_location" type="select1" relevant=" /prenatal_followup/s_referred_delivery/s_referred  = 'yes'" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_referred_delivery/s_location:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_referred_delivery/s_other_location" type="string" relevant=" /prenatal_followup/s_referred_delivery/s_location ='other'" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_referred_delivery/s_other_location:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan" relevant=" /prenatal_followup/reschedule_task/is_woman_available  = 'yes' and ((( /prenatal_followup/s_today_task/s_task_to_perform  = 'follow_up') and ( /prenatal_followup/s_ds/able_to_continue  = 'yes' or  /prenatal_followup/s_ds/able_to_continue  = ''))) and  /prenatal_followup/s_vad_1/s_anc_number  &gt;0"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_delivery_plan_intro" readonly="true()" type="string"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_givebirth_1" type="select1"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_where_give_birth_1" type="select1" relevant=" /prenatal_followup/s_delivery_plan/s_givebirth_1 = 'yes'"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_congratule" readonly="true()" type="string" relevant=" /prenatal_followup/s_delivery_plan/s_where_give_birth_1  = 'health_facility'"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_counselling" readonly="true()" type="string" relevant=" /prenatal_followup/s_delivery_plan/s_where_give_birth_1  ='home'"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_experience" type="select1" relevant=" /prenatal_followup/s_delivery_plan/s_givebirth_1 = 'yes'"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_worries" type="select1"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_concerns" type="string" relevant=" /prenatal_followup/s_delivery_plan/s_worries ='yes'"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_where_to_give_birth" type="select1"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_congrats_encourage" readonly="true()" type="string" relevant=" /prenatal_followup/s_delivery_plan/s_where_to_give_birth = 'health_facility'"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_advices_alert" readonly="true()" type="string" relevant=" /prenatal_followup/s_delivery_plan/s_where_to_give_birth = 'home'"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_transportation" type="select1"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_other_transportation" type="string" relevant=" /prenatal_followup/s_delivery_plan/s_transportation  = 'other'"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_costs" type="int" constraint=". &gt;= 0"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_save_monney" type="string"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_going_to_usp" type="select"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_with_who" type="select"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_helper" type="select"/>
+      <bind nodeset="/prenatal_followup/s_delivery_plan/s_materials" readonly="true()" type="string"/>
+      <bind nodeset="/prenatal_followup/s_close_out" relevant=" /prenatal_followup/reschedule_task/is_woman_available  = 'yes' and  /prenatal_followup/s_today_task/s_task_to_perform = 'close_out'"/>
+      <bind nodeset="/prenatal_followup/s_close_out/s_why_close_out" type="select1" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_close_out/s_why_close_out:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/s_close_out/s_why_close_out_other" type="string" relevant=" /prenatal_followup/s_close_out/s_why_close_out  = 'other'" required="true()" jr:requiredMsg="jr:itext('/prenatal_followup/s_close_out/s_why_close_out_other:jr:requiredMsg')"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_details" readonly="true()" type="string"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_signs_symptoms" readonly="true()" type="string"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/mother_danger_signs" readonly="true()" type="string" relevant=" /prenatal_followup/has_danger_signs  = 'true'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_edema" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_edema = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_fever" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_fever = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_headaches" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_headaches = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_upper_abdominal_pain" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_upper_abdominal_pain = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_swelling_abdominal_pain" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_swelling_abdominal_pain = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_fetal_movement" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_fetal_movement = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_vertigo" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_vertigo = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_water_losses" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_water_losses = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_vaginal_bleeding" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_vaginal_bleeding = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_vaginal_discharge" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_vaginal_discharge = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_pain_urinating" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_pain_urinating = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_extreme_fatigue" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_extreme_fatigue = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_fast_breathing" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_fast_breathing = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_pallor_conjunctiva" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_pallor_conjunctiva = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_stool_color" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_stool_color = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_cold_skin" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_cold_skin = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_danger_signs_convulsions" readonly="true()" type="string" relevant=" /prenatal_followup/s_ds/danger_signs_convulsions = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/mother_no_danger_signs" readonly="true()" type="string" relevant=" /prenatal_followup/has_danger_signs  = 'false' and  /prenatal_followup/s_today_task/s_task_to_perform  != 'close_out'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_patient_done_VAT" readonly="true()" type="string" relevant=" /prenatal_followup/s_vat_faf_analysis/s_vat  = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_patient_done_FAF" readonly="true()" type="string" relevant=" /prenatal_followup/s_vat_faf_analysis/s_faf  = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_patient_done_ANALYSIS" readonly="true()" type="string" relevant=" /prenatal_followup/s_vat_faf_analysis/s_analysis  = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_patient_not_done_VAT" readonly="true()" type="string" relevant=" /prenatal_followup/s_vat_faf_analysis/s_vat  = 'no'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_patient_not_done_FAF" readonly="true()" type="string" relevant=" /prenatal_followup/s_vat_faf_analysis/s_faf  = 'no'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_signs/r_patient_not_done_ANALYSIS" readonly="true()" type="string" relevant=" /prenatal_followup/s_vat_faf_analysis/s_analysis  = 'no'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_referral" relevant=" /prenatal_followup/referral  = 'true'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_referral/r_refer_to_usp" readonly="true()" type="string"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_referral/mother_referral_note_1" readonly="true()" type="string" relevant=" /prenatal_followup/has_danger_signs  = 'true'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_referral/mother_referral_note_2" readonly="true()" type="string" relevant=" /prenatal_followup/s_vad_1/s_anc_1_planned  = 'no' or  /prenatal_followup/s_vad_1/s_anc_1_done  = 'no'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_referral/r_refer_for_VAT" readonly="true()" type="string" relevant=" /prenatal_followup/s_vat_faf_analysis/s_vat  = 'no' and ( /prenatal_followup/dif_anc_1_date  &gt; 7)"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_referral/r_refer_for_FAF" readonly="true()" type="string" relevant=" /prenatal_followup/s_vat_faf_analysis/s_faf  = 'no' and ( /prenatal_followup/dif_anc_1_date  &gt; 7)"/>
+      <bind nodeset="/prenatal_followup/group_summary/s_have_you_refer_child" type="select1" relevant=" /prenatal_followup/reschedule_task/is_woman_available  = 'yes'" required="true()"/>
+      <bind nodeset="/prenatal_followup/group_summary/s_why_not" type="string" relevant=" /prenatal_followup/group_summary/s_have_you_refer_child  = 'no'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_instructions" relevant=" /prenatal_followup/reschedule_task/is_woman_available  = 'yes'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_instructions/r_special_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_instructions/last_followup_instruction" readonly="true()" type="string" relevant=" /prenatal_followup/follow_up_count  = 5"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_instructions/r_car_advices" readonly="true()" type="string" relevant=" /prenatal_followup/s_today_task/s_task_to_perform  != 'close_out'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_instructions/close_out_note" readonly="true()" type="string" relevant="( /prenatal_followup/s_today_task/s_task_to_perform  = 'close_out' or  /prenatal_followup/follow_up_count  = 5) and  /prenatal_followup/s_close_out/s_why_close_out  != 'delivery'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_instructions/close_out_note_2" readonly="true()" type="string" relevant=" /prenatal_followup/s_today_task/s_task_to_perform  = 'close_out' and  /prenatal_followup/s_close_out/s_why_close_out  = 'delivery'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_followup" relevant=" /prenatal_followup/s_today_task/s_task_to_perform  != 'close_out'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_followup/r_next_visit" readonly="true()" type="string"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_followup/summary_reschedule_follow_up" readonly="true()" type="string" relevant=" /prenatal_followup/reschedule_task/is_woman_available  = 'no' and  /prenatal_followup/reschedule_task/s_date_to_reschedule  != ''"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_followup/summary_healthy_follow_up" readonly="true()" type="string" relevant=" /prenatal_followup/reschedule_task/is_woman_available  = 'yes' and  /prenatal_followup/has_danger_signs  = 'false'"/>
+      <bind nodeset="/prenatal_followup/group_summary/r_followup/summary_referral_follow_up" readonly="true()" type="string" relevant=" /prenatal_followup/reschedule_task/is_woman_available  = 'yes' and  /prenatal_followup/has_danger_signs  = 'true'"/>
+      <bind nodeset="/prenatal_followup/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/prenatal_followup/inputs">
+      <label ref="jr:itext('/prenatal_followup/inputs:label')"/>
+      <input appearance="hidden" ref="/prenatal_followup/inputs/source">
+        <label ref="jr:itext('/prenatal_followup/inputs/source:label')"/>
+      </input>
+      <input appearance="hidden" ref="/prenatal_followup/inputs/source_id">
+        <label ref="jr:itext('/prenatal_followup/inputs/source_id:label')"/>
+      </input>
+      <input appearance="hidden" ref="/prenatal_followup/inputs/t_follow_up_count">
+        <label ref="jr:itext('/prenatal_followup/inputs/t_follow_up_count:label')"/>
+      </input>
+      <input appearance="hidden" ref="/prenatal_followup/inputs/t_close_out">
+        <label ref="jr:itext('/prenatal_followup/inputs/t_close_out:label')"/>
+      </input>
+      <input appearance="hidden" ref="/prenatal_followup/inputs/t_week_since_lmp">
+        <label ref="jr:itext('/prenatal_followup/inputs/t_week_since_lmp:label')"/>
+      </input>
+      <input ref="/prenatal_followup/inputs/t_delivery_date">
+        <label ref="jr:itext('/prenatal_followup/inputs/t_delivery_date:label')"/>
+      </input>
+      <group ref="/prenatal_followup/inputs/contact">
+        <label ref="jr:itext('/prenatal_followup/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/prenatal_followup/inputs/contact/_id">
+          <label ref="jr:itext('/prenatal_followup/inputs/contact/_id:label')"/>
+          <hint ref="jr:itext('/prenatal_followup/inputs/contact/_id:hint')"/>
+        </input>
+        <input appearance="hidden" ref="/prenatal_followup/inputs/contact/name">
+          <label ref="jr:itext('/prenatal_followup/inputs/contact/name:label')"/>
+        </input>
+        <input appearance="hidden" ref="/prenatal_followup/inputs/contact/date_of_birth">
+          <label ref="jr:itext('/prenatal_followup/inputs/contact/date_of_birth:label')"/>
+        </input>
+        <input appearance="hidden" ref="/prenatal_followup/inputs/contact/sex">
+          <label ref="jr:itext('/prenatal_followup/inputs/contact/sex:label')"/>
+        </input>
+        <input appearance="hidden" ref="/prenatal_followup/inputs/contact/parent">
+          <label ref="jr:itext('/prenatal_followup/inputs/contact/parent:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/prenatal_followup/reschedule_task">
+      <label ref="jr:itext('/prenatal_followup/reschedule_task:label')"/>
+      <select1 appearance="columns" ref="/prenatal_followup/reschedule_task/is_woman_available">
+        <label ref="jr:itext('/prenatal_followup/reschedule_task/is_woman_available:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/reschedule_task/is_woman_available/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/reschedule_task/is_woman_available/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input appearance="columns" ref="/prenatal_followup/reschedule_task/s_date_to_reschedule">
+        <label ref="jr:itext('/prenatal_followup/reschedule_task/s_date_to_reschedule:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/prenatal_followup/s_today_task">
+      <label ref="jr:itext('/prenatal_followup/s_today_task:label')"/>
+      <select1 appearance="columns" ref="/prenatal_followup/s_today_task/s_task_to_perform">
+        <label ref="jr:itext('/prenatal_followup/s_today_task/s_task_to_perform:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_today_task/s_task_to_perform/follow_up:label')"/>
+          <value>follow_up</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_today_task/s_task_to_perform/close_out:label')"/>
+          <value>close_out</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/prenatal_followup/s_intro">
+      <label ref="jr:itext('/prenatal_followup/s_intro:label')"/>
+      <input ref="/prenatal_followup/s_intro/s_program">
+        <label ref="jr:itext('/prenatal_followup/s_intro/s_program:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/prenatal_followup/s_ds">
+      <label ref="jr:itext('/prenatal_followup/s_ds:label')"/>
+      <input appearance="columns" ref="/prenatal_followup/s_ds/s_danger_signs">
+        <label ref="jr:itext('/prenatal_followup/s_ds/s_danger_signs:label')"/>
+        <hint ref="jr:itext('/prenatal_followup/s_ds/s_danger_signs:hint')"/>
+      </input>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_edema">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_edema:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_edema/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_edema/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_fever">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_fever:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_fever/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_fever/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_headaches">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_headaches:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_headaches/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_headaches/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_upper_abdominal_pain">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_upper_abdominal_pain:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_upper_abdominal_pain/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_upper_abdominal_pain/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_swelling_abdominal_pain">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_swelling_abdominal_pain:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_swelling_abdominal_pain/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_swelling_abdominal_pain/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_fetal_movement">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_fetal_movement:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_fetal_movement/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_fetal_movement/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_vertigo">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_vertigo:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_vertigo/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_vertigo/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_water_losses">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_water_losses:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_water_losses/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_water_losses/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_vaginal_bleeding">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_vaginal_bleeding:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_vaginal_bleeding/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_vaginal_bleeding/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_vaginal_discharge">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_vaginal_discharge:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_vaginal_discharge/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_vaginal_discharge/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_pain_urinating">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_pain_urinating:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_pain_urinating/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_pain_urinating/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_extreme_fatigue">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_extreme_fatigue:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_extreme_fatigue/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_extreme_fatigue/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_fast_breathing">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_fast_breathing:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_fast_breathing/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_fast_breathing/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_pallor_conjunctiva">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_pallor_conjunctiva:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_pallor_conjunctiva/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_pallor_conjunctiva/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_stool_color">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_stool_color:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_stool_color/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_stool_color/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_cold_skin">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_cold_skin:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_cold_skin/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_cold_skin/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/danger_signs_convulsions">
+        <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_convulsions:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_convulsions/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/danger_signs_convulsions/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/prenatal_followup/s_ds/advise_mother_danger_signs">
+        <label ref="jr:itext('/prenatal_followup/s_ds/advise_mother_danger_signs:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/prenatal_followup/s_ds/able_to_continue">
+        <label ref="jr:itext('/prenatal_followup/s_ds/able_to_continue:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/able_to_continue/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_ds/able_to_continue/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/prenatal_followup/s_vad_1">
+      <label ref="jr:itext('/prenatal_followup/s_vad_1:label')"/>
+      <select1 appearance="columns" ref="/prenatal_followup/s_vad_1/s_anc_1_visit">
+        <label ref="jr:itext('/prenatal_followup/s_vad_1/s_anc_1_visit:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vad_1/s_anc_1_visit/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vad_1/s_anc_1_visit/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input appearance="columns" ref="/prenatal_followup/s_vad_1/s_anc_1_already_done">
+        <label ref="jr:itext('/prenatal_followup/s_vad_1/s_anc_1_already_done:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/prenatal_followup/s_vad_1/s_anc_1_planned">
+        <label ref="jr:itext('/prenatal_followup/s_vad_1/s_anc_1_planned:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vad_1/s_anc_1_planned/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vad_1/s_anc_1_planned/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/prenatal_followup/s_vad_1/n_discuss_anc_date">
+        <label ref="jr:itext('/prenatal_followup/s_vad_1/n_discuss_anc_date:label')"/>
+      </input>
+      <input ref="/prenatal_followup/s_vad_1/s_anc_1_date">
+        <label ref="jr:itext('/prenatal_followup/s_vad_1/s_anc_1_date:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/prenatal_followup/s_vad_1/s_anc_1_done">
+        <label ref="jr:itext('/prenatal_followup/s_vad_1/s_anc_1_done:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vad_1/s_anc_1_done/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vad_1/s_anc_1_done/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_vad_1/s_why_not_anc">
+        <label ref="jr:itext('/prenatal_followup/s_vad_1/s_why_not_anc:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vad_1/s_why_not_anc/forget:label')"/>
+          <value>forget</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vad_1/s_why_not_anc/no_time:label')"/>
+          <value>no_time</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vad_1/s_why_not_anc/not_motivated:label')"/>
+          <value>not_motivated</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vad_1/s_why_not_anc/no_money:label')"/>
+          <value>no_money</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vad_1/s_why_not_anc/refusal:label')"/>
+          <value>refusal</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vad_1/s_why_not_anc/end_of_follow_up:label')"/>
+          <value>end_of_follow_up</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vad_1/s_why_not_anc/date_not_reached:label')"/>
+          <value>date_not_reached</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vad_1/s_why_not_anc/from_care_providers:label')"/>
+          <value>from_care_providers</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vad_1/s_why_not_anc/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input appearance="columns" ref="/prenatal_followup/s_vad_1/s_specify_why_not_anc">
+        <label ref="jr:itext('/prenatal_followup/s_vad_1/s_specify_why_not_anc:label')"/>
+      </input>
+      <input ref="/prenatal_followup/s_vad_1/s_anc_next_anc">
+        <label ref="jr:itext('/prenatal_followup/s_vad_1/s_anc_next_anc:label')"/>
+      </input>
+      <input ref="/prenatal_followup/s_vad_1/s_anc_number">
+        <label ref="jr:itext('/prenatal_followup/s_vad_1/s_anc_number:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/prenatal_followup/s_vat_faf_analysis">
+      <label ref="jr:itext('/prenatal_followup/s_vat_faf_analysis:label')"/>
+      <select1 appearance="columns" ref="/prenatal_followup/s_vat_faf_analysis/s_vat">
+        <label ref="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_vat:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_vat/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_vat/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/prenatal_followup/s_vat_faf_analysis/s_number_vat">
+        <label ref="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_number_vat:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/prenatal_followup/s_vat_faf_analysis/s_faf">
+        <label ref="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_faf:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_faf/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_faf/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/prenatal_followup/s_vat_faf_analysis/s_congrats_faf">
+        <label ref="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_congrats_faf:label')"/>
+      </input>
+      <input ref="/prenatal_followup/s_vat_faf_analysis/s_advices_faf">
+        <label ref="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_advices_faf:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/prenatal_followup/s_vat_faf_analysis/s_analysis">
+        <label ref="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_analysis:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_analysis/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_analysis/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/prenatal_followup/s_vat_faf_analysis/s_congrats_analysis">
+        <label ref="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_congrats_analysis:label')"/>
+      </input>
+      <input ref="/prenatal_followup/s_vat_faf_analysis/s_counsel_analysis">
+        <label ref="jr:itext('/prenatal_followup/s_vat_faf_analysis/s_counsel_analysis:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/prenatal_followup/s_referred_delivery">
+      <label ref="jr:itext('/prenatal_followup/s_referred_delivery:label')"/>
+      <select1 appearance="columns" ref="/prenatal_followup/s_referred_delivery/s_pregnancy_book">
+        <label ref="jr:itext('/prenatal_followup/s_referred_delivery/s_pregnancy_book:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_referred_delivery/s_pregnancy_book/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_referred_delivery/s_pregnancy_book/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_referred_delivery/s_referred">
+        <label ref="jr:itext('/prenatal_followup/s_referred_delivery/s_referred:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_referred_delivery/s_referred/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_referred_delivery/s_referred/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/prenatal_followup/s_referred_delivery/s_location">
+        <label ref="jr:itext('/prenatal_followup/s_referred_delivery/s_location:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_referred_delivery/s_location/cms:label')"/>
+          <value>cms</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_referred_delivery/s_location/sos:label')"/>
+          <value>sos</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_referred_delivery/s_location/chp:label')"/>
+          <value>chp</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_referred_delivery/s_location/private_clinic:label')"/>
+          <value>private_clinic</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_referred_delivery/s_location/chr:label')"/>
+          <value>chr</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_referred_delivery/s_location/chu:label')"/>
+          <value>chu</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_referred_delivery/s_location/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/prenatal_followup/s_referred_delivery/s_other_location">
+        <label ref="jr:itext('/prenatal_followup/s_referred_delivery/s_other_location:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/prenatal_followup/s_delivery_plan">
+      <label ref="jr:itext('/prenatal_followup/s_delivery_plan:label')"/>
+      <input ref="/prenatal_followup/s_delivery_plan/s_delivery_plan_intro">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_delivery_plan_intro:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/prenatal_followup/s_delivery_plan/s_givebirth_1">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_givebirth_1:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_givebirth_1/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_givebirth_1/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_delivery_plan/s_where_give_birth_1">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_where_give_birth_1:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_where_give_birth_1/home:label')"/>
+          <value>home</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_where_give_birth_1/health_facility:label')"/>
+          <value>health_facility</value>
+        </item>
+      </select1>
+      <input ref="/prenatal_followup/s_delivery_plan/s_congratule">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_congratule:label')"/>
+      </input>
+      <input ref="/prenatal_followup/s_delivery_plan/s_counselling">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_counselling:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/prenatal_followup/s_delivery_plan/s_experience">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_experience:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_experience/bad:label')"/>
+          <value>bad</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_experience/good:label')"/>
+          <value>good</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/prenatal_followup/s_delivery_plan/s_worries">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_worries:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_worries/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_worries/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/prenatal_followup/s_delivery_plan/s_concerns">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_concerns:label')"/>
+      </input>
+      <select1 ref="/prenatal_followup/s_delivery_plan/s_where_to_give_birth">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_where_to_give_birth:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_where_to_give_birth/home:label')"/>
+          <value>home</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_where_to_give_birth/health_facility:label')"/>
+          <value>health_facility</value>
+        </item>
+      </select1>
+      <input ref="/prenatal_followup/s_delivery_plan/s_congrats_encourage">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_congrats_encourage:label')"/>
+      </input>
+      <input ref="/prenatal_followup/s_delivery_plan/s_advices_alert">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_advices_alert:label')"/>
+      </input>
+      <select1 ref="/prenatal_followup/s_delivery_plan/s_transportation">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_transportation:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_transportation/motocycle:label')"/>
+          <value>motocycle</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_transportation/car:label')"/>
+          <value>car</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_transportation/horse_cart:label')"/>
+          <value>horse_cart</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_transportation/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/prenatal_followup/s_delivery_plan/s_other_transportation">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_other_transportation:label')"/>
+      </input>
+      <input ref="/prenatal_followup/s_delivery_plan/s_costs">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_costs:label')"/>
+      </input>
+      <input appearance="multiline" ref="/prenatal_followup/s_delivery_plan/s_save_monney">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_save_monney:label')"/>
+      </input>
+      <select ref="/prenatal_followup/s_delivery_plan/s_going_to_usp">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_going_to_usp:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_going_to_usp/contractions:label')"/>
+          <value>contractions</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_going_to_usp/vaginal_discharge:label')"/>
+          <value>vaginal_discharge</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_going_to_usp/water_break:label')"/>
+          <value>water_break</value>
+        </item>
+      </select>
+      <select ref="/prenatal_followup/s_delivery_plan/s_with_who">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_with_who:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_with_who/husband:label')"/>
+          <value>husband</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_with_who/mother:label')"/>
+          <value>mother</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_with_who/father:label')"/>
+          <value>father</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_with_who/son:label')"/>
+          <value>son</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_with_who/daughter:label')"/>
+          <value>daughter</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_with_who/niece:label')"/>
+          <value>niece</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_with_who/nephew:label')"/>
+          <value>nephew</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_with_who/sister:label')"/>
+          <value>sister</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_with_who/brother:label')"/>
+          <value>brother</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_with_who/grand_mother:label')"/>
+          <value>grand_mother</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_with_who/grand_father:label')"/>
+          <value>grand_father</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_with_who/alone:label')"/>
+          <value>alone</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_with_who/other:label')"/>
+          <value>other</value>
+        </item>
+      </select>
+      <select ref="/prenatal_followup/s_delivery_plan/s_helper">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_helper:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_helper/husband:label')"/>
+          <value>husband</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_helper/mother:label')"/>
+          <value>mother</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_helper/father:label')"/>
+          <value>father</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_helper/son:label')"/>
+          <value>son</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_helper/daughter:label')"/>
+          <value>daughter</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_helper/niece:label')"/>
+          <value>niece</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_helper/nephew:label')"/>
+          <value>nephew</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_helper/sister:label')"/>
+          <value>sister</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_helper/brother:label')"/>
+          <value>brother</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_helper/grand_mother:label')"/>
+          <value>grand_mother</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_helper/grand_father:label')"/>
+          <value>grand_father</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_helper/other:label')"/>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/prenatal_followup/s_delivery_plan/s_materials">
+        <label ref="jr:itext('/prenatal_followup/s_delivery_plan/s_materials:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/prenatal_followup/s_close_out">
+      <label ref="jr:itext('/prenatal_followup/s_close_out:label')"/>
+      <select1 ref="/prenatal_followup/s_close_out/s_why_close_out">
+        <label ref="jr:itext('/prenatal_followup/s_close_out/s_why_close_out:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_close_out/s_why_close_out/delivery:label')"/>
+          <value>delivery</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_close_out/s_why_close_out/woman_dead:label')"/>
+          <value>woman_dead</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_close_out/s_why_close_out/abortion:label')"/>
+          <value>abortion</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_close_out/s_why_close_out/miscarriage:label')"/>
+          <value>miscarriage</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/s_close_out/s_why_close_out/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/prenatal_followup/s_close_out/s_why_close_out_other">
+        <label ref="jr:itext('/prenatal_followup/s_close_out/s_why_close_out_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/prenatal_followup/group_summary">
+      <label ref="jr:itext('/prenatal_followup/group_summary:label')"/>
+      <input appearance="h1 yellow" ref="/prenatal_followup/group_summary/r_details">
+        <label ref="jr:itext('/prenatal_followup/group_summary/r_details:label')"/>
+      </input>
+      <input ref="/prenatal_followup/group_summary/r_patient_info">
+        <label ref="jr:itext('/prenatal_followup/group_summary/r_patient_info:label')"/>
+      </input>
+      <group ref="/prenatal_followup/group_summary/r_signs">
+        <label ref="jr:itext('/prenatal_followup/group_summary/r_signs:label')"/>
+        <input appearance="h1 red" ref="/prenatal_followup/group_summary/r_signs/r_signs_symptoms">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_signs_symptoms:label')"/>
+        </input>
+        <input appearance="h4" ref="/prenatal_followup/group_summary/r_signs/mother_danger_signs">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/mother_danger_signs:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_edema">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_edema:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_fever">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_fever:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_headaches">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_headaches:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_upper_abdominal_pain">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_upper_abdominal_pain:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_swelling_abdominal_pain">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_swelling_abdominal_pain:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_fetal_movement">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_fetal_movement:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_vertigo">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_vertigo:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_water_losses">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_water_losses:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_vaginal_bleeding">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_vaginal_bleeding:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_vaginal_discharge">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_vaginal_discharge:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_pain_urinating">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_pain_urinating:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_extreme_fatigue">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_extreme_fatigue:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_fast_breathing">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_fast_breathing:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_pallor_conjunctiva">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_pallor_conjunctiva:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_stool_color">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_stool_color:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_cold_skin">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_cold_skin:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/r_danger_signs_convulsions">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_danger_signs_convulsions:label')"/>
+        </input>
+        <input appearance="li" ref="/prenatal_followup/group_summary/r_signs/mother_no_danger_signs">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/mother_no_danger_signs:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_signs/r_patient_done_VAT">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_patient_done_VAT:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_signs/r_patient_done_FAF">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_patient_done_FAF:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_signs/r_patient_done_ANALYSIS">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_patient_done_ANALYSIS:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_signs/r_patient_not_done_VAT">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_patient_not_done_VAT:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_signs/r_patient_not_done_FAF">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_patient_not_done_FAF:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_signs/r_patient_not_done_ANALYSIS">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_signs/r_patient_not_done_ANALYSIS:label')"/>
+        </input>
+      </group>
+      <group ref="/prenatal_followup/group_summary/r_referral">
+        <label ref="jr:itext('/prenatal_followup/group_summary/r_referral:label')"/>
+        <input appearance="h1 red" ref="/prenatal_followup/group_summary/r_referral/r_refer_to_usp">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_referral/r_refer_to_usp:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_referral/mother_referral_note_1">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_referral/mother_referral_note_1:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_referral/mother_referral_note_2">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_referral/mother_referral_note_2:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_referral/r_refer_for_VAT">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_referral/r_refer_for_VAT:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_referral/r_refer_for_FAF">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_referral/r_refer_for_FAF:label')"/>
+        </input>
+      </group>
+      <select1 ref="/prenatal_followup/group_summary/s_have_you_refer_child">
+        <label ref="jr:itext('/prenatal_followup/group_summary/s_have_you_refer_child:label')"/>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/group_summary/s_have_you_refer_child/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/prenatal_followup/group_summary/s_have_you_refer_child/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/prenatal_followup/group_summary/s_why_not">
+        <label ref="jr:itext('/prenatal_followup/group_summary/s_why_not:label')"/>
+      </input>
+      <group ref="/prenatal_followup/group_summary/r_instructions">
+        <label ref="jr:itext('/prenatal_followup/group_summary/r_instructions:label')"/>
+        <input appearance="h1 blue" ref="/prenatal_followup/group_summary/r_instructions/r_special_instructions">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_instructions/r_special_instructions:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_instructions/last_followup_instruction">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_instructions/last_followup_instruction:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_instructions/r_car_advices">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_instructions/r_car_advices:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_instructions/close_out_note">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_instructions/close_out_note:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_instructions/close_out_note_2">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_instructions/close_out_note_2:label')"/>
+        </input>
+      </group>
+      <group ref="/prenatal_followup/group_summary/r_followup">
+        <label ref="jr:itext('/prenatal_followup/group_summary/r_followup:label')"/>
+        <input appearance="h1 blue" ref="/prenatal_followup/group_summary/r_followup/r_next_visit">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_followup/r_next_visit:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_followup/summary_reschedule_follow_up">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_followup/summary_reschedule_follow_up:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_followup/summary_healthy_follow_up">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_followup/summary_healthy_follow_up:label')"/>
+        </input>
+        <input ref="/prenatal_followup/group_summary/r_followup/summary_referral_follow_up">
+          <label ref="jr:itext('/prenatal_followup/group_summary/r_followup/summary_referral_follow_up:label')"/>
+        </input>
+      </group>
+    </group>
+  </h:body>
+</h:html>

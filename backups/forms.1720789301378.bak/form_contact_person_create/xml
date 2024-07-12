@@ -1,0 +1,685 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Create person</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Facility ID for the parent user</value>
+          </text>
+          <text id="/data/inputs/user/type:label">
+            <value>Type</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Name of the logged in user</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>User Information</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/role:label">
+            <value>Role</value>
+          </text>
+          <text id="/data/inputs/contact/username:label">
+            <value>account name</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Contact name</value>
+          </text>
+          <text id="/data/inputs/contact/external_id:label">
+            <value>Unique code: &lt;br&gt; &lt;b&gt;<output value=" /data/inputs/contact/extid "/>&lt;/b&gt;</value>
+          </text>
+          <text id="/data/person:label">
+            <value>New user informations</value>
+          </text>
+          <text id="/data/person/place_contact_select:label">
+            <value>Is it a primary contact of Site or Zone ?</value>
+          </text>
+          <text id="/data/person/place_contact_select/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/person/place_contact_select/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/person/family_contact_select:label">
+            <value>Is it a primary family contact ?</value>
+          </text>
+          <text id="/data/person/family_contact_select/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/person/family_contact_select/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/person/name:label">
+            <value>Names</value>
+          </text>
+          <text id="/data/person/dob_method:label">
+            <value>Method to select date of birth</value>
+          </text>
+          <text id="/data/person/dob_method/calendar:label">
+            <value>With calendar (preferred)</value>
+          </text>
+          <text id="/data/person/dob_method/approx:label">
+            <value>With current age</value>
+          </text>
+          <text id="/data/person/dob_calendar:jr:constraintMsg">
+            <value>Date must be before today</value>
+          </text>
+          <text id="/data/person/dob_calendar:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/person/age_years:jr:constraintMsg">
+            <value>Age must between 0 and 99</value>
+          </text>
+          <text id="/data/person/age_years:label">
+            <value>Age</value>
+          </text>
+          <text id="/data/person/age_years:hint">
+            <value>**(Age in years)** Age must between 0 and 99</value>
+          </text>
+          <text id="/data/person/age_months:jr:constraintMsg">
+            <value>Months must between 0 and 11</value>
+          </text>
+          <text id="/data/person/age_months:label">
+            <value>*</value>
+          </text>
+          <text id="/data/person/age_months:hint">
+            <value>(And how many months?)</value>
+          </text>
+          <text id="/data/person/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/person/sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/data/person/sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/data/person/code_type:label">
+            <value>is this person a patient</value>
+          </text>
+          <text id="/data/person/code_type/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/person/code_type/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/person/code_w:jr:constraintMsg">
+            <value>The unique code must be of the format: AAAAAA-000000000</value>
+          </text>
+          <text id="/data/person/code_w:label">
+            <value>Patient unique Code</value>
+          </text>
+          <text id="/data/person/code_w:hint">
+            <value>The unique code must be of the format: AAAAAA-000000000</value>
+          </text>
+          <text id="/data/person/code_x:jr:constraintMsg">
+            <value>The unique code must be of the format: 0000</value>
+          </text>
+          <text id="/data/person/code_x:label">
+            <value>Patient unique Code</value>
+          </text>
+          <text id="/data/person/code_x:hint">
+            <value>The unique code must be of the format: 0000</value>
+          </text>
+          <text id="/data/person/code_y:jr:constraintMsg">
+            <value>The unique code must be of the format: AAAAAA-000</value>
+          </text>
+          <text id="/data/person/code_y:label">
+            <value>Patient unique Code</value>
+          </text>
+          <text id="/data/person/code_y:hint">
+            <value>The unique code must be of the format: AAAAAA-000</value>
+          </text>
+          <text id="/data/person/info:label">
+            <value>&lt;p style=&quot;text-align:center;&quot;&gt;&lt;b style=&quot;color:green;&quot;&gt;Patient Code: &lt;/b&gt; &lt;b&gt;<output value=" /data/person/code "/>&lt;/b&gt;&lt;/p&gt;</value>
+          </text>
+          <text id="/data/person/role_x:label">
+            <value>Role</value>
+          </text>
+          <text id="/data/person/role_x:hint">
+            <value>Select the role that best suits this person</value>
+          </text>
+          <text id="/data/person/role_x/chw:label">
+            <value>CHW</value>
+          </text>
+          <text id="/data/person/role_x/chw_supervisor:label">
+            <value>CHW Supervisor</value>
+          </text>
+          <text id="/data/person/role_x/patient:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/person/role_x/facility_manager:label">
+            <value>Facility Manager</value>
+          </text>
+          <text id="/data/person/role:label">
+            <value>Role</value>
+          </text>
+          <text id="/data/person/role:hint">
+            <value>Select the role that best suits this person</value>
+          </text>
+          <text id="/data/person/phone:jr:constraintMsg">
+            <value>Please enter a valid local number. For example: XX XX XX XX</value>
+          </text>
+          <text id="/data/person/phone:label">
+            <value>Phone Number</value>
+          </text>
+          <text id="/data/person/phone:hint">
+            <value>Format: XX XX XX XX</value>
+          </text>
+          <text id="/data/person/phone_alternate:jr:constraintMsg">
+            <value>Please enter a valid local number. For example: XX XX XX XX</value>
+          </text>
+          <text id="/data/person/phone_alternate:label">
+            <value>Alternate Phone Number</value>
+          </text>
+          <text id="/data/person/phone_alternate:hint">
+            <value>Format: XX XX XX XX</value>
+          </text>
+          <text id="/data/person/pcime_info:label">
+            <value>Do not forget to complete the vaccination status in the tasks tab</value>
+          </text>
+          <text id="/data/person/geolocation:label">
+            <value>Location</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Identifiant de l'utilisateur</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Id parent utilisateur</value>
+          </text>
+          <text id="/data/inputs/user/type:label">
+            <value>Type</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>Information de l'utilisateur</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Nom de l'utilisateur</value>
+          </text>
+          <text id="/data/inputs/contact/role:label">
+            <value>Role de l'utilisateur</value>
+          </text>
+          <text id="/data/inputs/contact/username:label">
+            <value>Nom du compte</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Nom du Contact</value>
+          </text>
+          <text id="/data/inputs/contact/external_id:label">
+            <value>Code utilisateur: &lt;br&gt; &lt;b&gt;<output value=" /data/inputs/contact/extid "/>&lt;/b&gt;</value>
+          </text>
+          <text id="/data/person:label">
+            <value>Informations de la nouvelle personne</value>
+          </text>
+          <text id="/data/person/place_contact_select:label">
+            <value>Est ce un contact principal d'un Site ou d'une Zone ?</value>
+          </text>
+          <text id="/data/person/place_contact_select/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/data/person/place_contact_select/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/person/family_contact_select:label">
+            <value>Est ce le contact principal d'une famille ?</value>
+          </text>
+          <text id="/data/person/family_contact_select/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/data/person/family_contact_select/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/person/name:label">
+            <value>Nom et Prénoms de la personne</value>
+          </text>
+          <text id="/data/person/dob_method:label">
+            <value>Méthode de date de naissance souhaité</value>
+          </text>
+          <text id="/data/person/dob_method/calendar:label">
+            <value>Avec Calendrier (recommandé)</value>
+          </text>
+          <text id="/data/person/dob_method/approx:label">
+            <value>Avec l'age actuel</value>
+          </text>
+          <text id="/data/person/dob_calendar:jr:constraintMsg">
+            <value>La date doit être au passé</value>
+          </text>
+          <text id="/data/person/dob_calendar:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/data/person/age_years:jr:constraintMsg">
+            <value>L'age doit être entre 0 et 99</value>
+          </text>
+          <text id="/data/person/age_years:label">
+            <value>Âge</value>
+          </text>
+          <text id="/data/person/age_years:hint">
+            <value>**(Age en années)** L'age doit être entre 0 et 99</value>
+          </text>
+          <text id="/data/person/age_months:jr:constraintMsg">
+            <value>le mois doit être entre 0 et 11</value>
+          </text>
+          <text id="/data/person/age_months:label">
+            <value>*</value>
+          </text>
+          <text id="/data/person/age_months:hint">
+            <value>(Combien de mois (0 à 11 mois))</value>
+          </text>
+          <text id="/data/person/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/data/person/sex/female:label">
+            <value>Femme</value>
+          </text>
+          <text id="/data/person/sex/male:label">
+            <value>Homme</value>
+          </text>
+          <text id="/data/person/code_type:label">
+            <value>Est ce un patient ?</value>
+          </text>
+          <text id="/data/person/code_type/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/data/person/code_type/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/person/code_w:jr:constraintMsg">
+            <value>Le code unique doit être du format: AAAAAA-000000000</value>
+          </text>
+          <text id="/data/person/code_w:label">
+            <value>Code unique</value>
+          </text>
+          <text id="/data/person/code_w:hint">
+            <value>Le code unique doit être du format: AAAAAA-000000000</value>
+          </text>
+          <text id="/data/person/code_x:jr:constraintMsg">
+            <value>Le code unique doit être du format: 0000</value>
+          </text>
+          <text id="/data/person/code_x:label">
+            <value>Code unique</value>
+          </text>
+          <text id="/data/person/code_x:hint">
+            <value>Le code unique doit être du format: 0000</value>
+          </text>
+          <text id="/data/person/code_y:jr:constraintMsg">
+            <value>Le code unique doit être du format: AAAAAA-000</value>
+          </text>
+          <text id="/data/person/code_y:label">
+            <value>Code unique</value>
+          </text>
+          <text id="/data/person/code_y:hint">
+            <value>Le code unique doit être du format: AAAAAA-000</value>
+          </text>
+          <text id="/data/person/info:label">
+            <value>&lt;p style=&quot;text-align:center;&quot;&gt;&lt;b style=&quot;color:green;&quot;&gt;Code Patient: &lt;/b&gt; &lt;b&gt;<output value=" /data/person/code "/>&lt;/b&gt;&lt;/p&gt;</value>
+          </text>
+          <text id="/data/person/role_x:label">
+            <value>Rôle</value>
+          </text>
+          <text id="/data/person/role_x:hint">
+            <value>Selectionner le bon role pour cette personne</value>
+          </text>
+          <text id="/data/person/role_x/chw:label">
+            <value>ASC</value>
+          </text>
+          <text id="/data/person/role_x/chw_supervisor:label">
+            <value>Superviseur ASC</value>
+          </text>
+          <text id="/data/person/role_x/patient:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/person/role_x/facility_manager:label">
+            <value>Site Manageur</value>
+          </text>
+          <text id="/data/person/role:label">
+            <value>Rôle</value>
+          </text>
+          <text id="/data/person/role:hint">
+            <value>Selectionner le bon role pour cette personne</value>
+          </text>
+          <text id="/data/person/phone:jr:constraintMsg">
+            <value>Format autorisé: XX XX XX XX</value>
+          </text>
+          <text id="/data/person/phone:label">
+            <value>Numéro de téléphone</value>
+          </text>
+          <text id="/data/person/phone:hint">
+            <value>Format: XX XX XX XX</value>
+          </text>
+          <text id="/data/person/phone_alternate:jr:constraintMsg">
+            <value>Format autorisé: XX XX XX XX</value>
+          </text>
+          <text id="/data/person/phone_alternate:label">
+            <value>Numéro de téléphone alternatif</value>
+          </text>
+          <text id="/data/person/phone_alternate:hint">
+            <value>Format: XX XX XX XX</value>
+          </text>
+          <text id="/data/person/pcime_info:label">
+            <value>N'oubliez pas d'aller compléter le statut vaccinal dans l'onglet tâches</value>
+          </text>
+          <text id="/data/person/geolocation:label">
+            <value>Emplacement</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="contact:person:create" prefix="J1!contact:person:create!" delimiter="#" version="2024-07-12  10-40">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <type/>
+              <name/>
+            </user>
+            <contact>
+              <_id/>
+              <role/>
+              <username/>
+              <name/>
+              <extid/>
+              <external_id/>
+            </contact>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+              </location>
+            </meta>
+          </inputs>
+          <person>
+            <type>person</type>
+            <parent>PARENT</parent>
+            <place_contact_select>no</place_contact_select>
+            <family_contact_select>no</family_contact_select>
+            <place_contact/>
+            <family_contact/>
+            <name/>
+            <dob_method>approx</dob_method>
+            <dob_calendar/>
+            <age_years/>
+            <age_months>0</age_months>
+            <date_of_birth/>
+            <sex/>
+            <code_type/>
+            <code_w/>
+            <code_x/>
+            <code_y/>
+            <unique_code/>
+            <external_id/>
+            <code/>
+            <info/>
+            <role_x/>
+            <role/>
+            <phone/>
+            <phone_alternate/>
+            <pcime_info/>
+            <meta>
+              <created_by/>
+              <created_by_role/>
+              <created_by_external_id/>
+              <created_by_name/>
+              <created_by_place/>
+            </meta>
+            <geolocation/>
+          </person>
+          <user_id/>
+          <user_name/>
+          <user_contact_name/>
+          <user_role/>
+          <user_external_id/>
+          <user_facility_id/>
+          <user_latitude/>
+          <user_longitude/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/type" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person" readonly="true()" calculate=" /data/user_id "/>
+      <bind nodeset="/data/inputs/contact/role" readonly="true()" type="string" calculate=" /data/user_role "/>
+      <bind nodeset="/data/inputs/contact/username" readonly="true()" type="string" calculate=" /data/user_name "/>
+      <bind nodeset="/data/inputs/contact/name" readonly="true()" type="string" calculate=" /data/user_contact_name "/>
+      <bind nodeset="/data/inputs/contact/extid" type="string" calculate=" /data/user_external_id "/>
+      <bind nodeset="/data/inputs/contact/external_id" readonly="true()" type="string"/>
+      <bind nodeset="/data/inputs/meta/location/lat" type="string"/>
+      <bind nodeset="/data/inputs/meta/location/long" type="string"/>
+      <bind nodeset="/data/user_id" type="string" calculate="../inputs/user/contact_id"/>
+      <bind nodeset="/data/user_name" type="string" calculate="../inputs/user/name"/>
+      <bind nodeset="/data/user_contact_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/user_role" type="string" calculate="../inputs/contact/role"/>
+      <bind nodeset="/data/user_external_id" type="string" calculate="../inputs/contact/external_id"/>
+      <bind nodeset="/data/user_facility_id" type="string" calculate="../inputs/user/facility_id"/>
+      <bind nodeset="/data/user_latitude" type="string" calculate="../inputs/meta/location/lat"/>
+      <bind nodeset="/data/user_longitude" type="string" calculate="../inputs/meta/location/long"/>
+      <bind nodeset="/data/person/type" type="string" calculate="../../inputs/user/type"/>
+      <bind nodeset="/data/person/parent" type="string" calculate="."/>
+      <bind nodeset="/data/person/place_contact_select" type="select1" relevant=" /data/user_role  !=&quot;chw&quot;" required="true()"/>
+      <bind nodeset="/data/person/family_contact_select" type="select1" relevant=" /data/user_role  !='chw' and  /data/user_role !='chw_supervisor'" required="true()"/>
+      <bind nodeset="/data/person/place_contact" type="string" calculate="coalesce( /data/person/place_contact_select ,'no')"/>
+      <bind nodeset="/data/person/family_contact" type="string" calculate="coalesce( /data/person/family_contact_select ,'no')"/>
+      <bind nodeset="/data/person/name" type="string" required="true()"/>
+      <bind nodeset="/data/person/dob_method" type="select1" required="true()"/>
+      <bind nodeset="/data/person/dob_calendar" type="date" jr:constraintMsg="jr:itext('/data/person/dob_calendar:jr:constraintMsg')" relevant="selected(../dob_method,'calendar')" required="true()" constraint=".&lt;today()"/>
+      <bind nodeset="/data/person/age_years" type="int" jr:constraintMsg="jr:itext('/data/person/age_years:jr:constraintMsg')" relevant="selected(../dob_method,'approx')" required="true()" constraint=".&gt;=0 and .&lt;100"/>
+      <bind nodeset="/data/person/age_months" type="int" jr:constraintMsg="jr:itext('/data/person/age_months:jr:constraintMsg')" relevant="selected(../dob_method,'approx')" required="true()" constraint=". &gt;= 0 and . &lt;= 11"/>
+      <bind nodeset="/data/person/date_of_birth" type="string" calculate="format-date-time(if(not(selected( ../dob_method,'approx')), ../dob_calendar, format-date-time( decimal-date-time( today() ) - (365.25 * ../age_years) - (30.5 * ../age_months ) - 0, &quot;%Y-%m-%d&quot; ) ),&quot;%Y-%m-%d&quot;)"/>
+      <bind nodeset="/data/person/sex" type="select1" required="true()"/>
+      <bind nodeset="/data/person/code_type" type="select1" relevant=" /data/user_role  !=&quot;chw&quot;"/>
+      <bind nodeset="/data/person/code_w" type="string" jr:constraintMsg="jr:itext('/data/person/code_w:jr:constraintMsg')" relevant=" /data/user_role !=&quot;chw&quot; and concat(../code_type,'')='yes'" required="true()" constraint="regex(.,'^[A-Z]{6}-\d{9}$')"/>
+      <bind nodeset="/data/person/code_x" type="string" jr:constraintMsg="jr:itext('/data/person/code_x:jr:constraintMsg')" relevant=" /data/user_role =&quot;chw&quot;" required="true()" constraint="regex(.,'^[A-Z]{0}\d{4}$')"/>
+      <bind nodeset="/data/person/code_y" type="string" jr:constraintMsg="jr:itext('/data/person/code_y:jr:constraintMsg')" relevant=" /data/user_role !=&quot;chw&quot; and concat(../code_type,'')!='yes'" required="true()" constraint="regex(.,'^[A-Z]{6}-\d{3}$')"/>
+      <bind nodeset="/data/person/unique_code" type="string" calculate="coalesce(coalesce(../code_w,../code_x),../code_y)"/>
+      <bind nodeset="/data/person/external_id" type="string" calculate="if( /data/user_role =&quot;chw&quot;,concat( /data/user_external_id ,'00',../unique_code),concat(../unique_code,''))"/>
+      <bind nodeset="/data/person/code" type="string" calculate="../external_id"/>
+      <bind nodeset="/data/person/info" readonly="true()" type="string"/>
+      <bind nodeset="/data/person/role_x" type="select1" relevant=" /data/user_role !='chw'" calculate="coalesce(../role_x,../role)" required="true()"/>
+      <bind nodeset="/data/person/role" type="string" calculate="if( /data/user_role ='chw','patient',concat(../role_x,''))" required="true()"/>
+      <bind nodeset="/data/person/phone" type="string" jr:constraintMsg="jr:itext('/data/person/phone:jr:constraintMsg')" constraint="regex(.,'^(\d{2}\s?){4}$')"/>
+      <bind nodeset="/data/person/phone_alternate" type="string" jr:constraintMsg="jr:itext('/data/person/phone_alternate:jr:constraintMsg')" constraint="regex(.,'^(\d{2}\s?){4}$')"/>
+      <bind nodeset="/data/person/pcime_info" readonly="true()" type="string" relevant="floor(difference-in-months(  /data/person/date_of_birth , today() ) div 12 ) &lt; 5"/>
+      <bind nodeset="/data/person/meta/created_by" type="string" calculate=" /data/user_id "/>
+      <bind nodeset="/data/person/meta/created_by_role" type="string" calculate=" /data/user_role "/>
+      <bind nodeset="/data/person/meta/created_by_external_id" type="string" calculate=" /data/user_external_id "/>
+      <bind nodeset="/data/person/meta/created_by_name" type="string" calculate=" /data/user_contact_name "/>
+      <bind nodeset="/data/person/meta/created_by_place" type="string" calculate=" /data/user_facility_id "/>
+      <bind nodeset="/data/person/geolocation" type="string" calculate="concat( /data/user_latitude , /data/user_longitude )"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/data/inputs">
+      <label ref="jr:itext('/data/inputs:label')"/>
+      <group appearance="hidden" ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/facility_id">
+          <label ref="jr:itext('/data/inputs/user/facility_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/type">
+          <label ref="jr:itext('/data/inputs/user/type:label')"/>
+        </input>
+        <input ref="/data/inputs/user/name">
+          <label ref="jr:itext('/data/inputs/user/name:label')"/>
+        </input>
+      </group>
+      <group ref="/data/inputs/contact">
+        <label ref="jr:itext('/data/inputs/contact:label')"/>
+        <input appearance="db-object hidden" ref="/data/inputs/contact/_id">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <input appearance="hidden" ref="/data/inputs/contact/role">
+          <label ref="jr:itext('/data/inputs/contact/role:label')"/>
+        </input>
+        <input appearance="hidden" ref="/data/inputs/contact/username">
+          <label ref="jr:itext('/data/inputs/contact/username:label')"/>
+        </input>
+        <input appearance="hidden" ref="/data/inputs/contact/name">
+          <label ref="jr:itext('/data/inputs/contact/name:label')"/>
+        </input>
+        <input ref="/data/inputs/contact/external_id">
+          <label ref="jr:itext('/data/inputs/contact/external_id:label')"/>
+        </input>
+      </group>
+      <group appearance="hidden" ref="/data/inputs/meta">
+        <label ref="jr:itext('/data/inputs/meta:label')"/>
+        <group ref="/data/inputs/meta/location">
+          <label ref="jr:itext('/data/inputs/meta/location:label')"/>
+          <input ref="/data/inputs/meta/location/lat">
+            <label ref="jr:itext('/data/inputs/meta/location/lat:label')"/>
+          </input>
+          <input ref="/data/inputs/meta/location/long">
+            <label ref="jr:itext('/data/inputs/meta/location/long:label')"/>
+          </input>
+        </group>
+      </group>
+    </group>
+    <group ref="/data/person">
+      <label ref="jr:itext('/data/person:label')"/>
+      <select1 appearance="columns" ref="/data/person/place_contact_select">
+        <label ref="jr:itext('/data/person/place_contact_select:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/place_contact_select/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/place_contact_select/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/data/person/family_contact_select">
+        <label ref="jr:itext('/data/person/family_contact_select:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/family_contact_select/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/family_contact_select/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/data/person/name">
+        <label ref="jr:itext('/data/person/name:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/data/person/dob_method">
+        <label ref="jr:itext('/data/person/dob_method:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/dob_method/calendar:label')"/>
+          <value>calendar</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/dob_method/approx:label')"/>
+          <value>approx</value>
+        </item>
+      </select1>
+      <input ref="/data/person/dob_calendar">
+        <label ref="jr:itext('/data/person/dob_calendar:label')"/>
+      </input>
+      <input ref="/data/person/age_years">
+        <label ref="jr:itext('/data/person/age_years:label')"/>
+        <hint ref="jr:itext('/data/person/age_years:hint')"/>
+      </input>
+      <input ref="/data/person/age_months">
+        <label ref="jr:itext('/data/person/age_months:label')"/>
+        <hint ref="jr:itext('/data/person/age_months:hint')"/>
+      </input>
+      <select1 appearance="columns" ref="/data/person/sex">
+        <label ref="jr:itext('/data/person/sex:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/sex/female:label')"/>
+          <value>female</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/sex/male:label')"/>
+          <value>male</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/data/person/code_type">
+        <label ref="jr:itext('/data/person/code_type:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/code_type/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/code_type/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/data/person/code_w">
+        <label ref="jr:itext('/data/person/code_w:label')"/>
+        <hint ref="jr:itext('/data/person/code_w:hint')"/>
+      </input>
+      <input ref="/data/person/code_x">
+        <label ref="jr:itext('/data/person/code_x:label')"/>
+        <hint ref="jr:itext('/data/person/code_x:hint')"/>
+      </input>
+      <input ref="/data/person/code_y">
+        <label ref="jr:itext('/data/person/code_y:label')"/>
+        <hint ref="jr:itext('/data/person/code_y:hint')"/>
+      </input>
+      <input ref="/data/person/info">
+        <label ref="jr:itext('/data/person/info:label')"/>
+      </input>
+      <select1 ref="/data/person/role_x">
+        <label ref="jr:itext('/data/person/role_x:label')"/>
+        <hint ref="jr:itext('/data/person/role_x:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/person/role_x/chw:label')"/>
+          <value>chw</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role_x/chw_supervisor:label')"/>
+          <value>chw_supervisor</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role_x/patient:label')"/>
+          <value>patient</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role_x/facility_manager:label')"/>
+          <value>facility_manager</value>
+        </item>
+      </select1>
+      <input ref="/data/person/phone">
+        <label ref="jr:itext('/data/person/phone:label')"/>
+        <hint ref="jr:itext('/data/person/phone:hint')"/>
+      </input>
+      <input ref="/data/person/phone_alternate">
+        <label ref="jr:itext('/data/person/phone_alternate:label')"/>
+        <hint ref="jr:itext('/data/person/phone_alternate:hint')"/>
+      </input>
+      <input ref="/data/person/pcime_info">
+        <label ref="jr:itext('/data/person/pcime_info:label')"/>
+      </input>
+      <group ref="/data/person/meta">
+        <label ref="jr:itext('/data/person/meta:label')"/>
+      </group>
+    </group>
+  </h:body>
+</h:html>

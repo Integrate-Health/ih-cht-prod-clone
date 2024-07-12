@@ -1,0 +1,1776 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Suivi de la Malnutrition</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/malnutrition_followup/follow_up_count:label">
+            <value>Follow up count</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/contact/_id:hint">
+            <value>select a person from the list</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/contact/_id:jr:constraintMsg">
+            <value>The patient age must be below 5 years old</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/contact/_id:label">
+            <value>What is the patient name?</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/contact/date_of_birth:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/t_assessment_date:label">
+            <value>Original Assessment Date</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/t_atpe_given_quantity:label">
+            <value>Last ATPE given quantity</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/t_follow_up_count:label">
+            <value>Follow up count</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/t_follow_up_type:label">
+            <value>Follow up type</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/t_num_yellow_strips:label">
+            <value>Number of Yellow Shakir Strips</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/t_pb_from_assessment:label">
+            <value>pb from last assessment</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/t_weight_from_assessment:label">
+            <value>weight from last assessment</value>
+          </text>
+          <text id="/malnutrition_followup/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/malnutrition_followup/patient_age_in_days:label">
+            <value>Days old</value>
+          </text>
+          <text id="/malnutrition_followup/patient_age_in_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/malnutrition_followup/patient_age_in_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/malnutrition_followup/patient_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/malnutrition_followup/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/malnutrition_followup/patient_name:label">
+            <value>Patient Name</value>
+          </text>
+          <text id="/malnutrition_followup/patient_sex:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/malnutrition_followup/patient_sex_en:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/malnutrition_followup/patient_sex_fr:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/n_death_report:label">
+            <value>Please submit a death report</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/n_submit:label">
+            <value>Submit this form will stop the monitoring of malnutrition</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_malnutrition:label">
+            <value>Malnutrition</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /malnutrition_followup/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /malnutrition_followup/patient_sex_en "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /malnutrition_followup/patient_age_display "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_presence_danger_signs:label">
+            <value>Presence of Danger signs</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_ref_visit:label">
+            <value>The next follow-up visit is in 24 hours</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_referral:label">
+            <value>Refer to USP&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_referral_1:label">
+            <value>Refer to USP for danger signs</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_referral_2:label">
+            <value>Refer to USP for PB decrease</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_referral_3:label">
+            <value>Refer to USP for Weight decrease</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_signs_symptoms:label">
+            <value>Signs &amp; Symptoms&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_summary:label">
+            <value>Patient Summary&lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_treatment:label">
+            <value>Treatment&lt;i class="fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_have_you_refer_child/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_have_you_refer_child/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_have_you_refer_child:label">
+            <value>Did you refer the child?</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_next_followup_visit:label">
+            <value>The next follow up visit is after one week</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_next_followup_visit_2:label">
+            <value>The next follow up visit is after 2 weeks</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_next_followup_visit_3:label">
+            <value>You must refer this patient to have better consultation</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_next_visit:label">
+            <value>Follow up&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_treat_with_atpe:label">
+            <value>Treat with ATPE</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_treat_with_enriched_flour_note:label">
+            <value>Provide 1 or 2 packets</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_why_not:label">
+            <value>Why?</value>
+          </text>
+          <text id="/malnutrition_followup/s_admission/s_task_to_perform/close_out:label">
+            <value>Close out</value>
+          </text>
+          <text id="/malnutrition_followup/s_admission/s_task_to_perform/follow_up:label">
+            <value>Malnutrition followup</value>
+          </text>
+          <text id="/malnutrition_followup/s_admission/s_task_to_perform:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/malnutrition_followup/s_admission/s_task_to_perform:label">
+            <value>What task do you want to perform?</value>
+          </text>
+          <text id="/malnutrition_followup/s_admission:label">
+            <value>Today's Task</value>
+          </text>
+          <text id="/malnutrition_followup/s_advices/s_give_advices:label">
+            <value>Please give advices</value>
+          </text>
+          <text id="/malnutrition_followup/s_advices/s_nutrtional_advices/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_advices/s_nutrtional_advices/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_advices/s_nutrtional_advices:label">
+            <value>Did you give nutritional advice?</value>
+          </text>
+          <text id="/malnutrition_followup/s_advices:label">
+            <value>Nutritional advices</value>
+          </text>
+          <text id="/malnutrition_followup/s_ask_new_complaint/s_new_complaints/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_ask_new_complaint/s_new_complaints/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_ask_new_complaint/s_new_complaints:label">
+            <value>Does the child have a new complaint?</value>
+          </text>
+          <text id="/malnutrition_followup/s_ask_new_complaint/s_start_new_pcime_c:label">
+            <value>Please start a new PCIME-C Assessment</value>
+          </text>
+          <text id="/malnutrition_followup/s_ask_new_complaint:label">
+            <value>New Complaint</value>
+          </text>
+          <text id="/malnutrition_followup/s_atpe_quantity/last_atpe_given_quantity:label">
+            <value>ATPE quantity given last visit: &lt;b&gt; <output value=" /malnutrition_followup/inputs/t_atpe_given_quantity "/>&lt;/b&gt;</value>
+          </text>
+          <text id="/malnutrition_followup/s_atpe_quantity/s_atpe_given_quantity:label">
+            <value>Number of ATPE packages given to the family</value>
+          </text>
+          <text id="/malnutrition_followup/s_atpe_quantity:label">
+            <value>ATPE Quantity</value>
+          </text>
+          <text id="/malnutrition_followup/s_child_atpe_quantity_given/child_atpe_given/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_child_atpe_quantity_given/child_atpe_given/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_child_atpe_quantity_given/child_atpe_given:label">
+            <value>Have you give ATPE to child</value>
+          </text>
+          <text id="/malnutrition_followup/s_child_atpe_quantity_given/no_child_atpe_given_note:label">
+            <value>Conseillez les parents</value>
+          </text>
+          <text id="/malnutrition_followup/s_child_atpe_quantity_given/yes_child_atpe_given_note:label">
+            <value>Felicitez les parents</value>
+          </text>
+          <text id="/malnutrition_followup/s_child_atpe_quantity_given:label">
+            <value>ATPE donné à l'enfant</value>
+          </text>
+          <text id="/malnutrition_followup/s_close_out/s_death_report:label">
+            <value>Please submit a death report</value>
+          </text>
+          <text id="/malnutrition_followup/s_close_out/s_why_close_out/cured:label">
+            <value>Person Cured</value>
+          </text>
+          <text id="/malnutrition_followup/s_close_out/s_why_close_out/died:label">
+            <value>Person deceased</value>
+          </text>
+          <text id="/malnutrition_followup/s_close_out/s_why_close_out/moved:label">
+            <value>Person moved</value>
+          </text>
+          <text id="/malnutrition_followup/s_close_out/s_why_close_out:label">
+            <value>Why do you want to close it?</value>
+          </text>
+          <text id="/malnutrition_followup/s_close_out:label">
+            <value>Close out</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_blood_stools/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_blood_stools/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_blood_stools:label">
+            <value>There is blood in stool</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_cannot_drink/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_cannot_drink/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_cannot_drink:label">
+            <value>The child cannot drink or suckle</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_convulsion/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_convulsion/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_convulsion:label">
+            <value>The child has convulsed (CONVULSION ANTECEDENT)</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_often_sick/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_often_sick/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_often_sick:label">
+            <value>The child is often sick</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_throwup/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_throwup/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_throwup:label">
+            <value>The child vomits everything he consumes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_diarrhea_more_14/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_diarrhea_more_14/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_diarrhea_more_14:label">
+            <value>The child has had diarrhea for more than 14 days</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_note_child:label">
+            <value>&lt;b&gt;Ask if&lt;/b&gt; If the child have one or many danger signs</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_urine_cocacola/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_urine_cocacola/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_urine_cocacola:label">
+            <value>The urine is coca cola</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask:label">
+            <value>Danger signs</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_child_present:label">
+            <value>&lt;b&gt;Look for&lt;/b&gt; Child presenting with one or more of these danger signs</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_dehydration/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_dehydration/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_dehydration:label">
+            <value>Severe dehydration. Skin folds appear very slowly (more than 2 seconds) or Eyes pressed</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_edema/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_edema/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_edema:label">
+            <value>Foot edema</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_fontanelle/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_fontanelle/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_fontanelle:label">
+            <value>Fontanelle anterior bulging</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_neck_stiffness/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_neck_stiffness/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_neck_stiffness:label">
+            <value>Neck stiffness</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_rashes/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_rashes/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_rashes:label">
+            <value>Rashes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue:label">
+            <value>Is it possible to continue the assessment?</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for:label">
+            <value>Danger signs</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_anemia/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_anemia/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_anemia:label">
+            <value>There are signs of anemia or paleness</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_convulsing/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_convulsing/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_convulsing:label">
+            <value>Child lethargic (very weak) or unconscious</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing:label">
+            <value>The child has difficulty breathing (chest pulling, whistling or flapping of nose wings)</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_slimming/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_slimming/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_slimming:label">
+            <value>The child has severe slimming</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_unconscious/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_unconscious/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_unconscious:label">
+            <value>The child is currently convulsing</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_exist:label">
+            <value>&lt;b&gt;Observe if&lt;/b&gt; If the child presents one or more of these danger signs</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe:label">
+            <value>Danger signs</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines/s_congrats:label">
+            <value>Congratulate the woman</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines/s_counselling:label">
+            <value>Counsel the mother</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines/s_right_dosage/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines/s_right_dosage/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines/s_right_dosage:label">
+            <value>Does the child take the medicines in the right way?</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines:label">
+            <value>Medecines take-up</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_albend/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_albend/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_albend:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_albend:label">
+            <value>Was Albendazol given?</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_amox/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_amox/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_amox:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_amox:label">
+            <value>Was Amoxicilin given?</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_vita_a/no:label">
+            <value>No</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_vita_a/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_vita_a:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_vita_a:label">
+            <value>Was Vitamin A given?</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give:label">
+            <value>Medecines to give</value>
+          </text>
+          <text id="/malnutrition_followup/s_muac/note_last_constants:label">
+            <value>PB last assessment: <output value=" /malnutrition_followup/pb_from_assessment "/> and last Weight: <output value=" /malnutrition_followup/weight_from_assessment "/></value></text>
+          <text id="/malnutrition_followup/s_muac/s_muac_lengt:label">
+            <value>What is the MUAC length</value>
+          </text>
+          <text id="/malnutrition_followup/s_muac/s_progression_pb:label">
+            <value>today's PB has decreased compared to the past visit!</value>
+          </text>
+          <text id="/malnutrition_followup/s_muac/s_progression_weight:label">
+            <value>today's weight has decreased compared to the past visit!</value>
+          </text>
+          <text id="/malnutrition_followup/s_muac/s_weight:label">
+            <value>What is the weight of the child?</value>
+          </text>
+          <text id="/malnutrition_followup/s_muac:label">
+            <value>MUAC</value>
+          </text>
+          <text id="/malnutrition_followup/visited_contact_uuid:label">
+            <value>Family Id</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/malnutrition_followup/follow_up_count:label">
+            <value>Nombre de suivi</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/contact/_id:hint">
+            <value>Sélectionner une personne dans la liste</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/contact/_id:jr:constraintMsg">
+            <value>L'âge du patient doit être inférieur à 5 ans</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/contact/_id:label">
+            <value>Quel est le nom du patient ?</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/source_id:label">
+            <value>Source de l'ID</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/t_assessment_date:label">
+            <value>Date d'évaluation initiale</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/t_atpe_given_quantity:label">
+            <value>Dernière ATPE donnée</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/t_follow_up_count:label">
+            <value>Nombre de suivi</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/t_follow_up_type:label">
+            <value>Type de suivi</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/t_num_yellow_strips:label">
+            <value>Nombre de bandes jaunes</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/t_pb_from_assessment:label">
+            <value>pb from last assessment</value>
+          </text>
+          <text id="/malnutrition_followup/inputs/t_weight_from_assessment:label">
+            <value>weight from last assessment</value>
+          </text>
+          <text id="/malnutrition_followup/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/malnutrition_followup/patient_age_in_days:label">
+            <value>Jours</value>
+          </text>
+          <text id="/malnutrition_followup/patient_age_in_months:label">
+            <value>Mois</value>
+          </text>
+          <text id="/malnutrition_followup/patient_age_in_years:label">
+            <value>Années</value>
+          </text>
+          <text id="/malnutrition_followup/patient_id:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/malnutrition_followup/patient_id:label">
+            <value>Identifiant du patient</value>
+          </text>
+          <text id="/malnutrition_followup/patient_name:label">
+            <value>Nom du patient</value>
+          </text>
+          <text id="/malnutrition_followup/patient_sex:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/malnutrition_followup/patient_sex_en:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/malnutrition_followup/patient_sex_fr:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/n_death_report:label">
+            <value>Merci de soumettre un rapport de décès</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/n_submit:label">
+            <value>Soumettre ce formulaire va arreter le suivi de la malnutrition</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_malnutrition:label">
+            <value>Malnutrition</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /malnutrition_followup/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /malnutrition_followup/patient_sex_fr "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /malnutrition_followup/patient_age_display_fr "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_presence_danger_signs:label">
+            <value>Présence de signes de danger</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_ref_visit:label">
+            <value>La prochaine visite de suivi référence est dans 24 heures</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_referral:label">
+            <value>Référer à l'USP&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_referral_1:label">
+            <value>Référer à l'USP pour Signes de Danger</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_referral_2:label">
+            <value>Référer à l'USP pour diminution de PB</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_referral_3:label">
+            <value>Référer à l'USP pour diminution du Poids</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_signs_symptoms:label">
+            <value>Signes et Symptômes&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_summary:label">
+            <value>Détail du Patient&lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/r_treatment:label">
+            <value>Traitement&lt;i class="fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_have_you_refer_child/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_have_you_refer_child/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_have_you_refer_child:label">
+            <value>Est-ce que vous avez référé l'enfant ?</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_next_followup_visit:label">
+            <value>La prochaine visite de suivi de la malnutrition est dans 7 jours</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_next_followup_visit_2:label">
+            <value>La prochaine visite de suivi de la malnutrition est dans 14 jours</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_next_followup_visit_3:label">
+            <value>Si l'enfant n'est pas sortie de la malnutrition, veuillez le référer pour une meilleure pris en charge</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_next_visit:label">
+            <value>Suivi &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_treat_with_atpe:label">
+            <value>Traiter avec ATPE</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_treat_with_enriched_flour_note:label">
+            <value>Vous avez donné <output value=" /malnutrition_followup/s_atpe_quantity/s_atpe_given_quantity "/> sachets d'ATPE</value>
+          </text>
+          <text id="/malnutrition_followup/results_page/s_why_not:label">
+            <value>Pour quelle raison?</value>
+          </text>
+          <text id="/malnutrition_followup/s_admission/s_task_to_perform/close_out:label">
+            <value>Clôture</value>
+          </text>
+          <text id="/malnutrition_followup/s_admission/s_task_to_perform/follow_up:label">
+            <value>Suivi Malnutrition</value>
+          </text>
+          <text id="/malnutrition_followup/s_admission/s_task_to_perform:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/malnutrition_followup/s_admission/s_task_to_perform:label">
+            <value>Quelle est la tâche à effectuer ?</value>
+          </text>
+          <text id="/malnutrition_followup/s_admission:label">
+            <value>Tâches à effectuer</value>
+          </text>
+          <text id="/malnutrition_followup/s_advices/s_give_advices:label">
+            <value>Merci de donner des conseils nutritionels à la famille</value>
+          </text>
+          <text id="/malnutrition_followup/s_advices/s_nutrtional_advices/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_advices/s_nutrtional_advices/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_advices/s_nutrtional_advices:label">
+            <value>Avez-vous donné des conseils nutritionnels à la famille?</value>
+          </text>
+          <text id="/malnutrition_followup/s_advices:label">
+            <value>Conseils Nutritionnels</value>
+          </text>
+          <text id="/malnutrition_followup/s_ask_new_complaint/s_new_complaints/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_ask_new_complaint/s_new_complaints/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_ask_new_complaint/s_new_complaints:label">
+            <value>Est-ce que l'enfant a un nouveau problème de santé?</value>
+          </text>
+          <text id="/malnutrition_followup/s_ask_new_complaint/s_start_new_pcime_c:label">
+            <value>Commencer une nouvelle Consultation PCIME-C</value>
+          </text>
+          <text id="/malnutrition_followup/s_ask_new_complaint:label">
+            <value>Nouvelle plainte</value>
+          </text>
+          <text id="/malnutrition_followup/s_atpe_quantity/last_atpe_given_quantity:label">
+            <value>ATPE quantité donnée dernière visite: &lt;b&gt;<output value=" /malnutrition_followup/inputs/t_atpe_given_quantity "/>&lt;/b&gt;</value>
+          </text>
+          <text id="/malnutrition_followup/s_atpe_quantity/s_atpe_given_quantity:label">
+            <value>Nombre de sachets d'ATPE donnés à la famille</value>
+          </text>
+          <text id="/malnutrition_followup/s_atpe_quantity:label">
+            <value>Quantite ATPE</value>
+          </text>
+          <text id="/malnutrition_followup/s_child_atpe_quantity_given/child_atpe_given/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_child_atpe_quantity_given/child_atpe_given/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_child_atpe_quantity_given/child_atpe_given:label">
+            <value>Demandez aux parents s'ils ont bien donné l'ATPE à l'enfant?</value>
+          </text>
+          <text id="/malnutrition_followup/s_child_atpe_quantity_given/no_child_atpe_given_note:label">
+            <value>&lt;b&gt;Conseillez les parents en leur expliquant l'importance de données l'ATPE à l'enfant&lt;/b&gt;</value>
+          </text>
+          <text id="/malnutrition_followup/s_child_atpe_quantity_given/yes_child_atpe_given_note:label">
+            <value>&lt;b&gt;Félicitez les parents&lt;/b&gt;</value>
+          </text>
+          <text id="/malnutrition_followup/s_child_atpe_quantity_given:label">
+            <value>Quantite ATPE</value>
+          </text>
+          <text id="/malnutrition_followup/s_close_out/s_death_report:label">
+            <value>Merci de soumettre un rapport de décès</value>
+          </text>
+          <text id="/malnutrition_followup/s_close_out/s_why_close_out/cured:label">
+            <value>Personne sortie de la malnutrition</value>
+          </text>
+          <text id="/malnutrition_followup/s_close_out/s_why_close_out/died:label">
+            <value>Personne décédée</value>
+          </text>
+          <text id="/malnutrition_followup/s_close_out/s_why_close_out/moved:label">
+            <value>Personne deplacée</value>
+          </text>
+          <text id="/malnutrition_followup/s_close_out/s_why_close_out:label">
+            <value>Motif de Fin/Arrêt de visite de suivi par l'ASC</value>
+          </text>
+          <text id="/malnutrition_followup/s_close_out:label">
+            <value>Clôture</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_blood_stools/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_blood_stools/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_blood_stools:label">
+            <value>Sang dans les selles</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_cannot_drink/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_cannot_drink/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_cannot_drink:label">
+            <value>L'enfant est incapable de boire ou de teter</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_convulsion/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_convulsion/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_convulsion:label">
+            <value>L'enfant a convulsé (ANTECEDENT DE CONVULSIONS)</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_often_sick/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_often_sick/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_often_sick:label">
+            <value>Enfant souvent malade</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_throwup/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_throwup/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_throwup:label">
+            <value>L'enfant vomit tout ce qu'il consomme</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_diarrhea_more_14/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_diarrhea_more_14/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_diarrhea_more_14:label">
+            <value>Diarrhée de plus de 14 jours</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_note_child:label">
+            <value>&lt;b&gt;Demander&lt;/b&gt; Si l'enfant présente un ou plusieurs de ces signes de danger</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_urine_cocacola/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_urine_cocacola/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_urine_cocacola:label">
+            <value>Urine coca cola</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_ask:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_child_present:label">
+            <value>&lt;b&gt;RECHERCHER&lt;/b&gt; Si l'enfant présente un ou plusieurs de ces signes de danger</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_dehydration/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_dehydration/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_dehydration:label">
+            <value>Déshydratation sévère. Plis cutanés s'affichent très lentement (plus de 2 secondes) ou Yeux enfoncés</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_edema/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_edema/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_edema:label">
+            <value>Oedèmes des pieds</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_fontanelle/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_fontanelle/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_fontanelle:label">
+            <value>Fontanelle antérieuré bombée</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_neck_stiffness/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_neck_stiffness/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_neck_stiffness:label">
+            <value>Raideur de la nuque</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_rashes/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_rashes/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_rashes:label">
+            <value>Eruptions cutanées</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue:label">
+            <value>Est-il possible de continuer le suivi?</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_look_for:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_anemia/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_anemia/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_anemia:label">
+            <value>Anémie ou pâleur</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_convulsing/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_convulsing/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_convulsing:label">
+            <value>Enfant léthargique (très affaibli) ou inconscient</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing:label">
+            <value>Respiration difficile (tirage sous costal, sifflement ou battement des ailes du nez)</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_slimming/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_slimming/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_slimming:label">
+            <value>L'enfant a un amaigrissement sévère</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_unconscious/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_unconscious/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_unconscious:label">
+            <value>L'enfant convulse actuellement</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_exist:label">
+            <value>&lt;b&gt;OBSERVER&lt;/b&gt; Si l'enfant présente un ou plusieurs de ces signes de danger</value>
+          </text>
+          <text id="/malnutrition_followup/s_danger_signs_observe:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines/s_congrats:label">
+            <value>Feliciter le parent</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines/s_counselling:label">
+            <value>Conseiller le parent et montrer lui comment faire</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines/s_right_dosage/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines/s_right_dosage/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines/s_right_dosage:label">
+            <value>L'enfant prend-il ses médicaments et ATPE comme prescrit?</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines:label">
+            <value>Prise des medicaments</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_albend/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_albend/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_albend:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_albend:label">
+            <value>Est-ce que l'Albendazole a été administré?</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_amox/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_amox/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_amox:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_amox:label">
+            <value>Est-ce que l'Amoxiciline a été administré?</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_vita_a/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_vita_a/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_vita_a:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give/s_vita_a:label">
+            <value>Est-ce que la Vita A a été administrée?</value>
+          </text>
+          <text id="/malnutrition_followup/s_medecines_to_give:label">
+            <value>Medicaments a administrer</value>
+          </text>
+          <text id="/malnutrition_followup/s_muac/note_last_constants:label">
+            <value>PB dernière visite: <output value=" /malnutrition_followup/pb_from_assessment "/> et dernier poids: <output value=" /malnutrition_followup/weight_from_assessment "/></value></text>
+          <text id="/malnutrition_followup/s_muac/s_muac_lengt:label">
+            <value>Quel est le périmètre brachial (PB) de l'enfant?</value>
+          </text>
+          <text id="/malnutrition_followup/s_muac/s_progression_pb:label">
+            <value>le PB d'aujourd'hui a diminué par rapport à la visite passée !</value>
+          </text>
+          <text id="/malnutrition_followup/s_muac/s_progression_weight:label">
+            <value>le poids d'aujourd'hui a diminué par rapport à la visite passée !</value>
+          </text>
+          <text id="/malnutrition_followup/s_muac/s_weight:label">
+            <value>Quel est le poids de l'enfant?</value>
+          </text>
+          <text id="/malnutrition_followup/s_muac:label">
+            <value>Périmètre Brachial</value>
+          </text>
+          <text id="/malnutrition_followup/visited_contact_uuid:label">
+            <value>Identifiant de la famille</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <malnutrition_followup delimiter="#" id="malnutrition_followup" prefix="J1!malnutrition_followup!" version="2017-09-22">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_follow_up_type/>
+            <t_follow_up_count/>
+            <t_num_yellow_strips/>
+            <t_assessment_date/>
+            <t_weight_from_assessment/>
+            <t_pb_from_assessment/>
+            <t_atpe_given_quantity/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent/>
+            </contact>
+          </inputs>
+          <weight_from_assessment/>
+          <pb_from_assessment/>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_age_display_fr/>
+          <patient_id/>
+          <patient_name/>
+          <patient_sex/>
+          <patient_sex_en/>
+          <patient_sex_fr/>
+          <visited_contact_uuid/>
+          <follow_up_count/>
+          <follow_up_count_number/>
+          <follow_up_count_label_en/>
+          <danger_signs/>
+          <assessment_date/>
+          <close_out/>
+          <referral/>
+          <s_admission>
+            <s_task_to_perform/>
+          </s_admission>
+          <s_medecines_to_give>
+            <s_amox/>
+            <s_albend/>
+            <s_vita_a/>
+          </s_medecines_to_give>
+          <s_danger_signs_ask>
+            <s_danger_signs_note_child/>
+            <s_danger_signs_child_cannot_drink/>
+            <s_danger_signs_child_throwup/>
+            <s_danger_signs_child_convulsion/>
+            <s_danger_signs_blood_stools/>
+            <s_danger_signs_diarrhea_more_14/>
+            <s_danger_signs_child_often_sick/>
+            <s_danger_signs_urine_cocacola/>
+          </s_danger_signs_ask>
+          <s_danger_signs_observe>
+            <s_danger_signs_exist/>
+            <s_danger_signs_child_convulsing/>
+            <s_danger_signs_child_unconscious/>
+            <s_danger_signs_child_anemia/>
+            <s_danger_signs_child_difficulty_breathing/>
+            <s_danger_signs_child_slimming/>
+          </s_danger_signs_observe>
+          <s_danger_signs_look_for>
+            <s_danger_signs_child_present/>
+            <s_danger_signs_dehydration/>
+            <s_danger_signs_neck_stiffness/>
+            <s_danger_signs_fontanelle/>
+            <s_danger_signs_rashes/>
+            <s_danger_signs_edema/>
+            <s_possibility_to_continue/>
+          </s_danger_signs_look_for>
+          <s_muac>
+            <note_last_constants/>
+            <s_muac_lengt/>
+            <s_weight/>
+            <s_progression_pb/>
+            <s_progression_weight/>
+          </s_muac>
+          <s_ask_new_complaint>
+            <s_new_complaints/>
+            <s_start_new_pcime_c/>
+          </s_ask_new_complaint>
+          <s_medecines>
+            <s_right_dosage/>
+            <s_congrats/>
+            <s_counselling/>
+          </s_medecines>
+          <s_child_atpe_quantity_given>
+            <child_atpe_given/>
+            <yes_child_atpe_given_note/>
+            <no_child_atpe_given_note/>
+          </s_child_atpe_quantity_given>
+          <s_atpe_quantity>
+            <last_atpe_given_quantity/>
+            <s_atpe_given_quantity/>
+          </s_atpe_quantity>
+          <s_advices>
+            <s_nutrtional_advices/>
+            <s_give_advices/>
+          </s_advices>
+          <s_close_out>
+            <s_why_close_out/>
+            <s_death_report/>
+          </s_close_out>
+          <results_page>
+            <r_summary/>
+            <r_patient_info/>
+            <r_signs_symptoms/>
+            <r_presence_danger_signs/>
+            <r_referral/>
+            <r_referral_1/>
+            <r_referral_2/>
+            <r_referral_3/>
+            <r_treatment/>
+            <r_malnutrition/>
+            <s_treat_with_atpe/>
+            <s_treat_with_enriched_flour_note/>
+            <n_submit/>
+            <n_death_report/>
+            <s_have_you_refer_child/>
+            <s_why_not/>
+            <s_next_visit/>
+            <r_ref_visit/>
+            <s_next_followup_visit/>
+            <s_next_followup_visit_2/>
+            <s_next_followup_visit_3/>
+          </results_page>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </malnutrition_followup>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/malnutrition_followup/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/malnutrition_followup/inputs/source" type="string"/>
+      <bind nodeset="/malnutrition_followup/inputs/source_id" type="string"/>
+      <bind nodeset="/malnutrition_followup/inputs/t_follow_up_type" type="string"/>
+      <bind nodeset="/malnutrition_followup/inputs/t_follow_up_count" type="string"/>
+      <bind nodeset="/malnutrition_followup/inputs/t_num_yellow_strips" type="string"/>
+      <bind nodeset="/malnutrition_followup/inputs/t_assessment_date" type="dateTime"/>
+      <bind nodeset="/malnutrition_followup/inputs/t_weight_from_assessment" type="decimal"/>
+      <bind nodeset="/malnutrition_followup/inputs/t_pb_from_assessment" type="int"/>
+      <bind nodeset="/malnutrition_followup/inputs/t_atpe_given_quantity" type="int"/>
+      <bind constraint=" /malnutrition_followup/patient_age_in_years  &lt; 5" jr:constraintMsg="jr:itext('/malnutrition_followup/inputs/contact/_id:jr:constraintMsg')" nodeset="/malnutrition_followup/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/malnutrition_followup/inputs/contact/name" type="string"/>
+      <bind nodeset="/malnutrition_followup/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/malnutrition_followup/inputs/contact/sex" type="string"/>
+      <bind nodeset="/malnutrition_followup/inputs/contact/parent" type="string"/>
+      <bind calculate="../inputs/t_weight_from_assessment" nodeset="/malnutrition_followup/weight_from_assessment" type="string"/>
+      <bind calculate="../inputs/t_pb_from_assessment" nodeset="/malnutrition_followup/pb_from_assessment" type="string"/>
+      <bind calculate="floor( difference-in-months(  /malnutrition_followup/inputs/contact/date_of_birth , today() ) div 12 )" nodeset="/malnutrition_followup/patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months(  /malnutrition_followup/inputs/contact/date_of_birth , today() )" nodeset="/malnutrition_followup/patient_age_in_months" type="string"/>
+      <bind calculate="floor( decimal-date-time(today()) - decimal-date-time( /malnutrition_followup/inputs/contact/date_of_birth ) )" nodeset="/malnutrition_followup/patient_age_in_days" type="string"/>
+      <bind calculate="concat(concat( /malnutrition_followup/patient_age_in_years , if( /malnutrition_followup/patient_age_in_years =1,' year and ',' years and ')),concat( /malnutrition_followup/patient_age_in_months  mod 12, if(( /malnutrition_followup/patient_age_in_months  mod 12)=1,' month old',' months old')))" nodeset="/malnutrition_followup/patient_age_display" type="string"/>
+      <bind calculate="concat(concat( /malnutrition_followup/patient_age_in_years , if( /malnutrition_followup/patient_age_in_years =1,' an et ',' ans et ')),concat( /malnutrition_followup/patient_age_in_months  mod 12, if(( /malnutrition_followup/patient_age_in_months  mod 12)=1,' mois',' mois')))" nodeset="/malnutrition_followup/patient_age_display_fr" type="string"/>
+      <bind calculate="../inputs/contact/_id" jr:requiredMsg="jr:itext('/malnutrition_followup/patient_id:jr:requiredMsg')" nodeset="/malnutrition_followup/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/malnutrition_followup/patient_name" type="string"/>
+      <bind calculate="../inputs/contact/sex" nodeset="/malnutrition_followup/patient_sex" type="string"/>
+      <bind calculate="if( /malnutrition_followup/patient_sex  = 'male' or  /malnutrition_followup/patient_sex  = 'homme' or  /malnutrition_followup/patient_sex  = 'Homme', 'Male', if( /malnutrition_followup/patient_sex  = 'female' or  /malnutrition_followup/patient_sex  = 'femme' or  /malnutrition_followup/patient_sex  = 'Femme', 'Female', ''))" nodeset="/malnutrition_followup/patient_sex_en" type="string"/>
+      <bind calculate="if( /malnutrition_followup/patient_sex  = 'male' or  /malnutrition_followup/patient_sex  = 'homme' or  /malnutrition_followup/patient_sex  = 'Homme', 'Homme', if( /malnutrition_followup/patient_sex  = 'female' or  /malnutrition_followup/patient_sex  = 'femme' or  /malnutrition_followup/patient_sex  = 'Femme', 'Femme', ''))" nodeset="/malnutrition_followup/patient_sex_fr" type="string"/>
+      <bind calculate="../inputs/contact/parent" nodeset="/malnutrition_followup/visited_contact_uuid" required="true()" type="string"/>
+      <bind calculate="../inputs/t_follow_up_count" nodeset="/malnutrition_followup/follow_up_count" type="string"/>
+      <bind calculate="number(../inputs/t_follow_up_count)" nodeset="/malnutrition_followup/follow_up_count_number" type="string"/>
+      <bind calculate="if( /malnutrition_followup/follow_up_count_number  = 1, &quot;7 days&quot;, if( /malnutrition_followup/follow_up_count_number  = 2, &quot;14 days&quot;, if( /malnutrition_followup/follow_up_count_number  = 3, &quot;21 days&quot;, if( /malnutrition_followup/follow_up_count_number  = 4, &quot;28 days&quot;, if( /malnutrition_followup/follow_up_count_number  = 5, &quot;42 days&quot;, if( /malnutrition_followup/follow_up_count_number  = 6, &quot;56 days&quot;, if( /malnutrition_followup/follow_up_count_number  = 7, &quot;70 days&quot;, if( /malnutrition_followup/follow_up_count_number  = 8, &quot;84 days&quot;, &quot;&quot;))))))))" nodeset="/malnutrition_followup/follow_up_count_label_en" type="string"/>
+      <bind calculate="if( /malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_cannot_drink ='yes' or  /malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_throwup  = 'yes' or  /malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_convulsion  = 'yes' or  /malnutrition_followup/s_danger_signs_ask/s_danger_signs_blood_stools  = 'yes' or  /malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_often_sick  = 'yes' or  /malnutrition_followup/s_danger_signs_ask/s_danger_signs_diarrhea_more_14  = 'yes' or  /malnutrition_followup/s_danger_signs_ask/s_danger_signs_urine_cocacola  = 'yes' or  /malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_convulsing  = 'yes' or  /malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_often_sick  = 'yes' or  /malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_unconscious  = 'yes' or  /malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_anemia  = 'yes' or  /malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing  = 'yes' or  /malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_slimming  = 'yes' or  /malnutrition_followup/s_danger_signs_look_for/s_danger_signs_dehydration  = 'yes' or  /malnutrition_followup/s_danger_signs_look_for/s_danger_signs_neck_stiffness  = 'yes' or  /malnutrition_followup/s_danger_signs_look_for/s_danger_signs_fontanelle  = 'yes' or  /malnutrition_followup/s_danger_signs_look_for/s_danger_signs_rashes  = 'yes' or  /malnutrition_followup/s_danger_signs_look_for/s_danger_signs_edema  = 'yes','true','false')" nodeset="/malnutrition_followup/danger_signs" type="string"/>
+      <bind calculate=" /malnutrition_followup/inputs/t_assessment_date " nodeset="/malnutrition_followup/assessment_date" type="string"/>
+      <bind calculate="if( /malnutrition_followup/s_admission/s_task_to_perform  = 'close_out','true','false')" nodeset="/malnutrition_followup/close_out" type="string"/>
+      <bind calculate="if( /malnutrition_followup/close_out  = 'false' and ( /malnutrition_followup/danger_signs  = 'true' or ( /malnutrition_followup/s_muac/s_weight  &lt;  /malnutrition_followup/weight_from_assessment  or  /malnutrition_followup/s_muac/s_muac_lengt  &lt;  /malnutrition_followup/pb_from_assessment )), 'true', 'false')" nodeset="/malnutrition_followup/referral" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/malnutrition_followup/s_admission/s_task_to_perform:jr:requiredMsg')" nodeset="/malnutrition_followup/s_admission/s_task_to_perform" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_medecines_to_give" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'follow_up'"/>
+      <bind jr:requiredMsg="jr:itext('/malnutrition_followup/s_medecines_to_give/s_amox:jr:requiredMsg')" nodeset="/malnutrition_followup/s_medecines_to_give/s_amox" relevant=" /malnutrition_followup/follow_up_count_number  = 0 or  /malnutrition_followup/follow_up_count_number  = 1 or  /malnutrition_followup/follow_up_count_number  = ''" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/malnutrition_followup/s_medecines_to_give/s_albend:jr:requiredMsg')" nodeset="/malnutrition_followup/s_medecines_to_give/s_albend" relevant=" /malnutrition_followup/follow_up_count_number  = 4" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/malnutrition_followup/s_medecines_to_give/s_vita_a:jr:requiredMsg')" nodeset="/malnutrition_followup/s_medecines_to_give/s_vita_a" relevant=" /malnutrition_followup/follow_up_count_number  = 4" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_ask" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'follow_up'"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_note_child" readonly="true()" type="string"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_cannot_drink" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_throwup" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_convulsion" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_blood_stools" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_diarrhea_more_14" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_often_sick" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_urine_cocacola" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_observe" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'follow_up'"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_exist" readonly="true()" type="string"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_convulsing" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_unconscious" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_anemia" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_slimming" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_look_for" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'follow_up'"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_child_present" readonly="true()" type="string"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_dehydration" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_neck_stiffness" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_fontanelle" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_rashes" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_edema" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue" relevant=" /malnutrition_followup/danger_signs  = 'true'" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_muac" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'follow_up' and ( /malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue  = 'yes' or  /malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue  = '')"/>
+      <bind nodeset="/malnutrition_followup/s_muac/note_last_constants" readonly="true()" type="string"/>
+      <bind constraint=". &gt; 0" nodeset="/malnutrition_followup/s_muac/s_muac_lengt" relevant=" /malnutrition_followup/patient_age_in_months  &gt;= 6" required="true()" type="int"/>
+      <bind constraint=". &gt; 0.00" nodeset="/malnutrition_followup/s_muac/s_weight" type="decimal"/>
+      <bind nodeset="/malnutrition_followup/s_muac/s_progression_pb" readonly="true()" relevant=" /malnutrition_followup/s_muac/s_muac_lengt  !='' and  /malnutrition_followup/s_muac/s_muac_lengt  &lt;  /malnutrition_followup/pb_from_assessment " type="string"/>
+      <bind nodeset="/malnutrition_followup/s_muac/s_progression_weight" readonly="true()" relevant=" /malnutrition_followup/s_muac/s_weight  !='' and  /malnutrition_followup/s_muac/s_weight  &lt;  /malnutrition_followup/weight_from_assessment " type="string"/>
+      <bind nodeset="/malnutrition_followup/s_ask_new_complaint" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'follow_up' and ( /malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue  = 'yes' or  /malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue  = '')"/>
+      <bind nodeset="/malnutrition_followup/s_ask_new_complaint/s_new_complaints" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_ask_new_complaint/s_start_new_pcime_c" readonly="true()" relevant=" /malnutrition_followup/s_ask_new_complaint/s_new_complaints  = 'yes'" type="string"/>
+      <bind nodeset="/malnutrition_followup/s_medecines" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'follow_up' and ( /malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue  = 'yes' or  /malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue  = '')"/>
+      <bind nodeset="/malnutrition_followup/s_medecines/s_right_dosage" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_medecines/s_congrats" readonly="true()" relevant=" /malnutrition_followup/s_medecines/s_right_dosage  = 'yes'" type="string"/>
+      <bind nodeset="/malnutrition_followup/s_medecines/s_counselling" readonly="true()" relevant=" /malnutrition_followup/s_medecines/s_right_dosage  = 'no'" type="string"/>
+      <bind nodeset="/malnutrition_followup/s_child_atpe_quantity_given" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'follow_up' and ( /malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue  = 'yes' or  /malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue  = '')"/>
+      <bind nodeset="/malnutrition_followup/s_child_atpe_quantity_given/child_atpe_given" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_child_atpe_quantity_given/yes_child_atpe_given_note" readonly="true()" relevant=" /malnutrition_followup/s_child_atpe_quantity_given/child_atpe_given  = 'yes'" type="string"/>
+      <bind nodeset="/malnutrition_followup/s_child_atpe_quantity_given/no_child_atpe_given_note" readonly="true()" relevant=" /malnutrition_followup/s_child_atpe_quantity_given/child_atpe_given  = 'no'" type="string"/>
+      <bind nodeset="/malnutrition_followup/s_atpe_quantity" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'follow_up' and ( /malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue  = 'yes' or  /malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue  = '')"/>
+      <bind nodeset="/malnutrition_followup/s_atpe_quantity/last_atpe_given_quantity" readonly="true()" relevant=" /malnutrition_followup/inputs/t_atpe_given_quantity !='' and  /malnutrition_followup/inputs/t_atpe_given_quantity  &gt; 0" type="string"/>
+      <bind nodeset="/malnutrition_followup/s_atpe_quantity/s_atpe_given_quantity" required="true()" type="int"/>
+      <bind nodeset="/malnutrition_followup/s_advices" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'follow_up' and ( /malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue  = 'yes' or  /malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue  = '')"/>
+      <bind nodeset="/malnutrition_followup/s_advices/s_nutrtional_advices" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_advices/s_give_advices" readonly="true()" relevant=" /malnutrition_followup/s_advices/s_nutrtional_advices ='no'" type="string"/>
+      <bind nodeset="/malnutrition_followup/s_close_out" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'close_out'"/>
+      <bind nodeset="/malnutrition_followup/s_close_out/s_why_close_out" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'close_out'" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/s_close_out/s_death_report" readonly="true()" relevant=" /malnutrition_followup/s_close_out/s_why_close_out  = 'died'" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/r_signs_symptoms" readonly="true()" relevant=" /malnutrition_followup/danger_signs  = 'true'" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/r_presence_danger_signs" readonly="true()" relevant=" /malnutrition_followup/danger_signs  = 'true'" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/r_referral" readonly="true()" relevant=" /malnutrition_followup/referral  = 'true'" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/r_referral_1" readonly="true()" relevant=" /malnutrition_followup/danger_signs  = 'true'" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/r_referral_2" readonly="true()" relevant=" /malnutrition_followup/s_muac/s_muac_lengt  != '' and  /malnutrition_followup/s_muac/s_muac_lengt  &lt;  /malnutrition_followup/pb_from_assessment  and  /malnutrition_followup/close_out  = 'false'" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/r_referral_3" readonly="true()" relevant=" /malnutrition_followup/s_muac/s_weight  != '' and  /malnutrition_followup/s_muac/s_weight  &lt;  /malnutrition_followup/weight_from_assessment  and  /malnutrition_followup/close_out  = 'false'" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/r_treatment" readonly="true()" relevant=" /malnutrition_followup/close_out  = 'false' and  /malnutrition_followup/danger_signs  = 'false'" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/r_malnutrition" readonly="true()" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'follow_up' and  /malnutrition_followup/danger_signs  = 'false'" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/s_treat_with_atpe" readonly="true()" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'follow_up' and  /malnutrition_followup/danger_signs  = 'false'" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/s_treat_with_enriched_flour_note" readonly="true()" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'follow_up' and  /malnutrition_followup/danger_signs  = 'false'" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/n_submit" readonly="true()" relevant=" /malnutrition_followup/close_out  = 'true'" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/n_death_report" readonly="true()" relevant=" /malnutrition_followup/s_close_out/s_why_close_out  = 'died'" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/s_have_you_refer_child" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'follow_up' and  /malnutrition_followup/danger_signs  = 'false'" required="true()" type="select1"/>
+      <bind nodeset="/malnutrition_followup/results_page/s_why_not" relevant=" /malnutrition_followup/results_page/s_have_you_refer_child  = 'no'" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/s_next_visit" readonly="true()" relevant=" /malnutrition_followup/close_out  = 'false'" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/r_ref_visit" readonly="true()" relevant=" /malnutrition_followup/s_admission/s_task_to_perform  = 'follow_up' and ( /malnutrition_followup/danger_signs  = 'true' or ( /malnutrition_followup/s_muac/s_weight  &lt;  /malnutrition_followup/weight_from_assessment  or  /malnutrition_followup/s_muac/s_muac_lengt  &lt;  /malnutrition_followup/pb_from_assessment ))" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/s_next_followup_visit" readonly="true()" relevant=" /malnutrition_followup/follow_up_count_number &lt;5" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/s_next_followup_visit_2" readonly="true()" relevant=" /malnutrition_followup/follow_up_count_number =5" type="string"/>
+      <bind nodeset="/malnutrition_followup/results_page/s_next_followup_visit_3" readonly="true()" relevant=" /malnutrition_followup/follow_up_count_number &gt;=6" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/malnutrition_followup/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/malnutrition_followup/inputs">
+      <label ref="jr:itext('/malnutrition_followup/inputs:label')"/>
+      <input appearance="hidden" ref="/malnutrition_followup/inputs/source">
+        <label ref="jr:itext('/malnutrition_followup/inputs/source:label')"/>
+      </input>
+      <input appearance="hidden" ref="/malnutrition_followup/inputs/source_id">
+        <label ref="jr:itext('/malnutrition_followup/inputs/source_id:label')"/>
+      </input>
+      <input appearance="hidden" ref="/malnutrition_followup/inputs/t_follow_up_type">
+        <label ref="jr:itext('/malnutrition_followup/inputs/t_follow_up_type:label')"/>
+      </input>
+      <input appearance="hidden" ref="/malnutrition_followup/inputs/t_follow_up_count">
+        <label ref="jr:itext('/malnutrition_followup/inputs/t_follow_up_count:label')"/>
+      </input>
+      <input appearance="hidden" ref="/malnutrition_followup/inputs/t_num_yellow_strips">
+        <label ref="jr:itext('/malnutrition_followup/inputs/t_num_yellow_strips:label')"/>
+      </input>
+      <input appearance="hidden" ref="/malnutrition_followup/inputs/t_assessment_date">
+        <label ref="jr:itext('/malnutrition_followup/inputs/t_assessment_date:label')"/>
+      </input>
+      <input appearance="hidden" ref="/malnutrition_followup/inputs/t_weight_from_assessment">
+        <label ref="jr:itext('/malnutrition_followup/inputs/t_weight_from_assessment:label')"/>
+      </input>
+      <input appearance="hidden" ref="/malnutrition_followup/inputs/t_pb_from_assessment">
+        <label ref="jr:itext('/malnutrition_followup/inputs/t_pb_from_assessment:label')"/>
+      </input>
+      <input appearance="hidden" ref="/malnutrition_followup/inputs/t_atpe_given_quantity">
+        <label ref="jr:itext('/malnutrition_followup/inputs/t_atpe_given_quantity:label')"/>
+      </input>
+      <group ref="/malnutrition_followup/inputs/contact">
+        <input appearance="db-object" ref="/malnutrition_followup/inputs/contact/_id">
+          <label ref="jr:itext('/malnutrition_followup/inputs/contact/_id:label')"/>
+          <hint ref="jr:itext('/malnutrition_followup/inputs/contact/_id:hint')"/>
+        </input>
+        <input appearance="hidden" ref="/malnutrition_followup/inputs/contact/name">
+          <label ref="jr:itext('/malnutrition_followup/inputs/contact/name:label')"/>
+        </input>
+        <input appearance="hidden" ref="/malnutrition_followup/inputs/contact/date_of_birth">
+          <label ref="jr:itext('/malnutrition_followup/inputs/contact/date_of_birth:label')"/>
+        </input>
+        <input appearance="hidden" ref="/malnutrition_followup/inputs/contact/sex">
+          <label ref="jr:itext('/malnutrition_followup/inputs/contact/sex:label')"/>
+        </input>
+        <input appearance="hidden" ref="/malnutrition_followup/inputs/contact/parent">
+          <label ref="jr:itext('/malnutrition_followup/inputs/contact/parent:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/malnutrition_followup/s_admission">
+      <label ref="jr:itext('/malnutrition_followup/s_admission:label')"/>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_admission/s_task_to_perform">
+        <label ref="jr:itext('/malnutrition_followup/s_admission/s_task_to_perform:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_admission/s_task_to_perform/follow_up:label')"/>
+          <value>follow_up</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_admission/s_task_to_perform/close_out:label')"/>
+          <value>close_out</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/malnutrition_followup/s_medecines_to_give">
+      <label ref="jr:itext('/malnutrition_followup/s_medecines_to_give:label')"/>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_medecines_to_give/s_amox">
+        <label ref="jr:itext('/malnutrition_followup/s_medecines_to_give/s_amox:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_medecines_to_give/s_amox/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_medecines_to_give/s_amox/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_medecines_to_give/s_albend">
+        <label ref="jr:itext('/malnutrition_followup/s_medecines_to_give/s_albend:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_medecines_to_give/s_albend/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_medecines_to_give/s_albend/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_medecines_to_give/s_vita_a">
+        <label ref="jr:itext('/malnutrition_followup/s_medecines_to_give/s_vita_a:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_medecines_to_give/s_vita_a/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_medecines_to_give/s_vita_a/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/malnutrition_followup/s_danger_signs_ask">
+      <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask:label')"/>
+      <input ref="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_note_child">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_note_child:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_cannot_drink">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_cannot_drink:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_cannot_drink/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_cannot_drink/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_throwup">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_throwup:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_throwup/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_throwup/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_convulsion">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_convulsion:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_convulsion/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_convulsion/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_blood_stools">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_blood_stools:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_blood_stools/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_blood_stools/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_diarrhea_more_14">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_diarrhea_more_14:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_diarrhea_more_14/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_diarrhea_more_14/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_often_sick">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_often_sick:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_often_sick/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_child_often_sick/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_ask/s_danger_signs_urine_cocacola">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_urine_cocacola:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_urine_cocacola/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_ask/s_danger_signs_urine_cocacola/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/malnutrition_followup/s_danger_signs_observe">
+      <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe:label')"/>
+      <input ref="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_exist">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe/s_danger_signs_exist:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_convulsing">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_convulsing:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_convulsing/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_convulsing/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_unconscious">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_unconscious:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_unconscious/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_unconscious/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_anemia">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_anemia:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_anemia/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_anemia/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_slimming">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_slimming:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_slimming/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_observe/s_danger_signs_child_slimming/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/malnutrition_followup/s_danger_signs_look_for">
+      <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for:label')"/>
+      <input ref="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_child_present">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_child_present:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_dehydration">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_dehydration:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_dehydration/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_dehydration/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_neck_stiffness">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_neck_stiffness:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_neck_stiffness/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_neck_stiffness/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_fontanelle">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_fontanelle:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_fontanelle/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_fontanelle/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_rashes">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_rashes:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_rashes/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_rashes/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_edema">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_edema:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_edema/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_danger_signs_edema/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue">
+        <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_danger_signs_look_for/s_possibility_to_continue/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/malnutrition_followup/s_muac">
+      <label ref="jr:itext('/malnutrition_followup/s_muac:label')"/>
+      <input ref="/malnutrition_followup/s_muac/note_last_constants">
+        <label ref="jr:itext('/malnutrition_followup/s_muac/note_last_constants:label')"/>
+      </input>
+      <input ref="/malnutrition_followup/s_muac/s_muac_lengt">
+        <label ref="jr:itext('/malnutrition_followup/s_muac/s_muac_lengt:label')"/>
+      </input>
+      <input ref="/malnutrition_followup/s_muac/s_weight">
+        <label ref="jr:itext('/malnutrition_followup/s_muac/s_weight:label')"/>
+      </input>
+      <input ref="/malnutrition_followup/s_muac/s_progression_pb">
+        <label ref="jr:itext('/malnutrition_followup/s_muac/s_progression_pb:label')"/>
+      </input>
+      <input ref="/malnutrition_followup/s_muac/s_progression_weight">
+        <label ref="jr:itext('/malnutrition_followup/s_muac/s_progression_weight:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/malnutrition_followup/s_ask_new_complaint">
+      <label ref="jr:itext('/malnutrition_followup/s_ask_new_complaint:label')"/>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_ask_new_complaint/s_new_complaints">
+        <label ref="jr:itext('/malnutrition_followup/s_ask_new_complaint/s_new_complaints:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_ask_new_complaint/s_new_complaints/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_ask_new_complaint/s_new_complaints/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/malnutrition_followup/s_ask_new_complaint/s_start_new_pcime_c">
+        <label ref="jr:itext('/malnutrition_followup/s_ask_new_complaint/s_start_new_pcime_c:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/malnutrition_followup/s_medecines">
+      <label ref="jr:itext('/malnutrition_followup/s_medecines:label')"/>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_medecines/s_right_dosage">
+        <label ref="jr:itext('/malnutrition_followup/s_medecines/s_right_dosage:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_medecines/s_right_dosage/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_medecines/s_right_dosage/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/malnutrition_followup/s_medecines/s_congrats">
+        <label ref="jr:itext('/malnutrition_followup/s_medecines/s_congrats:label')"/>
+      </input>
+      <input ref="/malnutrition_followup/s_medecines/s_counselling">
+        <label ref="jr:itext('/malnutrition_followup/s_medecines/s_counselling:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/malnutrition_followup/s_child_atpe_quantity_given">
+      <label ref="jr:itext('/malnutrition_followup/s_child_atpe_quantity_given:label')"/>
+      <select1 ref="/malnutrition_followup/s_child_atpe_quantity_given/child_atpe_given">
+        <label ref="jr:itext('/malnutrition_followup/s_child_atpe_quantity_given/child_atpe_given:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_child_atpe_quantity_given/child_atpe_given/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_child_atpe_quantity_given/child_atpe_given/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/malnutrition_followup/s_child_atpe_quantity_given/yes_child_atpe_given_note">
+        <label ref="jr:itext('/malnutrition_followup/s_child_atpe_quantity_given/yes_child_atpe_given_note:label')"/>
+      </input>
+      <input ref="/malnutrition_followup/s_child_atpe_quantity_given/no_child_atpe_given_note">
+        <label ref="jr:itext('/malnutrition_followup/s_child_atpe_quantity_given/no_child_atpe_given_note:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/malnutrition_followup/s_atpe_quantity">
+      <label ref="jr:itext('/malnutrition_followup/s_atpe_quantity:label')"/>
+      <input ref="/malnutrition_followup/s_atpe_quantity/last_atpe_given_quantity">
+        <label ref="jr:itext('/malnutrition_followup/s_atpe_quantity/last_atpe_given_quantity:label')"/>
+      </input>
+      <input ref="/malnutrition_followup/s_atpe_quantity/s_atpe_given_quantity">
+        <label ref="jr:itext('/malnutrition_followup/s_atpe_quantity/s_atpe_given_quantity:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/malnutrition_followup/s_advices">
+      <label ref="jr:itext('/malnutrition_followup/s_advices:label')"/>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/s_advices/s_nutrtional_advices">
+        <label ref="jr:itext('/malnutrition_followup/s_advices/s_nutrtional_advices:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_advices/s_nutrtional_advices/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_advices/s_nutrtional_advices/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/malnutrition_followup/s_advices/s_give_advices">
+        <label ref="jr:itext('/malnutrition_followup/s_advices/s_give_advices:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/malnutrition_followup/s_close_out">
+      <label ref="jr:itext('/malnutrition_followup/s_close_out:label')"/>
+      <select1 ref="/malnutrition_followup/s_close_out/s_why_close_out">
+        <label ref="jr:itext('/malnutrition_followup/s_close_out/s_why_close_out:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_close_out/s_why_close_out/moved:label')"/>
+          <value>moved</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_close_out/s_why_close_out/died:label')"/>
+          <value>died</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/s_close_out/s_why_close_out/cured:label')"/>
+          <value>cured</value>
+        </item>
+      </select1>
+      <input ref="/malnutrition_followup/s_close_out/s_death_report">
+        <label ref="jr:itext('/malnutrition_followup/s_close_out/s_death_report:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/malnutrition_followup/results_page">
+      <input appearance="h1 yellow" ref="/malnutrition_followup/results_page/r_summary">
+        <label ref="jr:itext('/malnutrition_followup/results_page/r_summary:label')"/>
+      </input>
+      <input ref="/malnutrition_followup/results_page/r_patient_info">
+        <label ref="jr:itext('/malnutrition_followup/results_page/r_patient_info:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/malnutrition_followup/results_page/r_signs_symptoms">
+        <label ref="jr:itext('/malnutrition_followup/results_page/r_signs_symptoms:label')"/>
+      </input>
+      <input appearance="li" ref="/malnutrition_followup/results_page/r_presence_danger_signs">
+        <label ref="jr:itext('/malnutrition_followup/results_page/r_presence_danger_signs:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/malnutrition_followup/results_page/r_referral">
+        <label ref="jr:itext('/malnutrition_followup/results_page/r_referral:label')"/>
+      </input>
+      <input appearance="li" ref="/malnutrition_followup/results_page/r_referral_1">
+        <label ref="jr:itext('/malnutrition_followup/results_page/r_referral_1:label')"/>
+      </input>
+      <input appearance="li" ref="/malnutrition_followup/results_page/r_referral_2">
+        <label ref="jr:itext('/malnutrition_followup/results_page/r_referral_2:label')"/>
+      </input>
+      <input appearance="li" ref="/malnutrition_followup/results_page/r_referral_3">
+        <label ref="jr:itext('/malnutrition_followup/results_page/r_referral_3:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/malnutrition_followup/results_page/r_treatment">
+        <label ref="jr:itext('/malnutrition_followup/results_page/r_treatment:label')"/>
+      </input>
+      <input appearance="h2 blue" ref="/malnutrition_followup/results_page/r_malnutrition">
+        <label ref="jr:itext('/malnutrition_followup/results_page/r_malnutrition:label')"/>
+      </input>
+      <input appearance="h3 blue" ref="/malnutrition_followup/results_page/s_treat_with_atpe">
+        <label ref="jr:itext('/malnutrition_followup/results_page/s_treat_with_atpe:label')"/>
+      </input>
+      <input ref="/malnutrition_followup/results_page/s_treat_with_enriched_flour_note">
+        <label ref="jr:itext('/malnutrition_followup/results_page/s_treat_with_enriched_flour_note:label')"/>
+      </input>
+      <input ref="/malnutrition_followup/results_page/n_submit">
+        <label ref="jr:itext('/malnutrition_followup/results_page/n_submit:label')"/>
+      </input>
+      <input ref="/malnutrition_followup/results_page/n_death_report">
+        <label ref="jr:itext('/malnutrition_followup/results_page/n_death_report:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/malnutrition_followup/results_page/s_have_you_refer_child">
+        <label ref="jr:itext('/malnutrition_followup/results_page/s_have_you_refer_child:label')"/>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/results_page/s_have_you_refer_child/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/malnutrition_followup/results_page/s_have_you_refer_child/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/malnutrition_followup/results_page/s_why_not">
+        <label ref="jr:itext('/malnutrition_followup/results_page/s_why_not:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/malnutrition_followup/results_page/s_next_visit">
+        <label ref="jr:itext('/malnutrition_followup/results_page/s_next_visit:label')"/>
+      </input>
+      <input ref="/malnutrition_followup/results_page/r_ref_visit">
+        <label ref="jr:itext('/malnutrition_followup/results_page/r_ref_visit:label')"/>
+      </input>
+      <input ref="/malnutrition_followup/results_page/s_next_followup_visit">
+        <label ref="jr:itext('/malnutrition_followup/results_page/s_next_followup_visit:label')"/>
+      </input>
+      <input ref="/malnutrition_followup/results_page/s_next_followup_visit_2">
+        <label ref="jr:itext('/malnutrition_followup/results_page/s_next_followup_visit_2:label')"/>
+      </input>
+      <input ref="/malnutrition_followup/results_page/s_next_followup_visit_3">
+        <label ref="jr:itext('/malnutrition_followup/results_page/s_next_followup_visit_3:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

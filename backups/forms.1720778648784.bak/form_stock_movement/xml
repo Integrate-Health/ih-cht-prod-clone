@@ -1,0 +1,928 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Mouvement de stock</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/stock_movement/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/stock_movement/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/stock_movement/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/stock_movement/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/stock_movement/inputs/user/name:label">
+            <value>Username</value>
+          </text>
+          <text id="/stock_movement/inputs/user/phone:label">
+            <value>Phone</value>
+          </text>
+          <text id="/stock_movement/inputs/contact:label">
+            <value>User Information</value>
+          </text>
+          <text id="/stock_movement/inputs/contact/_id:label">
+            <value>Village/Secteur ID</value>
+          </text>
+          <text id="/stock_movement/inputs/contact/name:label">
+            <value>Village/Secteur Name</value>
+          </text>
+          <text id="/stock_movement/inputs/contact/parent/_id:label">
+            <value>District/Quartier Id</value>
+          </text>
+          <text id="/stock_movement/inputs/contact/parent/parent/_id:label">
+            <value>Hospital Id</value>
+          </text>
+          <text id="/stock_movement/inputs/contact/parent/parent/parent/_id:label">
+            <value>Commune Id</value>
+          </text>
+          <text id="/stock_movement/inputs/contact/parent/parent/parent/parent/_id:label">
+            <value>Prefecture Id</value>
+          </text>
+          <text id="/stock_movement/inputs/contact/parent/parent/parent/parent/parent/_id:label">
+            <value>Region Id</value>
+          </text>
+          <text id="/stock_movement/inputs/contact/parent/parent/parent/parent/parent/parent/_id:label">
+            <value>Country Id</value>
+          </text>
+          <text id="/stock_movement/user_id:label">
+            <value>User contact id</value>
+          </text>
+          <text id="/stock_movement/user_phone:label">
+            <value>User phone</value>
+          </text>
+          <text id="/stock_movement/patient_id:label">
+            <value>Village/Secteur ID</value>
+          </text>
+          <text id="/stock_movement/patient_name:label">
+            <value>Village Name</value>
+          </text>
+          <text id="/stock_movement/village_secteur_id:label">
+            <value>Village/Secteur ID</value>
+          </text>
+          <text id="/stock_movement/district_quartier_id:label">
+            <value>District/Quartier Id</value>
+          </text>
+          <text id="/stock_movement/hospital_id:label">
+            <value>Hospital Id</value>
+          </text>
+          <text id="/stock_movement/commune_id:label">
+            <value>Commune Id</value>
+          </text>
+          <text id="/stock_movement/prefecture_id:label">
+            <value>Prefecture Id</value>
+          </text>
+          <text id="/stock_movement/region_id:label">
+            <value>Region Id</value>
+          </text>
+          <text id="/stock_movement/country_id:label">
+            <value>Country Id</value>
+          </text>
+          <text id="/stock_movement/meg_movement:label">
+            <value>MEG Movement</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_date:jr:constraintMsg">
+            <value>Date must be in past or today</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_date:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_date:label">
+            <value>Movement date</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_reason:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_reason:label">
+            <value>Reason for Movement</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_reason/loss:label">
+            <value>Loss</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_reason/damaged:label">
+            <value>Damaged</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_reason/broken:label">
+            <value>Broken</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_reason/obselete:label">
+            <value>Obsolete</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list:label">
+            <value>Select the inputs received</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/pilule_coc:label">
+            <value>Pill - COC</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/pilule_cop:label">
+            <value>Pill - COP</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/condoms_preservatif:label">
+            <value>Condoms/Condom</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/dpoprovera_im:label">
+            <value>Depo provera -IM</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/dmpa_sc:label">
+            <value>DMPA-SC</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/collier_du_cycle:label">
+            <value>Cycle Necklace</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/cta:label">
+            <value>CTA</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/tdr:label">
+            <value>TDR</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/amoxicilline_250_mg:label">
+            <value>Amoxicillin 250 mg</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/amoxicilline_500_mg:label">
+            <value>Amoxicillin 500 mg</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/paracetamol_250_mg:label">
+            <value>Paracetamol 250 mg</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/paracetamol_500_mg:label">
+            <value>Paracetamol 500 mg</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/sro:label">
+            <value>ORS</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/zinc:label">
+            <value>Zinc</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/vitamine_a:label">
+            <value>Vitamin A</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/mebendazole_250_mg:label">
+            <value>Mebendazole 250 mg</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/mebendazole_500_mg:label">
+            <value>Mebendazole 500 mg</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/pommade_t_tracycline:label">
+            <value>Tetracycline Ointment</value>
+          </text>
+          <text id="/stock_movement/meg_quantity:label">
+            <value>MEG Movement</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/pilule_coc:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/pilule_coc:label">
+            <value>Pilule - COC Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/pilule_cop:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/pilule_cop:label">
+            <value>Pilule - COP Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/condoms:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/condoms:label">
+            <value>Condoms/Preservatif Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/depo_provera_im:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/depo_provera_im:label">
+            <value>Dépo provera -IM Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/dmpa_sc:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/dmpa_sc:label">
+            <value>DMPA-SC Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/cycle_necklace:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/cycle_necklace:label">
+            <value>Collier du cycle Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/cta:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/cta:label">
+            <value>CTA Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/tdr:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/tdr:label">
+            <value>TDR Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/amoxicillin_250mg:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/amoxicillin_250mg:label">
+            <value>Amoxicilline 250 mg Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/amoxicillin_500mg:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/amoxicillin_500mg:label">
+            <value>Amoxicilline 500 mg Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/paracetamol_250mg:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/paracetamol_250mg:label">
+            <value>Paracetamol 250 mg Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/paracetamol_500mg:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/paracetamol_500mg:label">
+            <value>Paracetamol 500 mg Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/ors:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/ors:label">
+            <value>SRO Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/zinc:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/zinc:label">
+            <value>Zinc Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/vitamin_a:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/vitamin_a:label">
+            <value>Vitamine A Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/mebendazol_250mg:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/mebendazol_250mg:label">
+            <value>Mebendazole 250 mg Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/mebendazol_500mg:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/mebendazol_500mg:label">
+            <value>Mebendazole 500 mg Quantity</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/tetracycline_ointment:jr:requiredMsg">
+            <value>This field is mandatory</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/tetracycline_ointment:label">
+            <value>Pommade Tétracycline Quantity</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/stock_movement/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/stock_movement/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/stock_movement/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/stock_movement/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/stock_movement/inputs/user/name:label">
+            <value>Username</value>
+          </text>
+          <text id="/stock_movement/inputs/user/phone:label">
+            <value>Phone</value>
+          </text>
+          <text id="/stock_movement/inputs/contact:label">
+            <value>Information de l'utilisateur</value>
+          </text>
+          <text id="/stock_movement/inputs/contact/_id:label">
+            <value>Village/Secteur ID</value>
+          </text>
+          <text id="/stock_movement/inputs/contact/name:label">
+            <value>Nom Village/Secteur</value>
+          </text>
+          <text id="/stock_movement/inputs/contact/parent/_id:label">
+            <value>District/Quartier Id</value>
+          </text>
+          <text id="/stock_movement/inputs/contact/parent/parent/_id:label">
+            <value>Centre de Santé Id</value>
+          </text>
+          <text id="/stock_movement/inputs/contact/parent/parent/parent/_id:label">
+            <value>Commune Id</value>
+          </text>
+          <text id="/stock_movement/inputs/contact/parent/parent/parent/parent/_id:label">
+            <value>Préfecture/District Sanitaire Id</value>
+          </text>
+          <text id="/stock_movement/inputs/contact/parent/parent/parent/parent/parent/_id:label">
+            <value>Région/IRS Id</value>
+          </text>
+          <text id="/stock_movement/inputs/contact/parent/parent/parent/parent/parent/parent/_id:label">
+            <value>Pays Id</value>
+          </text>
+          <text id="/stock_movement/user_id:label">
+            <value>User contact id</value>
+          </text>
+          <text id="/stock_movement/user_phone:label">
+            <value>User phone</value>
+          </text>
+          <text id="/stock_movement/patient_id:label">
+            <value>Village/Secteur ID</value>
+          </text>
+          <text id="/stock_movement/patient_name:label">
+            <value>Nom du village</value>
+          </text>
+          <text id="/stock_movement/village_secteur_id:label">
+            <value>Village/Secteur Id</value>
+          </text>
+          <text id="/stock_movement/district_quartier_id:label">
+            <value>District/Quartier Id</value>
+          </text>
+          <text id="/stock_movement/hospital_id:label">
+            <value>Centre de Santé Id</value>
+          </text>
+          <text id="/stock_movement/commune_id:label">
+            <value>Commune Id</value>
+          </text>
+          <text id="/stock_movement/prefecture_id:label">
+            <value>Préfecture/District Sanitaire Id</value>
+          </text>
+          <text id="/stock_movement/region_id:label">
+            <value>Région/IRS Id</value>
+          </text>
+          <text id="/stock_movement/country_id:label">
+            <value>Pays Id</value>
+          </text>
+          <text id="/stock_movement/meg_movement:label">
+            <value>Mouvement des médicaments</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_date:jr:constraintMsg">
+            <value>La date doit être au passé ou égale à aujourd'hui</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_date:label">
+            <value>Date du mouvement</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_reason:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_reason:label">
+            <value>Motif du mouvement</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_reason/loss:label">
+            <value>Perte</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_reason/damaged:label">
+            <value>Avarié</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_reason/broken:label">
+            <value>Cassé</value>
+          </text>
+          <text id="/stock_movement/meg_movement/meg_movement_reason/obselete:label">
+            <value>Périmé</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list:label">
+            <value>Sélectionnez les intrants reçus</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/pilule_coc:label">
+            <value>Pilule - COC</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/pilule_cop:label">
+            <value>Pilule - COP</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/condoms_preservatif:label">
+            <value>Condoms/Preservatif</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/dpoprovera_im:label">
+            <value>Dépo provera -IM</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/dmpa_sc:label">
+            <value>DMPA-SC</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/collier_du_cycle:label">
+            <value>Collier du cycle</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/cta:label">
+            <value>CTA</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/tdr:label">
+            <value>TDR</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/amoxicilline_250_mg:label">
+            <value>Amoxicilline 250 mg</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/amoxicilline_500_mg:label">
+            <value>Amoxicilline 500 mg</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/paracetamol_250_mg:label">
+            <value>Paracetamol  250 mg</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/paracetamol_500_mg:label">
+            <value>Paracetamol  500 mg</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/sro:label">
+            <value>SRO</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/zinc:label">
+            <value>Zinc</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/vitamine_a:label">
+            <value>Vitamine A</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/mebendazole_250_mg:label">
+            <value>Mebendazole   250 mg</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/mebendazole_500_mg:label">
+            <value>Mebendazole  500 mg</value>
+          </text>
+          <text id="/stock_movement/meg_movement/intrants_list/pommade_t_tracycline:label">
+            <value>Pommade Tétracycline</value>
+          </text>
+          <text id="/stock_movement/meg_quantity:label">
+            <value>Mouvement des médicaments</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/pilule_coc:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/pilule_coc:label">
+            <value>Quantité Pilule - COC</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/pilule_cop:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/pilule_cop:label">
+            <value>Quantité Pilule - COP</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/condoms:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/condoms:label">
+            <value>Quantité Condoms/Preservatif</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/depo_provera_im:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/depo_provera_im:label">
+            <value>Quantité Dépo provera -IM</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/dmpa_sc:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/dmpa_sc:label">
+            <value>Quantité DMPA-SC</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/cycle_necklace:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/cycle_necklace:label">
+            <value>Quantité Collier du cycle</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/cta:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/cta:label">
+            <value>Quantité CTA</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/tdr:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/tdr:label">
+            <value>Quantité TDR</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/amoxicillin_250mg:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/amoxicillin_250mg:label">
+            <value>Quantité Amoxicilline 250 mg</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/amoxicillin_500mg:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/amoxicillin_500mg:label">
+            <value>Quantité Amoxicilline 500 mg</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/paracetamol_250mg:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/paracetamol_250mg:label">
+            <value>Quantité Paracetamol 250 mg</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/paracetamol_500mg:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/paracetamol_500mg:label">
+            <value>Quantité Paracetamol 500 mg</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/ors:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/ors:label">
+            <value>Quantité SRO</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/zinc:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/zinc:label">
+            <value>Quantité Zinc</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/vitamin_a:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/vitamin_a:label">
+            <value>Quantité Vitamine A</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/mebendazol_250mg:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/mebendazol_250mg:label">
+            <value>Quantité Mebendazole 250 mg</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/mebendazol_500mg:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/mebendazol_500mg:label">
+            <value>Quantité Mebendazole 500 mg</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/tetracycline_ointment:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/stock_movement/meg_quantity/tetracycline_ointment:label">
+            <value>Quantité Pommade Tétracycline</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <stock_movement id="stock_movement" prefix="J1!stock_movement!" delimiter="#" version="2024-05-25  19-12">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <name/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                    <parent>
+                      <_id/>
+                      <parent>
+                        <_id/>
+                        <parent>
+                          <_id/>
+                        </parent>
+                      </parent>
+                    </parent>
+                  </parent>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <user_id/>
+          <user_phone/>
+          <patient_id/>
+          <patient_name/>
+          <village_secteur_id/>
+          <district_quartier_id/>
+          <hospital_id/>
+          <commune_id/>
+          <prefecture_id/>
+          <region_id/>
+          <country_id/>
+          <meg_movement>
+            <meg_movement_date/>
+            <meg_movement_reason/>
+            <intrants_list/>
+          </meg_movement>
+          <meg_quantity>
+            <pilule_coc/>
+            <pilule_cop/>
+            <condoms/>
+            <depo_provera_im/>
+            <dmpa_sc/>
+            <cycle_necklace/>
+            <cta/>
+            <tdr/>
+            <amoxicillin_250mg/>
+            <amoxicillin_500mg/>
+            <paracetamol_250mg/>
+            <paracetamol_500mg/>
+            <ors/>
+            <zinc/>
+            <vitamin_a/>
+            <mebendazol_250mg/>
+            <mebendazol_500mg/>
+            <tetracycline_ointment/>
+          </meg_quantity>
+          <meta>
+            <instanceID/>
+          </meta>
+        </stock_movement>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/stock_movement/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/stock_movement/inputs/source" type="string"/>
+      <bind nodeset="/stock_movement/inputs/source_id" type="string"/>
+      <bind nodeset="/stock_movement/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/stock_movement/inputs/user/name" type="string"/>
+      <bind nodeset="/stock_movement/inputs/user/phone" type="string"/>
+      <bind nodeset="/stock_movement/inputs/contact/_id" type="string"/>
+      <bind nodeset="/stock_movement/inputs/contact/name" type="string"/>
+      <bind nodeset="/stock_movement/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/stock_movement/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/stock_movement/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/stock_movement/inputs/contact/parent/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/stock_movement/inputs/contact/parent/parent/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/stock_movement/inputs/contact/parent/parent/parent/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/stock_movement/user_id" type="string" calculate="../inputs/user/contact_id"/>
+      <bind nodeset="/stock_movement/user_phone" type="string" calculate="../inputs/user/phone"/>
+      <bind nodeset="/stock_movement/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/stock_movement/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/stock_movement/village_secteur_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/stock_movement/district_quartier_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/stock_movement/hospital_id" type="string" calculate="../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/stock_movement/commune_id" type="string" calculate="../inputs/contact/parent/parent/parent/_id"/>
+      <bind nodeset="/stock_movement/prefecture_id" type="string" calculate="../inputs/contact/parent/parent/parent/parent/_id"/>
+      <bind nodeset="/stock_movement/region_id" type="string" calculate="../inputs/contact/parent/parent/parent/parent/parent/_id"/>
+      <bind nodeset="/stock_movement/country_id" type="string" calculate="../inputs/contact/parent/parent/parent/parent/parent/parent/_id"/>
+      <bind nodeset="/stock_movement/meg_movement/meg_movement_date" type="date" required="true()" calculate="coalesce(.,today())" jr:requiredMsg="jr:itext('/stock_movement/meg_movement/meg_movement_date:jr:requiredMsg')" jr:constraintMsg="jr:itext('/stock_movement/meg_movement/meg_movement_date:jr:constraintMsg')" constraint=". &lt;= today()"/>
+      <bind nodeset="/stock_movement/meg_movement/meg_movement_reason" type="select1" required="true()" jr:requiredMsg="jr:itext('/stock_movement/meg_movement/meg_movement_reason:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_movement/intrants_list" type="select" required="true()" jr:requiredMsg="jr:itext('/stock_movement/meg_movement/intrants_list:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity" relevant=" /stock_movement/meg_movement/intrants_list  != ''"/>
+      <bind nodeset="/stock_movement/meg_quantity/pilule_coc" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'pilule_coc')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/pilule_coc:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/pilule_cop" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'pilule_cop')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/pilule_cop:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/condoms" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'condoms_preservatif')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/condoms:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/depo_provera_im" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'dpoprovera_im')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/depo_provera_im:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/dmpa_sc" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'dmpa_sc')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/dmpa_sc:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/cycle_necklace" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'collier_du_cycle')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/cycle_necklace:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/cta" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'cta')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/cta:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/tdr" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'tdr')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/tdr:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/amoxicillin_250mg" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'amoxicilline_250_mg')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/amoxicillin_250mg:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/amoxicillin_500mg" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'amoxicilline_500_mg')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/amoxicillin_500mg:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/paracetamol_250mg" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'paracetamol_250_mg')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/paracetamol_250mg:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/paracetamol_500mg" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'paracetamol_500_mg')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/paracetamol_500mg:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/ors" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'sro')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/ors:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/zinc" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'zinc')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/zinc:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/vitamin_a" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'vitamine_a')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/vitamin_a:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/mebendazol_250mg" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'mebendazole_250_mg')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/mebendazol_250mg:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/mebendazol_500mg" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'mebendazole_500_mg')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/mebendazol_500mg:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meg_quantity/tetracycline_ointment" type="int" required="true()" relevant="selected( /stock_movement/meg_movement/intrants_list , 'pommade_t_tracycline')" jr:requiredMsg="jr:itext('/stock_movement/meg_quantity/tetracycline_ointment:jr:requiredMsg')"/>
+      <bind nodeset="/stock_movement/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/stock_movement/inputs">
+      <label ref="jr:itext('/stock_movement/inputs:label')"/>
+      <input ref="/stock_movement/inputs/source">
+        <label ref="jr:itext('/stock_movement/inputs/source:label')"/>
+      </input>
+      <input ref="/stock_movement/inputs/source_id">
+        <label ref="jr:itext('/stock_movement/inputs/source_id:label')"/>
+      </input>
+      <group ref="/stock_movement/inputs/user">
+        <label ref="jr:itext('/stock_movement/inputs/user:label')"/>
+        <input ref="/stock_movement/inputs/user/contact_id">
+          <label ref="jr:itext('/stock_movement/inputs/user/contact_id:label')"/>
+        </input>
+        <input ref="/stock_movement/inputs/user/name">
+          <label ref="jr:itext('/stock_movement/inputs/user/name:label')"/>
+        </input>
+        <input ref="/stock_movement/inputs/user/phone">
+          <label ref="jr:itext('/stock_movement/inputs/user/phone:label')"/>
+        </input>
+      </group>
+      <group ref="/stock_movement/inputs/contact">
+        <label ref="jr:itext('/stock_movement/inputs/contact:label')"/>
+        <input ref="/stock_movement/inputs/contact/_id">
+          <label ref="jr:itext('/stock_movement/inputs/contact/_id:label')"/>
+        </input>
+        <input ref="/stock_movement/inputs/contact/name">
+          <label ref="jr:itext('/stock_movement/inputs/contact/name:label')"/>
+        </input>
+        <group ref="/stock_movement/inputs/contact/parent">
+          <label ref="jr:itext('/stock_movement/inputs/contact/parent:label')"/>
+          <input ref="/stock_movement/inputs/contact/parent/_id">
+            <label ref="jr:itext('/stock_movement/inputs/contact/parent/_id:label')"/>
+          </input>
+          <group ref="/stock_movement/inputs/contact/parent/parent">
+            <label ref="jr:itext('/stock_movement/inputs/contact/parent/parent:label')"/>
+            <input ref="/stock_movement/inputs/contact/parent/parent/_id">
+              <label ref="jr:itext('/stock_movement/inputs/contact/parent/parent/_id:label')"/>
+            </input>
+            <group ref="/stock_movement/inputs/contact/parent/parent/parent">
+              <label ref="jr:itext('/stock_movement/inputs/contact/parent/parent/parent:label')"/>
+              <input ref="/stock_movement/inputs/contact/parent/parent/parent/_id">
+                <label ref="jr:itext('/stock_movement/inputs/contact/parent/parent/parent/_id:label')"/>
+              </input>
+              <group ref="/stock_movement/inputs/contact/parent/parent/parent/parent">
+                <label ref="jr:itext('/stock_movement/inputs/contact/parent/parent/parent/parent:label')"/>
+                <input ref="/stock_movement/inputs/contact/parent/parent/parent/parent/_id">
+                  <label ref="jr:itext('/stock_movement/inputs/contact/parent/parent/parent/parent/_id:label')"/>
+                </input>
+                <group ref="/stock_movement/inputs/contact/parent/parent/parent/parent/parent">
+                  <label ref="jr:itext('/stock_movement/inputs/contact/parent/parent/parent/parent/parent:label')"/>
+                  <input ref="/stock_movement/inputs/contact/parent/parent/parent/parent/parent/_id">
+                    <label ref="jr:itext('/stock_movement/inputs/contact/parent/parent/parent/parent/parent/_id:label')"/>
+                  </input>
+                  <group ref="/stock_movement/inputs/contact/parent/parent/parent/parent/parent/parent">
+                    <label ref="jr:itext('/stock_movement/inputs/contact/parent/parent/parent/parent/parent/parent:label')"/>
+                    <input ref="/stock_movement/inputs/contact/parent/parent/parent/parent/parent/parent/_id">
+                      <label ref="jr:itext('/stock_movement/inputs/contact/parent/parent/parent/parent/parent/parent/_id:label')"/>
+                    </input>
+                  </group>
+                </group>
+              </group>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/stock_movement/meg_movement">
+      <label ref="jr:itext('/stock_movement/meg_movement:label')"/>
+      <input ref="/stock_movement/meg_movement/meg_movement_date">
+        <label ref="jr:itext('/stock_movement/meg_movement/meg_movement_date:label')"/>
+      </input>
+      <select1 ref="/stock_movement/meg_movement/meg_movement_reason">
+        <label ref="jr:itext('/stock_movement/meg_movement/meg_movement_reason:label')"/>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/meg_movement_reason/loss:label')"/>
+          <value>loss</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/meg_movement_reason/damaged:label')"/>
+          <value>damaged</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/meg_movement_reason/broken:label')"/>
+          <value>broken</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/meg_movement_reason/obselete:label')"/>
+          <value>obselete</value>
+        </item>
+      </select1>
+      <select ref="/stock_movement/meg_movement/intrants_list">
+        <label ref="jr:itext('/stock_movement/meg_movement/intrants_list:label')"/>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/pilule_coc:label')"/>
+          <value>pilule_coc</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/pilule_cop:label')"/>
+          <value>pilule_cop</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/condoms_preservatif:label')"/>
+          <value>condoms_preservatif</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/dpoprovera_im:label')"/>
+          <value>dpoprovera_im</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/dmpa_sc:label')"/>
+          <value>dmpa_sc</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/collier_du_cycle:label')"/>
+          <value>collier_du_cycle</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/cta:label')"/>
+          <value>cta</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/tdr:label')"/>
+          <value>tdr</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/amoxicilline_250_mg:label')"/>
+          <value>amoxicilline_250_mg</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/amoxicilline_500_mg:label')"/>
+          <value>amoxicilline_500_mg</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/paracetamol_250_mg:label')"/>
+          <value>paracetamol_250_mg</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/paracetamol_500_mg:label')"/>
+          <value>paracetamol_500_mg</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/sro:label')"/>
+          <value>sro</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/zinc:label')"/>
+          <value>zinc</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/vitamine_a:label')"/>
+          <value>vitamine_a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/mebendazole_250_mg:label')"/>
+          <value>mebendazole_250_mg</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/mebendazole_500_mg:label')"/>
+          <value>mebendazole_500_mg</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/stock_movement/meg_movement/intrants_list/pommade_t_tracycline:label')"/>
+          <value>pommade_t_tracycline</value>
+        </item>
+      </select>
+    </group>
+    <group appearance="field-list" ref="/stock_movement/meg_quantity">
+      <label ref="jr:itext('/stock_movement/meg_quantity:label')"/>
+      <input ref="/stock_movement/meg_quantity/pilule_coc">
+        <label ref="jr:itext('/stock_movement/meg_quantity/pilule_coc:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/pilule_cop">
+        <label ref="jr:itext('/stock_movement/meg_quantity/pilule_cop:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/condoms">
+        <label ref="jr:itext('/stock_movement/meg_quantity/condoms:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/depo_provera_im">
+        <label ref="jr:itext('/stock_movement/meg_quantity/depo_provera_im:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/dmpa_sc">
+        <label ref="jr:itext('/stock_movement/meg_quantity/dmpa_sc:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/cycle_necklace">
+        <label ref="jr:itext('/stock_movement/meg_quantity/cycle_necklace:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/cta">
+        <label ref="jr:itext('/stock_movement/meg_quantity/cta:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/tdr">
+        <label ref="jr:itext('/stock_movement/meg_quantity/tdr:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/amoxicillin_250mg">
+        <label ref="jr:itext('/stock_movement/meg_quantity/amoxicillin_250mg:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/amoxicillin_500mg">
+        <label ref="jr:itext('/stock_movement/meg_quantity/amoxicillin_500mg:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/paracetamol_250mg">
+        <label ref="jr:itext('/stock_movement/meg_quantity/paracetamol_250mg:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/paracetamol_500mg">
+        <label ref="jr:itext('/stock_movement/meg_quantity/paracetamol_500mg:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/ors">
+        <label ref="jr:itext('/stock_movement/meg_quantity/ors:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/zinc">
+        <label ref="jr:itext('/stock_movement/meg_quantity/zinc:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/vitamin_a">
+        <label ref="jr:itext('/stock_movement/meg_quantity/vitamin_a:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/mebendazol_250mg">
+        <label ref="jr:itext('/stock_movement/meg_quantity/mebendazol_250mg:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/mebendazol_500mg">
+        <label ref="jr:itext('/stock_movement/meg_quantity/mebendazol_500mg:label')"/>
+      </input>
+      <input ref="/stock_movement/meg_quantity/tetracycline_ointment">
+        <label ref="jr:itext('/stock_movement/meg_quantity/tetracycline_ointment:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

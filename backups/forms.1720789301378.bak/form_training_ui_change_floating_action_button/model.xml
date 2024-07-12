@@ -1,0 +1,28 @@
+
+  <model>
+    <instance>
+        <ui_change_floating_action_button xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="training:ui_change_floating_action_button" prefix="J1!training:ui_change_floating_action_button!" delimiter="#" version="1 (2022-07-20 14:28:16)">
+          <intro>
+            <intro_txt_1/>
+            <intro_txt_2/>
+          </intro>
+          <change_1>
+            <change_1_txt_1/>
+          </change_1>
+          <change_2>
+            <change_2_txt_1/>
+          </change_2>
+          <change_3>
+            <change_3_txt_1/>
+          </change_3>
+          <ending>
+            <ending_txt_1/>
+            <ending_txt_2/>
+          </ending>
+          <meta>
+            <instanceID/>
+          </meta>
+        </ui_change_floating_action_button>
+      </instance>
+  </model>
+

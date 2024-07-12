@@ -15,7 +15,6 @@ const {
   isNewDelivery,
   getDateInFormat,
   isReportValid,
-  hasAvailableStock,
 } = require(`./utils`);
 
 const thisContact = contact;
@@ -56,7 +55,6 @@ var context = {
   muted: false,
   // muted: !isTrue(thisContact.muted),
   is_family_person: isFamilyPerson(),
-  has_available_stock: hasAvailableStock(thisContact, allReports),
   show_pregnancy_form: !isActivePregnate,
   show_delivery_form: !isNewDeliveryPerson,
   show_women_emergency_form: isActivePregnate || isDeliveryPerson,

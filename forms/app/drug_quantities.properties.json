@@ -1,0 +1,18 @@
+{
+    "context": {
+        "expression": "contact.type === 'health_center' && user.role === 'chw'",
+        "person": false,
+        "place": true
+    },
+    "icon": "treatment",
+    "title": [
+      {
+        "locale": "en",
+        "content": "Drug Quantities"
+      },
+      {
+        "locale": "fr",
+        "content": "Quantités Médicaments"
+      }
+    ]
+}

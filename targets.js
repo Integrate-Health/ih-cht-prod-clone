@@ -559,10 +559,7 @@ module.exports = [
       return (
         isAlive(c.contact, c.reports) &&
         isPregnancyUrineTestMonthly(r) &&
-        isFormBetween21and20(r, [
-          `pregnancy_family_planning`,
-          `fp_follow_up_renewal`,
-        ])
+        isFormBetween21and20(r, [`pregnancy_family_planning`, `fp_follow_up_renewal`])
       );
     },
     aggregate: true,
@@ -579,10 +576,7 @@ module.exports = [
     goal: -1,
     appliesTo: `reports`,
     appliesIf: function (c, r) {
-      return (
-        isAlive(c.contact, c.reports) &&
-        isFormBetween21and20(r, [`prenatal_followup`])
-      );
+      return (isAlive(c.contact, c.reports) && isFormBetween21and20(r, [`prenatal_followup`]));
     },
     aggregate: true,
   },

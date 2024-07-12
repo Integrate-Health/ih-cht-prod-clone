@@ -1,0 +1,5 @@
+{
+  "expression": "user.role === 'reco' && contact.type === 'health_center'",
+  "person": false,
+  "place": true
+}

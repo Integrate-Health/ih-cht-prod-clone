@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Edit Family</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Facility ID for the parent user</value>
+          </text>
+          <text id="/data/inputs/user/type:label">
+            <value>Type</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Name of the logged in user</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>User Information</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/role:label">
+            <value>Role</value>
+          </text>
+          <text id="/data/inputs/contact/username:label">
+            <value>account name</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Contact name</value>
+          </text>
+          <text id="/data/inputs/contact/external_id:label">
+            <value>Unique code</value>
+          </text>
+          <text id="/data/clinic:label">
+            <value>Edit Family</value>
+          </text>
+          <text id="/data/clinic/parent:label">
+            <value>CHP Area</value>
+          </text>
+          <text id="/data/clinic/external_id:label">
+            <value>External Id</value>
+          </text>
+          <text id="/data/clinic/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/clinic/notes:label">
+            <value>Family information</value>
+          </text>
+          <text id="/data/clinic/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/data/clinic/geolocation:label">
+            <value>Location</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Identifiant de l'utilisateur</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Id parent utilisateur</value>
+          </text>
+          <text id="/data/inputs/user/type:label">
+            <value>Type</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>Information de l'utilisateur</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Nom de l'utilisateur</value>
+          </text>
+          <text id="/data/inputs/contact/role:label">
+            <value>Role de l'utilisateur</value>
+          </text>
+          <text id="/data/inputs/contact/username:label">
+            <value>Nom du compte</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Nom du Contact</value>
+          </text>
+          <text id="/data/inputs/contact/external_id:label">
+            <value>Code unique de l'utilisateur</value>
+          </text>
+          <text id="/data/clinic:label">
+            <value>Modifier Ménage</value>
+          </text>
+          <text id="/data/clinic/parent:label">
+            <value>CHP Area</value>
+          </text>
+          <text id="/data/clinic/external_id:label">
+            <value>ID Externe</value>
+          </text>
+          <text id="/data/clinic/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/clinic/notes:label">
+            <value>Informations sur la famille</value>
+          </text>
+          <text id="/data/clinic/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/data/clinic/geolocation:label">
+            <value>Emplacement</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="contact:clinic:edit" prefix="J1!contact:clinic:edit!" delimiter="#" version="2018-01-25">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <type/>
+              <name/>
+            </user>
+            <contact>
+              <_id/>
+              <role/>
+              <username/>
+              <name/>
+              <external_id/>
+            </contact>
+          </inputs>
+          <clinic>
+            <parent/>
+            <external_id/>
+            <name/>
+            <notes/>
+            <contact/>
+            <geolocation/>
+          </clinic>
+          <meta>
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/type" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person" constraint="1" calculate="/data/inputs/user/contact_id"/>
+      <bind nodeset="/data/inputs/contact/role" readonly="true()" type="string" constraint="1" calculate="/data/inputs/contact/role"/>
+      <bind nodeset="/data/inputs/contact/username" readonly="true()" type="string" constraint="1" calculate="/data/inputs/user/name"/>
+      <bind nodeset="/data/inputs/contact/name" readonly="true()" type="string" constraint="1" calculate="/data/inputs/contact/name"/>
+      <bind nodeset="/data/inputs/contact/external_id" readonly="true()" type="string" constraint="1" calculate="/data/inputs/contact/external_id"/>
+      <bind nodeset="/data/clinic/parent" type="db:health_center" relevant="false()"/>
+      <bind nodeset="/data/clinic/external_id" type="string" readonly="true()"/>
+      <bind nodeset="/data/clinic/name" type="string" required="true()"/>
+      <bind nodeset="/data/clinic/notes" type="string"/>
+      <bind nodeset="/data/clinic/contact" type="db:person"/>
+      <bind nodeset="/data/clinic/geolocation" type="string" calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/data/inputs">
+      <label ref="jr:itext('/data/inputs:label')"/>
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/facility_id">
+          <label ref="jr:itext('/data/inputs/user/facility_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/type">
+          <label ref="jr:itext('/data/inputs/user/type:label')"/>
+        </input>
+        <input ref="/data/inputs/user/name">
+          <label ref="jr:itext('/data/inputs/user/name:label')"/>
+        </input>
+      </group>
+      <group ref="/data/inputs/contact">
+        <label ref="jr:itext('/data/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/data/inputs/contact/_id">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <input ref="/data/inputs/contact/role">
+          <label ref="jr:itext('/data/inputs/contact/role:label')"/>
+        </input>
+        <input ref="/data/inputs/contact/username">
+          <label ref="jr:itext('/data/inputs/contact/username:label')"/>
+        </input>
+        <input ref="/data/inputs/contact/name">
+          <label ref="jr:itext('/data/inputs/contact/name:label')"/>
+        </input>
+        <input ref="/data/inputs/contact/external_id">
+          <label ref="jr:itext('/data/inputs/contact/external_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <group ref="/data/clinic">
+      <label ref="jr:itext('/data/clinic:label')"/>
+      <input appearance="db-object bind-id-only hidden" ref="/data/clinic/parent">
+        <label ref="jr:itext('/data/clinic/parent:label')"/>
+        <hint>Select the CHP Area for this family</hint>
+      </input>
+      <input ref="/data/clinic/external_id">
+        <label ref="jr:itext('/data/clinic/external_id:label')"/>
+      </input>
+      <input ref="/data/clinic/name">
+        <label ref="jr:itext('/data/clinic/name:label')"/>
+      </input>
+      <input ref="/data/clinic/notes">
+        <label ref="jr:itext('/data/clinic/notes:label')"/>
+      </input>
+      <input appearance="db-object bind-id-only hidden" ref="/data/clinic/contact">
+        <label ref="jr:itext('/data/clinic/contact:label')"/>
+        <hint>mandatory</hint>
+      </input>
+    </group>
+  </h:body>
+</h:html>

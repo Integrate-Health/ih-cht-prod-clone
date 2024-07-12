@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Edit Chw zone</h:title>
+    <model>
+      <itext>
+        <translation lang="fr">
+          <text id="/data/inputs/user/facility_id:label">
+            <value>ID d'installation pour l'utilisateur parent</value>
+          </text>
+          <text id="/data/health_center:label">
+            <value>Modifier la zone de cogénération</value>
+          </text>
+          <text id="/data/health_center/external_id:label">
+            <value>Modifier l'identifiant externe de la zone</value>
+          </text>
+          <text id="/data/health_center/name:label">
+            <value>Modifier Nom de zone</value>
+          </text>
+          <text id="/data/health_center/notes:label">
+            <value>Modifier Informations de la zone</value>
+          </text>
+          <text id="/data/health_center/contact:label">
+            <value>ASC</value>
+          </text>
+          <text id="/data/health_center/contact:hint">
+            <value>Choisir ASC pour cette Zone</value>
+          </text>
+          <text id="/data/health_center/parent:label">
+            <value>Site</value>
+          </text>
+          <text id="/data/health_center/parent:hint">
+            <value>Choisir Site pour cette Zone</value>
+          </text>
+          <text id="/data/health_center/geolocation:label">
+            <value>Emplacement</value>
+          </text>
+        </translation>
+        <translation lang="en">
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Facility ID for the parent user</value>
+          </text>
+          <text id="/data/health_center:label">
+            <value>Edit Zone</value>
+          </text>
+          <text id="/data/health_center/external_id:label">
+            <value>Edit External Id</value>
+          </text>
+          <text id="/data/health_center/name:label">
+            <value>Area Name</value>
+          </text>
+          <text id="/data/health_center/notes:label">
+            <value>Update zone Notes</value>
+          </text>
+          <text id="/data/health_center/contact:label">
+            <value>CHW</value>
+          </text>
+          <text id="/data/health_center/contact:hint">
+            <value>Select the CHWS for this zone</value>
+          </text>
+          <text id="/data/health_center/parent:label">
+            <value>Site</value>
+          </text>
+          <text id="/data/health_center/parent:hint">
+            <value>Select the site for this zone</value>
+          </text>
+          <text id="/data/health_center/geolocation:label">
+            <value>Location</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="contact:health_center:edit" prefix="J1!contact:health_center:edit!" delimiter="#" version="2018-01-25">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <facility_id/>
+            </user>
+          </inputs>
+          <health_center>
+            <external_id/>
+            <name/>
+            <notes/>
+            <contact/>
+            <parent/>
+            <geolocation/>
+          </health_center>
+          <meta>
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/health_center/external_id" type="string" required="true()"/>
+      <bind nodeset="/data/health_center/name" type="string" required="true()"/>
+      <bind nodeset="/data/health_center/notes" type="string"/>
+      <bind nodeset="/data/health_center/contact" type="db:person"/>
+      <bind nodeset="/data/health_center/parent" type="db:district_hospital"/>
+      <bind nodeset="/data/health_center/geolocation" type="string" calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/data/inputs">
+      <label ref="jr:itext('/data/inputs:label')"/>
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/facility_id">
+          <label ref="jr:itext('/data/inputs/user/facility_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <group ref="/data/health_center">
+      <label ref="jr:itext('/data/health_center:label')"/>
+      <input ref="/data/health_center/external_id">
+        <label ref="jr:itext('/data/health_center/external_id:label')"/>
+      </input>
+      <input ref="/data/health_center/name">
+        <label ref="jr:itext('/data/health_center/name:label')"/>
+      </input>
+      <input ref="/data/health_center/notes">
+        <label ref="jr:itext('/data/health_center/notes:label')"/>
+      </input>
+      <input appearance="db-object bind-id-only" ref="/data/health_center/contact">
+        <label ref="jr:itext('/data/health_center/contact:label')"/>
+        <hint ref="jr:itext('/data/health_center/contact:hint')"/>
+      </input>
+      <input appearance="db-object bind-id-only" ref="/data/health_center/parent">
+        <label ref="jr:itext('/data/health_center/parent:label')"/>
+        <hint ref="jr:itext('/data/health_center/parent:hint')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

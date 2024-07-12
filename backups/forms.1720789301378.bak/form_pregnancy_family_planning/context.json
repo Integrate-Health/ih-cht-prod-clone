@@ -1,0 +1,5 @@
+{
+  "expression": "user.role === 'chw' && user._id !== contact._id && summary.alive && summary.is_family_person && !summary.muted && summary.show_pregnancy_form && contact.type === 'person' && ageInYears(contact) >= 12 && ageInYears(contact) < 60 && (contact.sex === 'female' || contact.sex === 'femme' || contact.sex === 'Femme')",
+  "person": true,
+  "place": false
+}

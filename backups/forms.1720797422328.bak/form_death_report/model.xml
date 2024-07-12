@@ -1,0 +1,60 @@
+
+  <model>
+    <instance>
+        <death_report xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" delimiter="#" id="death_report" prefix="J1!death_report!" version="2017-07-11">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <parent/>
+            </contact>
+          </inputs>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_age_display_fr/>
+          <patient_id/>
+          <patient_name/>
+          <patient_sex/>
+          <patient_sex_en/>
+          <patient_sex_fr/>
+          <visited_contact_uuid/>
+          <death_place/>
+          <p_note/>
+          <s_death>
+            <s_death_date/>
+            <s_death_location/>
+            <s_specify/>
+            <s_maternal_reason/>
+            <s_family_death_same_symptoms/>
+          </s_death>
+          <group_diagnosis>
+            <r_summary/>
+            <r_patient_info/>
+            <death_information>
+              <r_death_info/>
+              <r_death_date/>
+              <r_death_place/>
+            </death_information>
+          </group_diagnosis>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </death_report>
+      </instance>
+    <instance id="contact-summary"/>
+  </model>
+

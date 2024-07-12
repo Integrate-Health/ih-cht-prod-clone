@@ -1,0 +1,1309 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Nouveau Ménage</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/create_new_family/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/create_new_family/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/create_new_family/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/create_new_family/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/create_new_family/inputs/user/fullname:label">
+            <value>Contact FULL NAME</value>
+          </text>
+          <text id="/create_new_family/inputs/user/name:label">
+            <value>Username</value>
+          </text>
+          <text id="/create_new_family/inputs/user/phone:label">
+            <value>Phone</value>
+          </text>
+          <text id="/create_new_family/inputs/user/roles:label">
+            <value>Role</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/_id:label">
+            <value>Village/Secteur ID</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/name:label">
+            <value>Village/Secteur Name</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/external_id:label">
+            <value>user_parent_external_id</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/code:label">
+            <value>user_parent_code</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/parent/_id:label">
+            <value>District/Quartier Id</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/parent/parent/_id:label">
+            <value>Hospital Id</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/parent/parent/parent/_id:label">
+            <value>Commune Id</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/parent/parent/parent/parent/_id:label">
+            <value>Prefecture Id</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/parent/parent/parent/parent/parent/_id:label">
+            <value>Region Id</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/parent/parent/parent/parent/parent/parent/_id:label">
+            <value>Country Id</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/contact:label">
+            <value>PRINCIPAL CONTACT INFORMATIONS</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/contact/_id:label">
+            <value>PRINCIPAL CONTACT ID</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/contact/name:label">
+            <value>PRINCIPAL CONTACT NAME</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/contact/external_id:label">
+            <value>PRINCIPAL CONTACT EXTRENAL ID</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/contact/phone:label">
+            <value>RECO PHONE</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/contact/role:label">
+            <value>RECO ROLE</value>
+          </text>
+          <text id="/create_new_family/creation_number:label">
+            <value>creation_number</value>
+          </text>
+          <text id="/create_new_family/is_creation_mode:label">
+            <value>is_creation_mode</value>
+          </text>
+          <text id="/create_new_family/access_not:jr:constraintMsg">
+            <value>Ask for permission</value>
+          </text>
+          <text id="/create_new_family/access_not:label">
+            <value>You don't have permission to edit this report</value>
+          </text>
+          <text id="/create_new_family/access_not/ok:label">
+            <value>Ok</value>
+          </text>
+          <text id="/create_new_family/information/i_household_external_id:label">
+            <value>&lt;b style="color:blue;"&gt;HouseHold Number&lt;/b&gt;</value>
+          </text>
+          <text id="/create_new_family/information/i_user_fullname:label">
+            <value>Your Fullname</value>
+          </text>
+          <text id="/create_new_family/information/i_user_external_id:label">
+            <value>Your external Id</value>
+          </text>
+          <text id="/create_new_family/information/c_household_has_working_latrine:label">
+            <value>Does the household have a working latrine?</value>
+          </text>
+          <text id="/create_new_family/information/c_household_has_working_latrine/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/create_new_family/information/c_household_has_working_latrine/no:label">
+            <value>No</value>
+          </text>
+          <text id="/create_new_family/information/c_household_has_good_water_access:label">
+            <value>Does the household have access to drinking water?</value>
+          </text>
+          <text id="/create_new_family/information/c_household_has_good_water_access/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/create_new_family/information/c_household_has_good_water_access/no:label">
+            <value>No</value>
+          </text>
+          <text id="/create_new_family/add_new_household:label">
+            <value>Primary Caregiver</value>
+          </text>
+          <text id="/create_new_family/add_new_household/external_id:label">
+            <value>Code</value>
+          </text>
+          <text id="/create_new_family/add_new_household/type:label">
+            <value>Person Type</value>
+          </text>
+          <text id="/create_new_family/add_new_household/name:label">
+            <value>Names</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/selected_sex:label">
+            <value>Gender</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/selected_sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/selected_sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/dob_method:label">
+            <value>Method to select date of birth</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/dob_method/approx:label">
+            <value>With current age</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/dob_method/calendar:label">
+            <value>With calendar (preferred)</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/dob_calendar:jr:constraintMsg">
+            <value>Age selected: <output value=" /create_new_family/add_new_household/register_patient/age_by_date "/> years, Age must between 18 and 150 Years</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/dob_calendar:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/dob_calendar:hint">
+            <value>**Age must between 18 and 150**</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/age_years:jr:constraintMsg">
+            <value>Age must between 18 and 150</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/age_years:label">
+            <value>Age in years</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/age_years:hint">
+            <value>**Age must between 18 and 150**</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/patient_has_phone:label">
+            <value>Does the patient have phone number ?</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/patient_has_phone/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/patient_has_phone/no:label">
+            <value>No</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/phone:jr:constraintMsg">
+            <value>Please enter a valid local number. For example: XX XX XX XX X</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/phone:label">
+            <value>Phone Number</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/phone:hint">
+            <value>Format: XX XX XX XX X</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/phone_other:jr:constraintMsg">
+            <value>Please enter a valid local number. For example: XX XX XX XX X</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/phone_other:label">
+            <value>Phone Number</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/phone_other:hint">
+            <value>Format: XX XX XX XX X</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/has_birth_certificate:label">
+            <value>Does the patient have a birth certificate?</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/has_birth_certificate/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/has_birth_certificate/no:label">
+            <value>No</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/profession:label">
+            <value>Profession/Function</value>
+          </text>
+          <text id="/create_new_family/add_new_family:label">
+            <value>Add Household</value>
+          </text>
+          <text id="/create_new_family/add_new_family:hint">
+            <value>mandatory</value>
+          </text>
+          <text id="/create_new_family/add_new_family/contact:hint">
+            <value>mandatory</value>
+          </text>
+          <text id="/create_new_family/create_new_patient/type:label">
+            <value>Type</value>
+          </text>
+          <text id="/create_new_family/create_new_patient/fields/patient_id:label">
+            <value>patient_id</value>
+          </text>
+          <text id="/create_new_family/create_new_patient/fields/patient_name:label">
+            <value>patient_name</value>
+          </text>
+          <text id="/create_new_family/create_new_patient/fields/patient_code_number:label">
+            <value>patient_code_number</value>
+          </text>
+          <text id="/create_new_family/user_id:label">
+            <value>User contact id</value>
+          </text>
+          <text id="/create_new_family/user_name:label">
+            <value>user_name</value>
+          </text>
+          <text id="/create_new_family/user_fullname:label">
+            <value>user_fullname</value>
+          </text>
+          <text id="/create_new_family/user_phone:label">
+            <value>User phone</value>
+          </text>
+          <text id="/create_new_family/user_external_id:label">
+            <value>User external id</value>
+          </text>
+          <text id="/create_new_family/user_role:label">
+            <value>User rôle</value>
+          </text>
+          <text id="/create_new_family/user_parent_external_id:label">
+            <value>user_parent_external_id</value>
+          </text>
+          <text id="/create_new_family/user_parent_code:label">
+            <value>user_parent_code</value>
+          </text>
+          <text id="/create_new_family/village_secteur_id:label">
+            <value>Village/Secteur Id</value>
+          </text>
+          <text id="/create_new_family/patient_id:label">
+            <value>Village/Secteur Id</value>
+          </text>
+          <text id="/create_new_family/patient_external_id:label">
+            <value>Village/Secteur external_Id</value>
+          </text>
+          <text id="/create_new_family/patient_name:label">
+            <value>Village/Secteur Name</value>
+          </text>
+          <text id="/create_new_family/district_quartier_id:label">
+            <value>District/Quartier Id</value>
+          </text>
+          <text id="/create_new_family/hospital_id:label">
+            <value>Hospital Id</value>
+          </text>
+          <text id="/create_new_family/commune_id:label">
+            <value>Commune Id</value>
+          </text>
+          <text id="/create_new_family/prefecture_id:label">
+            <value>Prefecture Id</value>
+          </text>
+          <text id="/create_new_family/region_id:label">
+            <value>Region Id</value>
+          </text>
+          <text id="/create_new_family/country_id:label">
+            <value>Country Id</value>
+          </text>
+          <text id="/create_new_family/group_review/s_refer_city_hall:label">
+            <value>Referral to a city hall</value>
+          </text>
+          <text id="/create_new_family/group_review/s_refer_city_hall_text:label">
+            <value>Refer to **town hall for birth certificate not done**</value>
+          </text>
+          <text id="/create_new_family/group_review/followup:label">
+            <value>Follow up</value>
+          </text>
+          <text id="/create_new_family/group_review/s_referal_followup:label">
+            <value>The reference follow-up at the town hall is in **30 days**</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/create_new_family/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/create_new_family/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/create_new_family/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/create_new_family/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/create_new_family/inputs/user/fullname:label">
+            <value>Contact FULL Name</value>
+          </text>
+          <text id="/create_new_family/inputs/user/name:label">
+            <value>Username</value>
+          </text>
+          <text id="/create_new_family/inputs/user/phone:label">
+            <value>Phone</value>
+          </text>
+          <text id="/create_new_family/inputs/user/roles:label">
+            <value>Role</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/_id:label">
+            <value>Village/Secteur ID</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/name:label">
+            <value>Village/Secteur Name</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/external_id:label">
+            <value>user_parent_external_id</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/code:label">
+            <value>user_parent_code</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/parent/_id:label">
+            <value>District/Quartier Id</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/parent/parent/_id:label">
+            <value>Centre de Santé Id</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/parent/parent/parent/_id:label">
+            <value>Commune Id</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/parent/parent/parent/parent/_id:label">
+            <value>Préfecture/District Sanitaire Id</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/parent/parent/parent/parent/parent/_id:label">
+            <value>Région/IRS Id</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/parent/parent/parent/parent/parent/parent/_id:label">
+            <value>Pays Id</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/contact:label">
+            <value>INFORMATIONS CONTACT PRINCIPAL</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/contact/_id:label">
+            <value>ID CONTACT PRINCIPAL</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/contact/name:label">
+            <value>NOM CONTACT PRINCIPAL</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/contact/external_id:label">
+            <value>ID EXTERNE CONTACT PRINCIPAL</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/contact/phone:label">
+            <value>RECO PHONE</value>
+          </text>
+          <text id="/create_new_family/inputs/contact/contact/role:label">
+            <value>RECO ROLE</value>
+          </text>
+          <text id="/create_new_family/creation_number:label">
+            <value>creation_number</value>
+          </text>
+          <text id="/create_new_family/is_creation_mode:label">
+            <value>is_creation_mode</value>
+          </text>
+          <text id="/create_new_family/access_not:jr:constraintMsg">
+            <value>Contactez votre administrateur s'il s'agit d'une erreur!</value>
+          </text>
+          <text id="/create_new_family/access_not:label">
+            <value>Vous n'avez pas le droit de modifier ce rapport. Veuillez fermer donc le formulaire!</value>
+          </text>
+          <text id="/create_new_family/access_not/ok:label">
+            <value>Compris</value>
+          </text>
+          <text id="/create_new_family/information/i_household_external_id:label">
+            <value>&lt;b style="color:blue;"&gt;Numéro du ménage&lt;/b&gt;</value>
+          </text>
+          <text id="/create_new_family/information/i_user_fullname:label">
+            <value>Votre Nom complet</value>
+          </text>
+          <text id="/create_new_family/information/i_user_external_id:label">
+            <value>Votre Identifiant</value>
+          </text>
+          <text id="/create_new_family/information/c_household_has_working_latrine:label">
+            <value>le ménage a t'il une latrine fonctionnelle</value>
+          </text>
+          <text id="/create_new_family/information/c_household_has_working_latrine/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/create_new_family/information/c_household_has_working_latrine/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/create_new_family/information/c_household_has_good_water_access:label">
+            <value>le ménage a t'il un accès à l'eau potable</value>
+          </text>
+          <text id="/create_new_family/information/c_household_has_good_water_access/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/create_new_family/information/c_household_has_good_water_access/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/create_new_family/add_new_household:label">
+            <value>Enrégistrement du Chef de ménage</value>
+          </text>
+          <text id="/create_new_family/add_new_household/external_id:label">
+            <value>&lt;b&gt;Code unique du chef de ménage&lt;/b&gt;</value>
+          </text>
+          <text id="/create_new_family/add_new_household/type:label">
+            <value>Type de personne</value>
+          </text>
+          <text id="/create_new_family/add_new_household/name:label">
+            <value>Prénoms et Nom du Chef de Ménage</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/selected_sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/selected_sex/male:label">
+            <value>Masculin</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/selected_sex/female:label">
+            <value>Féminin</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/dob_method:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/dob_method/approx:label">
+            <value>Avec l'age actuel</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/dob_method/calendar:label">
+            <value>Avec Calendrier</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/dob_calendar:jr:constraintMsg">
+            <value>Age choisi: <output value=" /create_new_family/add_new_household/register_patient/age_by_date "/> ans, l'age doit être compris entre 18 et 150 ans</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/dob_calendar:label">
+            <value>Date du calendrier</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/dob_calendar:hint">
+            <value>**L'age doit être compris entre 18 et 150**</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/age_years:jr:constraintMsg">
+            <value>L'age doit être compris entre 18 et 150</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/age_years:label">
+            <value>Age en années</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/age_years:hint">
+            <value>**L'age doit être compris entre 18 et 150**</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/patient_has_phone:label">
+            <value>A-t-il un numéro de téléphone ?</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/patient_has_phone/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/patient_has_phone/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/phone:jr:constraintMsg">
+            <value>Format autorisé: XX XX XX XX X</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/phone:label">
+            <value>Numéro de téléphone</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/phone:hint">
+            <value>Format: XX XX XX XX X</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/phone_other:jr:constraintMsg">
+            <value>Format autorisé: XX XX XX XX X</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/phone_other:label">
+            <value>Téléphone personne à contacter</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/phone_other:hint">
+            <value>Format: XX XX XX XX X</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/has_birth_certificate:label">
+            <value>A-t-il un extrait de naissance ?</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/has_birth_certificate/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/has_birth_certificate/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/create_new_family/add_new_household/register_patient/profession:label">
+            <value>Profession/Fonction</value>
+          </text>
+          <text id="/create_new_family/add_new_family:label">
+            <value>Ajouter un ménage</value>
+          </text>
+          <text id="/create_new_family/add_new_family/contact:hint">
+            <value>obligatoire</value>
+          </text>
+          <text id="/create_new_family/create_new_patient/type:label">
+            <value>Type</value>
+          </text>
+          <text id="/create_new_family/create_new_patient/fields/patient_id:label">
+            <value>patient_id</value>
+          </text>
+          <text id="/create_new_family/create_new_patient/fields/patient_name:label">
+            <value>patient_name</value>
+          </text>
+          <text id="/create_new_family/create_new_patient/fields/patient_code_number:label">
+            <value>patient_code_number</value>
+          </text>
+          <text id="/create_new_family/user_id:label">
+            <value>User contact id</value>
+          </text>
+          <text id="/create_new_family/user_name:label">
+            <value>user_name</value>
+          </text>
+          <text id="/create_new_family/user_fullname:label">
+            <value>user_fullname</value>
+          </text>
+          <text id="/create_new_family/user_phone:label">
+            <value>User phone</value>
+          </text>
+          <text id="/create_new_family/user_external_id:label">
+            <value>User external id</value>
+          </text>
+          <text id="/create_new_family/user_role:label">
+            <value>User rôle</value>
+          </text>
+          <text id="/create_new_family/user_parent_external_id:label">
+            <value>user_parent_external_id</value>
+          </text>
+          <text id="/create_new_family/user_parent_code:label">
+            <value>user_parent_code</value>
+          </text>
+          <text id="/create_new_family/village_secteur_id:label">
+            <value>Village/Secteur Id</value>
+          </text>
+          <text id="/create_new_family/patient_id:label">
+            <value>Village/Secteur Id</value>
+          </text>
+          <text id="/create_new_family/patient_external_id:label">
+            <value>Village/Secteur Id externe</value>
+          </text>
+          <text id="/create_new_family/patient_name:label">
+            <value>Village/Secteur Name</value>
+          </text>
+          <text id="/create_new_family/district_quartier_id:label">
+            <value>District/Quartier Id</value>
+          </text>
+          <text id="/create_new_family/hospital_id:label">
+            <value>Centre de Santé Id</value>
+          </text>
+          <text id="/create_new_family/commune_id:label">
+            <value>Commune Id</value>
+          </text>
+          <text id="/create_new_family/prefecture_id:label">
+            <value>Préfecture/District Sanitaire Id</value>
+          </text>
+          <text id="/create_new_family/region_id:label">
+            <value>Région/IRS Id</value>
+          </text>
+          <text id="/create_new_family/country_id:label">
+            <value>Pays Id</value>
+          </text>
+          <text id="/create_new_family/group_review/s_refer_city_hall:label">
+            <value>Référence vers la mairie</value>
+          </text>
+          <text id="/create_new_family/group_review/s_refer_city_hall_text:label">
+            <value>Veuillez référer **à la mairie pour acte de naissance non fait**</value>
+          </text>
+          <text id="/create_new_family/group_review/followup:label">
+            <value>Suivi</value>
+          </text>
+          <text id="/create_new_family/group_review/s_referal_followup:label">
+            <value>Le suivi de référence à la mairie est dans **30 jours**</value>
+          </text>
+          <text id="/create_new_family/add_new_family:hint">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <create_new_family id="create_new_family" prefix="J1!create_new_family!" delimiter="#" version="2018-01-24">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <fullname/>
+              <name/>
+              <phone/>
+              <roles/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <external_id/>
+              <code/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                    <parent>
+                      <_id/>
+                      <parent>
+                        <_id/>
+                        <parent>
+                          <_id/>
+                        </parent>
+                      </parent>
+                    </parent>
+                  </parent>
+                </parent>
+              </parent>
+              <contact>
+                <_id/>
+                <name/>
+                <external_id/>
+                <phone/>
+                <role/>
+              </contact>
+            </contact>
+          </inputs>
+          <creation_number/>
+          <is_creation_mode/>
+          <access_not/>
+          <hide_report/>
+          <previous_family_code_number/>
+          <family_code_number/>
+          <family_external_id_generated/>
+          <family_code_generated/>
+          <c_has_birth_certificate/>
+          <information>
+            <i_household_external_id/>
+            <i_user_fullname/>
+            <i_user_external_id/>
+            <c_household_has_working_latrine/>
+            <c_household_has_good_water_access/>
+          </information>
+          <add_new_household db-doc="true">
+            <external_id/>
+            <type/>
+            <name/>
+            <selected_role/>
+            <register_patient>
+              <is_household/>
+              <is_patient/>
+              <selected_sex/>
+              <dob_method>approx</dob_method>
+              <dob_calendar/>
+              <age_by_date/>
+              <age_years/>
+              <selected_date_of_birth/>
+              <patient_code/>
+              <patient_has_phone/>
+              <phone/>
+              <phone_other/>
+              <has_birth_certificate/>
+              <profession/>
+            </register_patient>
+            <role/>
+            <sex/>
+            <date_of_birth/>
+            <phone/>
+            <phone_other/>
+            <geolocation/>
+            <user_info>
+              <created_user_id/>
+              <created_user_fullname/>
+              <created_user_role/>
+              <created_user_name/>
+              <created_user_external_id/>
+              <created_parent_id/>
+              <created_parent_external_id/>
+              <created_parent_code/>
+            </user_info>
+            <parent>
+              <_id db-doc-ref=" /create_new_family/add_new_family "/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                    <parent>
+                      <_id/>
+                      <parent>
+                        <_id/>
+                        <parent>
+                          <_id/>
+                          <parent>
+                            <_id/>
+                          </parent>
+                        </parent>
+                      </parent>
+                    </parent>
+                  </parent>
+                </parent>
+              </parent>
+            </parent>
+            <created_by_doc db-doc-ref="/create_new_family"/>
+          </add_new_household>
+          <household_doc_id db-doc-ref=" /create_new_family/add_new_household "/>
+          <add_new_family db-doc="true">
+            <external_id/>
+            <given_name/>
+            <name/>
+            <household_has_working_latrine/>
+            <household_has_good_water_access/>
+            <geolocation/>
+            <contact>
+              <_id db-doc-ref=" /create_new_family/add_new_household "/>
+            </contact>
+            <user_info>
+              <created_user_id/>
+              <created_user_fullname/>
+              <created_user_role/>
+              <created_user_name/>
+              <created_user_external_id/>
+              <created_parent_id/>
+              <created_parent_external_id/>
+              <created_parent_code/>
+            </user_info>
+            <parent>
+              <_id/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                    <parent>
+                      <_id/>
+                      <parent>
+                        <_id/>
+                        <parent>
+                          <_id/>
+                        </parent>
+                      </parent>
+                    </parent>
+                  </parent>
+                </parent>
+              </parent>
+            </parent>
+            <type/>
+            <created_by_doc db-doc-ref="/create_new_family"/>
+          </add_new_family>
+          <family_doc_id db-doc-ref=" /create_new_family/add_new_family "/>
+          <create_new_patient db-doc="true">
+            <form/>
+            <type/>
+            <content_type/>
+            <from/>
+            <contact>
+              <_id/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                    <parent>
+                      <_id/>
+                      <parent>
+                        <_id/>
+                        <parent>
+                          <_id/>
+                          <parent>
+                            <_id/>
+                          </parent>
+                        </parent>
+                      </parent>
+                    </parent>
+                  </parent>
+                </parent>
+              </parent>
+            </contact>
+            <fields>
+              <inputs>
+                <source/>
+                <source_id/>
+                <contact>
+                  <_id db-doc-ref=" /create_new_family/add_new_family "/>
+                </contact>
+              </inputs>
+              <hide/>
+              <patient_id db-doc-ref=" /create_new_family/add_new_family "/>
+              <patient_name/>
+              <patient_code_number/>
+            </fields>
+            <created_by_doc db-doc-ref="/create_new_family"/>
+          </create_new_patient>
+          <new_patient_profil_doc db-doc-ref=" /create_new_family/create_new_patient "/>
+          <user_id/>
+          <user_name/>
+          <user_fullname/>
+          <user_phone/>
+          <user_external_id/>
+          <user_role/>
+          <user_parent_external_id/>
+          <user_parent_code/>
+          <village_secteur_id/>
+          <patient_id/>
+          <patient_external_id/>
+          <patient_name/>
+          <district_quartier_id/>
+          <hospital_id/>
+          <commune_id/>
+          <prefecture_id/>
+          <region_id/>
+          <country_id/>
+          <group_review>
+            <s_refer_city_hall/>
+            <s_refer_city_hall_text/>
+            <followup/>
+            <s_referal_followup/>
+          </group_review>
+          <meta>
+            <instanceID/>
+          </meta>
+        </create_new_family>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/create_new_family/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/create_new_family/inputs/source" type="string"/>
+      <bind nodeset="/create_new_family/inputs/source_id" type="string"/>
+      <bind nodeset="/create_new_family/inputs/user/contact_id" type="db:person"/>
+      <bind nodeset="/create_new_family/inputs/user/fullname" type="string"/>
+      <bind nodeset="/create_new_family/inputs/user/name" type="string"/>
+      <bind nodeset="/create_new_family/inputs/user/phone" type="string"/>
+      <bind nodeset="/create_new_family/inputs/user/roles" type="string"/>
+      <bind nodeset="/create_new_family/inputs/contact/_id" type="db:clinic"/>
+      <bind nodeset="/create_new_family/inputs/contact/name" type="string"/>
+      <bind nodeset="/create_new_family/inputs/contact/external_id" type="string"/>
+      <bind nodeset="/create_new_family/inputs/contact/code" type="string"/>
+      <bind nodeset="/create_new_family/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/create_new_family/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/create_new_family/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/create_new_family/inputs/contact/parent/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/create_new_family/inputs/contact/parent/parent/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/create_new_family/inputs/contact/parent/parent/parent/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/create_new_family/inputs/contact/contact/_id" type="string"/>
+      <bind nodeset="/create_new_family/inputs/contact/contact/name" type="string"/>
+      <bind nodeset="/create_new_family/inputs/contact/contact/external_id" type="string"/>
+      <bind nodeset="/create_new_family/inputs/contact/contact/phone" type="string"/>
+      <bind nodeset="/create_new_family/inputs/contact/contact/role" type="string"/>
+      <bind nodeset="/create_new_family/creation_number" type="string" calculate="instance('contact-summary')/context/creation_number"/>
+      <bind nodeset="/create_new_family/is_creation_mode" type="string" calculate="if( /create_new_family/creation_number  != '' and int( /create_new_family/creation_number ) = 10,'true','false')"/>
+      <bind nodeset="/create_new_family/access_not" type="select1" constraint=".='yesForAccess'" required="true()" jr:constraintMsg="jr:itext('/create_new_family/access_not:jr:constraintMsg')" relevant=" /create_new_family/is_creation_mode  = 'false'"/>
+      <bind nodeset="/create_new_family/hide_report" type="string" calculate="&quot;true&quot;"/>
+      <bind nodeset="/create_new_family/previous_family_code_number" type="string" calculate="int(coalesce(instance('contact-summary')/context/last_family_code,0))"/>
+      <bind nodeset="/create_new_family/family_code_number" type="string" calculate="int(coalesce(if( /create_new_family/previous_family_code_number  &lt; 0 or  /create_new_family/previous_family_code_number  = '',0, /create_new_family/previous_family_code_number ),0)) + 1"/>
+      <bind nodeset="/create_new_family/family_external_id_generated" type="string" calculate="if( /create_new_family/family_code_number  &lt; 10,concat('0', /create_new_family/family_code_number ), /create_new_family/family_code_number )"/>
+      <bind nodeset="/create_new_family/family_code_generated" type="string" calculate="concat( /create_new_family/user_external_id , /create_new_family/family_external_id_generated )"/>
+      <bind nodeset="/create_new_family/c_has_birth_certificate" type="string" calculate="if( /create_new_family/add_new_household/register_patient/has_birth_certificate  = 'yes','true','false')"/>
+      <bind nodeset="/create_new_family/information/i_household_external_id" type="string" calculate=" /create_new_family/family_external_id_generated " readonly="true()" required="true()"/>
+      <bind nodeset="/create_new_family/information/i_user_fullname" type="string" calculate=" /create_new_family/user_fullname " readonly="true()" required="true()"/>
+      <bind nodeset="/create_new_family/information/i_user_external_id" type="string" calculate=" /create_new_family/user_external_id " readonly="true()" required="true()"/>
+      <bind nodeset="/create_new_family/information/c_household_has_working_latrine" type="select1" required="true()"/>
+      <bind nodeset="/create_new_family/information/c_household_has_good_water_access" type="select1" required="true()"/>
+      <bind nodeset="/create_new_family/add_new_household/external_id" type="string" calculate="concat( /create_new_family/user_external_id , /create_new_family/family_external_id_generated ,'01')" readonly="true()" required="true()"/>
+      <bind nodeset="/create_new_family/add_new_household/type" type="string" calculate="&quot;person&quot;"/>
+      <bind nodeset="/create_new_family/add_new_household/name" type="string" required="true()"/>
+      <bind nodeset="/create_new_family/add_new_household/selected_role" type="string" calculate="&quot;patient&quot;"/>
+      <bind nodeset="/create_new_family/add_new_household/register_patient/is_household" type="string" calculate="&quot;true&quot;"/>
+      <bind nodeset="/create_new_family/add_new_household/register_patient/is_patient" type="string" calculate="&quot;true&quot;"/>
+      <bind nodeset="/create_new_family/add_new_household/register_patient/selected_sex" type="select1" required="true()"/>
+      <bind nodeset="/create_new_family/add_new_household/register_patient/dob_method" type="select1" required="true()"/>
+      <bind nodeset="/create_new_family/add_new_household/register_patient/dob_calendar" type="date" constraint="../age_by_date &gt;=18 and ../age_by_date &lt; 150" required="true()" jr:constraintMsg="jr:itext('/create_new_family/add_new_household/register_patient/dob_calendar:jr:constraintMsg')" relevant="selected(../dob_method,'calendar')"/>
+      <bind nodeset="/create_new_family/add_new_household/register_patient/age_by_date" type="int" calculate="floor(difference-in-months(../dob_calendar, today()) div 12 )"/>
+      <bind nodeset="/create_new_family/add_new_household/register_patient/age_years" type="int" constraint=". &gt;= 18 and .&lt;150" required="true()" jr:constraintMsg="jr:itext('/create_new_family/add_new_household/register_patient/age_years:jr:constraintMsg')" relevant="selected(../dob_method,'approx')"/>
+      <bind nodeset="/create_new_family/add_new_household/register_patient/selected_date_of_birth" type="string" calculate="if(../dob_calendar='' and ../age_years='','',format-date-time(if(not(selected( ../dob_method,'approx')), ../dob_calendar, format-date-time( decimal-date-time( today() ) - (365.25 * ../age_years) - 0 - 0, &quot;%Y-%m-%d&quot; ) ),&quot;%Y-%m-%d&quot;))"/>
+      <bind nodeset="/create_new_family/add_new_household/register_patient/patient_code" type="string" calculate="../../external_id"/>
+      <bind nodeset="/create_new_family/add_new_household/register_patient/patient_has_phone" type="select1" required="true()"/>
+      <bind nodeset="/create_new_family/add_new_household/register_patient/phone" type="int" constraint="regex(., '^\d{9}$')" required="true()" jr:constraintMsg="jr:itext('/create_new_family/add_new_household/register_patient/phone:jr:constraintMsg')" relevant="../patient_has_phone = 'yes'"/>
+      <bind nodeset="/create_new_family/add_new_household/register_patient/phone_other" type="int" constraint="regex(., '^\d{9}$')" calculate="coalesce(., /create_new_family/user_phone )" jr:constraintMsg="jr:itext('/create_new_family/add_new_household/register_patient/phone_other:jr:constraintMsg')" relevant="../patient_has_phone = 'no'"/>
+      <bind nodeset="/create_new_family/add_new_household/register_patient/has_birth_certificate" type="select1" required="true()"/>
+      <bind nodeset="/create_new_family/add_new_household/register_patient/profession" type="string"/>
+      <bind nodeset="/create_new_family/add_new_household/role" type="string" calculate="&quot;patient&quot;"/>
+      <bind nodeset="/create_new_family/add_new_household/sex" type="string" calculate="../register_patient/selected_sex"/>
+      <bind nodeset="/create_new_family/add_new_household/date_of_birth" type="string" calculate="../register_patient/selected_date_of_birth"/>
+      <bind nodeset="/create_new_family/add_new_household/phone" type="string" calculate="../register_patient/phone"/>
+      <bind nodeset="/create_new_family/add_new_household/phone_other" type="string" calculate="../register_patient/phone_other"/>
+      <bind nodeset="/create_new_family/add_new_household/geolocation" type="string" calculate="concat(../../inputs/meta/location/lat,../../inputs/meta/location/long)"/>
+      <bind nodeset="/create_new_family/add_new_household/user_info/created_user_id" type="string" calculate=" /create_new_family/user_id "/>
+      <bind nodeset="/create_new_family/add_new_household/user_info/created_user_fullname" type="string" calculate=" /create_new_family/user_fullname "/>
+      <bind nodeset="/create_new_family/add_new_household/user_info/created_user_role" type="string" calculate=" /create_new_family/user_role "/>
+      <bind nodeset="/create_new_family/add_new_household/user_info/created_user_name" type="string" calculate=" /create_new_family/user_name "/>
+      <bind nodeset="/create_new_family/add_new_household/user_info/created_user_external_id" type="string" calculate=" /create_new_family/user_external_id "/>
+      <bind nodeset="/create_new_family/add_new_household/user_info/created_parent_id" type="string" calculate=" /create_new_family/village_secteur_id "/>
+      <bind nodeset="/create_new_family/add_new_household/user_info/created_parent_external_id" type="string" calculate=" /create_new_family/user_parent_external_id "/>
+      <bind nodeset="/create_new_family/add_new_household/user_info/created_parent_code" type="string" calculate=" /create_new_family/user_parent_code "/>
+      <bind nodeset="/create_new_family/add_new_household/parent/_id" type="string" calculate=" /create_new_family/add_new_family "/>
+      <bind nodeset="/create_new_family/add_new_household/parent/parent/_id" type="string" calculate=" /create_new_family/village_secteur_id "/>
+      <bind nodeset="/create_new_family/add_new_household/parent/parent/parent/_id" type="string" calculate=" /create_new_family/district_quartier_id "/>
+      <bind nodeset="/create_new_family/add_new_household/parent/parent/parent/parent/_id" type="string" calculate=" /create_new_family/hospital_id "/>
+      <bind nodeset="/create_new_family/add_new_household/parent/parent/parent/parent/parent/_id" type="string" calculate=" /create_new_family/commune_id "/>
+      <bind nodeset="/create_new_family/add_new_household/parent/parent/parent/parent/parent/parent/_id" type="string" calculate=" /create_new_family/prefecture_id "/>
+      <bind nodeset="/create_new_family/add_new_household/parent/parent/parent/parent/parent/parent/parent/_id" type="string" calculate=" /create_new_family/region_id "/>
+      <bind nodeset="/create_new_family/add_new_household/parent/parent/parent/parent/parent/parent/parent/parent/_id" type="string" calculate=" /create_new_family/country_id "/>
+      <bind nodeset="/create_new_family/add_new_household/created_by_doc" type="string" calculate="."/>
+      <bind nodeset="/create_new_family/household_doc_id" type="string" calculate=" /create_new_family/add_new_household "/>
+      <bind nodeset="/create_new_family/add_new_family/external_id" type="string" calculate=" /create_new_family/family_external_id_generated "/>
+      <bind nodeset="/create_new_family/add_new_family/given_name" type="string" calculate="../../add_new_household/name"/>
+      <bind nodeset="/create_new_family/add_new_family/name" type="string" calculate="concat( /create_new_family/family_external_id_generated ,' - Ménage ', ../../add_new_household/name)"/>
+      <bind nodeset="/create_new_family/add_new_family/household_has_working_latrine" type="string" calculate=" /create_new_family/information/c_household_has_working_latrine "/>
+      <bind nodeset="/create_new_family/add_new_family/household_has_good_water_access" type="string" calculate=" /create_new_family/information/c_household_has_good_water_access "/>
+      <bind nodeset="/create_new_family/add_new_family/geolocation" type="string" calculate="coalesce(../../add_new_household/geolocation,concat(../../inputs/meta/location/lat,../../inputs/meta/location/long))"/>
+      <bind nodeset="/create_new_family/add_new_family/contact/_id" type="string" calculate=" /create_new_family/add_new_household "/>
+      <bind nodeset="/create_new_family/add_new_family/user_info/created_user_id" type="string" calculate=" /create_new_family/user_id "/>
+      <bind nodeset="/create_new_family/add_new_family/user_info/created_user_fullname" type="string" calculate=" /create_new_family/user_fullname "/>
+      <bind nodeset="/create_new_family/add_new_family/user_info/created_user_role" type="string" calculate=" /create_new_family/user_role "/>
+      <bind nodeset="/create_new_family/add_new_family/user_info/created_user_name" type="string" calculate=" /create_new_family/user_name "/>
+      <bind nodeset="/create_new_family/add_new_family/user_info/created_user_external_id" type="string" calculate=" /create_new_family/user_external_id "/>
+      <bind nodeset="/create_new_family/add_new_family/user_info/created_parent_id" type="string" calculate=" /create_new_family/village_secteur_id "/>
+      <bind nodeset="/create_new_family/add_new_family/user_info/created_parent_external_id" type="string" calculate=" /create_new_family/user_parent_external_id "/>
+      <bind nodeset="/create_new_family/add_new_family/user_info/created_parent_code" type="string" calculate=" /create_new_family/user_parent_code "/>
+      <bind nodeset="/create_new_family/add_new_family/parent/_id" type="string" calculate=" /create_new_family/village_secteur_id "/>
+      <bind nodeset="/create_new_family/add_new_family/parent/parent/_id" type="string" calculate=" /create_new_family/district_quartier_id "/>
+      <bind nodeset="/create_new_family/add_new_family/parent/parent/parent/_id" type="string" calculate=" /create_new_family/hospital_id "/>
+      <bind nodeset="/create_new_family/add_new_family/parent/parent/parent/parent/_id" type="string" calculate=" /create_new_family/commune_id "/>
+      <bind nodeset="/create_new_family/add_new_family/parent/parent/parent/parent/parent/_id" type="string" calculate=" /create_new_family/prefecture_id "/>
+      <bind nodeset="/create_new_family/add_new_family/parent/parent/parent/parent/parent/parent/_id" type="string" calculate=" /create_new_family/region_id "/>
+      <bind nodeset="/create_new_family/add_new_family/parent/parent/parent/parent/parent/parent/parent/_id" type="string" calculate=" /create_new_family/country_id "/>
+      <bind nodeset="/create_new_family/add_new_family/type" type="string" calculate="&quot;clinic&quot;"/>
+      <bind nodeset="/create_new_family/add_new_family/created_by_doc" type="string" calculate="."/>
+      <bind nodeset="/create_new_family/family_doc_id" type="string" calculate=" /create_new_family/add_new_family "/>
+      <bind nodeset="/create_new_family/create_new_patient/form" type="string" calculate="&quot;create_new_patient&quot;"/>
+      <bind nodeset="/create_new_family/create_new_patient/type" type="string" calculate="&quot;data_record&quot;"/>
+      <bind nodeset="/create_new_family/create_new_patient/content_type" type="string" calculate="&quot;xml&quot;"/>
+      <bind nodeset="/create_new_family/create_new_patient/from" type="string" calculate=" /create_new_family/user_phone "/>
+      <bind nodeset="/create_new_family/create_new_patient/contact/_id" type="string" calculate=" /create_new_family/user_id "/>
+      <bind nodeset="/create_new_family/create_new_patient/contact/parent/_id" type="string" calculate=" /create_new_family/village_secteur_id "/>
+      <bind nodeset="/create_new_family/create_new_patient/contact/parent/parent/_id" type="string" calculate=" /create_new_family/district_quartier_id "/>
+      <bind nodeset="/create_new_family/create_new_patient/contact/parent/parent/parent/_id" type="string" calculate=" /create_new_family/hospital_id "/>
+      <bind nodeset="/create_new_family/create_new_patient/contact/parent/parent/parent/parent/_id" type="string" calculate=" /create_new_family/commune_id "/>
+      <bind nodeset="/create_new_family/create_new_patient/contact/parent/parent/parent/parent/parent/_id" type="string" calculate=" /create_new_family/prefecture_id "/>
+      <bind nodeset="/create_new_family/create_new_patient/contact/parent/parent/parent/parent/parent/parent/_id" type="string" calculate=" /create_new_family/region_id "/>
+      <bind nodeset="/create_new_family/create_new_patient/contact/parent/parent/parent/parent/parent/parent/parent/_id" type="string" calculate=" /create_new_family/country_id "/>
+      <bind nodeset="/create_new_family/create_new_patient/fields/inputs/source" type="string" calculate="&quot;contact&quot;"/>
+      <bind nodeset="/create_new_family/create_new_patient/fields/inputs/source_id" type="string" calculate="&quot;&quot;"/>
+      <bind nodeset="/create_new_family/create_new_patient/fields/inputs/contact/_id" type="string" calculate=" /create_new_family/add_new_family "/>
+      <bind nodeset="/create_new_family/create_new_patient/fields/hide" type="string" calculate="&quot;true&quot;"/>
+      <bind nodeset="/create_new_family/create_new_patient/fields/patient_id" type="string" calculate=" /create_new_family/add_new_family "/>
+      <bind nodeset="/create_new_family/create_new_patient/fields/patient_name" type="string" calculate="concat('Ménage ', ../../../add_new_household/name)"/>
+      <bind nodeset="/create_new_family/create_new_patient/fields/patient_code_number" type="string" calculate="1"/>
+      <bind nodeset="/create_new_family/create_new_patient/created_by_doc" type="string" calculate="."/>
+      <bind nodeset="/create_new_family/new_patient_profil_doc" type="string" calculate=" /create_new_family/create_new_patient "/>
+      <bind nodeset="/create_new_family/user_id" type="string" calculate="../inputs/user/contact_id"/>
+      <bind nodeset="/create_new_family/user_name" type="string" calculate="../inputs/user/name"/>
+      <bind nodeset="/create_new_family/user_fullname" type="string" calculate="../inputs/contact/contact/name"/>
+      <bind nodeset="/create_new_family/user_phone" type="string" calculate="coalesce(../inputs/user/phone,../inputs/contact/contact/phone)"/>
+      <bind nodeset="/create_new_family/user_external_id" type="string" calculate="../inputs/contact/contact/external_id"/>
+      <bind nodeset="/create_new_family/user_role" type="string" calculate="../inputs/contact/contact/role"/>
+      <bind nodeset="/create_new_family/user_parent_external_id" type="string" calculate="../inputs/contact/external_id"/>
+      <bind nodeset="/create_new_family/user_parent_code" type="string" calculate="../inputs/contact/code"/>
+      <bind nodeset="/create_new_family/village_secteur_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/create_new_family/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/create_new_family/patient_external_id" type="string" calculate="../inputs/contact/external_id"/>
+      <bind nodeset="/create_new_family/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/create_new_family/district_quartier_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/create_new_family/hospital_id" type="string" calculate="../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/create_new_family/commune_id" type="string" calculate="../inputs/contact/parent/parent/parent/_id"/>
+      <bind nodeset="/create_new_family/prefecture_id" type="string" calculate="../inputs/contact/parent/parent/parent/parent/_id"/>
+      <bind nodeset="/create_new_family/region_id" type="string" calculate="../inputs/contact/parent/parent/parent/parent/parent/_id"/>
+      <bind nodeset="/create_new_family/country_id" type="string" calculate="../inputs/contact/parent/parent/parent/parent/parent/parent/_id"/>
+      <bind nodeset="/create_new_family/group_review/s_refer_city_hall" readonly="true()" type="string" relevant=" /create_new_family/c_has_birth_certificate = 'true'"/>
+      <bind nodeset="/create_new_family/group_review/s_refer_city_hall_text" readonly="true()" type="string" relevant=" /create_new_family/c_has_birth_certificate = 'true'"/>
+      <bind nodeset="/create_new_family/group_review/followup" readonly="true()" type="string" relevant=" /create_new_family/c_has_birth_certificate = 'true'"/>
+      <bind nodeset="/create_new_family/group_review/s_referal_followup" readonly="true()" type="string" relevant=" /create_new_family/c_has_birth_certificate = 'true'"/>
+      <bind nodeset="/create_new_family/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/create_new_family/inputs">
+      <label ref="jr:itext('/create_new_family/inputs:label')"/>
+      <input ref="/create_new_family/inputs/source">
+        <label ref="jr:itext('/create_new_family/inputs/source:label')"/>
+      </input>
+      <input ref="/create_new_family/inputs/source_id">
+        <label ref="jr:itext('/create_new_family/inputs/source_id:label')"/>
+      </input>
+      <group ref="/create_new_family/inputs/user">
+        <label ref="jr:itext('/create_new_family/inputs/user:label')"/>
+        <input appearance="db-object" ref="/create_new_family/inputs/user/contact_id">
+          <label ref="jr:itext('/create_new_family/inputs/user/contact_id:label')"/>
+        </input>
+        <input ref="/create_new_family/inputs/user/fullname">
+          <label ref="jr:itext('/create_new_family/inputs/user/fullname:label')"/>
+        </input>
+        <input ref="/create_new_family/inputs/user/name">
+          <label ref="jr:itext('/create_new_family/inputs/user/name:label')"/>
+        </input>
+        <input ref="/create_new_family/inputs/user/phone">
+          <label ref="jr:itext('/create_new_family/inputs/user/phone:label')"/>
+        </input>
+        <input ref="/create_new_family/inputs/user/roles">
+          <label ref="jr:itext('/create_new_family/inputs/user/roles:label')"/>
+        </input>
+      </group>
+      <group ref="/create_new_family/inputs/contact">
+        <label ref="jr:itext('/create_new_family/inputs/contact:label')"/>
+        <input appearance="db-object hidden" ref="/create_new_family/inputs/contact/_id">
+          <label ref="jr:itext('/create_new_family/inputs/contact/_id:label')"/>
+        </input>
+        <input ref="/create_new_family/inputs/contact/name">
+          <label ref="jr:itext('/create_new_family/inputs/contact/name:label')"/>
+        </input>
+        <input ref="/create_new_family/inputs/contact/external_id">
+          <label ref="jr:itext('/create_new_family/inputs/contact/external_id:label')"/>
+        </input>
+        <input ref="/create_new_family/inputs/contact/code">
+          <label ref="jr:itext('/create_new_family/inputs/contact/code:label')"/>
+        </input>
+        <group ref="/create_new_family/inputs/contact/parent">
+          <label ref="jr:itext('/create_new_family/inputs/contact/parent:label')"/>
+          <input ref="/create_new_family/inputs/contact/parent/_id">
+            <label ref="jr:itext('/create_new_family/inputs/contact/parent/_id:label')"/>
+          </input>
+          <group ref="/create_new_family/inputs/contact/parent/parent">
+            <label ref="jr:itext('/create_new_family/inputs/contact/parent/parent:label')"/>
+            <input ref="/create_new_family/inputs/contact/parent/parent/_id">
+              <label ref="jr:itext('/create_new_family/inputs/contact/parent/parent/_id:label')"/>
+            </input>
+            <group ref="/create_new_family/inputs/contact/parent/parent/parent">
+              <label ref="jr:itext('/create_new_family/inputs/contact/parent/parent/parent:label')"/>
+              <input ref="/create_new_family/inputs/contact/parent/parent/parent/_id">
+                <label ref="jr:itext('/create_new_family/inputs/contact/parent/parent/parent/_id:label')"/>
+              </input>
+              <group ref="/create_new_family/inputs/contact/parent/parent/parent/parent">
+                <label ref="jr:itext('/create_new_family/inputs/contact/parent/parent/parent/parent:label')"/>
+                <input ref="/create_new_family/inputs/contact/parent/parent/parent/parent/_id">
+                  <label ref="jr:itext('/create_new_family/inputs/contact/parent/parent/parent/parent/_id:label')"/>
+                </input>
+                <group ref="/create_new_family/inputs/contact/parent/parent/parent/parent/parent">
+                  <label ref="jr:itext('/create_new_family/inputs/contact/parent/parent/parent/parent/parent:label')"/>
+                  <input ref="/create_new_family/inputs/contact/parent/parent/parent/parent/parent/_id">
+                    <label ref="jr:itext('/create_new_family/inputs/contact/parent/parent/parent/parent/parent/_id:label')"/>
+                  </input>
+                  <group ref="/create_new_family/inputs/contact/parent/parent/parent/parent/parent/parent">
+                    <label ref="jr:itext('/create_new_family/inputs/contact/parent/parent/parent/parent/parent/parent:label')"/>
+                    <input ref="/create_new_family/inputs/contact/parent/parent/parent/parent/parent/parent/_id">
+                      <label ref="jr:itext('/create_new_family/inputs/contact/parent/parent/parent/parent/parent/parent/_id:label')"/>
+                    </input>
+                  </group>
+                </group>
+              </group>
+            </group>
+          </group>
+        </group>
+        <group ref="/create_new_family/inputs/contact/contact">
+          <label ref="jr:itext('/create_new_family/inputs/contact/contact:label')"/>
+          <input ref="/create_new_family/inputs/contact/contact/_id">
+            <label ref="jr:itext('/create_new_family/inputs/contact/contact/_id:label')"/>
+          </input>
+          <input ref="/create_new_family/inputs/contact/contact/name">
+            <label ref="jr:itext('/create_new_family/inputs/contact/contact/name:label')"/>
+          </input>
+          <input ref="/create_new_family/inputs/contact/contact/external_id">
+            <label ref="jr:itext('/create_new_family/inputs/contact/contact/external_id:label')"/>
+          </input>
+          <input ref="/create_new_family/inputs/contact/contact/phone">
+            <label ref="jr:itext('/create_new_family/inputs/contact/contact/phone:label')"/>
+          </input>
+          <input ref="/create_new_family/inputs/contact/contact/role">
+            <label ref="jr:itext('/create_new_family/inputs/contact/contact/role:label')"/>
+          </input>
+        </group>
+      </group>
+    </group>
+    <select1 appearance="columns-pack" ref="/create_new_family/access_not">
+      <label ref="jr:itext('/create_new_family/access_not:label')"/>
+      <item>
+        <label ref="jr:itext('/create_new_family/access_not/ok:label')"/>
+        <value>ok</value>
+      </item>
+    </select1>
+    <group appearance="field-list" ref="/create_new_family/information">
+      <label ref="jr:itext('/create_new_family/information:label')"/>
+      <input ref="/create_new_family/information/i_household_external_id">
+        <label ref="jr:itext('/create_new_family/information/i_household_external_id:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/create_new_family/information/c_household_has_working_latrine">
+        <label ref="jr:itext('/create_new_family/information/c_household_has_working_latrine:label')"/>
+        <item>
+          <label ref="jr:itext('/create_new_family/information/c_household_has_working_latrine/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/create_new_family/information/c_household_has_working_latrine/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/create_new_family/information/c_household_has_good_water_access">
+        <label ref="jr:itext('/create_new_family/information/c_household_has_good_water_access:label')"/>
+        <item>
+          <label ref="jr:itext('/create_new_family/information/c_household_has_good_water_access/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/create_new_family/information/c_household_has_good_water_access/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/create_new_family/add_new_household">
+      <label ref="jr:itext('/create_new_family/add_new_household:label')"/>
+      <input ref="/create_new_family/add_new_household/external_id">
+        <label ref="jr:itext('/create_new_family/add_new_household/external_id:label')"/>
+      </input>
+      <input ref="/create_new_family/add_new_household/name">
+        <label ref="jr:itext('/create_new_family/add_new_household/name:label')"/>
+      </input>
+      <group ref="/create_new_family/add_new_household/register_patient">
+        <label ref="jr:itext('/create_new_family/add_new_household/register_patient:label')"/>
+        <select1 appearance="columns" ref="/create_new_family/add_new_household/register_patient/selected_sex">
+          <label ref="jr:itext('/create_new_family/add_new_household/register_patient/selected_sex:label')"/>
+          <item>
+            <label ref="jr:itext('/create_new_family/add_new_household/register_patient/selected_sex/male:label')"/>
+            <value>male</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/create_new_family/add_new_household/register_patient/selected_sex/female:label')"/>
+            <value>female</value>
+          </item>
+        </select1>
+        <select1 ref="/create_new_family/add_new_household/register_patient/dob_method">
+          <label ref="jr:itext('/create_new_family/add_new_household/register_patient/dob_method:label')"/>
+          <item>
+            <label ref="jr:itext('/create_new_family/add_new_household/register_patient/dob_method/approx:label')"/>
+            <value>approx</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/create_new_family/add_new_household/register_patient/dob_method/calendar:label')"/>
+            <value>calendar</value>
+          </item>
+        </select1>
+        <input ref="/create_new_family/add_new_household/register_patient/dob_calendar">
+          <label ref="jr:itext('/create_new_family/add_new_household/register_patient/dob_calendar:label')"/>
+          <hint ref="jr:itext('/create_new_family/add_new_household/register_patient/dob_calendar:hint')"/>
+        </input>
+        <input appearance="hidden" ref="/create_new_family/add_new_household/register_patient/age_by_date">
+          <label ref="jr:itext('/create_new_family/add_new_household/register_patient/age_by_date:label')"/>
+        </input>
+        <input ref="/create_new_family/add_new_household/register_patient/age_years">
+          <label ref="jr:itext('/create_new_family/add_new_household/register_patient/age_years:label')"/>
+          <hint ref="jr:itext('/create_new_family/add_new_household/register_patient/age_years:hint')"/>
+        </input>
+        <select1 appearance="columns" ref="/create_new_family/add_new_household/register_patient/patient_has_phone">
+          <label ref="jr:itext('/create_new_family/add_new_household/register_patient/patient_has_phone:label')"/>
+          <item>
+            <label ref="jr:itext('/create_new_family/add_new_household/register_patient/patient_has_phone/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/create_new_family/add_new_household/register_patient/patient_has_phone/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/create_new_family/add_new_household/register_patient/phone">
+          <label ref="jr:itext('/create_new_family/add_new_household/register_patient/phone:label')"/>
+          <hint ref="jr:itext('/create_new_family/add_new_household/register_patient/phone:hint')"/>
+        </input>
+        <input ref="/create_new_family/add_new_household/register_patient/phone_other">
+          <label ref="jr:itext('/create_new_family/add_new_household/register_patient/phone_other:label')"/>
+          <hint ref="jr:itext('/create_new_family/add_new_household/register_patient/phone_other:hint')"/>
+        </input>
+        <select1 appearance="columns" ref="/create_new_family/add_new_household/register_patient/has_birth_certificate">
+          <label ref="jr:itext('/create_new_family/add_new_household/register_patient/has_birth_certificate:label')"/>
+          <item>
+            <label ref="jr:itext('/create_new_family/add_new_household/register_patient/has_birth_certificate/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/create_new_family/add_new_household/register_patient/has_birth_certificate/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/create_new_family/add_new_household/register_patient/profession">
+          <label ref="jr:itext('/create_new_family/add_new_household/register_patient/profession:label')"/>
+        </input>
+      </group>
+      <group appearance="hidden" ref="/create_new_family/add_new_household/user_info">
+        <label ref="jr:itext('/create_new_family/add_new_household/user_info:label')"/>
+      </group>
+      <group appearance="hidden" ref="/create_new_family/add_new_household/parent">
+        <label ref="jr:itext('/create_new_family/add_new_household/parent:label')"/>
+        <group ref="/create_new_family/add_new_household/parent/parent">
+          <label ref="jr:itext('/create_new_family/add_new_household/parent/parent:label')"/>
+          <group ref="/create_new_family/add_new_household/parent/parent/parent">
+            <label ref="jr:itext('/create_new_family/add_new_household/parent/parent/parent:label')"/>
+            <group ref="/create_new_family/add_new_household/parent/parent/parent/parent">
+              <label ref="jr:itext('/create_new_family/add_new_household/parent/parent/parent/parent:label')"/>
+              <group ref="/create_new_family/add_new_household/parent/parent/parent/parent/parent">
+                <label ref="jr:itext('/create_new_family/add_new_household/parent/parent/parent/parent/parent:label')"/>
+                <group ref="/create_new_family/add_new_household/parent/parent/parent/parent/parent/parent">
+                  <label ref="jr:itext('/create_new_family/add_new_household/parent/parent/parent/parent/parent/parent:label')"/>
+                  <group ref="/create_new_family/add_new_household/parent/parent/parent/parent/parent/parent/parent">
+                    <label ref="jr:itext('/create_new_family/add_new_household/parent/parent/parent/parent/parent/parent/parent:label')"/>
+                    <group ref="/create_new_family/add_new_household/parent/parent/parent/parent/parent/parent/parent/parent">
+                      <label ref="jr:itext('/create_new_family/add_new_household/parent/parent/parent/parent/parent/parent/parent/parent:label')"/>
+                    </group>
+                  </group>
+                </group>
+              </group>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="hidden" ref="/create_new_family/add_new_family">
+      <label ref="jr:itext('/create_new_family/add_new_family:label')"/>
+      <group ref="/create_new_family/add_new_family/contact">
+        <label ref="jr:itext('/create_new_family/add_new_family/contact:label')"/>
+      </group>
+      <group appearance="hidden" ref="/create_new_family/add_new_family/user_info">
+        <label ref="jr:itext('/create_new_family/add_new_family/user_info:label')"/>
+      </group>
+      <group appearance="hidden" ref="/create_new_family/add_new_family/parent">
+        <label ref="jr:itext('/create_new_family/add_new_family/parent:label')"/>
+        <group ref="/create_new_family/add_new_family/parent/parent">
+          <label ref="jr:itext('/create_new_family/add_new_family/parent/parent:label')"/>
+          <group ref="/create_new_family/add_new_family/parent/parent/parent">
+            <label ref="jr:itext('/create_new_family/add_new_family/parent/parent/parent:label')"/>
+            <group ref="/create_new_family/add_new_family/parent/parent/parent/parent">
+              <label ref="jr:itext('/create_new_family/add_new_family/parent/parent/parent/parent:label')"/>
+              <group ref="/create_new_family/add_new_family/parent/parent/parent/parent/parent">
+                <label ref="jr:itext('/create_new_family/add_new_family/parent/parent/parent/parent/parent:label')"/>
+                <group ref="/create_new_family/add_new_family/parent/parent/parent/parent/parent/parent">
+                  <label ref="jr:itext('/create_new_family/add_new_family/parent/parent/parent/parent/parent/parent:label')"/>
+                  <group ref="/create_new_family/add_new_family/parent/parent/parent/parent/parent/parent/parent">
+                    <label ref="jr:itext('/create_new_family/add_new_family/parent/parent/parent/parent/parent/parent/parent:label')"/>
+                  </group>
+                </group>
+              </group>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="hidden" ref="/create_new_family/create_new_patient">
+      <label ref="jr:itext('/create_new_family/create_new_patient:label')"/>
+      <group ref="/create_new_family/create_new_patient/contact">
+        <label ref="jr:itext('/create_new_family/create_new_patient/contact:label')"/>
+        <group ref="/create_new_family/create_new_patient/contact/parent">
+          <label ref="jr:itext('/create_new_family/create_new_patient/contact/parent:label')"/>
+          <group ref="/create_new_family/create_new_patient/contact/parent/parent">
+            <label ref="jr:itext('/create_new_family/create_new_patient/contact/parent/parent:label')"/>
+            <group ref="/create_new_family/create_new_patient/contact/parent/parent/parent">
+              <label ref="jr:itext('/create_new_family/create_new_patient/contact/parent/parent/parent:label')"/>
+              <group ref="/create_new_family/create_new_patient/contact/parent/parent/parent/parent">
+                <label ref="jr:itext('/create_new_family/create_new_patient/contact/parent/parent/parent/parent:label')"/>
+                <group ref="/create_new_family/create_new_patient/contact/parent/parent/parent/parent/parent">
+                  <label ref="jr:itext('/create_new_family/create_new_patient/contact/parent/parent/parent/parent/parent:label')"/>
+                  <group ref="/create_new_family/create_new_patient/contact/parent/parent/parent/parent/parent/parent">
+                    <label ref="jr:itext('/create_new_family/create_new_patient/contact/parent/parent/parent/parent/parent/parent:label')"/>
+                    <group ref="/create_new_family/create_new_patient/contact/parent/parent/parent/parent/parent/parent/parent">
+                      <label ref="jr:itext('/create_new_family/create_new_patient/contact/parent/parent/parent/parent/parent/parent/parent:label')"/>
+                    </group>
+                  </group>
+                </group>
+              </group>
+            </group>
+          </group>
+        </group>
+      </group>
+      <group ref="/create_new_family/create_new_patient/fields">
+        <label ref="jr:itext('/create_new_family/create_new_patient/fields:label')"/>
+        <group appearance="hidden" ref="/create_new_family/create_new_patient/fields/inputs">
+          <label ref="jr:itext('/create_new_family/create_new_patient/fields/inputs:label')"/>
+          <group ref="/create_new_family/create_new_patient/fields/inputs/contact">
+            <label ref="jr:itext('/create_new_family/create_new_patient/fields/inputs/contact:label')"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list summary" ref="/create_new_family/group_review">
+      <label ref="jr:itext('/create_new_family/group_review:label')"/>
+      <input appearance="h1 yellow" ref="/create_new_family/group_review/s_refer_city_hall">
+        <label ref="jr:itext('/create_new_family/group_review/s_refer_city_hall:label')"/>
+      </input>
+      <input appearance="h2 yellow" ref="/create_new_family/group_review/s_refer_city_hall_text">
+        <label ref="jr:itext('/create_new_family/group_review/s_refer_city_hall_text:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/create_new_family/group_review/followup">
+        <label ref="jr:itext('/create_new_family/group_review/followup:label')"/>
+      </input>
+      <input appearance="li" ref="/create_new_family/group_review/s_referal_followup">
+        <label ref="jr:itext('/create_new_family/group_review/s_referal_followup:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

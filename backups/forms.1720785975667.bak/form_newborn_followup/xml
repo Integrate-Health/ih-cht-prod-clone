@@ -1,0 +1,1409 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Suivi enfant &lt; 2 mois</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/newborn_followup/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/newborn_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/newborn_followup/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/newborn_followup/inputs/t_follow_up_count:label">
+            <value>Follow up count</value>
+          </text>
+          <text id="/newborn_followup/inputs/t_delivery_date:label">
+            <value>Delivery date</value>
+          </text>
+          <text id="/newborn_followup/inputs/t_close_out:label">
+            <value>Mother close out</value>
+          </text>
+          <text id="/newborn_followup/inputs/contact/_id:jr:constraintMsg">
+            <value>Patient must be less that 5 years old</value>
+          </text>
+          <text id="/newborn_followup/inputs/contact/_id:label">
+            <value>What is the patient name?</value>
+          </text>
+          <text id="/newborn_followup/inputs/contact/_id:hint">
+            <value>select a person from the list</value>
+          </text>
+          <text id="/newborn_followup/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/newborn_followup/inputs/contact/date_of_birth:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/newborn_followup/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/newborn_followup/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/newborn_followup/patient_age_in_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/newborn_followup/patient_age_in_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/newborn_followup/patient_age_in_days:label">
+            <value>Days old</value>
+          </text>
+          <text id="/newborn_followup/patient_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/newborn_followup/patient_name:label">
+            <value>Patient Name</value>
+          </text>
+          <text id="/newborn_followup/patient_sex:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/newborn_followup/patient_sex_en:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/newborn_followup/patient_sex_fr:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/newborn_followup/visited_contact_uuid:label">
+            <value>Family Id</value>
+          </text>
+          <text id="/newborn_followup/s_today_task:label">
+            <value>Today's Task(s)</value>
+          </text>
+          <text id="/newborn_followup/s_today_task/s_task_to_perform:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/s_today_task/s_task_to_perform:label">
+            <value>What task do you want to perform for the mother?</value>
+          </text>
+          <text id="/newborn_followup/s_today_task/s_task_to_perform/follow_up:label">
+            <value>Followup</value>
+          </text>
+          <text id="/newborn_followup/s_today_task/s_task_to_perform/close_out:label">
+            <value>Close out</value>
+          </text>
+          <text id="/newborn_followup/s_ds:label">
+            <value>Newborn Danger Signs</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs:label">
+            <value>&lt;i&gt;Please check one by one if the newborn has one of the following danger signs&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs:hint">
+            <value>Go through each one of them and select all that apply</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal:label">
+            <value>Breastfeeding refusal</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal/no:label">
+            <value>No</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_vomitting:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_vomitting:label">
+            <value>Vomitting all</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_vomitting/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_vomitting/no:label">
+            <value>No</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_dificult_breathing:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_dificult_breathing:label">
+            <value>Difficult breathing (chest pulling, whistling, or flapping of the nose wings)</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_dificult_breathing/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_dificult_breathing/no:label">
+            <value>No</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_cord_suppurating:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_cord_suppurating:label">
+            <value>It has a cord that suppurates</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_cord_suppurating/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_cord_suppurating/no:label">
+            <value>No</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_skin_pustules:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_skin_pustules:label">
+            <value>Skin pustules with abscess</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_skin_pustules/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_skin_pustules/no:label">
+            <value>No</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_abdominal_distended:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_abdominal_distended:label">
+            <value>Abdomen distended</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_abdominal_distended/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_abdominal_distended/no:label">
+            <value>No</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_leak_crying:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_leak_crying:label">
+            <value>He has a weak or absent crying</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_leak_crying/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_leak_crying/no:label">
+            <value>No</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_unconscious:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_unconscious:label">
+            <value>Unconscious</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_unconscious/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_unconscious/no:label">
+            <value>No</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_convulsions:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_convulsions/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_convulsions/no:label">
+            <value>No</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_able_to_continue:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_able_to_continue:label">
+            <value>Is it possible to continue follow up?</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_able_to_continue/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_able_to_continue/no:label">
+            <value>No</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds:label">
+            <value>Danger Signs Counselling</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_breastfeeding_refusal:label">
+            <value>Breastfeeding refusal</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_vomitting:label">
+            <value>Vomitting all</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_dificult_breathing:label">
+            <value>Difficult breathing (chest pulling, whistling, or flapping of the nose wings)</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_cord_suppurating:label">
+            <value>It has a cord that suppurates</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_skin_pustules:label">
+            <value>Skin pustules with abscess</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_abdominal_distended:label">
+            <value>Abdomen distended</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_leak_crying:label">
+            <value>He has a weak or absent crying</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_unconscious:label">
+            <value>Unconscious</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_other:label">
+            <value>Other Counselling</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_other/n_pnc_importance:label">
+            <value>Importance of PNC Visit</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_other/n_cpc_importance:label">
+            <value>Importance of CPC Visit</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_other/n_essential_cares_newborn:label">
+            <value>Essentiql cares to the newborn</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_other/n_best_practices_breastfeeding_:label">
+            <value>Best practices and Breastfeeding techniques</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_other/n_family_planning:label">
+            <value>Family Planning</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_other/n_other_appropriate_counsels:label">
+            <value>Other appropriate Counsels</value>
+          </text>
+          <text id="/newborn_followup/s_pnc:label">
+            <value>PNC Visit</value>
+          </text>
+          <text id="/newborn_followup/s_pnc/s_pnc_1_date:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/s_pnc/s_pnc_1_date:label">
+            <value>When next PNC Visit is planned?</value>
+          </text>
+          <text id="/newborn_followup/s_pnc/s_pnc_2_date:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/s_pnc/s_pnc_2_date:label">
+            <value>When Second PNC Visit is planned?</value>
+          </text>
+          <text id="/newborn_followup/s_cpc:label">
+            <value>CPC Visit</value>
+          </text>
+          <text id="/newborn_followup/s_cpc/s_cpc_1:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/s_cpc/s_cpc_1:label">
+            <value>Did the newborn go for the first CPC ?</value>
+          </text>
+          <text id="/newborn_followup/s_cpc/s_cpc_1/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/newborn_followup/s_cpc/s_cpc_1/no:label">
+            <value>No</value>
+          </text>
+          <text id="/newborn_followup/s_close_out:label">
+            <value>Close Out</value>
+          </text>
+          <text id="/newborn_followup/s_close_out/s_why_close_out:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/s_close_out/s_why_close_out:label">
+            <value>Why do you want to close this follow up?</value>
+          </text>
+          <text id="/newborn_followup/s_close_out/s_why_close_out/end_of_follow_up:label">
+            <value>End of follow up</value>
+          </text>
+          <text id="/newborn_followup/s_close_out/s_why_close_out/newborn_referred:label">
+            <value>Newborn referred to USP</value>
+          </text>
+          <text id="/newborn_followup/s_close_out/s_why_close_out/newborn_dead:label">
+            <value>Newborn is dead</value>
+          </text>
+          <text id="/newborn_followup/s_close_out/s_why_close_out/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/newborn_followup/s_close_out/s_why_close_out_other:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/newborn_followup/s_close_out/s_why_close_out_other:label">
+            <value>Specify other:</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_details/r_summary:label">
+            <value>Delivery Details&lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_details/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /newborn_followup/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /newborn_followup/patient_sex_en "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /newborn_followup/patient_age_display "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_signs_symptoms:label">
+            <value>Signs and Symptoms&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_newborn_danger_signs:label">
+            <value>Danger signs</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_breastfeeding_refusal:label">
+            <value>Breastfeeding refusal</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_vomitting:label">
+            <value>Vomitting all</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_dificult_breathing:label">
+            <value>Difficult breathing (chest pulling, whistling, or flapping of the nose wings)</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_cord_suppurating:label">
+            <value>It has a cord that suppurates</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_skin_pustules:label">
+            <value>Skin pustules with abscess</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_abdominal_distended:label">
+            <value>Abdomen distended</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_leak_crying:label">
+            <value>He has a weak or absent crying</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_unconscious:label">
+            <value>Unconscious</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_referral/summary_referral:label">
+            <value>Refer to USP&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_referral/r_newborn_referral_note_1:label">
+            <value>&lt;b&gt;Refer <output value=" /newborn_followup/patient_name "/> to the USP for danger signes listed above&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_referral/r_newborn_referral_note_3:label">
+            <value>&lt;b&gt;Refer <output value=" /newborn_followup/patient_name "/> to the USP for missed PNC visits&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_referral/r_newborn_referral_note_2:label">
+            <value>You must refer <output value=" /newborn_followup/patient_name "/> to the USP. If she refuses for any reason, alert your supervisor immediately.</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_instructions/summary_special_instructions:label">
+            <value>Special Instructions&lt;i class = "fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_instructions/last_followup_instruction:label">
+            <value>Inform the lady that today is the last follow up</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_instructions/r_car_advices:label">
+            <value>CAR advices &lt;br/&gt;1-Continuer l'allaitement maternel&lt;br/&gt;2-Augmenter les liquides à boire et les aliments (ou le lait maternel en cas d'allaitement exclusif)&lt;br/&gt;3-Reconnaître les signes pour lesquels il faut contacter l'ASC ou aller à l'USP immédiatement</value>
+          </text>
+          <text id="/newborn_followup/group_summary/s_have_you_refer_child:label">
+            <value>Did you refer the child?</value>
+          </text>
+          <text id="/newborn_followup/group_summary/s_have_you_refer_child/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/newborn_followup/group_summary/s_have_you_refer_child/no:label">
+            <value>No</value>
+          </text>
+          <text id="/newborn_followup/group_summary/s_why_not:label">
+            <value>Why?</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_followup/next_visit:label">
+            <value>Next Visit&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_followup/summary_follow_up:label">
+            <value>Follow up within 1 week after next pnc visit</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_followup/summary_referral_follow_up:label">
+            <value>Follow up within 24 hours</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/newborn_followup/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/newborn_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/newborn_followup/inputs/source_id:label">
+            <value>Source de l'ID</value>
+          </text>
+          <text id="/newborn_followup/inputs/t_follow_up_count:label">
+            <value>Nombre de suivi</value>
+          </text>
+          <text id="/newborn_followup/inputs/t_delivery_date:label">
+            <value>Date d'accouchement</value>
+          </text>
+          <text id="/newborn_followup/inputs/t_close_out:label">
+            <value>Clôture suivi de la mère</value>
+          </text>
+          <text id="/newborn_followup/inputs/contact/_id:jr:constraintMsg">
+            <value>L'âge du patient doit être supérieur à 5 ans</value>
+          </text>
+          <text id="/newborn_followup/inputs/contact/_id:label">
+            <value>Quel est le nom du patient?</value>
+          </text>
+          <text id="/newborn_followup/inputs/contact/_id:hint">
+            <value>Séléctionner une personne dans la liste</value>
+          </text>
+          <text id="/newborn_followup/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/newborn_followup/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/newborn_followup/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/newborn_followup/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/newborn_followup/patient_age_in_years:label">
+            <value>Années</value>
+          </text>
+          <text id="/newborn_followup/patient_age_in_months:label">
+            <value>Mois</value>
+          </text>
+          <text id="/newborn_followup/patient_age_in_days:label">
+            <value>Jours</value>
+          </text>
+          <text id="/newborn_followup/patient_id:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/patient_id:label">
+            <value>Identifiant du patient</value>
+          </text>
+          <text id="/newborn_followup/patient_name:label">
+            <value>Nom du patient</value>
+          </text>
+          <text id="/newborn_followup/patient_sex:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/newborn_followup/patient_sex_en:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/newborn_followup/patient_sex_fr:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/newborn_followup/visited_contact_uuid:label">
+            <value>Identifiant de la famille</value>
+          </text>
+          <text id="/newborn_followup/s_today_task:label">
+            <value>Tâches d'aujourd'hui</value>
+          </text>
+          <text id="/newborn_followup/s_today_task/s_task_to_perform:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/s_today_task/s_task_to_perform:label">
+            <value>Quelle est la tâche à effectuer?</value>
+          </text>
+          <text id="/newborn_followup/s_today_task/s_task_to_perform/follow_up:label">
+            <value>Suivi</value>
+          </text>
+          <text id="/newborn_followup/s_today_task/s_task_to_perform/close_out:label">
+            <value>Clôture</value>
+          </text>
+          <text id="/newborn_followup/s_ds:label">
+            <value>Signes de danger chez le nouveau-né</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs:label">
+            <value>&lt;i&gt;Merci de vérifier un à un si le nouveau-né présente un de ces signes de danger&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs:hint">
+            <value>Vérifier un après un et sélectionner tout ce qui s'applique</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal:label">
+            <value>Refuse de téter</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_vomitting:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_vomitting:label">
+            <value>Vomit tout</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_vomitting/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_vomitting/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_dificult_breathing:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_dificult_breathing:label">
+            <value>Respiration difficile (tirage sous costal, sifflement, ou battement des ailes du nez)</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_dificult_breathing/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_dificult_breathing/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_cord_suppurating:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_cord_suppurating:label">
+            <value>Il a un cordon qui suppure</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_cord_suppurating/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_cord_suppurating/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_skin_pustules:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_skin_pustules:label">
+            <value>Pustules de la peau avec abcès</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_skin_pustules/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_skin_pustules/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_abdominal_distended:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_abdominal_distended:label">
+            <value>Abdomen distendu</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_abdominal_distended/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_abdominal_distended/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_leak_crying:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_leak_crying:label">
+            <value>Il a un pleur faible ou absent</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_leak_crying/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_leak_crying/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_unconscious:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_unconscious:label">
+            <value>Inconscient</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_unconscious/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_unconscious/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_convulsions:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_convulsions/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_danger_signs_convulsions/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_able_to_continue:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_able_to_continue:label">
+            <value>Est-il possible de continuer le suivi?</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_able_to_continue/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/newborn_followup/s_ds/s_able_to_continue/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds:label">
+            <value>Conseils sur les Signes de danger</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_breastfeeding_refusal:label">
+            <value>&lt;b&gt;Refuse de téter&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_vomitting:label">
+            <value>&lt;b&gt;Vomit tout&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_dificult_breathing:label">
+            <value>&lt;b&gt;Respiration difficile (tirage sous costal, sifflement, ou battement des ailes du nez)&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_cord_suppurating:label">
+            <value>&lt;b&gt;Il a un cordon qui suppure&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_skin_pustules:label">
+            <value>&lt;b&gt;Pustules de la peau avec abcès&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_abdominal_distended:label">
+            <value>&lt;b&gt;Abdomen distendu&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_leak_crying:label">
+            <value>&lt;b&gt;Il a un pleur faible ou absent&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_unconscious:label">
+            <value>&lt;b&gt;Inconscient&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_ds/n_danger_signs_convulsions:label">
+            <value>&lt;b&gt;Convulsions&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_other:label">
+            <value>Autres Conseils</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_other/n_pnc_importance:label">
+            <value>&lt;b&gt;Importance de la CPON&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_other/n_cpc_importance:label">
+            <value>&lt;b&gt;Importance du CPC&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_other/n_essential_cares_newborn:label">
+            <value>&lt;b&gt;Soins essentiels au Nouveau-né&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_other/n_best_practices_breastfeeding_:label">
+            <value>&lt;b&gt;Bonnes pratiques et techniques d'allaitement&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_other/n_family_planning:label">
+            <value>&lt;b&gt;Planification Familliale&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/n_counsels_other/n_other_appropriate_counsels:label">
+            <value>&lt;b&gt;Autres conseils appropriés pour la famille&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/s_pnc:label">
+            <value>CPON</value>
+          </text>
+          <text id="/newborn_followup/s_pnc/s_pnc_1_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/s_pnc/s_pnc_1_date:label">
+            <value>Quelle est la date de la prochaine CPON?</value>
+          </text>
+          <text id="/newborn_followup/s_pnc/s_pnc_2_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/s_pnc/s_pnc_2_date:label">
+            <value>Quelle est la date de la deuxième CPON?</value>
+          </text>
+          <text id="/newborn_followup/s_cpc:label">
+            <value>CPC</value>
+          </text>
+          <text id="/newborn_followup/s_cpc/s_cpc_1:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/s_cpc/s_cpc_1:label">
+            <value>Est-ce que le bébé a fait son premier CPC ?</value>
+          </text>
+          <text id="/newborn_followup/s_cpc/s_cpc_1/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/newborn_followup/s_cpc/s_cpc_1/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/newborn_followup/s_close_out:label">
+            <value>Clôture</value>
+          </text>
+          <text id="/newborn_followup/s_close_out/s_why_close_out:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/s_close_out/s_why_close_out:label">
+            <value>Pourquoi voulez-vous clôre ce suivi?</value>
+          </text>
+          <text id="/newborn_followup/s_close_out/s_why_close_out/end_of_follow_up:label">
+            <value>Fin de suivi</value>
+          </text>
+          <text id="/newborn_followup/s_close_out/s_why_close_out/newborn_referred:label">
+            <value>Nouveau-né référé à l'USP</value>
+          </text>
+          <text id="/newborn_followup/s_close_out/s_why_close_out/newborn_dead:label">
+            <value>Nouveau-né décédé</value>
+          </text>
+          <text id="/newborn_followup/s_close_out/s_why_close_out/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/newborn_followup/s_close_out/s_why_close_out_other:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/newborn_followup/s_close_out/s_why_close_out_other:label">
+            <value>Spécifier:</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_details/r_summary:label">
+            <value>Détails du Patient</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_details/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /newborn_followup/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /newborn_followup/patient_sex_fr "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /newborn_followup/patient_age_display_fr "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_signs_symptoms:label">
+            <value>Signes et Symptômes&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_newborn_danger_signs:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_breastfeeding_refusal:label">
+            <value>Refuse de téter</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_vomitting:label">
+            <value>Vomit tout</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_dificult_breathing:label">
+            <value>Respiration difficile (tirage sous costal, sifflement, ou battement des ailes du nez)</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_cord_suppurating:label">
+            <value>Il a un cordon qui suppure</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_skin_pustules:label">
+            <value>Pustules de la peau avec abcès</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_abdominal_distended:label">
+            <value>Abdomen distendu</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_leak_crying:label">
+            <value>Il a un pleur faible ou absent</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_unconscious:label">
+            <value>Inconscient</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_signs/r_danger_signs_convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_referral/summary_referral:label">
+            <value>Référer à l'USP&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_referral/r_newborn_referral_note_1:label">
+            <value>&lt;b&gt;Merci de référer <output value=" /newborn_followup/patient_name "/> à l'USP pour présence de signes de danger ci-dessus&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_referral/r_newborn_referral_note_3:label">
+            <value>&lt;b&gt;Merci de référer <output value=" /newborn_followup/patient_name "/> à l'USP pour CPC manquée&lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_referral/r_newborn_referral_note_2:label">
+            <value>&lt;b&gt;Merci de référer <output value=" /newborn_followup/patient_name "/> à l'USP. Si elle refuse pour quelque raison que se soit. Merci d'aviser Immédiatement votre Superviseur &lt;/b&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_instructions/summary_special_instructions:label">
+            <value>Spéciales Instructions&lt;i class = "fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_instructions/last_followup_instruction:label">
+            <value>&lt;b&gt;Informer la femme que aujourd'hui prend fin les visites de suivi.&lt;/b&gt;&lt;/br&gt;&lt;b&gt;Informer également la femme que si elle constate un problème minime que soit qu'elle vous contacte IMMÉDIATEMENT.&lt;/b&gt;&lt;/br&gt;&lt;b&gt;Soumettre ce formulaire va fermer le suivi de la femme après accouchement. Il n'y aura plus de rappels de suivi pour la femme.&lt;/b&gt;&lt;/br&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_instructions/r_car_advices:label">
+            <value>Conseils CAR&lt;br/&gt;1-Continuer l'allaitement maternel&lt;br/&gt;2-Augmenter les liquides à boire et les aliments (ou le lait maternel en cas d'allaitement exclusif)&lt;br/&gt;3-Reconnaître les signes pour lesquels il faut contacter l'ASC ou aller à l'USP immédiatement</value>
+          </text>
+          <text id="/newborn_followup/group_summary/s_have_you_refer_child:label">
+            <value>Est-ce que vous avez référé l'enfant ?</value>
+          </text>
+          <text id="/newborn_followup/group_summary/s_have_you_refer_child/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/newborn_followup/group_summary/s_have_you_refer_child/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/newborn_followup/group_summary/s_why_not:label">
+            <value>Pour quelle raison?</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_followup/next_visit:label">
+            <value>Prochaine visite par l'ASC&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_followup/summary_follow_up:label">
+            <value>Visite de suivi VAD est programmée une semaine après la CPON 2</value>
+          </text>
+          <text id="/newborn_followup/group_summary/r_followup/summary_referral_follow_up:label">
+            <value>Suivi Référence dans 24 heures</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <newborn_followup id="newborn_followup" prefix="J1!newborn_followup!" delimiter="#" version="=TODAY()">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_follow_up_count/>
+            <t_delivery_date/>
+            <t_close_out/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent/>
+            </contact>
+          </inputs>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_age_display_fr/>
+          <patient_id/>
+          <patient_name/>
+          <patient_sex/>
+          <patient_sex_en/>
+          <patient_sex_fr/>
+          <visited_contact_uuid/>
+          <close_out/>
+          <follow_up_count/>
+          <follow_up_count_label_fr/>
+          <has_danger_signs/>
+          <s_today_task>
+            <s_task_to_perform/>
+            <close_now/>
+          </s_today_task>
+          <s_ds>
+            <s_danger_signs/>
+            <s_danger_signs_breastfeeding_refusal/>
+            <s_danger_signs_vomitting/>
+            <s_danger_signs_dificult_breathing/>
+            <s_danger_signs_cord_suppurating/>
+            <s_danger_signs_skin_pustules/>
+            <s_danger_signs_abdominal_distended/>
+            <s_danger_signs_leak_crying/>
+            <s_danger_signs_unconscious/>
+            <s_danger_signs_convulsions/>
+            <s_able_to_continue/>
+          </s_ds>
+          <n_counsels_ds>
+            <n_danger_signs_breastfeeding_refusal/>
+            <n_danger_signs_vomitting/>
+            <n_danger_signs_dificult_breathing/>
+            <n_danger_signs_cord_suppurating/>
+            <n_danger_signs_skin_pustules/>
+            <n_danger_signs_abdominal_distended/>
+            <n_danger_signs_leak_crying/>
+            <n_danger_signs_unconscious/>
+            <n_danger_signs_convulsions/>
+          </n_counsels_ds>
+          <n_counsels_other>
+            <n_pnc_importance/>
+            <n_cpc_importance/>
+            <n_essential_cares_newborn/>
+            <n_best_practices_breastfeeding_/>
+            <n_family_planning/>
+            <n_other_appropriate_counsels/>
+          </n_counsels_other>
+          <s_pnc>
+            <s_pnc_1_date/>
+            <s_pnc_2_date/>
+          </s_pnc>
+          <s_cpc>
+            <s_cpc_1/>
+          </s_cpc>
+          <s_close_out>
+            <s_why_close_out/>
+            <s_why_close_out_other/>
+          </s_close_out>
+          <group_summary>
+            <r_details>
+              <r_summary/>
+              <r_patient_info/>
+            </r_details>
+            <r_signs>
+              <r_signs_symptoms/>
+              <r_newborn_danger_signs/>
+              <r_danger_signs_breastfeeding_refusal/>
+              <r_danger_signs_vomitting/>
+              <r_danger_signs_dificult_breathing/>
+              <r_danger_signs_cord_suppurating/>
+              <r_danger_signs_skin_pustules/>
+              <r_danger_signs_abdominal_distended/>
+              <r_danger_signs_leak_crying/>
+              <r_danger_signs_unconscious/>
+              <r_danger_signs_convulsions/>
+            </r_signs>
+            <r_referral>
+              <summary_referral/>
+              <r_newborn_referral_note_1/>
+              <r_newborn_referral_note_3/>
+              <r_newborn_referral_note_2/>
+            </r_referral>
+            <r_instructions>
+              <summary_special_instructions/>
+              <last_followup_instruction/>
+              <r_car_advices/>
+            </r_instructions>
+            <s_have_you_refer_child/>
+            <s_why_not/>
+            <r_followup>
+              <next_visit/>
+              <summary_follow_up/>
+              <summary_referral_follow_up/>
+            </r_followup>
+          </group_summary>
+          <meta>
+            <instanceID/>
+          </meta>
+        </newborn_followup>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/newborn_followup/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/newborn_followup/inputs/source" type="string"/>
+      <bind nodeset="/newborn_followup/inputs/source_id" type="string"/>
+      <bind nodeset="/newborn_followup/inputs/t_follow_up_count" type="string"/>
+      <bind nodeset="/newborn_followup/inputs/t_delivery_date" type="dateTime"/>
+      <bind nodeset="/newborn_followup/inputs/t_close_out" type="string"/>
+      <bind nodeset="/newborn_followup/inputs/contact/_id" type="db:person" jr:constraintMsg="jr:itext('/newborn_followup/inputs/contact/_id:jr:constraintMsg')" constraint=" /newborn_followup/patient_age_in_years  &lt; 5"/>
+      <bind nodeset="/newborn_followup/inputs/contact/name" type="string"/>
+      <bind nodeset="/newborn_followup/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/newborn_followup/inputs/contact/sex" type="string"/>
+      <bind nodeset="/newborn_followup/inputs/contact/parent" type="string"/>
+      <bind nodeset="/newborn_followup/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /newborn_followup/inputs/contact/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/newborn_followup/patient_age_in_months" type="string" calculate="difference-in-months(  /newborn_followup/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/newborn_followup/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /newborn_followup/inputs/contact/date_of_birth ) )"/>
+      <bind nodeset="/newborn_followup/patient_age_display" type="string" calculate="concat(concat( /newborn_followup/patient_age_in_years , if( /newborn_followup/patient_age_in_years =1,' year and ',' years and ')),concat( /newborn_followup/patient_age_in_months  mod 12, if(( /newborn_followup/patient_age_in_months  mod 12)=1,' month old',' months old')))"/>
+      <bind nodeset="/newborn_followup/patient_age_display_fr" type="string" calculate="concat(concat( /newborn_followup/patient_age_in_years , if( /newborn_followup/patient_age_in_years =1,' an et ',' ans et ')),concat( /newborn_followup/patient_age_in_months  mod 12, if(( /newborn_followup/patient_age_in_months  mod 12)=1,' mois',' mois')))"/>
+      <bind nodeset="/newborn_followup/patient_id" type="string" jr:requiredMsg="jr:itext('/newborn_followup/patient_id:jr:requiredMsg')" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/newborn_followup/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/newborn_followup/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/newborn_followup/patient_sex_en" type="string" calculate="if( /newborn_followup/patient_sex  = 'male' or  /newborn_followup/patient_sex  = 'homme' or  /newborn_followup/patient_sex  = 'Homme', 'Male', if( /newborn_followup/patient_sex  = 'female' or  /newborn_followup/patient_sex  = 'femme' or  /newborn_followup/patient_sex  = 'Femme', 'Female', ''))"/>
+      <bind nodeset="/newborn_followup/patient_sex_fr" type="string" calculate="if( /newborn_followup/patient_sex  = 'male' or  /newborn_followup/patient_sex  = 'homme' or  /newborn_followup/patient_sex  = 'Homme', 'Homme', if( /newborn_followup/patient_sex  = 'female' or  /newborn_followup/patient_sex  = 'femme' or  /newborn_followup/patient_sex  = 'Femme', 'Femme', ''))"/>
+      <bind nodeset="/newborn_followup/visited_contact_uuid" type="string" required="true()" calculate="../inputs/contact/parent"/>
+      <bind nodeset="/newborn_followup/close_out" type="string" calculate="coalesce( /newborn_followup/s_today_task/close_now , /newborn_followup/inputs/t_close_out )"/>
+      <bind nodeset="/newborn_followup/follow_up_count" type="string" calculate="if( /newborn_followup/inputs/t_follow_up_count  != '', /newborn_followup/inputs/t_follow_up_count ,1)"/>
+      <bind nodeset="/newborn_followup/follow_up_count_label_fr" type="string" calculate="if( /newborn_followup/follow_up_count  = '1', &quot;Suivi 48 Heures&quot;, if( /newborn_followup/follow_up_count  = '2', &quot;Suivi 5 jours&quot;, if( /newborn_followup/follow_up_count  = '3', &quot;Suivi 12 jours&quot;, if( /newborn_followup/follow_up_count  = '4', &quot;Suivi 19 jours&quot;, if( /newborn_followup/follow_up_count  = '5', &quot;Suivi 26 jours&quot;, if( /newborn_followup/follow_up_count  = '6', &quot;Suivi 33 jours&quot;, if( /newborn_followup/follow_up_count  = '7', &quot;Suivi 40 jours&quot;, if( /newborn_followup/follow_up_count  = '8', &quot;Suivi 48 jours&quot;, &quot;&quot;))))))))"/>
+      <bind nodeset="/newborn_followup/has_danger_signs" type="string" calculate="if( /newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal  = 'yes' or  /newborn_followup/s_ds/s_danger_signs_vomitting  = 'yes' or  /newborn_followup/s_ds/s_danger_signs_dificult_breathing  = 'yes' or  /newborn_followup/s_ds/s_danger_signs_cord_suppurating  = 'yes' or  /newborn_followup/s_ds/s_danger_signs_skin_pustules  = 'yes' or  /newborn_followup/s_ds/s_danger_signs_abdominal_distended  = 'yes' or  /newborn_followup/s_ds/s_danger_signs_leak_crying  = 'yes' or  /newborn_followup/s_ds/s_danger_signs_unconscious  = 'yes' or  /newborn_followup/s_ds/s_danger_signs_convulsions  = 'yes','true','false')"/>
+      <bind nodeset="/newborn_followup/s_today_task" relevant=" /newborn_followup/inputs/t_follow_up_count  != ''"/>
+      <bind nodeset="/newborn_followup/s_today_task/s_task_to_perform" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_today_task/s_task_to_perform:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_today_task/close_now" type="string" calculate="if( /newborn_followup/inputs/t_close_out  != 'true', 
+ if( /newborn_followup/s_today_task/s_task_to_perform  = 'close_out','true','false'),'')"/>
+      <bind nodeset="/newborn_followup/s_ds" relevant="selected( /newborn_followup/s_today_task/s_task_to_perform , 'follow_up') or  /newborn_followup/inputs/t_follow_up_count  = ''"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_vomitting" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_vomitting:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_dificult_breathing" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_dificult_breathing:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_cord_suppurating" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_cord_suppurating:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_skin_pustules" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_skin_pustules:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_abdominal_distended" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_abdominal_distended:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_leak_crying" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_leak_crying:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_unconscious" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_unconscious:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_convulsions" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_convulsions:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_able_to_continue" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_able_to_continue:jr:requiredMsg')" relevant=" /newborn_followup/has_danger_signs  = 'true'" required="true()"/>
+      <bind nodeset="/newborn_followup/n_counsels_ds" relevant=" /newborn_followup/s_ds/s_able_to_continue  = 'yes' or  /newborn_followup/s_ds/s_able_to_continue  = ''"/>
+      <bind nodeset="/newborn_followup/n_counsels_ds/n_danger_signs_breastfeeding_refusal" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/n_counsels_ds/n_danger_signs_vomitting" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/n_counsels_ds/n_danger_signs_dificult_breathing" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/n_counsels_ds/n_danger_signs_cord_suppurating" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/n_counsels_ds/n_danger_signs_skin_pustules" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/n_counsels_ds/n_danger_signs_abdominal_distended" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/n_counsels_ds/n_danger_signs_leak_crying" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/n_counsels_ds/n_danger_signs_unconscious" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/n_counsels_ds/n_danger_signs_convulsions" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/n_counsels_other" relevant=" /newborn_followup/s_ds/s_able_to_continue  = 'yes' or  /newborn_followup/s_ds/s_able_to_continue  = ''"/>
+      <bind nodeset="/newborn_followup/n_counsels_other/n_pnc_importance" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/n_counsels_other/n_cpc_importance" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/n_counsels_other/n_essential_cares_newborn" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/n_counsels_other/n_best_practices_breastfeeding_" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/n_counsels_other/n_family_planning" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/n_counsels_other/n_other_appropriate_counsels" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/s_pnc/s_pnc_1_date" type="date" jr:requiredMsg="jr:itext('/newborn_followup/s_pnc/s_pnc_1_date:jr:requiredMsg')" relevant=" /newborn_followup/follow_up_count  = '1'" constraint=". &gt;= today()"/>
+      <bind nodeset="/newborn_followup/s_pnc/s_pnc_2_date" type="date" jr:requiredMsg="jr:itext('/newborn_followup/s_pnc/s_pnc_2_date:jr:requiredMsg')" relevant=" /newborn_followup/follow_up_count  = '2'" constraint=". &gt;= today()"/>
+      <bind nodeset="/newborn_followup/s_cpc" relevant=" /newborn_followup/follow_up_count  = '2'"/>
+      <bind nodeset="/newborn_followup/s_cpc/s_cpc_1" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_cpc/s_cpc_1:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_close_out" relevant=" /newborn_followup/s_today_task/s_task_to_perform = 'close_out'"/>
+      <bind nodeset="/newborn_followup/s_close_out/s_why_close_out" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_close_out/s_why_close_out:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_close_out/s_why_close_out_other" type="string" jr:requiredMsg="jr:itext('/newborn_followup/s_close_out/s_why_close_out_other:jr:requiredMsg')" relevant=" /newborn_followup/s_close_out/s_why_close_out  = 'other'" required="true()"/>
+      <bind nodeset="/newborn_followup/group_summary/r_details/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/group_summary/r_details/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/group_summary/r_signs/r_signs_symptoms" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/group_summary/r_signs/r_newborn_danger_signs" readonly="true()" type="string" relevant=" /newborn_followup/has_danger_signs  = 'true'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_signs/r_danger_signs_breastfeeding_refusal" readonly="true()" type="string" relevant=" /newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal  = 'yes'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_signs/r_danger_signs_vomitting" readonly="true()" type="string" relevant=" /newborn_followup/s_ds/s_danger_signs_vomitting  = 'yes'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_signs/r_danger_signs_dificult_breathing" readonly="true()" type="string" relevant=" /newborn_followup/s_ds/s_danger_signs_dificult_breathing  = 'yes'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_signs/r_danger_signs_cord_suppurating" readonly="true()" type="string" relevant=" /newborn_followup/s_ds/s_danger_signs_cord_suppurating  = 'yes'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_signs/r_danger_signs_skin_pustules" readonly="true()" type="string" relevant=" /newborn_followup/s_ds/s_danger_signs_skin_pustules  = 'yes'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_signs/r_danger_signs_abdominal_distended" readonly="true()" type="string" relevant=" /newborn_followup/s_ds/s_danger_signs_abdominal_distended  = 'yes'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_signs/r_danger_signs_leak_crying" readonly="true()" type="string" relevant=" /newborn_followup/s_ds/s_danger_signs_leak_crying  = 'yes'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_signs/r_danger_signs_unconscious" readonly="true()" type="string" relevant=" /newborn_followup/s_ds/s_danger_signs_unconscious  = 'yes'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_signs/r_danger_signs_convulsions" readonly="true()" type="string" relevant=" /newborn_followup/s_ds/s_danger_signs_convulsions  = 'yes'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_referral/summary_referral" readonly="true()" type="string" relevant=" /newborn_followup/has_danger_signs  = 'true'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_referral/r_newborn_referral_note_1" readonly="true()" type="string" relevant=" /newborn_followup/has_danger_signs  = 'true'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_referral/r_newborn_referral_note_3" readonly="true()" type="string" relevant=" /newborn_followup/s_cpc/s_cpc_1 ='no'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_referral/r_newborn_referral_note_2" readonly="true()" type="string" relevant=" /newborn_followup/has_danger_signs  = 'true'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_instructions/summary_special_instructions" readonly="true()" type="string" relevant=" /newborn_followup/s_today_task/close_now  = 'true'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_instructions/last_followup_instruction" readonly="true()" type="string" relevant=" /newborn_followup/follow_up_count  = '3'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_instructions/r_car_advices" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_followup/group_summary/s_have_you_refer_child" type="select1" relevant=" /newborn_followup/s_today_task/s_task_to_perform  != 'close_out'" required="true()"/>
+      <bind nodeset="/newborn_followup/group_summary/s_why_not" type="string" relevant=" /newborn_followup/group_summary/s_have_you_refer_child  = 'no'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_followup/next_visit" readonly="true()" type="string" relevant=" /newborn_followup/close_out  = 'false'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_followup/summary_follow_up" readonly="true()" type="string" relevant=" /newborn_followup/has_danger_signs  = 'false' and  /newborn_followup/close_out  = 'false'"/>
+      <bind nodeset="/newborn_followup/group_summary/r_followup/summary_referral_follow_up" readonly="true()" type="string" relevant=" /newborn_followup/has_danger_signs  = 'true' and  /newborn_followup/close_out  = 'false'"/>
+      <bind nodeset="/newborn_followup/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/newborn_followup/inputs">
+      <label ref="jr:itext('/newborn_followup/inputs:label')"/>
+      <input appearance="hidden" ref="/newborn_followup/inputs/source">
+        <label ref="jr:itext('/newborn_followup/inputs/source:label')"/>
+      </input>
+      <input appearance="hidden" ref="/newborn_followup/inputs/source_id">
+        <label ref="jr:itext('/newborn_followup/inputs/source_id:label')"/>
+      </input>
+      <input appearance="hidden" ref="/newborn_followup/inputs/t_follow_up_count">
+        <label ref="jr:itext('/newborn_followup/inputs/t_follow_up_count:label')"/>
+      </input>
+      <input appearance="hidden" ref="/newborn_followup/inputs/t_delivery_date">
+        <label ref="jr:itext('/newborn_followup/inputs/t_delivery_date:label')"/>
+      </input>
+      <input appearance="hidden" ref="/newborn_followup/inputs/t_close_out">
+        <label ref="jr:itext('/newborn_followup/inputs/t_close_out:label')"/>
+      </input>
+      <group ref="/newborn_followup/inputs/contact">
+        <label ref="jr:itext('/newborn_followup/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/newborn_followup/inputs/contact/_id">
+          <label ref="jr:itext('/newborn_followup/inputs/contact/_id:label')"/>
+          <hint ref="jr:itext('/newborn_followup/inputs/contact/_id:hint')"/>
+        </input>
+        <input appearance="hidden" ref="/newborn_followup/inputs/contact/name">
+          <label ref="jr:itext('/newborn_followup/inputs/contact/name:label')"/>
+        </input>
+        <input appearance="hidden" ref="/newborn_followup/inputs/contact/date_of_birth">
+          <label ref="jr:itext('/newborn_followup/inputs/contact/date_of_birth:label')"/>
+        </input>
+        <input appearance="hidden" ref="/newborn_followup/inputs/contact/sex">
+          <label ref="jr:itext('/newborn_followup/inputs/contact/sex:label')"/>
+        </input>
+        <input appearance="hidden" ref="/newborn_followup/inputs/contact/parent">
+          <label ref="jr:itext('/newborn_followup/inputs/contact/parent:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/newborn_followup/s_today_task">
+      <label ref="jr:itext('/newborn_followup/s_today_task:label')"/>
+      <select1 appearance="columns-compact" ref="/newborn_followup/s_today_task/s_task_to_perform">
+        <label ref="jr:itext('/newborn_followup/s_today_task/s_task_to_perform:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_today_task/s_task_to_perform/follow_up:label')"/>
+          <value>follow_up</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_today_task/s_task_to_perform/close_out:label')"/>
+          <value>close_out</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/newborn_followup/s_ds">
+      <label ref="jr:itext('/newborn_followup/s_ds:label')"/>
+      <input ref="/newborn_followup/s_ds/s_danger_signs">
+        <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs:label')"/>
+        <hint ref="jr:itext('/newborn_followup/s_ds/s_danger_signs:hint')"/>
+      </input>
+      <select1 appearance="columns-compact" ref="/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal">
+        <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns-compact" ref="/newborn_followup/s_ds/s_danger_signs_vomitting">
+        <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_vomitting:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_vomitting/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_vomitting/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns-compact" ref="/newborn_followup/s_ds/s_danger_signs_dificult_breathing">
+        <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_dificult_breathing:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_dificult_breathing/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_dificult_breathing/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns-compact" ref="/newborn_followup/s_ds/s_danger_signs_cord_suppurating">
+        <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_cord_suppurating:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_cord_suppurating/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_cord_suppurating/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns-compact" ref="/newborn_followup/s_ds/s_danger_signs_skin_pustules">
+        <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_skin_pustules:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_skin_pustules/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_skin_pustules/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns-compact" ref="/newborn_followup/s_ds/s_danger_signs_abdominal_distended">
+        <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_abdominal_distended:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_abdominal_distended/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_abdominal_distended/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns-compact" ref="/newborn_followup/s_ds/s_danger_signs_leak_crying">
+        <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_leak_crying:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_leak_crying/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_leak_crying/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns-compact" ref="/newborn_followup/s_ds/s_danger_signs_unconscious">
+        <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_unconscious:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_unconscious/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_unconscious/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns-compact" ref="/newborn_followup/s_ds/s_danger_signs_convulsions">
+        <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_convulsions:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_convulsions/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_danger_signs_convulsions/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns-compact" ref="/newborn_followup/s_ds/s_able_to_continue">
+        <label ref="jr:itext('/newborn_followup/s_ds/s_able_to_continue:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_able_to_continue/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_ds/s_able_to_continue/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/newborn_followup/n_counsels_ds">
+      <label ref="jr:itext('/newborn_followup/n_counsels_ds:label')"/>
+      <input ref="/newborn_followup/n_counsels_ds/n_danger_signs_breastfeeding_refusal">
+        <label ref="jr:itext('/newborn_followup/n_counsels_ds/n_danger_signs_breastfeeding_refusal:label')"/>
+      </input>
+      <input ref="/newborn_followup/n_counsels_ds/n_danger_signs_vomitting">
+        <label ref="jr:itext('/newborn_followup/n_counsels_ds/n_danger_signs_vomitting:label')"/>
+      </input>
+      <input ref="/newborn_followup/n_counsels_ds/n_danger_signs_dificult_breathing">
+        <label ref="jr:itext('/newborn_followup/n_counsels_ds/n_danger_signs_dificult_breathing:label')"/>
+      </input>
+      <input ref="/newborn_followup/n_counsels_ds/n_danger_signs_cord_suppurating">
+        <label ref="jr:itext('/newborn_followup/n_counsels_ds/n_danger_signs_cord_suppurating:label')"/>
+      </input>
+      <input ref="/newborn_followup/n_counsels_ds/n_danger_signs_skin_pustules">
+        <label ref="jr:itext('/newborn_followup/n_counsels_ds/n_danger_signs_skin_pustules:label')"/>
+      </input>
+      <input ref="/newborn_followup/n_counsels_ds/n_danger_signs_abdominal_distended">
+        <label ref="jr:itext('/newborn_followup/n_counsels_ds/n_danger_signs_abdominal_distended:label')"/>
+      </input>
+      <input ref="/newborn_followup/n_counsels_ds/n_danger_signs_leak_crying">
+        <label ref="jr:itext('/newborn_followup/n_counsels_ds/n_danger_signs_leak_crying:label')"/>
+      </input>
+      <input ref="/newborn_followup/n_counsels_ds/n_danger_signs_unconscious">
+        <label ref="jr:itext('/newborn_followup/n_counsels_ds/n_danger_signs_unconscious:label')"/>
+      </input>
+      <input ref="/newborn_followup/n_counsels_ds/n_danger_signs_convulsions">
+        <label ref="jr:itext('/newborn_followup/n_counsels_ds/n_danger_signs_convulsions:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/newborn_followup/n_counsels_other">
+      <label ref="jr:itext('/newborn_followup/n_counsels_other:label')"/>
+      <input ref="/newborn_followup/n_counsels_other/n_pnc_importance">
+        <label ref="jr:itext('/newborn_followup/n_counsels_other/n_pnc_importance:label')"/>
+      </input>
+      <input ref="/newborn_followup/n_counsels_other/n_cpc_importance">
+        <label ref="jr:itext('/newborn_followup/n_counsels_other/n_cpc_importance:label')"/>
+      </input>
+      <input ref="/newborn_followup/n_counsels_other/n_essential_cares_newborn">
+        <label ref="jr:itext('/newborn_followup/n_counsels_other/n_essential_cares_newborn:label')"/>
+      </input>
+      <input ref="/newborn_followup/n_counsels_other/n_best_practices_breastfeeding_">
+        <label ref="jr:itext('/newborn_followup/n_counsels_other/n_best_practices_breastfeeding_:label')"/>
+      </input>
+      <input ref="/newborn_followup/n_counsels_other/n_family_planning">
+        <label ref="jr:itext('/newborn_followup/n_counsels_other/n_family_planning:label')"/>
+      </input>
+      <input ref="/newborn_followup/n_counsels_other/n_other_appropriate_counsels">
+        <label ref="jr:itext('/newborn_followup/n_counsels_other/n_other_appropriate_counsels:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/newborn_followup/s_pnc">
+      <label ref="jr:itext('/newborn_followup/s_pnc:label')"/>
+      <input ref="/newborn_followup/s_pnc/s_pnc_1_date">
+        <label ref="jr:itext('/newborn_followup/s_pnc/s_pnc_1_date:label')"/>
+      </input>
+      <input ref="/newborn_followup/s_pnc/s_pnc_2_date">
+        <label ref="jr:itext('/newborn_followup/s_pnc/s_pnc_2_date:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/newborn_followup/s_cpc">
+      <label ref="jr:itext('/newborn_followup/s_cpc:label')"/>
+      <select1 ref="/newborn_followup/s_cpc/s_cpc_1">
+        <label ref="jr:itext('/newborn_followup/s_cpc/s_cpc_1:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_cpc/s_cpc_1/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_cpc/s_cpc_1/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/newborn_followup/s_close_out">
+      <label ref="jr:itext('/newborn_followup/s_close_out:label')"/>
+      <select1 ref="/newborn_followup/s_close_out/s_why_close_out">
+        <label ref="jr:itext('/newborn_followup/s_close_out/s_why_close_out:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_close_out/s_why_close_out/end_of_follow_up:label')"/>
+          <value>end_of_follow_up</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_close_out/s_why_close_out/newborn_referred:label')"/>
+          <value>newborn_referred</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_close_out/s_why_close_out/newborn_dead:label')"/>
+          <value>newborn_dead</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_followup/s_close_out/s_why_close_out/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/newborn_followup/s_close_out/s_why_close_out_other">
+        <label ref="jr:itext('/newborn_followup/s_close_out/s_why_close_out_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/newborn_followup/group_summary">
+      <label ref="jr:itext('/newborn_followup/group_summary:label')"/>
+      <group ref="/newborn_followup/group_summary/r_details">
+        <label ref="jr:itext('/newborn_followup/group_summary/r_details:label')"/>
+        <input appearance="h1 yellow" ref="/newborn_followup/group_summary/r_details/r_summary">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_details/r_summary:label')"/>
+        </input>
+        <input ref="/newborn_followup/group_summary/r_details/r_patient_info">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_details/r_patient_info:label')"/>
+        </input>
+      </group>
+      <group ref="/newborn_followup/group_summary/r_signs">
+        <label ref="jr:itext('/newborn_followup/group_summary/r_signs:label')"/>
+        <input appearance="h1 yellow" ref="/newborn_followup/group_summary/r_signs/r_signs_symptoms">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_signs/r_signs_symptoms:label')"/>
+        </input>
+        <input ref="/newborn_followup/group_summary/r_signs/r_newborn_danger_signs">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_signs/r_newborn_danger_signs:label')"/>
+        </input>
+        <input appearance="li" ref="/newborn_followup/group_summary/r_signs/r_danger_signs_breastfeeding_refusal">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_signs/r_danger_signs_breastfeeding_refusal:label')"/>
+        </input>
+        <input appearance="li" ref="/newborn_followup/group_summary/r_signs/r_danger_signs_vomitting">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_signs/r_danger_signs_vomitting:label')"/>
+        </input>
+        <input appearance="li" ref="/newborn_followup/group_summary/r_signs/r_danger_signs_dificult_breathing">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_signs/r_danger_signs_dificult_breathing:label')"/>
+        </input>
+        <input appearance="li" ref="/newborn_followup/group_summary/r_signs/r_danger_signs_cord_suppurating">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_signs/r_danger_signs_cord_suppurating:label')"/>
+        </input>
+        <input appearance="li" ref="/newborn_followup/group_summary/r_signs/r_danger_signs_skin_pustules">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_signs/r_danger_signs_skin_pustules:label')"/>
+        </input>
+        <input appearance="li" ref="/newborn_followup/group_summary/r_signs/r_danger_signs_abdominal_distended">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_signs/r_danger_signs_abdominal_distended:label')"/>
+        </input>
+        <input appearance="li" ref="/newborn_followup/group_summary/r_signs/r_danger_signs_leak_crying">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_signs/r_danger_signs_leak_crying:label')"/>
+        </input>
+        <input appearance="li" ref="/newborn_followup/group_summary/r_signs/r_danger_signs_unconscious">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_signs/r_danger_signs_unconscious:label')"/>
+        </input>
+        <input appearance="li" ref="/newborn_followup/group_summary/r_signs/r_danger_signs_convulsions">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_signs/r_danger_signs_convulsions:label')"/>
+        </input>
+      </group>
+      <group ref="/newborn_followup/group_summary/r_referral">
+        <label ref="jr:itext('/newborn_followup/group_summary/r_referral:label')"/>
+        <input appearance="h1 red" ref="/newborn_followup/group_summary/r_referral/summary_referral">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_referral/summary_referral:label')"/>
+        </input>
+        <input ref="/newborn_followup/group_summary/r_referral/r_newborn_referral_note_1">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_referral/r_newborn_referral_note_1:label')"/>
+        </input>
+        <input ref="/newborn_followup/group_summary/r_referral/r_newborn_referral_note_3">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_referral/r_newborn_referral_note_3:label')"/>
+        </input>
+        <input ref="/newborn_followup/group_summary/r_referral/r_newborn_referral_note_2">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_referral/r_newborn_referral_note_2:label')"/>
+        </input>
+      </group>
+      <group ref="/newborn_followup/group_summary/r_instructions">
+        <label ref="jr:itext('/newborn_followup/group_summary/r_instructions:label')"/>
+        <input appearance="h1 blue" ref="/newborn_followup/group_summary/r_instructions/summary_special_instructions">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_instructions/summary_special_instructions:label')"/>
+        </input>
+        <input ref="/newborn_followup/group_summary/r_instructions/last_followup_instruction">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_instructions/last_followup_instruction:label')"/>
+        </input>
+        <input ref="/newborn_followup/group_summary/r_instructions/r_car_advices">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_instructions/r_car_advices:label')"/>
+        </input>
+      </group>
+      <select1 ref="/newborn_followup/group_summary/s_have_you_refer_child">
+        <label ref="jr:itext('/newborn_followup/group_summary/s_have_you_refer_child:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_followup/group_summary/s_have_you_refer_child/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_followup/group_summary/s_have_you_refer_child/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/newborn_followup/group_summary/s_why_not">
+        <label ref="jr:itext('/newborn_followup/group_summary/s_why_not:label')"/>
+      </input>
+      <group ref="/newborn_followup/group_summary/r_followup">
+        <label ref="jr:itext('/newborn_followup/group_summary/r_followup:label')"/>
+        <input appearance="h1 green" ref="/newborn_followup/group_summary/r_followup/next_visit">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_followup/next_visit:label')"/>
+        </input>
+        <input ref="/newborn_followup/group_summary/r_followup/summary_follow_up">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_followup/summary_follow_up:label')"/>
+        </input>
+        <input ref="/newborn_followup/group_summary/r_followup/summary_referral_follow_up">
+          <label ref="jr:itext('/newborn_followup/group_summary/r_followup/summary_referral_follow_up:label')"/>
+        </input>
+      </group>
+    </group>
+  </h:body>
+</h:html>

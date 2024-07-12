@@ -1,0 +1,1146 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Mouvements Médicaments</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/drug_movements/inputs:label">
+            <value>CHW</value>
+          </text>
+          <text id="/drug_movements/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/drug_movements/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/drug_movements/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/drug_movements/inputs/contact/_id:label">
+            <value>What is the CHW name?</value>
+          </text>
+          <text id="/drug_movements/inputs/contact/_id:hint">
+            <value>select a person from the list</value>
+          </text>
+          <text id="/drug_movements/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/drug_movements/inputs/contact/date_of_birth:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/drug_movements/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/drug_movements/chw_age_in_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/drug_movements/chw_age_in_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/drug_movements/chw_age_in_days:label">
+            <value>Days old</value>
+          </text>
+          <text id="/drug_movements/chw_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/chw_id:label">
+            <value>CHW ID</value>
+          </text>
+          <text id="/drug_movements/chw_name:label">
+            <value>CHW Name</value>
+          </text>
+          <text id="/drug_movements/chw_sex:label">
+            <value>CHW Sex</value>
+          </text>
+          <text id="/drug_movements/chw_sex_en:label">
+            <value>CHW Sex</value>
+          </text>
+          <text id="/drug_movements/chw_sex_fr:label">
+            <value>CHW Sex</value>
+          </text>
+          <text id="/drug_movements/p_note:label">
+            <value>ID: <output value=" /drug_movements/chw_id "/>
+Name: <output value=" /drug_movements/chw_name "/> - Sex: <output value=" /drug_movements/chw_sex_en "/>
+Date of birth: <output value=" /drug_movements/inputs/contact/date_of_birth "/>
+days old: <output value=" /drug_movements/chw_age_in_days "/>
+months old: <output value=" /drug_movements/chw_age_in_months "/>
+years old: <output value=" /drug_movements/chw_age_in_years "/>
+display age: <output value=" /drug_movements/chw_age_display "/></value></text>
+          <text id="/drug_movements/h_drug_movements:label">
+            <value>Drug Movements</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_year_type:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_year_type:label">
+            <value>Year of activity</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_year_type/previous:label">
+            <value>previous year</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_year_type/current:label">
+            <value>Current year</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month:label">
+            <value>Month of activity</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/01:label">
+            <value>January</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/02:label">
+            <value>February</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/03:label">
+            <value>March</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/04:label">
+            <value>April</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/05:label">
+            <value>May</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/06:label">
+            <value>June</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/07:label">
+            <value>July</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/08:label">
+            <value>August</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/09:label">
+            <value>September</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/10:label">
+            <value>October</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/11:label">
+            <value>November</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/12:label">
+            <value>December</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type:label">
+            <value>What Movement do you want to do?</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type/c_med_loss:label">
+            <value>Loss of medication</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type/c_med_expired:label">
+            <value>Expired Medicine</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type/c_med_borrowing:label">
+            <value>Drug borrowing from CHW</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type/c_med_loan:label">
+            <value>Medicine loan to CHW</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type/c_med_damaged:label">
+            <value>Damaged Medicine</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type/c_med_broken:label">
+            <value>Broken Medicine</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type/c_others:label">
+            <value>Other Movements</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type_other:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type_other:label">
+            <value>Precise the other movement</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_chw_destination:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_chw_destination:label">
+            <value>Chw's name and code</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_comment:label">
+            <value>Do you have any comment to give ?</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list:label">
+            <value>Select the drugs to put in stock on this chosen date</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_alben_400:label">
+            <value>Albendazole 400 mg cp</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_para_250:label">
+            <value>Paracetamol 250 mg</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_para_500:label">
+            <value>Paracetamol 500 mg</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_amox_250:label">
+            <value>Amoxiciline 250 mg</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_amox_500:label">
+            <value>Amoxiciline 500 mg</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_tdr:label">
+            <value>TDR</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_lumartem:label">
+            <value>Artéméther + Luméfantrine 20/120mg cp</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_sro:label">
+            <value>SRO</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_zinc:label">
+            <value>Zinc</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_sayana:label">
+            <value>Sayana Press</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_pills:label">
+            <value>Oral Combination Pills</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_pregnancy_test:label">
+            <value>Pregnancy Test</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_vit_A1:label">
+            <value>Vitamine A  100000UI</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_vit_A2:label">
+            <value>Vitamine A  200000UI</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements:label">
+            <value>Quantity Enter</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/alben_400:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/alben_400:label">
+            <value>Albendazole 400 mg cp</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/para_250:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/para_250:label">
+            <value>Paracetamol 250 mg</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/para_500:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/para_500:label">
+            <value>Paracetamol 500 mg</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/amox_250:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/amox_250:label">
+            <value>Amoxiciline 250 mg</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/amox_500:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/amox_500:label">
+            <value>Amoxiciline 500 mg</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/tdr:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/tdr:label">
+            <value>TDR</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/lumartem:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/lumartem:label">
+            <value>Lumartem</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/sro:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/sro:label">
+            <value>SRO</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/zinc:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/zinc:label">
+            <value>Zinc</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/sayana:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/sayana:label">
+            <value>Sayana Press</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/pills:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/pills:label">
+            <value>Oral Combination Pills</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/pregnancy_test:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/pregnancy_test:label">
+            <value>Pregnancy Test</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/vit_A1:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/vit_A1:label">
+            <value>Vitamine A 100000UI</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/vit_A2:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/vit_A2:label">
+            <value>Vitamine A 200000UI</value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/r_summary:label">
+            <value>CHW Summary&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/r_chw_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /drug_movements/chw_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /drug_movements/chw_sex_en "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /drug_movements/chw_age_display "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_balance:label">
+            <value>&lt;strong&gt;<output value=" /drug_movements/action_name "/>&lt;/strong&gt; &lt;i class=&quot;fa fa-medkit&quot;&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_alben_400:label">
+            <value>Albendazole 400 mg : <output value=" /drug_movements/b_drug_movements/alben_400 "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_para_250:label">
+            <value>Paracetamol 250 mg : <output value=" /drug_movements/b_drug_movements/para_250 "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_para_500:label">
+            <value>Paracetamol 500 mg : <output value=" /drug_movements/b_drug_movements/para_500 "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_amoxi_250:label">
+            <value>Amoxiciline 250 mg : <output value=" /drug_movements/b_drug_movements/amox_250 "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_amox_500:label">
+            <value>Amoxiciline 500 mg : <output value=" /drug_movements/b_drug_movements/amox_500 "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_tdr:label">
+            <value>TDR :<output value=" /drug_movements/b_drug_movements/tdr "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_lumartem:label">
+            <value>Lumartem : <output value=" /drug_movements/b_drug_movements/lumartem "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_sro:label">
+            <value>SRO : <output value=" /drug_movements/b_drug_movements/sro "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_zinc:label">
+            <value>Zinc : <output value=" /drug_movements/b_drug_movements/zinc "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_sayana:label">
+            <value>Sayana : <output value=" /drug_movements/b_drug_movements/sayana "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_pills:label">
+            <value>Oral Combination Pills: <output value=" /drug_movements/b_drug_movements/pills "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_pregnancy_test:label">
+            <value>Pregnancy Test: <output value=" /drug_movements/b_drug_movements/pregnancy_test "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_vit_A1:label">
+            <value>Vitamine A 100000UI : <output value=" /drug_movements/b_drug_movements/vit_A1 "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_vit_A2:label">
+            <value>Vitamine A 200000UI : <output value=" /drug_movements/b_drug_movements/vit_A2 "/></value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/drug_movements/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/drug_movements/inputs/source_id:label">
+            <value>Source de l'Identifiant</value>
+          </text>
+          <text id="/drug_movements/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/drug_movements/inputs/contact/_id:label">
+            <value>Quel est le nom de l'ASC?</value>
+          </text>
+          <text id="/drug_movements/inputs/contact/_id:hint">
+            <value>Choisir une personne dans la liste</value>
+          </text>
+          <text id="/drug_movements/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/drug_movements/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/drug_movements/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/drug_movements/chw_age_in_years:label">
+            <value>Années</value>
+          </text>
+          <text id="/drug_movements/chw_age_in_months:label">
+            <value>Mois</value>
+          </text>
+          <text id="/drug_movements/chw_age_in_days:label">
+            <value>Jours</value>
+          </text>
+          <text id="/drug_movements/chw_id:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/chw_id:label">
+            <value>Identifiant de l'ASC</value>
+          </text>
+          <text id="/drug_movements/chw_name:label">
+            <value>Nom de l'ASC</value>
+          </text>
+          <text id="/drug_movements/chw_sex:label">
+            <value>Sexe de l'ASC</value>
+          </text>
+          <text id="/drug_movements/chw_sex_en:label">
+            <value>Sexe de l'ASC</value>
+          </text>
+          <text id="/drug_movements/chw_sex_fr:label">
+            <value>Sexe de l'ASC</value>
+          </text>
+          <text id="/drug_movements/p_note:label">
+            <value>Identifiant: <output value=" /drug_movements/chw_id "/>
+Nom: <output value=" /drug_movements/chw_name "/> - Sexe: <output value=" /drug_movements/chw_sex_fr "/>
+Date de naissance: <output value=" /drug_movements/inputs/contact/date_of_birth "/>
+jours: <output value=" /drug_movements/chw_age_in_days "/>
+mois: <output value=" /drug_movements/chw_age_in_months "/>
+années: <output value=" /drug_movements/chw_age_in_years "/>
+âge affiché: <output value=" /drug_movements/chw_age_display "/></value></text>
+          <text id="/drug_movements/h_drug_movements:label">
+            <value>Mouvement Médicaments</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_year_type:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_year_type:label">
+            <value>Année de l'activité</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_year_type/previous:label">
+            <value>Année passée</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_year_type/current:label">
+            <value>Cette Année</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month:label">
+            <value>Mois de l'activité</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/01:label">
+            <value>janvier</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/02:label">
+            <value>février</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/03:label">
+            <value>Mars</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/04:label">
+            <value>Avril</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/05:label">
+            <value>Mai</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/06:label">
+            <value>juin</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/07:label">
+            <value>juillet</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/08:label">
+            <value>Août</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/09:label">
+            <value>Septembre</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/10:label">
+            <value>Octobre</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/11:label">
+            <value>Novembre</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_month/12:label">
+            <value>Décembre</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type:label">
+            <value>Quel Mouvement souhaitez-vous faire ?</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type/c_med_loss:label">
+            <value>Perte de médicament</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type/c_med_expired:label">
+            <value>Médicament Périmé</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type/c_med_borrowing:label">
+            <value>Emprunt de médicament chez un ASC (entrée en stock)</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type/c_med_loan:label">
+            <value>Prêt de médicament à un ASC</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type/c_med_damaged:label">
+            <value>Médicament Avarié</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type/c_med_broken:label">
+            <value>Médicament Cassé</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type/c_others:label">
+            <value>Autres Mouvements de sortie</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type_other:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_type_other:label">
+            <value>Préciser l'autre mouvement</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_chw_destination:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_chw_destination:label">
+            <value>Nom et code de l'ASC</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_comment:label">
+            <value>Avez vous un commentaire à faire ?</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list:label">
+            <value>Selectionner les médicaments à sortir du stock à la date choisie</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_alben_400:label">
+            <value>Albendazole 400 mg cp</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_para_250:label">
+            <value>Paracétamol 250 mg</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_para_500:label">
+            <value>Paracétamol 500 mg</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_amox_250:label">
+            <value>Amoxiciline 250 mg</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_amox_500:label">
+            <value>Amoxiciline 500 mg</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_tdr:label">
+            <value>TDR</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_lumartem:label">
+            <value>Artéméther/Luméfantrine 20/120mg cp</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_sro:label">
+            <value>SRO</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_zinc:label">
+            <value>Zinc</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_sayana:label">
+            <value>Sayana Press</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_pills:label">
+            <value>Contraceptifs Oraux Combinés</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_pregnancy_test:label">
+            <value>Test de Grossesse</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_vit_A1:label">
+            <value>Vitamine A  100000UI</value>
+          </text>
+          <text id="/drug_movements/h_drug_movements/med_list/c_vit_A2:label">
+            <value>Vitamine A  200000UI</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements:label">
+            <value>Saisir De Quantité</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/alben_400:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/alben_400:label">
+            <value>Albendazole 400 mg cp</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/para_250:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/para_250:label">
+            <value>Paracétamol 250 mg</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/para_500:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/para_500:label">
+            <value>Paracétamol 500 mg</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/amox_250:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/amox_250:label">
+            <value>Amoxiciline 250 mg</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/amox_500:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/amox_500:label">
+            <value>Amoxiciline 500 mg</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/tdr:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/tdr:label">
+            <value>TDR</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/lumartem:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/lumartem:label">
+            <value>Lumartem</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/sro:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/sro:label">
+            <value>SRO</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/zinc:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/zinc:label">
+            <value>Zinc</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/sayana:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/sayana:label">
+            <value>Sayana Press</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/pills:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/pills:label">
+            <value>Contraceptifs Oraux Combinés</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/pregnancy_test:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/pregnancy_test:label">
+            <value>Test de Grossesse</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/vit_A1:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/vit_A1:label">
+            <value>Vitamine A 100000UI</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/vit_A2:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_movements/b_drug_movements/vit_A2:label">
+            <value>Vitamine A 200000UI</value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/r_summary:label">
+            <value>Détails de l'ASC &lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/r_chw_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /drug_movements/chw_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /drug_movements/chw_sex_fr "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /drug_movements/chw_age_display_fr "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_balance:label">
+            <value>&lt;strong&gt;<output value=" /drug_movements/action_name "/>&lt;/strong&gt; &lt;i class=&quot;fa fa-medkit&quot;&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_alben_400:label">
+            <value>Albendazole 400 mg : <output value=" /drug_movements/b_drug_movements/alben_400 "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_para_250:label">
+            <value>Paracétamol 250 mg : <output value=" /drug_movements/b_drug_movements/para_250 "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_para_500:label">
+            <value>Paracétamol 500 mg : <output value=" /drug_movements/b_drug_movements/para_500 "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_amoxi_250:label">
+            <value>Amoxiciline 250 mg : <output value=" /drug_movements/b_drug_movements/amox_250 "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_amox_500:label">
+            <value>Amoxiciline 500 mg : <output value=" /drug_movements/b_drug_movements/amox_500 "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_tdr:label">
+            <value>TDR :<output value=" /drug_movements/b_drug_movements/tdr "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_lumartem:label">
+            <value>Lumartem : <output value=" /drug_movements/b_drug_movements/lumartem "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_sro:label">
+            <value>SRO : <output value=" /drug_movements/b_drug_movements/sro "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_zinc:label">
+            <value>Zinc : <output value=" /drug_movements/b_drug_movements/zinc "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_sayana:label">
+            <value>Sayana : <output value=" /drug_movements/b_drug_movements/sayana "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_pills:label">
+            <value>Contraceptifs Oraux Combinés: <output value=" /drug_movements/b_drug_movements/pills "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_pregnancy_test:label">
+            <value>Test de Grossesse : <output value=" /drug_movements/b_drug_movements/pregnancy_test "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_vit_A1:label">
+            <value>Vitamine A 100000UI : <output value=" /drug_movements/b_drug_movements/vit_A1 "/></value>
+          </text>
+          <text id="/drug_movements/group_diagnosis/f_drug_movements/r_vit_A2:label">
+            <value>Vitamine A 200000UI : <output value=" /drug_movements/b_drug_movements/vit_A2 "/></value>
+          </text>
+          <text id="/drug_movements/inputs:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <drug_movements id="drug_movements" prefix="J1!drug_movements!" delimiter="#" version="2016-07-11">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+            </contact>
+          </inputs>
+          <chw_age_in_years>0</chw_age_in_years>
+          <chw_age_in_months>0</chw_age_in_months>
+          <chw_age_in_days/>
+          <chw_age_display/>
+          <chw_age_display_fr/>
+          <chw_id/>
+          <chw_name/>
+          <chw_sex/>
+          <chw_sex_en/>
+          <chw_sex_fr/>
+          <p_note/>
+          <action_name/>
+          <h_drug_movements>
+            <med_year_type>current</med_year_type>
+            <med_month/>
+            <med_type/>
+            <med_type_other/>
+            <med_chw_destination/>
+            <med_comment/>
+            <med_list/>
+          </h_drug_movements>
+          <b_drug_movements>
+            <alben_400/>
+            <para_250/>
+            <para_500/>
+            <amox_250/>
+            <amox_500/>
+            <tdr/>
+            <lumartem/>
+            <sro/>
+            <zinc/>
+            <sayana/>
+            <pills/>
+            <pregnancy_test/>
+            <vit_A1/>
+            <vit_A2/>
+          </b_drug_movements>
+          <group_diagnosis>
+            <r_summary/>
+            <r_chw_info/>
+            <f_drug_movements>
+              <r_balance/>
+              <r_alben_400/>
+              <r_para_250/>
+              <r_para_500/>
+              <r_amoxi_250/>
+              <r_amox_500/>
+              <r_tdr/>
+              <r_lumartem/>
+              <r_sro/>
+              <r_zinc/>
+              <r_sayana/>
+              <r_pills/>
+              <r_pregnancy_test/>
+              <r_vit_A1/>
+              <r_vit_A2/>
+            </f_drug_movements>
+          </group_diagnosis>
+          <meta>
+            <instanceID/>
+          </meta>
+        </drug_movements>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/drug_movements/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/drug_movements/inputs/source" type="string"/>
+      <bind nodeset="/drug_movements/inputs/source_id" type="string"/>
+      <bind nodeset="/drug_movements/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/drug_movements/inputs/contact/name" type="string"/>
+      <bind nodeset="/drug_movements/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/drug_movements/inputs/contact/sex" type="string"/>
+      <bind nodeset="/drug_movements/chw_age_in_years" type="string" calculate="floor( difference-in-months(  /drug_movements/inputs/contact/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/drug_movements/chw_age_in_months" type="string" calculate="difference-in-months(  /drug_movements/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/drug_movements/chw_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /drug_movements/inputs/contact/date_of_birth ))"/>
+      <bind nodeset="/drug_movements/chw_age_display" type="string" calculate="concat(concat( /drug_movements/chw_age_in_years , if( /drug_movements/chw_age_in_years =1,' year and ',' years and ')),concat( /drug_movements/chw_age_in_months  mod 12, if(( /drug_movements/chw_age_in_months  mod 12)=1,' month old',' months old')))"/>
+      <bind nodeset="/drug_movements/chw_age_display_fr" type="string" calculate="concat(concat( /drug_movements/chw_age_in_years , if( /drug_movements/chw_age_in_years =1,' an et ',' ans et ')),concat( /drug_movements/chw_age_in_months  mod 12, if(( /drug_movements/chw_age_in_months  mod 12)=1,' mois',' mois')))"/>
+      <bind nodeset="/drug_movements/chw_id" type="string" calculate="../inputs/contact/_id" required="true()" jr:requiredMsg="jr:itext('/drug_movements/chw_id:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/chw_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/drug_movements/chw_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/drug_movements/chw_sex_en" type="string" calculate="if( /drug_movements/chw_sex  = 'male' or  /drug_movements/chw_sex  = 'homme' or  /drug_movements/chw_sex  = 'Homme', 'Male', if( /drug_movements/chw_sex  = 'female' or  /drug_movements/chw_sex  = 'femme' or  /drug_movements/chw_sex  = 'Femme', 'Female', ''))"/>
+      <bind nodeset="/drug_movements/chw_sex_fr" type="string" calculate="if( /drug_movements/chw_sex  = 'male' or  /drug_movements/chw_sex  = 'homme' or  /drug_movements/chw_sex  = 'Homme', 'Homme', if( /drug_movements/chw_sex  = 'female' or  /drug_movements/chw_sex  = 'femme' or  /drug_movements/chw_sex  = 'Femme', 'Femme', ''))"/>
+      <bind nodeset="/drug_movements/p_note" readonly="true()" type="string" relevant="false()"/>
+      <bind nodeset="/drug_movements/action_name" type="string" calculate="jr:choice-name( /drug_movements/h_drug_movements/med_type ,' /drug_movements/h_drug_movements/med_type ')"/>
+      <bind nodeset="/drug_movements/h_drug_movements/med_year_type" type="select1" required="true()" jr:requiredMsg="jr:itext('/drug_movements/h_drug_movements/med_year_type:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/h_drug_movements/med_month" type="select1" required="true()" jr:requiredMsg="jr:itext('/drug_movements/h_drug_movements/med_month:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/h_drug_movements/med_type" type="select1" required="true()" jr:requiredMsg="jr:itext('/drug_movements/h_drug_movements/med_type:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/h_drug_movements/med_type_other" type="string" required="true()" relevant=" /drug_movements/h_drug_movements/med_type ='c_others'" jr:requiredMsg="jr:itext('/drug_movements/h_drug_movements/med_type_other:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/h_drug_movements/med_chw_destination" type="string" required="true()" relevant=" /drug_movements/h_drug_movements/med_type ='c_med_borrowing' or  /drug_movements/h_drug_movements/med_type ='c_med_loan'" jr:requiredMsg="jr:itext('/drug_movements/h_drug_movements/med_chw_destination:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/h_drug_movements/med_comment" type="string"/>
+      <bind nodeset="/drug_movements/h_drug_movements/med_list" type="select" required="true()" jr:requiredMsg="jr:itext('/drug_movements/h_drug_movements/med_list:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/b_drug_movements/alben_400" type="int" required="true()" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_alben_400')" jr:requiredMsg="jr:itext('/drug_movements/b_drug_movements/alben_400:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/b_drug_movements/para_250" type="int" required="true()" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_para_250')" jr:requiredMsg="jr:itext('/drug_movements/b_drug_movements/para_250:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/b_drug_movements/para_500" type="int" required="true()" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_para_500')" jr:requiredMsg="jr:itext('/drug_movements/b_drug_movements/para_500:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/b_drug_movements/amox_250" type="int" required="true()" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_amox_250')" jr:requiredMsg="jr:itext('/drug_movements/b_drug_movements/amox_250:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/b_drug_movements/amox_500" type="int" required="true()" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_amox_500')" jr:requiredMsg="jr:itext('/drug_movements/b_drug_movements/amox_500:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/b_drug_movements/tdr" type="int" required="true()" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_tdr')" jr:requiredMsg="jr:itext('/drug_movements/b_drug_movements/tdr:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/b_drug_movements/lumartem" type="int" required="true()" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_lumartem')" jr:requiredMsg="jr:itext('/drug_movements/b_drug_movements/lumartem:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/b_drug_movements/sro" type="int" required="true()" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_sro')" jr:requiredMsg="jr:itext('/drug_movements/b_drug_movements/sro:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/b_drug_movements/zinc" type="int" required="true()" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_zinc')" jr:requiredMsg="jr:itext('/drug_movements/b_drug_movements/zinc:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/b_drug_movements/sayana" type="int" required="true()" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_sayana')" jr:requiredMsg="jr:itext('/drug_movements/b_drug_movements/sayana:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/b_drug_movements/pills" type="int" required="true()" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_pills')" jr:requiredMsg="jr:itext('/drug_movements/b_drug_movements/pills:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/b_drug_movements/pregnancy_test" type="int" required="true()" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_pregnancy_test')" jr:requiredMsg="jr:itext('/drug_movements/b_drug_movements/pregnancy_test:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/b_drug_movements/vit_A1" type="int" required="true()" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_vit_A1')" jr:requiredMsg="jr:itext('/drug_movements/b_drug_movements/vit_A1:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/b_drug_movements/vit_A2" type="int" required="true()" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_vit_A2')" jr:requiredMsg="jr:itext('/drug_movements/b_drug_movements/vit_A2:jr:requiredMsg')"/>
+      <bind nodeset="/drug_movements/group_diagnosis/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/drug_movements/group_diagnosis/r_chw_info" readonly="true()" type="string"/>
+      <bind nodeset="/drug_movements/group_diagnosis/f_drug_movements/r_balance" readonly="true()" type="string"/>
+      <bind nodeset="/drug_movements/group_diagnosis/f_drug_movements/r_alben_400" readonly="true()" type="string" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_alben_400')"/>
+      <bind nodeset="/drug_movements/group_diagnosis/f_drug_movements/r_para_250" readonly="true()" type="string" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_para_250')"/>
+      <bind nodeset="/drug_movements/group_diagnosis/f_drug_movements/r_para_500" readonly="true()" type="string" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_para_500')"/>
+      <bind nodeset="/drug_movements/group_diagnosis/f_drug_movements/r_amoxi_250" readonly="true()" type="string" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_amox_250')"/>
+      <bind nodeset="/drug_movements/group_diagnosis/f_drug_movements/r_amox_500" readonly="true()" type="string" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_amox_500')"/>
+      <bind nodeset="/drug_movements/group_diagnosis/f_drug_movements/r_tdr" readonly="true()" type="string" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_tdr')"/>
+      <bind nodeset="/drug_movements/group_diagnosis/f_drug_movements/r_lumartem" readonly="true()" type="string" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_lumartem')"/>
+      <bind nodeset="/drug_movements/group_diagnosis/f_drug_movements/r_sro" readonly="true()" type="string" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_sro')"/>
+      <bind nodeset="/drug_movements/group_diagnosis/f_drug_movements/r_zinc" readonly="true()" type="string" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_zinc')"/>
+      <bind nodeset="/drug_movements/group_diagnosis/f_drug_movements/r_sayana" readonly="true()" type="string" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_sayana')"/>
+      <bind nodeset="/drug_movements/group_diagnosis/f_drug_movements/r_pills" readonly="true()" type="string" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_pills')"/>
+      <bind nodeset="/drug_movements/group_diagnosis/f_drug_movements/r_pregnancy_test" readonly="true()" type="string" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_pregnancy_test')"/>
+      <bind nodeset="/drug_movements/group_diagnosis/f_drug_movements/r_vit_A1" readonly="true()" type="string" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_vit_A1')"/>
+      <bind nodeset="/drug_movements/group_diagnosis/f_drug_movements/r_vit_A2" readonly="true()" type="string" relevant="selected( /drug_movements/h_drug_movements/med_list ,'c_vit_A2')"/>
+      <bind nodeset="/drug_movements/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/drug_movements/inputs">
+      <label ref="jr:itext('/drug_movements/inputs:label')"/>
+      <input appearance="hidden" ref="/drug_movements/inputs/source">
+        <label ref="jr:itext('/drug_movements/inputs/source:label')"/>
+      </input>
+      <input appearance="hidden" ref="/drug_movements/inputs/source_id">
+        <label ref="jr:itext('/drug_movements/inputs/source_id:label')"/>
+      </input>
+      <group ref="/drug_movements/inputs/contact">
+        <label ref="jr:itext('/drug_movements/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/drug_movements/inputs/contact/_id">
+          <label ref="jr:itext('/drug_movements/inputs/contact/_id:label')"/>
+          <hint ref="jr:itext('/drug_movements/inputs/contact/_id:hint')"/>
+        </input>
+        <input appearance="hidden" ref="/drug_movements/inputs/contact/name">
+          <label ref="jr:itext('/drug_movements/inputs/contact/name:label')"/>
+        </input>
+        <input appearance="hidden" ref="/drug_movements/inputs/contact/date_of_birth">
+          <label ref="jr:itext('/drug_movements/inputs/contact/date_of_birth:label')"/>
+        </input>
+        <input appearance="hidden" ref="/drug_movements/inputs/contact/sex">
+          <label ref="jr:itext('/drug_movements/inputs/contact/sex:label')"/>
+        </input>
+      </group>
+    </group>
+    <input ref="/drug_movements/p_note">
+      <label ref="jr:itext('/drug_movements/p_note:label')"/>
+    </input>
+    <group appearance="field-list" ref="/drug_movements/h_drug_movements">
+      <label ref="jr:itext('/drug_movements/h_drug_movements:label')"/>
+      <select1 ref="/drug_movements/h_drug_movements/med_year_type">
+        <label ref="jr:itext('/drug_movements/h_drug_movements/med_year_type:label')"/>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_year_type/previous:label')"/>
+          <value>previous</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_year_type/current:label')"/>
+          <value>current</value>
+        </item>
+      </select1>
+      <select1 ref="/drug_movements/h_drug_movements/med_month">
+        <label ref="jr:itext('/drug_movements/h_drug_movements/med_month:label')"/>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_month/01:label')"/>
+          <value>01</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_month/02:label')"/>
+          <value>02</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_month/03:label')"/>
+          <value>03</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_month/04:label')"/>
+          <value>04</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_month/05:label')"/>
+          <value>05</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_month/06:label')"/>
+          <value>06</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_month/07:label')"/>
+          <value>07</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_month/08:label')"/>
+          <value>08</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_month/09:label')"/>
+          <value>09</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_month/10:label')"/>
+          <value>10</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_month/11:label')"/>
+          <value>11</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_month/12:label')"/>
+          <value>12</value>
+        </item>
+      </select1>
+      <select1 ref="/drug_movements/h_drug_movements/med_type">
+        <label ref="jr:itext('/drug_movements/h_drug_movements/med_type:label')"/>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_type/c_med_loss:label')"/>
+          <value>c_med_loss</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_type/c_med_expired:label')"/>
+          <value>c_med_expired</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_type/c_med_borrowing:label')"/>
+          <value>c_med_borrowing</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_type/c_med_loan:label')"/>
+          <value>c_med_loan</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_type/c_med_damaged:label')"/>
+          <value>c_med_damaged</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_type/c_med_broken:label')"/>
+          <value>c_med_broken</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_type/c_others:label')"/>
+          <value>c_others</value>
+        </item>
+      </select1>
+      <input ref="/drug_movements/h_drug_movements/med_type_other">
+        <label ref="jr:itext('/drug_movements/h_drug_movements/med_type_other:label')"/>
+      </input>
+      <input ref="/drug_movements/h_drug_movements/med_chw_destination">
+        <label ref="jr:itext('/drug_movements/h_drug_movements/med_chw_destination:label')"/>
+      </input>
+      <input ref="/drug_movements/h_drug_movements/med_comment">
+        <label ref="jr:itext('/drug_movements/h_drug_movements/med_comment:label')"/>
+      </input>
+      <select ref="/drug_movements/h_drug_movements/med_list">
+        <label ref="jr:itext('/drug_movements/h_drug_movements/med_list:label')"/>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_list/c_alben_400:label')"/>
+          <value>c_alben_400</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_list/c_para_250:label')"/>
+          <value>c_para_250</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_list/c_para_500:label')"/>
+          <value>c_para_500</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_list/c_amox_250:label')"/>
+          <value>c_amox_250</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_list/c_amox_500:label')"/>
+          <value>c_amox_500</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_list/c_tdr:label')"/>
+          <value>c_tdr</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_list/c_lumartem:label')"/>
+          <value>c_lumartem</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_list/c_sro:label')"/>
+          <value>c_sro</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_list/c_zinc:label')"/>
+          <value>c_zinc</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_list/c_sayana:label')"/>
+          <value>c_sayana</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_list/c_pills:label')"/>
+          <value>c_pills</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_list/c_pregnancy_test:label')"/>
+          <value>c_pregnancy_test</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_list/c_vit_A1:label')"/>
+          <value>c_vit_A1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_movements/h_drug_movements/med_list/c_vit_A2:label')"/>
+          <value>c_vit_A2</value>
+        </item>
+      </select>
+    </group>
+    <group appearance="field-list" ref="/drug_movements/b_drug_movements">
+      <label ref="jr:itext('/drug_movements/b_drug_movements:label')"/>
+      <input ref="/drug_movements/b_drug_movements/alben_400">
+        <label ref="jr:itext('/drug_movements/b_drug_movements/alben_400:label')"/>
+      </input>
+      <input ref="/drug_movements/b_drug_movements/para_250">
+        <label ref="jr:itext('/drug_movements/b_drug_movements/para_250:label')"/>
+      </input>
+      <input ref="/drug_movements/b_drug_movements/para_500">
+        <label ref="jr:itext('/drug_movements/b_drug_movements/para_500:label')"/>
+      </input>
+      <input ref="/drug_movements/b_drug_movements/amox_250">
+        <label ref="jr:itext('/drug_movements/b_drug_movements/amox_250:label')"/>
+      </input>
+      <input ref="/drug_movements/b_drug_movements/amox_500">
+        <label ref="jr:itext('/drug_movements/b_drug_movements/amox_500:label')"/>
+      </input>
+      <input ref="/drug_movements/b_drug_movements/tdr">
+        <label ref="jr:itext('/drug_movements/b_drug_movements/tdr:label')"/>
+      </input>
+      <input ref="/drug_movements/b_drug_movements/lumartem">
+        <label ref="jr:itext('/drug_movements/b_drug_movements/lumartem:label')"/>
+      </input>
+      <input ref="/drug_movements/b_drug_movements/sro">
+        <label ref="jr:itext('/drug_movements/b_drug_movements/sro:label')"/>
+      </input>
+      <input ref="/drug_movements/b_drug_movements/zinc">
+        <label ref="jr:itext('/drug_movements/b_drug_movements/zinc:label')"/>
+      </input>
+      <input ref="/drug_movements/b_drug_movements/sayana">
+        <label ref="jr:itext('/drug_movements/b_drug_movements/sayana:label')"/>
+      </input>
+      <input ref="/drug_movements/b_drug_movements/pills">
+        <label ref="jr:itext('/drug_movements/b_drug_movements/pills:label')"/>
+      </input>
+      <input ref="/drug_movements/b_drug_movements/pregnancy_test">
+        <label ref="jr:itext('/drug_movements/b_drug_movements/pregnancy_test:label')"/>
+      </input>
+      <input ref="/drug_movements/b_drug_movements/vit_A1">
+        <label ref="jr:itext('/drug_movements/b_drug_movements/vit_A1:label')"/>
+      </input>
+      <input ref="/drug_movements/b_drug_movements/vit_A2">
+        <label ref="jr:itext('/drug_movements/b_drug_movements/vit_A2:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/drug_movements/group_diagnosis">
+      <label ref="jr:itext('/drug_movements/group_diagnosis:label')"/>
+      <input appearance="h1 yellow" ref="/drug_movements/group_diagnosis/r_summary">
+        <label ref="jr:itext('/drug_movements/group_diagnosis/r_summary:label')"/>
+      </input>
+      <input ref="/drug_movements/group_diagnosis/r_chw_info">
+        <label ref="jr:itext('/drug_movements/group_diagnosis/r_chw_info:label')"/>
+      </input>
+      <group ref="/drug_movements/group_diagnosis/f_drug_movements">
+        <label ref="jr:itext('/drug_movements/group_diagnosis/f_drug_movements:label')"/>
+        <input appearance="h1 blue" ref="/drug_movements/group_diagnosis/f_drug_movements/r_balance">
+          <label ref="jr:itext('/drug_movements/group_diagnosis/f_drug_movements/r_balance:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_movements/group_diagnosis/f_drug_movements/r_alben_400">
+          <label ref="jr:itext('/drug_movements/group_diagnosis/f_drug_movements/r_alben_400:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_movements/group_diagnosis/f_drug_movements/r_para_250">
+          <label ref="jr:itext('/drug_movements/group_diagnosis/f_drug_movements/r_para_250:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_movements/group_diagnosis/f_drug_movements/r_para_500">
+          <label ref="jr:itext('/drug_movements/group_diagnosis/f_drug_movements/r_para_500:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_movements/group_diagnosis/f_drug_movements/r_amoxi_250">
+          <label ref="jr:itext('/drug_movements/group_diagnosis/f_drug_movements/r_amoxi_250:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_movements/group_diagnosis/f_drug_movements/r_amox_500">
+          <label ref="jr:itext('/drug_movements/group_diagnosis/f_drug_movements/r_amox_500:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_movements/group_diagnosis/f_drug_movements/r_tdr">
+          <label ref="jr:itext('/drug_movements/group_diagnosis/f_drug_movements/r_tdr:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_movements/group_diagnosis/f_drug_movements/r_lumartem">
+          <label ref="jr:itext('/drug_movements/group_diagnosis/f_drug_movements/r_lumartem:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_movements/group_diagnosis/f_drug_movements/r_sro">
+          <label ref="jr:itext('/drug_movements/group_diagnosis/f_drug_movements/r_sro:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_movements/group_diagnosis/f_drug_movements/r_zinc">
+          <label ref="jr:itext('/drug_movements/group_diagnosis/f_drug_movements/r_zinc:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_movements/group_diagnosis/f_drug_movements/r_sayana">
+          <label ref="jr:itext('/drug_movements/group_diagnosis/f_drug_movements/r_sayana:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_movements/group_diagnosis/f_drug_movements/r_pills">
+          <label ref="jr:itext('/drug_movements/group_diagnosis/f_drug_movements/r_pills:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_movements/group_diagnosis/f_drug_movements/r_pregnancy_test">
+          <label ref="jr:itext('/drug_movements/group_diagnosis/f_drug_movements/r_pregnancy_test:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_movements/group_diagnosis/f_drug_movements/r_vit_A1">
+          <label ref="jr:itext('/drug_movements/group_diagnosis/f_drug_movements/r_vit_A1:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_movements/group_diagnosis/f_drug_movements/r_vit_A2">
+          <label ref="jr:itext('/drug_movements/group_diagnosis/f_drug_movements/r_vit_A2:label')"/>
+        </input>
+      </group>
+    </group>
+  </h:body>
+</h:html>

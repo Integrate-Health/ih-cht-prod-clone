@@ -1,0 +1,151 @@
+{
+  "form:death_report": {
+    "guinee-dev.portal-integratehealth.org/medic": "ZD2zF9XuOAaWySTaegbKbw==",
+    "portal-integratehealth.org/medic": "qlioqoYNnLQy+lViZXwutw=="
+  },
+  "form:delivery": {
+    "guinee-dev.portal-integratehealth.org/medic": "YThAiEZpGu9AZNYvmed0JA==",
+    "portal-integratehealth.org/medic": "DskIuT+XT09UQv5ObXEtgg=="
+  },
+  "form:drug_movements": {
+    "guinee-dev.portal-integratehealth.org/medic": "fvYFpHUJmFo5ob8LTLeRWA==",
+    "portal-integratehealth.org/medic": "BBc6EBOGE3TPZ9NfQFW90g=="
+  },
+  "form:drug_quantities": {
+    "guinee-dev.portal-integratehealth.org/medic": "YmgXWU8PblaIKF8v7vHzgg==",
+    "portal-integratehealth.org/medic": "NL1uxYLsp/9hWtwGmtW0Bg=="
+  },
+  "form:fp_follow_up_renewal": {
+    "guinee-dev.portal-integratehealth.org/medic": "FyCOXSJZtmtVxKbwVfESvg==",
+    "portal-integratehealth.org/medic": "BNGgQ/KU9pIvZnLFYjXqEw=="
+  },
+  "form:fp_followup_danger_sign_check": {
+    "guinee-dev.portal-integratehealth.org/medic": "VP2Kxo9kPf+AHr9MGcYaPA==",
+    "portal-integratehealth.org/medic": "VgTADCTWkF+7Y0iAdTwOHw=="
+  },
+  "form:home_visit": {
+    "guinee-dev.portal-integratehealth.org/medic": "viaPITe9eM4Vay67m58FAg==",
+    "portal-integratehealth.org/medic": "ZmfSWJfGl4mcGXHZjrlDfw=="
+  },
+  "form:malnutrition_followup": {
+    "guinee-dev.portal-integratehealth.org/medic": "iLM6dK+wEFDWk8STjrKQfw==",
+    "portal-integratehealth.org/medic": "ZrVfXozNbYhzcy+eqvsMgw=="
+  },
+  "form:newborn_followup": {
+    "guinee-dev.portal-integratehealth.org/medic": "nqslYW+bl5Okc97fgdv37w==",
+    "portal-integratehealth.org/medic": "EDAfy11VP5hHic75NNlaTw=="
+  },
+  "form:pcime_c_asc": {
+    "guinee-dev.portal-integratehealth.org/medic": "zCZIIM7YuDVl7gATGYRBtQ==",
+    "portal-integratehealth.org/medic": "CKvsDIiTPWDtJeS+1JaD1Q=="
+  },
+  "form:pcime_c_followup": {
+    "guinee-dev.portal-integratehealth.org/medic": "csLGHrAESpxildQzWmkY1Q==",
+    "portal-integratehealth.org/medic": "3ENTtvn6yHLXBmonY0b3SQ=="
+  },
+  "form:pcime_c_referral": {
+    "guinee-dev.portal-integratehealth.org/medic": "lNSjlimDogOI9lQNrLxF7w==",
+    "portal-integratehealth.org/medic": "i83qjbRucIHdSn8fj2ebhw=="
+  },
+  "form:postnatal_followup": {
+    "guinee-dev.portal-integratehealth.org/medic": "+LqD5zE1W92zMnOaWmIpFg==",
+    "portal-integratehealth.org/medic": "dSvmBlZGdk031vJmS6u80w=="
+  },
+  "form:pregnancy_family_planning": {
+    "guinee-dev.portal-integratehealth.org/medic": "41xBcURQoUJZGMNcpFk3BA==",
+    "portal-integratehealth.org/medic": "oaeF+HYEFfXqsOvs+Tmd6A=="
+  },
+  "form:prenatal_followup": {
+    "guinee-dev.portal-integratehealth.org/medic": "Z6TOkHhUMvPi27pVFOzaAg==",
+    "portal-integratehealth.org/medic": "8gDtrkYRuYJ/Jz7x5oSsPA=="
+  },
+  "form:undo_death_report": {
+    "guinee-dev.portal-integratehealth.org/medic": "vgUVp3dDkn9HXvOicqoq+A==",
+    "portal-integratehealth.org/medic": "KZIXWaEAmCjSyZ2xJQp+YQ=="
+  },
+  "form:usp_pcime_followup": {
+    "guinee-dev.portal-integratehealth.org/medic": "9EC91w2PkbU7P/v7ATlj3Q==",
+    "portal-integratehealth.org/medic": "bK/7BVcxQ38T6TUz+JX5rg=="
+  },
+  "form:vaccination_followup": {
+    "guinee-dev.portal-integratehealth.org/medic": "OxDR0mrdQjyyTZQgPSIIfA==",
+    "portal-integratehealth.org/medic": "PZTwN+4z2fEIULcvKjzKDQ=="
+  },
+  "form:women_emergency_followup": {
+    "guinee-dev.portal-integratehealth.org/medic": "BMewisf8a8BleRkhVbV3gA==",
+    "portal-integratehealth.org/medic": "DQIY5VOga+EZ1+Z/WSUk0A=="
+  },
+  "form:collect_off": {
+    "guinee-dev.portal-integratehealth.org/medic": "GS8p8MmwHatpuFyaGeuyzw==",
+    "portal-integratehealth.org/medic": "rSksZH9srp/6nrO6aI74dA=="
+  },
+  "form:collect_on": {
+    "guinee-dev.portal-integratehealth.org/medic": "TsGBdbzz12UrgqIW4ppC4w==",
+    "portal-integratehealth.org/medic": "nacqi1kzBQJxPft3zROuYQ=="
+  },
+  "form:contact:clinic:create": {
+    "guinee-dev.portal-integratehealth.org/medic": "HGS5epNgrzDE6T3ZRTtAgw==",
+    "portal-integratehealth.org/medic": "xyH4iKQS2vNNkTAVfn44EA=="
+  },
+  "form:contact:clinic:edit": {
+    "guinee-dev.portal-integratehealth.org/medic": "9yV4AaQOdN3HN8m60V8+rw==",
+    "portal-integratehealth.org/medic": "D9eV+ClCWlDi68EU//N9gg=="
+  },
+  "form:contact:district_hospital:create": {
+    "guinee-dev.portal-integratehealth.org/medic": "bQQa0XhC10UxjmmwrEa7cw==",
+    "portal-integratehealth.org/medic": "T6AgOUMlngeJmlM2aX8gtg=="
+  },
+  "form:contact:district_hospital:edit": {
+    "guinee-dev.portal-integratehealth.org/medic": "m2+uSHJPho+rFvNol6ACkA==",
+    "portal-integratehealth.org/medic": "RJKEVkZyii6/QLZ+OcwlWw=="
+  },
+  "form:contact:health_center:create": {
+    "guinee-dev.portal-integratehealth.org/medic": "LU2ApwqXdUmB1OfC+OEggQ==",
+    "portal-integratehealth.org/medic": "NdgLxMm27xuSagCaleY2nA=="
+  },
+  "form:contact:health_center:edit": {
+    "guinee-dev.portal-integratehealth.org/medic": "W8XXpLmP2O+ZGJZo7yRXGw==",
+    "portal-integratehealth.org/medic": "KbCUHrfRYofhQWwHCCQBMA=="
+  },
+  "form:contact:person:create": {
+    "guinee-dev.portal-integratehealth.org/medic": "UOOXpjkLAHERAS1Yj91Ddw==",
+    "portal-integratehealth.org/medic": "5fm45C9gI4wb0eMsVxgAdA=="
+  },
+  "form:contact:person:edit": {
+    "guinee-dev.portal-integratehealth.org/medic": "28auWv/HX6giGTteVdSYqQ==",
+    "portal-integratehealth.org/medic": "lJ4wGReIEWA+wMLyVHunKw=="
+  },
+  "resources": {
+    "guinee-dev.portal-integratehealth.org/medic": "LdzAYzbEKfg0BDW0IzKj5w==",
+    "portal-integratehealth.org/medic": "LdzAYzbEKfg0BDW0IzKj5w=="
+  },
+  "branding": {
+    "guinee-dev.portal-integratehealth.org/medic": "18lMnUog2FTgA4dagLaDQA==",
+    "portal-integratehealth.org/medic": "18lMnUog2FTgA4dagLaDQA=="
+  },
+  "partners": {
+    "guinee-dev.portal-integratehealth.org/medic": "Syj2ou6OIzAXWhOfdxE9gQ==",
+    "portal-integratehealth.org/medic": "Syj2ou6OIzAXWhOfdxE9gQ=="
+  },
+  "messages-en": {
+    "guinee-dev.portal-integratehealth.org/medic": "H6JjZx3ucyc17APEq8asew==",
+    "portal-integratehealth.org/medic": "fzpxOS490I27Y2a3kV9GQA=="
+  },
+  "messages-fr": {
+    "guinee-dev.portal-integratehealth.org/medic": "OR6TEYdqS/hFc7G8eAqJ5w==",
+    "portal-integratehealth.org/medic": "Fr0VNt0aEhZ0xTnJvN9lXw=="
+  },
+  "privacy-policies": {
+    "guinee-dev.portal-integratehealth.org/medic": "/twR+Q8i4pmWKN/3fUP6tQ==",
+    "portal-integratehealth.org/medic": "/twR+Q8i4pmWKN/3fUP6tQ=="
+  },
+  "form:training:ui_change_floating_action_button": {
+    "portal-integratehealth.org/medic": "udfwGFE8n7LAOM+P6Gyuww=="
+  },
+  "form:training:ui_change_more_options": {
+    "portal-integratehealth.org/medic": "1zZZ18GPeb9+NYywnGIgZQ=="
+  },
+  "extension-libs": {
+    "portal-integratehealth.org/medic": "imddgcCFmTW+B9C0De5SwA=="
+  }
+}

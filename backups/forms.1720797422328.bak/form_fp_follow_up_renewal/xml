@@ -1,0 +1,2296 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Renouvellement de la méthode PF</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/fp_follow_up_renewal/checklist1/s_other_why_renew_method:label">
+            <value>Specify other reasons for not renewing</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist1/s_renew_method/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist1/s_renew_method/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist1/s_renew_method:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist1/s_renew_method:label">
+            <value>Did you renew the method for the patient ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist1/s_when_renew_method:label">
+            <value>When did you renew the method?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist1/s_why_not_renew_method:label">
+            <value>Why</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist1:label">
+            <value>Pill/ Injectable renewal</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_do_smoke_over_35/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_do_smoke_over_35/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_do_smoke_over_35:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_do_smoke_over_35:label">
+            <value>Do you smoke, and are you over 35?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_frequent_severe_headache/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_frequent_severe_headache/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_frequent_severe_headache:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_frequent_severe_headache:label">
+            <value>Do you have frequent and very severe headaches with blurred vision or loss of vision?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_breast_lesions/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_breast_lesions/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_breast_lesions:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_breast_lesions:label">
+            <value>Do you currently have or have you had swelling or other lesions in the breasts?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_chest_pains/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_chest_pains/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_chest_pains:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_chest_pains:label">
+            <value>Did you have chest pains?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_diabete/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_diabete/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_diabete:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_diabete:label">
+            <value>Do you have diabetes (high blood sugar level)?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure:label">
+            <value>Do you have high blood pressure?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_jaundice/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_jaundice/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_jaundice:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_jaundice:label">
+            <value>Do you have jaundice (yellow eyes or skin)?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen:label">
+            <value>Do you have swollen or very painful legs?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_menstruation_late/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_menstruation_late/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_menstruation_late:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_menstruation_late:label">
+            <value>Are your menstruations late?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose:label">
+            <value>Are you currently on modern treatment for tuberculosis or epilepsy?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/to_change:label">
+            <value>In order to change a patient's FP method complete the Pregnancy and Family Planning Screening form.</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2:label">
+            <value>CONTRAINDICATIONS CHECK 2</value>
+          </text>
+          <text id="/fp_follow_up_renewal/follow_up_count:label">
+            <value>Follow up count</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/contact/_id:hint">
+            <value>select a person from the list</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/contact/_id:label">
+            <value>What is the patient name?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/contact/date_of_birth:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/t_follow_up_count:label">
+            <value>Follow up count</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/t_follow_up_type:label">
+            <value>Follow up type</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/t_fp_method:label">
+            <value>FP Method</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/fp_follow_up_renewal/patient_age_in_days:label">
+            <value>Days old</value>
+          </text>
+          <text id="/fp_follow_up_renewal/patient_age_in_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/fp_follow_up_renewal/patient_age_in_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/fp_follow_up_renewal/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/fp_follow_up_renewal/patient_name:label">
+            <value>Patient Name</value>
+          </text>
+          <text id="/fp_follow_up_renewal/patient_sex:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/fp_follow_up_renewal/patient_sex_en:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/fp_follow_up_renewal/patient_sex_fr:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral:label">
+            <value>Referral</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating:label">
+            <value>Abdominal Bloating</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding:label">
+            <value>Heavy bleeding outside menses</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_chest_pain/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_chest_pain/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_chest_pain:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_chest_pain:label">
+            <value>Chest pain with or without shortness of breath</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects:label">
+            <value>Are you going to refer the woman for severe side effects?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_severe_headaches/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_severe_headaches/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_severe_headaches:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_severe_headaches:label">
+            <value>Severe headaches</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain:label">
+            <value>Strong leg pain</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects:label">
+            <value>SIDE EFFECTS FOR REFERRAL</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/fp_side_effects_note:label">
+            <value>Go through each one of below side effects and select all that apply</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_abdominal_pain/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_abdominal_pain/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_abdominal_pain:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_abdominal_pain:label">
+            <value>Abdominal Pain</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_advice_pills:label">
+            <value>**Please advise the woman on the importance of taking her pills**</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_amenorrhea/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_amenorrhea/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_amenorrhea:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_amenorrhea:label">
+            <value>Amenorrhea</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_breast_pain/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_breast_pain/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_breast_pain:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_breast_pain:label">
+            <value>Pain or tenderness of the breasts</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_counsel_pills_correctly:label">
+            <value>**Please conduct a pregnancy test**</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_counsel_pills_correctly_2:label">
+            <value>**Please remove the old tablet and give a new one to the patient**</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_dizziness/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_dizziness/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_dizziness:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_dizziness:label">
+            <value>Dizziness</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_effect_duration/less_than_3_months:label">
+            <value>Less than 3 months</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_effect_duration/more_than_3_months:label">
+            <value>More than 3 months</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_effect_duration:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_effect_duration:label">
+            <value>How many months has she been using this FP method?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_headaches/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_headaches/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_headaches:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_headaches:label">
+            <value>Headaches</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_light_bleeding/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_light_bleeding/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_light_bleeding:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_light_bleeding:label">
+            <value>Light and irregular bleeding</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding:label">
+            <value>small amount of bleeding during the mentrual period</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_lower_libido/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_lower_libido/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_lower_libido:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_lower_libido:label">
+            <value>Low libido and mood swing</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_missing_pills/major:label">
+            <value>Major (more than 2 pills)</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_missing_pills/minor:label">
+            <value>Minor (1 to 2pills)</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_missing_pills:label">
+            <value>How do you evaluate the importance of missing the pills?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_nausea/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_nausea/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_nausea:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_nausea:label">
+            <value>Nausea</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_pregnancy_result/negative:label">
+            <value>Negative</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_pregnancy_result/positive:label">
+            <value>Positive</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_pregnancy_result:label">
+            <value>What is the result of the pregnancy test?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_pressure/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_pressure/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_pressure:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_pressure:label">
+            <value>High blood pressure</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_refer_preg_followup:label">
+            <value>**Please refer the patient for the pregnancy follow up**</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_vertigo/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_vertigo/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_vertigo:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_vertigo:label">
+            <value>Vertigo</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_weight/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_weight/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_weight:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_weight:label">
+            <value>weight gain or loss</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_woman_new_packet/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_woman_new_packet/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_woman_new_packet:label">
+            <value>Have you given a new packet to the patient?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/take_pill_correct/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/take_pill_correct/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/take_pill_correct:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/take_pill_correct:label">
+            <value>Has the woman been taking her pills correctly?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects:label">
+            <value>SIDE EFFECTS CHECK 1</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_abdominal_bloating:label">
+            <value>Abdominal Bloating</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_abdominal_pain:label">
+            <value>Abdominal Pain</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_abundant_bleeding:label">
+            <value>Heavy bleeding outside menses</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_amenorrhea:label">
+            <value>Amenorrhea</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_breast_pain:label">
+            <value>Pain or tenderness of the breasts</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_chest_pain:label">
+            <value>Chest pain with or without shortness of breath</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_dizziness:label">
+            <value>Dizziness</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_do_smoke_over_35:label">
+            <value>Smoke, and over 35</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_educate_take_pill:label">
+            <value>Educate the patient about the importance of taking the pill every day</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_follow_up_new_packet:label">
+            <value>Please follow-up to check danger signs : (date :<output value=" /fp_follow_up_renewal/when_danger_signs "/> )</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_follow_up_patient:label">
+            <value>Please follow-up to check if the patient want to keep or renewal the same method (date :<output value=" /fp_follow_up_renewal/checklist1/when_renew_method_date "/> )</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_frequent_severe_headache:label">
+            <value>Frequent and very severe headaches with blurred vision or loss of vision</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_have_breast_lesions:label">
+            <value>Swelling or other lesions in the breasts</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_have_chest_pains:label">
+            <value>Chest pains?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_have_diabete:label">
+            <value>Have diabetes (high blood sugar level)</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_have_high_blood_pressure:label">
+            <value>High blood pressure</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_have_jaundice:label">
+            <value>Jaundice (yellow eyes or skin)</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_have_painful_legr_swollen:label">
+            <value>Swollen or very painful legs</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_headaches:label">
+            <value>Headaches</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_light_bleeding:label">
+            <value>Light and irregular bleeding</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_lilttle_bleeding:label">
+            <value>small amount of bleeding during the mentrual period</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_lower_libido:label">
+            <value>Low libido</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_menstruation_late:label">
+            <value>Menstruations late</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_nausea:label">
+            <value>Nausea</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_on_modern_treatment_tuberculose:label">
+            <value>Currently on modern treatment for tuberculosis or epilepsy</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /fp_follow_up_renewal/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /fp_follow_up_renewal/patient_sex_en "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /fp_follow_up_renewal/patient_age_display "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_pressure:label">
+            <value>Hight blood pressure</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_referral:label">
+            <value>Refer to USP&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_severe_headaches:label">
+            <value>Severe headaches</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_special_instructions:label">
+            <value>Special Instructions&lt;i class="fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_special_instructions_2:label">
+            <value>Follow Up&lt;i class="fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_strong_leg_pain:label">
+            <value>Strong leg pain</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_submit_change_fp:label">
+            <value>Please submit this form and then perform a pregnancy and family planning form</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_submit_forgotten:label">
+            <value>Please submit this form and then perform a pregnancy and family planning. Check if the patient is pregnant as she did not take her pills</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_summary:label">
+            <value>Patient Summary&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_time_period_less_than_3:label">
+            <value>**These effects have persisted more than 3 months. Refer the patient to the health facility**</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_time_period_more_than_3:label">
+            <value>**These effects have persisted less than 3 months. Counsel the woman and verify if the effects continue for more than 3 months**</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_vertigo:label">
+            <value>Vertigo</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_weight:label">
+            <value>weight gain or loss</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/s_have_you_refer_woman/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/s_have_you_refer_woman/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/s_have_you_refer_woman:label">
+            <value>Did you refer the patient?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/s_sum_submission:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Make sure to submit the report to complete this action &lt;/h4&gt;</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/fp_follow_up_renewal/visited_contact_uuid:label">
+            <value>Family Id</value>
+          </text>
+          <text id="static_instance-c_month_since_fp-0">
+            <value>More than 3 months</value>
+          </text>
+          <text id="static_instance-c_month_since_fp-1">
+            <value>Less than 3 months</value>
+          </text>
+          <text id="static_instance-missing_pills-0">
+            <value>Minor (1 to 2pills)</value>
+          </text>
+          <text id="static_instance-missing_pills-1">
+            <value>Major (more than 2 pills)</value>
+          </text>
+          <text id="static_instance-pregnancy_result-0">
+            <value>Positive</value>
+          </text>
+          <text id="static_instance-pregnancy_result-1">
+            <value>Negative</value>
+          </text>
+          <text id="static_instance-why_not_renew_method-0">
+            <value>The patient wants to change the FP method</value>
+          </text>
+          <text id="static_instance-why_not_renew_method-1">
+            <value>The patient has forgotten to take the pills</value>
+          </text>
+          <text id="static_instance-why_not_renew_method-2">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>No</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/fp_follow_up_renewal/checklist1/s_other_why_renew_method:label">
+            <value>Spécifier autres raisons</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist1/s_renew_method/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist1/s_renew_method/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist1/s_renew_method:jr:requiredMsg">
+            <value>horizontal</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist1/s_renew_method:label">
+            <value>Avez-vous renouvelé la méthode pour le patient ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist1/s_when_renew_method:label">
+            <value>Quand avez-vous renouvelé la méthode?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist1/s_why_not_renew_method:label">
+            <value>Pourquoi?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist1:label">
+            <value>Renouvellement de la méthode pillule/Injectable</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_do_smoke_over_35/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_do_smoke_over_35/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_do_smoke_over_35:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_do_smoke_over_35:label">
+            <value>Est-ce que vous fumez, et avez-vous plus de 35 ans ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_frequent_severe_headache/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_frequent_severe_headache/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_frequent_severe_headache:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_frequent_severe_headache:label">
+            <value>Est-ce que vous avez des maux de tête fréquents et très sévères accompagnés de vue trouble ou perte de vue ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_breast_lesions/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_breast_lesions/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_breast_lesions:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_breast_lesions:label">
+            <value>Est-ce que vous avez actuellement ou avez-vous eu une tuméfaction ou d'autres lésions dans les seins ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_chest_pains/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_chest_pains/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_chest_pains:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_chest_pains:label">
+            <value>Est-ce que vous avez eu des douleurs de la poitrine ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_diabete/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_diabete/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_diabete:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_diabete:label">
+            <value>Est-ce que vous avez le diabète (taux élève de sucre dans le sang) ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure:label">
+            <value>Est-ce que vous avez une tension artérielle élevée connue ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_jaundice/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_jaundice/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_jaundice:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_jaundice:label">
+            <value>Est-ce que vous avez de la jaunisse (les yeux ou la peaux jaune) ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen:label">
+            <value>Est-ce que vous avez les jambes gonflées ou très douloureuses ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_menstruation_late/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_menstruation_late/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_menstruation_late:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_menstruation_late:label">
+            <value>Vos règles sont-elles en retard ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose:label">
+            <value>Est-ce que vous êtes actuellement sous traitement moderne contre la tuberculose ou l'épilepsie ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2/to_change:label">
+            <value>Pour changer de méthode il faut remplir le formulaire Grossesse et Planification</value>
+          </text>
+          <text id="/fp_follow_up_renewal/checklist2:label">
+            <value>LISTE DE CONTROLE 2</value>
+          </text>
+          <text id="/fp_follow_up_renewal/follow_up_count:label">
+            <value>Nombre de suivi</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/contact/_id:hint">
+            <value>Sélectionner une personne dans la liste</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/contact/_id:label">
+            <value>Quel est le nom du patient?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/source_id:label">
+            <value>Source de l'ID</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/t_follow_up_count:label">
+            <value>Nombre de suivi</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/t_follow_up_type:label">
+            <value>Type de suivi</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs/t_fp_method:label">
+            <value>Méthode de PF</value>
+          </text>
+          <text id="/fp_follow_up_renewal/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/fp_follow_up_renewal/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up_renewal/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up_renewal/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up_renewal/patient_id:label">
+            <value>Identifiant du patient</value>
+          </text>
+          <text id="/fp_follow_up_renewal/patient_name:label">
+            <value>Nom du patient</value>
+          </text>
+          <text id="/fp_follow_up_renewal/patient_sex:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/fp_follow_up_renewal/patient_sex_en:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/fp_follow_up_renewal/patient_sex_fr:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating:label">
+            <value>Ballonnement abdominal</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding:label">
+            <value>Saignement abondant en dehors des régles</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_chest_pain/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_chest_pain/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_chest_pain:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_chest_pain:label">
+            <value>Douleurs à la poitrine avec ou sans essoufflement</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects:label">
+            <value>Est-ce que vous allez référer la femme pour les effets secondaires graves?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_severe_headaches/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_severe_headaches/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_severe_headaches:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_severe_headaches:label">
+            <value>Maux de tête prononcés</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain:label">
+            <value>Intenses douleurs aux jambes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/referral_side_effects:label">
+            <value>Effets secondaires pour Référence</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/fp_side_effects_note:label">
+            <value>Passez en revue chacun des effets secondaires ci-dessous et sélectionnez tous ceux qui s'appliquent</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_abdominal_pain/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_abdominal_pain/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_abdominal_pain:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_abdominal_pain:label">
+            <value>Douleurs abdominales</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_advice_pills:label">
+            <value>Veuillez conseiller la femme sur l'importance de prendre ses pilules</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_amenorrhea/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_amenorrhea/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_amenorrhea:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_amenorrhea:label">
+            <value>Pas de règles/aménorrhée (absence de règles)</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_breast_pain/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_breast_pain/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_breast_pain:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_breast_pain:label">
+            <value>Douleurs ou sensibilité des seins</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_counsel_pills_correctly:label">
+            <value>Veuillez faire un test de grossesse</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_counsel_pills_correctly_2:label">
+            <value>Veuillez retirer l'ancienne plaquette et donner une nouvelle à la patiente</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_dizziness/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_dizziness/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_dizziness:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_dizziness:label">
+            <value>Etourdissement</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_effect_duration/less_than_3_months:label">
+            <value>Moins de 3 mois</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_effect_duration/more_than_3_months:label">
+            <value>Plus de 3 mois</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_effect_duration:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_effect_duration:label">
+            <value>Depuis combien de mois fait-elle cette méthode FP?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_headaches/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_headaches/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_headaches:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_headaches:label">
+            <value>Maux de tête</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_light_bleeding/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_light_bleeding/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_light_bleeding:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_light_bleeding:label">
+            <value>Saignements legers et irreguliers</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding:label">
+            <value>Peu de saignement pendant les règles</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_lower_libido/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_lower_libido/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_lower_libido:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_lower_libido:label">
+            <value>Basse libido et sautes d'humeur</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_missing_pills/major:label">
+            <value>Majeur (plus de 2 pilules)</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_missing_pills/minor:label">
+            <value>Mineure (1 à 2 pilules)</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_missing_pills:label">
+            <value>Comment évaluez-vous l'importance des pilules manquées?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_nausea/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_nausea/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_nausea:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_nausea:label">
+            <value>Nausées</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_pregnancy_result/negative:label">
+            <value>negatif</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_pregnancy_result/positive:label">
+            <value>positif</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_pregnancy_result:label">
+            <value>Quel est résultat du test de grossesse?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_pressure/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_pressure/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_pressure:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_pressure:label">
+            <value>Elévation de la tension</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_refer_preg_followup:label">
+            <value>Veuillez référer la patiente pour le suivi de la grossesse</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_vertigo/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_vertigo/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_vertigo:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_vertigo:label">
+            <value>Vertige</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_weight/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_weight/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_weight:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_weight:label">
+            <value>Prise ou perte de poids</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_woman_new_packet/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_woman_new_packet/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/s_woman_new_packet:label">
+            <value>Avez vous redonné une nouvelle plaquette à la patiente?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/take_pill_correct/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/take_pill_correct/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/take_pill_correct:jr:requiredMsg">
+            <value>horizontal</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects/take_pill_correct:label">
+            <value>La femme prenait-elle correctement ses pilules?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_side_effects:label">
+            <value>EFFETS SECONDAIRES - LISTE 1</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_abdominal_bloating:label">
+            <value>Ballonnement abdominal</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_abdominal_pain:label">
+            <value>Douleurs abdominales</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_abundant_bleeding:label">
+            <value>Saignement abondant en déhors des régles</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_amenorrhea:label">
+            <value>Pas de règles/aménorrhée (absence de règles)</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_breast_pain:label">
+            <value>Douleurs ou sensibilité des seins</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_chest_pain:label">
+            <value>Douleurs à la poitrine avec ou sans essoufflement</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_dizziness:label">
+            <value>Etourdissement</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_do_smoke_over_35:label">
+            <value>Est-ce que vous fumez, et avez-vous plus de 35 ans ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_educate_take_pill:label">
+            <value>Éduquer le patient sur l'importance de prendre la pilule tous les jours</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_follow_up_new_packet:label">
+            <value>Faites un suivi pour vérifier si le patient présente des signes de danger (date donnée: <output value=" /fp_follow_up_renewal/when_danger_signs "/>)</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_follow_up_patient:label">
+            <value>Faites un suivi pour vérifier si le patient souhaite conserver ou renouveler la même méthode (date donnée: <output value=" /fp_follow_up_renewal/checklist1/when_renew_method_date "/>)</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_frequent_severe_headache:label">
+            <value>Est-ce que vous avez des maux de tête fréquents et très sévères accompagnés de vue trouble ou perte de vue ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_have_breast_lesions:label">
+            <value>Est-ce que vous avez actuellement ou avez-vous eu une tuméfaction ou d'autres lésions dans les seins ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_have_chest_pains:label">
+            <value>Est-ce que vous avez eu des douleurs de la poitrine ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_have_diabete:label">
+            <value>Est-ce que vous avez le diabète (taux élève de sucre dans le sang) ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_have_high_blood_pressure:label">
+            <value>Est-ce que vous avez une tension artérielle élevée connue ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_have_jaundice:label">
+            <value>Est-ce que vous avez de la jaunisse (les yeux ou la peaux jaune) ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_have_painful_legr_swollen:label">
+            <value>Est-ce que vous avez les jambes gonflées ou très douloureuses ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_headaches:label">
+            <value>Maux de tête</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_light_bleeding:label">
+            <value>Saignements legers et irreguliers</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_lilttle_bleeding:label">
+            <value>Peu de saignement pendant les règles</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_lower_libido:label">
+            <value>Baisse de la libido et sauts d'humeur</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_menstruation_late:label">
+            <value>Vos règles sont-elles en retard ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_nausea:label">
+            <value>Nausées</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_on_modern_treatment_tuberculose:label">
+            <value>Est-ce que vous êtes actuellement sous traitement moderne contre la tuberculose ou l'épilepsie ?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /fp_follow_up_renewal/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /fp_follow_up_renewal/patient_sex_fr "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /fp_follow_up_renewal/patient_age_display_fr "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_pressure:label">
+            <value>Elévation de la tension</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_referral:label">
+            <value>Référer à l'USP&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_severe_headaches:label">
+            <value>Maux de tête prononcés</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_special_instructions:label">
+            <value>Instructions speciales&lt;i class="fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_special_instructions_2:label">
+            <value>Suivi&lt;i class="fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_strong_leg_pain:label">
+            <value>Intenses douleurs aux jambes</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_submit_change_fp:label">
+            <value>Merci de soumettre ce formulaire et ensuite de remplir le formulaire de Grossesse et planification familiale</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_submit_forgotten:label">
+            <value>Merci de soumettre ce formulaire et ensuite remplir le formulaire Grossesse et Planification Familiale. Vérifiez si la patiente est enceinte puisqu'elle n'a pas pris ses pilules</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_summary:label">
+            <value>Détails du Patient &lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_time_period_less_than_3:label">
+            <value>**Ces effets ont persisté plus de 3 mois. Référer le patient à l'établissement de santé**</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_time_period_more_than_3:label">
+            <value>**Ces effets ont persisté moins de 3 mois. Conseiller la femme et vérifier si les effets persistent plus de 3 mois**</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_vertigo:label">
+            <value>Vertige</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/r_weight:label">
+            <value>Prise ou perte de poids</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/s_have_you_refer_woman/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/s_have_you_refer_woman/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/s_have_you_refer_woman:label">
+            <value>Avez-vous référé le patient?</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary/s_sum_submission:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Soyez sûr que vous avez soumis le formulaire pour compléter cette action&lt;/h4&gt;</value>
+          </text>
+          <text id="/fp_follow_up_renewal/s_summary:label">
+            <value>Sommaire</value>
+          </text>
+          <text id="/fp_follow_up_renewal/visited_contact_uuid:label">
+            <value>Identifiant de la famille</value>
+          </text>
+          <text id="static_instance-c_month_since_fp-0">
+            <value>Plus de 3 mois</value>
+          </text>
+          <text id="static_instance-c_month_since_fp-1">
+            <value>Moins de 3 mois</value>
+          </text>
+          <text id="static_instance-missing_pills-0">
+            <value>Mineure (1 à 2 pilules)</value>
+          </text>
+          <text id="static_instance-missing_pills-1">
+            <value>Majeur (plus de 2 pilules)</value>
+          </text>
+          <text id="static_instance-pregnancy_result-0">
+            <value>positif</value>
+          </text>
+          <text id="static_instance-pregnancy_result-1">
+            <value>negatif</value>
+          </text>
+          <text id="static_instance-why_not_renew_method-0">
+            <value>Le patient voulait changer de méthode</value>
+          </text>
+          <text id="static_instance-why_not_renew_method-1">
+            <value>Le patient a oublié de prendre la pilule</value>
+          </text>
+          <text id="static_instance-why_not_renew_method-2">
+            <value>Autre</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>Non</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <fp_follow_up_renewal delimiter="#" id="fp_follow_up_renewal" prefix="J1!fp_follow_up_renewal!" version="2018-12-11">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_follow_up_type/>
+            <t_follow_up_count/>
+            <t_fp_method/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent/>
+            </contact>
+          </inputs>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_age_display_fr/>
+          <patient_id/>
+          <patient_name/>
+          <patient_sex/>
+          <patient_sex_en/>
+          <patient_sex_fr/>
+          <visited_contact_uuid/>
+          <follow_up_count/>
+          <fp_method/>
+          <referral/>
+          <side_effect/>
+          <stop_fp/>
+          <when_danger_signs/>
+          <checklist1>
+            <s_renew_method/>
+            <s_why_not_renew_method/>
+            <s_other_why_renew_method/>
+            <s_when_renew_method/>
+            <when_renew_method/>
+            <when_oral_renew/>
+            <when_injectible_renew/>
+            <when_renew_method_date/>
+          </checklist1>
+          <s_side_effects>
+            <take_pill_correct/>
+            <s_missing_pills/>
+            <s_advice_pills/>
+            <s_counsel_pills_correctly/>
+            <s_pregnancy_result/>
+            <s_refer_preg_followup/>
+            <s_counsel_pills_correctly_2/>
+            <s_woman_new_packet/>
+            <fp_side_effects_note/>
+            <s_weight/>
+            <s_lower_libido/>
+            <s_nausea/>
+            <s_headaches/>
+            <s_breast_pain/>
+            <s_abdominal_pain/>
+            <s_vertigo/>
+            <s_light_bleeding/>
+            <s_lilttle_bleeding/>
+            <s_amenorrhea/>
+            <s_dizziness/>
+            <s_pressure/>
+            <red_side_effects_1/>
+            <s_effect_duration/>
+          </s_side_effects>
+          <referral_side_effects>
+            <s_chest_pain/>
+            <s_severe_headaches/>
+            <s_strong_leg_pain/>
+            <s_abdominal_bloating/>
+            <s_abundant_bleeding/>
+            <ref_side_effects/>
+            <s_refer_serious_side_effects/>
+          </referral_side_effects>
+          <checklist2>
+            <s_frequent_severe_headache/>
+            <s_have_jaundice/>
+            <s_have_chest_pains/>
+            <s_have_breast_lesions/>
+            <s_do_smoke_over_35/>
+            <s_menstruation_late/>
+            <s_have_painful_legs_swollen/>
+            <s_have_high_blood_pressure/>
+            <s_on_modern_treatment_tuberculose/>
+            <s_have_diabete/>
+            <s_refer_for_health_state/>
+            <to_change/>
+          </checklist2>
+          <s_summary>
+            <s_sum_submission/>
+            <r_summary/>
+            <r_patient_info/>
+            <r_referral/>
+            <r_time_period_more_than_3/>
+            <r_time_period_less_than_3/>
+            <r_weight/>
+            <r_lower_libido/>
+            <r_nausea/>
+            <r_headaches/>
+            <r_breast_pain/>
+            <r_abdominal_pain/>
+            <r_vertigo/>
+            <r_light_bleeding/>
+            <r_lilttle_bleeding/>
+            <r_amenorrhea/>
+            <r_dizziness/>
+            <r_pressure/>
+            <r_chest_pain/>
+            <r_severe_headaches/>
+            <r_strong_leg_pain/>
+            <r_abdominal_bloating/>
+            <r_abundant_bleeding/>
+            <r_frequent_severe_headache/>
+            <r_have_jaundice/>
+            <r_have_chest_pains/>
+            <r_have_breast_lesions/>
+            <r_do_smoke_over_35/>
+            <r_menstruation_late/>
+            <r_have_painful_legr_swollen/>
+            <r_have_high_blood_pressure/>
+            <r_on_modern_treatment_tuberculose/>
+            <r_have_diabete/>
+            <r_special_instructions/>
+            <r_educate_take_pill/>
+            <s_have_you_refer_woman/>
+            <r_special_instructions_2/>
+            <r_follow_up_patient/>
+            <r_follow_up_new_packet/>
+            <r_submit_forgotten/>
+            <r_submit_change_fp/>
+          </s_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </fp_follow_up_renewal>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="missing_pills">
+        <root>
+          <item>
+            <itextId>static_instance-missing_pills-0</itextId>
+            <name>minor</name>
+          </item>
+          <item>
+            <itextId>static_instance-missing_pills-1</itextId>
+            <name>major</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="why_not_renew_method">
+        <root>
+          <item>
+            <itextId>static_instance-why_not_renew_method-0</itextId>
+            <fp_method_1>oral_combination_pill</fp_method_1>
+            <name>change_fp</name>
+            <fp_method_2>injectible</fp_method_2>
+          </item>
+          <item>
+            <itextId>static_instance-why_not_renew_method-1</itextId>
+            <fp_method_1>oral_combination_pill</fp_method_1>
+            <name>forgotten_take_pills</name>
+            <fp_method_2>empty</fp_method_2>
+          </item>
+          <item>
+            <itextId>static_instance-why_not_renew_method-2</itextId>
+            <fp_method_1>oral_combination_pill</fp_method_1>
+            <name>other</name>
+            <fp_method_2>injectible</fp_method_2>
+          </item>
+        </root>
+      </instance>
+      <instance id="pregnancy_result">
+        <root>
+          <item>
+            <itextId>static_instance-pregnancy_result-0</itextId>
+            <name>positive</name>
+          </item>
+          <item>
+            <itextId>static_instance-pregnancy_result-1</itextId>
+            <name>negative</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="c_month_since_fp">
+        <root>
+          <item>
+            <itextId>static_instance-c_month_since_fp-0</itextId>
+            <name>more_than_3_months</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_month_since_fp-1</itextId>
+            <name>less_than_3_months</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>static_instance-yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/fp_follow_up_renewal/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/fp_follow_up_renewal/inputs/source" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/inputs/source_id" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/inputs/t_follow_up_type" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/inputs/t_follow_up_count" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/inputs/t_fp_method" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/fp_follow_up_renewal/inputs/contact/name" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/inputs/contact/sex" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/inputs/contact/parent" type="string"/>
+      <bind calculate="floor( difference-in-months(  /fp_follow_up_renewal/inputs/contact/date_of_birth , today() ) div 12 )" nodeset="/fp_follow_up_renewal/patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months(  /fp_follow_up_renewal/inputs/contact/date_of_birth , today() )" nodeset="/fp_follow_up_renewal/patient_age_in_months" type="string"/>
+      <bind calculate="floor( decimal-date-time(today()) - decimal-date-time( /fp_follow_up_renewal/inputs/contact/date_of_birth ) )" nodeset="/fp_follow_up_renewal/patient_age_in_days" type="string"/>
+      <bind calculate="concat(concat( /fp_follow_up_renewal/patient_age_in_years , if( /fp_follow_up_renewal/patient_age_in_years =1,' year and ',' years and ')),concat( /fp_follow_up_renewal/patient_age_in_months  mod 12, if(( /fp_follow_up_renewal/patient_age_in_months  mod 12)=1,' month old',' months old')))" nodeset="/fp_follow_up_renewal/patient_age_display" type="string"/>
+      <bind calculate="concat(concat( /fp_follow_up_renewal/patient_age_in_years , if( /fp_follow_up_renewal/patient_age_in_years =1,' an et ',' ans et ')),concat( /fp_follow_up_renewal/patient_age_in_months  mod 12, if(( /fp_follow_up_renewal/patient_age_in_months  mod 12)=1,' mois',' mois')))" nodeset="/fp_follow_up_renewal/patient_age_display_fr" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/fp_follow_up_renewal/patient_id" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/fp_follow_up_renewal/patient_name" type="string"/>
+      <bind calculate="../inputs/contact/sex" nodeset="/fp_follow_up_renewal/patient_sex" type="string"/>
+      <bind calculate="if( /fp_follow_up_renewal/patient_sex  = 'male' or  /fp_follow_up_renewal/patient_sex  = 'homme' or  /fp_follow_up_renewal/patient_sex  = 'Homme', 'Male', if( /fp_follow_up_renewal/patient_sex  = 'female' or  /fp_follow_up_renewal/patient_sex  = 'femme' or  /fp_follow_up_renewal/patient_sex  = 'Femme', 'Female', ''))" nodeset="/fp_follow_up_renewal/patient_sex_en" type="string"/>
+      <bind calculate="if( /fp_follow_up_renewal/patient_sex  = 'male' or  /fp_follow_up_renewal/patient_sex  = 'homme' or  /fp_follow_up_renewal/patient_sex  = 'Homme', 'Homme', if( /fp_follow_up_renewal/patient_sex  = 'female' or  /fp_follow_up_renewal/patient_sex  = 'femme' or  /fp_follow_up_renewal/patient_sex  = 'Femme', 'Femme', ''))" nodeset="/fp_follow_up_renewal/patient_sex_fr" type="string"/>
+      <bind calculate="../inputs/contact/parent" nodeset="/fp_follow_up_renewal/visited_contact_uuid" required="true()" type="string"/>
+      <bind calculate="../inputs/t_follow_up_count" nodeset="/fp_follow_up_renewal/follow_up_count" type="string"/>
+      <bind calculate="../inputs/t_fp_method" nodeset="/fp_follow_up_renewal/fp_method" type="string"/>
+      <bind calculate="red_side_effects_1 = 'yes' or  /fp_follow_up_renewal/referral_side_effects/ref_side_effects  = 'true' or  /fp_follow_up_renewal/checklist2/s_refer_for_health_state  = 'true'" nodeset="/fp_follow_up_renewal/referral" type="string"/>
+      <bind calculate="if(((( /fp_follow_up_renewal/s_side_effects/s_weight  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_lower_libido  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_nausea  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_headaches  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_breast_pain  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_abdominal_pain  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_vertigo  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_light_bleeding  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_amenorrhea  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_dizziness  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_pressure  = 'yes') and  /fp_follow_up_renewal/s_side_effects/s_effect_duration  = 'more_than_3_months') or ( /fp_follow_up_renewal/referral_side_effects/s_chest_pain  = 'yes' or  /fp_follow_up_renewal/referral_side_effects/s_severe_headaches  = 'yes' or  /fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain  = 'yes' or  /fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating  = 'yes' or  /fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding  = 'yes')), 'true', 'false')" nodeset="/fp_follow_up_renewal/side_effect" type="string"/>
+      <bind calculate="if( /fp_follow_up_renewal/s_side_effects/red_side_effects_1  = 'yes' or  /fp_follow_up_renewal/referral_side_effects/ref_side_effects  = 'true' or  /fp_follow_up_renewal/checklist2/s_refer_for_health_state  = 'true', 'yes', 'no')" nodeset="/fp_follow_up_renewal/stop_fp" type="string"/>
+      <bind calculate="format-date-time(date-time(decimal-date-time(today())+7),&quot;%d/%m/%y&quot;)" nodeset="/fp_follow_up_renewal/when_danger_signs" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist1/s_renew_method:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/checklist1/s_renew_method" required="true()" type="select1"/>
+      <bind nodeset="/fp_follow_up_renewal/checklist1/s_why_not_renew_method" relevant=" /fp_follow_up_renewal/checklist1/s_renew_method  = 'no'" required="true()" type="select1"/>
+      <bind nodeset="/fp_follow_up_renewal/checklist1/s_other_why_renew_method" relevant=" /fp_follow_up_renewal/checklist1/s_why_not_renew_method  = 'other'" required="true()" type="string"/>
+      <bind constraint=". &lt;= today()" nodeset="/fp_follow_up_renewal/checklist1/s_when_renew_method" relevant=" /fp_follow_up_renewal/checklist1/s_renew_method  = 'yes'" required="true()" type="date"/>
+      <bind calculate="format-date-time(date-time(decimal-date-time( /fp_follow_up_renewal/checklist1/s_when_renew_method )),&quot;%d/%m/%y&quot;)" nodeset="/fp_follow_up_renewal/checklist1/when_renew_method" type="string"/>
+      <bind calculate="format-date-time(date-time(decimal-date-time( /fp_follow_up_renewal/checklist1/s_when_renew_method )+28),&quot;%d/%m/%y&quot;)" nodeset="/fp_follow_up_renewal/checklist1/when_oral_renew" type="string"/>
+      <bind calculate="format-date-time(date-time(decimal-date-time( /fp_follow_up_renewal/checklist1/s_when_renew_method )+90),&quot;%d/%m/%y&quot;)" nodeset="/fp_follow_up_renewal/checklist1/when_injectible_renew" type="string"/>
+      <bind calculate="if( /fp_follow_up_renewal/fp_method  = 'oral_combination_pill',  /fp_follow_up_renewal/checklist1/when_oral_renew ,  /fp_follow_up_renewal/checklist1/when_injectible_renew )" nodeset="/fp_follow_up_renewal/checklist1/when_renew_method_date" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/take_pill_correct:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/s_side_effects/take_pill_correct" relevant=" /fp_follow_up_renewal/fp_method  = 'oral_combination_pill'" required="true()" type="select1"/>
+      <bind nodeset="/fp_follow_up_renewal/s_side_effects/s_missing_pills" relevant=" /fp_follow_up_renewal/s_side_effects/take_pill_correct  = 'no'" type="select1"/>
+      <bind nodeset="/fp_follow_up_renewal/s_side_effects/s_advice_pills" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_missing_pills  = 'minor'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_side_effects/s_counsel_pills_correctly" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_missing_pills  = 'major'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_side_effects/s_pregnancy_result" relevant=" /fp_follow_up_renewal/s_side_effects/s_missing_pills  = 'major'" required="true()" type="select1"/>
+      <bind nodeset="/fp_follow_up_renewal/s_side_effects/s_refer_preg_followup" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_pregnancy_result  = 'positive'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_side_effects/s_counsel_pills_correctly_2" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_pregnancy_result  = 'negative' and  /fp_follow_up_renewal/s_side_effects/s_missing_pills  = 'major' and  /fp_follow_up_renewal/checklist1/s_renew_method  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_side_effects/s_woman_new_packet" relevant=" /fp_follow_up_renewal/s_side_effects/s_pregnancy_result  = 'negative' and  /fp_follow_up_renewal/s_side_effects/s_missing_pills  = 'major' and  /fp_follow_up_renewal/checklist1/s_renew_method  = 'yes'" type="select1"/>
+      <bind nodeset="/fp_follow_up_renewal/s_side_effects/fp_side_effects_note" readonly="true()" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_weight:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/s_side_effects/s_weight" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_lower_libido:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/s_side_effects/s_lower_libido" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_nausea:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/s_side_effects/s_nausea" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_headaches:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/s_side_effects/s_headaches" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_breast_pain:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/s_side_effects/s_breast_pain" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_abdominal_pain:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/s_side_effects/s_abdominal_pain" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_vertigo:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/s_side_effects/s_vertigo" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_light_bleeding:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/s_side_effects/s_light_bleeding" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_amenorrhea:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/s_side_effects/s_amenorrhea" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_dizziness:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/s_side_effects/s_dizziness" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_pressure:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/s_side_effects/s_pressure" required="true()" type="select1"/>
+      <bind calculate="if( /fp_follow_up_renewal/s_side_effects/s_weight  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_lower_libido  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_nausea  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_headaches  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_breast_pain  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_abdominal_pain  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_vertigo  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_light_bleeding  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_amenorrhea  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_dizziness  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_pressure  = 'yes', 'yes', 'no')" nodeset="/fp_follow_up_renewal/s_side_effects/red_side_effects_1" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_effect_duration:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/s_side_effects/s_effect_duration" relevant=" /fp_follow_up_renewal/s_side_effects/s_weight  = 'yes' or
+ /fp_follow_up_renewal/s_side_effects/s_lower_libido  = 'yes' or
+ /fp_follow_up_renewal/s_side_effects/s_nausea  = 'yes' or
+ /fp_follow_up_renewal/s_side_effects/s_headaches  = 'yes' or
+ /fp_follow_up_renewal/s_side_effects/s_breast_pain  = 'yes' or
+ /fp_follow_up_renewal/s_side_effects/s_abdominal_pain  = 'yes' or
+ /fp_follow_up_renewal/s_side_effects/s_vertigo  = 'yes' or
+ /fp_follow_up_renewal/s_side_effects/s_light_bleeding  = 'yes' or
+ /fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding  = 'yes' or
+ /fp_follow_up_renewal/s_side_effects/s_amenorrhea  = 'yes' or
+ /fp_follow_up_renewal/s_side_effects/s_dizziness  = 'yes' or
+ /fp_follow_up_renewal/s_side_effects/s_pressure  = 'yes'" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_chest_pain:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/referral_side_effects/s_chest_pain" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_severe_headaches:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/referral_side_effects/s_severe_headaches" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding" required="true()" type="select1"/>
+      <bind calculate="if( /fp_follow_up_renewal/referral_side_effects/s_chest_pain  = 'yes' or  /fp_follow_up_renewal/referral_side_effects/s_severe_headaches  = 'yes' or  /fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain  = 'yes' or  /fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating  = 'yes' or  /fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_effect_duration  = 'more_than_3_months', 'true', 'false')" nodeset="/fp_follow_up_renewal/referral_side_effects/ref_side_effects" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects" relevant=" /fp_follow_up_renewal/referral_side_effects/ref_side_effects  = 'true'" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_frequent_severe_headache:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/checklist2/s_frequent_severe_headache" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_jaundice:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/checklist2/s_have_jaundice" relevant=" /fp_follow_up_renewal/checklist2/s_frequent_severe_headache  = 'no'" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_chest_pains:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/checklist2/s_have_chest_pains" relevant=" /fp_follow_up_renewal/checklist2/s_have_jaundice  = 'no'" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_breast_lesions:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/checklist2/s_have_breast_lesions" relevant=" /fp_follow_up_renewal/checklist2/s_have_chest_pains  = 'no'" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_do_smoke_over_35:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/checklist2/s_do_smoke_over_35" relevant=" /fp_follow_up_renewal/checklist2/s_have_breast_lesions  = 'no'" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_menstruation_late:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/checklist2/s_menstruation_late" relevant=" /fp_follow_up_renewal/checklist2/s_do_smoke_over_35  = 'no'" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen" relevant=" /fp_follow_up_renewal/checklist2/s_menstruation_late  = 'no'" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure" relevant=" /fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen  = 'no'" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose" relevant=" /fp_follow_up_renewal/checklist2/s_have_high_blood_pressure  = 'no'" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_diabete:jr:requiredMsg')" nodeset="/fp_follow_up_renewal/checklist2/s_have_diabete" relevant=" /fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose  = 'no'" required="true()" type="select1"/>
+      <bind calculate="if( /fp_follow_up_renewal/checklist2/s_frequent_severe_headache  = 'yes' or  /fp_follow_up_renewal/checklist2/s_have_jaundice  = 'yes' or  /fp_follow_up_renewal/checklist2/s_have_chest_pains  = 'yes' or  /fp_follow_up_renewal/checklist2/s_have_breast_lesions  = 'yes' or  /fp_follow_up_renewal/checklist2/s_do_smoke_over_35  = 'yes' or  /fp_follow_up_renewal/checklist2/s_menstruation_late  = 'yes' or  /fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen  = 'yes' or  /fp_follow_up_renewal/checklist2/s_have_high_blood_pressure  = 'yes' or  /fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose  = 'yes' or  /fp_follow_up_renewal/checklist2/s_have_diabete  = 'yes', 'true', 'false')" nodeset="/fp_follow_up_renewal/checklist2/s_refer_for_health_state" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/checklist2/to_change" readonly="true()" relevant=" /fp_follow_up_renewal/checklist1/s_why_not_renew_method  = 'change_fp'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/s_sum_submission" readonly="true()" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_referral" readonly="true()" relevant=" /fp_follow_up_renewal/referral  = 'true'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_time_period_more_than_3" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_effect_duration  = 'less_than_3_months'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_time_period_less_than_3" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_effect_duration  = 'more_than_3_months'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_weight" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_weight  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_lower_libido" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_lower_libido  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_nausea" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_nausea  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_headaches" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_headaches  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_breast_pain" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_breast_pain  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_abdominal_pain" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_abdominal_pain  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_vertigo" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_vertigo  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_light_bleeding" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_light_bleeding  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_lilttle_bleeding" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_amenorrhea" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_amenorrhea  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_dizziness" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_dizziness  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_pressure" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_pressure  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_chest_pain" readonly="true()" relevant=" /fp_follow_up_renewal/referral_side_effects/s_chest_pain  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_severe_headaches" readonly="true()" relevant=" /fp_follow_up_renewal/referral_side_effects/s_severe_headaches  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_strong_leg_pain" readonly="true()" relevant=" /fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_abdominal_bloating" readonly="true()" relevant=" /fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_abundant_bleeding" readonly="true()" relevant=" /fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_frequent_severe_headache" readonly="true()" relevant=" /fp_follow_up_renewal/checklist2/s_frequent_severe_headache  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_have_jaundice" readonly="true()" relevant=" /fp_follow_up_renewal/checklist2/s_have_jaundice  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_have_chest_pains" readonly="true()" relevant=" /fp_follow_up_renewal/checklist2/s_have_chest_pains  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_have_breast_lesions" readonly="true()" relevant=" /fp_follow_up_renewal/checklist2/s_have_breast_lesions  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_do_smoke_over_35" readonly="true()" relevant=" /fp_follow_up_renewal/checklist2/s_do_smoke_over_35  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_menstruation_late" readonly="true()" relevant=" /fp_follow_up_renewal/checklist2/s_menstruation_late  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_have_painful_legr_swollen" readonly="true()" relevant=" /fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_have_high_blood_pressure" readonly="true()" relevant=" /fp_follow_up_renewal/checklist2/s_have_high_blood_pressure  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_on_modern_treatment_tuberculose" readonly="true()" relevant=" /fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_have_diabete" readonly="true()" relevant=" /fp_follow_up_renewal/checklist2/s_have_diabete  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_special_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_educate_take_pill" readonly="true()" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/s_have_you_refer_woman" relevant=" /fp_follow_up_renewal/side_effect " required="true()" type="select1"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_special_instructions_2" readonly="true()" relevant=" /fp_follow_up_renewal/stop_fp != 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_follow_up_patient" readonly="true()" relevant=" /fp_follow_up_renewal/checklist1/s_renew_method  = 'yes' and  /fp_follow_up_renewal/stop_fp != 'yes' and  /fp_follow_up_renewal/s_side_effects/s_woman_new_packet  != 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_follow_up_new_packet" readonly="true()" relevant=" /fp_follow_up_renewal/s_side_effects/s_woman_new_packet  = 'yes'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_submit_forgotten" readonly="true()" relevant=" /fp_follow_up_renewal/checklist1/s_why_not_renew_method  = 'forgotten_take_pills'" type="string"/>
+      <bind nodeset="/fp_follow_up_renewal/s_summary/r_submit_change_fp" readonly="true()" relevant=" /fp_follow_up_renewal/checklist1/s_why_not_renew_method  = 'change_fp'" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/fp_follow_up_renewal/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/fp_follow_up_renewal/inputs">
+      <label ref="jr:itext('/fp_follow_up_renewal/inputs:label')"/>
+      <input appearance="hidden" ref="/fp_follow_up_renewal/inputs/source">
+        <label ref="jr:itext('/fp_follow_up_renewal/inputs/source:label')"/>
+      </input>
+      <input appearance="hidden" ref="/fp_follow_up_renewal/inputs/source_id">
+        <label ref="jr:itext('/fp_follow_up_renewal/inputs/source_id:label')"/>
+      </input>
+      <input appearance="hidden" ref="/fp_follow_up_renewal/inputs/t_follow_up_type">
+        <label ref="jr:itext('/fp_follow_up_renewal/inputs/t_follow_up_type:label')"/>
+      </input>
+      <input appearance="hidden" ref="/fp_follow_up_renewal/inputs/t_follow_up_count">
+        <label ref="jr:itext('/fp_follow_up_renewal/inputs/t_follow_up_count:label')"/>
+      </input>
+      <input appearance="hidden" ref="/fp_follow_up_renewal/inputs/t_fp_method">
+        <label ref="jr:itext('/fp_follow_up_renewal/inputs/t_fp_method:label')"/>
+      </input>
+      <group ref="/fp_follow_up_renewal/inputs/contact">
+        <input appearance="db-object" ref="/fp_follow_up_renewal/inputs/contact/_id">
+          <label ref="jr:itext('/fp_follow_up_renewal/inputs/contact/_id:label')"/>
+          <hint ref="jr:itext('/fp_follow_up_renewal/inputs/contact/_id:hint')"/>
+        </input>
+        <input appearance="hidden" ref="/fp_follow_up_renewal/inputs/contact/name">
+          <label ref="jr:itext('/fp_follow_up_renewal/inputs/contact/name:label')"/>
+        </input>
+        <input appearance="hidden" ref="/fp_follow_up_renewal/inputs/contact/date_of_birth">
+          <label ref="jr:itext('/fp_follow_up_renewal/inputs/contact/date_of_birth:label')"/>
+        </input>
+        <input appearance="hidden" ref="/fp_follow_up_renewal/inputs/contact/sex">
+          <label ref="jr:itext('/fp_follow_up_renewal/inputs/contact/sex:label')"/>
+        </input>
+        <input appearance="hidden" ref="/fp_follow_up_renewal/inputs/contact/parent">
+          <label ref="jr:itext('/fp_follow_up_renewal/inputs/contact/parent:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/fp_follow_up_renewal/checklist1">
+      <label ref="jr:itext('/fp_follow_up_renewal/checklist1:label')"/>
+      <select1 ref="/fp_follow_up_renewal/checklist1/s_renew_method">
+        <label ref="jr:itext('/fp_follow_up_renewal/checklist1/s_renew_method:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist1/s_renew_method/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist1/s_renew_method/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/fp_follow_up_renewal/checklist1/s_why_not_renew_method">
+        <label ref="jr:itext('/fp_follow_up_renewal/checklist1/s_why_not_renew_method:label')"/>
+        <itemset nodeset="instance('why_not_renew_method')/root/item[fp_method_1 =  /fp_follow_up_renewal/fp_method  or fp_method_2 =  /fp_follow_up_renewal/fp_method ]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/fp_follow_up_renewal/checklist1/s_other_why_renew_method">
+        <label ref="jr:itext('/fp_follow_up_renewal/checklist1/s_other_why_renew_method:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/checklist1/s_when_renew_method">
+        <label ref="jr:itext('/fp_follow_up_renewal/checklist1/s_when_renew_method:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/fp_follow_up_renewal/s_side_effects">
+      <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects:label')"/>
+      <select1 ref="/fp_follow_up_renewal/s_side_effects/take_pill_correct">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/take_pill_correct:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/take_pill_correct/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/take_pill_correct/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/fp_follow_up_renewal/s_side_effects/s_missing_pills">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_missing_pills:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_missing_pills/minor:label')"/>
+          <value>minor</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_missing_pills/major:label')"/>
+          <value>major</value>
+        </item>
+      </select1>
+      <input ref="/fp_follow_up_renewal/s_side_effects/s_advice_pills">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_advice_pills:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_side_effects/s_counsel_pills_correctly">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_counsel_pills_correctly:label')"/>
+      </input>
+      <select1 ref="/fp_follow_up_renewal/s_side_effects/s_pregnancy_result">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_pregnancy_result:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_pregnancy_result/positive:label')"/>
+          <value>positive</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_pregnancy_result/negative:label')"/>
+          <value>negative</value>
+        </item>
+      </select1>
+      <input ref="/fp_follow_up_renewal/s_side_effects/s_refer_preg_followup">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_refer_preg_followup:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_side_effects/s_counsel_pills_correctly_2">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_counsel_pills_correctly_2:label')"/>
+      </input>
+      <select1 ref="/fp_follow_up_renewal/s_side_effects/s_woman_new_packet">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_woman_new_packet:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_woman_new_packet/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_woman_new_packet/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/fp_follow_up_renewal/s_side_effects/fp_side_effects_note">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/fp_side_effects_note:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/s_side_effects/s_weight">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_weight:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_weight/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_weight/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/s_side_effects/s_lower_libido">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_lower_libido:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_lower_libido/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_lower_libido/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/s_side_effects/s_nausea">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_nausea:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_nausea/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_nausea/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/s_side_effects/s_headaches">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_headaches:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_headaches/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_headaches/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/s_side_effects/s_breast_pain">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_breast_pain:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_breast_pain/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_breast_pain/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/s_side_effects/s_abdominal_pain">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_abdominal_pain:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_abdominal_pain/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_abdominal_pain/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/s_side_effects/s_vertigo">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_vertigo:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_vertigo/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_vertigo/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/s_side_effects/s_light_bleeding">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_light_bleeding:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_light_bleeding/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_light_bleeding/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/s_side_effects/s_amenorrhea">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_amenorrhea:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_amenorrhea/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_amenorrhea/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/s_side_effects/s_dizziness">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_dizziness:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_dizziness/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_dizziness/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/s_side_effects/s_pressure">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_pressure:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_pressure/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_pressure/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/s_side_effects/s_effect_duration">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_effect_duration:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_effect_duration/more_than_3_months:label')"/>
+          <value>more_than_3_months</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_side_effects/s_effect_duration/less_than_3_months:label')"/>
+          <value>less_than_3_months</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/fp_follow_up_renewal/referral_side_effects">
+      <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects:label')"/>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/referral_side_effects/s_chest_pain">
+        <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_chest_pain:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_chest_pain/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_chest_pain/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/referral_side_effects/s_severe_headaches">
+        <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_severe_headaches:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_severe_headaches/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_severe_headaches/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain">
+        <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating">
+        <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding">
+        <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal-compact" ref="/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects">
+        <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/fp_follow_up_renewal/checklist2">
+      <label ref="jr:itext('/fp_follow_up_renewal/checklist2:label')"/>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/checklist2/s_frequent_severe_headache">
+        <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_frequent_severe_headache:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_frequent_severe_headache/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_frequent_severe_headache/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/checklist2/s_have_jaundice">
+        <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_jaundice:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_jaundice/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_jaundice/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/checklist2/s_have_chest_pains">
+        <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_chest_pains:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_chest_pains/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_chest_pains/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/checklist2/s_have_breast_lesions">
+        <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_breast_lesions:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_breast_lesions/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_breast_lesions/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/checklist2/s_do_smoke_over_35">
+        <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_do_smoke_over_35:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_do_smoke_over_35/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_do_smoke_over_35/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/checklist2/s_menstruation_late">
+        <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_menstruation_late:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_menstruation_late/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_menstruation_late/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen">
+        <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure">
+        <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose">
+        <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/fp_follow_up_renewal/checklist2/s_have_diabete">
+        <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_diabete:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_diabete/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/checklist2/s_have_diabete/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/fp_follow_up_renewal/checklist2/to_change">
+        <label ref="jr:itext('/fp_follow_up_renewal/checklist2/to_change:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/fp_follow_up_renewal/s_summary">
+      <label ref="jr:itext('/fp_follow_up_renewal/s_summary:label')"/>
+      <input ref="/fp_follow_up_renewal/s_summary/s_sum_submission">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/s_sum_submission:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/fp_follow_up_renewal/s_summary/r_summary">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_summary:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_summary/r_patient_info">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_patient_info:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/fp_follow_up_renewal/s_summary/r_referral">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_referral:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_time_period_more_than_3">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_time_period_more_than_3:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_time_period_less_than_3">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_time_period_less_than_3:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_weight">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_weight:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_lower_libido">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_lower_libido:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_nausea">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_nausea:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_headaches">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_headaches:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_breast_pain">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_breast_pain:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_abdominal_pain">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_abdominal_pain:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_vertigo">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_vertigo:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_light_bleeding">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_light_bleeding:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_lilttle_bleeding">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_lilttle_bleeding:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_amenorrhea">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_amenorrhea:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_dizziness">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_dizziness:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_pressure">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_pressure:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_chest_pain">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_chest_pain:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_severe_headaches">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_severe_headaches:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_strong_leg_pain">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_strong_leg_pain:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_abdominal_bloating">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_abdominal_bloating:label')"/>
+      </input>
+      <input appearance="horizontal-compact" ref="/fp_follow_up_renewal/s_summary/r_abundant_bleeding">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_abundant_bleeding:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_summary/r_frequent_severe_headache">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_frequent_severe_headache:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_summary/r_have_jaundice">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_have_jaundice:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_summary/r_have_chest_pains">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_have_chest_pains:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_summary/r_have_breast_lesions">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_have_breast_lesions:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_summary/r_do_smoke_over_35">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_do_smoke_over_35:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_summary/r_menstruation_late">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_menstruation_late:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_summary/r_have_painful_legr_swollen">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_have_painful_legr_swollen:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_summary/r_have_high_blood_pressure">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_have_high_blood_pressure:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_summary/r_on_modern_treatment_tuberculose">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_on_modern_treatment_tuberculose:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_summary/r_have_diabete">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_have_diabete:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/fp_follow_up_renewal/s_summary/r_special_instructions">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_special_instructions:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_summary/r_educate_take_pill">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_educate_take_pill:label')"/>
+      </input>
+      <select1 ref="/fp_follow_up_renewal/s_summary/s_have_you_refer_woman">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/s_have_you_refer_woman:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_summary/s_have_you_refer_woman/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up_renewal/s_summary/s_have_you_refer_woman/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input appearance="h1 blue" ref="/fp_follow_up_renewal/s_summary/r_special_instructions_2">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_special_instructions_2:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_summary/r_follow_up_patient">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_follow_up_patient:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_summary/r_follow_up_new_packet">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_follow_up_new_packet:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_summary/r_submit_forgotten">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_submit_forgotten:label')"/>
+      </input>
+      <input ref="/fp_follow_up_renewal/s_summary/r_submit_change_fp">
+        <label ref="jr:itext('/fp_follow_up_renewal/s_summary/r_submit_change_fp:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

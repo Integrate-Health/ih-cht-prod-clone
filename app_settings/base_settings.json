@@ -57,6 +57,13 @@
     "can_export_contacts": [
       "program_manager"
     ],
+    "can_export_devices_details": [
+      "program_manager"
+    ],
+    "can_have_multiple_places": [
+      "program_manager",
+      "chw_supervisor"
+    ],
     "can_export_feedback": [
       "program_manager"
     ],
@@ -279,16 +286,8 @@
       "supervisors_manager",
       "chw"
     ],
-    "can_view_old_action_bar": [
-      "chw_supervisor",
-      "supervisors_manager",
-      "chw"
-    ],
-    "can_view_old_filter_and_search": [
-      "chw_supervisor",
-      "supervisors_manager",
-      "chw"
-    ]
+    "can_view_old_action_bar": [],
+    "can_view_old_filter_and_search": []
   },
   
   "setup_complete": true,
@@ -744,8 +743,8 @@
     "update_clinics": {
       "load": "./transitions/update_clinics.js"
     },
-    "update_notifications": {
-      "load": "./transitions/update_notifications.js"
+    "muting": {
+      "load": "./transitions/muting.js"
     },
     "update_scheduled_reports": {
       "load": "./transitions/update_scheduled_reports.js"
@@ -753,7 +752,7 @@
     "update_sent_forms": {
       "load": "./transitions/update_sent_forms.js"
     },
-    "generate_patient_id_on_people": true,
+    "generate_shortcode_on_contacts": true,
     "death_reporting": true
   },
   "death_reporting": {

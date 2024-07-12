@@ -1,0 +1,42 @@
+
+  <model>
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="contact:clinic:edit" prefix="J1!contact:clinic:edit!" delimiter="#" version="2018-01-25">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <type/>
+              <name/>
+            </user>
+            <contact>
+              <_id/>
+              <role/>
+              <username/>
+              <name/>
+              <external_id/>
+            </contact>
+          </inputs>
+          <clinic>
+            <parent/>
+            <external_id/>
+            <name/>
+            <notes/>
+            <contact/>
+            <geolocation/>
+          </clinic>
+          <meta>
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+  </model>
+

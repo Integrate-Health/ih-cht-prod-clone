@@ -215,6 +215,7 @@ function getPriority(priorityData) {
 // }
 
 // Newborn Followup
+
 function getNewbornConfig(c, r) {
   var content = [];
   var nextVisitDate;
@@ -736,11 +737,13 @@ function getPrenatalConfig(c, r) {
   var t_follow_up_type;
   var priority_label = `treatment.prenatal`;
   var eventIndex;
-  var close_out;
+  var close_out = false;
 
   if (isPregnant(c.reports) && isReportValid(r)) {
     if (isPregnancyFollowUpForm(r) && notNull(getField(r, `reschedule_task`))) {
-      close_out = getField(r, `close_out`);
+
+      close_out = getField(r, `s_today_task.s_task_to_perform`) === `close_out`;
+
       const w_available = getField(r, `reschedule_task.is_woman_available`);
 
       if (w_available === `no`) {
@@ -757,7 +760,7 @@ function getPrenatalConfig(c, r) {
           eventIndex = 1;
           nextVisitDate = new Date(rescheduleDate);
         }
-      } else if (w_available === `yes` && close_out !== `true`) {
+      } else if (w_available === `yes` && close_out !== true) {
         if (notNull(getField(r, `s_vad_1`))) {
           isFound = true;
           eventIndex = 0;
@@ -867,13 +870,13 @@ function getPrenatalConfig(c, r) {
       t_follow_up_count: getFollowUpCount(r) + 1,
       t_follow_up_type: t_follow_up_type,
       t_anc_visit: t_anc_visit,
-      t_close_out: close_out,
+      t_close_out: `${close_out}`,
     });
   }
 
   return {
     nextVisitDate: finalNextVisitDate,
-    close_out: close_out,
+    close_out: `${close_out}`,
     priority_label: priority_label,
     displayIf: isFound && content.length > 0,
     content: content.length > 0 ? content[0] : {},

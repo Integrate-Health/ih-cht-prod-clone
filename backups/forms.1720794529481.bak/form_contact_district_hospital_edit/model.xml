@@ -1,0 +1,32 @@
+
+  <model>
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="contact:district_hospital:edit" prefix="J1!contact:district_hospital:edit!" delimiter="#" version="2024-07-12  10-31">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <facility_id/>
+            </user>
+          </inputs>
+          <district_hospital>
+            <district_external_id/>
+            <district_external_name/>
+            <external_id/>
+            <name/>
+            <notes/>
+            <geolocation/>
+          </district_hospital>
+          <meta>
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+  </model>
+

@@ -1,0 +1,1973 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Accouchement</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/delivery/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/delivery/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/delivery/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/delivery/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/delivery/inputs/contact/_id:label">
+            <value>What is the patient name?</value>
+          </text>
+          <text id="/delivery/inputs/contact/_id:hint">
+            <value>select a person from the list</value>
+          </text>
+          <text id="/delivery/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/delivery/inputs/contact/date_of_birth:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/delivery/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/delivery/last_preg_uuid:label">
+            <value>last pregnancy registration uuid</value>
+          </text>
+          <text id="/delivery/patient_age_in_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/delivery/patient_age_in_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/delivery/patient_age_in_days:label">
+            <value>Days old</value>
+          </text>
+          <text id="/delivery/patient_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/delivery/patient_name:label">
+            <value>Patient Name</value>
+          </text>
+          <text id="/delivery/patient_sex:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/delivery/patient_sex_en:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/delivery/patient_sex_fr:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/delivery/visited_contact_uuid:label">
+            <value>Family Id</value>
+          </text>
+          <text id="/delivery/p_note:label">
+            <value>ID: <output value=" /delivery/patient_id "/>
+Name: <output value=" /delivery/patient_name "/> - Sex: <output value=" /delivery/patient_sex_en "/>
+Date of birth: <output value=" /delivery/inputs/contact/date_of_birth "/>
+days old: <output value=" /delivery/patient_age_in_days "/>
+months old: <output value=" /delivery/patient_age_in_months "/>
+years old: <output value=" /delivery/patient_age_in_years "/>
+display age: <output value=" /delivery/patient_age_display "/></value></text>
+          <text id="/delivery/s_delivery:label">
+            <value>Delivery</value>
+          </text>
+          <text id="/delivery/s_delivery/s_delivery_date:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/s_delivery/s_delivery_date:label">
+            <value>When did the woman give birth?</value>
+          </text>
+          <text id="/delivery/s_delivery/c_delivery_dif:label">
+            <value>Days between today and delivery date</value>
+          </text>
+          <text id="/delivery/s_delivery/s_pnc_today:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/s_delivery/s_pnc_today:label">
+            <value>Does the woman want to do the first postnatal visit today ?</value>
+          </text>
+          <text id="/delivery/s_delivery/s_pnc_today/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/s_delivery/s_pnc_today/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/s_delivery/s_next_pnc:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/s_delivery/s_next_pnc:label">
+            <value>When does the woman want to do the first postnatal visit ?</value>
+          </text>
+          <text id="/delivery/s_delivery/s_delivery_location:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/s_delivery/s_delivery_location:label">
+            <value>Where did the woman give birth?</value>
+          </text>
+          <text id="/delivery/s_delivery/s_delivery_location/home:label">
+            <value>Home</value>
+          </text>
+          <text id="/delivery/s_delivery/s_delivery_location/hospital:label">
+            <value>Hospital</value>
+          </text>
+          <text id="/delivery/s_delivery/s_delivery_location/usp:label">
+            <value>USP</value>
+          </text>
+          <text id="/delivery/s_delivery/s_delivery_location/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/delivery/s_delivery/s_specify:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/s_delivery/s_specify:label">
+            <value>Specify</value>
+          </text>
+          <text id="/delivery/s_delivery/s_skilled_attendance:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/s_delivery/s_skilled_attendance:label">
+            <value>Was the delivery attended by skilled staff?</value>
+          </text>
+          <text id="/delivery/s_delivery/s_skilled_attendance/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/s_delivery/s_skilled_attendance/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/s_delivery/mother_alive:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/s_delivery/mother_alive:label">
+            <value>Is the mother still alive?</value>
+          </text>
+          <text id="/delivery/s_delivery/mother_alive/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/s_delivery/mother_alive/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/s_delivery/s_babies_delivered:jr:constraintMsg">
+            <value>Number must between 1 and 4</value>
+          </text>
+          <text id="/delivery/s_delivery/s_babies_delivered:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/s_delivery/s_babies_delivered:label">
+            <value>How many babies did the woman deliver?</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_alive:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_alive:label">
+            <value><output value=" /delivery/s_child_alive_label_en "/></value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_alive/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_alive/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_died_count:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_died_count:label">
+            <value>How many children have died</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_died_age:label">
+            <value>How many days was the child when he passed away</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_died_age/mort_ne:label">
+            <value>Stillborn</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_died_age/neonatal:label">
+            <value>Neonatal</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_died_age/infantile:label">
+            <value>Infantile</value>
+          </text>
+          <text id="/delivery/s_delivery/s_create_person:label">
+            <value>Please create every newborn on his family</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother:label">
+            <value>SIGNS OF DANGER IN THE MOM</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/n_confirm_danger_signs_mother:label">
+            <value>Confirm if the woman shows one or more danger signs</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/non_stop_bleeding:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/non_stop_bleeding:label">
+            <value>Non-stop bleeding</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/non_stop_bleeding/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/non_stop_bleeding/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/persistant_headache:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/persistant_headache:label">
+            <value>Persistent headaches</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/persistant_headache/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/persistant_headache/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/stomach_aches:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/stomach_aches:label">
+            <value>Stomach aches</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/stomach_aches/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/stomach_aches/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/danger_sign_fever:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/danger_sign_fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/danger_sign_fever/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/danger_sign_fever/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge:label">
+            <value>Smelly or abnormal vaginal discharge</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/breast_abcess:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/breast_abcess:label">
+            <value>Breast Abscess</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/breast_abcess/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/breast_abcess/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/blurred_vision:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/blurred_vision:label">
+            <value>Blurred vision</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/blurred_vision/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/blurred_vision/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/calf_pain:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/calf_pain:label">
+            <value>Calf pain</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/calf_pain/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/calf_pain/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up:label">
+            <value>Is it possible to continue the follow-up?</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother:label">
+            <value>ADVICE SIGNS OF DANGER IN THE MOM</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_1:label">
+            <value>Give advice during the VAD on the following topics:</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_2:label">
+            <value>Signs of danger</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_3:label">
+            <value>Bleeding that does not stop</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_5:label">
+            <value>Persistent headaches</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_7:label">
+            <value>Lower stomach ache</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_9:label">
+            <value>Fever</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_11:label">
+            <value>Smelly or abnormal vaginal discharge</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_13:label">
+            <value>Abscess within</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_15:label">
+            <value>Blurred vision</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_17:label">
+            <value>Calf pain</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn:label">
+            <value>SIGNS OF DANGER IN THE NEWBORN</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/n_confirm_danger_signs_newborn:label">
+            <value>Observe and ask the mother if the newborn has these danger signs</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/refuses_to_eat:label">
+            <value>Refuses to eat</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/refuses_to_eat/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/refuses_to_eat/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/vomits_everything:label">
+            <value>Vomits everything</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/vomits_everything/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/vomits_everything/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/difficulty_breathing:label">
+            <value>Difficulty breathing</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/difficulty_breathing/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/difficulty_breathing/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/infected_umbilical_cord:label">
+            <value>Infected umbilical cord</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/infected_umbilical_cord/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/infected_umbilical_cord/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/skin_postules_with_abcess:label">
+            <value>Skin postules with abscess</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/skin_postules_with_abcess/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/skin_postules_with_abcess/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/distended_abdomen:label">
+            <value>Distended abdomen</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/distended_abdomen/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/distended_abdomen/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/weak_or_absence_cry:label">
+            <value>He has a weak or absent cry</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/weak_or_absence_cry/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/weak_or_absence_cry/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/unconscious:label">
+            <value>Unconscious</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/unconscious/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/unconscious/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/convulsion:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/convulsion/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/convulsion/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/danger_signs_newborn_continue_follow_up:label">
+            <value>Is it possible to continue monitoring?</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/danger_signs_newborn_continue_follow_up/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/danger_signs_newborn_continue_follow_up/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices:label">
+            <value>TIPS SIGNS OF DANGER IN THE NEWBORN</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_1:label">
+            <value>Give advice during the VAD on the following topics:</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_2:label">
+            <value>Signs of danger</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_3:label">
+            <value>He refuses to suck</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_5:label">
+            <value>He vomits everything</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_7:label">
+            <value>Difficult breathing (chest indrawing)</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_9:label">
+            <value>It has a suppurative cord</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_11:label">
+            <value>Postules of skin with abscess</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_13:label">
+            <value>Abdomen distended</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_15:label">
+            <value>He has a weak or absent cry</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_17:label">
+            <value>Unconscious</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_19:label">
+            <value>convulsions</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_summary:label">
+            <value>Patient Summary&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /delivery/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /delivery/patient_sex_en "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /delivery/patient_age_display "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/delivery/group_diagnosis/delivery_information:label">
+            <value>Delivery Information</value>
+          </text>
+          <text id="/delivery/group_diagnosis/delivery_information/r_delivery_info:label">
+            <value>Delivery Information &lt;i class="fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery/group_diagnosis/delivery_information/r_delivery_date:label">
+            <value>Delivery Date : <output value=" /delivery/s_delivery/s_delivery_date "/></value>
+          </text>
+          <text id="/delivery/group_diagnosis/delivery_information/r_delivery_place:label">
+            <value>Delivery Place : <output value=" /delivery/delivery_place "/></value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_signs_symptoms:label">
+            <value>Signs and Symptoms &lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_no_danger_signs:label">
+            <value>&lt;b&gt;No Danger signs&lt;/b&gt;</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs:label">
+            <value>&lt;b&gt;Danger signs&lt;/b&gt;</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs_bleeding:label">
+            <value>Non-stop Bleeding</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs_headaches:label">
+            <value>Headaches</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs_low_abdomnal_pain:label">
+            <value>Low abdominal pain</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs_fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs_vaginal_discharge:label">
+            <value>Vaginal discharge</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs_breast_abscess:label">
+            <value>Breast abscess</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs_blurred_vision:label">
+            <value>Blurred Vision</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs_calves_pain:label">
+            <value>Calves pain</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/summary_referral:label">
+            <value>Refer to USP&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/r_referral_note:label">
+            <value>Please refer the woman to the USP for the presence of danger signs above.
+You must accompany the woman to the USP. If it refuses for any reason, please contact your supervisor immediately</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_1:label">
+            <value>Refuses to eat</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_2:label">
+            <value>Vomits everything</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_3:label">
+            <value>Difficulty breathing</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_4:label">
+            <value>Infected umbilical cord</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_5:label">
+            <value>Skin postules with abcess</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_6:label">
+            <value>Distended abdomen</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_7:label">
+            <value>He has a weak or absent cry</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_8:label">
+            <value>Unconscious</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_9:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/s_have_you_refer_child:label">
+            <value>Did you refer the patient?</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/s_have_you_refer_child/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/s_have_you_refer_child/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/why_not_refer_newborn:label">
+            <value>Why?</value>
+          </text>
+          <text id="/delivery/group_diagnosis/next_followup_information:label">
+            <value>Next Follow UP Information</value>
+          </text>
+          <text id="/delivery/group_diagnosis/next_followup_information/summary_follow_up:jr:requiredMsg">
+            <value><output value=" /delivery/next_visit_display "/> != '' and <output value=" /delivery/has_delivered "/>='true'</value>
+          </text>
+          <text id="/delivery/group_diagnosis/next_followup_information/summary_follow_up:label">
+            <value>The next CHW follow-up visit is scheduled for: <output value=" /delivery/next_visit_display "/></value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/delivery/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/delivery/inputs/source_id:label">
+            <value>Source de l'Identifiant</value>
+          </text>
+          <text id="/delivery/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/delivery/inputs/contact/_id:label">
+            <value>Quel est le nom du patient?</value>
+          </text>
+          <text id="/delivery/inputs/contact/_id:hint">
+            <value>Choisir une personne dans la liste</value>
+          </text>
+          <text id="/delivery/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/delivery/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/delivery/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/delivery/last_preg_uuid:label">
+            <value>last pregnancy registration uuid</value>
+          </text>
+          <text id="/delivery/patient_age_in_years:label">
+            <value>Années</value>
+          </text>
+          <text id="/delivery/patient_age_in_months:label">
+            <value>Mois</value>
+          </text>
+          <text id="/delivery/patient_age_in_days:label">
+            <value>Jours</value>
+          </text>
+          <text id="/delivery/patient_id:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/patient_id:label">
+            <value>Identifiant Patient</value>
+          </text>
+          <text id="/delivery/patient_name:label">
+            <value>Nom du patient</value>
+          </text>
+          <text id="/delivery/patient_sex:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/delivery/patient_sex_en:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/delivery/patient_sex_fr:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/delivery/visited_contact_uuid:label">
+            <value>Identifiant de la famille</value>
+          </text>
+          <text id="/delivery/p_note:label">
+            <value>Identifiant: <output value=" /delivery/patient_id "/>
+Nom: <output value=" /delivery/patient_name "/> - Sex: <output value=" /delivery/patient_sex_fr "/>
+Date de naissance: <output value=" /delivery/inputs/contact/date_of_birth "/>
+jours: <output value=" /delivery/patient_age_in_days "/>
+mois: <output value=" /delivery/patient_age_in_months "/>
+années: <output value=" /delivery/patient_age_in_years "/>
+âge affiché: <output value=" /delivery/patient_age_display "/></value></text>
+          <text id="/delivery/s_delivery:label">
+            <value>Accouchement</value>
+          </text>
+          <text id="/delivery/s_delivery/s_delivery_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/s_delivery/s_delivery_date:label">
+            <value>Quand est-ce que la femme a acouché?</value>
+          </text>
+          <text id="/delivery/s_delivery/c_delivery_dif:label">
+            <value>Jours entre aujourd'hui et la date d'accouchement</value>
+          </text>
+          <text id="/delivery/s_delivery/s_pnc_today:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/s_delivery/s_pnc_today:label">
+            <value>La femme veut-elle faire la première visite après accouchement aujourd'hui ?</value>
+          </text>
+          <text id="/delivery/s_delivery/s_pnc_today/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/s_delivery/s_pnc_today/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/s_delivery/s_next_pnc:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/s_delivery/s_next_pnc:label">
+            <value>Quand est-ce que la femme veut faire la première visite après accouchement?</value>
+          </text>
+          <text id="/delivery/s_delivery/s_delivery_location:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/s_delivery/s_delivery_location:label">
+            <value>Où est-ce que la femme a acouché?</value>
+          </text>
+          <text id="/delivery/s_delivery/s_delivery_location/home:label">
+            <value>Domicile</value>
+          </text>
+          <text id="/delivery/s_delivery/s_delivery_location/hospital:label">
+            <value>Hôpital</value>
+          </text>
+          <text id="/delivery/s_delivery/s_delivery_location/usp:label">
+            <value>USP</value>
+          </text>
+          <text id="/delivery/s_delivery/s_delivery_location/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/delivery/s_delivery/s_specify:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/s_delivery/s_specify:label">
+            <value>Spécifiez</value>
+          </text>
+          <text id="/delivery/s_delivery/s_skilled_attendance:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/s_delivery/s_skilled_attendance:label">
+            <value>Est-ce que l'accouchement est assisté par un personnel qualifié?</value>
+          </text>
+          <text id="/delivery/s_delivery/s_skilled_attendance/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/s_delivery/s_skilled_attendance/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/s_delivery/mother_alive:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/s_delivery/mother_alive:label">
+            <value>Est-ce que la femme est vivante ?</value>
+          </text>
+          <text id="/delivery/s_delivery/mother_alive/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/s_delivery/mother_alive/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/s_delivery/s_babies_delivered:jr:constraintMsg">
+            <value>Le nombre doit être compris entre 1 et 4</value>
+          </text>
+          <text id="/delivery/s_delivery/s_babies_delivered:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/s_delivery/s_babies_delivered:label">
+            <value>Combien de bébés la femme a-t-elle donné naissance?</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_alive:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_alive:label">
+            <value><output value=" /delivery/s_child_alive_label_fr "/></value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_alive/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_alive/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_died_count:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_died_count:label">
+            <value>Combien d'enfant sont décédés</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_died_age:label">
+            <value>Combien de jours l'enfant avait lors du décès</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_died_age/mort_ne:label">
+            <value>Mort né (décédé à l'accouchement)</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_died_age/neonatal:label">
+            <value>Enfant entre 1 et 28 jours</value>
+          </text>
+          <text id="/delivery/s_delivery/s_child_died_age/infantile:label">
+            <value>Enfant plus de 28 jours</value>
+          </text>
+          <text id="/delivery/s_delivery/s_create_person:label">
+            <value>Merci de créer chaque nouveau-né dans son ménage</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother:label">
+            <value>SIGNES DE DANGER CHEZ LA MAMAN</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/n_confirm_danger_signs_mother:label">
+            <value>Vérifier si la femme présente un ou plusieurs de ces signes de danger</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/non_stop_bleeding:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/non_stop_bleeding:label">
+            <value>Saignement qui ne s'arrête pas</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/non_stop_bleeding/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/non_stop_bleeding/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/persistant_headache:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/persistant_headache:label">
+            <value>Maux de tête persistants</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/persistant_headache/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/persistant_headache/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/stomach_aches:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/stomach_aches:label">
+            <value>Maux de bas ventre</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/stomach_aches/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/stomach_aches/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/danger_sign_fever:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/danger_sign_fever:label">
+            <value>Fièvre</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/danger_sign_fever/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/danger_sign_fever/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge:label">
+            <value>Pertes vaginales malodorantes ou anormales</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/breast_abcess:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/breast_abcess:label">
+            <value>Abcès au sein</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/breast_abcess/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/breast_abcess/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/blurred_vision:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/blurred_vision:label">
+            <value>Vision floue</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/blurred_vision/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/blurred_vision/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/calf_pain:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/calf_pain:label">
+            <value>Douleurs aux mollets</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/calf_pain/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/calf_pain/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up:label">
+            <value>Est-il possible de continuer le suivi de la maman ?</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother:label">
+            <value>CONSEILS SUR LES SIGNES DE DANGER CHEZ LA MAMAN</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_1:label">
+            <value>Donnez des conseils pendant la VAD sur les thèmes suivants:</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_2:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_3:label">
+            <value>Saignement qui ne s'arrete pas</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_5:label">
+            <value>Maux de tête persistants</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_7:label">
+            <value>Maux de bas ventre</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_9:label">
+            <value>Fièvre</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_11:label">
+            <value>Pertes vaginales malodorantes ou anormales</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_13:label">
+            <value>Abcès au sein</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_15:label">
+            <value>Vision floue</value>
+          </text>
+          <text id="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_17:label">
+            <value>Douleurs aux mollets</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn:label">
+            <value>NOUVEAU-NÉ: SIGNES DE DANGER</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/n_confirm_danger_signs_newborn:label">
+            <value>Observer et demander à la maman si chaque nouveau - né présente ces signes de danger</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/refuses_to_eat:label">
+            <value>Refuse de téter</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/refuses_to_eat/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/refuses_to_eat/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/vomits_everything:label">
+            <value>Vomit tout</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/vomits_everything/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/vomits_everything/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/difficulty_breathing:label">
+            <value>Respiration difficile (tirage sous costal, sifflement, ou battement des ailes du nez</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/difficulty_breathing/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/difficulty_breathing/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/infected_umbilical_cord:label">
+            <value>Il a un cordon qui suppure</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/infected_umbilical_cord/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/infected_umbilical_cord/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/skin_postules_with_abcess:label">
+            <value>Pustules de la peau avec abcès</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/skin_postules_with_abcess/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/skin_postules_with_abcess/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/distended_abdomen:label">
+            <value>Abdomen distendu</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/distended_abdomen/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/distended_abdomen/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/weak_or_absence_cry:label">
+            <value>Il a un pleur faible ou absent</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/weak_or_absence_cry/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/weak_or_absence_cry/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/unconscious:label">
+            <value>Inconscient</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/unconscious/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/unconscious/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/convulsion:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/convulsion/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/convulsion/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/danger_signs_newborn_continue_follow_up:label">
+            <value>Est-il possible de continuer le suivi ?</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/danger_signs_newborn_continue_follow_up/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn/danger_signs_newborn_continue_follow_up/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices:label">
+            <value>CONSEILS SIGNES DE DANGER CHEZ LE NOUVEAU-NÉ</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_1:label">
+            <value>Donnez des conseils pendant la VAD sur les thèmes suivants:</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_2:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_3:label">
+            <value>Il refuse de téter</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_5:label">
+            <value>Il vomit tout</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_7:label">
+            <value>Respiration difficile (tirage sous-costal)</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_9:label">
+            <value>Il a un cordon qui suppure</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_11:label">
+            <value>Postules de la peau avec abcès</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_13:label">
+            <value>Abdomen distendu</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_15:label">
+            <value>Il a un pleur faible ou absent</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_17:label">
+            <value>Inconscient</value>
+          </text>
+          <text id="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_19:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_summary:label">
+            <value>Détails du Patient &lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /delivery/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /delivery/patient_sex_fr "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /delivery/patient_age_display_fr "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/delivery/group_diagnosis/delivery_information/r_delivery_info:label">
+            <value>Information sur l'Accouchement&lt;i class="fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery/group_diagnosis/delivery_information/r_delivery_date:label">
+            <value>Date d'accouchement: <output value=" /delivery/s_delivery/s_delivery_date "/></value>
+          </text>
+          <text id="/delivery/group_diagnosis/delivery_information/r_delivery_place:label">
+            <value>Lieu d'Accouchement : <output value=" /delivery/delivery_place "/></value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_signs_symptoms:label">
+            <value>Signes et Symptômes &lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_no_danger_signs:label">
+            <value>&lt;b&gt;Absence de Signes de danger&lt;/b&gt;</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs:label">
+            <value>&lt;b&gt;Signes de danger&lt;/b&gt;</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs_bleeding:label">
+            <value>Saignement qui ne s'arrête pas</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs_headaches:label">
+            <value>Maux de tête persistants</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs_low_abdomnal_pain:label">
+            <value>Maux de bas ventre</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs_fever:label">
+            <value>Fièvre</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs_vaginal_discharge:label">
+            <value>Pertes vaginales malodorantes ou anormales</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs_breast_abscess:label">
+            <value>Abcès au sein</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs_blurred_vision:label">
+            <value>Vision floue</value>
+          </text>
+          <text id="/delivery/group_diagnosis/r_signs/r_danger_signs_calves_pain:label">
+            <value>Douleurs aux mollets</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/summary_referral:label">
+            <value>Référer a l'USP &lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/r_referral_note:label">
+            <value>Merci de référer la femme à l'USP pour la présence de signes de danger ci- dessus. 
+Vous devez accompagner la femme à l'USP. Si elle refuse pour quelconque raison, veuiller contacter votre superviseur immédiatement</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_1:label">
+            <value>Refuse de téter</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_2:label">
+            <value>Vomit tout</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_3:label">
+            <value>Respiration difficile (tirage sous costal, sifflement, ou battement des ailes du nez)</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_4:label">
+            <value>Il a un cordon qui suppure</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_5:label">
+            <value>Pustules de la peau avec abcès</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_6:label">
+            <value>Abdomen distendu</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_7:label">
+            <value>Il a un pleur faible ou absent</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_8:label">
+            <value>Inconscient</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/referrals_newborn_n_9:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/s_have_you_refer_child:label">
+            <value>Est-ce que vous avez référé la maman / nouveau - né ?</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/s_have_you_refer_child/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/s_have_you_refer_child/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery/group_diagnosis/group_summary/why_not_refer_newborn:label">
+            <value>Pour quelle raison?</value>
+          </text>
+          <text id="/delivery/group_diagnosis/next_followup_information:label">
+            <value>Information sur le prochain suivi</value>
+          </text>
+          <text id="/delivery/group_diagnosis/next_followup_information/summary_follow_up:label">
+            <value>La prochaine visite de suivi par l'ASC est programmée pour le: <output value=" /delivery/next_visit_display "/></value>
+          </text>
+          <text id="/delivery/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/group_diagnosis/delivery_information:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/group_diagnosis/next_followup_information/summary_follow_up:jr:requiredMsg">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <delivery id="delivery" prefix="J1!delivery!" delimiter="#" version="2017-07-11">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <parent/>
+            </contact>
+          </inputs>
+          <last_preg_uuid/>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_age_display_fr/>
+          <has_delivered/>
+          <delivery_place/>
+          <patient_id/>
+          <patient_name/>
+          <patient_sex/>
+          <patient_sex_en/>
+          <patient_sex_fr/>
+          <visited_contact_uuid/>
+          <next_visit_display/>
+          <p_note/>
+          <s_child_alive_label_fr/>
+          <s_child_alive_label_en/>
+          <mother_has_danger_signs/>
+          <newborn_has_danger_signs/>
+          <s_delivery>
+            <s_delivery_date/>
+            <c_delivery_dif/>
+            <s_pnc_today/>
+            <s_next_pnc/>
+            <s_delivery_location/>
+            <s_specify/>
+            <s_skilled_attendance/>
+            <mother_alive/>
+            <s_babies_delivered/>
+            <s_child_alive/>
+            <s_child_died_count>0</s_child_died_count>
+            <s_child_died_age/>
+            <s_child_alive_rest/>
+            <s_create_person/>
+          </s_delivery>
+          <confirm_danger_signs_mother>
+            <n_confirm_danger_signs_mother/>
+            <non_stop_bleeding/>
+            <persistant_headache/>
+            <stomach_aches/>
+            <danger_sign_fever/>
+            <smelly_or_abnormal_vaginal_discharge/>
+            <breast_abcess/>
+            <blurred_vision/>
+            <calf_pain/>
+            <danger_sign_mother_continue_follow_up/>
+          </confirm_danger_signs_mother>
+          <advice_on_danger_signs_mother>
+            <n_danger_signs_advices_1/>
+            <n_danger_signs_advices_2/>
+            <n_danger_signs_advices_3/>
+            <n_danger_signs_advices_5/>
+            <n_danger_signs_advices_7/>
+            <n_danger_signs_advices_9/>
+            <n_danger_signs_advices_11/>
+            <n_danger_signs_advices_13/>
+            <n_danger_signs_advices_15/>
+            <n_danger_signs_advices_17/>
+          </advice_on_danger_signs_mother>
+          <danger_signs_newborn>
+            <n_confirm_danger_signs_newborn/>
+            <refuses_to_eat/>
+            <vomits_everything/>
+            <difficulty_breathing/>
+            <infected_umbilical_cord/>
+            <skin_postules_with_abcess/>
+            <distended_abdomen/>
+            <weak_or_absence_cry/>
+            <unconscious/>
+            <convulsion/>
+            <danger_signs_newborn_continue_follow_up/>
+          </danger_signs_newborn>
+          <danger_signs_newborn_advices>
+            <n_danger_signs_newborn_advices_1/>
+            <n_danger_signs_newborn_advices_2/>
+            <n_danger_signs_newborn_advices_3/>
+            <n_danger_signs_newborn_advices_5/>
+            <n_danger_signs_newborn_advices_7/>
+            <n_danger_signs_newborn_advices_9/>
+            <n_danger_signs_newborn_advices_11/>
+            <n_danger_signs_newborn_advices_13/>
+            <n_danger_signs_newborn_advices_15/>
+            <n_danger_signs_newborn_advices_17/>
+            <n_danger_signs_newborn_advices_19/>
+          </danger_signs_newborn_advices>
+          <group_diagnosis>
+            <r_summary/>
+            <r_patient_info/>
+            <delivery_information>
+              <r_delivery_info/>
+              <r_delivery_date/>
+              <r_delivery_place/>
+            </delivery_information>
+            <r_signs>
+              <r_signs_symptoms/>
+              <r_no_danger_signs/>
+              <r_danger_signs/>
+              <r_danger_signs_bleeding/>
+              <r_danger_signs_headaches/>
+              <r_danger_signs_low_abdomnal_pain/>
+              <r_danger_signs_fever/>
+              <r_danger_signs_vaginal_discharge/>
+              <r_danger_signs_breast_abscess/>
+              <r_danger_signs_blurred_vision/>
+              <r_danger_signs_calves_pain/>
+            </r_signs>
+            <group_summary>
+              <summary_referral/>
+              <r_referral_note/>
+              <referrals_newborn_n_1/>
+              <referrals_newborn_n_2/>
+              <referrals_newborn_n_3/>
+              <referrals_newborn_n_4/>
+              <referrals_newborn_n_5/>
+              <referrals_newborn_n_6/>
+              <referrals_newborn_n_7/>
+              <referrals_newborn_n_8/>
+              <referrals_newborn_n_9/>
+              <s_have_you_refer_child/>
+              <why_not_refer_newborn/>
+            </group_summary>
+            <next_followup_information>
+              <summary_follow_up/>
+            </next_followup_information>
+          </group_diagnosis>
+          <meta>
+            <instanceID/>
+          </meta>
+        </delivery>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/delivery/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/delivery/inputs/source" type="string"/>
+      <bind nodeset="/delivery/inputs/source_id" type="string"/>
+      <bind nodeset="/delivery/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/delivery/inputs/contact/name" type="string"/>
+      <bind nodeset="/delivery/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/delivery/inputs/contact/sex" type="string"/>
+      <bind nodeset="/delivery/inputs/contact/parent" type="string"/>
+      <bind nodeset="/delivery/last_preg_uuid" type="string" calculate="instance('contact-summary')/context/lastPregUUID"/>
+      <bind nodeset="/delivery/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /delivery/inputs/contact/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/delivery/patient_age_in_months" type="string" calculate="difference-in-months(  /delivery/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/delivery/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /delivery/inputs/contact/date_of_birth ))"/>
+      <bind nodeset="/delivery/patient_age_display" type="string" calculate="concat(concat( /delivery/patient_age_in_years , if( /delivery/patient_age_in_years =1,' year and ',' years and ')),concat( /delivery/patient_age_in_months  mod 12, if(( /delivery/patient_age_in_months  mod 12)=1,' month old',' months old')))"/>
+      <bind nodeset="/delivery/patient_age_display_fr" type="string" calculate="concat(concat( /delivery/patient_age_in_years , if( /delivery/patient_age_in_years =1,' an et ',' ans et ')),concat( /delivery/patient_age_in_months  mod 12, if(( /delivery/patient_age_in_months  mod 12)=1,' mois',' mois')))"/>
+      <bind nodeset="/delivery/has_delivered" type="string" calculate="if( /delivery/s_delivery/s_delivery_date  !='', 'true','false')"/>
+      <bind nodeset="/delivery/delivery_place" type="string" calculate="jr:choice-name( /delivery/s_delivery/s_delivery_location ,' /delivery/s_delivery/s_delivery_location ')"/>
+      <bind nodeset="/delivery/patient_id" type="string" required="true()" jr:requiredMsg="jr:itext('/delivery/patient_id:jr:requiredMsg')" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/delivery/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/delivery/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/delivery/patient_sex_en" type="string" calculate="if( /delivery/patient_sex  = 'male' or  /delivery/patient_sex  = 'homme' or  /delivery/patient_sex  = 'Homme', 'Male', if( /delivery/patient_sex  = 'female' or  /delivery/patient_sex  = 'femme' or  /delivery/patient_sex  = 'Femme', 'Female', ''))"/>
+      <bind nodeset="/delivery/patient_sex_fr" type="string" calculate="if( /delivery/patient_sex  = 'male' or  /delivery/patient_sex  = 'homme' or  /delivery/patient_sex  = 'Homme', 'Homme', if( /delivery/patient_sex  = 'female' or  /delivery/patient_sex  = 'femme' or  /delivery/patient_sex  = 'Femme', 'Femme', ''))"/>
+      <bind nodeset="/delivery/visited_contact_uuid" type="string" required="true()" calculate="../inputs/contact/parent"/>
+      <bind nodeset="/delivery/next_visit_display" type="string" calculate="format-date-time(if( /delivery/s_delivery/c_delivery_dif &gt;=7,if( /delivery/s_delivery/s_pnc_today  ='yes',today(), /delivery/s_delivery/s_next_pnc ),date-time(decimal-date-time( /delivery/s_delivery/s_delivery_date  )+ 7)) , &quot;%b %e, %Y&quot;)"/>
+      <bind nodeset="/delivery/p_note" readonly="true()" type="string" relevant="0"/>
+      <bind nodeset="/delivery/s_child_alive_label_fr" type="string" calculate="if( /delivery/s_delivery/s_babies_delivered  &gt; 1,'Est-ce que tous les nouveaux-nés sont vivants ?','Est-ce que le nouveau-né est vivant ?')"/>
+      <bind nodeset="/delivery/s_child_alive_label_en" type="string" calculate="if( /delivery/s_delivery/s_babies_delivered  &gt;1,'Is all childs still alive ?','Is the child still alive ?')"/>
+      <bind nodeset="/delivery/mother_has_danger_signs" type="string" calculate="if( /delivery/confirm_danger_signs_mother/non_stop_bleeding  = 'yes' or  /delivery/confirm_danger_signs_mother/persistant_headache  = 'yes' or  /delivery/confirm_danger_signs_mother/stomach_aches  = 'yes' or  /delivery/confirm_danger_signs_mother/danger_sign_fever  = 'yes' or  /delivery/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge  = 'yes' or  /delivery/confirm_danger_signs_mother/breast_abcess  = 'yes' or  /delivery/confirm_danger_signs_mother/blurred_vision  = 'yes' or  /delivery/confirm_danger_signs_mother/calf_pain  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/delivery/newborn_has_danger_signs" type="string" calculate="if( /delivery/danger_signs_newborn/refuses_to_eat  = 'yes' or  /delivery/danger_signs_newborn/vomits_everything  = 'yes' or  /delivery/danger_signs_newborn/difficulty_breathing  = 'yes' or  /delivery/danger_signs_newborn/infected_umbilical_cord  = 'yes' or  /delivery/danger_signs_newborn/skin_postules_with_abcess  = 'yes' or  /delivery/danger_signs_newborn/distended_abdomen  = 'yes' or  /delivery/danger_signs_newborn/weak_or_absence_cry  = 'yes' or  /delivery/danger_signs_newborn/unconscious  = 'yes' or  /delivery/danger_signs_newborn/convulsion  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/delivery/s_delivery/s_delivery_date" type="date" required="true()" jr:requiredMsg="jr:itext('/delivery/s_delivery/s_delivery_date:jr:requiredMsg')" constraint=". &lt;=today()"/>
+      <bind nodeset="/delivery/s_delivery/c_delivery_dif" type="string" calculate="floor(decimal-date-time(today()) - decimal-date-time( /delivery/s_delivery/s_delivery_date ))"/>
+      <bind nodeset="/delivery/s_delivery/s_pnc_today" type="select1" required="true()" jr:requiredMsg="jr:itext('/delivery/s_delivery/s_pnc_today:jr:requiredMsg')" relevant=" /delivery/s_delivery/c_delivery_dif &gt;=7"/>
+      <bind nodeset="/delivery/s_delivery/s_next_pnc" type="date" required="true()" jr:requiredMsg="jr:itext('/delivery/s_delivery/s_next_pnc:jr:requiredMsg')" relevant=" /delivery/s_delivery/s_pnc_today  = 'no'" constraint=".&gt;today()"/>
+      <bind nodeset="/delivery/s_delivery/s_delivery_location" type="select1" required="true()" jr:requiredMsg="jr:itext('/delivery/s_delivery/s_delivery_location:jr:requiredMsg')"/>
+      <bind nodeset="/delivery/s_delivery/s_specify" type="string" required="true()" jr:requiredMsg="jr:itext('/delivery/s_delivery/s_specify:jr:requiredMsg')" relevant="selected( /delivery/s_delivery/s_delivery_location , 'other')"/>
+      <bind nodeset="/delivery/s_delivery/s_skilled_attendance" type="select1" required="true()" jr:requiredMsg="jr:itext('/delivery/s_delivery/s_skilled_attendance:jr:requiredMsg')" relevant="selected( /delivery/s_delivery/s_delivery_location , 'home') or selected( /delivery/s_delivery/s_delivery_location , 'other')"/>
+      <bind nodeset="/delivery/s_delivery/mother_alive" type="select1" required="true()" jr:requiredMsg="jr:itext('/delivery/s_delivery/mother_alive:jr:requiredMsg')"/>
+      <bind nodeset="/delivery/s_delivery/s_babies_delivered" type="int" required="true()" jr:requiredMsg="jr:itext('/delivery/s_delivery/s_babies_delivered:jr:requiredMsg')" jr:constraintMsg="jr:itext('/delivery/s_delivery/s_babies_delivered:jr:constraintMsg')" constraint=".&gt;0 and .&lt;=4"/>
+      <bind nodeset="/delivery/s_delivery/s_child_alive" type="select1" required="true()" jr:requiredMsg="jr:itext('/delivery/s_delivery/s_child_alive:jr:requiredMsg')" relevant=" /delivery/s_delivery/s_babies_delivered &gt; 0"/>
+      <bind nodeset="/delivery/s_delivery/s_child_died_count" type="int" required="true()" jr:requiredMsg="jr:itext('/delivery/s_delivery/s_child_died_count:jr:requiredMsg')" relevant=" /delivery/s_delivery/s_child_alive  = 'no' and  /delivery/s_delivery/s_babies_delivered &gt; 1"/>
+      <bind nodeset="/delivery/s_delivery/s_child_died_age" type="select1" required="true()" relevant=" /delivery/s_delivery/s_child_alive  = 'no' and  /delivery/s_delivery/s_babies_delivered &gt; 1"/>
+      <bind nodeset="/delivery/s_delivery/s_child_alive_rest" type="string" calculate=" /delivery/s_delivery/s_babies_delivered  -  /delivery/s_delivery/s_child_died_count "/>
+      <bind nodeset="/delivery/s_delivery/s_create_person" readonly="true()" type="string" relevant=" /delivery/s_delivery/s_child_alive_rest  &gt;=1"/>
+      <bind nodeset="/delivery/confirm_danger_signs_mother" relevant=" /delivery/s_delivery/s_pnc_today  !='yes'"/>
+      <bind nodeset="/delivery/confirm_danger_signs_mother/n_confirm_danger_signs_mother" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/confirm_danger_signs_mother/non_stop_bleeding" type="select1" required="true()" jr:requiredMsg="jr:itext('/delivery/confirm_danger_signs_mother/non_stop_bleeding:jr:requiredMsg')"/>
+      <bind nodeset="/delivery/confirm_danger_signs_mother/persistant_headache" type="select1" required="true()" jr:requiredMsg="jr:itext('/delivery/confirm_danger_signs_mother/persistant_headache:jr:requiredMsg')"/>
+      <bind nodeset="/delivery/confirm_danger_signs_mother/stomach_aches" type="select1" required="true()" jr:requiredMsg="jr:itext('/delivery/confirm_danger_signs_mother/stomach_aches:jr:requiredMsg')"/>
+      <bind nodeset="/delivery/confirm_danger_signs_mother/danger_sign_fever" type="select1" required="true()" jr:requiredMsg="jr:itext('/delivery/confirm_danger_signs_mother/danger_sign_fever:jr:requiredMsg')"/>
+      <bind nodeset="/delivery/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge" type="select1" required="true()" jr:requiredMsg="jr:itext('/delivery/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge:jr:requiredMsg')"/>
+      <bind nodeset="/delivery/confirm_danger_signs_mother/breast_abcess" type="select1" required="true()" jr:requiredMsg="jr:itext('/delivery/confirm_danger_signs_mother/breast_abcess:jr:requiredMsg')"/>
+      <bind nodeset="/delivery/confirm_danger_signs_mother/blurred_vision" type="select1" required="true()" jr:requiredMsg="jr:itext('/delivery/confirm_danger_signs_mother/blurred_vision:jr:requiredMsg')"/>
+      <bind nodeset="/delivery/confirm_danger_signs_mother/calf_pain" type="select1" required="true()" jr:requiredMsg="jr:itext('/delivery/confirm_danger_signs_mother/calf_pain:jr:requiredMsg')"/>
+      <bind nodeset="/delivery/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up" type="select1" required="true()" jr:requiredMsg="jr:itext('/delivery/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up:jr:requiredMsg')" relevant=" /delivery/mother_has_danger_signs  = 'true'"/>
+      <bind nodeset="/delivery/advice_on_danger_signs_mother" relevant=" /delivery/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up  = 'yes' and  /delivery/s_delivery/s_pnc_today  !='yes'"/>
+      <bind nodeset="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_1" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_2" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_3" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_5" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_7" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_9" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_11" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_13" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_15" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_17" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/danger_signs_newborn" relevant=" /delivery/s_delivery/s_pnc_today  !='yes'"/>
+      <bind nodeset="/delivery/danger_signs_newborn/n_confirm_danger_signs_newborn" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/danger_signs_newborn/refuses_to_eat" type="select1" required="true()"/>
+      <bind nodeset="/delivery/danger_signs_newborn/vomits_everything" type="select1" required="true()"/>
+      <bind nodeset="/delivery/danger_signs_newborn/difficulty_breathing" type="select1" required="true()"/>
+      <bind nodeset="/delivery/danger_signs_newborn/infected_umbilical_cord" type="select1" required="true()"/>
+      <bind nodeset="/delivery/danger_signs_newborn/skin_postules_with_abcess" type="select1" required="true()"/>
+      <bind nodeset="/delivery/danger_signs_newborn/distended_abdomen" type="select1" required="true()"/>
+      <bind nodeset="/delivery/danger_signs_newborn/weak_or_absence_cry" type="select1" required="true()"/>
+      <bind nodeset="/delivery/danger_signs_newborn/unconscious" type="select1" required="true()"/>
+      <bind nodeset="/delivery/danger_signs_newborn/convulsion" type="select1" required="true()"/>
+      <bind nodeset="/delivery/danger_signs_newborn/danger_signs_newborn_continue_follow_up" type="select1" required="true()" relevant=" /delivery/newborn_has_danger_signs  = 'true'"/>
+      <bind nodeset="/delivery/danger_signs_newborn_advices" relevant=" /delivery/danger_signs_newborn/danger_signs_newborn_continue_follow_up  = 'yes' and  /delivery/s_delivery/s_pnc_today  !='yes'"/>
+      <bind nodeset="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_1" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_2" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_3" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_5" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_7" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_9" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_11" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_13" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_15" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_17" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_19" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/group_diagnosis/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/group_diagnosis/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/group_diagnosis/delivery_information/r_delivery_info" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/group_diagnosis/delivery_information/r_delivery_date" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/group_diagnosis/delivery_information/r_delivery_place" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/group_diagnosis/r_signs/r_signs_symptoms" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/group_diagnosis/r_signs/r_no_danger_signs" readonly="true()" type="string" relevant=" /delivery/newborn_has_danger_signs  = 'false' and  /delivery/mother_has_danger_signs  = 'false'"/>
+      <bind nodeset="/delivery/group_diagnosis/r_signs/r_danger_signs" readonly="true()" type="string" relevant=" /delivery/mother_has_danger_signs  = 'true'"/>
+      <bind nodeset="/delivery/group_diagnosis/r_signs/r_danger_signs_bleeding" readonly="true()" type="string" relevant=" /delivery/confirm_danger_signs_mother/non_stop_bleeding  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/r_signs/r_danger_signs_headaches" readonly="true()" type="string" relevant=" /delivery/confirm_danger_signs_mother/persistant_headache  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/r_signs/r_danger_signs_low_abdomnal_pain" readonly="true()" type="string" relevant=" /delivery/confirm_danger_signs_mother/stomach_aches  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/r_signs/r_danger_signs_fever" readonly="true()" type="string" relevant=" /delivery/confirm_danger_signs_mother/danger_sign_fever  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/r_signs/r_danger_signs_vaginal_discharge" readonly="true()" type="string" relevant=" /delivery/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/r_signs/r_danger_signs_breast_abscess" readonly="true()" type="string" relevant=" /delivery/confirm_danger_signs_mother/breast_abcess  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/r_signs/r_danger_signs_blurred_vision" readonly="true()" type="string" relevant=" /delivery/confirm_danger_signs_mother/blurred_vision  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/r_signs/r_danger_signs_calves_pain" readonly="true()" type="string" relevant=" /delivery/confirm_danger_signs_mother/calf_pain  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/group_summary/summary_referral" readonly="true()" type="string" relevant=" /delivery/newborn_has_danger_signs  = 'true' or  /delivery/mother_has_danger_signs  = 'true'"/>
+      <bind nodeset="/delivery/group_diagnosis/group_summary/r_referral_note" readonly="true()" type="string" relevant=" /delivery/mother_has_danger_signs  = 'true' or  /delivery/newborn_has_danger_signs  = 'true'"/>
+      <bind nodeset="/delivery/group_diagnosis/group_summary/referrals_newborn_n_1" readonly="true()" type="string" relevant=" /delivery/danger_signs_newborn/refuses_to_eat  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/group_summary/referrals_newborn_n_2" readonly="true()" type="string" relevant=" /delivery/danger_signs_newborn/vomits_everything  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/group_summary/referrals_newborn_n_3" readonly="true()" type="string" relevant=" /delivery/danger_signs_newborn/difficulty_breathing  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/group_summary/referrals_newborn_n_4" readonly="true()" type="string" relevant=" /delivery/danger_signs_newborn/infected_umbilical_cord  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/group_summary/referrals_newborn_n_5" readonly="true()" type="string" relevant=" /delivery/danger_signs_newborn/skin_postules_with_abcess  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/group_summary/referrals_newborn_n_6" readonly="true()" type="string" relevant=" /delivery/danger_signs_newborn/distended_abdomen  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/group_summary/referrals_newborn_n_7" readonly="true()" type="string" relevant=" /delivery/danger_signs_newborn/weak_or_absence_cry  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/group_summary/referrals_newborn_n_8" readonly="true()" type="string" relevant=" /delivery/danger_signs_newborn/unconscious  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/group_summary/referrals_newborn_n_9" readonly="true()" type="string" relevant=" /delivery/danger_signs_newborn/convulsion  = 'yes'"/>
+      <bind nodeset="/delivery/group_diagnosis/group_summary/s_have_you_refer_child" type="select1" required="true()" relevant=" /delivery/newborn_has_danger_signs  = 'true' or  /delivery/mother_has_danger_signs  = 'true'"/>
+      <bind nodeset="/delivery/group_diagnosis/group_summary/why_not_refer_newborn" type="string" required="true()" relevant=" /delivery/group_diagnosis/group_summary/s_have_you_refer_child  = 'no'"/>
+      <bind nodeset="/delivery/group_diagnosis/next_followup_information/summary_follow_up" readonly="true()" type="string" jr:requiredMsg="jr:itext('/delivery/group_diagnosis/next_followup_information/summary_follow_up:jr:requiredMsg')"/>
+      <bind nodeset="/delivery/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/delivery/inputs">
+      <label ref="jr:itext('/delivery/inputs:label')"/>
+      <input appearance="hidden" ref="/delivery/inputs/source">
+        <label ref="jr:itext('/delivery/inputs/source:label')"/>
+      </input>
+      <input appearance="hidden" ref="/delivery/inputs/source_id">
+        <label ref="jr:itext('/delivery/inputs/source_id:label')"/>
+      </input>
+      <group ref="/delivery/inputs/contact">
+        <label ref="jr:itext('/delivery/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/delivery/inputs/contact/_id">
+          <label ref="jr:itext('/delivery/inputs/contact/_id:label')"/>
+          <hint ref="jr:itext('/delivery/inputs/contact/_id:hint')"/>
+        </input>
+        <input appearance="hidden" ref="/delivery/inputs/contact/name">
+          <label ref="jr:itext('/delivery/inputs/contact/name:label')"/>
+        </input>
+        <input appearance="hidden" ref="/delivery/inputs/contact/date_of_birth">
+          <label ref="jr:itext('/delivery/inputs/contact/date_of_birth:label')"/>
+        </input>
+        <input appearance="hidden" ref="/delivery/inputs/contact/sex">
+          <label ref="jr:itext('/delivery/inputs/contact/sex:label')"/>
+        </input>
+        <input appearance="hidden" ref="/delivery/inputs/contact/parent">
+          <label ref="jr:itext('/delivery/inputs/contact/parent:label')"/>
+        </input>
+      </group>
+    </group>
+    <input ref="/delivery/p_note">
+      <label ref="jr:itext('/delivery/p_note:label')"/>
+    </input>
+    <group appearance="field-list" ref="/delivery/s_delivery">
+      <label ref="jr:itext('/delivery/s_delivery:label')"/>
+      <input ref="/delivery/s_delivery/s_delivery_date">
+        <label ref="jr:itext('/delivery/s_delivery/s_delivery_date:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/delivery/s_delivery/s_pnc_today">
+        <label ref="jr:itext('/delivery/s_delivery/s_pnc_today:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/s_delivery/s_pnc_today/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/s_delivery/s_pnc_today/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/delivery/s_delivery/s_next_pnc">
+        <label ref="jr:itext('/delivery/s_delivery/s_next_pnc:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/delivery/s_delivery/s_delivery_location">
+        <label ref="jr:itext('/delivery/s_delivery/s_delivery_location:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/s_delivery/s_delivery_location/home:label')"/>
+          <value>home</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/s_delivery/s_delivery_location/hospital:label')"/>
+          <value>hospital</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/s_delivery/s_delivery_location/usp:label')"/>
+          <value>usp</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/s_delivery/s_delivery_location/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/delivery/s_delivery/s_specify">
+        <label ref="jr:itext('/delivery/s_delivery/s_specify:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/delivery/s_delivery/s_skilled_attendance">
+        <label ref="jr:itext('/delivery/s_delivery/s_skilled_attendance:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/s_delivery/s_skilled_attendance/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/s_delivery/s_skilled_attendance/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/s_delivery/mother_alive">
+        <label ref="jr:itext('/delivery/s_delivery/mother_alive:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/s_delivery/mother_alive/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/s_delivery/mother_alive/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/delivery/s_delivery/s_babies_delivered">
+        <label ref="jr:itext('/delivery/s_delivery/s_babies_delivered:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/delivery/s_delivery/s_child_alive">
+        <label ref="jr:itext('/delivery/s_delivery/s_child_alive:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/s_delivery/s_child_alive/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/s_delivery/s_child_alive/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/delivery/s_delivery/s_child_died_count">
+        <label ref="jr:itext('/delivery/s_delivery/s_child_died_count:label')"/>
+      </input>
+      <select1 ref="/delivery/s_delivery/s_child_died_age">
+        <label ref="jr:itext('/delivery/s_delivery/s_child_died_age:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/s_delivery/s_child_died_age/mort_ne:label')"/>
+          <value>mort_ne</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/s_delivery/s_child_died_age/neonatal:label')"/>
+          <value>neonatal</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/s_delivery/s_child_died_age/infantile:label')"/>
+          <value>infantile</value>
+        </item>
+      </select1>
+      <input ref="/delivery/s_delivery/s_create_person">
+        <label ref="jr:itext('/delivery/s_delivery/s_create_person:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/delivery/confirm_danger_signs_mother">
+      <label ref="jr:itext('/delivery/confirm_danger_signs_mother:label')"/>
+      <input ref="/delivery/confirm_danger_signs_mother/n_confirm_danger_signs_mother">
+        <label ref="jr:itext('/delivery/confirm_danger_signs_mother/n_confirm_danger_signs_mother:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/delivery/confirm_danger_signs_mother/non_stop_bleeding">
+        <label ref="jr:itext('/delivery/confirm_danger_signs_mother/non_stop_bleeding:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/non_stop_bleeding/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/non_stop_bleeding/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/confirm_danger_signs_mother/persistant_headache">
+        <label ref="jr:itext('/delivery/confirm_danger_signs_mother/persistant_headache:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/persistant_headache/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/persistant_headache/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/confirm_danger_signs_mother/stomach_aches">
+        <label ref="jr:itext('/delivery/confirm_danger_signs_mother/stomach_aches:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/stomach_aches/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/stomach_aches/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/confirm_danger_signs_mother/danger_sign_fever">
+        <label ref="jr:itext('/delivery/confirm_danger_signs_mother/danger_sign_fever:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/danger_sign_fever/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/danger_sign_fever/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge">
+        <label ref="jr:itext('/delivery/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/confirm_danger_signs_mother/breast_abcess">
+        <label ref="jr:itext('/delivery/confirm_danger_signs_mother/breast_abcess:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/breast_abcess/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/breast_abcess/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/confirm_danger_signs_mother/blurred_vision">
+        <label ref="jr:itext('/delivery/confirm_danger_signs_mother/blurred_vision:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/blurred_vision/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/blurred_vision/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/confirm_danger_signs_mother/calf_pain">
+        <label ref="jr:itext('/delivery/confirm_danger_signs_mother/calf_pain:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/calf_pain/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/calf_pain/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up">
+        <label ref="jr:itext('/delivery/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/delivery/advice_on_danger_signs_mother">
+      <label ref="jr:itext('/delivery/advice_on_danger_signs_mother:label')"/>
+      <input ref="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_1">
+        <label ref="jr:itext('/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_1:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_2">
+        <label ref="jr:itext('/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_2:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_3">
+        <label ref="jr:itext('/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_3:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_5">
+        <label ref="jr:itext('/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_5:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_7">
+        <label ref="jr:itext('/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_7:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_9">
+        <label ref="jr:itext('/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_9:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_11">
+        <label ref="jr:itext('/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_11:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_13">
+        <label ref="jr:itext('/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_13:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_15">
+        <label ref="jr:itext('/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_15:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_17">
+        <label ref="jr:itext('/delivery/advice_on_danger_signs_mother/n_danger_signs_advices_17:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/delivery/danger_signs_newborn">
+      <label ref="jr:itext('/delivery/danger_signs_newborn:label')"/>
+      <input ref="/delivery/danger_signs_newborn/n_confirm_danger_signs_newborn">
+        <label ref="jr:itext('/delivery/danger_signs_newborn/n_confirm_danger_signs_newborn:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/delivery/danger_signs_newborn/refuses_to_eat">
+        <label ref="jr:itext('/delivery/danger_signs_newborn/refuses_to_eat:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/refuses_to_eat/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/refuses_to_eat/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/danger_signs_newborn/vomits_everything">
+        <label ref="jr:itext('/delivery/danger_signs_newborn/vomits_everything:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/vomits_everything/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/vomits_everything/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/danger_signs_newborn/difficulty_breathing">
+        <label ref="jr:itext('/delivery/danger_signs_newborn/difficulty_breathing:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/difficulty_breathing/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/difficulty_breathing/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/danger_signs_newborn/infected_umbilical_cord">
+        <label ref="jr:itext('/delivery/danger_signs_newborn/infected_umbilical_cord:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/infected_umbilical_cord/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/infected_umbilical_cord/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/danger_signs_newborn/skin_postules_with_abcess">
+        <label ref="jr:itext('/delivery/danger_signs_newborn/skin_postules_with_abcess:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/skin_postules_with_abcess/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/skin_postules_with_abcess/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/danger_signs_newborn/distended_abdomen">
+        <label ref="jr:itext('/delivery/danger_signs_newborn/distended_abdomen:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/distended_abdomen/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/distended_abdomen/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/danger_signs_newborn/weak_or_absence_cry">
+        <label ref="jr:itext('/delivery/danger_signs_newborn/weak_or_absence_cry:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/weak_or_absence_cry/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/weak_or_absence_cry/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/danger_signs_newborn/unconscious">
+        <label ref="jr:itext('/delivery/danger_signs_newborn/unconscious:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/unconscious/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/unconscious/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/danger_signs_newborn/convulsion">
+        <label ref="jr:itext('/delivery/danger_signs_newborn/convulsion:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/convulsion/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/convulsion/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/delivery/danger_signs_newborn/danger_signs_newborn_continue_follow_up">
+        <label ref="jr:itext('/delivery/danger_signs_newborn/danger_signs_newborn_continue_follow_up:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/danger_signs_newborn_continue_follow_up/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/danger_signs_newborn/danger_signs_newborn_continue_follow_up/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/delivery/danger_signs_newborn_advices">
+      <label ref="jr:itext('/delivery/danger_signs_newborn_advices:label')"/>
+      <input ref="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_1">
+        <label ref="jr:itext('/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_1:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_2">
+        <label ref="jr:itext('/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_2:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_3">
+        <label ref="jr:itext('/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_3:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_5">
+        <label ref="jr:itext('/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_5:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_7">
+        <label ref="jr:itext('/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_7:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_9">
+        <label ref="jr:itext('/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_9:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_11">
+        <label ref="jr:itext('/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_11:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_13">
+        <label ref="jr:itext('/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_13:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_15">
+        <label ref="jr:itext('/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_15:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_17">
+        <label ref="jr:itext('/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_17:label')"/>
+      </input>
+      <input appearance="li" ref="/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_19">
+        <label ref="jr:itext('/delivery/danger_signs_newborn_advices/n_danger_signs_newborn_advices_19:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/delivery/group_diagnosis">
+      <label ref="jr:itext('/delivery/group_diagnosis:label')"/>
+      <input appearance="h1 yellow" ref="/delivery/group_diagnosis/r_summary">
+        <label ref="jr:itext('/delivery/group_diagnosis/r_summary:label')"/>
+      </input>
+      <input ref="/delivery/group_diagnosis/r_patient_info">
+        <label ref="jr:itext('/delivery/group_diagnosis/r_patient_info:label')"/>
+      </input>
+      <group ref="/delivery/group_diagnosis/delivery_information">
+        <label ref="jr:itext('/delivery/group_diagnosis/delivery_information:label')"/>
+        <input appearance="h1 blue" ref="/delivery/group_diagnosis/delivery_information/r_delivery_info">
+          <label ref="jr:itext('/delivery/group_diagnosis/delivery_information/r_delivery_info:label')"/>
+        </input>
+        <input ref="/delivery/group_diagnosis/delivery_information/r_delivery_date">
+          <label ref="jr:itext('/delivery/group_diagnosis/delivery_information/r_delivery_date:label')"/>
+        </input>
+        <input ref="/delivery/group_diagnosis/delivery_information/r_delivery_place">
+          <label ref="jr:itext('/delivery/group_diagnosis/delivery_information/r_delivery_place:label')"/>
+        </input>
+      </group>
+      <group ref="/delivery/group_diagnosis/r_signs">
+        <label ref="jr:itext('/delivery/group_diagnosis/r_signs:label')"/>
+        <input appearance="h1 yellow" ref="/delivery/group_diagnosis/r_signs/r_signs_symptoms">
+          <label ref="jr:itext('/delivery/group_diagnosis/r_signs/r_signs_symptoms:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/r_signs/r_no_danger_signs">
+          <label ref="jr:itext('/delivery/group_diagnosis/r_signs/r_no_danger_signs:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/r_signs/r_danger_signs">
+          <label ref="jr:itext('/delivery/group_diagnosis/r_signs/r_danger_signs:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/r_signs/r_danger_signs_bleeding">
+          <label ref="jr:itext('/delivery/group_diagnosis/r_signs/r_danger_signs_bleeding:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/r_signs/r_danger_signs_headaches">
+          <label ref="jr:itext('/delivery/group_diagnosis/r_signs/r_danger_signs_headaches:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/r_signs/r_danger_signs_low_abdomnal_pain">
+          <label ref="jr:itext('/delivery/group_diagnosis/r_signs/r_danger_signs_low_abdomnal_pain:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/r_signs/r_danger_signs_fever">
+          <label ref="jr:itext('/delivery/group_diagnosis/r_signs/r_danger_signs_fever:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/r_signs/r_danger_signs_vaginal_discharge">
+          <label ref="jr:itext('/delivery/group_diagnosis/r_signs/r_danger_signs_vaginal_discharge:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/r_signs/r_danger_signs_breast_abscess">
+          <label ref="jr:itext('/delivery/group_diagnosis/r_signs/r_danger_signs_breast_abscess:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/r_signs/r_danger_signs_blurred_vision">
+          <label ref="jr:itext('/delivery/group_diagnosis/r_signs/r_danger_signs_blurred_vision:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/r_signs/r_danger_signs_calves_pain">
+          <label ref="jr:itext('/delivery/group_diagnosis/r_signs/r_danger_signs_calves_pain:label')"/>
+        </input>
+      </group>
+      <group ref="/delivery/group_diagnosis/group_summary">
+        <label ref="jr:itext('/delivery/group_diagnosis/group_summary:label')"/>
+        <input appearance="h1 red" ref="/delivery/group_diagnosis/group_summary/summary_referral">
+          <label ref="jr:itext('/delivery/group_diagnosis/group_summary/summary_referral:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/group_summary/r_referral_note">
+          <label ref="jr:itext('/delivery/group_diagnosis/group_summary/r_referral_note:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/group_summary/referrals_newborn_n_1">
+          <label ref="jr:itext('/delivery/group_diagnosis/group_summary/referrals_newborn_n_1:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/group_summary/referrals_newborn_n_2">
+          <label ref="jr:itext('/delivery/group_diagnosis/group_summary/referrals_newborn_n_2:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/group_summary/referrals_newborn_n_3">
+          <label ref="jr:itext('/delivery/group_diagnosis/group_summary/referrals_newborn_n_3:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/group_summary/referrals_newborn_n_4">
+          <label ref="jr:itext('/delivery/group_diagnosis/group_summary/referrals_newborn_n_4:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/group_summary/referrals_newborn_n_5">
+          <label ref="jr:itext('/delivery/group_diagnosis/group_summary/referrals_newborn_n_5:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/group_summary/referrals_newborn_n_6">
+          <label ref="jr:itext('/delivery/group_diagnosis/group_summary/referrals_newborn_n_6:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/group_summary/referrals_newborn_n_7">
+          <label ref="jr:itext('/delivery/group_diagnosis/group_summary/referrals_newborn_n_7:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/group_summary/referrals_newborn_n_8">
+          <label ref="jr:itext('/delivery/group_diagnosis/group_summary/referrals_newborn_n_8:label')"/>
+        </input>
+        <input appearance="li" ref="/delivery/group_diagnosis/group_summary/referrals_newborn_n_9">
+          <label ref="jr:itext('/delivery/group_diagnosis/group_summary/referrals_newborn_n_9:label')"/>
+        </input>
+        <select1 appearance="columns" ref="/delivery/group_diagnosis/group_summary/s_have_you_refer_child">
+          <label ref="jr:itext('/delivery/group_diagnosis/group_summary/s_have_you_refer_child:label')"/>
+          <item>
+            <label ref="jr:itext('/delivery/group_diagnosis/group_summary/s_have_you_refer_child/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery/group_diagnosis/group_summary/s_have_you_refer_child/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/delivery/group_diagnosis/group_summary/why_not_refer_newborn">
+          <label ref="jr:itext('/delivery/group_diagnosis/group_summary/why_not_refer_newborn:label')"/>
+        </input>
+      </group>
+      <group ref="/delivery/group_diagnosis/next_followup_information">
+        <label ref="jr:itext('/delivery/group_diagnosis/next_followup_information:label')"/>
+        <input ref="/delivery/group_diagnosis/next_followup_information/summary_follow_up">
+          <label ref="jr:itext('/delivery/group_diagnosis/next_followup_information/summary_follow_up:label')"/>
+        </input>
+      </group>
+    </group>
+  </h:body>
+</h:html>

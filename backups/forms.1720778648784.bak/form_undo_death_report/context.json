@@ -1,0 +1,5 @@
+{
+  "expression": "user.role === 'reco' && user._id !== contact._id && !summary.alive && contact.type === 'person' && ageInYears(contact) < 150",
+  "person": true,
+  "place": false
+}

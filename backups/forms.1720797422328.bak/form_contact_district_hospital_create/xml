@@ -1,0 +1,721 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>New Site</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/contact/age_months:hint">
+            <value>(And how many months?)</value>
+          </text>
+          <text id="/data/contact/age_months:jr:constraintMsg">
+            <value>Months must between 0 and 11</value>
+          </text>
+          <text id="/data/contact/age_months:label">
+            <value>*</value>
+          </text>
+          <text id="/data/contact/age_years:hint">
+            <value>(Age in years)</value>
+          </text>
+          <text id="/data/contact/age_years:jr:constraintMsg">
+            <value>Age must be 0 or more</value>
+          </text>
+          <text id="/data/contact/age_years:label">
+            <value>Age</value>
+          </text>
+          <text id="/data/contact/code_type/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/contact/code_type/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/contact/code_type:label">
+            <value>is this person a patient</value>
+          </text>
+          <text id="/data/contact/code_w:hint">
+            <value>The code must be of the format: AAAAAA-000000000</value>
+          </text>
+          <text id="/data/contact/code_w:jr:constraintMsg">
+            <value>The code must be of the format: AAAAAA-000000000</value>
+          </text>
+          <text id="/data/contact/code_w:label">
+            <value>Person Code</value>
+          </text>
+          <text id="/data/contact/code_x:hint">
+            <value>The code must be of the format: 0000</value>
+          </text>
+          <text id="/data/contact/code_x:jr:constraintMsg">
+            <value>The code must be of the format: 0000</value>
+          </text>
+          <text id="/data/contact/code_x:label">
+            <value>Person Code</value>
+          </text>
+          <text id="/data/contact/code_y:hint">
+            <value>The code must be of the format: AAAAAA-000</value>
+          </text>
+          <text id="/data/contact/code_y:jr:constraintMsg">
+            <value>The code must be of the format: AAAAAA-000</value>
+          </text>
+          <text id="/data/contact/code_y:label">
+            <value>Person Code</value>
+          </text>
+          <text id="/data/contact/dob_calendar:jr:constraintMsg">
+            <value>Date must be before today</value>
+          </text>
+          <text id="/data/contact/dob_calendar:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/contact/dob_method/approx:label">
+            <value>With current age</value>
+          </text>
+          <text id="/data/contact/dob_method/calendar:label">
+            <value>With calendar (preferred)</value>
+          </text>
+          <text id="/data/contact/dob_method:label">
+            <value>Method to select date of birth</value>
+          </text>
+          <text id="/data/contact/geolocation:label">
+            <value>Location</value>
+          </text>
+          <text id="/data/contact/info:label">
+            <value>&lt;p style=&quot;text-align:center;&quot;&gt;&lt;b&gt;Code: &lt;/b&gt; &lt;b style=&quot;color:green;&quot;&gt;<output value=" /data/contact/code_z "/>&lt;/b&gt;&lt;/p&gt;</value>
+          </text>
+          <text id="/data/contact/meta/created_by:label">
+            <value>created_by</value>
+          </text>
+          <text id="/data/contact/meta/created_by_external_id:label">
+            <value>created_by_external_id</value>
+          </text>
+          <text id="/data/contact/meta/created_by_name:label">
+            <value>created_by_name</value>
+          </text>
+          <text id="/data/contact/meta/created_by_place:label">
+            <value>created_by_place</value>
+          </text>
+          <text id="/data/contact/meta/created_by_role:label">
+            <value>created_by_role</value>
+          </text>
+          <text id="/data/contact/name:label">
+            <value>first contact names</value>
+          </text>
+          <text id="/data/contact/parent:hint">
+            <value>mandatory</value>
+          </text>
+          <text id="/data/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/data/contact/phone:hint">
+            <value>Format: XX XX XX XX</value>
+          </text>
+          <text id="/data/contact/phone:jr:constraintMsg">
+            <value>Please enter a valid local number. For example: XX XX XX XX</value>
+          </text>
+          <text id="/data/contact/phone:label">
+            <value>Phone Number</value>
+          </text>
+          <text id="/data/contact/phone_alternate:hint">
+            <value>Format: XX XX XX XX</value>
+          </text>
+          <text id="/data/contact/phone_alternate:jr:constraintMsg">
+            <value>Please enter a valid local number. For example: XX XX XX XX</value>
+          </text>
+          <text id="/data/contact/phone_alternate:label">
+            <value>Alternate Phone Number</value>
+          </text>
+          <text id="/data/contact/role:hint">
+            <value>Select the role that best suits this person</value>
+          </text>
+          <text id="/data/contact/role:label">
+            <value>Role</value>
+          </text>
+          <text id="/data/contact/role_x/chw:label">
+            <value>CHW</value>
+          </text>
+          <text id="/data/contact/role_x/chw_supervisor:label">
+            <value>CHW Supervisor</value>
+          </text>
+          <text id="/data/contact/role_x/facility_manager:label">
+            <value>Facility Manager</value>
+          </text>
+          <text id="/data/contact/role_x/patient:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/contact/role_x:hint">
+            <value>Select the role that best suits this person</value>
+          </text>
+          <text id="/data/contact/role_x:label">
+            <value>Role</value>
+          </text>
+          <text id="/data/contact/sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/data/contact/sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/data/contact/sex:label">
+            <value>Gender</value>
+          </text>
+          <text id="/data/contact/type:hint">
+            <value>mandatory</value>
+          </text>
+          <text id="/data/contact/type:label">
+            <value>Person Type</value>
+          </text>
+          <text id="/data/contact:label">
+            <value>Primary Contact</value>
+          </text>
+          <text id="/data/district_hospital/contact:hint">
+            <value>mandatory</value>
+          </text>
+          <text id="/data/district_hospital/district_external_id:label">
+            <value>District Id</value>
+          </text>
+          <text id="/data/district_hospital/district_external_name:label">
+            <value>District Name</value>
+          </text>
+          <text id="/data/district_hospital/external_id:label">
+            <value>Site External Id</value>
+          </text>
+          <text id="/data/district_hospital/geolocation:label">
+            <value>Location</value>
+          </text>
+          <text id="/data/district_hospital/name:label">
+            <value>Site Name</value>
+          </text>
+          <text id="/data/district_hospital/notes:label">
+            <value>Site Notes</value>
+          </text>
+          <text id="/data/district_hospital:hint">
+            <value>mandatory</value>
+          </text>
+          <text id="/data/district_hospital:label">
+            <value>Branch Information</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/external_id:label">
+            <value>Unique code</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Contact name</value>
+          </text>
+          <text id="/data/inputs/contact/role:label">
+            <value>Role</value>
+          </text>
+          <text id="/data/inputs/contact/username:label">
+            <value>account name</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>User Information</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Facility ID for the parent user</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Name of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/type:label">
+            <value>Type</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/contact/age_months:hint">
+            <value>(Combien de mois)</value>
+          </text>
+          <text id="/data/contact/age_months:jr:constraintMsg">
+            <value>le mois doit être entre 0 et 11</value>
+          </text>
+          <text id="/data/contact/age_months:label">
+            <value>*</value>
+          </text>
+          <text id="/data/contact/age_years:hint">
+            <value>(Age en années)</value>
+          </text>
+          <text id="/data/contact/age_years:jr:constraintMsg">
+            <value>L'age doit être supérieur à 0</value>
+          </text>
+          <text id="/data/contact/age_years:label">
+            <value>Âge</value>
+          </text>
+          <text id="/data/contact/code_type/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/contact/code_type/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/data/contact/code_type:label">
+            <value>Est ce un patient ?</value>
+          </text>
+          <text id="/data/contact/code_w:hint">
+            <value>Le code doit être du format: AAAAAA-000000000</value>
+          </text>
+          <text id="/data/contact/code_w:jr:constraintMsg">
+            <value>Le code doit être du format: AAAAAA-000000000</value>
+          </text>
+          <text id="/data/contact/code_w:label">
+            <value>Code de la personne</value>
+          </text>
+          <text id="/data/contact/code_x:hint">
+            <value>Le code doit être du format: 0000</value>
+          </text>
+          <text id="/data/contact/code_x:jr:constraintMsg">
+            <value>Le code doit être du format: 0000</value>
+          </text>
+          <text id="/data/contact/code_x:label">
+            <value>Code de la personne</value>
+          </text>
+          <text id="/data/contact/code_y:hint">
+            <value>Le code doit être du format: AAAAAA-000</value>
+          </text>
+          <text id="/data/contact/code_y:jr:constraintMsg">
+            <value>Le code doit être du format: AAAAAA-000</value>
+          </text>
+          <text id="/data/contact/code_y:label">
+            <value>Code de la personne</value>
+          </text>
+          <text id="/data/contact/dob_calendar:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/dob_calendar:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/data/contact/dob_method/approx:label">
+            <value>Avec l'age actuel</value>
+          </text>
+          <text id="/data/contact/dob_method/calendar:label">
+            <value>Avec Calendrier (recommandé)</value>
+          </text>
+          <text id="/data/contact/dob_method:label">
+            <value>Méthode de date de naissance souhaité</value>
+          </text>
+          <text id="/data/contact/geolocation:label">
+            <value>Emplacement</value>
+          </text>
+          <text id="/data/contact/info:label">
+            <value>&lt;p style=&quot;text-align:center;&quot;&gt;&lt;b&gt;Code: &lt;/b&gt; &lt;b style=&quot;color:green;&quot;&gt;<output value=" /data/contact/code_z "/>&lt;/b&gt;&lt;/p&gt;</value>
+          </text>
+          <text id="/data/contact/meta/created_by:label">
+            <value>created_by</value>
+          </text>
+          <text id="/data/contact/meta/created_by_external_id:label">
+            <value>created_by_external_id</value>
+          </text>
+          <text id="/data/contact/meta/created_by_name:label">
+            <value>created_by_name</value>
+          </text>
+          <text id="/data/contact/meta/created_by_place:label">
+            <value>created_by_place</value>
+          </text>
+          <text id="/data/contact/meta/created_by_role:label">
+            <value>created_by_role</value>
+          </text>
+          <text id="/data/contact/name:label">
+            <value>Nom et Prénoms du premier contact</value>
+          </text>
+          <text id="/data/contact/parent:hint">
+            <value>obligatoire</value>
+          </text>
+          <text id="/data/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/data/contact/phone:hint">
+            <value>Format: XX XX XX XX</value>
+          </text>
+          <text id="/data/contact/phone:jr:constraintMsg">
+            <value>Format autorisé: XX XX XX XX</value>
+          </text>
+          <text id="/data/contact/phone:label">
+            <value>Numéro de téléphone</value>
+          </text>
+          <text id="/data/contact/phone_alternate:hint">
+            <value>Format: XX XX XX XX</value>
+          </text>
+          <text id="/data/contact/phone_alternate:jr:constraintMsg">
+            <value>Format autorisé: XX XX XX XX</value>
+          </text>
+          <text id="/data/contact/phone_alternate:label">
+            <value>Numéro de téléphone alternatif</value>
+          </text>
+          <text id="/data/contact/role:hint">
+            <value>Selectionner le bon role pour cette personne</value>
+          </text>
+          <text id="/data/contact/role:label">
+            <value>Rôle</value>
+          </text>
+          <text id="/data/contact/role_x/chw:label">
+            <value>ASC</value>
+          </text>
+          <text id="/data/contact/role_x/chw_supervisor:label">
+            <value>Superviseur ASC</value>
+          </text>
+          <text id="/data/contact/role_x/facility_manager:label">
+            <value>Site Manageur</value>
+          </text>
+          <text id="/data/contact/role_x/patient:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/contact/role_x:hint">
+            <value>Selectionner le bon role pour cette personne</value>
+          </text>
+          <text id="/data/contact/role_x:label">
+            <value>Rôle</value>
+          </text>
+          <text id="/data/contact/sex/female:label">
+            <value>Femme</value>
+          </text>
+          <text id="/data/contact/sex/male:label">
+            <value>Homme</value>
+          </text>
+          <text id="/data/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/data/contact/type:hint">
+            <value>obligatoire</value>
+          </text>
+          <text id="/data/contact/type:label">
+            <value>Type de personne</value>
+          </text>
+          <text id="/data/contact:label">
+            <value>Contact Principal</value>
+          </text>
+          <text id="/data/district_hospital/contact:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/district_hospital/district_external_id:label">
+            <value>Id du District d'appartenance</value>
+          </text>
+          <text id="/data/district_hospital/district_external_name:label">
+            <value>Nom du District d'appartenance</value>
+          </text>
+          <text id="/data/district_hospital/external_id:label">
+            <value>Identifiant externe du nouveau site</value>
+          </text>
+          <text id="/data/district_hospital/geolocation:label">
+            <value>Emplacement</value>
+          </text>
+          <text id="/data/district_hospital/name:label">
+            <value>Nom du nouveau site</value>
+          </text>
+          <text id="/data/district_hospital/notes:label">
+            <value>Informations sur ce site</value>
+          </text>
+          <text id="/data/district_hospital:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/district_hospital:label">
+            <value>Informations sur la succursale</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Nom de l'utilisateur</value>
+          </text>
+          <text id="/data/inputs/contact/external_id:label">
+            <value>Code unique de l'utilisateur</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Nom du Contact</value>
+          </text>
+          <text id="/data/inputs/contact/role:label">
+            <value>Role de l'utilisateur</value>
+          </text>
+          <text id="/data/inputs/contact/username:label">
+            <value>Nom du compte</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>Information de l'utilisateur</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID de contact de l'utilisateur connecté</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>ID d'installation pour l'utilisateur parent</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Nom de l'utilisateur connecté</value>
+          </text>
+          <text id="/data/inputs/user/type:label">
+            <value>Type</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data delimiter="#" id="contact:district_hospital:create" prefix="J1!contact:district_hospital:create!" version="2018-01-24">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <type/>
+              <name/>
+            </user>
+            <contact>
+              <_id/>
+              <role/>
+              <username/>
+              <name/>
+              <external_id/>
+            </contact>
+          </inputs>
+          <district_hospital>
+            <district_external_id/>
+            <district_external_name/>
+            <external_id/>
+            <name/>
+            <contact/>
+            <notes/>
+            <geolocation/>
+          </district_hospital>
+          <contact>
+            <type>person</type>
+            <parent>PARENT</parent>
+            <place_contact>yes</place_contact>
+            <name/>
+            <dob_method>approx</dob_method>
+            <dob_calendar/>
+            <age_years/>
+            <age_months>0</age_months>
+            <date_of_birth/>
+            <sex/>
+            <code_type>no</code_type>
+            <code_w/>
+            <code_x/>
+            <code_y/>
+            <unique_code/>
+            <external_id/>
+            <code/>
+            <code_z/>
+            <info/>
+            <role_x/>
+            <role/>
+            <phone/>
+            <phone_alternate/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_role/>
+              <created_by_external_id/>
+              <created_by_name/>
+              <created_by_place/>
+            </meta>
+            <geolocation/>
+          </contact>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs/user" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/type" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind calculate="/data/inputs/user/contact_id" nodeset="/data/inputs/contact/_id" readonly="true()" type="db:person"/>
+      <bind calculate="/data/inputs/contact/role" nodeset="/data/inputs/contact/role" readonly="true()" type="string"/>
+      <bind calculate="../../user/name" nodeset="/data/inputs/contact/username" readonly="true()" type="string"/>
+      <bind calculate="/data/inputs/contact/name" nodeset="/data/inputs/contact/name" readonly="true()" type="string"/>
+      <bind calculate="/data/inputs/contact/external_id" nodeset="/data/inputs/contact/external_id" readonly="true()" type="string"/>
+      <bind nodeset="/data/district_hospital/district_external_id" required="true()" type="string"/>
+      <bind nodeset="/data/district_hospital/district_external_name" required="true()" type="string"/>
+      <bind nodeset="/data/district_hospital/external_id" required="true()" type="string"/>
+      <bind nodeset="/data/district_hospital/name" required="true()" type="string"/>
+      <bind calculate="&quot;NEW&quot;" nodeset="/data/district_hospital/contact" type="string"/>
+      <bind nodeset="/data/district_hospital/notes" type="string"/>
+      <bind calculate="concat(concat('',../../inputs/meta/location/lat), concat('',../../inputs/meta/location/long))" nodeset="/data/district_hospital/geolocation" type="string"/>
+      <bind nodeset="/data/contact/type" type="string"/>
+      <bind calculate="." nodeset="/data/contact/parent" type="string"/>
+      <bind calculate="concat('yes','')" nodeset="/data/contact/place_contact" type="string"/>
+      <bind nodeset="/data/contact/name" required="true()" type="string"/>
+      <bind nodeset="/data/contact/dob_method" type="select1"/>
+      <bind constraint=".&lt;today()" jr:constraintMsg="jr:itext('/data/contact/dob_calendar:jr:constraintMsg')" nodeset="/data/contact/dob_calendar" relevant="selected(../dob_method,'calendar')" required="true()" type="date"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/data/contact/age_years:jr:constraintMsg')" nodeset="/data/contact/age_years" relevant="selected(../dob_method,'approx')" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0 and . &lt;= 11" jr:constraintMsg="jr:itext('/data/contact/age_months:jr:constraintMsg')" nodeset="/data/contact/age_months" relevant="selected(../dob_method,'approx')" required="true()" type="int"/>
+      <bind calculate="format-date-time(if(not(selected( ../dob_method,'approx')), ../dob_calendar, format-date-time( decimal-date-time( today() ) - (365.25 * ../age_years) - (30.5 * ../age_months ) - 0, &quot;%Y-%m-%d&quot; ) ),&quot;%Y-%m-%d&quot;)" nodeset="/data/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/contact/sex" required="true()" type="select1"/>
+      <bind nodeset="/data/contact/code_type" relevant="concat(../meta/created_by_role,'') !=&quot;chw&quot;" required="true()" type="select1"/>
+      <bind constraint="regex(.,'^[A-Z]{6}-\d{9}$')" jr:constraintMsg="jr:itext('/data/contact/code_w:jr:constraintMsg')" nodeset="/data/contact/code_w" relevant="concat(../meta/created_by_role,'')!=&quot;chw&quot; and concat(../code_type,'')='yes'" required="true()" type="string"/>
+      <bind constraint="regex(.,'^[A-Z]{0}\d{4}$')" jr:constraintMsg="jr:itext('/data/contact/code_x:jr:constraintMsg')" nodeset="/data/contact/code_x" relevant="concat(../meta/created_by_role,'')=&quot;chw&quot;" required="true()" type="string"/>
+      <bind constraint="regex(.,'^[A-Z]{6}-\d{3}$')" jr:constraintMsg="jr:itext('/data/contact/code_y:jr:constraintMsg')" nodeset="/data/contact/code_y" relevant="concat(../meta/created_by_role,'') !=&quot;chw&quot; and concat(../code_type,'')!='yes'" required="true()" type="string"/>
+      <bind calculate="coalesce(coalesce(../code_w,../code_x),../code_y)" nodeset="/data/contact/unique_code" type="string"/>
+      <bind calculate="if(concat(../meta/created_by_role,'')=&quot;chw&quot;,concat(../meta/created_by_external_id,'00',../unique_code),concat(../unique_code,''))" nodeset="/data/contact/external_id" type="string"/>
+      <bind calculate="../external_id" nodeset="/data/contact/code" type="string"/>
+      <bind calculate="../code" nodeset="/data/contact/code_z" type="string"/>
+      <bind nodeset="/data/contact/info" readonly="true()" type="string"/>
+      <bind calculate="coalesce(../role_x,../role)" nodeset="/data/contact/role_x" relevant="concat(../meta/created_by_role,'')!='chw'" required="true()" type="select1"/>
+      <bind calculate="if(concat(../meta/created_by_role,'')='chw','patient',concat(../role_x,''))" nodeset="/data/contact/role" required="true()" type="string"/>
+      <bind constraint="regex(.,'^(\d{2}\s?){4}$')" jr:constraintMsg="jr:itext('/data/contact/phone:jr:constraintMsg')" nodeset="/data/contact/phone" type="string"/>
+      <bind constraint="regex(.,'^(\d{2}\s?){4}$')" jr:constraintMsg="jr:itext('/data/contact/phone_alternate:jr:constraintMsg')" nodeset="/data/contact/phone_alternate" type="string"/>
+      <bind calculate="/data/inputs/user/contact_id" nodeset="/data/contact/meta/created_by" type="string"/>
+      <bind calculate="/data/inputs/contact/role" nodeset="/data/contact/meta/created_by_role" type="string"/>
+      <bind calculate="/data/inputs/contact/external_id" nodeset="/data/contact/meta/created_by_external_id" type="string"/>
+      <bind calculate="/data/inputs/contact/name" nodeset="/data/contact/meta/created_by_name" type="string"/>
+      <bind calculate="/data/inputs/user/facility_id" nodeset="/data/contact/meta/created_by_place" type="string"/>
+      <bind calculate="concat(concat('',/data/inputs/meta/location/lat),concat('',/data/inputs/meta/location/long))" nodeset="/data/contact/geolocation" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/data/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/facility_id">
+          <label ref="jr:itext('/data/inputs/user/facility_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/type">
+          <label ref="jr:itext('/data/inputs/user/type:label')"/>
+        </input>
+        <input ref="/data/inputs/user/name">
+          <label ref="jr:itext('/data/inputs/user/name:label')"/>
+        </input>
+      </group>
+      <group ref="/data/inputs/contact">
+        <label ref="jr:itext('/data/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/data/inputs/contact/_id">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <input appearance="hidden" ref="/data/inputs/contact/role">
+          <label ref="jr:itext('/data/inputs/contact/role:label')"/>
+        </input>
+        <input ref="/data/inputs/contact/username">
+          <label ref="jr:itext('/data/inputs/contact/username:label')"/>
+        </input>
+        <input appearance="hidden" ref="/data/inputs/contact/name">
+          <label ref="jr:itext('/data/inputs/contact/name:label')"/>
+        </input>
+        <input ref="/data/inputs/contact/external_id">
+          <label ref="jr:itext('/data/inputs/contact/external_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/district_hospital">
+      <label ref="jr:itext('/data/district_hospital:label')"/>
+      <input ref="/data/district_hospital/district_external_id">
+        <label ref="jr:itext('/data/district_hospital/district_external_id:label')"/>
+      </input>
+      <input ref="/data/district_hospital/district_external_name">
+        <label ref="jr:itext('/data/district_hospital/district_external_name:label')"/>
+      </input>
+      <input ref="/data/district_hospital/external_id">
+        <label ref="jr:itext('/data/district_hospital/external_id:label')"/>
+      </input>
+      <input ref="/data/district_hospital/name">
+        <label ref="jr:itext('/data/district_hospital/name:label')"/>
+      </input>
+      <input ref="/data/district_hospital/notes">
+        <label ref="jr:itext('/data/district_hospital/notes:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/contact">
+      <label ref="jr:itext('/data/contact:label')"/>
+      <input appearance="hidden" ref="/data/contact/type">
+        <label ref="jr:itext('/data/contact/type:label')"/>
+        <hint ref="jr:itext('/data/contact/type:hint')"/>
+      </input>
+      <input appearance="hidden" ref="/data/contact/parent">
+        <label ref="jr:itext('/data/contact/parent:label')"/>
+        <hint ref="jr:itext('/data/contact/parent:hint')"/>
+      </input>
+      <input ref="/data/contact/name">
+        <label ref="jr:itext('/data/contact/name:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/data/contact/dob_method">
+        <label ref="jr:itext('/data/contact/dob_method:label')"/>
+        <item>
+          <label ref="jr:itext('/data/contact/dob_method/calendar:label')"/>
+          <value>calendar</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/contact/dob_method/approx:label')"/>
+          <value>approx</value>
+        </item>
+      </select1>
+      <input ref="/data/contact/dob_calendar">
+        <label ref="jr:itext('/data/contact/dob_calendar:label')"/>
+      </input>
+      <input ref="/data/contact/age_years">
+        <label ref="jr:itext('/data/contact/age_years:label')"/>
+        <hint ref="jr:itext('/data/contact/age_years:hint')"/>
+      </input>
+      <input ref="/data/contact/age_months">
+        <label ref="jr:itext('/data/contact/age_months:label')"/>
+        <hint ref="jr:itext('/data/contact/age_months:hint')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/data/contact/sex">
+        <label ref="jr:itext('/data/contact/sex:label')"/>
+        <item>
+          <label ref="jr:itext('/data/contact/sex/female:label')"/>
+          <value>female</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/contact/sex/male:label')"/>
+          <value>male</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/data/contact/code_type">
+        <label ref="jr:itext('/data/contact/code_type:label')"/>
+        <item>
+          <label ref="jr:itext('/data/contact/code_type/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/contact/code_type/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/data/contact/code_w">
+        <label ref="jr:itext('/data/contact/code_w:label')"/>
+        <hint ref="jr:itext('/data/contact/code_w:hint')"/>
+      </input>
+      <input ref="/data/contact/code_x">
+        <label ref="jr:itext('/data/contact/code_x:label')"/>
+        <hint ref="jr:itext('/data/contact/code_x:hint')"/>
+      </input>
+      <input ref="/data/contact/code_y">
+        <label ref="jr:itext('/data/contact/code_y:label')"/>
+        <hint ref="jr:itext('/data/contact/code_y:hint')"/>
+      </input>
+      <input ref="/data/contact/info">
+        <label ref="jr:itext('/data/contact/info:label')"/>
+      </input>
+      <select1 ref="/data/contact/role_x">
+        <label ref="jr:itext('/data/contact/role_x:label')"/>
+        <hint ref="jr:itext('/data/contact/role_x:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/contact/role_x/chw:label')"/>
+          <value>chw</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/contact/role_x/chw_supervisor:label')"/>
+          <value>chw_supervisor</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/contact/role_x/patient:label')"/>
+          <value>patient</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/contact/role_x/facility_manager:label')"/>
+          <value>facility_manager</value>
+        </item>
+      </select1>
+      <input ref="/data/contact/phone">
+        <label ref="jr:itext('/data/contact/phone:label')"/>
+        <hint ref="jr:itext('/data/contact/phone:hint')"/>
+      </input>
+      <input ref="/data/contact/phone_alternate">
+        <label ref="jr:itext('/data/contact/phone_alternate:label')"/>
+        <hint ref="jr:itext('/data/contact/phone_alternate:hint')"/>
+      </input>
+      <group ref="/data/contact/meta"/>
+    </group>
+  </h:body>
+</h:html>

@@ -1,0 +1,36 @@
+
+  <model>
+    <instance>
+        <home_visit xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="home_visit" prefix="J1!home_visit!" delimiter="#" version="2017-11-16">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+            </contact>
+          </inputs>
+          <visited_contact_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <home_visit_purpose>
+            <s_home_visit_purpose/>
+            <s_found_someone/>
+            <submit/>
+          </home_visit_purpose>
+          <meta>
+            <instanceID/>
+          </meta>
+        </home_visit>
+      </instance>
+    <instance id="contact-summary"/>
+  </model>
+

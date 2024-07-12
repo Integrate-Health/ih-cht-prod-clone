@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Edit Site</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/district_hospital/district_external_id:label">
+            <value>Edit District Id</value>
+          </text>
+          <text id="/data/district_hospital/district_external_name:label">
+            <value>Edit District Name</value>
+          </text>
+          <text id="/data/district_hospital/external_id:label">
+            <value>Edit Site External Id</value>
+          </text>
+          <text id="/data/district_hospital/geolocation:label">
+            <value>Location</value>
+          </text>
+          <text id="/data/district_hospital/name:label">
+            <value>Update Site Name</value>
+          </text>
+          <text id="/data/district_hospital/notes:label">
+            <value>Update Site Notes</value>
+          </text>
+          <text id="/data/district_hospital:label">
+            <value>Edit Site name</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Facility ID for the parent user</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/district_hospital/district_external_id:label">
+            <value>Modifier l'Id du District d'appartenance</value>
+          </text>
+          <text id="/data/district_hospital/district_external_name:label">
+            <value>Modifier le Nom du District d'appartenance</value>
+          </text>
+          <text id="/data/district_hospital/external_id:label">
+            <value>Modifier l'identifiant externe</value>
+          </text>
+          <text id="/data/district_hospital/geolocation:label">
+            <value>Emplacement</value>
+          </text>
+          <text id="/data/district_hospital/name:label">
+            <value>Modifier le nom du site</value>
+          </text>
+          <text id="/data/district_hospital/notes:label">
+            <value>Modifier Informations du site</value>
+          </text>
+          <text id="/data/district_hospital:label">
+            <value>Modifier nom du Site</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>ID d'installation pour l'utilisateur parent</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data delimiter="#" id="contact:district_hospital:edit" prefix="J1!contact:district_hospital:edit!" version="2022-11-01  17-23">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <facility_id/>
+            </user>
+          </inputs>
+          <district_hospital>
+            <district_external_id/>
+            <district_external_name/>
+            <external_id/>
+            <name/>
+            <notes/>
+            <geolocation/>
+          </district_hospital>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/district_hospital/district_external_id" required="true()" type="string"/>
+      <bind nodeset="/data/district_hospital/district_external_name" required="true()" type="string"/>
+      <bind nodeset="/data/district_hospital/external_id" required="true()" type="string"/>
+      <bind nodeset="/data/district_hospital/name" required="true()" type="string"/>
+      <bind nodeset="/data/district_hospital/notes" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/data/district_hospital/geolocation" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/data/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/facility_id">
+          <label ref="jr:itext('/data/inputs/user/facility_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <group ref="/data/district_hospital">
+      <label ref="jr:itext('/data/district_hospital:label')"/>
+      <input ref="/data/district_hospital/district_external_id">
+        <label ref="jr:itext('/data/district_hospital/district_external_id:label')"/>
+      </input>
+      <input ref="/data/district_hospital/district_external_name">
+        <label ref="jr:itext('/data/district_hospital/district_external_name:label')"/>
+      </input>
+      <input ref="/data/district_hospital/external_id">
+        <label ref="jr:itext('/data/district_hospital/external_id:label')"/>
+      </input>
+      <input ref="/data/district_hospital/name">
+        <label ref="jr:itext('/data/district_hospital/name:label')"/>
+      </input>
+      <input ref="/data/district_hospital/notes">
+        <label ref="jr:itext('/data/district_hospital/notes:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

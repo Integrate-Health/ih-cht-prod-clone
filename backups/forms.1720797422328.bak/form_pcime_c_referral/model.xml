@@ -1,0 +1,67 @@
+
+  <model>
+    <instance>
+        <pcime_c_referral xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" delimiter="#" id="pcime_c_referral" prefix="J1!pcime_c_referral!" version="2017-09-22">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_follow_up_type/>
+            <t_last_weight/>
+            <t_last_pb/>
+            <t_last_temperature/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent/>
+            </contact>
+          </inputs>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_age_display_fr/>
+          <patient_id/>
+          <patient_name/>
+          <patient_sex/>
+          <patient_sex_en/>
+          <patient_sex_fr/>
+          <visited_contact_uuid/>
+          <referal/>
+          <s_child_referal>
+            <s_temperature/>
+            <s_weight/>
+            <s_pb/>
+            <s_child_go_usp_after_referal/>
+            <s_did_child_go_to_usp/>
+            <s_why_not/>
+            <s_child_health/>
+            <s_child_health_next_referal/>
+          </s_child_referal>
+          <results_page>
+            <r_summary/>
+            <r_patient_info/>
+            <r_referral/>
+            <s_have_you_refer_child/>
+            <s_why_not/>
+            <s_next_visit/>
+            <r_ref_visit/>
+            <r_ref_no_visit/>
+          </results_page>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </pcime_c_referral>
+      </instance>
+    <instance id="contact-summary"/>
+  </model>
+

@@ -1,0 +1,18 @@
+{
+    "context": {
+        "expression": "contact.type === 'health_center' && user.role === 'chw'",
+        "person": false,
+        "place": true
+    },
+    "icon": "treatment",
+    "title": [
+      {
+        "locale": "en",
+        "content": "Drug Movements"
+      },
+      {
+        "locale": "fr",
+        "content": "Mouvements Médicaments"
+      }
+    ]
+}

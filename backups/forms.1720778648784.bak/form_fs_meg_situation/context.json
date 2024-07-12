@@ -1,0 +1,5 @@
+{
+  "expression": "user.role === 'mentor' && (contact.type === 'hospital' || contact.contact_type === 'hospital')",
+  "person": false,
+  "place": true
+}

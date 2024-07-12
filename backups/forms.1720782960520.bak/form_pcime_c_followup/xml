@@ -1,0 +1,2162 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Suivi PCIME-C</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/pcime_c_followup/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_treat_for_diarrhea:label">
+            <value>Treated for Diarrhea</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_treat_for_pneumonia:label">
+            <value>Treated for Pneumonia</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_treat_for_fever:label">
+            <value>Treated for Fever</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_treat_for_cough_cold:label">
+            <value>Treated for Cough Cold</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_follow_up_type:label">
+            <value>Followup Type</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_follow_up_count:label">
+            <value>Followup Count</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_has_been_referred:label">
+            <value>Has been referred</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_non_malaria_fever:label">
+            <value>Non malaria fever</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_malaria_fever:label">
+            <value>Malaria fever</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_resp_rate:label">
+            <value>Respiratory rate</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_last_visit_temperature:label">
+            <value>Old child temperature</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_last_visit_weight:label">
+            <value>Old child weight</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_last_visit_child_brachial_perimeter:label">
+            <value>Old child brachial perimeter</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_has_malnutrition:label">
+            <value>malnutrition</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_has_been_malnutrition_referred:label">
+            <value>Has been referred for malnutrition</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/contact/_id:hint">
+            <value>Select a person from list</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/pcime_c_followup/patient_age_in_years:label">
+            <value>Age in Years</value>
+          </text>
+          <text id="/pcime_c_followup/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/pcime_c_followup/patient_name:label">
+            <value>Patient Name</value>
+          </text>
+          <text id="/pcime_c_followup/patient_age_in_months:label">
+            <value>Age In Months</value>
+          </text>
+          <text id="/pcime_c_followup/patient_age_in_days:label">
+            <value>Age In Days</value>
+          </text>
+          <text id="/pcime_c_followup/visited_contact_uuid:label">
+            <value>Family Id</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant:label">
+            <value>Last Visit Constants</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/l_visit_temperature:label">
+            <value>Last temperature : <output value=" /pcime_c_followup/inputs/t_last_visit_temperature "/> °C</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/l_visit_weight:label">
+            <value>Last weight: <output value=" /pcime_c_followup/inputs/t_last_visit_weight "/> Kg</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/l_visit_child_brachial_perimeter:label">
+            <value>Last Brachial Perimeter : <output value=" /pcime_c_followup/inputs/t_last_visit_child_brachial_perimeter "/> mm</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/l_resp_rate:label">
+            <value>respiratory rate: <output value=" /pcime_c_followup/inputs/t_resp_rate "/> rpm</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_last_visit_infos:label">
+            <value>On last visit, <output value=" /pcime_c_followup/patient_name "/> has</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_treat_for_diarrhea:label">
+            <value>Diarrhea</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_treat_for_pneumonia:label">
+            <value>Pneumonia</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_treat_for_cough_cold:label">
+            <value>Cough or Cold</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_non_malaria_fever:label">
+            <value>Non malaria fever</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_malaria_fever:label">
+            <value>Malaria fever</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_has_malnutrition:label">
+            <value>malnutrition</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_has_been_referred:label">
+            <value>been refered for danger sign</value>
+          </text>
+          <text id="/pcime_c_followup/drugs:label">
+            <value>TAKING OF DRUGS</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_received_dosage:label">
+            <value>Has the child received his dose?</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_received_dosage/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_received_dosage/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_note_congrats:label">
+            <value>Congratulate</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_note_advice:label">
+            <value>Advice</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_note_drugs:label">
+            <value>Ask the parent to recall how to administer the medications</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_drug_well_administrated:label">
+            <value>Has the parent administered the medication properly?</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_drug_well_administrated/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_drug_well_administrated/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_encourage:label">
+            <value>Congratulate and encourage to continue</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_drugs_note_1:label">
+            <value>Demonstrate how to administer and then ask him or her to explain and demonstrate how to administer. Check your understanding</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask:label">
+            <value>Danger Signs</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_note_1:label">
+            <value>&lt;b&gt;Ask&lt;/b&gt; If the child presents one or more of these danger signs</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_cannot_drink:label">
+            <value>Child is unable to drink or suckle</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_cannot_drink/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_cannot_drink/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_vomit:label">
+            <value>The child vomits everything he consumes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_vomit/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_vomit/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_has_convulsed:label">
+            <value>The child has convulsed (CONVULSION ANTECEDENT)</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_has_convulsed/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_has_convulsed/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_blood_stool:label">
+            <value>Blood in stool</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_blood_stool/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_blood_stool/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_diarrhea_14_days:label">
+            <value>Diarrhea of 14 days or more</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_diarrhea_14_days/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_diarrhea_14_days/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_urine_cocacola:label">
+            <value>Urine coca cola</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_urine_cocacola/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_urine_cocacola/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_cocacola_image:label">
+            <value>Coca Cola Color</value>
+            <value form="image">jr://images/-</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe:label">
+            <value>Danger Signs</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_note_2:label">
+            <value>&lt;b&gt;Observe&lt;/b&gt; If the child presents one or more of these danger signs</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_unconscious:label">
+            <value>Child enfeebled or unconscious</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_unconscious/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_unconscious/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_is_convulsing:label">
+            <value>The child is currently convulsing</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_is_convulsing/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_is_convulsing/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_anemia:label">
+            <value>Anemia or palmar pallor</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_anemia/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_anemia/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_difficulty_breathing:label">
+            <value>Difficult breathing (chest pulling, whistling or flapping of nose wings)</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_difficulty_breathing/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_difficulty_breathing/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_severe_slimming:label">
+            <value>The child has severe slimming</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_severe_slimming/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_severe_slimming/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search:label">
+            <value>Danger Signs</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_note_3:label">
+            <value>&lt;b&gt;Research&lt;/b&gt; If the child presents one or more of these danger signs</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_severe_dehydration:label">
+            <value>Severe dehydration. Skin folds fade very slowly (more than 2 seconds) or Eyes depressed</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_severe_dehydration/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_severe_dehydration/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_neck_stiffness:label">
+            <value>Neck stiffness</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_neck_stiffness/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_neck_stiffness/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_fontanelle_bulging:label">
+            <value>Fontanelle anterior bulging</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_fontanelle_bulging/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_fontanelle_bulging/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_rashes:label">
+            <value>Rashes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_rashes/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_rashes/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_edema_feet:label">
+            <value>Edema of both feet</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_edema_feet/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_edema_feet/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/temperature:label">
+            <value>Temperature</value>
+          </text>
+          <text id="/pcime_c_followup/temperature/s_temperature:label">
+            <value>What is the temperature of the child today?</value>
+          </text>
+          <text id="/pcime_c_followup/fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/pcime_c_followup/fever/s_has_fever:label">
+            <value>Does the child have fever? (Temperature 38C or higher, or warm body to touch or history of fever within 2 days)</value>
+          </text>
+          <text id="/pcime_c_followup/fever/s_has_fever/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/fever/s_has_fever/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/fever/n_start_new_assessment:label">
+            <value>Thank you for starting the PCIME-C form again.</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia:label">
+            <value>COUGH OR COLD OR PNEUMONIA</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/breath_timer:label">
+            <value>**Press timer and count number of breaths for a full 60 seconds**</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold_or_pneumonia_rpm:label">
+            <value>What is the respiratory rate (rpm) of the child?</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/n_rpm_increase:label">
+            <value>RPMs have increased since yesterday</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/n_rpm_decrease:label">
+            <value>RPMs have not increased since yesterday</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold:label">
+            <value>COUGH OR COLD</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold/s_cough_cold_rpm:label">
+            <value>What is the respiratory rate (rpm) of the child?</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold/s_how_breathing:label">
+            <value>How is the child's breathing?</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold/s_how_breathing/fast:label">
+            <value>Fast</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold/s_how_breathing/normal:label">
+            <value>Normal</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/pneumonia:label">
+            <value>PNEUMONIE</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/pneumonia/s_pneumonia_rpm:label">
+            <value>What is the respiratory rate (rpm) of the child?</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea:label">
+            <value>Diarrhea</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea/s_diarrhea_note:label">
+            <value>Offer to drink and observe</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea/s_drink_with_greed:label">
+            <value>Did he drink with greed? Is he thirsty?</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea/s_drink_with_greed/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea/s_drink_with_greed/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea/s_palpate:label">
+            <value>palpate</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea/s_skin_fold:label">
+            <value>Skin folds fade slowly (less than 2 seconds)?</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea/s_skin_fold/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea/s_skin_fold/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/disease_progress:label">
+            <value>PROGRESS OF DISEASE</value>
+          </text>
+          <text id="/pcime_c_followup/disease_progress/s_condition_worsen:label">
+            <value>Did the condition of the child worsen?</value>
+          </text>
+          <text id="/pcime_c_followup/disease_progress/s_condition_worsen/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/disease_progress/s_condition_worsen/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/disease_progress/s_state_improved:label">
+            <value>Has the condition of the child improved?</value>
+          </text>
+          <text id="/pcime_c_followup/disease_progress/s_state_improved/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/disease_progress/s_state_improved/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/new_complaint:label">
+            <value>NEW COMPLAINT</value>
+          </text>
+          <text id="/pcime_c_followup/new_complaint/s_has_new_complaint:label">
+            <value>Does the child have a new complaint?</value>
+          </text>
+          <text id="/pcime_c_followup/new_complaint/s_has_new_complaint/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/new_complaint/s_has_new_complaint/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/new_complaint/s_start_consultation:label">
+            <value>Start a new PCIME-C Consultation</value>
+          </text>
+          <text id="/pcime_c_followup/new_complaint/s_start_consultation/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/new_complaint/s_start_consultation/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_summary:label">
+            <value>Patient Summary&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /pcime_c_followup/patient_name "/>&lt;/h4&gt;
+&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pcime_c_followup/patient_sex_fr "/> &lt;/h5&gt;
+&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pcime_c_followup/patient_age_display_fr "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_symptoms:label">
+            <value>Signs &amp; Symptoms</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_danger_signs:label">
+            <value>Danger Signs</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_cannot_drink:label">
+            <value>Child is unable to drink or suckle</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_vomit:label">
+            <value>The child vomits everything he consumes</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_has_convulsed:label">
+            <value>The child has convulsed (CONVULSION ANTECEDENT)</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_blood_stool:label">
+            <value>Blood in stool</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_diarrhea_14_days:label">
+            <value>Diarrhea of 14 days or more</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_urine_cocacola:label">
+            <value>Urine coca cola</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_unconscious:label">
+            <value>Child enfeebled or unconscious</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_is_convulsing:label">
+            <value>The child is currently convulsing</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_anemia:label">
+            <value>Anemia or palmar pallor</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_difficulty_breathing:label">
+            <value>Difficult breathing (chest pulling, whistling or flapping of nose wings)</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_severe_slimming:label">
+            <value>The child has severe slimming</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_severe_dehydration:label">
+            <value>Severe dehydration. Skin folds fade very slowly (more than 2 seconds) or Eyes depressed</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_neck_stiffness:label">
+            <value>Neck stiffness</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_fontanelle_bulging:label">
+            <value>Fontanelle anterior bulging</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_rashes:label">
+            <value>Rashes</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_edema_feet:label">
+            <value>Edema of both feet</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_fever_no_malaria:label">
+            <value>Presence of Fever</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_has_pneumonia:label">
+            <value>Presence of Pneumonia</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_refer_USP:label">
+            <value>Refer USP.</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_refer_USP_danger_signs:label">
+            <value>Please refer the child to the USP for signs of danger</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_refer_fever:label">
+            <value>Refer the child to the USP for a fever</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_refer_pneumonia:label">
+            <value>Refer the child to the USP for Pneumonia</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_refer_state_aggravation:label">
+            <value>Refer the child to the USP for worsening condition</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_refer_steady_state:label">
+            <value>Refer the child to the USP for steady state</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_diagnosis_treatment:label">
+            <value>Diagnostic &amp; Treatement</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_pre_tranfer_treatement:label">
+            <value>Start a new PCIME-C form</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_note_9:label">
+            <value>Increase ORS pouches</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_special_instruction:label">
+            <value>Special Instruction</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_note_10:label">
+            <value>&lt;b&gt;Key Tips "CAR"&lt;/b&gt;</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_note_11:label">
+            <value>1-Continue Breastfeeding</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_note_12:label">
+            <value>2-Increase the drinking liquids and food (or breastmilk in case of exclusive breastfeeding)</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_note_13:label">
+            <value>3-Recognize the signs for which to contact the CSA or go to the USP immediately</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/s_have_you_refer_child:label">
+            <value>Did you refer the child?</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/s_have_you_refer_child/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/s_have_you_refer_child/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/s_why_not:label">
+            <value>Why?</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_followup:label">
+            <value>Followup</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_note_14:label">
+            <value>The next IMCI Tracking Visa is for tomorrow : <output value=" /pcime_c_followup/next_visit "/></value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_note_15:label">
+            <value>The next referral tracking visit is for: <output value=" /pcime_c_followup/next_visit "/></value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/pcime_c_followup/inputs/t_treat_for_diarrhea:label">
+            <value>Treated for Diarrhea</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_treat_for_pneumonia:label">
+            <value>Treated for Pneumonia</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_treat_for_fever:label">
+            <value>Treated for Fever</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_treat_for_cough_cold:label">
+            <value>Treated for Cough Cold</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_follow_up_type:label">
+            <value>Followup Type</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_follow_up_count:label">
+            <value>Followup Count</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_has_been_referred:label">
+            <value>Has been referred</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_non_malaria_fever:label">
+            <value>Non malaria fever</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_malaria_fever:label">
+            <value>Malaria fever</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_resp_rate:label">
+            <value>Respiratory rate</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_last_visit_temperature:label">
+            <value>temperature de la visite passée</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_last_visit_weight:label">
+            <value>Poids de la visite passée</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_last_visit_child_brachial_perimeter:label">
+            <value>Périmètre Brachial de la visite passée</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_has_malnutrition:label">
+            <value>malnutrition</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/t_has_been_malnutrition_referred:label">
+            <value>Référer pour malnutrition</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/contact/_id:label">
+            <value>Id de l'enfant</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/pcime_c_followup/patient_age_in_years:label">
+            <value>Age en Annees</value>
+          </text>
+          <text id="/pcime_c_followup/patient_age_in_months:label">
+            <value>Age en Mois</value>
+          </text>
+          <text id="/pcime_c_followup/patient_age_in_days:label">
+            <value>Age en Jours</value>
+          </text>
+          <text id="/pcime_c_followup/visited_contact_uuid:label">
+            <value>Identifiant de la famille</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant:label">
+            <value>Les constantes de la dernière visite</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/l_visit_temperature:label">
+            <value>- Température: <output value=" /pcime_c_followup/inputs/t_last_visit_temperature "/> °C</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/l_visit_weight:label">
+            <value>- Poids: <output value=" /pcime_c_followup/inputs/t_last_visit_weight "/> Kg</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/l_visit_child_brachial_perimeter:label">
+            <value>- Périmètre Brachial : <output value=" /pcime_c_followup/inputs/t_last_visit_child_brachial_perimeter "/> mm</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/l_resp_rate:label">
+            <value>- Fréquence respiratoire : <output value=" /pcime_c_followup/inputs/t_resp_rate "/> (rpm)</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_last_visit_infos:label">
+            <value>&lt;b&gt;Lors de la visite passée, &lt;span style='color:blue'&gt;<output value=" /pcime_c_followup/patient_name "/>&lt;/span&gt; avait :&lt;/b&gt;</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_treat_for_diarrhea:label">
+            <value>- la Diarrhée</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_treat_for_pneumonia:label">
+            <value>- la Pneumonie</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_treat_for_cough_cold:label">
+            <value>- la Toux ou Rhume</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_non_malaria_fever:label">
+            <value>- la Fièvre non paludique</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_malaria_fever:label">
+            <value>- la Fièvre paludique</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_has_malnutrition:label">
+            <value>- la Malnutrition</value>
+          </text>
+          <text id="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_has_been_referred:label">
+            <value>- été référé Pour signe de danger</value>
+          </text>
+          <text id="/pcime_c_followup/drugs:label">
+            <value>PRISE DES MÉDICAMENTS</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_received_dosage:label">
+            <value>L'enfant a-t-il reçu sa dose de médicament ?</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_received_dosage/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_received_dosage/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_note_congrats:label">
+            <value>Féliciter</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_note_advice:label">
+            <value>Conseiller</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_note_drugs:label">
+            <value>Demander au parent de rappeler comment administrer les médicaments</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_drug_well_administrated:label">
+            <value>Est-ce que le parent a bien administré les médicaments?</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_drug_well_administrated/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_drug_well_administrated/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_encourage:label">
+            <value>Féliciter et encourager à continuer</value>
+          </text>
+          <text id="/pcime_c_followup/drugs/s_drugs_note_1:label">
+            <value>Démontrer comment administrer puis demander lui de vous expliquer et vous démontrer comment administrer. Vérifier sa compréhension</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask:label">
+            <value>SIGNES DE DANGER</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_note_1:label">
+            <value>&lt;b&gt;Demander&lt;/b&gt; Si l'enfant présente un ou plusieurs de ces signes de danger</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_cannot_drink:label">
+            <value>L'enfant est incapable de boire ou de téter</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_cannot_drink/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_cannot_drink/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_vomit:label">
+            <value>L'enfant vomit tout ce qu'il consomme</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_vomit/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_vomit/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_has_convulsed:label">
+            <value>L'enfant a convulsé (ANTECEDENT DE CONVULSIONS)</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_has_convulsed/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_has_convulsed/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_blood_stool:label">
+            <value>Sang dans les selles</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_blood_stool/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_blood_stool/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_diarrhea_14_days:label">
+            <value>Diarrhée de 14 jours ou plus</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_diarrhea_14_days/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_diarrhea_14_days/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_urine_cocacola:label">
+            <value>Urine coca cola</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_urine_cocacola/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_urine_cocacola/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_ask/s_cocacola_image:label">
+            <value>Couleur Coca Cola</value>
+            <value form="image">jr://images/coca-cola.png</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe:label">
+            <value>SIGNES DE DANGER</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_note_2:label">
+            <value>&lt;b&gt;Observer&lt;/b&gt; Si l'enfant présente un ou plusieurs de ces signes de danger</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_unconscious:label">
+            <value>Enfant affaibli ou inconscient</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_unconscious/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_unconscious/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_is_convulsing:label">
+            <value>L'enfant convulse actuellement</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_is_convulsing/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_is_convulsing/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_anemia:label">
+            <value>Anémie ou pâleur palmaire</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_anemia/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_anemia/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_difficulty_breathing:label">
+            <value>Respiration difficile (tirage sous costal, sifflement ou battement des ailes du nez)</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_difficulty_breathing/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_difficulty_breathing/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_severe_slimming:label">
+            <value>L'enfant a un amaigrissement sévère</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_severe_slimming/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_observe/s_severe_slimming/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search:label">
+            <value>SIGNES DE DANGER</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_note_3:label">
+            <value>&lt;b&gt;Rechercher&lt;/b&gt; Si l'enfant présente un ou plusieurs de ces signes de danger</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_severe_dehydration:label">
+            <value>Déshydration sévère. Plis cutanés s'effacent très lentement (plus de 2 secondes) ou Yeux enfoncés</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_severe_dehydration/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_severe_dehydration/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_neck_stiffness:label">
+            <value>Raideur de la nuque</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_neck_stiffness/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_neck_stiffness/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_fontanelle_bulging:label">
+            <value>Fontanelle antérieure bombée</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_fontanelle_bulging/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_fontanelle_bulging/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_rashes:label">
+            <value>Eruptions cutanées</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_rashes/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_rashes/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_edema_feet:label">
+            <value>Oedèmes des deux pieds</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_edema_feet/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/danger_signs_search/s_edema_feet/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/temperature:label">
+            <value>TEMPERATURE</value>
+          </text>
+          <text id="/pcime_c_followup/temperature/s_temperature:label">
+            <value>Quelle est la température de <output value=" /pcime_c_followup/patient_name "/> Aujourd'hui?</value>
+          </text>
+          <text id="/pcime_c_followup/fever:label">
+            <value>FIEVRE</value>
+          </text>
+          <text id="/pcime_c_followup/fever/s_has_fever:label">
+            <value><output value=" /pcime_c_followup/patient_name "/> a la fièvre ? (Température 38C ou plus, ou corps chaud au toucher ou antécédents de fièvre dans les 2 jours)</value>
+          </text>
+          <text id="/pcime_c_followup/fever/s_has_fever/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/fever/s_has_fever/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/fever/n_start_new_assessment:label">
+            <value><output value=" /pcime_c_followup/patient_name "/> a de la fièvre, merci de recommencer une nouvelle consultation PCIME-C.</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia:label">
+            <value>TOUX OU RHUME OU PNEUMONIE</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/breath_timer:label">
+            <value>**Appuyez sur la minuterie et comptez le nombre de respirations pendant 60 secondes.**</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold_or_pneumonia_rpm:label">
+            <value>Quelle est la fréquence respiratoire (rpm) de l'enfant?</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/n_rpm_increase:label">
+            <value>Les rpm ont augmenté depuis hier</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/n_rpm_decrease:label">
+            <value>Les rpm n'ont pas augmenté depuis hier</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold:label">
+            <value>TOUX OU RHUME</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold/s_cough_cold_rpm:label">
+            <value>Quelle est la fréquence respiratoire (rpm) de l'enfant?</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold/s_how_breathing:label">
+            <value>Comment est la respiration de l'enfant?</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold/s_how_breathing/fast:label">
+            <value>Rapide</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold/s_how_breathing/normal:label">
+            <value>Normal</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/pneumonia:label">
+            <value>PNEUMONIE</value>
+          </text>
+          <text id="/pcime_c_followup/cough_cold_or_pneumonia/pneumonia/s_pneumonia_rpm:label">
+            <value>Quelle est la fréquence respiratoire (rpm) de l'enfant?</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea:label">
+            <value>DIARRHEE</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea/s_diarrhea_note:label">
+            <value>Offrir à boire et observer</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea/s_drink_with_greed:label">
+            <value>Boit-il avec avidité? Est-il assoiffé?</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea/s_drink_with_greed/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea/s_drink_with_greed/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea/s_palpate:label">
+            <value>Palper</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea/s_skin_fold:label">
+            <value>Plis cutanés s'effacent-ils lentement (moins de 2 secondes)?</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea/s_skin_fold/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/diarrhea/s_skin_fold/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/disease_progress:label">
+            <value>PROGRESSION DE LA MALADIE</value>
+          </text>
+          <text id="/pcime_c_followup/disease_progress/s_condition_worsen:label">
+            <value>L'état de l'enfant s'est-il aggravé?</value>
+          </text>
+          <text id="/pcime_c_followup/disease_progress/s_condition_worsen/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/disease_progress/s_condition_worsen/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/disease_progress/s_state_improved:label">
+            <value>L'état de l'enfant s'est-il amelioré?</value>
+          </text>
+          <text id="/pcime_c_followup/disease_progress/s_state_improved/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/disease_progress/s_state_improved/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/new_complaint:label">
+            <value>NOUVELLE PLAINTE</value>
+          </text>
+          <text id="/pcime_c_followup/new_complaint/s_has_new_complaint:label">
+            <value>L'enfant a-t-il une nouvelle plainte?</value>
+          </text>
+          <text id="/pcime_c_followup/new_complaint/s_has_new_complaint/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/new_complaint/s_has_new_complaint/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/new_complaint/s_start_consultation:label">
+            <value>Recommencer une nouvelle consultation PCIME-C pour traiter la plainte</value>
+          </text>
+          <text id="/pcime_c_followup/new_complaint/s_start_consultation/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/new_complaint/s_start_consultation/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Assurez-vous de soumettre pour compléter cette action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_summary:label">
+            <value>Détails du Patient &lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /pcime_c_followup/patient_name "/>&lt;/h4&gt;
+&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pcime_c_followup/patient_sex_fr "/> &lt;/h5&gt;
+&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pcime_c_followup/patient_age_display_fr "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_symptoms:label">
+            <value>Signes &amp; Symptômes</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_danger_signs:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_cannot_drink:label">
+            <value>L'enfant est incapable de boire ou de téter</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_vomit:label">
+            <value>L'enfant vomit tout ce qu'il consomme</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_has_convulsed:label">
+            <value>L'enfant a convulsé (ANTECEDENT DE CONVULSIONS)</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_blood_stool:label">
+            <value>Sang dans les selles</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_diarrhea_14_days:label">
+            <value>Diarrhée de 14 jours ou plus</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_urine_cocacola:label">
+            <value>Urine coca cola</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_unconscious:label">
+            <value>Enfant affaibli ou inconscient</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_is_convulsing:label">
+            <value>L'enfant convulse actuellement</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_anemia:label">
+            <value>Anémie ou pâleur palmaire</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_difficulty_breathing:label">
+            <value>Respiration difficile (tirage sous costal, sifflement ou battement des ailes du nez)</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_severe_slimming:label">
+            <value>L'enfant a un amaigrissement sévère</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_severe_dehydration:label">
+            <value>Déshydration sévère. Plis cutanés s'effacent très lentement (plus de 2 secondes) ou Yeux enfoncés</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_neck_stiffness:label">
+            <value>Raideur de la nuque</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_fontanelle_bulging:label">
+            <value>Fontanelle antérieure bombée</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_rashes:label">
+            <value>Eruptions cutanées</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_edema_feet:label">
+            <value>Oedèmes des deux pieds</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_fever_no_malaria:label">
+            <value>Presence de fievre</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_has_pneumonia:label">
+            <value>Présence de Pneumonie</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_refer_USP:label">
+            <value>Référer l'enfant à l'USP</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_refer_USP_danger_signs:label">
+            <value>Merci de référer l'enfant à l'USP pour présence de signes de danger</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_refer_fever:label">
+            <value>Référer l'enfant à l'USP pour une fièvre</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_refer_pneumonia:label">
+            <value>Référer l'enfant à l'USP pour Pneumonie</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_refer_state_aggravation:label">
+            <value>Référer l'enfant à l'USP pour aggravation de son état</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_refer_steady_state:label">
+            <value>Référer l'enfant à l'USP pour état stationnaire</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_diagnosis_treatment:label">
+            <value>Diagnostic &amp; Traitement</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_pre_tranfer_treatement:label">
+            <value>Commencer un nouveau formulaire PCIME-C</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_note_9:label">
+            <value>Augmenter les sachets de SRO</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_special_instruction:label">
+            <value>Instructions Spéciales</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_note_10:label">
+            <value>&lt;b&gt;Conseils cles "CAR"&lt;/b&gt;</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_note_11:label">
+            <value>1-Continuer l'allaitement maternel</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_note_12:label">
+            <value>2-Augmenter les liquides à boire et les aliments (ou le lait maternet en cas d'allaitement exclusif</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_note_13:label">
+            <value>3-Reconnaitre les signes pour lesquels il faut contacter l'ASC ou aller à l'USP immédiatement</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/s_have_you_refer_child:label">
+            <value>Est-ce que vous avez référé l'enfant ?</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/s_have_you_refer_child/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/s_have_you_refer_child/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/s_why_not:label">
+            <value>Pour quelle raison?</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_followup:label">
+            <value>Suivi</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_note_14:label">
+            <value>La prochaine visite de Suivi PCIME est pour 24h</value>
+          </text>
+          <text id="/pcime_c_followup/group_review/r_note_15:label">
+            <value>La prochaine visite de Suivi Référence est pour 24h</value>
+          </text>
+          <text id="/pcime_c_followup/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/pcime_c_followup/inputs/contact/_id:hint">
+            <value>-</value>
+          </text>
+          <text id="/pcime_c_followup/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/pcime_c_followup/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/pcime_c_followup/has_last_visit_constant:label">
+            <value>-</value>
+          </text>
+          <text id="/pcime_c_followup/has_last_visit_sign:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <pcime_c_followup id="pcime_c_followup" prefix="J1!pcime_c_followup!" delimiter="#" version="2024-07-12  9-38">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_treat_for_diarrhea/>
+            <t_treat_for_pneumonia/>
+            <t_treat_for_fever/>
+            <t_treat_for_cough_cold/>
+            <t_follow_up_type/>
+            <t_follow_up_count/>
+            <t_has_been_referred/>
+            <t_non_malaria_fever/>
+            <t_malaria_fever/>
+            <t_resp_rate/>
+            <t_last_visit_temperature/>
+            <t_last_visit_weight/>
+            <t_last_visit_child_brachial_perimeter/>
+            <t_has_malnutrition/>
+            <t_has_been_malnutrition_referred/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <parent/>
+            </contact>
+          </inputs>
+          <patient_sex_fr/>
+          <patient_age_display_fr/>
+          <has_danger_signs/>
+          <patient_age_in_years/>
+          <patient_id/>
+          <patient_name/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <visited_contact_uuid/>
+          <rpm/>
+          <followup_type/>
+          <followup_count/>
+          <next_visit/>
+          <referral/>
+          <has_last_visit_constant/>
+          <has_last_visit_sign/>
+          <child_last_visit_constant>
+            <l_visit_temperature/>
+            <l_visit_weight/>
+            <l_visit_child_brachial_perimeter/>
+            <l_resp_rate/>
+            <g_last_visit_infos>
+              <l_last_visit_infos/>
+              <l_treat_for_diarrhea/>
+              <l_treat_for_pneumonia/>
+              <l_treat_for_cough_cold/>
+              <l_non_malaria_fever/>
+              <l_malaria_fever/>
+              <l_has_malnutrition/>
+              <l_has_been_referred/>
+            </g_last_visit_infos>
+          </child_last_visit_constant>
+          <drugs>
+            <s_received_dosage/>
+            <s_note_congrats/>
+            <s_note_advice/>
+            <s_note_drugs/>
+            <s_drug_well_administrated/>
+            <s_encourage/>
+            <s_drugs_note_1/>
+          </drugs>
+          <danger_signs_ask>
+            <s_note_1/>
+            <s_cannot_drink/>
+            <s_vomit/>
+            <s_has_convulsed/>
+            <s_blood_stool/>
+            <s_diarrhea_14_days/>
+            <s_urine_cocacola/>
+            <s_cocacola_image/>
+          </danger_signs_ask>
+          <danger_signs_observe>
+            <s_note_2/>
+            <s_unconscious/>
+            <s_is_convulsing/>
+            <s_anemia/>
+            <s_difficulty_breathing/>
+            <s_severe_slimming/>
+          </danger_signs_observe>
+          <danger_signs_search>
+            <s_note_3/>
+            <s_severe_dehydration/>
+            <s_neck_stiffness/>
+            <s_fontanelle_bulging/>
+            <s_rashes/>
+            <s_edema_feet/>
+          </danger_signs_search>
+          <temperature>
+            <s_temperature/>
+          </temperature>
+          <fever>
+            <s_has_fever/>
+            <n_start_new_assessment/>
+          </fever>
+          <cough_cold_or_pneumonia>
+            <breath_timer/>
+            <cough_cold_or_pneumonia_rpm/>
+            <n_rpm_increase/>
+            <n_rpm_decrease/>
+            <cough_cold>
+              <s_cough_cold_rpm/>
+              <s_how_breathing/>
+            </cough_cold>
+            <pneumonia>
+              <s_pneumonia_rpm/>
+            </pneumonia>
+          </cough_cold_or_pneumonia>
+          <diarrhea>
+            <s_diarrhea_note/>
+            <s_drink_with_greed/>
+            <s_palpate/>
+            <s_skin_fold/>
+          </diarrhea>
+          <disease_progress>
+            <s_condition_worsen/>
+            <s_state_improved/>
+          </disease_progress>
+          <new_complaint>
+            <s_has_new_complaint/>
+            <s_start_consultation/>
+          </new_complaint>
+          <group_review>
+            <submit/>
+            <r_summary/>
+            <r_patient_info/>
+            <r_symptoms/>
+            <r_danger_signs/>
+            <r_cannot_drink/>
+            <r_vomit/>
+            <r_has_convulsed/>
+            <r_blood_stool/>
+            <r_diarrhea_14_days/>
+            <r_urine_cocacola/>
+            <r_unconscious/>
+            <r_is_convulsing/>
+            <r_anemia/>
+            <r_difficulty_breathing/>
+            <r_severe_slimming/>
+            <r_severe_dehydration/>
+            <r_neck_stiffness/>
+            <r_fontanelle_bulging/>
+            <r_rashes/>
+            <r_edema_feet/>
+            <r_fever_no_malaria/>
+            <r_has_pneumonia/>
+            <r_refer_USP/>
+            <r_refer_USP_danger_signs/>
+            <r_refer_fever/>
+            <r_refer_pneumonia/>
+            <r_refer_state_aggravation/>
+            <r_refer_steady_state/>
+            <r_diagnosis_treatment/>
+            <r_pre_tranfer_treatement/>
+            <r_note_9/>
+            <r_special_instruction/>
+            <r_note_10/>
+            <r_note_11/>
+            <r_note_12/>
+            <r_note_13/>
+            <s_have_you_refer_child/>
+            <s_why_not/>
+            <r_followup/>
+            <r_note_14/>
+            <r_note_15/>
+          </group_review>
+          <meta>
+            <instanceID/>
+          </meta>
+        </pcime_c_followup>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/pcime_c_followup/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/pcime_c_followup/inputs/source" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/source_id" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/t_treat_for_diarrhea" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/t_treat_for_pneumonia" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/t_treat_for_fever" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/t_treat_for_cough_cold" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/t_follow_up_type" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/t_follow_up_count" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/t_has_been_referred" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/t_non_malaria_fever" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/t_malaria_fever" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/t_resp_rate" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/t_last_visit_temperature" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/t_last_visit_weight" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/t_last_visit_child_brachial_perimeter" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/t_has_malnutrition" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/t_has_been_malnutrition_referred" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/contact/_id" type="db:person" required="true()"/>
+      <bind nodeset="/pcime_c_followup/inputs/contact/name" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/contact/sex" type="string"/>
+      <bind nodeset="/pcime_c_followup/inputs/contact/parent" type="string"/>
+      <bind nodeset="/pcime_c_followup/patient_sex_fr" type="string" calculate="if( /pcime_c_followup/inputs/contact/sex  = 'male' or  /pcime_c_followup/inputs/contact/sex  = 'homme' or  /pcime_c_followup/inputs/contact/sex  = 'Homme', 'Homme', if( /pcime_c_followup/inputs/contact/sex  = 'female' or  /pcime_c_followup/inputs/contact/sex  = 'femme' or  /pcime_c_followup/inputs/contact/sex  = 'Femme', 'Femme', ''))"/>
+      <bind nodeset="/pcime_c_followup/patient_age_display_fr" type="string" calculate="concat(concat( /pcime_c_followup/patient_age_in_years , if( /pcime_c_followup/patient_age_in_years =1,' an et ',' ans et ')),concat( /pcime_c_followup/patient_age_in_months  mod 12, if(( /pcime_c_followup/patient_age_in_months  mod 12)=1,' mois',' mois')))"/>
+      <bind nodeset="/pcime_c_followup/has_danger_signs" type="string" calculate="if( /pcime_c_followup/danger_signs_ask/s_cannot_drink  = 'yes' or  /pcime_c_followup/danger_signs_ask/s_vomit  = 'yes' or  /pcime_c_followup/danger_signs_ask/s_has_convulsed  = 'yes' or  /pcime_c_followup/danger_signs_ask/s_blood_stool  = 'yes' or  /pcime_c_followup/danger_signs_ask/s_diarrhea_14_days  = 'yes' or  /pcime_c_followup/danger_signs_ask/s_urine_cocacola  = 'yes' or  /pcime_c_followup/danger_signs_observe/s_unconscious  = 'yes' or  /pcime_c_followup/danger_signs_observe/s_is_convulsing  = 'yes' or  /pcime_c_followup/danger_signs_observe/s_anemia  = 'yes' or  /pcime_c_followup/danger_signs_observe/s_difficulty_breathing  = 'yes' or  /pcime_c_followup/danger_signs_observe/s_severe_slimming  = 'yes' or  /pcime_c_followup/danger_signs_search/s_severe_dehydration  = 'yes' or  /pcime_c_followup/danger_signs_search/s_neck_stiffness  = 'yes' or  /pcime_c_followup/danger_signs_search/s_fontanelle_bulging  = 'yes' or  /pcime_c_followup/danger_signs_search/s_rashes  = 'yes' or  /pcime_c_followup/danger_signs_search/s_edema_feet  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/pcime_c_followup/patient_age_in_years" type="string" calculate="if (  /pcime_c_followup/inputs/contact/date_of_birth ='', '', floor( difference-in-months(  /pcime_c_followup/inputs/contact/date_of_birth , today() ) div 12 ) )"/>
+      <bind nodeset="/pcime_c_followup/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/pcime_c_followup/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/pcime_c_followup/patient_age_in_months" type="string" calculate="difference-in-months(  /pcime_c_followup/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/pcime_c_followup/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /pcime_c_followup/inputs/contact/date_of_birth ) )"/>
+      <bind nodeset="/pcime_c_followup/visited_contact_uuid" type="string" required="true()" calculate="../inputs/contact/parent"/>
+      <bind nodeset="/pcime_c_followup/rpm" type="string" calculate="coalesce( /pcime_c_followup/cough_cold_or_pneumonia/cough_cold/s_cough_cold_rpm ,  /pcime_c_followup/cough_cold_or_pneumonia/pneumonia/s_pneumonia_rpm )"/>
+      <bind nodeset="/pcime_c_followup/followup_type" type="string" calculate=" /pcime_c_followup/inputs/t_follow_up_type "/>
+      <bind nodeset="/pcime_c_followup/followup_count" type="string" calculate="int( /pcime_c_followup/inputs/t_follow_up_count )"/>
+      <bind nodeset="/pcime_c_followup/next_visit" type="string" calculate="date-time(decimal-date-time(today()) + 1)"/>
+      <bind nodeset="/pcime_c_followup/referral" type="string" calculate="if( /pcime_c_followup/has_danger_signs  = 'true' or ( /pcime_c_followup/followup_count  = 2 and  /pcime_c_followup/disease_progress/s_state_improved  = 'no') or  /pcime_c_followup/disease_progress/s_condition_worsen  = 'yes' or  /pcime_c_followup/temperature/s_temperature  &gt;= 39, 'true', 'false')"/>
+      <bind nodeset="/pcime_c_followup/has_last_visit_constant" type="string" calculate="if( /pcime_c_followup/inputs/t_last_visit_temperature != '' or  /pcime_c_followup/inputs/t_last_visit_weight != '' or  /pcime_c_followup/inputs/t_last_visit_child_brachial_perimeter != '' or  /pcime_c_followup/inputs/t_resp_rate != '','yes','no')"/>
+      <bind nodeset="/pcime_c_followup/has_last_visit_sign" type="string" calculate="if( /pcime_c_followup/inputs/t_treat_for_diarrhea  = 'true' or  /pcime_c_followup/inputs/t_treat_for_pneumonia  = 'true' or  /pcime_c_followup/inputs/t_treat_for_fever  = 'true'or  /pcime_c_followup/inputs/t_treat_for_cough_cold  = 'true' or  /pcime_c_followup/inputs/t_non_malaria_fever  = 'true' or  /pcime_c_followup/inputs/t_malaria_fever  = 'true' or  /pcime_c_followup/inputs/t_has_been_referred = 'yes','yes','no')"/>
+      <bind nodeset="/pcime_c_followup/child_last_visit_constant" relevant=" /pcime_c_followup/has_last_visit_constant  = 'yes' or  /pcime_c_followup/has_last_visit_sign  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/child_last_visit_constant/l_visit_temperature" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_last_visit_temperature != ''"/>
+      <bind nodeset="/pcime_c_followup/child_last_visit_constant/l_visit_weight" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_last_visit_weight != ''"/>
+      <bind nodeset="/pcime_c_followup/child_last_visit_constant/l_visit_child_brachial_perimeter" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_last_visit_child_brachial_perimeter != ''"/>
+      <bind nodeset="/pcime_c_followup/child_last_visit_constant/l_resp_rate" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_resp_rate != ''"/>
+      <bind nodeset="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos" relevant=" /pcime_c_followup/has_last_visit_sign  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_last_visit_infos" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_treat_for_diarrhea" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_treat_for_diarrhea  = 'true'"/>
+      <bind nodeset="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_treat_for_pneumonia" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_treat_for_pneumonia  = 'true'"/>
+      <bind nodeset="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_treat_for_cough_cold" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_treat_for_cough_cold  = 'true'"/>
+      <bind nodeset="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_non_malaria_fever" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_malaria_fever  = 'false' and ( /pcime_c_followup/inputs/t_non_malaria_fever  = 'true' or  /pcime_c_followup/inputs/t_treat_for_fever  = 'true')"/>
+      <bind nodeset="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_malaria_fever" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_malaria_fever  = 'true'"/>
+      <bind nodeset="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_has_malnutrition" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_has_malnutrition  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_has_been_referred" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_has_been_referred  = 'yes' or  /pcime_c_followup/inputs/t_has_been_malnutrition_referred  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/drugs/s_received_dosage" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/drugs/s_note_congrats" readonly="true()" type="string" relevant=" /pcime_c_followup/drugs/s_received_dosage  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/drugs/s_note_advice" readonly="true()" type="string" relevant=" /pcime_c_followup/drugs/s_received_dosage  = 'no'"/>
+      <bind nodeset="/pcime_c_followup/drugs/s_note_drugs" readonly="true()" type="string" relevant=" /pcime_c_followup/drugs/s_received_dosage  != ''"/>
+      <bind nodeset="/pcime_c_followup/drugs/s_drug_well_administrated" type="select1" relevant=" /pcime_c_followup/drugs/s_received_dosage  = 'yes'" required="true()"/>
+      <bind nodeset="/pcime_c_followup/drugs/s_encourage" readonly="true()" type="string" relevant=" /pcime_c_followup/drugs/s_drug_well_administrated  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/drugs/s_drugs_note_1" readonly="true()" type="string" relevant=" /pcime_c_followup/drugs/s_drug_well_administrated  = 'no'"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_ask/s_note_1" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_ask/s_cannot_drink" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_ask/s_vomit" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_ask/s_has_convulsed" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_ask/s_blood_stool" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_ask/s_diarrhea_14_days" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_ask/s_urine_cocacola" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_ask/s_cocacola_image" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_observe/s_note_2" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_observe/s_unconscious" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_observe/s_is_convulsing" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_observe/s_anemia" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_observe/s_difficulty_breathing" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_observe/s_severe_slimming" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_search/s_note_3" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_search/s_severe_dehydration" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_search/s_neck_stiffness" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_search/s_fontanelle_bulging" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_search/s_rashes" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/danger_signs_search/s_edema_feet" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/temperature/s_temperature" type="decimal" constraint=". &gt;= 28.00 and . &lt;= 42.00" required="true()"/>
+      <bind nodeset="/pcime_c_followup/fever" constraint=" /pcime_c_followup/inputs/t_treat_for_fever  = 'true' or  /pcime_c_followup/inputs/t_non_malaria_fever  = 'true' or  /pcime_c_followup/inputs/t_malaria_fever  = 'true'"/>
+      <bind nodeset="/pcime_c_followup/fever/s_has_fever" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/fever/n_start_new_assessment" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_treat_for_fever  = 'false' and ( /pcime_c_followup/fever/s_has_fever  = 'yes' or  /pcime_c_followup/temperature/s_temperature  &gt;= 38)"/>
+      <bind nodeset="/pcime_c_followup/cough_cold_or_pneumonia" relevant=" /pcime_c_followup/inputs/t_treat_for_cough_cold  = 'true' or  /pcime_c_followup/inputs/t_treat_for_pneumonia  = 'true'"/>
+      <bind nodeset="/pcime_c_followup/cough_cold_or_pneumonia/breath_timer" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold_or_pneumonia_rpm" type="int" required="true()"/>
+      <bind nodeset="/pcime_c_followup/cough_cold_or_pneumonia/n_rpm_increase" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_resp_rate  &lt;  /pcime_c_followup/cough_cold_or_pneumonia/cough_cold_or_pneumonia_rpm "/>
+      <bind nodeset="/pcime_c_followup/cough_cold_or_pneumonia/n_rpm_decrease" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_resp_rate  &gt;  /pcime_c_followup/cough_cold_or_pneumonia/cough_cold_or_pneumonia_rpm "/>
+      <bind nodeset="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold" relevant=" /pcime_c_followup/inputs/t_treat_for_cough_cold  = 'true'"/>
+      <bind nodeset="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold/s_cough_cold_rpm" type="string" calculate=" /pcime_c_followup/cough_cold_or_pneumonia/cough_cold_or_pneumonia_rpm "/>
+      <bind nodeset="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold/s_how_breathing" type="select1"/>
+      <bind nodeset="/pcime_c_followup/cough_cold_or_pneumonia/pneumonia" relevant=" /pcime_c_followup/inputs/t_treat_for_pneumonia  = 'true'"/>
+      <bind nodeset="/pcime_c_followup/cough_cold_or_pneumonia/pneumonia/s_pneumonia_rpm" type="string" calculate=" /pcime_c_followup/cough_cold_or_pneumonia/cough_cold_or_pneumonia_rpm "/>
+      <bind nodeset="/pcime_c_followup/diarrhea" relevant=" /pcime_c_followup/inputs/t_treat_for_diarrhea  = 'true'"/>
+      <bind nodeset="/pcime_c_followup/diarrhea/s_diarrhea_note" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/diarrhea/s_drink_with_greed" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/diarrhea/s_palpate" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/diarrhea/s_skin_fold" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/disease_progress" relevant=" /pcime_c_followup/referral  = 'no' and  /pcime_c_followup/has_danger_signs  = 'no'"/>
+      <bind nodeset="/pcime_c_followup/disease_progress/s_condition_worsen" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/disease_progress/s_state_improved" type="select1" relevant=" /pcime_c_followup/disease_progress/s_condition_worsen  = 'no'" required="true()"/>
+      <bind nodeset="/pcime_c_followup/new_complaint" relevant=" /pcime_c_followup/has_danger_signs  = 'no'"/>
+      <bind nodeset="/pcime_c_followup/new_complaint/s_has_new_complaint" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/new_complaint/s_start_consultation" type="select1" relevant=" /pcime_c_followup/new_complaint/s_has_new_complaint  = 'yes'" required="true()"/>
+      <bind nodeset="/pcime_c_followup/group_review/submit" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_symptoms" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_danger_signs" readonly="true()" type="string" relevant=" /pcime_c_followup/has_danger_signs  = 'true'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_cannot_drink" readonly="true()" type="string" relevant=" /pcime_c_followup/danger_signs_ask/s_cannot_drink  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_vomit" readonly="true()" type="string" relevant=" /pcime_c_followup/danger_signs_ask/s_vomit  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_has_convulsed" readonly="true()" type="string" relevant=" /pcime_c_followup/danger_signs_ask/s_has_convulsed  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_blood_stool" readonly="true()" type="string" relevant=" /pcime_c_followup/danger_signs_ask/s_blood_stool  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_diarrhea_14_days" readonly="true()" type="string" relevant=" /pcime_c_followup/danger_signs_ask/s_diarrhea_14_days  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_urine_cocacola" readonly="true()" type="string" relevant=" /pcime_c_followup/danger_signs_ask/s_urine_cocacola  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_unconscious" readonly="true()" type="string" relevant=" /pcime_c_followup/danger_signs_observe/s_unconscious  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_is_convulsing" readonly="true()" type="string" relevant=" /pcime_c_followup/danger_signs_observe/s_is_convulsing  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_anemia" readonly="true()" type="string" relevant=" /pcime_c_followup/danger_signs_observe/s_anemia  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_difficulty_breathing" readonly="true()" type="string" relevant=" /pcime_c_followup/danger_signs_observe/s_difficulty_breathing  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_severe_slimming" readonly="true()" type="string" relevant=" /pcime_c_followup/danger_signs_observe/s_severe_slimming  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_severe_dehydration" readonly="true()" type="string" relevant=" /pcime_c_followup/danger_signs_search/s_severe_dehydration ='yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_neck_stiffness" readonly="true()" type="string" relevant=" /pcime_c_followup/danger_signs_search/s_neck_stiffness  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_fontanelle_bulging" readonly="true()" type="string" relevant=" /pcime_c_followup/danger_signs_search/s_fontanelle_bulging  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_rashes" readonly="true()" type="string" relevant=" /pcime_c_followup/danger_signs_search/s_rashes  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_edema_feet" readonly="true()" type="string" relevant=" /pcime_c_followup/danger_signs_search/s_edema_feet  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_fever_no_malaria" readonly="true()" type="string" relevant=" /pcime_c_followup/temperature/s_temperature  &gt;= 38"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_has_pneumonia" readonly="true()" type="string" relevant="(( /pcime_c_followup/patient_age_in_months  &gt;= 2 and  /pcime_c_followup/patient_age_in_months  &lt;= 12) and  /pcime_c_followup/rpm  &gt;= 50) or (( /pcime_c_followup/patient_age_in_months  &gt;= 12 and  /pcime_c_followup/patient_age_in_months  &lt;= 60) and  /pcime_c_followup/rpm  &gt;= 40)"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_refer_USP" readonly="true()" type="string" relevant=" /pcime_c_followup/referral  = 'true'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_refer_USP_danger_signs" readonly="true()" type="string" relevant=" /pcime_c_followup/has_danger_signs  = 'true'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_refer_fever" readonly="true()" type="string" relevant=" /pcime_c_followup/temperature/s_temperature  &gt;= 39"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_refer_pneumonia" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_resp_rate  &lt;  /pcime_c_followup/cough_cold_or_pneumonia/pneumonia/s_pneumonia_rpm  and  /pcime_c_followup/inputs/t_treat_for_pneumonia  = 'true'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_refer_state_aggravation" readonly="true()" type="string" relevant=" /pcime_c_followup/disease_progress/s_condition_worsen  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_refer_steady_state" readonly="true()" type="string" relevant=" /pcime_c_followup/followup_count  = 2 and  /pcime_c_followup/disease_progress/s_state_improved  = 'no'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_diagnosis_treatment" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_pre_tranfer_treatement" readonly="true()" type="string" relevant=" /pcime_c_followup/new_complaint/s_has_new_complaint  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_note_9" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_treat_for_diarrhea  = 'true' and ( /pcime_c_followup/diarrhea/s_drink_with_greed  = 'yes' or  /pcime_c_followup/diarrhea/s_skin_fold  = 'yes')"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_special_instruction" readonly="true()" type="string" relevant=" /pcime_c_followup/has_danger_signs  = 'false'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_note_10" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_note_11" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_note_12" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_note_13" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/group_review/s_have_you_refer_child" type="select1" required="true()"/>
+      <bind nodeset="/pcime_c_followup/group_review/s_why_not" type="string" relevant=" /pcime_c_followup/group_review/s_have_you_refer_child  = 'yes' or  /pcime_c_followup/group_review/s_have_you_refer_child  = 'no'"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_followup" readonly="true()" type="string"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_note_14" readonly="true()" type="string" relevant="( /pcime_c_followup/disease_progress/s_state_improved  = 'no' or  /pcime_c_followup/disease_progress/s_condition_worsen  = 'yes') and  /pcime_c_followup/followup_count  = 1"/>
+      <bind nodeset="/pcime_c_followup/group_review/r_note_15" readonly="true()" type="string" relevant=" /pcime_c_followup/has_danger_signs  = 'true' or ( /pcime_c_followup/followup_count  = 2 and  /pcime_c_followup/disease_progress/s_state_improved  = 'no') or  /pcime_c_followup/disease_progress/s_condition_worsen  = 'yes' or  /pcime_c_followup/temperature/s_temperature  &gt;= 39"/>
+      <bind nodeset="/pcime_c_followup/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/pcime_c_followup/inputs">
+      <label ref="jr:itext('/pcime_c_followup/inputs:label')"/>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/source">
+        <label ref="jr:itext('/pcime_c_followup/inputs/source:label')"/>
+      </input>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/source_id">
+        <label ref="jr:itext('/pcime_c_followup/inputs/source_id:label')"/>
+      </input>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/t_treat_for_diarrhea">
+        <label ref="jr:itext('/pcime_c_followup/inputs/t_treat_for_diarrhea:label')"/>
+      </input>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/t_treat_for_pneumonia">
+        <label ref="jr:itext('/pcime_c_followup/inputs/t_treat_for_pneumonia:label')"/>
+      </input>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/t_treat_for_fever">
+        <label ref="jr:itext('/pcime_c_followup/inputs/t_treat_for_fever:label')"/>
+      </input>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/t_treat_for_cough_cold">
+        <label ref="jr:itext('/pcime_c_followup/inputs/t_treat_for_cough_cold:label')"/>
+      </input>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/t_follow_up_type">
+        <label ref="jr:itext('/pcime_c_followup/inputs/t_follow_up_type:label')"/>
+      </input>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/t_follow_up_count">
+        <label ref="jr:itext('/pcime_c_followup/inputs/t_follow_up_count:label')"/>
+      </input>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/t_has_been_referred">
+        <label ref="jr:itext('/pcime_c_followup/inputs/t_has_been_referred:label')"/>
+      </input>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/t_non_malaria_fever">
+        <label ref="jr:itext('/pcime_c_followup/inputs/t_non_malaria_fever:label')"/>
+      </input>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/t_malaria_fever">
+        <label ref="jr:itext('/pcime_c_followup/inputs/t_malaria_fever:label')"/>
+      </input>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/t_resp_rate">
+        <label ref="jr:itext('/pcime_c_followup/inputs/t_resp_rate:label')"/>
+      </input>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/t_last_visit_temperature">
+        <label ref="jr:itext('/pcime_c_followup/inputs/t_last_visit_temperature:label')"/>
+      </input>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/t_last_visit_weight">
+        <label ref="jr:itext('/pcime_c_followup/inputs/t_last_visit_weight:label')"/>
+      </input>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/t_last_visit_child_brachial_perimeter">
+        <label ref="jr:itext('/pcime_c_followup/inputs/t_last_visit_child_brachial_perimeter:label')"/>
+      </input>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/t_has_malnutrition">
+        <label ref="jr:itext('/pcime_c_followup/inputs/t_has_malnutrition:label')"/>
+      </input>
+      <input appearance="hidden" ref="/pcime_c_followup/inputs/t_has_been_malnutrition_referred">
+        <label ref="jr:itext('/pcime_c_followup/inputs/t_has_been_malnutrition_referred:label')"/>
+      </input>
+      <group ref="/pcime_c_followup/inputs/contact">
+        <input appearance="db-object" ref="/pcime_c_followup/inputs/contact/_id">
+          <label ref="jr:itext('/pcime_c_followup/inputs/contact/_id:label')"/>
+          <hint ref="jr:itext('/pcime_c_followup/inputs/contact/_id:hint')"/>
+        </input>
+        <input appearance="hidden" ref="/pcime_c_followup/inputs/contact/name">
+          <label ref="jr:itext('/pcime_c_followup/inputs/contact/name:label')"/>
+        </input>
+        <input appearance="hidden" ref="/pcime_c_followup/inputs/contact/date_of_birth">
+          <label ref="jr:itext('/pcime_c_followup/inputs/contact/date_of_birth:label')"/>
+        </input>
+        <input appearance="hidden" ref="/pcime_c_followup/inputs/contact/sex">
+          <label ref="jr:itext('/pcime_c_followup/inputs/contact/sex:label')"/>
+        </input>
+        <input appearance="hidden" ref="/pcime_c_followup/inputs/contact/parent">
+          <label ref="jr:itext('/pcime_c_followup/inputs/contact/parent:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/pcime_c_followup/child_last_visit_constant">
+      <label ref="jr:itext('/pcime_c_followup/child_last_visit_constant:label')"/>
+      <input appearance="li" ref="/pcime_c_followup/child_last_visit_constant/l_visit_temperature">
+        <label ref="jr:itext('/pcime_c_followup/child_last_visit_constant/l_visit_temperature:label')"/>
+      </input>
+      <input appearance="li" ref="/pcime_c_followup/child_last_visit_constant/l_visit_weight">
+        <label ref="jr:itext('/pcime_c_followup/child_last_visit_constant/l_visit_weight:label')"/>
+      </input>
+      <input appearance="li" ref="/pcime_c_followup/child_last_visit_constant/l_visit_child_brachial_perimeter">
+        <label ref="jr:itext('/pcime_c_followup/child_last_visit_constant/l_visit_child_brachial_perimeter:label')"/>
+      </input>
+      <input appearance="li" ref="/pcime_c_followup/child_last_visit_constant/l_resp_rate">
+        <label ref="jr:itext('/pcime_c_followup/child_last_visit_constant/l_resp_rate:label')"/>
+      </input>
+      <group ref="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos">
+        <label ref="jr:itext('/pcime_c_followup/child_last_visit_constant/g_last_visit_infos:label')"/>
+        <input appearance="li" ref="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_last_visit_infos">
+          <label ref="jr:itext('/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_last_visit_infos:label')"/>
+        </input>
+        <input appearance="li" ref="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_treat_for_diarrhea">
+          <label ref="jr:itext('/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_treat_for_diarrhea:label')"/>
+        </input>
+        <input appearance="li" ref="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_treat_for_pneumonia">
+          <label ref="jr:itext('/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_treat_for_pneumonia:label')"/>
+        </input>
+        <input appearance="li" ref="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_treat_for_cough_cold">
+          <label ref="jr:itext('/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_treat_for_cough_cold:label')"/>
+        </input>
+        <input appearance="li" ref="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_non_malaria_fever">
+          <label ref="jr:itext('/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_non_malaria_fever:label')"/>
+        </input>
+        <input appearance="li" ref="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_malaria_fever">
+          <label ref="jr:itext('/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_malaria_fever:label')"/>
+        </input>
+        <input appearance="li" ref="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_has_malnutrition">
+          <label ref="jr:itext('/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_has_malnutrition:label')"/>
+        </input>
+        <input appearance="li" ref="/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_has_been_referred">
+          <label ref="jr:itext('/pcime_c_followup/child_last_visit_constant/g_last_visit_infos/l_has_been_referred:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/pcime_c_followup/drugs">
+      <label ref="jr:itext('/pcime_c_followup/drugs:label')"/>
+      <select1 appearance="columns" ref="/pcime_c_followup/drugs/s_received_dosage">
+        <label ref="jr:itext('/pcime_c_followup/drugs/s_received_dosage:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/drugs/s_received_dosage/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/drugs/s_received_dosage/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pcime_c_followup/drugs/s_note_congrats">
+        <label ref="jr:itext('/pcime_c_followup/drugs/s_note_congrats:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/drugs/s_note_advice">
+        <label ref="jr:itext('/pcime_c_followup/drugs/s_note_advice:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/drugs/s_note_drugs">
+        <label ref="jr:itext('/pcime_c_followup/drugs/s_note_drugs:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/pcime_c_followup/drugs/s_drug_well_administrated">
+        <label ref="jr:itext('/pcime_c_followup/drugs/s_drug_well_administrated:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/drugs/s_drug_well_administrated/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/drugs/s_drug_well_administrated/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pcime_c_followup/drugs/s_encourage">
+        <label ref="jr:itext('/pcime_c_followup/drugs/s_encourage:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/drugs/s_drugs_note_1">
+        <label ref="jr:itext('/pcime_c_followup/drugs/s_drugs_note_1:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pcime_c_followup/danger_signs_ask">
+      <label ref="jr:itext('/pcime_c_followup/danger_signs_ask:label')"/>
+      <input ref="/pcime_c_followup/danger_signs_ask/s_note_1">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_note_1:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/pcime_c_followup/danger_signs_ask/s_cannot_drink">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_cannot_drink:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_cannot_drink/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_cannot_drink/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/pcime_c_followup/danger_signs_ask/s_vomit">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_vomit:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_vomit/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_vomit/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/pcime_c_followup/danger_signs_ask/s_has_convulsed">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_has_convulsed:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_has_convulsed/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_has_convulsed/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/pcime_c_followup/danger_signs_ask/s_blood_stool">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_blood_stool:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_blood_stool/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_blood_stool/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/pcime_c_followup/danger_signs_ask/s_diarrhea_14_days">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_diarrhea_14_days:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_diarrhea_14_days/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_diarrhea_14_days/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/pcime_c_followup/danger_signs_ask/s_urine_cocacola">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_urine_cocacola:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_urine_cocacola/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_urine_cocacola/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pcime_c_followup/danger_signs_ask/s_cocacola_image">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_ask/s_cocacola_image:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pcime_c_followup/danger_signs_observe">
+      <label ref="jr:itext('/pcime_c_followup/danger_signs_observe:label')"/>
+      <input ref="/pcime_c_followup/danger_signs_observe/s_note_2">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_observe/s_note_2:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/pcime_c_followup/danger_signs_observe/s_unconscious">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_observe/s_unconscious:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_observe/s_unconscious/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_observe/s_unconscious/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/pcime_c_followup/danger_signs_observe/s_is_convulsing">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_observe/s_is_convulsing:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_observe/s_is_convulsing/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_observe/s_is_convulsing/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/pcime_c_followup/danger_signs_observe/s_anemia">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_observe/s_anemia:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_observe/s_anemia/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_observe/s_anemia/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/pcime_c_followup/danger_signs_observe/s_difficulty_breathing">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_observe/s_difficulty_breathing:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_observe/s_difficulty_breathing/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_observe/s_difficulty_breathing/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/pcime_c_followup/danger_signs_observe/s_severe_slimming">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_observe/s_severe_slimming:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_observe/s_severe_slimming/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_observe/s_severe_slimming/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/pcime_c_followup/danger_signs_search">
+      <label ref="jr:itext('/pcime_c_followup/danger_signs_search:label')"/>
+      <input ref="/pcime_c_followup/danger_signs_search/s_note_3">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_search/s_note_3:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/pcime_c_followup/danger_signs_search/s_severe_dehydration">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_search/s_severe_dehydration:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_search/s_severe_dehydration/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_search/s_severe_dehydration/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/pcime_c_followup/danger_signs_search/s_neck_stiffness">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_search/s_neck_stiffness:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_search/s_neck_stiffness/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_search/s_neck_stiffness/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/pcime_c_followup/danger_signs_search/s_fontanelle_bulging">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_search/s_fontanelle_bulging:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_search/s_fontanelle_bulging/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_search/s_fontanelle_bulging/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/pcime_c_followup/danger_signs_search/s_rashes">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_search/s_rashes:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_search/s_rashes/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_search/s_rashes/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/pcime_c_followup/danger_signs_search/s_edema_feet">
+        <label ref="jr:itext('/pcime_c_followup/danger_signs_search/s_edema_feet:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_search/s_edema_feet/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/danger_signs_search/s_edema_feet/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/pcime_c_followup/temperature">
+      <label ref="jr:itext('/pcime_c_followup/temperature:label')"/>
+      <input ref="/pcime_c_followup/temperature/s_temperature">
+        <label ref="jr:itext('/pcime_c_followup/temperature/s_temperature:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pcime_c_followup/fever">
+      <label ref="jr:itext('/pcime_c_followup/fever:label')"/>
+      <select1 appearance="columns" ref="/pcime_c_followup/fever/s_has_fever">
+        <label ref="jr:itext('/pcime_c_followup/fever/s_has_fever:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/fever/s_has_fever/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/fever/s_has_fever/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pcime_c_followup/fever/n_start_new_assessment">
+        <label ref="jr:itext('/pcime_c_followup/fever/n_start_new_assessment:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pcime_c_followup/cough_cold_or_pneumonia">
+      <label ref="jr:itext('/pcime_c_followup/cough_cold_or_pneumonia:label')"/>
+      <input appearance="countdown-timer" ref="/pcime_c_followup/cough_cold_or_pneumonia/breath_timer">
+        <label ref="jr:itext('/pcime_c_followup/cough_cold_or_pneumonia/breath_timer:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold_or_pneumonia_rpm">
+        <label ref="jr:itext('/pcime_c_followup/cough_cold_or_pneumonia/cough_cold_or_pneumonia_rpm:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/cough_cold_or_pneumonia/n_rpm_increase">
+        <label ref="jr:itext('/pcime_c_followup/cough_cold_or_pneumonia/n_rpm_increase:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/cough_cold_or_pneumonia/n_rpm_decrease">
+        <label ref="jr:itext('/pcime_c_followup/cough_cold_or_pneumonia/n_rpm_decrease:label')"/>
+      </input>
+      <group ref="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold">
+        <label ref="jr:itext('/pcime_c_followup/cough_cold_or_pneumonia/cough_cold:label')"/>
+        <select1 ref="/pcime_c_followup/cough_cold_or_pneumonia/cough_cold/s_how_breathing">
+          <label ref="jr:itext('/pcime_c_followup/cough_cold_or_pneumonia/cough_cold/s_how_breathing:label')"/>
+          <item>
+            <label ref="jr:itext('/pcime_c_followup/cough_cold_or_pneumonia/cough_cold/s_how_breathing/fast:label')"/>
+            <value>fast</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/pcime_c_followup/cough_cold_or_pneumonia/cough_cold/s_how_breathing/normal:label')"/>
+            <value>normal</value>
+          </item>
+        </select1>
+      </group>
+      <group ref="/pcime_c_followup/cough_cold_or_pneumonia/pneumonia">
+        <label ref="jr:itext('/pcime_c_followup/cough_cold_or_pneumonia/pneumonia:label')"/>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/pcime_c_followup/diarrhea">
+      <label ref="jr:itext('/pcime_c_followup/diarrhea:label')"/>
+      <input ref="/pcime_c_followup/diarrhea/s_diarrhea_note">
+        <label ref="jr:itext('/pcime_c_followup/diarrhea/s_diarrhea_note:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/pcime_c_followup/diarrhea/s_drink_with_greed">
+        <label ref="jr:itext('/pcime_c_followup/diarrhea/s_drink_with_greed:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/diarrhea/s_drink_with_greed/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/diarrhea/s_drink_with_greed/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pcime_c_followup/diarrhea/s_palpate">
+        <label ref="jr:itext('/pcime_c_followup/diarrhea/s_palpate:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/pcime_c_followup/diarrhea/s_skin_fold">
+        <label ref="jr:itext('/pcime_c_followup/diarrhea/s_skin_fold:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/diarrhea/s_skin_fold/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/diarrhea/s_skin_fold/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/pcime_c_followup/disease_progress">
+      <label ref="jr:itext('/pcime_c_followup/disease_progress:label')"/>
+      <select1 appearance="columns" ref="/pcime_c_followup/disease_progress/s_condition_worsen">
+        <label ref="jr:itext('/pcime_c_followup/disease_progress/s_condition_worsen:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/disease_progress/s_condition_worsen/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/disease_progress/s_condition_worsen/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/pcime_c_followup/disease_progress/s_state_improved">
+        <label ref="jr:itext('/pcime_c_followup/disease_progress/s_state_improved:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/disease_progress/s_state_improved/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/disease_progress/s_state_improved/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/pcime_c_followup/new_complaint">
+      <label ref="jr:itext('/pcime_c_followup/new_complaint:label')"/>
+      <select1 appearance="columns" ref="/pcime_c_followup/new_complaint/s_has_new_complaint">
+        <label ref="jr:itext('/pcime_c_followup/new_complaint/s_has_new_complaint:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/new_complaint/s_has_new_complaint/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/new_complaint/s_has_new_complaint/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/pcime_c_followup/new_complaint/s_start_consultation">
+        <label ref="jr:itext('/pcime_c_followup/new_complaint/s_start_consultation:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/new_complaint/s_start_consultation/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/new_complaint/s_start_consultation/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/pcime_c_followup/group_review">
+      <input appearance="h1" ref="/pcime_c_followup/group_review/submit">
+        <label ref="jr:itext('/pcime_c_followup/group_review/submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/pcime_c_followup/group_review/r_summary">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_summary:label')"/>
+      </input>
+      <input appearance="h4 center" ref="/pcime_c_followup/group_review/r_patient_info">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_patient_info:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/pcime_c_followup/group_review/r_symptoms">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_symptoms:label')"/>
+      </input>
+      <input appearance="li" ref="/pcime_c_followup/group_review/r_danger_signs">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_danger_signs:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_cannot_drink">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_cannot_drink:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_vomit">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_vomit:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_has_convulsed">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_has_convulsed:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_blood_stool">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_blood_stool:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_diarrhea_14_days">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_diarrhea_14_days:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_urine_cocacola">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_urine_cocacola:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_unconscious">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_unconscious:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_is_convulsing">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_is_convulsing:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_anemia">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_anemia:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_difficulty_breathing">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_difficulty_breathing:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_severe_slimming">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_severe_slimming:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_severe_dehydration">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_severe_dehydration:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_neck_stiffness">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_neck_stiffness:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_fontanelle_bulging">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_fontanelle_bulging:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_rashes">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_rashes:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_edema_feet">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_edema_feet:label')"/>
+      </input>
+      <input appearance="li" ref="/pcime_c_followup/group_review/r_fever_no_malaria">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_fever_no_malaria:label')"/>
+      </input>
+      <input appearance="li" ref="/pcime_c_followup/group_review/r_has_pneumonia">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_has_pneumonia:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/pcime_c_followup/group_review/r_refer_USP">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_refer_USP:label')"/>
+      </input>
+      <input appearance="li" ref="/pcime_c_followup/group_review/r_refer_USP_danger_signs">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_refer_USP_danger_signs:label')"/>
+      </input>
+      <input appearance="li" ref="/pcime_c_followup/group_review/r_refer_fever">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_refer_fever:label')"/>
+      </input>
+      <input appearance="li" ref="/pcime_c_followup/group_review/r_refer_pneumonia">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_refer_pneumonia:label')"/>
+      </input>
+      <input appearance="li" ref="/pcime_c_followup/group_review/r_refer_state_aggravation">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_refer_state_aggravation:label')"/>
+      </input>
+      <input appearance="li" ref="/pcime_c_followup/group_review/r_refer_steady_state">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_refer_steady_state:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/pcime_c_followup/group_review/r_diagnosis_treatment">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_diagnosis_treatment:label')"/>
+      </input>
+      <input appearance="field-list summary" ref="/pcime_c_followup/group_review/r_pre_tranfer_treatement">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_pre_tranfer_treatement:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_note_9">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_note_9:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/pcime_c_followup/group_review/r_special_instruction">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_special_instruction:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_note_10">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_note_10:label')"/>
+      </input>
+      <input appearance="li" ref="/pcime_c_followup/group_review/r_note_11">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_note_11:label')"/>
+      </input>
+      <input appearance="li" ref="/pcime_c_followup/group_review/r_note_12">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_note_12:label')"/>
+      </input>
+      <input appearance="li" ref="/pcime_c_followup/group_review/r_note_13">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_note_13:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/pcime_c_followup/group_review/s_have_you_refer_child">
+        <label ref="jr:itext('/pcime_c_followup/group_review/s_have_you_refer_child:label')"/>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/group_review/s_have_you_refer_child/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pcime_c_followup/group_review/s_have_you_refer_child/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pcime_c_followup/group_review/s_why_not">
+        <label ref="jr:itext('/pcime_c_followup/group_review/s_why_not:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/pcime_c_followup/group_review/r_followup">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_followup:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_note_14">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_note_14:label')"/>
+      </input>
+      <input ref="/pcime_c_followup/group_review/r_note_15">
+        <label ref="jr:itext('/pcime_c_followup/group_review/r_note_15:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

@@ -1,6 +1,6 @@
 {
     "context": {
-        "expression": "contact.type === 'clinic' && user.role === 'chw' && user._id !== contact._id && summary.alive && !summary.is_family_person && !summary.muted",
+        "expression": "contact.type === 'clinic' && user.role === 'chw' && user._id !== contact._id && !summary.is_family_person && !summary.muted",
         "person": false,
         "place": true
     },

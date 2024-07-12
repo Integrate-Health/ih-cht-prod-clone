@@ -1,0 +1,1061 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Quantités Médicaments</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/drug_quantities/inputs:label">
+            <value>CHW</value>
+          </text>
+          <text id="/drug_quantities/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/drug_quantities/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/drug_quantities/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/drug_quantities/inputs/contact/_id:label">
+            <value>What is the CHW name?</value>
+          </text>
+          <text id="/drug_quantities/inputs/contact/_id:hint">
+            <value>select a person from the list</value>
+          </text>
+          <text id="/drug_quantities/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/drug_quantities/inputs/contact/date_of_birth:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/drug_quantities/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/drug_quantities/chw_age_in_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/drug_quantities/chw_age_in_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/drug_quantities/chw_age_in_days:label">
+            <value>Days old</value>
+          </text>
+          <text id="/drug_quantities/chw_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/chw_id:label">
+            <value>CHW ID</value>
+          </text>
+          <text id="/drug_quantities/chw_name:label">
+            <value>CHW Name</value>
+          </text>
+          <text id="/drug_quantities/chw_sex:label">
+            <value>CHW Sex</value>
+          </text>
+          <text id="/drug_quantities/chw_sex_en:label">
+            <value>CHW Sex</value>
+          </text>
+          <text id="/drug_quantities/chw_sex_fr:label">
+            <value>CHW Sex</value>
+          </text>
+          <text id="/drug_quantities/p_note:label">
+            <value>ID: <output value=" /drug_quantities/chw_id "/>
+Name: <output value=" /drug_quantities/chw_name "/> - Sex: <output value=" /drug_quantities/chw_sex_en "/>
+Date of birth: <output value=" /drug_quantities/inputs/contact/date_of_birth "/>
+days old: <output value=" /drug_quantities/chw_age_in_days "/>
+months old: <output value=" /drug_quantities/chw_age_in_months "/>
+years old: <output value=" /drug_quantities/chw_age_in_years "/>
+display age: <output value=" /drug_quantities/chw_age_display "/></value></text>
+          <text id="/drug_quantities/h_drug_quantities:label">
+            <value>Activity On Drug</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_year_type:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_year_type:label">
+            <value>Year of activity</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_year_type/previous:label">
+            <value>previous year</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_year_type/current:label">
+            <value>Current year</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month:label">
+            <value>Month of activity</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/01:label">
+            <value>January</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/02:label">
+            <value>February</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/03:label">
+            <value>March</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/04:label">
+            <value>April</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/05:label">
+            <value>May</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/06:label">
+            <value>June</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/07:label">
+            <value>July</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/08:label">
+            <value>August</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/09:label">
+            <value>September</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/10:label">
+            <value>October</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/11:label">
+            <value>November</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/12:label">
+            <value>December</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_operation:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_operation:label">
+            <value>What Activity do you want to do?</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_operation/c_qty_received:label">
+            <value>Quantity received from USP</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_operation/c_qty_counted:label">
+            <value>Quantity counted in inventory</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_operation/c_qty_order:label">
+            <value>Quantities to order</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list:label">
+            <value>Select medications according to the chosen activity</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_alben_400:label">
+            <value>Albendazole 400 mg cp</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_para_250:label">
+            <value>Paracetamol 250 mg</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_para_500:label">
+            <value>Paracetamol 500 mg</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_amox_250:label">
+            <value>Amoxiciline 250 mg</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_amox_500:label">
+            <value>Amoxiciline 500 mg</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_tdr:label">
+            <value>TDR</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_lumartem:label">
+            <value>Artéméther + Luméfantrine 20/120mg cp</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_sro:label">
+            <value>SRO</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_zinc:label">
+            <value>Zinc</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_sayana:label">
+            <value>Sayana Press</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_pills:label">
+            <value>Oral Combination Pills</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_pregnancy_test:label">
+            <value>Pregnancy Test</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_vit_A1:label">
+            <value>Vitamine A  100000UI</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_vit_A2:label">
+            <value>Vitamine A  200000UI</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities:label">
+            <value>Quantity Enter</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/alben_400:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/alben_400:label">
+            <value>Albendazole 400 mg cp</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/para_250:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/para_250:label">
+            <value>Paracetamol 250 mg</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/para_500:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/para_500:label">
+            <value>Paracetamol 500 mg</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/amox_250:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/amox_250:label">
+            <value>Amoxiciline 250 mg</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/amox_500:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/amox_500:label">
+            <value>Amoxiciline 500 mg</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/tdr:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/tdr:label">
+            <value>TDR</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/lumartem:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/lumartem:label">
+            <value>Lumartem</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/sro:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/sro:label">
+            <value>SRO</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/zinc:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/zinc:label">
+            <value>Zinc</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/sayana:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/sayana:label">
+            <value>Sayana Press</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/pills:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/pills:label">
+            <value>Oral Combination Pills</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/pregnancy_test:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/pregnancy_test:label">
+            <value>Pregnancy Test</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/vit_A1:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/vit_A1:label">
+            <value>Vitamine A 100000UI</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/vit_A2:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/vit_A2:label">
+            <value>Vitamine A 200000UI</value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/r_summary:label">
+            <value>CHW Summary&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/r_chw_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /drug_quantities/chw_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /drug_quantities/chw_sex_en "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /drug_quantities/chw_age_display "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_balance:label">
+            <value>&lt;strong&gt;<output value=" /drug_quantities/action_name "/>&lt;/strong&gt; &lt;i class=&quot;fa fa-medkit&quot;&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_alben_400:label">
+            <value>Albendazole 400 mg : <output value=" /drug_quantities/b_drug_quantities/alben_400 "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_para_250:label">
+            <value>Paracetamol 250 mg : <output value=" /drug_quantities/b_drug_quantities/para_250 "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_para_500:label">
+            <value>Paracetamol 500 mg : <output value=" /drug_quantities/b_drug_quantities/para_500 "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_amoxi_250:label">
+            <value>Amoxiciline 250 mg : <output value=" /drug_quantities/b_drug_quantities/amox_250 "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_amox_500:label">
+            <value>Amoxiciline 500 mg : <output value=" /drug_quantities/b_drug_quantities/amox_500 "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_tdr:label">
+            <value>TDR :<output value=" /drug_quantities/b_drug_quantities/tdr "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_lumartem:label">
+            <value>Lumartem : <output value=" /drug_quantities/b_drug_quantities/lumartem "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_sro:label">
+            <value>SRO : <output value=" /drug_quantities/b_drug_quantities/sro "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_zinc:label">
+            <value>Zinc : <output value=" /drug_quantities/b_drug_quantities/zinc "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_sayana:label">
+            <value>Sayana : <output value=" /drug_quantities/b_drug_quantities/sayana "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_pills:label">
+            <value>Oral Combination Pills: <output value=" /drug_quantities/b_drug_quantities/pills "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_pregnancy_test:label">
+            <value>Pregnancy Test: <output value=" /drug_quantities/b_drug_quantities/pregnancy_test "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_vit_A1:label">
+            <value>Vitamine A 100000UI : <output value=" /drug_quantities/b_drug_quantities/vit_A1 "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_vit_A2:label">
+            <value>Vitamine A 200000UI : <output value=" /drug_quantities/b_drug_quantities/vit_A2 "/></value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/drug_quantities/inputs:label">
+            <value>CHW</value>
+          </text>
+          <text id="/drug_quantities/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/drug_quantities/inputs/source_id:label">
+            <value>Source de l'Identifiant</value>
+          </text>
+          <text id="/drug_quantities/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/drug_quantities/inputs/contact/_id:label">
+            <value>Quel est le nom de l'ASC?</value>
+          </text>
+          <text id="/drug_quantities/inputs/contact/_id:hint">
+            <value>Choisir une personne dans la liste</value>
+          </text>
+          <text id="/drug_quantities/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/drug_quantities/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/drug_quantities/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/drug_quantities/chw_age_in_years:label">
+            <value>Années</value>
+          </text>
+          <text id="/drug_quantities/chw_age_in_months:label">
+            <value>Mois</value>
+          </text>
+          <text id="/drug_quantities/chw_age_in_days:label">
+            <value>Jours</value>
+          </text>
+          <text id="/drug_quantities/chw_id:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/chw_id:label">
+            <value>Identifiant de l'ASC</value>
+          </text>
+          <text id="/drug_quantities/chw_name:label">
+            <value>Nom de l'ASC</value>
+          </text>
+          <text id="/drug_quantities/chw_sex:label">
+            <value>Sexe de l'ASC</value>
+          </text>
+          <text id="/drug_quantities/chw_sex_en:label">
+            <value>Sexe de l'ASC</value>
+          </text>
+          <text id="/drug_quantities/chw_sex_fr:label">
+            <value>Sexe de l'ASC</value>
+          </text>
+          <text id="/drug_quantities/p_note:label">
+            <value>Identifiant: <output value=" /drug_quantities/chw_id "/>
+Nom: <output value=" /drug_quantities/chw_name "/> - Sexe: <output value=" /drug_quantities/chw_sex_fr "/>
+Date de naissance: <output value=" /drug_quantities/inputs/contact/date_of_birth "/>
+jours: <output value=" /drug_quantities/chw_age_in_days "/>
+mois: <output value=" /drug_quantities/chw_age_in_months "/>
+années: <output value=" /drug_quantities/chw_age_in_years "/>
+âge affiché: <output value=" /drug_quantities/chw_age_display "/></value></text>
+          <text id="/drug_quantities/h_drug_quantities:label">
+            <value>Activité Sur Médicaments</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_year_type:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_year_type:label">
+            <value>Année de l'activité</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_year_type/previous:label">
+            <value>Année passée</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_year_type/current:label">
+            <value>Cette Année</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month:label">
+            <value>Mois de l'activité</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/01:label">
+            <value>janvier</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/02:label">
+            <value>février</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/03:label">
+            <value>Mars</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/04:label">
+            <value>Avril</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/05:label">
+            <value>Mai</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/06:label">
+            <value>juin</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/07:label">
+            <value>juillet</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/08:label">
+            <value>Août</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/09:label">
+            <value>Septembre</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/10:label">
+            <value>Octobre</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/11:label">
+            <value>Novembre</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_month/12:label">
+            <value>Décembre</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_operation:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_operation:label">
+            <value>Quelle Activité souhaitez-vous faire ?</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_operation/c_qty_received:label">
+            <value>Quantité reçue de l'USP</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_operation/c_qty_counted:label">
+            <value>Quantité comptée à l'inventaire</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_operation/c_qty_order:label">
+            <value>Quantités à commander</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list:label">
+            <value>Selectionner les médicaments en fonction de l'activité choisie</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_alben_400:label">
+            <value>Albendazole 400 mg cp</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_para_250:label">
+            <value>Paracétamol 250 mg</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_para_500:label">
+            <value>Paracétamol 500 mg</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_amox_250:label">
+            <value>Amoxiciline 250 mg</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_amox_500:label">
+            <value>Amoxiciline 500 mg</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_tdr:label">
+            <value>TDR</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_lumartem:label">
+            <value>Artéméther/Luméfantrine 20/120mg cp</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_sro:label">
+            <value>SRO</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_zinc:label">
+            <value>Zinc</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_sayana:label">
+            <value>Sayana Press</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_pills:label">
+            <value>Contraceptifs Oraux Combinés</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_pregnancy_test:label">
+            <value>Test de Grossesse</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_vit_A1:label">
+            <value>Vitamine A  100000UI</value>
+          </text>
+          <text id="/drug_quantities/h_drug_quantities/med_list/c_vit_A2:label">
+            <value>Vitamine A  200000UI</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities:label">
+            <value>Saisir De Quantité</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/alben_400:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/alben_400:label">
+            <value>Albendazole 400 mg cp</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/para_250:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/para_250:label">
+            <value>Paracétamol 250 mg</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/para_500:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/para_500:label">
+            <value>Paracétamol 500 mg</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/amox_250:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/amox_250:label">
+            <value>Amoxiciline 250 mg</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/amox_500:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/amox_500:label">
+            <value>Amoxiciline 500 mg</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/tdr:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/tdr:label">
+            <value>TDR</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/lumartem:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/lumartem:label">
+            <value>Lumartem</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/sro:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/sro:label">
+            <value>SRO</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/zinc:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/zinc:label">
+            <value>Zinc</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/sayana:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/sayana:label">
+            <value>Sayana Press</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/pills:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/pills:label">
+            <value>Contraceptifs Oraux Combinés</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/pregnancy_test:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/pregnancy_test:label">
+            <value>Test de Grossesse</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/vit_A1:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/vit_A1:label">
+            <value>Vitamine A 100000UI</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/vit_A2:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/drug_quantities/b_drug_quantities/vit_A2:label">
+            <value>Vitamine A 200000UI</value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/r_summary:label">
+            <value>Détails de l'ASC &lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/r_chw_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /drug_quantities/chw_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /drug_quantities/chw_sex_fr "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /drug_quantities/chw_age_display_fr "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_balance:label">
+            <value>&lt;strong&gt;<output value=" /drug_quantities/action_name "/>&lt;/strong&gt; &lt;i class=&quot;fa fa-medkit&quot;&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_alben_400:label">
+            <value>Albendazole 400 mg : <output value=" /drug_quantities/b_drug_quantities/alben_400 "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_para_250:label">
+            <value>Paracétamol 250 mg : <output value=" /drug_quantities/b_drug_quantities/para_250 "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_para_500:label">
+            <value>Paracétamol 500 mg : <output value=" /drug_quantities/b_drug_quantities/para_500 "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_amoxi_250:label">
+            <value>Amoxiciline 250 mg : <output value=" /drug_quantities/b_drug_quantities/amox_250 "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_amox_500:label">
+            <value>Amoxiciline 500 mg : <output value=" /drug_quantities/b_drug_quantities/amox_500 "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_tdr:label">
+            <value>TDR :<output value=" /drug_quantities/b_drug_quantities/tdr "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_lumartem:label">
+            <value>Lumartem : <output value=" /drug_quantities/b_drug_quantities/lumartem "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_sro:label">
+            <value>SRO : <output value=" /drug_quantities/b_drug_quantities/sro "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_zinc:label">
+            <value>Zinc : <output value=" /drug_quantities/b_drug_quantities/zinc "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_sayana:label">
+            <value>Sayana : <output value=" /drug_quantities/b_drug_quantities/sayana "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_pills:label">
+            <value>Contraceptifs Oraux Combinés: <output value=" /drug_quantities/b_drug_quantities/pills "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_pregnancy_test:label">
+            <value>Test de Grossesse : <output value=" /drug_quantities/b_drug_quantities/pregnancy_test "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_vit_A1:label">
+            <value>Vitamine A 100000UI : <output value=" /drug_quantities/b_drug_quantities/vit_A1 "/></value>
+          </text>
+          <text id="/drug_quantities/group_diagnosis/f_drug_quantities/r_vit_A2:label">
+            <value>Vitamine A 200000UI : <output value=" /drug_quantities/b_drug_quantities/vit_A2 "/></value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <drug_quantities id="drug_quantities" prefix="J1!drug_quantities!" delimiter="#" version="2016-07-11">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+            </contact>
+          </inputs>
+          <chw_age_in_years>0</chw_age_in_years>
+          <chw_age_in_months>0</chw_age_in_months>
+          <chw_age_in_days/>
+          <chw_age_display/>
+          <chw_age_display_fr/>
+          <chw_id/>
+          <chw_name/>
+          <chw_sex/>
+          <chw_sex_en/>
+          <chw_sex_fr/>
+          <p_note/>
+          <action_name/>
+          <h_drug_quantities>
+            <med_year_type>current</med_year_type>
+            <med_month/>
+            <med_operation/>
+            <med_list/>
+          </h_drug_quantities>
+          <b_drug_quantities>
+            <alben_400/>
+            <para_250/>
+            <para_500/>
+            <amox_250/>
+            <amox_500/>
+            <tdr/>
+            <lumartem/>
+            <sro/>
+            <zinc/>
+            <sayana/>
+            <pills/>
+            <pregnancy_test/>
+            <vit_A1/>
+            <vit_A2/>
+          </b_drug_quantities>
+          <group_diagnosis>
+            <r_summary/>
+            <r_chw_info/>
+            <f_drug_quantities>
+              <r_balance/>
+              <r_alben_400/>
+              <r_para_250/>
+              <r_para_500/>
+              <r_amoxi_250/>
+              <r_amox_500/>
+              <r_tdr/>
+              <r_lumartem/>
+              <r_sro/>
+              <r_zinc/>
+              <r_sayana/>
+              <r_pills/>
+              <r_pregnancy_test/>
+              <r_vit_A1/>
+              <r_vit_A2/>
+            </f_drug_quantities>
+          </group_diagnosis>
+          <meta>
+            <instanceID/>
+          </meta>
+        </drug_quantities>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/drug_quantities/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/drug_quantities/inputs/source" type="string"/>
+      <bind nodeset="/drug_quantities/inputs/source_id" type="string"/>
+      <bind nodeset="/drug_quantities/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/drug_quantities/inputs/contact/name" type="string"/>
+      <bind nodeset="/drug_quantities/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/drug_quantities/inputs/contact/sex" type="string"/>
+      <bind nodeset="/drug_quantities/chw_age_in_years" type="string" calculate="floor( difference-in-months(  /drug_quantities/inputs/contact/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/drug_quantities/chw_age_in_months" type="string" calculate="difference-in-months(  /drug_quantities/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/drug_quantities/chw_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /drug_quantities/inputs/contact/date_of_birth ))"/>
+      <bind nodeset="/drug_quantities/chw_age_display" type="string" calculate="concat(concat( /drug_quantities/chw_age_in_years , if( /drug_quantities/chw_age_in_years =1,' year and ',' years and ')),concat( /drug_quantities/chw_age_in_months  mod 12, if(( /drug_quantities/chw_age_in_months  mod 12)=1,' month old',' months old')))"/>
+      <bind nodeset="/drug_quantities/chw_age_display_fr" type="string" calculate="concat(concat( /drug_quantities/chw_age_in_years , if( /drug_quantities/chw_age_in_years =1,' an et ',' ans et ')),concat( /drug_quantities/chw_age_in_months  mod 12, if(( /drug_quantities/chw_age_in_months  mod 12)=1,' mois',' mois')))"/>
+      <bind nodeset="/drug_quantities/chw_id" type="string" jr:requiredMsg="jr:itext('/drug_quantities/chw_id:jr:requiredMsg')" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/drug_quantities/chw_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/drug_quantities/chw_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/drug_quantities/chw_sex_en" type="string" calculate="if( /drug_quantities/chw_sex  = 'male' or  /drug_quantities/chw_sex  = 'homme' or  /drug_quantities/chw_sex  = 'Homme', 'Male', if( /drug_quantities/chw_sex  = 'female' or  /drug_quantities/chw_sex  = 'femme' or  /drug_quantities/chw_sex  = 'Femme', 'Female', ''))"/>
+      <bind nodeset="/drug_quantities/chw_sex_fr" type="string" calculate="if( /drug_quantities/chw_sex  = 'male' or  /drug_quantities/chw_sex  = 'homme' or  /drug_quantities/chw_sex  = 'Homme', 'Homme', if( /drug_quantities/chw_sex  = 'female' or  /drug_quantities/chw_sex  = 'femme' or  /drug_quantities/chw_sex  = 'Femme', 'Femme', ''))"/>
+      <bind nodeset="/drug_quantities/p_note" readonly="true()" type="string" relevant="false()"/>
+      <bind nodeset="/drug_quantities/action_name" type="string" calculate="jr:choice-name( /drug_quantities/h_drug_quantities/med_operation ,' /drug_quantities/h_drug_quantities/med_operation ')"/>
+      <bind nodeset="/drug_quantities/h_drug_quantities/med_year_type" type="select1" required="true()" jr:requiredMsg="jr:itext('/drug_quantities/h_drug_quantities/med_year_type:jr:requiredMsg')"/>
+      <bind nodeset="/drug_quantities/h_drug_quantities/med_month" type="select1" required="true()" jr:requiredMsg="jr:itext('/drug_quantities/h_drug_quantities/med_month:jr:requiredMsg')"/>
+      <bind nodeset="/drug_quantities/h_drug_quantities/med_operation" type="select1" required="true()" jr:requiredMsg="jr:itext('/drug_quantities/h_drug_quantities/med_operation:jr:requiredMsg')"/>
+      <bind nodeset="/drug_quantities/h_drug_quantities/med_list" type="select" required="true()" jr:requiredMsg="jr:itext('/drug_quantities/h_drug_quantities/med_list:jr:requiredMsg')"/>
+      <bind nodeset="/drug_quantities/b_drug_quantities/alben_400" type="int" jr:requiredMsg="jr:itext('/drug_quantities/b_drug_quantities/alben_400:jr:requiredMsg')" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_alben_400')" required="true()"/>
+      <bind nodeset="/drug_quantities/b_drug_quantities/para_250" type="int" jr:requiredMsg="jr:itext('/drug_quantities/b_drug_quantities/para_250:jr:requiredMsg')" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_para_250')" required="true()"/>
+      <bind nodeset="/drug_quantities/b_drug_quantities/para_500" type="int" jr:requiredMsg="jr:itext('/drug_quantities/b_drug_quantities/para_500:jr:requiredMsg')" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_para_500')" required="true()"/>
+      <bind nodeset="/drug_quantities/b_drug_quantities/amox_250" type="int" jr:requiredMsg="jr:itext('/drug_quantities/b_drug_quantities/amox_250:jr:requiredMsg')" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_amox_250')" required="true()"/>
+      <bind nodeset="/drug_quantities/b_drug_quantities/amox_500" type="int" jr:requiredMsg="jr:itext('/drug_quantities/b_drug_quantities/amox_500:jr:requiredMsg')" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_amox_500')" required="true()"/>
+      <bind nodeset="/drug_quantities/b_drug_quantities/tdr" type="int" jr:requiredMsg="jr:itext('/drug_quantities/b_drug_quantities/tdr:jr:requiredMsg')" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_tdr')" required="true()"/>
+      <bind nodeset="/drug_quantities/b_drug_quantities/lumartem" type="int" jr:requiredMsg="jr:itext('/drug_quantities/b_drug_quantities/lumartem:jr:requiredMsg')" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_lumartem')" required="true()"/>
+      <bind nodeset="/drug_quantities/b_drug_quantities/sro" type="int" jr:requiredMsg="jr:itext('/drug_quantities/b_drug_quantities/sro:jr:requiredMsg')" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_sro')" required="true()"/>
+      <bind nodeset="/drug_quantities/b_drug_quantities/zinc" type="int" jr:requiredMsg="jr:itext('/drug_quantities/b_drug_quantities/zinc:jr:requiredMsg')" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_zinc')" required="true()"/>
+      <bind nodeset="/drug_quantities/b_drug_quantities/sayana" type="int" jr:requiredMsg="jr:itext('/drug_quantities/b_drug_quantities/sayana:jr:requiredMsg')" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_sayana')" required="true()"/>
+      <bind nodeset="/drug_quantities/b_drug_quantities/pills" type="int" jr:requiredMsg="jr:itext('/drug_quantities/b_drug_quantities/pills:jr:requiredMsg')" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_pills')" required="true()"/>
+      <bind nodeset="/drug_quantities/b_drug_quantities/pregnancy_test" type="int" jr:requiredMsg="jr:itext('/drug_quantities/b_drug_quantities/pregnancy_test:jr:requiredMsg')" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_pregnancy_test')" required="true()"/>
+      <bind nodeset="/drug_quantities/b_drug_quantities/vit_A1" type="int" jr:requiredMsg="jr:itext('/drug_quantities/b_drug_quantities/vit_A1:jr:requiredMsg')" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_vit_A1')" required="true()"/>
+      <bind nodeset="/drug_quantities/b_drug_quantities/vit_A2" type="int" jr:requiredMsg="jr:itext('/drug_quantities/b_drug_quantities/vit_A2:jr:requiredMsg')" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_vit_A2')" required="true()"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/r_chw_info" readonly="true()" type="string"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/f_drug_quantities/r_balance" readonly="true()" type="string"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/f_drug_quantities/r_alben_400" readonly="true()" type="string" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_alben_400')"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/f_drug_quantities/r_para_250" readonly="true()" type="string" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_para_250')"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/f_drug_quantities/r_para_500" readonly="true()" type="string" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_para_500')"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/f_drug_quantities/r_amoxi_250" readonly="true()" type="string" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_amox_250')"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/f_drug_quantities/r_amox_500" readonly="true()" type="string" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_amox_500')"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/f_drug_quantities/r_tdr" readonly="true()" type="string" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_tdr')"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/f_drug_quantities/r_lumartem" readonly="true()" type="string" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_lumartem')"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/f_drug_quantities/r_sro" readonly="true()" type="string" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_sro')"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/f_drug_quantities/r_zinc" readonly="true()" type="string" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_zinc')"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/f_drug_quantities/r_sayana" readonly="true()" type="string" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_sayana')"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/f_drug_quantities/r_pills" readonly="true()" type="string" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_pills')"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/f_drug_quantities/r_pregnancy_test" readonly="true()" type="string" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_pregnancy_test')"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/f_drug_quantities/r_vit_A1" readonly="true()" type="string" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_vit_A1')"/>
+      <bind nodeset="/drug_quantities/group_diagnosis/f_drug_quantities/r_vit_A2" readonly="true()" type="string" relevant="selected( /drug_quantities/h_drug_quantities/med_list ,'c_vit_A2')"/>
+      <bind nodeset="/drug_quantities/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/drug_quantities/inputs">
+      <label ref="jr:itext('/drug_quantities/inputs:label')"/>
+      <input appearance="hidden" ref="/drug_quantities/inputs/source">
+        <label ref="jr:itext('/drug_quantities/inputs/source:label')"/>
+      </input>
+      <input appearance="hidden" ref="/drug_quantities/inputs/source_id">
+        <label ref="jr:itext('/drug_quantities/inputs/source_id:label')"/>
+      </input>
+      <group ref="/drug_quantities/inputs/contact">
+        <label ref="jr:itext('/drug_quantities/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/drug_quantities/inputs/contact/_id">
+          <label ref="jr:itext('/drug_quantities/inputs/contact/_id:label')"/>
+          <hint ref="jr:itext('/drug_quantities/inputs/contact/_id:hint')"/>
+        </input>
+        <input appearance="hidden" ref="/drug_quantities/inputs/contact/name">
+          <label ref="jr:itext('/drug_quantities/inputs/contact/name:label')"/>
+        </input>
+        <input appearance="hidden" ref="/drug_quantities/inputs/contact/date_of_birth">
+          <label ref="jr:itext('/drug_quantities/inputs/contact/date_of_birth:label')"/>
+        </input>
+        <input appearance="hidden" ref="/drug_quantities/inputs/contact/sex">
+          <label ref="jr:itext('/drug_quantities/inputs/contact/sex:label')"/>
+        </input>
+      </group>
+    </group>
+    <input ref="/drug_quantities/p_note">
+      <label ref="jr:itext('/drug_quantities/p_note:label')"/>
+    </input>
+    <group appearance="field-list" ref="/drug_quantities/h_drug_quantities">
+      <label ref="jr:itext('/drug_quantities/h_drug_quantities:label')"/>
+      <select1 ref="/drug_quantities/h_drug_quantities/med_year_type">
+        <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_year_type:label')"/>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_year_type/previous:label')"/>
+          <value>previous</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_year_type/current:label')"/>
+          <value>current</value>
+        </item>
+      </select1>
+      <select1 ref="/drug_quantities/h_drug_quantities/med_month">
+        <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_month:label')"/>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_month/01:label')"/>
+          <value>01</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_month/02:label')"/>
+          <value>02</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_month/03:label')"/>
+          <value>03</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_month/04:label')"/>
+          <value>04</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_month/05:label')"/>
+          <value>05</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_month/06:label')"/>
+          <value>06</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_month/07:label')"/>
+          <value>07</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_month/08:label')"/>
+          <value>08</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_month/09:label')"/>
+          <value>09</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_month/10:label')"/>
+          <value>10</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_month/11:label')"/>
+          <value>11</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_month/12:label')"/>
+          <value>12</value>
+        </item>
+      </select1>
+      <select1 ref="/drug_quantities/h_drug_quantities/med_operation">
+        <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_operation:label')"/>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_operation/c_qty_received:label')"/>
+          <value>c_qty_received</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_operation/c_qty_counted:label')"/>
+          <value>c_qty_counted</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_operation/c_qty_order:label')"/>
+          <value>c_qty_order</value>
+        </item>
+      </select1>
+      <select ref="/drug_quantities/h_drug_quantities/med_list">
+        <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_list:label')"/>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_list/c_alben_400:label')"/>
+          <value>c_alben_400</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_list/c_para_250:label')"/>
+          <value>c_para_250</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_list/c_para_500:label')"/>
+          <value>c_para_500</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_list/c_amox_250:label')"/>
+          <value>c_amox_250</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_list/c_amox_500:label')"/>
+          <value>c_amox_500</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_list/c_tdr:label')"/>
+          <value>c_tdr</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_list/c_lumartem:label')"/>
+          <value>c_lumartem</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_list/c_sro:label')"/>
+          <value>c_sro</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_list/c_zinc:label')"/>
+          <value>c_zinc</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_list/c_sayana:label')"/>
+          <value>c_sayana</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_list/c_pills:label')"/>
+          <value>c_pills</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_list/c_pregnancy_test:label')"/>
+          <value>c_pregnancy_test</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_list/c_vit_A1:label')"/>
+          <value>c_vit_A1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/drug_quantities/h_drug_quantities/med_list/c_vit_A2:label')"/>
+          <value>c_vit_A2</value>
+        </item>
+      </select>
+    </group>
+    <group appearance="field-list" ref="/drug_quantities/b_drug_quantities">
+      <label ref="jr:itext('/drug_quantities/b_drug_quantities:label')"/>
+      <input ref="/drug_quantities/b_drug_quantities/alben_400">
+        <label ref="jr:itext('/drug_quantities/b_drug_quantities/alben_400:label')"/>
+      </input>
+      <input ref="/drug_quantities/b_drug_quantities/para_250">
+        <label ref="jr:itext('/drug_quantities/b_drug_quantities/para_250:label')"/>
+      </input>
+      <input ref="/drug_quantities/b_drug_quantities/para_500">
+        <label ref="jr:itext('/drug_quantities/b_drug_quantities/para_500:label')"/>
+      </input>
+      <input ref="/drug_quantities/b_drug_quantities/amox_250">
+        <label ref="jr:itext('/drug_quantities/b_drug_quantities/amox_250:label')"/>
+      </input>
+      <input ref="/drug_quantities/b_drug_quantities/amox_500">
+        <label ref="jr:itext('/drug_quantities/b_drug_quantities/amox_500:label')"/>
+      </input>
+      <input ref="/drug_quantities/b_drug_quantities/tdr">
+        <label ref="jr:itext('/drug_quantities/b_drug_quantities/tdr:label')"/>
+      </input>
+      <input ref="/drug_quantities/b_drug_quantities/lumartem">
+        <label ref="jr:itext('/drug_quantities/b_drug_quantities/lumartem:label')"/>
+      </input>
+      <input ref="/drug_quantities/b_drug_quantities/sro">
+        <label ref="jr:itext('/drug_quantities/b_drug_quantities/sro:label')"/>
+      </input>
+      <input ref="/drug_quantities/b_drug_quantities/zinc">
+        <label ref="jr:itext('/drug_quantities/b_drug_quantities/zinc:label')"/>
+      </input>
+      <input ref="/drug_quantities/b_drug_quantities/sayana">
+        <label ref="jr:itext('/drug_quantities/b_drug_quantities/sayana:label')"/>
+      </input>
+      <input ref="/drug_quantities/b_drug_quantities/pills">
+        <label ref="jr:itext('/drug_quantities/b_drug_quantities/pills:label')"/>
+      </input>
+      <input ref="/drug_quantities/b_drug_quantities/pregnancy_test">
+        <label ref="jr:itext('/drug_quantities/b_drug_quantities/pregnancy_test:label')"/>
+      </input>
+      <input ref="/drug_quantities/b_drug_quantities/vit_A1">
+        <label ref="jr:itext('/drug_quantities/b_drug_quantities/vit_A1:label')"/>
+      </input>
+      <input ref="/drug_quantities/b_drug_quantities/vit_A2">
+        <label ref="jr:itext('/drug_quantities/b_drug_quantities/vit_A2:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/drug_quantities/group_diagnosis">
+      <label ref="jr:itext('/drug_quantities/group_diagnosis:label')"/>
+      <input appearance="h1 yellow" ref="/drug_quantities/group_diagnosis/r_summary">
+        <label ref="jr:itext('/drug_quantities/group_diagnosis/r_summary:label')"/>
+      </input>
+      <input ref="/drug_quantities/group_diagnosis/r_chw_info">
+        <label ref="jr:itext('/drug_quantities/group_diagnosis/r_chw_info:label')"/>
+      </input>
+      <group ref="/drug_quantities/group_diagnosis/f_drug_quantities">
+        <label ref="jr:itext('/drug_quantities/group_diagnosis/f_drug_quantities:label')"/>
+        <input appearance="h1 blue" ref="/drug_quantities/group_diagnosis/f_drug_quantities/r_balance">
+          <label ref="jr:itext('/drug_quantities/group_diagnosis/f_drug_quantities/r_balance:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_quantities/group_diagnosis/f_drug_quantities/r_alben_400">
+          <label ref="jr:itext('/drug_quantities/group_diagnosis/f_drug_quantities/r_alben_400:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_quantities/group_diagnosis/f_drug_quantities/r_para_250">
+          <label ref="jr:itext('/drug_quantities/group_diagnosis/f_drug_quantities/r_para_250:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_quantities/group_diagnosis/f_drug_quantities/r_para_500">
+          <label ref="jr:itext('/drug_quantities/group_diagnosis/f_drug_quantities/r_para_500:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_quantities/group_diagnosis/f_drug_quantities/r_amoxi_250">
+          <label ref="jr:itext('/drug_quantities/group_diagnosis/f_drug_quantities/r_amoxi_250:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_quantities/group_diagnosis/f_drug_quantities/r_amox_500">
+          <label ref="jr:itext('/drug_quantities/group_diagnosis/f_drug_quantities/r_amox_500:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_quantities/group_diagnosis/f_drug_quantities/r_tdr">
+          <label ref="jr:itext('/drug_quantities/group_diagnosis/f_drug_quantities/r_tdr:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_quantities/group_diagnosis/f_drug_quantities/r_lumartem">
+          <label ref="jr:itext('/drug_quantities/group_diagnosis/f_drug_quantities/r_lumartem:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_quantities/group_diagnosis/f_drug_quantities/r_sro">
+          <label ref="jr:itext('/drug_quantities/group_diagnosis/f_drug_quantities/r_sro:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_quantities/group_diagnosis/f_drug_quantities/r_zinc">
+          <label ref="jr:itext('/drug_quantities/group_diagnosis/f_drug_quantities/r_zinc:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_quantities/group_diagnosis/f_drug_quantities/r_sayana">
+          <label ref="jr:itext('/drug_quantities/group_diagnosis/f_drug_quantities/r_sayana:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_quantities/group_diagnosis/f_drug_quantities/r_pills">
+          <label ref="jr:itext('/drug_quantities/group_diagnosis/f_drug_quantities/r_pills:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_quantities/group_diagnosis/f_drug_quantities/r_pregnancy_test">
+          <label ref="jr:itext('/drug_quantities/group_diagnosis/f_drug_quantities/r_pregnancy_test:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_quantities/group_diagnosis/f_drug_quantities/r_vit_A1">
+          <label ref="jr:itext('/drug_quantities/group_diagnosis/f_drug_quantities/r_vit_A1:label')"/>
+        </input>
+        <input appearance="h3 blue" ref="/drug_quantities/group_diagnosis/f_drug_quantities/r_vit_A2">
+          <label ref="jr:itext('/drug_quantities/group_diagnosis/f_drug_quantities/r_vit_A2:label')"/>
+        </input>
+      </group>
+    </group>
+  </h:body>
+</h:html>

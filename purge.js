@@ -33,47 +33,46 @@ module.exports = {
     }
       
     if (userCtx.roles.includes("chw")) {
-      
       // ########## Rules ##########
       // const UndoDeathReportToPurge = reports.filter(r => r.form === 'undo_death_report' && r.reported_date < old30).map(r => r._id);
       // const DeathReportToPurge = reports.filter((r) => r.form === `death_report` && r.reported_date < old40).map((r) => r._id);
 
       const homeVisitToPurge = reports.filter((r) => r.form === `home_visit` && r.reported_date < old40).map((r) => r._id);
-      const NewbornFollowupToPurge = reports.filter((r) => r.form === `newborn_followup` && r.reported_date < old40).map((r) => r._id);
+      const newbornFollowupToPurge = reports.filter((r) => r.form === `newborn_followup` && r.reported_date < old40).map((r) => r._id);
       const womenEmergencyFollowupToPurge = reports.filter((r) => r.form === `women_emergency_followup` && r.reported_date < old40).map((r) => r._id);
-      const PcimeChwToPurge = reports.filter((r) => r.form === `pcime_c_asc` && r.reported_date < old40).map((r) => r._id);
-      const PcimeFollowupToPurge = reports.filter((r) => r.form === `pcime_c_followup` && r.reported_date < old40).map((r) => r._id);
-      const UspPcimeFollowupToPurge = reports.filter((r) => r.form === `usp_pcime_followup` && r.reported_date < old40).map((r) => r._id);
-      const PcimeReferralToPurge = reports.filter((r) => r.form === `pcime_c_referral` && r.reported_date < old40).map((r) => r._id);
-      const FPfollowUpToPurge = reports.filter((r) => r.form === `fp_followup_danger_sign_check` && r.reported_date < old40).map((r) => r._id);
-      const MalnutritionFollowUpToPurge = reports.filter((r) => r.form === `malnutrition_followup` && r.reported_date < old40).map((r) => r._id);
-      const DrugStockInToPurge = reports.filter(r => r.form === 'stock_in' && r.reported_date < old60).map(r => r._id);
-      const DeliveryToPurge = reports.filter((r) => r.form === `delivery` && r.reported_date < old90).map((r) => r._id);
-      const PostnatalFollowupToPurge = reports.filter((r) => r.form === `postnatal_followup` && r.reported_date < old90).map((r) => r._id);
-      const PregnancyFamilyPlanningToPurge = reports.filter((r) => r.form === `pregnancy_family_planning` && r.reported_date < old180).map((r) => r._id);
-      const FPfollowUpRenewalToPurge = reports.filter((r) => r.form === `fp_follow_up_renewal` && r.reported_date < old180).map((r) => r._id);
-      const PrenatalFollowupToPurge = reports.filter((r) => r.form === `prenatal_followup` && r.reported_date < old365).map((r) => r._id);
-      const VaccinationFollowupToPurge = reports.filter(r => r.form === 'vaccination_followup' && r.reported_date < old518).map(r => r._id);
+      const pcimeChwToPurge = reports.filter((r) => r.form === `pcime_c_asc` && r.reported_date < old40).map((r) => r._id);
+      const pcimeFollowupToPurge = reports.filter((r) => r.form === `pcime_c_followup` && r.reported_date < old40).map((r) => r._id);
+      const uspPcimeFollowupToPurge = reports.filter((r) => r.form === `usp_pcime_followup` && r.reported_date < old40).map((r) => r._id);
+      const pcimeReferralToPurge = reports.filter((r) => r.form === `pcime_c_referral` && r.reported_date < old40).map((r) => r._id);
+      const fPfollowUpToPurge = reports.filter((r) => r.form === `fp_followup_danger_sign_check` && r.reported_date < old40).map((r) => r._id);
+      const malnutritionFollowUpToPurge = reports.filter((r) => r.form === `malnutrition_followup` && r.reported_date < old40).map((r) => r._id);
+      const drugStockInToPurge = reports.filter(r => r.form === 'stock_in' && r.reported_date < old60).map(r => r._id);
+      const deliveryToPurge = reports.filter((r) => r.form === `delivery` && r.reported_date < old90).map((r) => r._id);
+      const postnatalFollowupToPurge = reports.filter((r) => r.form === `postnatal_followup` && r.reported_date < old90).map((r) => r._id);
+      const pregnancyFamilyPlanningToPurge = reports.filter((r) => r.form === `pregnancy_family_planning` && r.reported_date < old180).map((r) => r._id);
+      const fPfollowUpRenewalToPurge = reports.filter((r) => r.form === `fp_follow_up_renewal` && r.reported_date < old180).map((r) => r._id);
+      const prenatalFollowupToPurge = reports.filter((r) => r.form === `prenatal_followup` && r.reported_date < old365).map((r) => r._id);
+      const vaccinationFollowupToPurge = reports.filter(r => r.form === 'vaccination_followup' && r.reported_date < old518).map(r => r._id);
 
       // const messagesToPurge = messages.filter(m => m.reported_date < old120).map(m => m._id);
 
       return [
         ...homeVisitToPurge, 
-        ...DeliveryToPurge,
-        ...PostnatalFollowupToPurge,
-        ...NewbornFollowupToPurge,
-        ...PregnancyFamilyPlanningToPurge,
-        ...PrenatalFollowupToPurge,
+        ...deliveryToPurge,
+        ...postnatalFollowupToPurge,
+        ...newbornFollowupToPurge,
+        ...pregnancyFamilyPlanningToPurge,
+        ...prenatalFollowupToPurge,
         ...womenEmergencyFollowupToPurge,
-        ...PcimeChwToPurge,
-        ...PcimeFollowupToPurge,
-        ...UspPcimeFollowupToPurge,
-        ...PcimeReferralToPurge,
-        ...FPfollowUpToPurge,
-        ...MalnutritionFollowUpToPurge,
-        ...FPfollowUpRenewalToPurge,
-        ...DrugStockInToPurge,
-        ...VaccinationFollowupToPurge
+        ...pcimeChwToPurge,
+        ...pcimeFollowupToPurge,
+        ...uspPcimeFollowupToPurge,
+        ...pcimeReferralToPurge,
+        ...fPfollowUpToPurge,
+        ...malnutritionFollowUpToPurge,
+        ...fPfollowUpRenewalToPurge,
+        ...drugStockInToPurge,
+        ...vaccinationFollowupToPurge
       ];
       // ...UndoDeathReportToPurge,
       // ...DeathReportToPurge,

@@ -1,0 +1,2349 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Suivi Après Accouchement</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/postnatal_followup/inputs:label">
+            <value>Inputs</value>
+          </text>
+          <text id="/postnatal_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/postnatal_followup/inputs/source_id:label">
+            <value>Source Id</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_follow_up_count:label">
+            <value>Follow up count</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_close_out:label">
+            <value>Close out</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_delivery_date:label">
+            <value>delivery Date</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_child_alive:label">
+            <value>child alive number</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact:label">
+            <value>contact</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/_id:label">
+            <value>What is the patient name?</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/date_of_birth:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/postnatal_followup/patient_age_in_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/postnatal_followup/patient_age_in_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/postnatal_followup/patient_age_in_days:label">
+            <value>Days old</value>
+          </text>
+          <text id="/postnatal_followup/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/postnatal_followup/patient_name:label">
+            <value>Patient Name</value>
+          </text>
+          <text id="/postnatal_followup/patient_sex:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/postnatal_followup/patient_sex_en:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/postnatal_followup/patient_sex_fr:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/postnatal_followup/visited_contact_uuid:label">
+            <value>Family Id</value>
+          </text>
+          <text id="/postnatal_followup/reschedule_task:label">
+            <value>Reschedule follow-up</value>
+          </text>
+          <text id="/postnatal_followup/reschedule_task/is_woman_available:label">
+            <value>Is the woman available?</value>
+          </text>
+          <text id="/postnatal_followup/reschedule_task/is_woman_available/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/reschedule_task/is_woman_available/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/reschedule_task/s_date_to_reschedule:label">
+            <value>For what day do you want to reprogram the task?</value>
+          </text>
+          <text id="/postnatal_followup/task_to_perfom:label">
+            <value>TASK TO BE MADE</value>
+          </text>
+          <text id="/postnatal_followup/task_to_perfom/which_task_to_perfom:label">
+            <value>What task would you like to perform?</value>
+          </text>
+          <text id="/postnatal_followup/task_to_perfom/which_task_to_perfom/follow_up:label">
+            <value>Follow-up</value>
+          </text>
+          <text id="/postnatal_followup/task_to_perfom/which_task_to_perfom/close_out:label">
+            <value>Close-out</value>
+          </text>
+          <text id="/postnatal_followup/g_close_out:label">
+            <value>CLOSURE</value>
+          </text>
+          <text id="/postnatal_followup/g_close_out/reason_for_close_out:label">
+            <value>What is the goal by the end of the follow-up?</value>
+          </text>
+          <text id="/postnatal_followup/g_close_out/reason_for_close_out/end_of_follow_up:label">
+            <value>End follow up</value>
+          </text>
+          <text id="/postnatal_followup/g_close_out/reason_for_close_out/woman_referred:label">
+            <value>Woman referred to USP</value>
+          </text>
+          <text id="/postnatal_followup/g_close_out/reason_for_close_out/woman_dead:label">
+            <value>Woman died</value>
+          </text>
+          <text id="/postnatal_followup/g_close_out/reason_for_close_out/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/postnatal_followup/g_close_out/specify_other_reason:label">
+            <value>Specify</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother:label">
+            <value>SIGNS OF DANGER IN THE MOM</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/n_confirm_danger_signs_mother:label">
+            <value>Confirm if the woman shows one or more danger signs</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/non_stop_bleeding:label">
+            <value>Non-stop bleeding</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/non_stop_bleeding/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/non_stop_bleeding/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/persistant_headache:label">
+            <value>Persistent headaches</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/persistant_headache/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/persistant_headache/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/stomach_aches:label">
+            <value>Stomach aches</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/stomach_aches/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/stomach_aches/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/danger_sign_fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/danger_sign_fever/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/danger_sign_fever/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge:label">
+            <value>Smelly or abnormal vaginal discharge</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/breast_abcess:label">
+            <value>Breast Abscess</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/breast_abcess/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/breast_abcess/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/blurred_vision:label">
+            <value>Blurred vision</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/blurred_vision/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/blurred_vision/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/calf_pain:label">
+            <value>Calf pain</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/calf_pain/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/calf_pain/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up:label">
+            <value>Is it possible to continue the follow-up?</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother:label">
+            <value>ADVICE SIGNS OF DANGER IN THE MOM</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_1:label">
+            <value>Give advice during the VAD on the following topics:</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_2:label">
+            <value>Signs of danger</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_3:label">
+            <value>Bleeding that does not stop</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_5:label">
+            <value>Persistent headaches</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_7:label">
+            <value>Lower stomach ache</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_9:label">
+            <value>Fever</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_11:label">
+            <value>Smelly or abnormal vaginal discharge</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_13:label">
+            <value>Abscess within</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_15:label">
+            <value>Blurred vision</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_17:label">
+            <value>Calf pain</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn:label">
+            <value>SIGNS OF DANGER IN THE NEWBORN</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/n_confirm_danger_signs_newborn:label">
+            <value>Observe and ask the mother if the newborn has these danger signs</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/refuses_to_eat:label">
+            <value>Refuses to eat</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/refuses_to_eat/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/refuses_to_eat/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/vomits_everything:label">
+            <value>Vomits everything</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/vomits_everything/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/vomits_everything/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/difficulty_breathing:label">
+            <value>Difficulty breathing</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/difficulty_breathing/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/difficulty_breathing/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/infected_umbilical_cord:label">
+            <value>Infected umbilical cord</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/infected_umbilical_cord/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/infected_umbilical_cord/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/skin_postules_with_abcess:label">
+            <value>Skin postules with abscess</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/skin_postules_with_abcess/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/skin_postules_with_abcess/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/distended_abdomen:label">
+            <value>Distended abdomen</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/distended_abdomen/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/distended_abdomen/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/weak_or_absence_cry:label">
+            <value>He has a weak or absent cry</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/weak_or_absence_cry/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/weak_or_absence_cry/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/unconscious:label">
+            <value>Unconscious</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/unconscious/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/unconscious/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/convulsion:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/convulsion/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/convulsion/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up:label">
+            <value>Is it possible to continue monitoring?</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices:label">
+            <value>TIPS SIGNS OF DANGER IN THE NEWBORN</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_1:label">
+            <value>Give advice during the VAD on the following topics:</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_2:label">
+            <value>Signs of danger</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_3:label">
+            <value>He refuses to suck</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_5:label">
+            <value>He vomits everything</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_7:label">
+            <value>Difficult breathing (chest indrawing)</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_9:label">
+            <value>It has a suppurative cord</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_11:label">
+            <value>Postules of skin with abscess</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_13:label">
+            <value>Abdomen distended</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_15:label">
+            <value>He has a weak or absent cry</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_17:label">
+            <value>Unconscious</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_19:label">
+            <value>convulsions</value>
+          </text>
+          <text id="/postnatal_followup/newborn_cpc:label">
+            <value>NEW-BORN CPC</value>
+          </text>
+          <text id="/postnatal_followup/newborn_cpc/newborn_take_first_cpc:label">
+            <value>Has the newborn made his first CPC?</value>
+          </text>
+          <text id="/postnatal_followup/newborn_cpc/newborn_take_first_cpc/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/newborn_cpc/newborn_take_first_cpc/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/other_tips:label">
+            <value>OTHER TIPS</value>
+          </text>
+          <text id="/postnatal_followup/other_tips/n_other_tips_1:label">
+            <value>Importance of CPON</value>
+          </text>
+          <text id="/postnatal_followup/other_tips/n_other_tips_2:label">
+            <value>Importance of CPC</value>
+          </text>
+          <text id="/postnatal_followup/other_tips/n_other_tips_3:label">
+            <value>Essential Care at the Accouchee and Newborn</value>
+          </text>
+          <text id="/postnatal_followup/other_tips/n_other_tips_5:label">
+            <value>Good practices and techniques of breastfeeding</value>
+          </text>
+          <text id="/postnatal_followup/other_tips/n_other_tips_7:label">
+            <value>Family Planning</value>
+          </text>
+          <text id="/postnatal_followup/other_tips/n_other_tips_8:label">
+            <value>Other appropriate tips for the family</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit:label">
+            <value>USP FOLLOW UP VISIT</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/did_go_to_1st_visit:label">
+            <value>Mum and newborn are they gone to the USP for the first consultation?</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/did_go_to_1st_visit/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/did_go_to_1st_visit/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit:label">
+            <value>Why did the mother and the newborn not leave for the first consultation?</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/ignorance:label">
+            <value>Ignoring</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/tired:label">
+            <value>tired</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/oversight:label">
+            <value>Oversight</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/refuse:label">
+            <value>Refusal of the husband</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/not_important:label">
+            <value>Not important</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/busy:label">
+            <value>occupied</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/not_ready:label">
+            <value>Not ready</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/specify_other_reason_no_1st_visit:label">
+            <value>Specify</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/did_go_to_2nd_visit:label">
+            <value>Did the mother and newborn go to the USP for the second consultation?</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/did_go_to_2nd_visit/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/did_go_to_2nd_visit/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit:label">
+            <value>Why did the mother and newborn not leave for the second consultation?</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/ignorance:label">
+            <value>Ignoring</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/tired:label">
+            <value>tired</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/oversight:label">
+            <value>Oversight</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/refuse:label">
+            <value>Refusal of the husband</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/not_important:label">
+            <value>Not important</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/busy:label">
+            <value>occupied</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/not_ready:label">
+            <value>Not ready</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/specify_other_reason_no_2nd_visit:label">
+            <value>Specify</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/date_next_visit_mother_newborn:jr:constraintMsg">
+            <value>The date must be in the future</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/date_next_visit_mother_newborn:label">
+            <value>What is the date for the next visit for the woman and the newborn?</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf:label">
+            <value>COUNSELING ON PF</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/woman_wants_fp:label">
+            <value>Does the woman want to do FP?</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/woman_wants_fp/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/woman_wants_fp/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/fp_method_chosen:label">
+            <value>What method does she want to use?</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/fp_method_chosen/iud:label">
+            <value>IUD</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/fp_method_chosen/implants:label">
+            <value>Implants</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/fp_method_chosen/oral_combination_pill:label">
+            <value>Oral combination pill</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/fp_method_chosen/injectible:label">
+            <value>Injectible</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/n_start_pf:label">
+            <value>Start a PF sheet</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/n_refer_to_usp_for_method:label">
+            <value>Please refer the patient to the USP for this method</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/n_advise_on_mama:label">
+            <value>Advise on MAMA</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_details/r_summary:label">
+            <value>Delivery Details &lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_details/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /postnatal_followup/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /postnatal_followup/patient_sex_en "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /postnatal_followup/patient_age_display "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_signs_symptoms:label">
+            <value>Signs and Symptoms &lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_no_danger_signs:label">
+            <value>&lt;b&gt;No Danger signs&lt;/b&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs:label">
+            <value>&lt;b&gt;Danger signs&lt;/b&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs_bleeding:label">
+            <value>Non-stop Bleeding</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs_headaches:label">
+            <value>Headaches</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs_low_abdomnal_pain:label">
+            <value>Low abdominal pain</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs_fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs_vaginal_discharge:label">
+            <value>Vaginal discharge</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs_breast_abscess:label">
+            <value>Breast abscess</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs_blurred_vision:label">
+            <value>Blurred Vision</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs_calves_pain:label">
+            <value>Calves pain</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/summary_referral:label">
+            <value>Refer to USP&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/r_referral_note:label">
+            <value>Please refer the woman to the USP for the presence of danger signs above.
+You must accompany the woman to the USP. If it refuses for any reason, please contact your supervisor immediately</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_1:label">
+            <value>Refuses to eat</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_2:label">
+            <value>Vomits everything</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_3:label">
+            <value>Difficulty breathing</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_4:label">
+            <value>Infected umbilical cord</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_5:label">
+            <value>Skin postules with abcess</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_6:label">
+            <value>Distended abdomen</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_7:label">
+            <value>He has a weak or absent cry</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_8:label">
+            <value>Unconscious</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_9:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/have_you_refer_newborn:label">
+            <value>Did you refer the patient?</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/have_you_refer_newborn/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/have_you_refer_newborn/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/why_not_refer_newborn:label">
+            <value>Why?</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_instructions/summary_special_instructions:label">
+            <value>Special Instructions &lt;i class = "fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_instructions/n_instruction_1:label">
+            <value>&lt;b&gt; Key Tips "CAR" &lt;/b&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_instructions/n_instruction_2:label">
+            <value>Continue breastfeeding</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_instructions/n_instruction_3:label">
+            <value>Increase liquids to drink and foods (or breast milk in case of exclusive breastfeeding</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_instructions/n_instruction_4:label">
+            <value>Recognize the signs for which you must contact the ASC or go to the USP immediately</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/summary_follow_up:label">
+            <value>Next Visit &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/summary_reschedule_follow_up:label">
+            <value>Follow up reschedule to: <output value=" /postnatal_followup/reschedule_task/s_date_to_reschedule "/></value>
+          </text>
+          <text id="/postnatal_followup/group_summary/summary_referral_follow_up:label">
+            <value>Follow up in 24 hours for the mother</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/summary_healthy_follow_up:label">
+            <value>The next CHW follow-up visit is scheduled for: <output value=" /postnatal_followup/next_visit_pnc "/></value>
+          </text>
+          <text id="/postnatal_followup/group_summary/end_follow_up:label">
+            <value>This is the end of the follow up of the woman and the newborn. We will no longer post any follow-up in this regard</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/n_close_out_n1:label">
+            <value>Closure of the follow-up</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/n_close_out_n2:label">
+            <value>Reason(s) for close out: <output value=" /postnatal_followup/label_reason_close_out "/></value>
+          </text>
+          <text id="/postnatal_followup/task_to_perfom/child_alive_count:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/postnatal_followup/inputs:label">
+            <value>Inputs</value>
+          </text>
+          <text id="/postnatal_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/postnatal_followup/inputs/source_id:label">
+            <value>Source Id</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_follow_up_count:label">
+            <value>Nombre de suivi</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_close_out:label">
+            <value>Clôture suivi</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_delivery_date:label">
+            <value>Date d'accouchement</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_child_alive:label">
+            <value>Nombre d'enfant vivant</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact:label">
+            <value>contact</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/_id:label">
+            <value>Quel est le nom du patient?</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/postnatal_followup/patient_age_in_years:label">
+            <value>Années</value>
+          </text>
+          <text id="/postnatal_followup/patient_age_in_months:label">
+            <value>Mois</value>
+          </text>
+          <text id="/postnatal_followup/patient_age_in_days:label">
+            <value>Jours</value>
+          </text>
+          <text id="/postnatal_followup/patient_id:label">
+            <value>Identifiant du patient</value>
+          </text>
+          <text id="/postnatal_followup/patient_name:label">
+            <value>Nom du patient</value>
+          </text>
+          <text id="/postnatal_followup/patient_sex:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/postnatal_followup/patient_sex_en:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/postnatal_followup/patient_sex_fr:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/postnatal_followup/visited_contact_uuid:label">
+            <value>Identifiant de la famille</value>
+          </text>
+          <text id="/postnatal_followup/reschedule_task:label">
+            <value>Reprogrammer ce suivi</value>
+          </text>
+          <text id="/postnatal_followup/reschedule_task/is_woman_available:label">
+            <value>La femme est-elle disponible?</value>
+          </text>
+          <text id="/postnatal_followup/reschedule_task/is_woman_available/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/reschedule_task/is_woman_available/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/reschedule_task/s_date_to_reschedule:label">
+            <value>Pour quel jour voulez-vous reprogrammer la tâche?</value>
+          </text>
+          <text id="/postnatal_followup/task_to_perfom:label">
+            <value>TÂCHE À EFFECTUER</value>
+          </text>
+          <text id="/postnatal_followup/task_to_perfom/child_alive_count:label">
+            <value>Après accouchement, la maman a <output value=" /postnatal_followup/s_child_alive "/> enfant(s) vivant</value>
+          </text>
+          <text id="/postnatal_followup/task_to_perfom/which_task_to_perfom:label">
+            <value>Quelle tâche voulez-vous effectuer?</value>
+          </text>
+          <text id="/postnatal_followup/task_to_perfom/which_task_to_perfom/follow_up:label">
+            <value>Suivi</value>
+          </text>
+          <text id="/postnatal_followup/task_to_perfom/which_task_to_perfom/close_out:label">
+            <value>Clôture</value>
+          </text>
+          <text id="/postnatal_followup/g_close_out:label">
+            <value>CLÔTURE</value>
+          </text>
+          <text id="/postnatal_followup/g_close_out/reason_for_close_out:label">
+            <value>Quel est le motif de fin de suivi?</value>
+          </text>
+          <text id="/postnatal_followup/g_close_out/reason_for_close_out/end_of_follow_up:label">
+            <value>Fin de suivi</value>
+          </text>
+          <text id="/postnatal_followup/g_close_out/reason_for_close_out/woman_referred:label">
+            <value>Femme référée à l'USP</value>
+          </text>
+          <text id="/postnatal_followup/g_close_out/reason_for_close_out/woman_dead:label">
+            <value>Femme décédée</value>
+          </text>
+          <text id="/postnatal_followup/g_close_out/reason_for_close_out/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/postnatal_followup/g_close_out/specify_other_reason:label">
+            <value>Spécifier</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother:label">
+            <value>SIGNES DE DANGER CHEZ LA MAMAN</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/n_confirm_danger_signs_mother:label">
+            <value>Vérifier si la femme présente un ou plusieurs de ces signes de danger</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/non_stop_bleeding:label">
+            <value>Saignement qui ne s'arrête pas</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/non_stop_bleeding/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/non_stop_bleeding/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/persistant_headache:label">
+            <value>Maux de tête persistants</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/persistant_headache/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/persistant_headache/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/stomach_aches:label">
+            <value>Maux de bas ventre</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/stomach_aches/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/stomach_aches/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/danger_sign_fever:label">
+            <value>Fièvre</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/danger_sign_fever/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/danger_sign_fever/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge:label">
+            <value>Pertes vaginales malodorantes ou anormales</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/breast_abcess:label">
+            <value>Abcès au sein</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/breast_abcess/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/breast_abcess/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/blurred_vision:label">
+            <value>Vision floue</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/blurred_vision/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/blurred_vision/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/calf_pain:label">
+            <value>Douleurs aux mollets</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/calf_pain/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/calf_pain/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up:label">
+            <value>Est-il possible de continuer le suivi de la maman ?</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother:label">
+            <value>CONSEILS SUR LES SIGNES DE DANGER CHEZ LA MAMAN</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_1:label">
+            <value>Donnez des conseils pendant la VAD sur les thèmes suivants:</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_2:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_3:label">
+            <value>Saignement qui ne s'arrete pas</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_5:label">
+            <value>Maux de tête persistants</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_7:label">
+            <value>Maux de bas ventre</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_9:label">
+            <value>Fièvre</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_11:label">
+            <value>Pertes vaginales malodorantes ou anormales</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_13:label">
+            <value>Abcès au sein</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_15:label">
+            <value>Vision floue</value>
+          </text>
+          <text id="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_17:label">
+            <value>Douleurs aux mollets</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn:label">
+            <value>NOUVEAU-NÉ: SIGNES DE DANGER</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/n_confirm_danger_signs_newborn:label">
+            <value>Observer et demander à la maman si chaque nouveau - né présente ces signes de danger</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/refuses_to_eat:label">
+            <value>Refuse de téter</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/refuses_to_eat/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/refuses_to_eat/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/vomits_everything:label">
+            <value>Vomit tout</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/vomits_everything/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/vomits_everything/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/difficulty_breathing:label">
+            <value>Respiration difficile (tirage sous costal, sifflement, ou battement des ailes du nez</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/difficulty_breathing/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/difficulty_breathing/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/infected_umbilical_cord:label">
+            <value>Il a un cordon qui suppure</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/infected_umbilical_cord/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/infected_umbilical_cord/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/skin_postules_with_abcess:label">
+            <value>Pustules de la peau avec abcès</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/skin_postules_with_abcess/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/skin_postules_with_abcess/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/distended_abdomen:label">
+            <value>Abdomen distendu</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/distended_abdomen/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/distended_abdomen/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/weak_or_absence_cry:label">
+            <value>Il a un pleur faible ou absent</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/weak_or_absence_cry/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/weak_or_absence_cry/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/unconscious:label">
+            <value>Inconscient</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/unconscious/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/unconscious/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/convulsion:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/convulsion/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/convulsion/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up:label">
+            <value>Est-il possible de continuer le suivi ?</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices:label">
+            <value>CONSEILS SIGNES DE DANGER CHEZ LE NOUVEAU-NÉ</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_1:label">
+            <value>Donnez des conseils pendant la VAD sur les thèmes suivants:</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_2:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_3:label">
+            <value>Il refuse de téter</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_5:label">
+            <value>Il vomit tout</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_7:label">
+            <value>Respiration difficile (tirage sous-costal)</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_9:label">
+            <value>Il a un cordon qui suppure</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_11:label">
+            <value>Postules de la peau avec abcès</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_13:label">
+            <value>Abdomen distendu</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_15:label">
+            <value>Il a un pleur faible ou absent</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_17:label">
+            <value>Inconscient</value>
+          </text>
+          <text id="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_19:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/postnatal_followup/newborn_cpc:label">
+            <value>CPC NOUVEAU - NÉ</value>
+          </text>
+          <text id="/postnatal_followup/newborn_cpc/newborn_take_first_cpc:label">
+            <value>Est-ce que chaque nouveau-né a fait son premier CPC?</value>
+          </text>
+          <text id="/postnatal_followup/newborn_cpc/newborn_take_first_cpc/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/newborn_cpc/newborn_take_first_cpc/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/other_tips:label">
+            <value>AUTRES CONSEILS</value>
+          </text>
+          <text id="/postnatal_followup/other_tips/n_other_tips_1:label">
+            <value>Importance de la CPON</value>
+          </text>
+          <text id="/postnatal_followup/other_tips/n_other_tips_2:label">
+            <value>Importance du CPC</value>
+          </text>
+          <text id="/postnatal_followup/other_tips/n_other_tips_3:label">
+            <value>Soins essentiels à l'accouchée et au nouveau-né</value>
+          </text>
+          <text id="/postnatal_followup/other_tips/n_other_tips_5:label">
+            <value>Bonnes pratiques et techniques d'allaitement</value>
+          </text>
+          <text id="/postnatal_followup/other_tips/n_other_tips_7:label">
+            <value>Planification Familliale</value>
+          </text>
+          <text id="/postnatal_followup/other_tips/n_other_tips_8:label">
+            <value>Autres conseils appropriés pour la famille</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit:label">
+            <value>VISITE DE SUIVI A L'USP</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/did_go_to_1st_visit:label">
+            <value>La maman est-elle parti à l'USP pour la première consultation ?</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/did_go_to_1st_visit/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/did_go_to_1st_visit/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit:label">
+            <value>Pourquoi la maman n'est pas parti pour la première consultation?</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/ignorance:label">
+            <value>Ignorance</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/tired:label">
+            <value>Fatiguée</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/oversight:label">
+            <value>Oubli</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/refuse:label">
+            <value>Refus du mari</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/not_important:label">
+            <value>Pas important</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/busy:label">
+            <value>Occupée</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/not_ready:label">
+            <value>Pas prête</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/specify_other_reason_no_1st_visit:label">
+            <value>Spécifier</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/did_go_to_2nd_visit:label">
+            <value>La maman est-elle parti à l'USP pour la deuxième consultation ?</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/did_go_to_2nd_visit/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/did_go_to_2nd_visit/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit:label">
+            <value>Pourquoi la maman n'est pas parti pour la deuxième consultation?</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/ignorance:label">
+            <value>Ignorance</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/tired:label">
+            <value>Fatiguée</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/oversight:label">
+            <value>Oubli</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/refuse:label">
+            <value>Refus du mari</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/not_important:label">
+            <value>Pas important</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/busy:label">
+            <value>Occupée</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/not_ready:label">
+            <value>Pas prête</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/specify_other_reason_no_2nd_visit:label">
+            <value>Spécifier</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/date_next_visit_mother_newborn:jr:constraintMsg">
+            <value>La date doit être dans le futur</value>
+          </text>
+          <text id="/postnatal_followup/usp_follow_up_visit/date_next_visit_mother_newborn:label">
+            <value>Quelle est la date de la prochaine visite pour la femme ?</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf:label">
+            <value>COUNSELLING SUR LA PF</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/woman_wants_fp:label">
+            <value>Est-ce que la femme veut faire la PF?</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/woman_wants_fp/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/woman_wants_fp/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/fp_method_chosen:label">
+            <value>Quelle méthode veut-elle utiliser?</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/fp_method_chosen/iud:label">
+            <value>DIU</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/fp_method_chosen/implants:label">
+            <value>Implants</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/fp_method_chosen/oral_combination_pill:label">
+            <value>Contraceptif Oral (Pilule)</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/fp_method_chosen/injectible:label">
+            <value>Contraceptif Injectable</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/n_start_pf:label">
+            <value>Commencez une fiche de PF</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/n_refer_to_usp_for_method:label">
+            <value>Veuillez référer la patiente à l'USP pour cette méthode</value>
+          </text>
+          <text id="/postnatal_followup/counselling_on_pf/n_advise_on_mama:label">
+            <value>Conseillez sur MAMA</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_details/r_summary:label">
+            <value>Détails du Patient &lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_details/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /postnatal_followup/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /postnatal_followup/patient_sex_fr "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /postnatal_followup/patient_age_display_fr "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_signs_symptoms:label">
+            <value>Signes et Symptômes &lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_no_danger_signs:label">
+            <value>&lt;b&gt;Absence de Signes de danger&lt;/b&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs:label">
+            <value>&lt;b&gt;Signes de danger&lt;/b&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs_bleeding:label">
+            <value>Saignement qui ne s'arrête pas</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs_headaches:label">
+            <value>Maux de tête persistants</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs_low_abdomnal_pain:label">
+            <value>Maux de bas ventre</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs_fever:label">
+            <value>Fièvre</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs_vaginal_discharge:label">
+            <value>Pertes vaginales malodorantes ou anormales</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs_breast_abscess:label">
+            <value>Abcès au sein</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs_blurred_vision:label">
+            <value>Vision floue</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_signs/r_danger_signs_calves_pain:label">
+            <value>Douleurs aux mollets</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/summary_referral:label">
+            <value>Référer a l'USP &lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/r_referral_note:label">
+            <value>Merci de référer la femme à l'USP pour la présence de signes de danger ci- dessus. 
+Vous devez accompagner la femme à l'USP. Si elle refuse pour quelconque raison, veuiller contacter votre superviseur immédiatement</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_1:label">
+            <value>Refuse de téter</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_2:label">
+            <value>Vomit tout</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_3:label">
+            <value>Respiration difficile (tirage sous costal, sifflement, ou battement des ailes du nez)</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_4:label">
+            <value>Il a un cordon qui suppure</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_5:label">
+            <value>Pustules de la peau avec abcès</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_6:label">
+            <value>Abdomen distendu</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_7:label">
+            <value>Il a un pleur faible ou absent</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_8:label">
+            <value>Inconscient</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_9:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/have_you_refer_newborn:label">
+            <value>Est-ce que vous avez référé la maman / nouveau - né ?</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/have_you_refer_newborn/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/have_you_refer_newborn/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_referrals/why_not_refer_newborn:label">
+            <value>Pour quelle raison?</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_instructions/summary_special_instructions:label">
+            <value>Instructions Spéciales &lt;i class = "fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_instructions/n_instruction_1:label">
+            <value>&lt;b&gt;Conseils clés "CAR"&lt;/b&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_instructions/n_instruction_2:label">
+            <value>Continuer l'allaitement maternel</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_instructions/n_instruction_3:label">
+            <value>Augmenter les liquides à boire et les aliments (ou le lait maternet en cas d'allaitement exclusif )</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/r_instructions/n_instruction_4:label">
+            <value>Reconnaitre les signes pour lesquels il faut contacter l'ASC ou aller à l'USP immédiatement</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/summary_follow_up:label">
+            <value>Prochaine visite par l'ASC &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/summary_reschedule_follow_up:label">
+            <value>Suivi reprogrammé au: <output value=" /postnatal_followup/reschedule_task/s_date_to_reschedule "/></value>
+          </text>
+          <text id="/postnatal_followup/group_summary/summary_referral_follow_up:label">
+            <value>Suivi signe de danger dans 24 heures</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/summary_healthy_follow_up:label">
+            <value>La prochaine visite de suivi par l'ASC est programmée pour le: <output value=" /postnatal_followup/next_visit_pnc "/></value>
+          </text>
+          <text id="/postnatal_followup/group_summary/end_follow_up:label">
+            <value>Ceci est la fin du suivi après accouchement. Nous n'afficherons plus aucun suivi dans ce sens</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/n_close_out_n1:label">
+            <value>Clôture du suivi</value>
+          </text>
+          <text id="/postnatal_followup/group_summary/n_close_out_n2:label">
+            <value>Raison(s) de la clôture: <output value=" /postnatal_followup/label_reason_close_out "/></value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <postnatal_followup id="postnatal_followup" prefix="J1!postnatal_followup!" delimiter="#" version="2024-07-12 11:22:30">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_follow_up_count>1</t_follow_up_count>
+            <t_close_out/>
+            <t_delivery_date/>
+            <t_child_alive/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <parent/>
+            </contact>
+          </inputs>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_age_display_fr/>
+          <patient_id/>
+          <patient_name/>
+          <patient_sex/>
+          <patient_sex_en/>
+          <patient_sex_fr/>
+          <visited_contact_uuid/>
+          <follow_up_count/>
+          <mother_has_danger_signs/>
+          <newborn_has_danger_signs/>
+          <next_visit_pnc/>
+          <close_out/>
+          <label_reason_close_out/>
+          <s_child_alive/>
+          <reschedule_task>
+            <is_woman_available/>
+            <s_date_to_reschedule/>
+          </reschedule_task>
+          <task_to_perfom>
+            <child_alive_count/>
+            <which_task_to_perfom/>
+          </task_to_perfom>
+          <g_close_out>
+            <reason_for_close_out/>
+            <specify_other_reason/>
+          </g_close_out>
+          <confirm_danger_signs_mother>
+            <n_confirm_danger_signs_mother/>
+            <non_stop_bleeding/>
+            <persistant_headache/>
+            <stomach_aches/>
+            <danger_sign_fever/>
+            <smelly_or_abnormal_vaginal_discharge/>
+            <breast_abcess/>
+            <blurred_vision/>
+            <calf_pain/>
+            <danger_sign_mother_continue_follow_up/>
+          </confirm_danger_signs_mother>
+          <advice_on_danger_signs_mother>
+            <n_danger_signs_advices_1/>
+            <n_danger_signs_advices_2/>
+            <n_danger_signs_advices_3/>
+            <n_danger_signs_advices_5/>
+            <n_danger_signs_advices_7/>
+            <n_danger_signs_advices_9/>
+            <n_danger_signs_advices_11/>
+            <n_danger_signs_advices_13/>
+            <n_danger_signs_advices_15/>
+            <n_danger_signs_advices_17/>
+          </advice_on_danger_signs_mother>
+          <danger_signs_newborn>
+            <n_confirm_danger_signs_newborn/>
+            <refuses_to_eat/>
+            <vomits_everything/>
+            <difficulty_breathing/>
+            <infected_umbilical_cord/>
+            <skin_postules_with_abcess/>
+            <distended_abdomen/>
+            <weak_or_absence_cry/>
+            <unconscious/>
+            <convulsion/>
+            <danger_signs_newborn_continue_follow_up/>
+          </danger_signs_newborn>
+          <danger_signs_newborn_advices>
+            <n_danger_signs_newborn_advices_1/>
+            <n_danger_signs_newborn_advices_2/>
+            <n_danger_signs_newborn_advices_3/>
+            <n_danger_signs_newborn_advices_5/>
+            <n_danger_signs_newborn_advices_7/>
+            <n_danger_signs_newborn_advices_9/>
+            <n_danger_signs_newborn_advices_11/>
+            <n_danger_signs_newborn_advices_13/>
+            <n_danger_signs_newborn_advices_15/>
+            <n_danger_signs_newborn_advices_17/>
+            <n_danger_signs_newborn_advices_19/>
+          </danger_signs_newborn_advices>
+          <newborn_cpc>
+            <newborn_take_first_cpc/>
+          </newborn_cpc>
+          <other_tips>
+            <n_other_tips_1/>
+            <n_other_tips_2/>
+            <n_other_tips_3/>
+            <n_other_tips_5/>
+            <n_other_tips_7/>
+            <n_other_tips_8/>
+          </other_tips>
+          <usp_follow_up_visit>
+            <did_go_to_1st_visit/>
+            <why_not_go_1st_visit/>
+            <specify_other_reason_no_1st_visit/>
+            <did_go_to_2nd_visit/>
+            <why_not_go_2nd_visit/>
+            <specify_other_reason_no_2nd_visit/>
+            <date_next_visit_mother_newborn/>
+          </usp_follow_up_visit>
+          <counselling_on_pf>
+            <woman_wants_fp/>
+            <fp_method_chosen/>
+            <n_start_pf/>
+            <n_refer_to_usp_for_method/>
+            <n_advise_on_mama/>
+          </counselling_on_pf>
+          <group_summary>
+            <r_details>
+              <r_summary/>
+              <r_patient_info/>
+            </r_details>
+            <r_signs>
+              <r_signs_symptoms/>
+              <r_no_danger_signs/>
+              <r_danger_signs/>
+              <r_danger_signs_bleeding/>
+              <r_danger_signs_headaches/>
+              <r_danger_signs_low_abdomnal_pain/>
+              <r_danger_signs_fever/>
+              <r_danger_signs_vaginal_discharge/>
+              <r_danger_signs_breast_abscess/>
+              <r_danger_signs_blurred_vision/>
+              <r_danger_signs_calves_pain/>
+            </r_signs>
+            <r_referrals>
+              <summary_referral/>
+              <r_referral_note/>
+              <referrals_newborn_n_1/>
+              <referrals_newborn_n_2/>
+              <referrals_newborn_n_3/>
+              <referrals_newborn_n_4/>
+              <referrals_newborn_n_5/>
+              <referrals_newborn_n_6/>
+              <referrals_newborn_n_7/>
+              <referrals_newborn_n_8/>
+              <referrals_newborn_n_9/>
+              <have_you_refer_newborn/>
+              <why_not_refer_newborn/>
+            </r_referrals>
+            <r_instructions>
+              <summary_special_instructions/>
+              <n_instruction_1/>
+              <n_instruction_2/>
+              <n_instruction_3/>
+              <n_instruction_4/>
+            </r_instructions>
+            <summary_follow_up/>
+            <summary_reschedule_follow_up/>
+            <summary_referral_follow_up/>
+            <summary_healthy_follow_up/>
+            <end_follow_up/>
+            <n_close_out_n1/>
+            <n_close_out_n2/>
+          </group_summary>
+          <meta>
+            <instanceID/>
+          </meta>
+        </postnatal_followup>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/postnatal_followup/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/postnatal_followup/inputs/source" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/source_id" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/t_follow_up_count" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/t_close_out" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/t_delivery_date" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/t_child_alive" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/contact/_id" type="db:person" required="true()"/>
+      <bind nodeset="/postnatal_followup/inputs/contact/name" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/contact/sex" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/contact/parent" type="string"/>
+      <bind nodeset="/postnatal_followup/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /postnatal_followup/inputs/contact/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/postnatal_followup/patient_age_in_months" type="string" calculate="difference-in-months(  /postnatal_followup/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/postnatal_followup/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /postnatal_followup/inputs/contact/date_of_birth ) )"/>
+      <bind nodeset="/postnatal_followup/patient_age_display" type="string" calculate="concat(concat( /postnatal_followup/patient_age_in_years , if( /postnatal_followup/patient_age_in_years =1,' year and ',' years and ')),concat( /postnatal_followup/patient_age_in_months  mod 12, if(( /postnatal_followup/patient_age_in_months  mod 12)=1,' month old',' months old')))"/>
+      <bind nodeset="/postnatal_followup/patient_age_display_fr" type="string" calculate="concat(concat( /postnatal_followup/patient_age_in_years , if( /postnatal_followup/patient_age_in_years =1,' an et ',' ans et ')),concat( /postnatal_followup/patient_age_in_months  mod 12, if(( /postnatal_followup/patient_age_in_months  mod 12)=1,' mois',' mois')))"/>
+      <bind nodeset="/postnatal_followup/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/postnatal_followup/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/postnatal_followup/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/postnatal_followup/patient_sex_en" type="string" calculate="if( /postnatal_followup/patient_sex  = 'male' or  /postnatal_followup/patient_sex  = 'homme' or  /postnatal_followup/patient_sex  = 'Homme', 'Male', if( /postnatal_followup/patient_sex  = 'female' or  /postnatal_followup/patient_sex  = 'femme' or  /postnatal_followup/patient_sex  = 'Femme', 'Female', ''))"/>
+      <bind nodeset="/postnatal_followup/patient_sex_fr" type="string" calculate="if( /postnatal_followup/patient_sex  = 'male' or  /postnatal_followup/patient_sex  = 'homme' or  /postnatal_followup/patient_sex  = 'Homme', 'Homme', if( /postnatal_followup/patient_sex  = 'female' or  /postnatal_followup/patient_sex  = 'femme' or  /postnatal_followup/patient_sex  = 'Femme', 'Femme', ''))"/>
+      <bind nodeset="/postnatal_followup/visited_contact_uuid" type="string" required="true()" calculate="../inputs/contact/parent"/>
+      <bind nodeset="/postnatal_followup/follow_up_count" type="string" calculate="number(../inputs/t_follow_up_count)"/>
+      <bind nodeset="/postnatal_followup/mother_has_danger_signs" type="string" calculate="if( /postnatal_followup/confirm_danger_signs_mother/non_stop_bleeding  = 'yes' or  /postnatal_followup/confirm_danger_signs_mother/persistant_headache  = 'yes' or  /postnatal_followup/confirm_danger_signs_mother/stomach_aches  = 'yes' or  /postnatal_followup/confirm_danger_signs_mother/danger_sign_fever  = 'yes' or  /postnatal_followup/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge  = 'yes' or  /postnatal_followup/confirm_danger_signs_mother/breast_abcess  = 'yes' or  /postnatal_followup/confirm_danger_signs_mother/blurred_vision  = 'yes' or  /postnatal_followup/confirm_danger_signs_mother/calf_pain  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/postnatal_followup/newborn_has_danger_signs" type="string" calculate="if( /postnatal_followup/danger_signs_newborn/refuses_to_eat  = 'yes' or  /postnatal_followup/danger_signs_newborn/vomits_everything  = 'yes' or  /postnatal_followup/danger_signs_newborn/difficulty_breathing  = 'yes' or  /postnatal_followup/danger_signs_newborn/infected_umbilical_cord  = 'yes' or  /postnatal_followup/danger_signs_newborn/skin_postules_with_abcess  = 'yes' or  /postnatal_followup/danger_signs_newborn/distended_abdomen  = 'yes' or  /postnatal_followup/danger_signs_newborn/weak_or_absence_cry  = 'yes' or  /postnatal_followup/danger_signs_newborn/unconscious  = 'yes' or  /postnatal_followup/danger_signs_newborn/convulsion  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/postnatal_followup/next_visit_pnc" type="string" calculate="format-date-time(date-time(decimal-date-time( /postnatal_followup/usp_follow_up_visit/date_next_visit_mother_newborn ) + 7),&quot;%b %e, %Y&quot;)"/>
+      <bind nodeset="/postnatal_followup/close_out" type="string" calculate="if( /postnatal_followup/task_to_perfom/which_task_to_perfom  = 'close_out', 'true', 'false')"/>
+      <bind nodeset="/postnatal_followup/label_reason_close_out" type="string" calculate="jr:choice-name( /postnatal_followup/g_close_out/reason_for_close_out ,' /postnatal_followup/g_close_out/reason_for_close_out ')"/>
+      <bind nodeset="/postnatal_followup/s_child_alive" type="string" calculate=" /postnatal_followup/inputs/t_child_alive "/>
+      <bind nodeset="/postnatal_followup/reschedule_task/is_woman_available" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/reschedule_task/s_date_to_reschedule" type="date" required="true()" relevant=" /postnatal_followup/reschedule_task/is_woman_available  = 'no'" constraint=". &gt; today()"/>
+      <bind nodeset="/postnatal_followup/task_to_perfom" relevant=" /postnatal_followup/reschedule_task/is_woman_available  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/task_to_perfom/child_alive_count" readonly="true()" type="string" relevant=" /postnatal_followup/s_child_alive !='' and  /postnatal_followup/s_child_alive !='0' and  /postnatal_followup/s_child_alive !=0"/>
+      <bind nodeset="/postnatal_followup/task_to_perfom/which_task_to_perfom" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/g_close_out" relevant=" /postnatal_followup/task_to_perfom/which_task_to_perfom  = 'close_out' and  /postnatal_followup/reschedule_task/is_woman_available  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/g_close_out/reason_for_close_out" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/g_close_out/specify_other_reason" type="string" required="true()" relevant=" /postnatal_followup/g_close_out/reason_for_close_out  = 'other'"/>
+      <bind nodeset="/postnatal_followup/confirm_danger_signs_mother" relevant=" /postnatal_followup/task_to_perfom/which_task_to_perfom  = 'follow_up' and  /postnatal_followup/reschedule_task/is_woman_available  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/confirm_danger_signs_mother/n_confirm_danger_signs_mother" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/confirm_danger_signs_mother/non_stop_bleeding" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/confirm_danger_signs_mother/persistant_headache" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/confirm_danger_signs_mother/stomach_aches" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/confirm_danger_signs_mother/danger_sign_fever" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/confirm_danger_signs_mother/breast_abcess" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/confirm_danger_signs_mother/blurred_vision" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/confirm_danger_signs_mother/calf_pain" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up" type="select1" required="true()" relevant=" /postnatal_followup/mother_has_danger_signs  = 'true'"/>
+      <bind nodeset="/postnatal_followup/advice_on_danger_signs_mother" relevant=" /postnatal_followup/task_to_perfom/which_task_to_perfom  = 'follow_up' and  /postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up  = 'yes' and  /postnatal_followup/reschedule_task/is_woman_available  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_1" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_2" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_3" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_5" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_7" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_9" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_11" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_13" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_15" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_17" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn" relevant=" /postnatal_followup/task_to_perfom/which_task_to_perfom  = 'follow_up' and  /postnatal_followup/reschedule_task/is_woman_available  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn/n_confirm_danger_signs_newborn" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn/refuses_to_eat" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn/vomits_everything" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn/difficulty_breathing" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn/infected_umbilical_cord" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn/skin_postules_with_abcess" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn/distended_abdomen" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn/weak_or_absence_cry" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn/unconscious" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn/convulsion" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up" type="select1" required="true()" relevant=" /postnatal_followup/newborn_has_danger_signs  = 'true'"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn_advices" relevant=" /postnatal_followup/task_to_perfom/which_task_to_perfom  = 'follow_up' and  /postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up  = 'yes' and  /postnatal_followup/reschedule_task/is_woman_available  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_1" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_2" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_3" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_5" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_7" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_9" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_11" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_13" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_15" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_17" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_19" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/newborn_cpc" relevant="( /postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up  = 'yes' or  /postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up  = '') and ( /postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up  = 'yes' or  /postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up  = '') and  /postnatal_followup/task_to_perfom/which_task_to_perfom  = 'follow_up' and  /postnatal_followup/follow_up_count  &gt; 1 and  /postnatal_followup/reschedule_task/is_woman_available  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/newborn_cpc/newborn_take_first_cpc" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/other_tips" relevant="( /postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up  = 'yes' or  /postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up  = '') and  /postnatal_followup/task_to_perfom/which_task_to_perfom  = 'follow_up' and ( /postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up  = 'yes' or  /postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up  = '') and  /postnatal_followup/reschedule_task/is_woman_available  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/other_tips/n_other_tips_1" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/other_tips/n_other_tips_2" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/other_tips/n_other_tips_3" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/other_tips/n_other_tips_5" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/other_tips/n_other_tips_7" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/other_tips/n_other_tips_8" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/usp_follow_up_visit" relevant=" /postnatal_followup/follow_up_count  &lt;= 3 and  /postnatal_followup/close_out  = 'false' and ( /postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up  = 'yes' or  /postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up  = '') and ( /postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up  = 'yes' or  /postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up  = '') and  /postnatal_followup/reschedule_task/is_woman_available  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/usp_follow_up_visit/did_go_to_1st_visit" type="select1" required="true()" relevant=" /postnatal_followup/follow_up_count  = 2"/>
+      <bind nodeset="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit" type="select1" required="true()" relevant=" /postnatal_followup/usp_follow_up_visit/did_go_to_1st_visit  = 'no'"/>
+      <bind nodeset="/postnatal_followup/usp_follow_up_visit/specify_other_reason_no_1st_visit" type="string" required="true()" relevant=" /postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit  = 'other'"/>
+      <bind nodeset="/postnatal_followup/usp_follow_up_visit/did_go_to_2nd_visit" type="select1" required="true()" relevant=" /postnatal_followup/follow_up_count  = 3"/>
+      <bind nodeset="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit" type="select1" required="true()" relevant=" /postnatal_followup/usp_follow_up_visit/did_go_to_2nd_visit  = 'no'"/>
+      <bind nodeset="/postnatal_followup/usp_follow_up_visit/specify_other_reason_no_2nd_visit" type="string" required="true()" relevant=" /postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit  = 'other'"/>
+      <bind nodeset="/postnatal_followup/usp_follow_up_visit/date_next_visit_mother_newborn" type="date" relevant=" /postnatal_followup/follow_up_count  &lt; 3" constraint=". &gt;= today()" jr:constraintMsg="jr:itext('/postnatal_followup/usp_follow_up_visit/date_next_visit_mother_newborn:jr:constraintMsg')" required="true()"/>
+      <bind nodeset="/postnatal_followup/counselling_on_pf" relevant=" /postnatal_followup/follow_up_count  = 3 and ( /postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up  = 'yes' or  /postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up  = '') and ( /postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up  = 'yes' or  /postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up  = '') and  /postnatal_followup/reschedule_task/is_woman_available  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/counselling_on_pf/woman_wants_fp" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_followup/counselling_on_pf/fp_method_chosen" type="select1" required="true()" relevant=" /postnatal_followup/counselling_on_pf/woman_wants_fp ='yes'"/>
+      <bind nodeset="/postnatal_followup/counselling_on_pf/n_start_pf" readonly="true()" type="string" relevant=" /postnatal_followup/counselling_on_pf/fp_method_chosen ='oral_combination_pill' or  /postnatal_followup/counselling_on_pf/fp_method_chosen ='injectible'"/>
+      <bind nodeset="/postnatal_followup/counselling_on_pf/n_refer_to_usp_for_method" readonly="true()" type="string" relevant=" /postnatal_followup/counselling_on_pf/fp_method_chosen ='iud' or  /postnatal_followup/counselling_on_pf/fp_method_chosen ='implants'"/>
+      <bind nodeset="/postnatal_followup/counselling_on_pf/n_advise_on_mama" readonly="true()" type="string" relevant=" /postnatal_followup/counselling_on_pf/woman_wants_fp ='no'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_details/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_details/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_signs" relevant=" /postnatal_followup/close_out  = 'false' and  /postnatal_followup/reschedule_task/is_woman_available  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_signs/r_signs_symptoms" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_signs/r_no_danger_signs" readonly="true()" type="string" relevant=" /postnatal_followup/newborn_has_danger_signs  = 'false' and  /postnatal_followup/mother_has_danger_signs  = 'false'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_signs/r_danger_signs" readonly="true()" type="string" relevant=" /postnatal_followup/mother_has_danger_signs  = 'true'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_signs/r_danger_signs_bleeding" readonly="true()" type="string" relevant=" /postnatal_followup/confirm_danger_signs_mother/non_stop_bleeding  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_signs/r_danger_signs_headaches" readonly="true()" type="string" relevant=" /postnatal_followup/confirm_danger_signs_mother/persistant_headache  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_signs/r_danger_signs_low_abdomnal_pain" readonly="true()" type="string" relevant=" /postnatal_followup/confirm_danger_signs_mother/stomach_aches  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_signs/r_danger_signs_fever" readonly="true()" type="string" relevant=" /postnatal_followup/confirm_danger_signs_mother/danger_sign_fever  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_signs/r_danger_signs_vaginal_discharge" readonly="true()" type="string" relevant=" /postnatal_followup/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_signs/r_danger_signs_breast_abscess" readonly="true()" type="string" relevant=" /postnatal_followup/confirm_danger_signs_mother/breast_abcess  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_signs/r_danger_signs_blurred_vision" readonly="true()" type="string" relevant=" /postnatal_followup/confirm_danger_signs_mother/blurred_vision  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_signs/r_danger_signs_calves_pain" readonly="true()" type="string" relevant=" /postnatal_followup/confirm_danger_signs_mother/calf_pain  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_referrals" relevant=" /postnatal_followup/close_out  = 'false' and  /postnatal_followup/reschedule_task/is_woman_available  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_referrals/summary_referral" readonly="true()" type="string" relevant=" /postnatal_followup/newborn_has_danger_signs  = 'true' or  /postnatal_followup/mother_has_danger_signs  = 'true'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_referrals/r_referral_note" readonly="true()" type="string" relevant=" /postnatal_followup/mother_has_danger_signs  = 'true' or  /postnatal_followup/newborn_has_danger_signs  = 'true'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_1" readonly="true()" type="string" relevant=" /postnatal_followup/danger_signs_newborn/refuses_to_eat  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_2" readonly="true()" type="string" relevant=" /postnatal_followup/danger_signs_newborn/vomits_everything  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_3" readonly="true()" type="string" relevant=" /postnatal_followup/danger_signs_newborn/difficulty_breathing  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_4" readonly="true()" type="string" relevant=" /postnatal_followup/danger_signs_newborn/infected_umbilical_cord  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_5" readonly="true()" type="string" relevant=" /postnatal_followup/danger_signs_newborn/skin_postules_with_abcess  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_6" readonly="true()" type="string" relevant=" /postnatal_followup/danger_signs_newborn/distended_abdomen  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_7" readonly="true()" type="string" relevant=" /postnatal_followup/danger_signs_newborn/weak_or_absence_cry  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_8" readonly="true()" type="string" relevant=" /postnatal_followup/danger_signs_newborn/unconscious  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_9" readonly="true()" type="string" relevant=" /postnatal_followup/danger_signs_newborn/convulsion  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_referrals/have_you_refer_newborn" type="select1" required="true()" relevant=" /postnatal_followup/newborn_has_danger_signs  = 'true' or  /postnatal_followup/mother_has_danger_signs  = 'true'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_referrals/why_not_refer_newborn" type="string" required="true()" relevant=" /postnatal_followup/group_summary/r_referrals/have_you_refer_newborn  = 'no'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_instructions" relevant=" /postnatal_followup/close_out  = 'false' and  /postnatal_followup/reschedule_task/is_woman_available  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_instructions/summary_special_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_instructions/n_instruction_1" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_instructions/n_instruction_2" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_instructions/n_instruction_3" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/group_summary/r_instructions/n_instruction_4" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/group_summary/summary_follow_up" readonly="true()" type="string" relevant=" /postnatal_followup/close_out  = 'false'"/>
+      <bind nodeset="/postnatal_followup/group_summary/summary_reschedule_follow_up" readonly="true()" type="string" relevant=" /postnatal_followup/reschedule_task/is_woman_available  = 'no' and  /postnatal_followup/reschedule_task/s_date_to_reschedule  != ''"/>
+      <bind nodeset="/postnatal_followup/group_summary/summary_referral_follow_up" readonly="true()" type="string" relevant=" /postnatal_followup/close_out  = 'false' and ( /postnatal_followup/newborn_has_danger_signs  = 'true' or  /postnatal_followup/mother_has_danger_signs  = 'true')"/>
+      <bind nodeset="/postnatal_followup/group_summary/summary_healthy_follow_up" readonly="true()" type="string" relevant=" /postnatal_followup/close_out  = 'false' and  /postnatal_followup/next_visit_pnc  != ''"/>
+      <bind nodeset="/postnatal_followup/group_summary/end_follow_up" readonly="true()" type="string" relevant=" /postnatal_followup/follow_up_count  = 3 or  /postnatal_followup/close_out  = 'true'"/>
+      <bind nodeset="/postnatal_followup/group_summary/n_close_out_n1" readonly="true()" type="string" relevant=" /postnatal_followup/close_out  = 'true'"/>
+      <bind nodeset="/postnatal_followup/group_summary/n_close_out_n2" readonly="true()" type="string" relevant=" /postnatal_followup/close_out  = 'true' and  /postnatal_followup/label_reason_close_out  != ''"/>
+      <bind nodeset="/postnatal_followup/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/postnatal_followup/inputs">
+      <label ref="jr:itext('/postnatal_followup/inputs:label')"/>
+      <input appearance="hidden" ref="/postnatal_followup/inputs/source">
+        <label ref="jr:itext('/postnatal_followup/inputs/source:label')"/>
+      </input>
+      <input appearance="hidden" ref="/postnatal_followup/inputs/source_id">
+        <label ref="jr:itext('/postnatal_followup/inputs/source_id:label')"/>
+      </input>
+      <input appearance="hidden" ref="/postnatal_followup/inputs/t_follow_up_count">
+        <label ref="jr:itext('/postnatal_followup/inputs/t_follow_up_count:label')"/>
+      </input>
+      <input appearance="hidden" ref="/postnatal_followup/inputs/t_close_out">
+        <label ref="jr:itext('/postnatal_followup/inputs/t_close_out:label')"/>
+      </input>
+      <input ref="/postnatal_followup/inputs/t_delivery_date">
+        <label ref="jr:itext('/postnatal_followup/inputs/t_delivery_date:label')"/>
+      </input>
+      <input ref="/postnatal_followup/inputs/t_child_alive">
+        <label ref="jr:itext('/postnatal_followup/inputs/t_child_alive:label')"/>
+      </input>
+      <group ref="/postnatal_followup/inputs/contact">
+        <label ref="jr:itext('/postnatal_followup/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/postnatal_followup/inputs/contact/_id">
+          <label ref="jr:itext('/postnatal_followup/inputs/contact/_id:label')"/>
+        </input>
+        <input appearance="hidden" ref="/postnatal_followup/inputs/contact/name">
+          <label ref="jr:itext('/postnatal_followup/inputs/contact/name:label')"/>
+        </input>
+        <input appearance="hidden" ref="/postnatal_followup/inputs/contact/date_of_birth">
+          <label ref="jr:itext('/postnatal_followup/inputs/contact/date_of_birth:label')"/>
+        </input>
+        <input appearance="hidden" ref="/postnatal_followup/inputs/contact/sex">
+          <label ref="jr:itext('/postnatal_followup/inputs/contact/sex:label')"/>
+        </input>
+        <input appearance="hidden" ref="/postnatal_followup/inputs/contact/parent">
+          <label ref="jr:itext('/postnatal_followup/inputs/contact/parent:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/postnatal_followup/reschedule_task">
+      <label ref="jr:itext('/postnatal_followup/reschedule_task:label')"/>
+      <select1 appearance="columns" ref="/postnatal_followup/reschedule_task/is_woman_available">
+        <label ref="jr:itext('/postnatal_followup/reschedule_task/is_woman_available:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/reschedule_task/is_woman_available/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/reschedule_task/is_woman_available/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input appearance="columns" ref="/postnatal_followup/reschedule_task/s_date_to_reschedule">
+        <label ref="jr:itext('/postnatal_followup/reschedule_task/s_date_to_reschedule:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/postnatal_followup/task_to_perfom">
+      <label ref="jr:itext('/postnatal_followup/task_to_perfom:label')"/>
+      <input ref="/postnatal_followup/task_to_perfom/child_alive_count">
+        <label ref="jr:itext('/postnatal_followup/task_to_perfom/child_alive_count:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/postnatal_followup/task_to_perfom/which_task_to_perfom">
+        <label ref="jr:itext('/postnatal_followup/task_to_perfom/which_task_to_perfom:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/task_to_perfom/which_task_to_perfom/follow_up:label')"/>
+          <value>follow_up</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/task_to_perfom/which_task_to_perfom/close_out:label')"/>
+          <value>close_out</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/postnatal_followup/g_close_out">
+      <label ref="jr:itext('/postnatal_followup/g_close_out:label')"/>
+      <select1 ref="/postnatal_followup/g_close_out/reason_for_close_out">
+        <label ref="jr:itext('/postnatal_followup/g_close_out/reason_for_close_out:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_close_out/reason_for_close_out/end_of_follow_up:label')"/>
+          <value>end_of_follow_up</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_close_out/reason_for_close_out/woman_referred:label')"/>
+          <value>woman_referred</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_close_out/reason_for_close_out/woman_dead:label')"/>
+          <value>woman_dead</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_close_out/reason_for_close_out/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/postnatal_followup/g_close_out/specify_other_reason">
+        <label ref="jr:itext('/postnatal_followup/g_close_out/specify_other_reason:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/postnatal_followup/confirm_danger_signs_mother">
+      <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother:label')"/>
+      <input ref="/postnatal_followup/confirm_danger_signs_mother/n_confirm_danger_signs_mother">
+        <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/n_confirm_danger_signs_mother:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/postnatal_followup/confirm_danger_signs_mother/non_stop_bleeding">
+        <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/non_stop_bleeding:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/non_stop_bleeding/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/non_stop_bleeding/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/confirm_danger_signs_mother/persistant_headache">
+        <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/persistant_headache:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/persistant_headache/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/persistant_headache/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/confirm_danger_signs_mother/stomach_aches">
+        <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/stomach_aches:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/stomach_aches/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/stomach_aches/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/confirm_danger_signs_mother/danger_sign_fever">
+        <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/danger_sign_fever:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/danger_sign_fever/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/danger_sign_fever/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge">
+        <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/smelly_or_abnormal_vaginal_discharge/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/confirm_danger_signs_mother/breast_abcess">
+        <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/breast_abcess:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/breast_abcess/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/breast_abcess/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/confirm_danger_signs_mother/blurred_vision">
+        <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/blurred_vision:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/blurred_vision/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/blurred_vision/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/confirm_danger_signs_mother/calf_pain">
+        <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/calf_pain:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/calf_pain/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/calf_pain/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up">
+        <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/confirm_danger_signs_mother/danger_sign_mother_continue_follow_up/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/postnatal_followup/advice_on_danger_signs_mother">
+      <label ref="jr:itext('/postnatal_followup/advice_on_danger_signs_mother:label')"/>
+      <input ref="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_1">
+        <label ref="jr:itext('/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_1:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_2">
+        <label ref="jr:itext('/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_2:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_3">
+        <label ref="jr:itext('/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_3:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_5">
+        <label ref="jr:itext('/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_5:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_7">
+        <label ref="jr:itext('/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_7:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_9">
+        <label ref="jr:itext('/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_9:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_11">
+        <label ref="jr:itext('/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_11:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_13">
+        <label ref="jr:itext('/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_13:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_15">
+        <label ref="jr:itext('/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_15:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_17">
+        <label ref="jr:itext('/postnatal_followup/advice_on_danger_signs_mother/n_danger_signs_advices_17:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/postnatal_followup/danger_signs_newborn">
+      <label ref="jr:itext('/postnatal_followup/danger_signs_newborn:label')"/>
+      <input ref="/postnatal_followup/danger_signs_newborn/n_confirm_danger_signs_newborn">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/n_confirm_danger_signs_newborn:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/postnatal_followup/danger_signs_newborn/refuses_to_eat">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/refuses_to_eat:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/refuses_to_eat/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/refuses_to_eat/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/danger_signs_newborn/vomits_everything">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/vomits_everything:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/vomits_everything/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/vomits_everything/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/danger_signs_newborn/difficulty_breathing">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/difficulty_breathing:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/difficulty_breathing/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/difficulty_breathing/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/danger_signs_newborn/infected_umbilical_cord">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/infected_umbilical_cord:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/infected_umbilical_cord/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/infected_umbilical_cord/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/danger_signs_newborn/skin_postules_with_abcess">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/skin_postules_with_abcess:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/skin_postules_with_abcess/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/skin_postules_with_abcess/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/danger_signs_newborn/distended_abdomen">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/distended_abdomen:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/distended_abdomen/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/distended_abdomen/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/danger_signs_newborn/weak_or_absence_cry">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/weak_or_absence_cry:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/weak_or_absence_cry/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/weak_or_absence_cry/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/danger_signs_newborn/unconscious">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/unconscious:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/unconscious/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/unconscious/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/danger_signs_newborn/convulsion">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/convulsion:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/convulsion/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/convulsion/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="columns" ref="/postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/danger_signs_newborn/danger_signs_newborn_continue_follow_up/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/postnatal_followup/danger_signs_newborn_advices">
+      <label ref="jr:itext('/postnatal_followup/danger_signs_newborn_advices:label')"/>
+      <input ref="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_1">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_1:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_2">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_2:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_3">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_3:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_5">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_5:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_7">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_7:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_9">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_9:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_11">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_11:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_13">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_13:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_15">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_15:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_17">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_17:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_19">
+        <label ref="jr:itext('/postnatal_followup/danger_signs_newborn_advices/n_danger_signs_newborn_advices_19:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/postnatal_followup/newborn_cpc">
+      <label ref="jr:itext('/postnatal_followup/newborn_cpc:label')"/>
+      <select1 appearance="columns" ref="/postnatal_followup/newborn_cpc/newborn_take_first_cpc">
+        <label ref="jr:itext('/postnatal_followup/newborn_cpc/newborn_take_first_cpc:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/newborn_cpc/newborn_take_first_cpc/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/newborn_cpc/newborn_take_first_cpc/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/postnatal_followup/other_tips">
+      <label ref="jr:itext('/postnatal_followup/other_tips:label')"/>
+      <input appearance="li" ref="/postnatal_followup/other_tips/n_other_tips_1">
+        <label ref="jr:itext('/postnatal_followup/other_tips/n_other_tips_1:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/other_tips/n_other_tips_2">
+        <label ref="jr:itext('/postnatal_followup/other_tips/n_other_tips_2:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/other_tips/n_other_tips_3">
+        <label ref="jr:itext('/postnatal_followup/other_tips/n_other_tips_3:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/other_tips/n_other_tips_5">
+        <label ref="jr:itext('/postnatal_followup/other_tips/n_other_tips_5:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/other_tips/n_other_tips_7">
+        <label ref="jr:itext('/postnatal_followup/other_tips/n_other_tips_7:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/other_tips/n_other_tips_8">
+        <label ref="jr:itext('/postnatal_followup/other_tips/n_other_tips_8:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/postnatal_followup/usp_follow_up_visit">
+      <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit:label')"/>
+      <select1 appearance="columns" ref="/postnatal_followup/usp_follow_up_visit/did_go_to_1st_visit">
+        <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/did_go_to_1st_visit:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/did_go_to_1st_visit/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/did_go_to_1st_visit/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit">
+        <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/ignorance:label')"/>
+          <value>ignorance</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/tired:label')"/>
+          <value>tired</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/oversight:label')"/>
+          <value>oversight</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/refuse:label')"/>
+          <value>refuse</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/not_important:label')"/>
+          <value>not_important</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/busy:label')"/>
+          <value>busy</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/not_ready:label')"/>
+          <value>not_ready</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_1st_visit/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/postnatal_followup/usp_follow_up_visit/specify_other_reason_no_1st_visit">
+        <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/specify_other_reason_no_1st_visit:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/postnatal_followup/usp_follow_up_visit/did_go_to_2nd_visit">
+        <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/did_go_to_2nd_visit:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/did_go_to_2nd_visit/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/did_go_to_2nd_visit/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit">
+        <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/ignorance:label')"/>
+          <value>ignorance</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/tired:label')"/>
+          <value>tired</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/oversight:label')"/>
+          <value>oversight</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/refuse:label')"/>
+          <value>refuse</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/not_important:label')"/>
+          <value>not_important</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/busy:label')"/>
+          <value>busy</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/not_ready:label')"/>
+          <value>not_ready</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/why_not_go_2nd_visit/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/postnatal_followup/usp_follow_up_visit/specify_other_reason_no_2nd_visit">
+        <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/specify_other_reason_no_2nd_visit:label')"/>
+      </input>
+      <input ref="/postnatal_followup/usp_follow_up_visit/date_next_visit_mother_newborn">
+        <label ref="jr:itext('/postnatal_followup/usp_follow_up_visit/date_next_visit_mother_newborn:label')"/>
+      </input>
+    </group>
+    <group ref="/postnatal_followup/counselling_on_pf">
+      <label ref="jr:itext('/postnatal_followup/counselling_on_pf:label')"/>
+      <select1 appearance="columns" ref="/postnatal_followup/counselling_on_pf/woman_wants_fp">
+        <label ref="jr:itext('/postnatal_followup/counselling_on_pf/woman_wants_fp:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/counselling_on_pf/woman_wants_fp/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/counselling_on_pf/woman_wants_fp/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/postnatal_followup/counselling_on_pf/fp_method_chosen">
+        <label ref="jr:itext('/postnatal_followup/counselling_on_pf/fp_method_chosen:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/counselling_on_pf/fp_method_chosen/iud:label')"/>
+          <value>iud</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/counselling_on_pf/fp_method_chosen/implants:label')"/>
+          <value>implants</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/counselling_on_pf/fp_method_chosen/oral_combination_pill:label')"/>
+          <value>oral_combination_pill</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/counselling_on_pf/fp_method_chosen/injectible:label')"/>
+          <value>injectible</value>
+        </item>
+      </select1>
+      <input appearance="li" ref="/postnatal_followup/counselling_on_pf/n_start_pf">
+        <label ref="jr:itext('/postnatal_followup/counselling_on_pf/n_start_pf:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/counselling_on_pf/n_refer_to_usp_for_method">
+        <label ref="jr:itext('/postnatal_followup/counselling_on_pf/n_refer_to_usp_for_method:label')"/>
+      </input>
+      <input appearance="li" ref="/postnatal_followup/counselling_on_pf/n_advise_on_mama">
+        <label ref="jr:itext('/postnatal_followup/counselling_on_pf/n_advise_on_mama:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/postnatal_followup/group_summary">
+      <label ref="jr:itext('/postnatal_followup/group_summary:label')"/>
+      <group ref="/postnatal_followup/group_summary/r_details">
+        <label ref="jr:itext('/postnatal_followup/group_summary/r_details:label')"/>
+        <input appearance="h1 yellow" ref="/postnatal_followup/group_summary/r_details/r_summary">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_details/r_summary:label')"/>
+        </input>
+        <input ref="/postnatal_followup/group_summary/r_details/r_patient_info">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_details/r_patient_info:label')"/>
+        </input>
+      </group>
+      <group ref="/postnatal_followup/group_summary/r_signs">
+        <label ref="jr:itext('/postnatal_followup/group_summary/r_signs:label')"/>
+        <input appearance="h1 yellow" ref="/postnatal_followup/group_summary/r_signs/r_signs_symptoms">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_signs/r_signs_symptoms:label')"/>
+        </input>
+        <input ref="/postnatal_followup/group_summary/r_signs/r_no_danger_signs">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_signs/r_no_danger_signs:label')"/>
+        </input>
+        <input ref="/postnatal_followup/group_summary/r_signs/r_danger_signs">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_signs/r_danger_signs:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_signs/r_danger_signs_bleeding">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_signs/r_danger_signs_bleeding:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_signs/r_danger_signs_headaches">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_signs/r_danger_signs_headaches:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_signs/r_danger_signs_low_abdomnal_pain">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_signs/r_danger_signs_low_abdomnal_pain:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_signs/r_danger_signs_fever">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_signs/r_danger_signs_fever:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_signs/r_danger_signs_vaginal_discharge">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_signs/r_danger_signs_vaginal_discharge:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_signs/r_danger_signs_breast_abscess">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_signs/r_danger_signs_breast_abscess:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_signs/r_danger_signs_blurred_vision">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_signs/r_danger_signs_blurred_vision:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_signs/r_danger_signs_calves_pain">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_signs/r_danger_signs_calves_pain:label')"/>
+        </input>
+      </group>
+      <group appearance="field-list" ref="/postnatal_followup/group_summary/r_referrals">
+        <label ref="jr:itext('/postnatal_followup/group_summary/r_referrals:label')"/>
+        <input appearance="h1 red" ref="/postnatal_followup/group_summary/r_referrals/summary_referral">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_referrals/summary_referral:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_referrals/r_referral_note">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_referrals/r_referral_note:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_1">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_1:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_2">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_2:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_3">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_3:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_4">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_4:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_5">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_5:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_6">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_6:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_7">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_7:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_8">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_8:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_9">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_referrals/referrals_newborn_n_9:label')"/>
+        </input>
+        <select1 appearance="columns" ref="/postnatal_followup/group_summary/r_referrals/have_you_refer_newborn">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_referrals/have_you_refer_newborn:label')"/>
+          <item>
+            <label ref="jr:itext('/postnatal_followup/group_summary/r_referrals/have_you_refer_newborn/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/postnatal_followup/group_summary/r_referrals/have_you_refer_newborn/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/postnatal_followup/group_summary/r_referrals/why_not_refer_newborn">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_referrals/why_not_refer_newborn:label')"/>
+        </input>
+      </group>
+      <group ref="/postnatal_followup/group_summary/r_instructions">
+        <label ref="jr:itext('/postnatal_followup/group_summary/r_instructions:label')"/>
+        <input appearance="h1 blue" ref="/postnatal_followup/group_summary/r_instructions/summary_special_instructions">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_instructions/summary_special_instructions:label')"/>
+        </input>
+        <input ref="/postnatal_followup/group_summary/r_instructions/n_instruction_1">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_instructions/n_instruction_1:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_instructions/n_instruction_2">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_instructions/n_instruction_2:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_instructions/n_instruction_3">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_instructions/n_instruction_3:label')"/>
+        </input>
+        <input appearance="li" ref="/postnatal_followup/group_summary/r_instructions/n_instruction_4">
+          <label ref="jr:itext('/postnatal_followup/group_summary/r_instructions/n_instruction_4:label')"/>
+        </input>
+      </group>
+      <input appearance="h1 green" ref="/postnatal_followup/group_summary/summary_follow_up">
+        <label ref="jr:itext('/postnatal_followup/group_summary/summary_follow_up:label')"/>
+      </input>
+      <input ref="/postnatal_followup/group_summary/summary_reschedule_follow_up">
+        <label ref="jr:itext('/postnatal_followup/group_summary/summary_reschedule_follow_up:label')"/>
+      </input>
+      <input ref="/postnatal_followup/group_summary/summary_referral_follow_up">
+        <label ref="jr:itext('/postnatal_followup/group_summary/summary_referral_follow_up:label')"/>
+      </input>
+      <input ref="/postnatal_followup/group_summary/summary_healthy_follow_up">
+        <label ref="jr:itext('/postnatal_followup/group_summary/summary_healthy_follow_up:label')"/>
+      </input>
+      <input ref="/postnatal_followup/group_summary/end_follow_up">
+        <label ref="jr:itext('/postnatal_followup/group_summary/end_follow_up:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/postnatal_followup/group_summary/n_close_out_n1">
+        <label ref="jr:itext('/postnatal_followup/group_summary/n_close_out_n1:label')"/>
+      </input>
+      <input ref="/postnatal_followup/group_summary/n_close_out_n2">
+        <label ref="jr:itext('/postnatal_followup/group_summary/n_close_out_n2:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>
