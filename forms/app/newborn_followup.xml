@@ -958,7 +958,7 @@
       <bind nodeset="/newborn_followup/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /newborn_followup/inputs/contact/date_of_birth ) )"/>
       <bind nodeset="/newborn_followup/patient_age_display" type="string" calculate="concat(concat( /newborn_followup/patient_age_in_years , if( /newborn_followup/patient_age_in_years =1,' year and ',' years and ')),concat( /newborn_followup/patient_age_in_months  mod 12, if(( /newborn_followup/patient_age_in_months  mod 12)=1,' month old',' months old')))"/>
       <bind nodeset="/newborn_followup/patient_age_display_fr" type="string" calculate="concat(concat( /newborn_followup/patient_age_in_years , if( /newborn_followup/patient_age_in_years =1,' an et ',' ans et ')),concat( /newborn_followup/patient_age_in_months  mod 12, if(( /newborn_followup/patient_age_in_months  mod 12)=1,' mois',' mois')))"/>
-      <bind nodeset="/newborn_followup/patient_id" type="string" required="true()" jr:requiredMsg="jr:itext('/newborn_followup/patient_id:jr:requiredMsg')" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/newborn_followup/patient_id" type="string" jr:requiredMsg="jr:itext('/newborn_followup/patient_id:jr:requiredMsg')" required="true()" calculate="../inputs/contact/_id"/>
       <bind nodeset="/newborn_followup/patient_name" type="string" calculate="../inputs/contact/name"/>
       <bind nodeset="/newborn_followup/patient_sex" type="string" calculate="../inputs/contact/sex"/>
       <bind nodeset="/newborn_followup/patient_sex_en" type="string" calculate="if( /newborn_followup/patient_sex  = 'male' or  /newborn_followup/patient_sex  = 'homme' or  /newborn_followup/patient_sex  = 'Homme', 'Male', if( /newborn_followup/patient_sex  = 'female' or  /newborn_followup/patient_sex  = 'femme' or  /newborn_followup/patient_sex  = 'Femme', 'Female', ''))"/>
@@ -969,21 +969,21 @@
       <bind nodeset="/newborn_followup/follow_up_count_label_fr" type="string" calculate="if( /newborn_followup/follow_up_count  = '1', &quot;Suivi 48 Heures&quot;, if( /newborn_followup/follow_up_count  = '2', &quot;Suivi 5 jours&quot;, if( /newborn_followup/follow_up_count  = '3', &quot;Suivi 12 jours&quot;, if( /newborn_followup/follow_up_count  = '4', &quot;Suivi 19 jours&quot;, if( /newborn_followup/follow_up_count  = '5', &quot;Suivi 26 jours&quot;, if( /newborn_followup/follow_up_count  = '6', &quot;Suivi 33 jours&quot;, if( /newborn_followup/follow_up_count  = '7', &quot;Suivi 40 jours&quot;, if( /newborn_followup/follow_up_count  = '8', &quot;Suivi 48 jours&quot;, &quot;&quot;))))))))"/>
       <bind nodeset="/newborn_followup/has_danger_signs" type="string" calculate="if( /newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal  = 'yes' or  /newborn_followup/s_ds/s_danger_signs_vomitting  = 'yes' or  /newborn_followup/s_ds/s_danger_signs_dificult_breathing  = 'yes' or  /newborn_followup/s_ds/s_danger_signs_cord_suppurating  = 'yes' or  /newborn_followup/s_ds/s_danger_signs_skin_pustules  = 'yes' or  /newborn_followup/s_ds/s_danger_signs_abdominal_distended  = 'yes' or  /newborn_followup/s_ds/s_danger_signs_leak_crying  = 'yes' or  /newborn_followup/s_ds/s_danger_signs_unconscious  = 'yes' or  /newborn_followup/s_ds/s_danger_signs_convulsions  = 'yes','true','false')"/>
       <bind nodeset="/newborn_followup/s_today_task" relevant=" /newborn_followup/inputs/t_follow_up_count  != ''"/>
-      <bind nodeset="/newborn_followup/s_today_task/s_task_to_perform" type="select1" required="true()" jr:requiredMsg="jr:itext('/newborn_followup/s_today_task/s_task_to_perform:jr:requiredMsg')"/>
+      <bind nodeset="/newborn_followup/s_today_task/s_task_to_perform" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_today_task/s_task_to_perform:jr:requiredMsg')" required="true()"/>
       <bind nodeset="/newborn_followup/s_today_task/close_now" type="string" calculate="if( /newborn_followup/inputs/t_close_out  != 'true', 
  if( /newborn_followup/s_today_task/s_task_to_perform  = 'close_out','true','false'),'')"/>
       <bind nodeset="/newborn_followup/s_ds" relevant="selected( /newborn_followup/s_today_task/s_task_to_perform , 'follow_up') or  /newborn_followup/inputs/t_follow_up_count  = ''"/>
       <bind nodeset="/newborn_followup/s_ds/s_danger_signs" readonly="true()" type="string"/>
-      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal" type="select1" required="true()" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal:jr:requiredMsg')"/>
-      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_vomitting" type="select1" required="true()" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_vomitting:jr:requiredMsg')"/>
-      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_dificult_breathing" type="select1" required="true()" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_dificult_breathing:jr:requiredMsg')"/>
-      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_cord_suppurating" type="select1" required="true()" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_cord_suppurating:jr:requiredMsg')"/>
-      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_skin_pustules" type="select1" required="true()" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_skin_pustules:jr:requiredMsg')"/>
-      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_abdominal_distended" type="select1" required="true()" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_abdominal_distended:jr:requiredMsg')"/>
-      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_leak_crying" type="select1" required="true()" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_leak_crying:jr:requiredMsg')"/>
-      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_unconscious" type="select1" required="true()" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_unconscious:jr:requiredMsg')"/>
-      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_convulsions" type="select1" required="true()" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_convulsions:jr:requiredMsg')"/>
-      <bind nodeset="/newborn_followup/s_ds/s_able_to_continue" type="select1" required="true()" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_able_to_continue:jr:requiredMsg')" relevant=" /newborn_followup/has_danger_signs  = 'true'"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_breastfeeding_refusal:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_vomitting" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_vomitting:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_dificult_breathing" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_dificult_breathing:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_cord_suppurating" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_cord_suppurating:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_skin_pustules" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_skin_pustules:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_abdominal_distended" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_abdominal_distended:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_leak_crying" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_leak_crying:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_unconscious" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_unconscious:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_danger_signs_convulsions" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_danger_signs_convulsions:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_ds/s_able_to_continue" type="select1" relevant=" /newborn_followup/has_danger_signs  = 'true'" jr:requiredMsg="jr:itext('/newborn_followup/s_ds/s_able_to_continue:jr:requiredMsg')" required="true()"/>
       <bind nodeset="/newborn_followup/n_counsels_ds" relevant=" /newborn_followup/s_ds/s_able_to_continue  = 'yes' or  /newborn_followup/s_ds/s_able_to_continue  = ''"/>
       <bind nodeset="/newborn_followup/n_counsels_ds/n_danger_signs_breastfeeding_refusal" readonly="true()" type="string"/>
       <bind nodeset="/newborn_followup/n_counsels_ds/n_danger_signs_vomitting" readonly="true()" type="string"/>
@@ -1001,13 +1001,13 @@
       <bind nodeset="/newborn_followup/n_counsels_other/n_best_practices_breastfeeding_" readonly="true()" type="string"/>
       <bind nodeset="/newborn_followup/n_counsels_other/n_family_planning" readonly="true()" type="string"/>
       <bind nodeset="/newborn_followup/n_counsels_other/n_other_appropriate_counsels" readonly="true()" type="string"/>
-      <bind nodeset="/newborn_followup/s_pnc/s_pnc_1_date" type="date" jr:requiredMsg="jr:itext('/newborn_followup/s_pnc/s_pnc_1_date:jr:requiredMsg')" relevant=" /newborn_followup/follow_up_count  = '1'" constraint=". &gt;= today()"/>
-      <bind nodeset="/newborn_followup/s_pnc/s_pnc_2_date" type="date" jr:requiredMsg="jr:itext('/newborn_followup/s_pnc/s_pnc_2_date:jr:requiredMsg')" relevant=" /newborn_followup/follow_up_count  = '2'" constraint=". &gt;= today()"/>
+      <bind nodeset="/newborn_followup/s_pnc/s_pnc_1_date" type="date" relevant=" /newborn_followup/follow_up_count  = '1'" jr:requiredMsg="jr:itext('/newborn_followup/s_pnc/s_pnc_1_date:jr:requiredMsg')" constraint=". &gt;= today()"/>
+      <bind nodeset="/newborn_followup/s_pnc/s_pnc_2_date" type="date" relevant=" /newborn_followup/follow_up_count  = '2'" jr:requiredMsg="jr:itext('/newborn_followup/s_pnc/s_pnc_2_date:jr:requiredMsg')" constraint=". &gt;= today()"/>
       <bind nodeset="/newborn_followup/s_cpc" relevant=" /newborn_followup/follow_up_count  = '2'"/>
-      <bind nodeset="/newborn_followup/s_cpc/s_cpc_1" type="select1" required="true()" jr:requiredMsg="jr:itext('/newborn_followup/s_cpc/s_cpc_1:jr:requiredMsg')"/>
+      <bind nodeset="/newborn_followup/s_cpc/s_cpc_1" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_cpc/s_cpc_1:jr:requiredMsg')" required="true()"/>
       <bind nodeset="/newborn_followup/s_close_out" relevant=" /newborn_followup/s_today_task/s_task_to_perform = 'close_out'"/>
-      <bind nodeset="/newborn_followup/s_close_out/s_why_close_out" type="select1" required="true()" jr:requiredMsg="jr:itext('/newborn_followup/s_close_out/s_why_close_out:jr:requiredMsg')"/>
-      <bind nodeset="/newborn_followup/s_close_out/s_why_close_out_other" type="string" required="true()" jr:requiredMsg="jr:itext('/newborn_followup/s_close_out/s_why_close_out_other:jr:requiredMsg')" relevant=" /newborn_followup/s_close_out/s_why_close_out  = 'other'"/>
+      <bind nodeset="/newborn_followup/s_close_out/s_why_close_out" type="select1" jr:requiredMsg="jr:itext('/newborn_followup/s_close_out/s_why_close_out:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/newborn_followup/s_close_out/s_why_close_out_other" type="string" relevant=" /newborn_followup/s_close_out/s_why_close_out  = 'other'" jr:requiredMsg="jr:itext('/newborn_followup/s_close_out/s_why_close_out_other:jr:requiredMsg')" required="true()"/>
       <bind nodeset="/newborn_followup/group_summary/r_details/r_summary" readonly="true()" type="string"/>
       <bind nodeset="/newborn_followup/group_summary/r_details/r_patient_info" readonly="true()" type="string"/>
       <bind nodeset="/newborn_followup/group_summary/r_signs/r_signs_symptoms" readonly="true()" type="string"/>
@@ -1028,7 +1028,7 @@
       <bind nodeset="/newborn_followup/group_summary/r_instructions/summary_special_instructions" readonly="true()" type="string" relevant=" /newborn_followup/s_today_task/close_now  = 'true'"/>
       <bind nodeset="/newborn_followup/group_summary/r_instructions/last_followup_instruction" readonly="true()" type="string" relevant=" /newborn_followup/follow_up_count  = '3'"/>
       <bind nodeset="/newborn_followup/group_summary/r_instructions/r_car_advices" readonly="true()" type="string"/>
-      <bind nodeset="/newborn_followup/group_summary/s_have_you_refer_child" type="select1" required="true()" relevant=" /newborn_followup/s_today_task/s_task_to_perform  != 'close_out'"/>
+      <bind nodeset="/newborn_followup/group_summary/s_have_you_refer_child" type="select1" relevant=" /newborn_followup/s_today_task/s_task_to_perform  != 'close_out'" required="true()"/>
       <bind nodeset="/newborn_followup/group_summary/s_why_not" type="string" relevant=" /newborn_followup/group_summary/s_have_you_refer_child  = 'no'"/>
       <bind nodeset="/newborn_followup/group_summary/r_followup/next_visit" readonly="true()" type="string" relevant=" /newborn_followup/close_out  = 'false'"/>
       <bind nodeset="/newborn_followup/group_summary/r_followup/summary_follow_up" readonly="true()" type="string" relevant=" /newborn_followup/has_danger_signs  = 'false' and  /newborn_followup/close_out  = 'false'"/>

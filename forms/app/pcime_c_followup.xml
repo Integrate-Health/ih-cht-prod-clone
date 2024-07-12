@@ -1441,7 +1441,7 @@
       <bind nodeset="/pcime_c_followup/drugs/s_note_congrats" readonly="true()" type="string" relevant=" /pcime_c_followup/drugs/s_received_dosage  = 'yes'"/>
       <bind nodeset="/pcime_c_followup/drugs/s_note_advice" readonly="true()" type="string" relevant=" /pcime_c_followup/drugs/s_received_dosage  = 'no'"/>
       <bind nodeset="/pcime_c_followup/drugs/s_note_drugs" readonly="true()" type="string" relevant=" /pcime_c_followup/drugs/s_received_dosage  != ''"/>
-      <bind nodeset="/pcime_c_followup/drugs/s_drug_well_administrated" type="select1" required="true()" relevant=" /pcime_c_followup/drugs/s_received_dosage  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/drugs/s_drug_well_administrated" type="select1" relevant=" /pcime_c_followup/drugs/s_received_dosage  = 'yes'" required="true()"/>
       <bind nodeset="/pcime_c_followup/drugs/s_encourage" readonly="true()" type="string" relevant=" /pcime_c_followup/drugs/s_drug_well_administrated  = 'yes'"/>
       <bind nodeset="/pcime_c_followup/drugs/s_drugs_note_1" readonly="true()" type="string" relevant=" /pcime_c_followup/drugs/s_drug_well_administrated  = 'no'"/>
       <bind nodeset="/pcime_c_followup/danger_signs_ask/s_note_1" readonly="true()" type="string"/>
@@ -1464,7 +1464,7 @@
       <bind nodeset="/pcime_c_followup/danger_signs_search/s_fontanelle_bulging" type="select1" required="true()"/>
       <bind nodeset="/pcime_c_followup/danger_signs_search/s_rashes" type="select1" required="true()"/>
       <bind nodeset="/pcime_c_followup/danger_signs_search/s_edema_feet" type="select1" required="true()"/>
-      <bind nodeset="/pcime_c_followup/temperature/s_temperature" type="decimal" required="true()" constraint=". &gt;= 28.00 and . &lt;= 42.00"/>
+      <bind nodeset="/pcime_c_followup/temperature/s_temperature" type="decimal" constraint=". &gt;= 28.00 and . &lt;= 42.00" required="true()"/>
       <bind nodeset="/pcime_c_followup/fever" constraint=" /pcime_c_followup/inputs/t_treat_for_fever  = 'true' or  /pcime_c_followup/inputs/t_non_malaria_fever  = 'true' or  /pcime_c_followup/inputs/t_malaria_fever  = 'true'"/>
       <bind nodeset="/pcime_c_followup/fever/s_has_fever" type="select1" required="true()"/>
       <bind nodeset="/pcime_c_followup/fever/n_start_new_assessment" readonly="true()" type="string" relevant=" /pcime_c_followup/inputs/t_treat_for_fever  = 'false' and ( /pcime_c_followup/fever/s_has_fever  = 'yes' or  /pcime_c_followup/temperature/s_temperature  &gt;= 38)"/>
@@ -1485,10 +1485,10 @@
       <bind nodeset="/pcime_c_followup/diarrhea/s_skin_fold" type="select1" required="true()"/>
       <bind nodeset="/pcime_c_followup/disease_progress" relevant=" /pcime_c_followup/referral  = 'no' and  /pcime_c_followup/has_danger_signs  = 'no'"/>
       <bind nodeset="/pcime_c_followup/disease_progress/s_condition_worsen" type="select1" required="true()"/>
-      <bind nodeset="/pcime_c_followup/disease_progress/s_state_improved" type="select1" required="true()" relevant=" /pcime_c_followup/disease_progress/s_condition_worsen  = 'no'"/>
+      <bind nodeset="/pcime_c_followup/disease_progress/s_state_improved" type="select1" relevant=" /pcime_c_followup/disease_progress/s_condition_worsen  = 'no'" required="true()"/>
       <bind nodeset="/pcime_c_followup/new_complaint" relevant=" /pcime_c_followup/has_danger_signs  = 'no'"/>
       <bind nodeset="/pcime_c_followup/new_complaint/s_has_new_complaint" type="select1" required="true()"/>
-      <bind nodeset="/pcime_c_followup/new_complaint/s_start_consultation" type="select1" required="true()" relevant=" /pcime_c_followup/new_complaint/s_has_new_complaint  = 'yes'"/>
+      <bind nodeset="/pcime_c_followup/new_complaint/s_start_consultation" type="select1" relevant=" /pcime_c_followup/new_complaint/s_has_new_complaint  = 'yes'" required="true()"/>
       <bind nodeset="/pcime_c_followup/group_review/submit" readonly="true()" type="string"/>
       <bind nodeset="/pcime_c_followup/group_review/r_summary" readonly="true()" type="string"/>
       <bind nodeset="/pcime_c_followup/group_review/r_patient_info" readonly="true()" type="string"/>

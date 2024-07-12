@@ -340,18 +340,18 @@ années: <output value=" /death_report/patient_age_in_years "/>
       <bind nodeset="/death_report/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /death_report/inputs/contact/date_of_birth ))"/>
       <bind nodeset="/death_report/patient_age_display" type="string" calculate="concat(concat( /death_report/patient_age_in_years , if( /death_report/patient_age_in_years =1,' year and ',' years and ')),concat( /death_report/patient_age_in_months  mod 12, if(( /death_report/patient_age_in_months  mod 12)=1,' month old',' months old')))"/>
       <bind nodeset="/death_report/patient_age_display_fr" type="string" calculate="concat(concat( /death_report/patient_age_in_years , if( /death_report/patient_age_in_years =1,' an et ',' ans et ')),concat( /death_report/patient_age_in_months  mod 12, if(( /death_report/patient_age_in_months  mod 12)=1,' mois',' mois')))"/>
-      <bind nodeset="/death_report/patient_id" type="string" calculate="../inputs/contact/_id" jr:requiredMsg="jr:itext('/death_report/patient_id:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/death_report/patient_id" type="string" required="true()" calculate="../inputs/contact/_id" jr:requiredMsg="jr:itext('/death_report/patient_id:jr:requiredMsg')"/>
       <bind nodeset="/death_report/patient_name" type="string" calculate="../inputs/contact/name"/>
       <bind nodeset="/death_report/patient_sex" type="string" calculate="../inputs/contact/sex"/>
       <bind nodeset="/death_report/patient_sex_en" type="string" calculate="if( /death_report/patient_sex  = 'male' or  /death_report/patient_sex  = 'homme' or  /death_report/patient_sex  = 'Homme', 'Male', if( /death_report/patient_sex  = 'female' or  /death_report/patient_sex  = 'femme' or  /death_report/patient_sex  = 'Femme', 'Female', ''))"/>
       <bind nodeset="/death_report/patient_sex_fr" type="string" calculate="if( /death_report/patient_sex  = 'male' or  /death_report/patient_sex  = 'homme' or  /death_report/patient_sex  = 'Homme', 'Homme', if( /death_report/patient_sex  = 'female' or  /death_report/patient_sex  = 'femme' or  /death_report/patient_sex  = 'Femme', 'Femme', ''))"/>
-      <bind nodeset="/death_report/visited_contact_uuid" type="string" calculate="../inputs/contact/parent" required="true()"/>
+      <bind nodeset="/death_report/visited_contact_uuid" type="string" required="true()" calculate="../inputs/contact/parent"/>
       <bind nodeset="/death_report/death_place" type="string" calculate="jr:choice-name( /death_report/s_death/s_death_location ,' /death_report/s_death/s_death_location ')"/>
       <bind nodeset="/death_report/p_note" readonly="true()" type="string" relevant="0"/>
-      <bind nodeset="/death_report/s_death/s_death_date" type="date" jr:constraintMsg="jr:itext('/death_report/s_death/s_death_date:jr:constraintMsg')" jr:requiredMsg="jr:itext('/death_report/s_death/s_death_date:jr:requiredMsg')" constraint=". &lt;= today()" required="true()"/>
-      <bind nodeset="/death_report/s_death/s_death_location" type="select1" jr:requiredMsg="jr:itext('/death_report/s_death/s_death_location:jr:requiredMsg')" required="true()"/>
-      <bind nodeset="/death_report/s_death/s_specify" type="string" jr:requiredMsg="jr:itext('/death_report/s_death/s_specify:jr:requiredMsg')" required="true()" relevant="selected( /death_report/s_death/s_death_location , 'other')"/>
-      <bind nodeset="/death_report/s_death/s_maternal_reason" type="string" jr:requiredMsg="jr:itext('/death_report/s_death/s_maternal_reason:jr:requiredMsg')" required="false()"/>
+      <bind nodeset="/death_report/s_death/s_death_date" type="date" jr:requiredMsg="jr:itext('/death_report/s_death/s_death_date:jr:requiredMsg')" required="true()" jr:constraintMsg="jr:itext('/death_report/s_death/s_death_date:jr:constraintMsg')" constraint=". &lt;= today()"/>
+      <bind nodeset="/death_report/s_death/s_death_location" type="select1" required="true()" jr:requiredMsg="jr:itext('/death_report/s_death/s_death_location:jr:requiredMsg')"/>
+      <bind nodeset="/death_report/s_death/s_specify" type="string" required="true()" relevant="selected( /death_report/s_death/s_death_location , 'other')" jr:requiredMsg="jr:itext('/death_report/s_death/s_specify:jr:requiredMsg')"/>
+      <bind nodeset="/death_report/s_death/s_maternal_reason" type="string" required="false()" jr:requiredMsg="jr:itext('/death_report/s_death/s_maternal_reason:jr:requiredMsg')"/>
       <bind nodeset="/death_report/s_death/s_family_death_same_symptoms" type="int" required="true()" relevant=" /death_report/s_death/s_maternal_reason != ''"/>
       <bind nodeset="/death_report/group_diagnosis/r_summary" readonly="true()" type="string"/>
       <bind nodeset="/death_report/group_diagnosis/r_patient_info" readonly="true()" type="string"/>

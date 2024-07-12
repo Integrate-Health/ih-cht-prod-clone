@@ -1517,21 +1517,21 @@
         <root>
           <item>
             <itextId>static_instance-why_not_renew_method-0</itextId>
-            <name>change_fp</name>
-            <fp_method_2>injectible</fp_method_2>
             <fp_method_1>oral_combination_pill</fp_method_1>
+            <fp_method_2>injectible</fp_method_2>
+            <name>change_fp</name>
           </item>
           <item>
             <itextId>static_instance-why_not_renew_method-1</itextId>
-            <name>forgotten_take_pills</name>
-            <fp_method_2>empty</fp_method_2>
             <fp_method_1>oral_combination_pill</fp_method_1>
+            <fp_method_2>empty</fp_method_2>
+            <name>forgotten_take_pills</name>
           </item>
           <item>
             <itextId>static_instance-why_not_renew_method-2</itextId>
-            <name>other</name>
-            <fp_method_2>injectible</fp_method_2>
             <fp_method_1>oral_combination_pill</fp_method_1>
+            <fp_method_2>injectible</fp_method_2>
+            <name>other</name>
           </item>
         </root>
       </instance>
@@ -1602,12 +1602,12 @@
       <bind nodeset="/fp_follow_up_renewal/checklist1/s_renew_method" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist1/s_renew_method:jr:requiredMsg')" required="true()"/>
       <bind nodeset="/fp_follow_up_renewal/checklist1/s_why_not_renew_method" type="select1" relevant=" /fp_follow_up_renewal/checklist1/s_renew_method  = 'no'" required="true()"/>
       <bind nodeset="/fp_follow_up_renewal/checklist1/s_other_why_renew_method" type="string" relevant=" /fp_follow_up_renewal/checklist1/s_why_not_renew_method  = 'other'" required="true()"/>
-      <bind nodeset="/fp_follow_up_renewal/checklist1/s_when_renew_method" type="date" relevant=" /fp_follow_up_renewal/checklist1/s_renew_method  = 'yes'" constraint=". &lt;= today()" required="true()"/>
+      <bind nodeset="/fp_follow_up_renewal/checklist1/s_when_renew_method" type="date" required="true()" constraint=". &lt;= today()" relevant=" /fp_follow_up_renewal/checklist1/s_renew_method  = 'yes'"/>
       <bind nodeset="/fp_follow_up_renewal/checklist1/when_renew_method" type="string" calculate="format-date-time(date-time(decimal-date-time( /fp_follow_up_renewal/checklist1/s_when_renew_method )),&quot;%d/%m/%y&quot;)"/>
       <bind nodeset="/fp_follow_up_renewal/checklist1/when_oral_renew" type="string" calculate="format-date-time(date-time(decimal-date-time( /fp_follow_up_renewal/checklist1/s_when_renew_method )+28),&quot;%d/%m/%y&quot;)"/>
       <bind nodeset="/fp_follow_up_renewal/checklist1/when_injectible_renew" type="string" calculate="format-date-time(date-time(decimal-date-time( /fp_follow_up_renewal/checklist1/s_when_renew_method )+90),&quot;%d/%m/%y&quot;)"/>
       <bind nodeset="/fp_follow_up_renewal/checklist1/when_renew_method_date" type="string" calculate="if( /fp_follow_up_renewal/fp_method  = 'oral_combination_pill',  /fp_follow_up_renewal/checklist1/when_oral_renew ,  /fp_follow_up_renewal/checklist1/when_injectible_renew )"/>
-      <bind nodeset="/fp_follow_up_renewal/s_side_effects/take_pill_correct" type="select1" relevant=" /fp_follow_up_renewal/fp_method  = 'oral_combination_pill'" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/take_pill_correct:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/fp_follow_up_renewal/s_side_effects/take_pill_correct" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/take_pill_correct:jr:requiredMsg')" relevant=" /fp_follow_up_renewal/fp_method  = 'oral_combination_pill'" required="true()"/>
       <bind nodeset="/fp_follow_up_renewal/s_side_effects/s_missing_pills" type="select1" relevant=" /fp_follow_up_renewal/s_side_effects/take_pill_correct  = 'no'"/>
       <bind nodeset="/fp_follow_up_renewal/s_side_effects/s_advice_pills" readonly="true()" type="string" relevant=" /fp_follow_up_renewal/s_side_effects/s_missing_pills  = 'minor'"/>
       <bind nodeset="/fp_follow_up_renewal/s_side_effects/s_counsel_pills_correctly" readonly="true()" type="string" relevant=" /fp_follow_up_renewal/s_side_effects/s_missing_pills  = 'major'"/>
@@ -1629,7 +1629,7 @@
       <bind nodeset="/fp_follow_up_renewal/s_side_effects/s_dizziness" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_dizziness:jr:requiredMsg')" required="true()"/>
       <bind nodeset="/fp_follow_up_renewal/s_side_effects/s_pressure" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_pressure:jr:requiredMsg')" required="true()"/>
       <bind nodeset="/fp_follow_up_renewal/s_side_effects/red_side_effects_1" type="string" calculate="if( /fp_follow_up_renewal/s_side_effects/s_weight  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_lower_libido  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_nausea  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_headaches  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_breast_pain  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_abdominal_pain  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_vertigo  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_light_bleeding  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_amenorrhea  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_dizziness  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_pressure  = 'yes', 'yes', 'no')"/>
-      <bind nodeset="/fp_follow_up_renewal/s_side_effects/s_effect_duration" type="select1" relevant=" /fp_follow_up_renewal/s_side_effects/s_weight  = 'yes' or
+      <bind nodeset="/fp_follow_up_renewal/s_side_effects/s_effect_duration" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_effect_duration:jr:requiredMsg')" relevant=" /fp_follow_up_renewal/s_side_effects/s_weight  = 'yes' or
  /fp_follow_up_renewal/s_side_effects/s_lower_libido  = 'yes' or
  /fp_follow_up_renewal/s_side_effects/s_nausea  = 'yes' or
  /fp_follow_up_renewal/s_side_effects/s_headaches  = 'yes' or
@@ -1640,24 +1640,24 @@
  /fp_follow_up_renewal/s_side_effects/s_lilttle_bleeding  = 'yes' or
  /fp_follow_up_renewal/s_side_effects/s_amenorrhea  = 'yes' or
  /fp_follow_up_renewal/s_side_effects/s_dizziness  = 'yes' or
- /fp_follow_up_renewal/s_side_effects/s_pressure  = 'yes'" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/s_side_effects/s_effect_duration:jr:requiredMsg')" required="true()"/>
+ /fp_follow_up_renewal/s_side_effects/s_pressure  = 'yes'" required="true()"/>
       <bind nodeset="/fp_follow_up_renewal/referral_side_effects/s_chest_pain" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_chest_pain:jr:requiredMsg')" required="true()"/>
       <bind nodeset="/fp_follow_up_renewal/referral_side_effects/s_severe_headaches" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_severe_headaches:jr:requiredMsg')" required="true()"/>
       <bind nodeset="/fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain:jr:requiredMsg')" required="true()"/>
       <bind nodeset="/fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating:jr:requiredMsg')" required="true()"/>
       <bind nodeset="/fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding:jr:requiredMsg')" required="true()"/>
       <bind nodeset="/fp_follow_up_renewal/referral_side_effects/ref_side_effects" type="string" calculate="if( /fp_follow_up_renewal/referral_side_effects/s_chest_pain  = 'yes' or  /fp_follow_up_renewal/referral_side_effects/s_severe_headaches  = 'yes' or  /fp_follow_up_renewal/referral_side_effects/s_strong_leg_pain  = 'yes' or  /fp_follow_up_renewal/referral_side_effects/s_abdominal_bloating  = 'yes' or  /fp_follow_up_renewal/referral_side_effects/s_abundant_bleeding  = 'yes' or  /fp_follow_up_renewal/s_side_effects/s_effect_duration  = 'more_than_3_months', 'true', 'false')"/>
-      <bind nodeset="/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects" type="select1" relevant=" /fp_follow_up_renewal/referral_side_effects/ref_side_effects  = 'true'" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/referral_side_effects/s_refer_serious_side_effects:jr:requiredMsg')" relevant=" /fp_follow_up_renewal/referral_side_effects/ref_side_effects  = 'true'" required="true()"/>
       <bind nodeset="/fp_follow_up_renewal/checklist2/s_frequent_severe_headache" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_frequent_severe_headache:jr:requiredMsg')" required="true()"/>
-      <bind nodeset="/fp_follow_up_renewal/checklist2/s_have_jaundice" type="select1" relevant=" /fp_follow_up_renewal/checklist2/s_frequent_severe_headache  = 'no'" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_jaundice:jr:requiredMsg')" required="true()"/>
-      <bind nodeset="/fp_follow_up_renewal/checklist2/s_have_chest_pains" type="select1" relevant=" /fp_follow_up_renewal/checklist2/s_have_jaundice  = 'no'" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_chest_pains:jr:requiredMsg')" required="true()"/>
-      <bind nodeset="/fp_follow_up_renewal/checklist2/s_have_breast_lesions" type="select1" relevant=" /fp_follow_up_renewal/checklist2/s_have_chest_pains  = 'no'" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_breast_lesions:jr:requiredMsg')" required="true()"/>
-      <bind nodeset="/fp_follow_up_renewal/checklist2/s_do_smoke_over_35" type="select1" relevant=" /fp_follow_up_renewal/checklist2/s_have_breast_lesions  = 'no'" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_do_smoke_over_35:jr:requiredMsg')" required="true()"/>
-      <bind nodeset="/fp_follow_up_renewal/checklist2/s_menstruation_late" type="select1" relevant=" /fp_follow_up_renewal/checklist2/s_do_smoke_over_35  = 'no'" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_menstruation_late:jr:requiredMsg')" required="true()"/>
-      <bind nodeset="/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen" type="select1" relevant=" /fp_follow_up_renewal/checklist2/s_menstruation_late  = 'no'" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen:jr:requiredMsg')" required="true()"/>
-      <bind nodeset="/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure" type="select1" relevant=" /fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen  = 'no'" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure:jr:requiredMsg')" required="true()"/>
-      <bind nodeset="/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose" type="select1" relevant=" /fp_follow_up_renewal/checklist2/s_have_high_blood_pressure  = 'no'" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose:jr:requiredMsg')" required="true()"/>
-      <bind nodeset="/fp_follow_up_renewal/checklist2/s_have_diabete" type="select1" relevant=" /fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose  = 'no'" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_diabete:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/fp_follow_up_renewal/checklist2/s_have_jaundice" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_jaundice:jr:requiredMsg')" relevant=" /fp_follow_up_renewal/checklist2/s_frequent_severe_headache  = 'no'" required="true()"/>
+      <bind nodeset="/fp_follow_up_renewal/checklist2/s_have_chest_pains" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_chest_pains:jr:requiredMsg')" relevant=" /fp_follow_up_renewal/checklist2/s_have_jaundice  = 'no'" required="true()"/>
+      <bind nodeset="/fp_follow_up_renewal/checklist2/s_have_breast_lesions" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_breast_lesions:jr:requiredMsg')" relevant=" /fp_follow_up_renewal/checklist2/s_have_chest_pains  = 'no'" required="true()"/>
+      <bind nodeset="/fp_follow_up_renewal/checklist2/s_do_smoke_over_35" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_do_smoke_over_35:jr:requiredMsg')" relevant=" /fp_follow_up_renewal/checklist2/s_have_breast_lesions  = 'no'" required="true()"/>
+      <bind nodeset="/fp_follow_up_renewal/checklist2/s_menstruation_late" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_menstruation_late:jr:requiredMsg')" relevant=" /fp_follow_up_renewal/checklist2/s_do_smoke_over_35  = 'no'" required="true()"/>
+      <bind nodeset="/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen:jr:requiredMsg')" relevant=" /fp_follow_up_renewal/checklist2/s_menstruation_late  = 'no'" required="true()"/>
+      <bind nodeset="/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_high_blood_pressure:jr:requiredMsg')" relevant=" /fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen  = 'no'" required="true()"/>
+      <bind nodeset="/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose:jr:requiredMsg')" relevant=" /fp_follow_up_renewal/checklist2/s_have_high_blood_pressure  = 'no'" required="true()"/>
+      <bind nodeset="/fp_follow_up_renewal/checklist2/s_have_diabete" type="select1" jr:requiredMsg="jr:itext('/fp_follow_up_renewal/checklist2/s_have_diabete:jr:requiredMsg')" relevant=" /fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose  = 'no'" required="true()"/>
       <bind nodeset="/fp_follow_up_renewal/checklist2/s_refer_for_health_state" type="string" calculate="if( /fp_follow_up_renewal/checklist2/s_frequent_severe_headache  = 'yes' or  /fp_follow_up_renewal/checklist2/s_have_jaundice  = 'yes' or  /fp_follow_up_renewal/checklist2/s_have_chest_pains  = 'yes' or  /fp_follow_up_renewal/checklist2/s_have_breast_lesions  = 'yes' or  /fp_follow_up_renewal/checklist2/s_do_smoke_over_35  = 'yes' or  /fp_follow_up_renewal/checklist2/s_menstruation_late  = 'yes' or  /fp_follow_up_renewal/checklist2/s_have_painful_legs_swollen  = 'yes' or  /fp_follow_up_renewal/checklist2/s_have_high_blood_pressure  = 'yes' or  /fp_follow_up_renewal/checklist2/s_on_modern_treatment_tuberculose  = 'yes' or  /fp_follow_up_renewal/checklist2/s_have_diabete  = 'yes', 'true', 'false')"/>
       <bind nodeset="/fp_follow_up_renewal/checklist2/to_change" readonly="true()" type="string" relevant=" /fp_follow_up_renewal/checklist1/s_why_not_renew_method  = 'change_fp'"/>
       <bind nodeset="/fp_follow_up_renewal/s_summary/s_sum_submission" readonly="true()" type="string"/>

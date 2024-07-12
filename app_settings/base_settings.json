@@ -309,8 +309,8 @@
   "replication_depth": [
     {
       "role": "chw_supervisor",
-      "depth": 3,
-      "report_depth": 2
+      "depth": 2,
+      "report_depth": 1
     }
   ],
   "alerts": [

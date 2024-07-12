@@ -154,11 +154,11 @@
       <bind nodeset="/data/inputs/user/facility_id" type="string"/>
       <bind nodeset="/data/inputs/user/type" type="string"/>
       <bind nodeset="/data/inputs/user/name" type="string"/>
-      <bind nodeset="/data/inputs/contact/_id" type="db:person" calculate="/data/inputs/user/contact_id" constraint="1"/>
-      <bind nodeset="/data/inputs/contact/role" readonly="true()" type="string" calculate="/data/inputs/contact/role" constraint="1"/>
-      <bind nodeset="/data/inputs/contact/username" readonly="true()" type="string" calculate="/data/inputs/user/name" constraint="1"/>
-      <bind nodeset="/data/inputs/contact/name" readonly="true()" type="string" calculate="/data/inputs/contact/name" constraint="1"/>
-      <bind nodeset="/data/inputs/contact/external_id" readonly="true()" type="string" calculate="/data/inputs/contact/external_id" constraint="1"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person" constraint="1" calculate="/data/inputs/user/contact_id"/>
+      <bind nodeset="/data/inputs/contact/role" readonly="true()" type="string" constraint="1" calculate="/data/inputs/contact/role"/>
+      <bind nodeset="/data/inputs/contact/username" readonly="true()" type="string" constraint="1" calculate="/data/inputs/user/name"/>
+      <bind nodeset="/data/inputs/contact/name" readonly="true()" type="string" constraint="1" calculate="/data/inputs/contact/name"/>
+      <bind nodeset="/data/inputs/contact/external_id" readonly="true()" type="string" constraint="1" calculate="/data/inputs/contact/external_id"/>
       <bind nodeset="/data/clinic/parent" type="db:health_center" relevant="false()"/>
       <bind nodeset="/data/clinic/external_id" type="string" readonly="true()"/>
       <bind nodeset="/data/clinic/name" type="string" required="true()"/>

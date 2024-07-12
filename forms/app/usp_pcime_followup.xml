@@ -4,896 +4,6 @@
     <h:title>Suivi PCIME USP</h:title>
     <model>
       <itext>
-        <translation lang="fr">
-          <text id="/usp_pcime_followup/inputs:label">
-            <value>Patient</value>
-          </text>
-          <text id="/usp_pcime_followup/inputs/source:label">
-            <value>Source</value>
-          </text>
-          <text id="/usp_pcime_followup/inputs/source_id:label">
-            <value>Source ID</value>
-          </text>
-          <text id="/usp_pcime_followup/inputs/contact:label">
-            <value>contact</value>
-          </text>
-          <text id="/usp_pcime_followup/inputs/contact/_id:label">
-            <value>Quel est le nom du patient</value>
-          </text>
-          <text id="/usp_pcime_followup/inputs/contact/name:label">
-            <value>Nom</value>
-          </text>
-          <text id="/usp_pcime_followup/inputs/contact/date_of_birth:label">
-            <value>Date de naissance</value>
-          </text>
-          <text id="/usp_pcime_followup/inputs/contact/sex:label">
-            <value>Sexe</value>
-          </text>
-          <text id="/usp_pcime_followup/inputs/contact/parent:label">
-            <value>Parent</value>
-          </text>
-          <text id="/usp_pcime_followup/patient_age_in_years:label">
-            <value>Age en Annees</value>
-          </text>
-          <text id="/usp_pcime_followup/patient_age_in_months:label">
-            <value>Age en Mois</value>
-          </text>
-          <text id="/usp_pcime_followup/patient_age_in_days:label">
-            <value>Age en Jours</value>
-          </text>
-          <text id="/usp_pcime_followup/visited_contact_uuid:label">
-            <value>Identifiant de la famille</value>
-          </text>
-          <text id="/usp_pcime_followup/has_simple_malaria:label">
-            <value>Fievre paludique simple</value>
-          </text>
-          <text id="/usp_pcime_followup/drugs:label">
-            <value>PRISE DES MÉDICAMENTS</value>
-          </text>
-          <text id="/usp_pcime_followup/drugs/s_received_dosage:label">
-            <value>L'enfant a-t-il reçu sa dose de médicament ?</value>
-          </text>
-          <text id="/usp_pcime_followup/drugs/s_received_dosage/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/drugs/s_received_dosage/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/drugs/s_note_congrats:label">
-            <value>Féliciter</value>
-          </text>
-          <text id="/usp_pcime_followup/drugs/s_note_advice:label">
-            <value>Conseiller</value>
-          </text>
-          <text id="/usp_pcime_followup/drugs/s_note_drugs:label">
-            <value>Demander au parent de rappeler comment administrer les médicaments</value>
-          </text>
-          <text id="/usp_pcime_followup/drugs/s_drug_well_administrated:label">
-            <value>Est-ce que le parent a bien administré les médicaments?</value>
-          </text>
-          <text id="/usp_pcime_followup/drugs/s_drug_well_administrated/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/drugs/s_drug_well_administrated/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/drugs/s_encourage:label">
-            <value>Féliciter et encourager à continuer</value>
-          </text>
-          <text id="/usp_pcime_followup/drugs/s_drugs_note_1:label">
-            <value>Démontrer comment administrer puis demander lui de vous expliquer et vous démontrer comment administrer. Vérifier sa compréhension</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note:label">
-            <value>Signes de danger</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_note_child:label">
-            <value>&lt;b style="color:red;"&gt;Demander&lt;/b&gt; Si l'enfant présente un ou plusieurs de ces signes de danger</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_cannot_drink:label">
-            <value>L'enfant est incapable de boire ou de téter</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_cannot_drink/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_cannot_drink/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_throwup:label">
-            <value>L'enfant vomit tout ce qu'il consomme</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_throwup/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_throwup/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_convulsion:label">
-            <value>L'enfant a convulsé (ANTECEDENT DE CONVULSIONS)</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_convulsion/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_convulsion/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_blood_stools:label">
-            <value>Sang dans les selles</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_blood_stools/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_blood_stools/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_often_sick:label">
-            <value>Diarrhée de plus de 14 jours</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_often_sick/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_often_sick/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_diarrhea_more_14:label">
-            <value>Enfant souvent malade</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_diarrhea_more_14/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_diarrhea_more_14/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_urine_cocacola:label">
-            <value>Urine coca cola</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_urine_cocacola/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_urine_cocacola/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_note/s_cocacola_image:label">
-            <value>Couleur Coca Cola</value>
-            <value form="image">jr://images/coca-cola.png</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe:label">
-            <value>Signes de danger</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe/n_danger_signs_exist:label">
-            <value>&lt;b style="color:red;"&gt;Observer&lt;/b&gt; Si l'enfant présente un ou plusieurs de ces signes de danger</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_unconscious:label">
-            <value>Enfant léthargique (très affaibli) ou inconscient</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_unconscious/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_unconscious/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_convulsing:label">
-            <value>L'enfant convulse actuellement</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_convulsing/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_convulsing/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_anemia:label">
-            <value>Anémie ou pâleur</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_anemia/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_anemia/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing:label">
-            <value>Respiration difficile (tirage sous costal, sifflement ou battement des ailes du nez)</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_slimming:label">
-            <value>L'enfant a un amaigrissement sévère</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_slimming/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_slimming/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research:label">
-            <value>Signes de danger</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research/n_danger_signs_child_present:label">
-            <value>&lt;b style="color:red;"&gt;Rechercher&lt;/b&gt; Si l'enfant présente un ou plusieurs de ces signes de danger</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_dehydration:label">
-            <value>Déshydratation sévère. Plis cutanés s'affichent très lentement (plus de 2 secondes) ou Yeux enfoncés</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_dehydration/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_dehydration/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_neck_stiffness:label">
-            <value>Raideur de la nuque</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_neck_stiffness/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_neck_stiffness/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_fontanelle:label">
-            <value>Fontanelle antérieure bombée</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_fontanelle/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_fontanelle/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_rashes:label">
-            <value>Eruptions cutanées</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_rashes/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_rashes/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_edema:label">
-            <value>Oedèmes des pieds</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_edema/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_edema/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs:label">
-            <value>Signes de danger</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs/s_danger_signs_continue_survey:label">
-            <value>Est-il possible de poursuivre l'évaluation?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs/s_danger_signs_continue_survey/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_danger_signs/s_danger_signs_continue_survey/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_constant:label">
-            <value>Les Constantes</value>
-          </text>
-          <text id="/usp_pcime_followup/s_constant/s_note_child_temparature:label">
-            <value>Utilisez votre thermométre pour prendre la température</value>
-          </text>
-          <text id="/usp_pcime_followup/s_constant/s_constant_child_temperature:jr:constraintMsg">
-            <value>la température doit etre entre 34.00 degre et 42.00 degre</value>
-          </text>
-          <text id="/usp_pcime_followup/s_constant/s_constant_child_temperature:label">
-            <value>Température</value>
-          </text>
-          <text id="/usp_pcime_followup/s_constant/s_confirm_child_temparature:label">
-            <value>S'il vous plaît confirmer la température à nouveau</value>
-          </text>
-          <text id="/usp_pcime_followup/s_constant/s_use_scale:label">
-            <value>Utilisez votre balance pour peser le poids de l'enfant</value>
-          </text>
-          <text id="/usp_pcime_followup/s_constant/s_constant_child_weight:jr:constraintMsg">
-            <value>les poids doit etre entre 1 et 30.00 kg</value>
-          </text>
-          <text id="/usp_pcime_followup/s_constant/s_constant_child_weight:label">
-            <value>Poids de l'enfant (kg)</value>
-          </text>
-          <text id="/usp_pcime_followup/s_constant/s_constant_child_weight:hint">
-            <value>Veuillez renseigner si vous avez la balance</value>
-          </text>
-          <text id="/usp_pcime_followup/s_constant/s_use_muac_tape:label">
-            <value>Utilisez le ruban MUAC pour mesurer le périmètre brachial</value>
-          </text>
-          <text id="/usp_pcime_followup/s_constant/s_constant_child_brachial_perimeter:jr:constraintMsg">
-            <value>Le perimetre brachial doit etre entre 50 et 350 mm</value>
-          </text>
-          <text id="/usp_pcime_followup/s_constant/s_constant_child_brachial_perimeter:label">
-            <value>Périmètre Brachial (mm)</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever:label">
-            <value>Fièvre</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/n_fever_evaluation_note:label">
-            <value>&lt;b&gt;Evaluation&lt;/b&gt;</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/s_fever_previous_fever_episode:label">
-            <value>L'enfant a-t-il un antécédant de Fievre?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/s_fever_previous_fever_episode/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/s_fever_previous_fever_episode/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/s_fever_warm_body:label">
-            <value>L'enfant a-t-il le corps chaud au toucher ou la fièvre ?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/s_fever_warm_body/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/s_fever_warm_body/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/s_fever_child_since:label">
-            <value>Depuis combien de temps (jours) l'enfant a-t-il la fièvre?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/s_fever_child_fever_everyday:label">
-            <value>La fièvre est-elle présente tous les jours?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/s_fever_child_fever_everyday/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/s_fever_child_fever_everyday/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/s_fever_child_sleep_net:label">
-            <value>L'enfant dort-il sous une moustiquaire imprégnée ?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/s_fever_child_sleep_net/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/s_fever_child_sleep_net/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/n_congrats:label">
-            <value>&lt;b&gt;Féliciter&lt;/b&gt;</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/n_advices:label">
-            <value>&lt;b&gt;Conseiller&lt;/b&gt;</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever/n_conduct_mrdt:label">
-            <value>&lt;b&gt;Merci de faire un test TDR. Attendre au moins 15 minutes avant d'interpréter le résultat &lt;/b&gt;</value>
-          </text>
-          <text id="/usp_pcime_followup/s_nutritional_state:label">
-            <value>Etat Nutritionnel</value>
-          </text>
-          <text id="/usp_pcime_followup/s_nutritional_state/n_nutritional_state_branchial_perimeter:label">
-            <value>Le Périmètre Branchial (PB) de l'enfant est <output value=" /usp_pcime_followup/s_constant/s_constant_child_brachial_perimeter "/></value>
-          </text>
-          <text id="/usp_pcime_followup/s_nutritional_state/s_nutritional_state_child_has_other_problem:label">
-            <value>Est-ce que l'enfant a un autre problème nutritionnel ?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_nutritional_state/s_nutritional_state_child_has_other_problem/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_nutritional_state/s_nutritional_state_child_has_other_problem/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_nutritional_state/s_nutritional_state_child_specify_problem:label">
-            <value>Spécifier le problème</value>
-          </text>
-          <text id="/usp_pcime_followup/s_cough_cold:label">
-            <value>TOUX OU RHUME</value>
-          </text>
-          <text id="/usp_pcime_followup/s_cough_cold/n_cough_cold_evaluation_note:label">
-            <value>&lt;b&gt;Évaluation&lt;/b&gt;</value>
-          </text>
-          <text id="/usp_pcime_followup/s_cough_cold/s_cough_cold_has_cough_cold:label">
-            <value>L'enfant a-t-il la toux ou le rhume?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_cough_cold/s_cough_cold_has_cough_cold/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_cough_cold/s_cough_cold_has_cough_cold/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_cough_cold/s_cough_cold_since:label">
-            <value>Depuis combien de temps (jours) l'enfant a-t-il la toux ou le rhume?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_cough_cold/breath_timer:label">
-            <value>**Appuyez sur la minuterie et comptez le nombre de respirations pendant 60 secondes.**</value>
-          </text>
-          <text id="/usp_pcime_followup/s_cough_cold/s_cough_cold_breathing_freq:jr:constraintMsg">
-            <value>La fréquence doit être compris entre 11 et 59</value>
-          </text>
-          <text id="/usp_pcime_followup/s_cough_cold/s_cough_cold_breathing_freq:label">
-            <value>Quelle est la fréquence respiratoire (rpm) de l'enfant?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea:label">
-            <value>DIARRHEE</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea/n_diarrhea_evaluation_note:label">
-            <value>&lt;b&gt;Evaluation&lt;/b&gt;</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_has:label">
-            <value>L'enfant a-t-il la diarrhée?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_has/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_has/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_since:label">
-            <value>Depuis combien de temps (jours) l'enfant a-t-il la diarrhée?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_mucus:label">
-            <value>Y a-t-il de la glaire dans les selles?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_mucus/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_mucus/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea/n_diarrhea_child_drink_water:label">
-            <value>Offrir à boire et observer</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_water_observe:label">
-            <value>Boit-il avec avidité? Est-il assoifé?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_water_observe/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_water_observe/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea/n_diarrhea_child_palpate:label">
-            <value>Palper</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_skin_folds:label">
-            <value>Plis cutanés s'effacent-ils lentement (moins de 2 secondes)?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_skin_folds/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_skin_folds/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever_child_TDR:label">
-            <value>Fièvre</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever_child_TDR/s_fever_child_TDR_result:label">
-            <value>Quel est le résultat du TDR?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever_child_TDR/s_fever_child_TDR_result/positive:label">
-            <value>Positif</value>
-          </text>
-          <text id="/usp_pcime_followup/s_fever_child_TDR/s_fever_child_TDR_result/negative:label">
-            <value>Negatif</value>
-          </text>
-          <text id="/usp_pcime_followup/s_health_issues:label">
-            <value>Autres problèmes de santé</value>
-          </text>
-          <text id="/usp_pcime_followup/s_health_issues/s_other_health_issues:label">
-            <value>Est-ce que l'enfant a d'autres problèmes de santé ?</value>
-          </text>
-          <text id="/usp_pcime_followup/s_health_issues/s_other_health_issues/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/s_health_issues/s_other_health_issues/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/s_health_issues/s_specify_other_issue:label">
-            <value>Spécifier</value>
-          </text>
-          <text id="/usp_pcime_followup/appetite_test:label">
-            <value>Test d'appétit</value>
-          </text>
-          <text id="/usp_pcime_followup/appetite_test/s_nutritional_state_appetite_test:label">
-            <value>Test d'appétit</value>
-          </text>
-          <text id="/usp_pcime_followup/appetite_test/s_nutritional_state_appetite_test/success:label">
-            <value>Succès</value>
-          </text>
-          <text id="/usp_pcime_followup/appetite_test/s_nutritional_state_appetite_test/failure:label">
-            <value>Echec</value>
-          </text>
-          <text id="/usp_pcime_followup/appetite_test/n_nutritional_state_note_start_treatment:label">
-            <value>Commencer à traiter l'enfant pour une malnutrition aiguë sévère (MAS) non compliquée</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review:label">
-            <value>Sommaire</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/submit:label">
-            <value>&lt;h4 style="text-align:center;"&gt;Assurez-vous de soumettre pour compléter cette action.&lt;/h4&gt;</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_summary:label">
-            <value>Détails du Patient &lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_patient_info:label">
-            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /usp_pcime_followup/patient_name "/>&lt;/h4&gt;
-&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /usp_pcime_followup/patient_sex_fr "/> &lt;/h5&gt;
-&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /usp_pcime_followup/patient_age_display_fr "/> &lt;/h5&gt;</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_symptoms:label">
-            <value>&lt;b&gt;Signes &amp; Symptômes&lt;/b&gt;</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs:label">
-            <value>**Signes de danger**</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_cannot_drink:label">
-            <value>L'enfant est incapable de boire ou de teter</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_throwup:label">
-            <value>L'enfant vomit tout ce qu'il consomme</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_convulsion:label">
-            <value>L'enfant a convulsé (ANTECEDENT DE CONVULSIONS)</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_blood_stools:label">
-            <value>Sang dans les selles: diarrhee rouge</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_often_sick:label">
-            <value>Diarrhée de plus de 14 jours</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_diarrhea_more_14:label">
-            <value>Enfant souvent malade</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_urine_cocacola:label">
-            <value>Urine coca cola</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_unconscious:label">
-            <value>Enfant léthargique (très affaibli) ou inconscient</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_convulsing:label">
-            <value>L'enfant convulse actuellement</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_anemia:label">
-            <value>Anémie ou pâleur</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_difficulty_breathing:label">
-            <value>Respiration difficile (tirage sous costal, sifflement ou battement des ailes du nez)</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_slimming:label">
-            <value>L'enfant a un amaigrissement sévère</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_dehydration:label">
-            <value>Déshydratation sévère. Plis cutanés s'affichent très lentement (plus de 2 secondes) ou Yeux enfoncés</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_neck_stiffness:label">
-            <value>Raideur de la nuque</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_fontanelle:label">
-            <value>Fontanelle antérieuré bombée</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_rashes:label">
-            <value>Eruptions cutanées</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_danger_signs_edema:label">
-            <value>Oedèmes des pieds</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_fever_no_malaria:label">
-            <value>Presence de fievre: Fièvre Non Paludique</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_malaria_fever:label">
-            <value>Presence de fievre: Fièvre Paludique</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_malaria_sign:label">
-            <value>Signes de paludisme</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_has_diarrhea:label">
-            <value>Présence de Diarrhée: Diarrhée simple</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_diarrhea_dehydration:label">
-            <value>Présence de Diarrhée: Diarrhée avec signe de déshydratation</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_dysentery:label">
-            <value>Dysenterie</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_has_cold_cough:label">
-            <value>Présence de la toux ou rhume</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_has_pneumonia:label">
-            <value>Presence de Pneumonie</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_malnutrition_MAS_uncomplicated:label">
-            <value>Signe de Malnutrition: MAS Non Compliquee</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_malnutrition_MAS_complicated:label">
-            <value>Signe de Malnutrition: MAS Compliquée</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_moderate_malnutrition:label">
-            <value>Malnutriton Aigue Moderee (MAM)</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_no_malnutrition:label">
-            <value>Pas de Malnutrition</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_other_health_issues:label">
-            <value>Autres problèmes de santé</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_refer_USP:label">
-            <value>Référer à l'USP.</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_accompany_USP:label">
-            <value>Accompagner à l'USP.</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_refer_USP_danger_signs:label">
-            <value>Merci de référer l'enfant à l'USP pour présence de signes de danger</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_accompany_USP_danger_signs:label">
-            <value>Merci d'accompagner l'enfant à l'USP pour présence de signes de danger</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_refer_health_issues:label">
-            <value>Merci de référer l'enfant à l'USP pour autre problème de santé</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_refer_USP_complicated_MAS:label">
-            <value>Merci de référer l'enfant à l'USP pour MAS Compliquée</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_refer_USP_fever_7_days:label">
-            <value>Merci de référer l'enfant à l'UPS pour MAS Non Compliquée avec perte d'appétit</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_refer_USP_not_complicated_MAS_no_appetite:label">
-            <value>Merci de référer l'enfant à l'USP pour Fièvre pendant au moins 7 jours</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_refer_high_fever:label">
-            <value>Merci de référer l'enfant à l'USP pour Fièvre élevée</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_refer_USP_cold_cough:label">
-            <value>Merci de référer l'enfant à l'USP pour Toux ou Rhume pendant au moins 14 jours</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_refer_USP_diarrhea:label">
-            <value>Merci de référer l'enfant à l'USP pour une Diarrhee de 14 jours ou plus</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_refer_USP_mucus:label">
-            <value>Merci de référer l'enfant à l'USP pour présence de glaire dans les selles</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_refer_USP_diarrhea_no_malaria_fever:label">
-            <value>Merci de référer l'enfant à l'USP pour Diarrhée avec fièvre non paludique</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_diagnosis_treatment:label">
-            <value>Diagnosis &amp; Traitment</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_pre_tranfer_treatement_1:label">
-            <value>**Traitment Pre-transfert**</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_continue_suckle:label">
-            <value>Continuer à le faire téter en cours de route (ou faire boire fréquemment du lait exprimé à la tasse)</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_drink_water:label">
-            <value>Si l'enfant est faible, faire boire de l'eau sucree ( 4 cuillerees a café de sucre dans 1 verre d'eau potable</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_warm:label">
-            <value>Maintenir le nourisson au chaud contre sa mere et bien couvert, pour qu'il n'ait pas froid sur le chemin de l'USP.</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_no_oral_ingestion:label">
-            <value>Ne donner rien à l'enfant par voie orale (liquide, medicaments, etc)</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_refer_USP_immediatly:label">
-            <value>Amener l'enfant a l'USP immediatement. Ce sont des cas tres urgents</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_paracetamol:label">
-            <value>Donner une première dose de Paracétamol selon le poids de l'enfant</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_warm_shower:label">
-            <value>Bain à l'eau oridnaire (tiède) ou enveloppement humide</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_no_paracetamol:label">
-            <value>Ne pas donner du Paracétamol</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_lumartemcoartem:label">
-            <value>Donner une première dose de LumartemCoartem selon le poids de l'enfant</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_dose_paracetamol:label">
-            <value>Donner une première dose de Paracétamol selon le poids de l'enfant</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_drink_SRO:label">
-            <value>Faire boire fréquemment des gorgées de SRO avec la tasse en cours de route (même en période d'allaitement exclusif)</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_no_SRO:label">
-            <value>Ne pas donner du SRO</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_amoxicillin:label">
-            <value>Donner une première dose de l'Amoxiciline</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_cover_child:label">
-            <value>Bien couvrir l'enfant en chemin pour éviter le refroidissement</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/r_nutritional_treatment_1:label">
-            <value>**Traitement Nutritionel**</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/r_ATPE_9:label">
-            <value>ATPE: Donner 9 sachets de Plumpy Nets par semaine</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/r_ATPE_12:label">
-            <value>ATPE: Donner 12 sachets de Plumpy Nets par semaine</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/r_ATPE_15:label">
-            <value>ATPE: Donner 15 sachets de Plumpy Nets par semaine</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/r_ATPE_21:label">
-            <value>ATPE: Donner 21 sachets de Plumpy Nets par semaine</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/r_ATPE_30:label">
-            <value>ATPE: Donner 30 sachets de Plumpy Nets par semaine</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/r_ATPE_35:label">
-            <value>ATPE: Donner 35 sachets de Plumpy Nets par semaine</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/r_ATPE_40:label">
-            <value>ATPE: Donner 40 sachets de Plumpy Nets par semaine</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/s_atpe_given_quantity:label">
-            <value>Nombre de sachets d'ATPE donnés à la famille</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice:label">
-            <value>Conseils nutrionnels</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_1:label">
-            <value>**Nutritional advices**</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_breastfeed:label">
-            <value>Allaiter au sein aussi souvent que l'enfant le réclame, jour et nuit (au moins 8 à 12 fois par jour)</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_breastfeed_always:label">
-            <value>Allaiter au sein aussi souvent que l'enfant le réclame, jour et nuit (au moins 8 à 12 fois par jour)</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_2_meal_day:label">
-            <value>&lt;b&gt;Frequence&lt;/b&gt;: 2 repas par jour</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_quantity:label">
-            <value>&lt;b&gt;Quantite&lt;/b&gt;: 2 à 3 cuillerées à soupe à chaque repas</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_thikness:label">
-            <value>&lt;b&gt;Epaisseur&lt;/b&gt;: Sous forme de bouillie assez épaisse</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_basic_food:label">
-            <value>Commencer par les aliments de base (maïs, blé, riz, mil, igname, sorgho), purée de banane, purée d'igname ou de patate douce</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_breastfeed_often:label">
-            <value>Allaiter au sein aussi souvent que l'enfant le réclame, jour et nuit (au moins 8 à 12 fois par jour)</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_2_3_meal_day:label">
-            <value>&lt;b&gt;Frequence&lt;/b&gt;: 2 a 3 repas par jour</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_cup_250:label">
-            <value>&lt;b&gt;Quantite&lt;/b&gt;: 1/4 tasse de 250 ml</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_thickness_bis:label">
-            <value>&lt;b&gt;Epaisseur&lt;/b&gt;: Sous forme de bouillie assez épaisse</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_variety:label">
-            <value>&lt;b&gt;Variete&lt;/b&gt;: Donner des repas composes des trois types d'aliments suivants Poisson, viande, lait, niebe</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_breastfeed_often_bis:label">
-            <value>Allaiter au sein aussi souvent que l'enfant le réclame, jour et nuit (au moins 8 à 12 fois par jour)</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_2_3_meal_bis:label">
-            <value>&lt;b&gt;Frequence&lt;/b&gt;: 2 a 3 repas par jour</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_half_cup:label">
-            <value>&lt;b&gt;Quantite&lt;/b&gt;: 1/2 tasse de 250 ml</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_thickness_ter:label">
-            <value>&lt;b&gt;Epaisseur&lt;/b&gt;: Sous forme de bouillie assez épaisse</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_variety_bis:label">
-            <value>&lt;b&gt;Variété&lt;/b&gt;: Donner des repas composes des trois types d'aliments suivants 1- Poisson, viande, lait, niébé, arachide, soja, haricot, moutarde de néré, moringa; oeuf 2- Fruits et légumes 3- Mais, mil, riz, huile, manioc, sorgho, igname, miel, patate douce</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_breastfeed_often_ter:label">
-            <value>Allaiter au sein aussi souvent que l'enfant le réclame, jour et nuit (au moins 8 à 12 fois par jour)</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_4_5_meal_bis:label">
-            <value>&lt;b&gt;Fréquence&lt;/b&gt;: 4 à 5 repas par jour</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_34_cup:label">
-            <value>&lt;b&gt;Quantité&lt;/b&gt;: 3/4 tasse de 250 ml</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_thickness_quart:label">
-            <value>Epaisseur: Donner des aliments familiers coupes en petits morceaux</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_variety_ter:label">
-            <value>&lt;b&gt;Variété&lt;/b&gt;: Donner des repas composes des trois types d'aliments suivants 1- Poisson, viande, lait, niebe 2- Fruits et legumes 3- Mais, mil riz, huile, manioc, sorgho, igname, miel, patate douce</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_special_instruction_1:label">
-            <value>**Instructions Spéciales**</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_MAM:label">
-            <value>&lt;b&gt;Malnutrition Aigüe modérée&lt;/b&gt;</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_malnutrition:label">
-            <value>&lt;b&gt;Malnutrition Aigüe Non Compliquée&lt;/b&gt;</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_malnutrition_ATPE_posologie:label">
-            <value>Expliquer aux parents comment donner l'ATPE à la maison</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_malnutrition_give_breast:label">
-            <value>Donner le sein à l'enfant avant de lui donner ATPE s'il est allaité</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_malnutrition_only_ATPE:label">
-            <value>L'ATPE est la seule nourriture dont l'enfant a besoin pour guérir</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_malnutrition_wash_hand:label">
-            <value>Laver les mains avec de l'eau et du savon avant de donner à manger à l'enfant</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_malnutrition_wash_hand_mouth:label">
-            <value>Laver les mains et la bouche de l'enfant avec de l'eau avant et après le repas</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_malnutrition_small_ATPE:label">
-            <value>Offrir régulièrement de petites quantités d'ATPE à l'enfant en l'encourageant à manger</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_keep_bag:label">
-            <value>Garder le sachet dans un récipient propre et le couvrir</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_always_give_water:label">
-            <value>Donner toujours de l'eau à boire à l'enfant</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_never_force_eat:label">
-            <value>Ne jamais forcer l'enfant à manger</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/car_advices/r_car_advices:label">
-            <value>**Conseils CAR**</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/car_advices/r_uncomplicated_continue_breastfeed:label">
-            <value>Continuer l'allaitement</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/car_advices/r_uncomplicated_increase_drinking_food:label">
-            <value>Augmenter les liquides a boire et les aliments</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/car_advices/r_uncomplicated_contact_ASC:label">
-            <value>Contacter l'ASC ou aller a l'USP immediatement si:</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/car_advices/r_uncomplicated_unable_to_drink:label">
-            <value>-L'enfant est incapable de de boire, teter ou manger</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/car_advices/r_uncomplicated_sicker:label">
-            <value>-L'enfant devient plus malade</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/fever/r_fever:label">
-            <value>**Fièvre**</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/fever/r_uncomplicated_fever_persist:label">
-            <value>-La fièvre persiste</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/fever/r_uncomplicated_develop_fever:label">
-            <value>-L'enfant développe une fièvre</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/fever/r_uncomplicated_breathing_diffilcuties:label">
-            <value>-L'enfant développe des difficultés respiratoires</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/fever/r_uncomplicated_breathing_quickly:label">
-            <value>-L'entant développe des difficultés respiratoires ou respiration rapide</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/fever/r_uncomplicated_give_advices:label">
-            <value>Donner des conseils nutritionnel</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/s_have_you_refer_child:label">
-            <value>Est-ce que vous avez référé l'enfant ?</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/s_have_you_refer_child/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/s_have_you_refer_child/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/s_why_not:label">
-            <value>Pour quelle raison?</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/followup:label">
-            <value>Suivi</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_followup_next_visit_no_referral:label">
-            <value>La prochaine visite de Suivi PCIME est dans 24 heures</value>
-          </text>
-          <text id="/usp_pcime_followup/group_review/r_followup_next_visit_any_referral:label">
-            <value>La prochaine visite de Suivi Referencement est dans 24 heures</value>
-          </text>
-          <text id="/usp_pcime_followup/inputs/contact/_id:hint">
-            <value>-</value>
-          </text>
-          <text id="/usp_pcime_followup/patient_id:label">
-            <value>-</value>
-          </text>
-          <text id="/usp_pcime_followup/patient_name:label">
-            <value>-</value>
-          </text>
-        </translation>
         <translation lang="en">
           <text id="/usp_pcime_followup/inputs:label">
             <value>Patient</value>
@@ -1784,6 +894,896 @@
             <value>-</value>
           </text>
         </translation>
+        <translation lang="fr">
+          <text id="/usp_pcime_followup/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/usp_pcime_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/usp_pcime_followup/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/usp_pcime_followup/inputs/contact:label">
+            <value>contact</value>
+          </text>
+          <text id="/usp_pcime_followup/inputs/contact/_id:label">
+            <value>Quel est le nom du patient</value>
+          </text>
+          <text id="/usp_pcime_followup/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/usp_pcime_followup/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/usp_pcime_followup/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/usp_pcime_followup/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/usp_pcime_followup/patient_age_in_years:label">
+            <value>Age en Annees</value>
+          </text>
+          <text id="/usp_pcime_followup/patient_age_in_months:label">
+            <value>Age en Mois</value>
+          </text>
+          <text id="/usp_pcime_followup/patient_age_in_days:label">
+            <value>Age en Jours</value>
+          </text>
+          <text id="/usp_pcime_followup/visited_contact_uuid:label">
+            <value>Identifiant de la famille</value>
+          </text>
+          <text id="/usp_pcime_followup/has_simple_malaria:label">
+            <value>Fievre paludique simple</value>
+          </text>
+          <text id="/usp_pcime_followup/drugs:label">
+            <value>PRISE DES MÉDICAMENTS</value>
+          </text>
+          <text id="/usp_pcime_followup/drugs/s_received_dosage:label">
+            <value>L'enfant a-t-il reçu sa dose de médicament ?</value>
+          </text>
+          <text id="/usp_pcime_followup/drugs/s_received_dosage/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/drugs/s_received_dosage/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/drugs/s_note_congrats:label">
+            <value>Féliciter</value>
+          </text>
+          <text id="/usp_pcime_followup/drugs/s_note_advice:label">
+            <value>Conseiller</value>
+          </text>
+          <text id="/usp_pcime_followup/drugs/s_note_drugs:label">
+            <value>Demander au parent de rappeler comment administrer les médicaments</value>
+          </text>
+          <text id="/usp_pcime_followup/drugs/s_drug_well_administrated:label">
+            <value>Est-ce que le parent a bien administré les médicaments?</value>
+          </text>
+          <text id="/usp_pcime_followup/drugs/s_drug_well_administrated/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/drugs/s_drug_well_administrated/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/drugs/s_encourage:label">
+            <value>Féliciter et encourager à continuer</value>
+          </text>
+          <text id="/usp_pcime_followup/drugs/s_drugs_note_1:label">
+            <value>Démontrer comment administrer puis demander lui de vous expliquer et vous démontrer comment administrer. Vérifier sa compréhension</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_note_child:label">
+            <value>&lt;b style="color:red;"&gt;Demander&lt;/b&gt; Si l'enfant présente un ou plusieurs de ces signes de danger</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_cannot_drink:label">
+            <value>L'enfant est incapable de boire ou de téter</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_cannot_drink/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_cannot_drink/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_throwup:label">
+            <value>L'enfant vomit tout ce qu'il consomme</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_throwup/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_throwup/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_convulsion:label">
+            <value>L'enfant a convulsé (ANTECEDENT DE CONVULSIONS)</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_convulsion/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_convulsion/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_blood_stools:label">
+            <value>Sang dans les selles</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_blood_stools/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_blood_stools/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_often_sick:label">
+            <value>Diarrhée de plus de 14 jours</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_often_sick/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_child_often_sick/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_diarrhea_more_14:label">
+            <value>Enfant souvent malade</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_diarrhea_more_14/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_diarrhea_more_14/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_urine_cocacola:label">
+            <value>Urine coca cola</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_urine_cocacola/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_danger_signs_urine_cocacola/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_note/s_cocacola_image:label">
+            <value>Couleur Coca Cola</value>
+            <value form="image">jr://images/coca-cola.png</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe/n_danger_signs_exist:label">
+            <value>&lt;b style="color:red;"&gt;Observer&lt;/b&gt; Si l'enfant présente un ou plusieurs de ces signes de danger</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_unconscious:label">
+            <value>Enfant léthargique (très affaibli) ou inconscient</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_unconscious/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_unconscious/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_convulsing:label">
+            <value>L'enfant convulse actuellement</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_convulsing/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_convulsing/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_anemia:label">
+            <value>Anémie ou pâleur</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_anemia/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_anemia/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing:label">
+            <value>Respiration difficile (tirage sous costal, sifflement ou battement des ailes du nez)</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_difficulty_breathing/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_slimming:label">
+            <value>L'enfant a un amaigrissement sévère</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_slimming/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_observe/s_danger_signs_child_slimming/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research/n_danger_signs_child_present:label">
+            <value>&lt;b style="color:red;"&gt;Rechercher&lt;/b&gt; Si l'enfant présente un ou plusieurs de ces signes de danger</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_dehydration:label">
+            <value>Déshydratation sévère. Plis cutanés s'affichent très lentement (plus de 2 secondes) ou Yeux enfoncés</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_dehydration/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_dehydration/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_neck_stiffness:label">
+            <value>Raideur de la nuque</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_neck_stiffness/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_neck_stiffness/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_fontanelle:label">
+            <value>Fontanelle antérieure bombée</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_fontanelle/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_fontanelle/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_rashes:label">
+            <value>Eruptions cutanées</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_rashes/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_rashes/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_edema:label">
+            <value>Oedèmes des pieds</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_edema/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs_child_research/s_danger_signs_edema/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs/s_danger_signs_continue_survey:label">
+            <value>Est-il possible de poursuivre l'évaluation?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs/s_danger_signs_continue_survey/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_danger_signs/s_danger_signs_continue_survey/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_constant:label">
+            <value>Les Constantes</value>
+          </text>
+          <text id="/usp_pcime_followup/s_constant/s_note_child_temparature:label">
+            <value>Utilisez votre thermométre pour prendre la température</value>
+          </text>
+          <text id="/usp_pcime_followup/s_constant/s_constant_child_temperature:jr:constraintMsg">
+            <value>la température doit etre entre 34.00 degre et 42.00 degre</value>
+          </text>
+          <text id="/usp_pcime_followup/s_constant/s_constant_child_temperature:label">
+            <value>Température</value>
+          </text>
+          <text id="/usp_pcime_followup/s_constant/s_confirm_child_temparature:label">
+            <value>S'il vous plaît confirmer la température à nouveau</value>
+          </text>
+          <text id="/usp_pcime_followup/s_constant/s_use_scale:label">
+            <value>Utilisez votre balance pour peser le poids de l'enfant</value>
+          </text>
+          <text id="/usp_pcime_followup/s_constant/s_constant_child_weight:jr:constraintMsg">
+            <value>les poids doit etre entre 1 et 30.00 kg</value>
+          </text>
+          <text id="/usp_pcime_followup/s_constant/s_constant_child_weight:label">
+            <value>Poids de l'enfant (kg)</value>
+          </text>
+          <text id="/usp_pcime_followup/s_constant/s_constant_child_weight:hint">
+            <value>Veuillez renseigner si vous avez la balance</value>
+          </text>
+          <text id="/usp_pcime_followup/s_constant/s_use_muac_tape:label">
+            <value>Utilisez le ruban MUAC pour mesurer le périmètre brachial</value>
+          </text>
+          <text id="/usp_pcime_followup/s_constant/s_constant_child_brachial_perimeter:jr:constraintMsg">
+            <value>Le perimetre brachial doit etre entre 50 et 350 mm</value>
+          </text>
+          <text id="/usp_pcime_followup/s_constant/s_constant_child_brachial_perimeter:label">
+            <value>Périmètre Brachial (mm)</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever:label">
+            <value>Fièvre</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/n_fever_evaluation_note:label">
+            <value>&lt;b&gt;Evaluation&lt;/b&gt;</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/s_fever_previous_fever_episode:label">
+            <value>L'enfant a-t-il un antécédant de Fievre?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/s_fever_previous_fever_episode/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/s_fever_previous_fever_episode/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/s_fever_warm_body:label">
+            <value>L'enfant a-t-il le corps chaud au toucher ou la fièvre ?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/s_fever_warm_body/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/s_fever_warm_body/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/s_fever_child_since:label">
+            <value>Depuis combien de temps (jours) l'enfant a-t-il la fièvre?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/s_fever_child_fever_everyday:label">
+            <value>La fièvre est-elle présente tous les jours?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/s_fever_child_fever_everyday/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/s_fever_child_fever_everyday/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/s_fever_child_sleep_net:label">
+            <value>L'enfant dort-il sous une moustiquaire imprégnée ?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/s_fever_child_sleep_net/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/s_fever_child_sleep_net/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/n_congrats:label">
+            <value>&lt;b&gt;Féliciter&lt;/b&gt;</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/n_advices:label">
+            <value>&lt;b&gt;Conseiller&lt;/b&gt;</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever/n_conduct_mrdt:label">
+            <value>&lt;b&gt;Merci de faire un test TDR. Attendre au moins 15 minutes avant d'interpréter le résultat &lt;/b&gt;</value>
+          </text>
+          <text id="/usp_pcime_followup/s_nutritional_state:label">
+            <value>Etat Nutritionnel</value>
+          </text>
+          <text id="/usp_pcime_followup/s_nutritional_state/n_nutritional_state_branchial_perimeter:label">
+            <value>Le Périmètre Branchial (PB) de l'enfant est <output value=" /usp_pcime_followup/s_constant/s_constant_child_brachial_perimeter "/></value>
+          </text>
+          <text id="/usp_pcime_followup/s_nutritional_state/s_nutritional_state_child_has_other_problem:label">
+            <value>Est-ce que l'enfant a un autre problème nutritionnel ?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_nutritional_state/s_nutritional_state_child_has_other_problem/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_nutritional_state/s_nutritional_state_child_has_other_problem/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_nutritional_state/s_nutritional_state_child_specify_problem:label">
+            <value>Spécifier le problème</value>
+          </text>
+          <text id="/usp_pcime_followup/s_cough_cold:label">
+            <value>TOUX OU RHUME</value>
+          </text>
+          <text id="/usp_pcime_followup/s_cough_cold/n_cough_cold_evaluation_note:label">
+            <value>&lt;b&gt;Évaluation&lt;/b&gt;</value>
+          </text>
+          <text id="/usp_pcime_followup/s_cough_cold/s_cough_cold_has_cough_cold:label">
+            <value>L'enfant a-t-il la toux ou le rhume?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_cough_cold/s_cough_cold_has_cough_cold/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_cough_cold/s_cough_cold_has_cough_cold/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_cough_cold/s_cough_cold_since:label">
+            <value>Depuis combien de temps (jours) l'enfant a-t-il la toux ou le rhume?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_cough_cold/breath_timer:label">
+            <value>**Appuyez sur la minuterie et comptez le nombre de respirations pendant 60 secondes.**</value>
+          </text>
+          <text id="/usp_pcime_followup/s_cough_cold/s_cough_cold_breathing_freq:jr:constraintMsg">
+            <value>La fréquence doit être compris entre 11 et 59</value>
+          </text>
+          <text id="/usp_pcime_followup/s_cough_cold/s_cough_cold_breathing_freq:label">
+            <value>Quelle est la fréquence respiratoire (rpm) de l'enfant?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea:label">
+            <value>DIARRHEE</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea/n_diarrhea_evaluation_note:label">
+            <value>&lt;b&gt;Evaluation&lt;/b&gt;</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_has:label">
+            <value>L'enfant a-t-il la diarrhée?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_has/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_has/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_since:label">
+            <value>Depuis combien de temps (jours) l'enfant a-t-il la diarrhée?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_mucus:label">
+            <value>Y a-t-il de la glaire dans les selles?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_mucus/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_mucus/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea/n_diarrhea_child_drink_water:label">
+            <value>Offrir à boire et observer</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_water_observe:label">
+            <value>Boit-il avec avidité? Est-il assoifé?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_water_observe/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_water_observe/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea/n_diarrhea_child_palpate:label">
+            <value>Palper</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_skin_folds:label">
+            <value>Plis cutanés s'effacent-ils lentement (moins de 2 secondes)?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_skin_folds/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_skin_folds/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever_child_TDR:label">
+            <value>Fièvre</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever_child_TDR/s_fever_child_TDR_result:label">
+            <value>Quel est le résultat du TDR?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever_child_TDR/s_fever_child_TDR_result/positive:label">
+            <value>Positif</value>
+          </text>
+          <text id="/usp_pcime_followup/s_fever_child_TDR/s_fever_child_TDR_result/negative:label">
+            <value>Negatif</value>
+          </text>
+          <text id="/usp_pcime_followup/s_health_issues:label">
+            <value>Autres problèmes de santé</value>
+          </text>
+          <text id="/usp_pcime_followup/s_health_issues/s_other_health_issues:label">
+            <value>Est-ce que l'enfant a d'autres problèmes de santé ?</value>
+          </text>
+          <text id="/usp_pcime_followup/s_health_issues/s_other_health_issues/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/s_health_issues/s_other_health_issues/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/s_health_issues/s_specify_other_issue:label">
+            <value>Spécifier</value>
+          </text>
+          <text id="/usp_pcime_followup/appetite_test:label">
+            <value>Test d'appétit</value>
+          </text>
+          <text id="/usp_pcime_followup/appetite_test/s_nutritional_state_appetite_test:label">
+            <value>Test d'appétit</value>
+          </text>
+          <text id="/usp_pcime_followup/appetite_test/s_nutritional_state_appetite_test/success:label">
+            <value>Succès</value>
+          </text>
+          <text id="/usp_pcime_followup/appetite_test/s_nutritional_state_appetite_test/failure:label">
+            <value>Echec</value>
+          </text>
+          <text id="/usp_pcime_followup/appetite_test/n_nutritional_state_note_start_treatment:label">
+            <value>Commencer à traiter l'enfant pour une malnutrition aiguë sévère (MAS) non compliquée</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review:label">
+            <value>Sommaire</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Assurez-vous de soumettre pour compléter cette action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_summary:label">
+            <value>Détails du Patient &lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /usp_pcime_followup/patient_name "/>&lt;/h4&gt;
+&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /usp_pcime_followup/patient_sex_fr "/> &lt;/h5&gt;
+&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /usp_pcime_followup/patient_age_display_fr "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_symptoms:label">
+            <value>&lt;b&gt;Signes &amp; Symptômes&lt;/b&gt;</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs:label">
+            <value>**Signes de danger**</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_cannot_drink:label">
+            <value>L'enfant est incapable de boire ou de teter</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_throwup:label">
+            <value>L'enfant vomit tout ce qu'il consomme</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_convulsion:label">
+            <value>L'enfant a convulsé (ANTECEDENT DE CONVULSIONS)</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_blood_stools:label">
+            <value>Sang dans les selles: diarrhee rouge</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_often_sick:label">
+            <value>Diarrhée de plus de 14 jours</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_diarrhea_more_14:label">
+            <value>Enfant souvent malade</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_urine_cocacola:label">
+            <value>Urine coca cola</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_unconscious:label">
+            <value>Enfant léthargique (très affaibli) ou inconscient</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_convulsing:label">
+            <value>L'enfant convulse actuellement</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_anemia:label">
+            <value>Anémie ou pâleur</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_difficulty_breathing:label">
+            <value>Respiration difficile (tirage sous costal, sifflement ou battement des ailes du nez)</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_child_slimming:label">
+            <value>L'enfant a un amaigrissement sévère</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_dehydration:label">
+            <value>Déshydratation sévère. Plis cutanés s'affichent très lentement (plus de 2 secondes) ou Yeux enfoncés</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_neck_stiffness:label">
+            <value>Raideur de la nuque</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_fontanelle:label">
+            <value>Fontanelle antérieuré bombée</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_rashes:label">
+            <value>Eruptions cutanées</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_danger_signs_edema:label">
+            <value>Oedèmes des pieds</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_fever_no_malaria:label">
+            <value>Presence de fievre: Fièvre Non Paludique</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_malaria_fever:label">
+            <value>Presence de fievre: Fièvre Paludique</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_malaria_sign:label">
+            <value>Signes de paludisme</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_has_diarrhea:label">
+            <value>Présence de Diarrhée: Diarrhée simple</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_diarrhea_dehydration:label">
+            <value>Présence de Diarrhée: Diarrhée avec signe de déshydratation</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_dysentery:label">
+            <value>Dysenterie</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_has_cold_cough:label">
+            <value>Présence de la toux ou rhume</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_has_pneumonia:label">
+            <value>Presence de Pneumonie</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_malnutrition_MAS_uncomplicated:label">
+            <value>Signe de Malnutrition: MAS Non Compliquee</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_malnutrition_MAS_complicated:label">
+            <value>Signe de Malnutrition: MAS Compliquée</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_moderate_malnutrition:label">
+            <value>Malnutriton Aigue Moderee (MAM)</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_no_malnutrition:label">
+            <value>Pas de Malnutrition</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_other_health_issues:label">
+            <value>Autres problèmes de santé</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_refer_USP:label">
+            <value>Référer à l'USP.</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_accompany_USP:label">
+            <value>Accompagner à l'USP.</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_refer_USP_danger_signs:label">
+            <value>Merci de référer l'enfant à l'USP pour présence de signes de danger</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_accompany_USP_danger_signs:label">
+            <value>Merci d'accompagner l'enfant à l'USP pour présence de signes de danger</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_refer_health_issues:label">
+            <value>Merci de référer l'enfant à l'USP pour autre problème de santé</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_refer_USP_complicated_MAS:label">
+            <value>Merci de référer l'enfant à l'USP pour MAS Compliquée</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_refer_USP_fever_7_days:label">
+            <value>Merci de référer l'enfant à l'UPS pour MAS Non Compliquée avec perte d'appétit</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_refer_USP_not_complicated_MAS_no_appetite:label">
+            <value>Merci de référer l'enfant à l'USP pour Fièvre pendant au moins 7 jours</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_refer_high_fever:label">
+            <value>Merci de référer l'enfant à l'USP pour Fièvre élevée</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_refer_USP_cold_cough:label">
+            <value>Merci de référer l'enfant à l'USP pour Toux ou Rhume pendant au moins 14 jours</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_refer_USP_diarrhea:label">
+            <value>Merci de référer l'enfant à l'USP pour une Diarrhee de 14 jours ou plus</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_refer_USP_mucus:label">
+            <value>Merci de référer l'enfant à l'USP pour présence de glaire dans les selles</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_refer_USP_diarrhea_no_malaria_fever:label">
+            <value>Merci de référer l'enfant à l'USP pour Diarrhée avec fièvre non paludique</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_diagnosis_treatment:label">
+            <value>Diagnosis &amp; Traitment</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_pre_tranfer_treatement_1:label">
+            <value>**Traitment Pre-transfert**</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_continue_suckle:label">
+            <value>Continuer à le faire téter en cours de route (ou faire boire fréquemment du lait exprimé à la tasse)</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_drink_water:label">
+            <value>Si l'enfant est faible, faire boire de l'eau sucree ( 4 cuillerees a café de sucre dans 1 verre d'eau potable</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_warm:label">
+            <value>Maintenir le nourisson au chaud contre sa mere et bien couvert, pour qu'il n'ait pas froid sur le chemin de l'USP.</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_no_oral_ingestion:label">
+            <value>Ne donner rien à l'enfant par voie orale (liquide, medicaments, etc)</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_refer_USP_immediatly:label">
+            <value>Amener l'enfant a l'USP immediatement. Ce sont des cas tres urgents</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_paracetamol:label">
+            <value>Donner une première dose de Paracétamol selon le poids de l'enfant</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_warm_shower:label">
+            <value>Bain à l'eau oridnaire (tiède) ou enveloppement humide</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_no_paracetamol:label">
+            <value>Ne pas donner du Paracétamol</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_lumartemcoartem:label">
+            <value>Donner une première dose de LumartemCoartem selon le poids de l'enfant</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_dose_paracetamol:label">
+            <value>Donner une première dose de Paracétamol selon le poids de l'enfant</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_drink_SRO:label">
+            <value>Faire boire fréquemment des gorgées de SRO avec la tasse en cours de route (même en période d'allaitement exclusif)</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_no_SRO:label">
+            <value>Ne pas donner du SRO</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_amoxicillin:label">
+            <value>Donner une première dose de l'Amoxiciline</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_pre_tranfer_treatement/r_cover_child:label">
+            <value>Bien couvrir l'enfant en chemin pour éviter le refroidissement</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/r_nutritional_treatment_1:label">
+            <value>**Traitement Nutritionel**</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/r_ATPE_9:label">
+            <value>ATPE: Donner 9 sachets de Plumpy Nets par semaine</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/r_ATPE_12:label">
+            <value>ATPE: Donner 12 sachets de Plumpy Nets par semaine</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/r_ATPE_15:label">
+            <value>ATPE: Donner 15 sachets de Plumpy Nets par semaine</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/r_ATPE_21:label">
+            <value>ATPE: Donner 21 sachets de Plumpy Nets par semaine</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/r_ATPE_30:label">
+            <value>ATPE: Donner 30 sachets de Plumpy Nets par semaine</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/r_ATPE_35:label">
+            <value>ATPE: Donner 35 sachets de Plumpy Nets par semaine</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/r_ATPE_40:label">
+            <value>ATPE: Donner 40 sachets de Plumpy Nets par semaine</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_treatment/s_atpe_given_quantity:label">
+            <value>Nombre de sachets d'ATPE donnés à la famille</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice:label">
+            <value>Conseils nutrionnels</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_1:label">
+            <value>**Nutritional advices**</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_breastfeed:label">
+            <value>Allaiter au sein aussi souvent que l'enfant le réclame, jour et nuit (au moins 8 à 12 fois par jour)</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_breastfeed_always:label">
+            <value>Allaiter au sein aussi souvent que l'enfant le réclame, jour et nuit (au moins 8 à 12 fois par jour)</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_2_meal_day:label">
+            <value>&lt;b&gt;Frequence&lt;/b&gt;: 2 repas par jour</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_quantity:label">
+            <value>&lt;b&gt;Quantite&lt;/b&gt;: 2 à 3 cuillerées à soupe à chaque repas</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_thikness:label">
+            <value>&lt;b&gt;Epaisseur&lt;/b&gt;: Sous forme de bouillie assez épaisse</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_basic_food:label">
+            <value>Commencer par les aliments de base (maïs, blé, riz, mil, igname, sorgho), purée de banane, purée d'igname ou de patate douce</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_breastfeed_often:label">
+            <value>Allaiter au sein aussi souvent que l'enfant le réclame, jour et nuit (au moins 8 à 12 fois par jour)</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_2_3_meal_day:label">
+            <value>&lt;b&gt;Frequence&lt;/b&gt;: 2 a 3 repas par jour</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_cup_250:label">
+            <value>&lt;b&gt;Quantite&lt;/b&gt;: 1/4 tasse de 250 ml</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_thickness_bis:label">
+            <value>&lt;b&gt;Epaisseur&lt;/b&gt;: Sous forme de bouillie assez épaisse</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_variety:label">
+            <value>&lt;b&gt;Variete&lt;/b&gt;: Donner des repas composes des trois types d'aliments suivants Poisson, viande, lait, niebe</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_breastfeed_often_bis:label">
+            <value>Allaiter au sein aussi souvent que l'enfant le réclame, jour et nuit (au moins 8 à 12 fois par jour)</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_2_3_meal_bis:label">
+            <value>&lt;b&gt;Frequence&lt;/b&gt;: 2 a 3 repas par jour</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_half_cup:label">
+            <value>&lt;b&gt;Quantite&lt;/b&gt;: 1/2 tasse de 250 ml</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_thickness_ter:label">
+            <value>&lt;b&gt;Epaisseur&lt;/b&gt;: Sous forme de bouillie assez épaisse</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_variety_bis:label">
+            <value>&lt;b&gt;Variété&lt;/b&gt;: Donner des repas composes des trois types d'aliments suivants 1- Poisson, viande, lait, niébé, arachide, soja, haricot, moutarde de néré, moringa; oeuf 2- Fruits et légumes 3- Mais, mil, riz, huile, manioc, sorgho, igname, miel, patate douce</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_breastfeed_often_ter:label">
+            <value>Allaiter au sein aussi souvent que l'enfant le réclame, jour et nuit (au moins 8 à 12 fois par jour)</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_4_5_meal_bis:label">
+            <value>&lt;b&gt;Fréquence&lt;/b&gt;: 4 à 5 repas par jour</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_advice_34_cup:label">
+            <value>&lt;b&gt;Quantité&lt;/b&gt;: 3/4 tasse de 250 ml</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_thickness_quart:label">
+            <value>Epaisseur: Donner des aliments familiers coupes en petits morceaux</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_nutritional_advice/r_nutritional_variety_ter:label">
+            <value>&lt;b&gt;Variété&lt;/b&gt;: Donner des repas composes des trois types d'aliments suivants 1- Poisson, viande, lait, niebe 2- Fruits et legumes 3- Mais, mil riz, huile, manioc, sorgho, igname, miel, patate douce</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_special_instruction_1:label">
+            <value>**Instructions Spéciales**</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_MAM:label">
+            <value>&lt;b&gt;Malnutrition Aigüe modérée&lt;/b&gt;</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_malnutrition:label">
+            <value>&lt;b&gt;Malnutrition Aigüe Non Compliquée&lt;/b&gt;</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_malnutrition_ATPE_posologie:label">
+            <value>Expliquer aux parents comment donner l'ATPE à la maison</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_malnutrition_give_breast:label">
+            <value>Donner le sein à l'enfant avant de lui donner ATPE s'il est allaité</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_malnutrition_only_ATPE:label">
+            <value>L'ATPE est la seule nourriture dont l'enfant a besoin pour guérir</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_malnutrition_wash_hand:label">
+            <value>Laver les mains avec de l'eau et du savon avant de donner à manger à l'enfant</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_malnutrition_wash_hand_mouth:label">
+            <value>Laver les mains et la bouche de l'enfant avec de l'eau avant et après le repas</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_malnutrition_small_ATPE:label">
+            <value>Offrir régulièrement de petites quantités d'ATPE à l'enfant en l'encourageant à manger</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_keep_bag:label">
+            <value>Garder le sachet dans un récipient propre et le couvrir</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_always_give_water:label">
+            <value>Donner toujours de l'eau à boire à l'enfant</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_special_instruction/r_uncomplicated_never_force_eat:label">
+            <value>Ne jamais forcer l'enfant à manger</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/car_advices/r_car_advices:label">
+            <value>**Conseils CAR**</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/car_advices/r_uncomplicated_continue_breastfeed:label">
+            <value>Continuer l'allaitement</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/car_advices/r_uncomplicated_increase_drinking_food:label">
+            <value>Augmenter les liquides a boire et les aliments</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/car_advices/r_uncomplicated_contact_ASC:label">
+            <value>Contacter l'ASC ou aller a l'USP immediatement si:</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/car_advices/r_uncomplicated_unable_to_drink:label">
+            <value>-L'enfant est incapable de de boire, teter ou manger</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/car_advices/r_uncomplicated_sicker:label">
+            <value>-L'enfant devient plus malade</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/fever/r_fever:label">
+            <value>**Fièvre**</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/fever/r_uncomplicated_fever_persist:label">
+            <value>-La fièvre persiste</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/fever/r_uncomplicated_develop_fever:label">
+            <value>-L'enfant développe une fièvre</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/fever/r_uncomplicated_breathing_diffilcuties:label">
+            <value>-L'enfant développe des difficultés respiratoires</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/fever/r_uncomplicated_breathing_quickly:label">
+            <value>-L'entant développe des difficultés respiratoires ou respiration rapide</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/fever/r_uncomplicated_give_advices:label">
+            <value>Donner des conseils nutritionnel</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/s_have_you_refer_child:label">
+            <value>Est-ce que vous avez référé l'enfant ?</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/s_have_you_refer_child/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/s_have_you_refer_child/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/s_why_not:label">
+            <value>Pour quelle raison?</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/followup:label">
+            <value>Suivi</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_followup_next_visit_no_referral:label">
+            <value>La prochaine visite de Suivi PCIME est dans 24 heures</value>
+          </text>
+          <text id="/usp_pcime_followup/group_review/r_followup_next_visit_any_referral:label">
+            <value>La prochaine visite de Suivi Referencement est dans 24 heures</value>
+          </text>
+          <text id="/usp_pcime_followup/inputs/contact/_id:hint">
+            <value>-</value>
+          </text>
+          <text id="/usp_pcime_followup/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/usp_pcime_followup/patient_name:label">
+            <value>-</value>
+          </text>
+        </translation>
       </itext>
       <instance>
         <usp_pcime_followup id="usp_pcime_followup" prefix="J1!usp_pcime_followup!" delimiter="#" version="2024-07-12  14-59">
@@ -2097,7 +2097,7 @@
       <bind nodeset="/usp_pcime_followup/patient_age_display" type="string" calculate="concat(concat( /usp_pcime_followup/patient_age_in_years , if( /usp_pcime_followup/patient_age_in_years =1,' year and ',' years and ')),concat( /usp_pcime_followup/patient_age_in_months  mod 12, if(( /usp_pcime_followup/patient_age_in_months  mod 12)=1,' month old',' months old')))"/>
       <bind nodeset="/usp_pcime_followup/patient_sex_en" type="string" calculate="if( /usp_pcime_followup/inputs/contact/sex  = 'male' or  /usp_pcime_followup/inputs/contact/sex  = 'homme' or  /usp_pcime_followup/inputs/contact/sex  = 'Homme', 'Male', if( /usp_pcime_followup/inputs/contact/sex  = 'female' or  /usp_pcime_followup/inputs/contact/sex  = 'femme' or  /usp_pcime_followup/inputs/contact/sex  = 'Femme', 'Female', ''))"/>
       <bind nodeset="/usp_pcime_followup/patient_sex_fr" type="string" calculate="if( /usp_pcime_followup/inputs/contact/sex  = 'male' or  /usp_pcime_followup/inputs/contact/sex  = 'homme' or  /usp_pcime_followup/inputs/contact/sex  = 'Homme', 'Homme', if( /usp_pcime_followup/inputs/contact/sex  = 'female' or  /usp_pcime_followup/inputs/contact/sex  = 'femme' or  /usp_pcime_followup/inputs/contact/sex  = 'Femme', 'Femme', ''))"/>
-      <bind nodeset="/usp_pcime_followup/visited_contact_uuid" type="string" required="true()" calculate="../inputs/contact/parent"/>
+      <bind nodeset="/usp_pcime_followup/visited_contact_uuid" type="string" calculate="../inputs/contact/parent" required="true()"/>
       <bind nodeset="/usp_pcime_followup/referral_danger_signs" type="string" calculate="if( /usp_pcime_followup/s_danger_signs/has_danger_sign  = 'true' , 'true', 'false')"/>
       <bind nodeset="/usp_pcime_followup/referral_MAS_complicated" type="string" calculate="if(( /usp_pcime_followup/s_constant/s_constant_child_brachial_perimeter  != '' and  /usp_pcime_followup/s_constant/s_constant_child_brachial_perimeter  &lt; 115) and ( /usp_pcime_followup/s_nutritional_state/s_nutritional_state_child_has_other_problem  = 'yes' or ( /usp_pcime_followup/has_fever  = 'true' or  /usp_pcime_followup/has_diarrhea  = 'true' or  /usp_pcime_followup/has_cough_cold  = 'true' or  /usp_pcime_followup/has_pneumonia  = 'true' or  /usp_pcime_followup/has_simple_malaria  = 'true')), 'true', 'false')"/>
       <bind nodeset="/usp_pcime_followup/MAS_uncomplicated" type="string" calculate="if(( /usp_pcime_followup/s_constant/s_constant_child_brachial_perimeter  != '' and  /usp_pcime_followup/s_constant/s_constant_child_brachial_perimeter  &lt; 115) and ( /usp_pcime_followup/s_nutritional_state/s_nutritional_state_child_has_other_problem  = 'no' and ( /usp_pcime_followup/has_fever  = 'false' and  /usp_pcime_followup/has_cough_cold  = 'false' and  /usp_pcime_followup/has_diarrhea  = 'false' and  /usp_pcime_followup/has_pneumonia  = 'false' and  /usp_pcime_followup/has_simple_malaria  = 'false')), 'true', 'false')"/>
@@ -2157,12 +2157,12 @@
       <bind nodeset="/usp_pcime_followup/s_danger_signs/s_danger_signs_continue_survey" type="select1" required="true()" relevant=" /usp_pcime_followup/s_danger_signs/has_danger_sign  = 'true'"/>
       <bind nodeset="/usp_pcime_followup/s_constant" relevant=" /usp_pcime_followup/s_danger_signs/s_danger_signs_continue_survey  != 'no'"/>
       <bind nodeset="/usp_pcime_followup/s_constant/s_note_child_temparature" readonly="true()" type="string"/>
-      <bind nodeset="/usp_pcime_followup/s_constant/s_constant_child_temperature" type="decimal" required="true()" constraint=". &gt;= 34 and . &lt;=42" jr:constraintMsg="jr:itext('/usp_pcime_followup/s_constant/s_constant_child_temperature:jr:constraintMsg')"/>
+      <bind nodeset="/usp_pcime_followup/s_constant/s_constant_child_temperature" type="decimal" jr:constraintMsg="jr:itext('/usp_pcime_followup/s_constant/s_constant_child_temperature:jr:constraintMsg')" required="true()" constraint=". &gt;= 34 and . &lt;=42"/>
       <bind nodeset="/usp_pcime_followup/s_constant/s_confirm_child_temparature" readonly="true()" type="string" relevant=" /usp_pcime_followup/s_constant/s_constant_child_temperature  &lt; 34 or  /usp_pcime_followup/s_constant/s_constant_child_temperature  &gt; 43"/>
       <bind nodeset="/usp_pcime_followup/s_constant/s_use_scale" readonly="true()" type="string"/>
-      <bind nodeset="/usp_pcime_followup/s_constant/s_constant_child_weight" type="decimal" constraint=". &gt; 1.00 and . &lt;= 30.00" jr:constraintMsg="jr:itext('/usp_pcime_followup/s_constant/s_constant_child_weight:jr:constraintMsg')"/>
+      <bind nodeset="/usp_pcime_followup/s_constant/s_constant_child_weight" type="decimal" jr:constraintMsg="jr:itext('/usp_pcime_followup/s_constant/s_constant_child_weight:jr:constraintMsg')" constraint=". &gt; 1.00 and . &lt;= 30.00"/>
       <bind nodeset="/usp_pcime_followup/s_constant/s_use_muac_tape" readonly="true()" type="string" relevant=" /usp_pcime_followup/patient_age_in_months  &lt; 6"/>
-      <bind nodeset="/usp_pcime_followup/s_constant/s_constant_child_brachial_perimeter" type="decimal" required="true()" constraint=". &gt;= 50.00 and . &lt;= 350.00" jr:constraintMsg="jr:itext('/usp_pcime_followup/s_constant/s_constant_child_brachial_perimeter:jr:constraintMsg')" relevant=" /usp_pcime_followup/patient_age_in_months  &gt;= 6"/>
+      <bind nodeset="/usp_pcime_followup/s_constant/s_constant_child_brachial_perimeter" type="decimal" jr:constraintMsg="jr:itext('/usp_pcime_followup/s_constant/s_constant_child_brachial_perimeter:jr:constraintMsg')" relevant=" /usp_pcime_followup/patient_age_in_months  &gt;= 6" required="true()" constraint=". &gt;= 50.00 and . &lt;= 350.00"/>
       <bind nodeset="/usp_pcime_followup/s_fever" relevant=" /usp_pcime_followup/s_danger_signs/s_danger_signs_continue_survey  != 'no'"/>
       <bind nodeset="/usp_pcime_followup/s_fever/n_fever_evaluation_note" readonly="true()" type="string"/>
       <bind nodeset="/usp_pcime_followup/s_fever/s_fever_previous_fever_episode" type="select1" required="true()" relevant=" /usp_pcime_followup/s_constant/s_constant_child_temperature  &lt; 38"/>
@@ -2182,7 +2182,7 @@
       <bind nodeset="/usp_pcime_followup/s_cough_cold/s_cough_cold_has_cough_cold" type="select1" required="true()"/>
       <bind nodeset="/usp_pcime_followup/s_cough_cold/s_cough_cold_since" type="int" required="true()" relevant=" /usp_pcime_followup/s_cough_cold/s_cough_cold_has_cough_cold  = 'yes'"/>
       <bind nodeset="/usp_pcime_followup/s_cough_cold/breath_timer" readonly="true()" type="string" relevant=" /usp_pcime_followup/s_cough_cold/s_cough_cold_has_cough_cold  = 'yes'"/>
-      <bind nodeset="/usp_pcime_followup/s_cough_cold/s_cough_cold_breathing_freq" type="int" required="true()" constraint=". &gt;10 and .&lt; 60" jr:constraintMsg="jr:itext('/usp_pcime_followup/s_cough_cold/s_cough_cold_breathing_freq:jr:constraintMsg')" relevant=" /usp_pcime_followup/s_cough_cold/s_cough_cold_has_cough_cold  = 'yes'"/>
+      <bind nodeset="/usp_pcime_followup/s_cough_cold/s_cough_cold_breathing_freq" type="int" jr:constraintMsg="jr:itext('/usp_pcime_followup/s_cough_cold/s_cough_cold_breathing_freq:jr:constraintMsg')" relevant=" /usp_pcime_followup/s_cough_cold/s_cough_cold_has_cough_cold  = 'yes'" required="true()" constraint=". &gt;10 and .&lt; 60"/>
       <bind nodeset="/usp_pcime_followup/s_diarrhea" relevant=" /usp_pcime_followup/s_danger_signs/s_danger_signs_continue_survey  != 'no'"/>
       <bind nodeset="/usp_pcime_followup/s_diarrhea/n_diarrhea_evaluation_note" readonly="true()" type="string"/>
       <bind nodeset="/usp_pcime_followup/s_diarrhea/s_diarrhea_child_has" type="select1" required="true()"/>

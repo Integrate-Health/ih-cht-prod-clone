@@ -453,7 +453,7 @@
       <bind nodeset="/data/inputs/user/facility_id" type="string"/>
       <bind nodeset="/data/inputs/user/type" type="string"/>
       <bind nodeset="/data/inputs/user/name" type="string"/>
-      <bind nodeset="/data/inputs/contact/_id" type="db:person" readonly="true()" calculate=" /data/user_id "/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person" calculate=" /data/user_id " readonly="true()"/>
       <bind nodeset="/data/inputs/contact/role" readonly="true()" type="string" calculate=" /data/user_role "/>
       <bind nodeset="/data/inputs/contact/username" readonly="true()" type="string" calculate=" /data/user_name "/>
       <bind nodeset="/data/inputs/contact/name" readonly="true()" type="string" calculate=" /data/user_contact_name "/>
@@ -477,15 +477,15 @@
       <bind nodeset="/data/person/family_contact" type="string" calculate="coalesce( /data/person/family_contact_select ,'no')"/>
       <bind nodeset="/data/person/name" type="string" required="true()"/>
       <bind nodeset="/data/person/dob_method" type="select1" required="true()"/>
-      <bind nodeset="/data/person/dob_calendar" type="date" jr:constraintMsg="jr:itext('/data/person/dob_calendar:jr:constraintMsg')" relevant="selected(../dob_method,'calendar')" required="true()" constraint=". &lt;= today()"/>
-      <bind nodeset="/data/person/age_years" type="int" jr:constraintMsg="jr:itext('/data/person/age_years:jr:constraintMsg')" relevant="selected(../dob_method,'approx')" required="true()" constraint=".&gt;=0 and .&lt;100"/>
-      <bind nodeset="/data/person/age_months" type="int" jr:constraintMsg="jr:itext('/data/person/age_months:jr:constraintMsg')" relevant="selected(../dob_method,'approx')" required="true()" constraint=". &gt;= 0 and . &lt;= 11"/>
+      <bind nodeset="/data/person/dob_calendar" type="date" constraint=". &lt;= today()" relevant="selected(../dob_method,'calendar')" jr:constraintMsg="jr:itext('/data/person/dob_calendar:jr:constraintMsg')" required="true()"/>
+      <bind nodeset="/data/person/age_years" type="int" constraint=".&gt;=0 and .&lt;100" relevant="selected(../dob_method,'approx')" jr:constraintMsg="jr:itext('/data/person/age_years:jr:constraintMsg')" required="true()"/>
+      <bind nodeset="/data/person/age_months" type="int" constraint=". &gt;= 0 and . &lt;= 11" relevant="selected(../dob_method,'approx')" jr:constraintMsg="jr:itext('/data/person/age_months:jr:constraintMsg')" required="true()"/>
       <bind nodeset="/data/person/date_of_birth" type="string" calculate="format-date-time(if(not(selected( ../dob_method,'approx')), ../dob_calendar, format-date-time( decimal-date-time( today() ) - (365.25 * ../age_years) - (30.5 * ../age_months ) - 0, &quot;%Y-%m-%d&quot; ) ),&quot;%Y-%m-%d&quot;)"/>
       <bind nodeset="/data/person/sex" type="select1" required="true()"/>
       <bind nodeset="/data/person/code_type" type="select1" relevant=" /data/user_role  !=&quot;chw&quot;"/>
-      <bind nodeset="/data/person/code_w" type="string" jr:constraintMsg="jr:itext('/data/person/code_w:jr:constraintMsg')" relevant=" /data/user_role !=&quot;chw&quot; and concat(../code_type,'')='yes'" required="true()" constraint="regex(.,'^[A-Z]{6}-\d{9}$')"/>
-      <bind nodeset="/data/person/code_x" type="string" jr:constraintMsg="jr:itext('/data/person/code_x:jr:constraintMsg')" relevant=" /data/user_role =&quot;chw&quot;" required="true()" constraint="regex(.,'^[A-Z]{0}\d{4}$')"/>
-      <bind nodeset="/data/person/code_y" type="string" jr:constraintMsg="jr:itext('/data/person/code_y:jr:constraintMsg')" relevant=" /data/user_role !=&quot;chw&quot; and concat(../code_type,'')!='yes'" required="true()" constraint="regex(.,'^[A-Z]{6}-\d{3}$')"/>
+      <bind nodeset="/data/person/code_w" type="string" constraint="regex(.,'^[A-Z]{6}-\d{9}$')" relevant=" /data/user_role !=&quot;chw&quot; and concat(../code_type,'')='yes'" jr:constraintMsg="jr:itext('/data/person/code_w:jr:constraintMsg')" required="true()"/>
+      <bind nodeset="/data/person/code_x" type="string" constraint="regex(.,'^[A-Z]{0}\d{4}$')" relevant=" /data/user_role =&quot;chw&quot;" jr:constraintMsg="jr:itext('/data/person/code_x:jr:constraintMsg')" required="true()"/>
+      <bind nodeset="/data/person/code_y" type="string" constraint="regex(.,'^[A-Z]{6}-\d{3}$')" relevant=" /data/user_role !=&quot;chw&quot; and concat(../code_type,'')!='yes'" jr:constraintMsg="jr:itext('/data/person/code_y:jr:constraintMsg')" required="true()"/>
       <bind nodeset="/data/person/unique_code" type="string" calculate="coalesce(coalesce(../code_w,../code_x),../code_y)"/>
       <bind nodeset="/data/person/external_id" type="string" calculate="if( /data/user_role =&quot;chw&quot;,concat( /data/user_external_id ,'00',../unique_code),concat(../unique_code,''))"/>
       <bind nodeset="/data/person/code" type="string" calculate="../external_id"/>

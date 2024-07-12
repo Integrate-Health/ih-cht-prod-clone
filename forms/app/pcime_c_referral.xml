@@ -4,191 +4,6 @@
     <h:title>Suivi Référence</h:title>
     <model>
       <itext>
-        <translation lang="en">
-          <text id="/pcime_c_referral/inputs:label">
-            <value>Patient</value>
-          </text>
-          <text id="/pcime_c_referral/inputs/source:label">
-            <value>Source</value>
-          </text>
-          <text id="/pcime_c_referral/inputs/source_id:label">
-            <value>Source ID</value>
-          </text>
-          <text id="/pcime_c_referral/inputs/t_follow_up_type:label">
-            <value>Follow up type</value>
-          </text>
-          <text id="/pcime_c_referral/inputs/t_last_weight:label">
-            <value>weight from last assessment</value>
-          </text>
-          <text id="/pcime_c_referral/inputs/t_last_pb:label">
-            <value>pb from last assessment</value>
-          </text>
-          <text id="/pcime_c_referral/inputs/t_last_temperature:label">
-            <value>temperature from assessment</value>
-          </text>
-          <text id="/pcime_c_referral/inputs/contact/_id:jr:constraintMsg">
-            <value>The patient age must be below 5 years old</value>
-          </text>
-          <text id="/pcime_c_referral/inputs/contact/_id:label">
-            <value>What is the patient name?</value>
-          </text>
-          <text id="/pcime_c_referral/inputs/contact/_id:hint">
-            <value>select a person from the list</value>
-          </text>
-          <text id="/pcime_c_referral/inputs/contact/name:label">
-            <value>Name</value>
-          </text>
-          <text id="/pcime_c_referral/inputs/contact/date_of_birth:label">
-            <value>Date of birth</value>
-          </text>
-          <text id="/pcime_c_referral/inputs/contact/sex:label">
-            <value>Sex</value>
-          </text>
-          <text id="/pcime_c_referral/inputs/contact/parent:label">
-            <value>Parent</value>
-          </text>
-          <text id="/pcime_c_referral/patient_age_in_years:label">
-            <value>Years</value>
-          </text>
-          <text id="/pcime_c_referral/patient_age_in_months:label">
-            <value>Months</value>
-          </text>
-          <text id="/pcime_c_referral/patient_age_in_days:label">
-            <value>Days old</value>
-          </text>
-          <text id="/pcime_c_referral/patient_id:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/pcime_c_referral/patient_id:label">
-            <value>Patient ID</value>
-          </text>
-          <text id="/pcime_c_referral/patient_name:label">
-            <value>Patient Name</value>
-          </text>
-          <text id="/pcime_c_referral/patient_sex:label">
-            <value>Patient Sex</value>
-          </text>
-          <text id="/pcime_c_referral/patient_sex_en:label">
-            <value>Patient Sex</value>
-          </text>
-          <text id="/pcime_c_referral/patient_sex_fr:label">
-            <value>Patient Sex</value>
-          </text>
-          <text id="/pcime_c_referral/visited_contact_uuid:label">
-            <value>Family Id</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal:label">
-            <value>Child referal</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_temperature:label">
-            <value>last Weight: <output value=" /pcime_c_referral/inputs/t_last_weight "/> Kg</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_weight:label">
-            <value>last PB: <output value=" /pcime_c_referral/inputs/t_last_pb "/> mm</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_pb:label">
-            <value>last temperature: <output value=" /pcime_c_referral/inputs/t_last_temperature "/></value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_child_go_usp_after_referal:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_child_go_usp_after_referal:label">
-            <value>Have child goes to hospital after last referal ?</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_child_go_usp_after_referal/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_child_go_usp_after_referal/no:label">
-            <value>No</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp:label">
-            <value>Why?</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp/forget:label">
-            <value>Forgotten</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp/no_time:label">
-            <value>Lack of tine</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp/not_motivated:label">
-            <value>Not motivated</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp/no_money:label">
-            <value>Lack of money</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp/refusal:label">
-            <value>Refusal</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp/other:label">
-            <value>Other</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_why_not:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_why_not:label">
-            <value>Other Reason</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_child_health:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_child_health:label">
-            <value>How do you see the state of the child?</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_child_health/improved:label">
-            <value>Improved</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_child_health/unchanged:label">
-            <value>Unchanged</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_child_health/worsen:label">
-            <value>Worsen</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_child_health_next_referal:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_child_health_next_referal:label">
-            <value>Does the child have another appointment with the hospital?</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_child_health_next_referal/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/pcime_c_referral/s_child_referal/s_child_health_next_referal/no:label">
-            <value>No</value>
-          </text>
-          <text id="/pcime_c_referral/results_page/r_summary:label">
-            <value>Patient Summary&lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
-          </text>
-          <text id="/pcime_c_referral/results_page/r_patient_info:label">
-            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /pcime_c_referral/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pcime_c_referral/patient_sex_en "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pcime_c_referral/patient_age_display "/> &lt;/h5&gt;</value>
-          </text>
-          <text id="/pcime_c_referral/results_page/r_referral:label">
-            <value>Refer to USP&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
-          </text>
-          <text id="/pcime_c_referral/results_page/s_have_you_refer_child:label">
-            <value>Did you refer the child?</value>
-          </text>
-          <text id="/pcime_c_referral/results_page/s_have_you_refer_child/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/pcime_c_referral/results_page/s_have_you_refer_child/no:label">
-            <value>No</value>
-          </text>
-          <text id="/pcime_c_referral/results_page/s_why_not:label">
-            <value>Why?</value>
-          </text>
-          <text id="/pcime_c_referral/results_page/s_next_visit:label">
-            <value>Follow up&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
-          </text>
-          <text id="/pcime_c_referral/results_page/r_ref_visit:label">
-            <value>The next follow-up visit is in 24 hours</value>
-          </text>
-          <text id="/pcime_c_referral/results_page/r_ref_no_visit:label">
-            <value>- The child's condition has improved</value>
-          </text>
-        </translation>
         <translation lang="fr">
           <text id="/pcime_c_referral/inputs:label">
             <value>Patient</value>
@@ -374,6 +189,191 @@
             <value>- L'état de l'enfant s'est amélioré</value>
           </text>
         </translation>
+        <translation lang="en">
+          <text id="/pcime_c_referral/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/pcime_c_referral/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/pcime_c_referral/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/pcime_c_referral/inputs/t_follow_up_type:label">
+            <value>Follow up type</value>
+          </text>
+          <text id="/pcime_c_referral/inputs/t_last_weight:label">
+            <value>weight from last assessment</value>
+          </text>
+          <text id="/pcime_c_referral/inputs/t_last_pb:label">
+            <value>pb from last assessment</value>
+          </text>
+          <text id="/pcime_c_referral/inputs/t_last_temperature:label">
+            <value>temperature from assessment</value>
+          </text>
+          <text id="/pcime_c_referral/inputs/contact/_id:jr:constraintMsg">
+            <value>The patient age must be below 5 years old</value>
+          </text>
+          <text id="/pcime_c_referral/inputs/contact/_id:label">
+            <value>What is the patient name?</value>
+          </text>
+          <text id="/pcime_c_referral/inputs/contact/_id:hint">
+            <value>select a person from the list</value>
+          </text>
+          <text id="/pcime_c_referral/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/pcime_c_referral/inputs/contact/date_of_birth:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/pcime_c_referral/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/pcime_c_referral/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/pcime_c_referral/patient_age_in_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/pcime_c_referral/patient_age_in_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/pcime_c_referral/patient_age_in_days:label">
+            <value>Days old</value>
+          </text>
+          <text id="/pcime_c_referral/patient_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/pcime_c_referral/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/pcime_c_referral/patient_name:label">
+            <value>Patient Name</value>
+          </text>
+          <text id="/pcime_c_referral/patient_sex:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/pcime_c_referral/patient_sex_en:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/pcime_c_referral/patient_sex_fr:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/pcime_c_referral/visited_contact_uuid:label">
+            <value>Family Id</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal:label">
+            <value>Child referal</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_temperature:label">
+            <value>last Weight: <output value=" /pcime_c_referral/inputs/t_last_weight "/> Kg</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_weight:label">
+            <value>last PB: <output value=" /pcime_c_referral/inputs/t_last_pb "/> mm</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_pb:label">
+            <value>last temperature: <output value=" /pcime_c_referral/inputs/t_last_temperature "/></value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_child_go_usp_after_referal:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_child_go_usp_after_referal:label">
+            <value>Have child goes to hospital after last referal ?</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_child_go_usp_after_referal/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_child_go_usp_after_referal/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp:label">
+            <value>Why?</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp/forget:label">
+            <value>Forgotten</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp/no_time:label">
+            <value>Lack of tine</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp/not_motivated:label">
+            <value>Not motivated</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp/no_money:label">
+            <value>Lack of money</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp/refusal:label">
+            <value>Refusal</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_why_not:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_why_not:label">
+            <value>Other Reason</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_child_health:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_child_health:label">
+            <value>How do you see the state of the child?</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_child_health/improved:label">
+            <value>Improved</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_child_health/unchanged:label">
+            <value>Unchanged</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_child_health/worsen:label">
+            <value>Worsen</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_child_health_next_referal:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_child_health_next_referal:label">
+            <value>Does the child have another appointment with the hospital?</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_child_health_next_referal/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_referral/s_child_referal/s_child_health_next_referal/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_referral/results_page/r_summary:label">
+            <value>Patient Summary&lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pcime_c_referral/results_page/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /pcime_c_referral/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pcime_c_referral/patient_sex_en "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pcime_c_referral/patient_age_display "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/pcime_c_referral/results_page/r_referral:label">
+            <value>Refer to USP&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pcime_c_referral/results_page/s_have_you_refer_child:label">
+            <value>Did you refer the child?</value>
+          </text>
+          <text id="/pcime_c_referral/results_page/s_have_you_refer_child/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pcime_c_referral/results_page/s_have_you_refer_child/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pcime_c_referral/results_page/s_why_not:label">
+            <value>Why?</value>
+          </text>
+          <text id="/pcime_c_referral/results_page/s_next_visit:label">
+            <value>Follow up&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pcime_c_referral/results_page/r_ref_visit:label">
+            <value>The next follow-up visit is in 24 hours</value>
+          </text>
+          <text id="/pcime_c_referral/results_page/r_ref_no_visit:label">
+            <value>- The child's condition has improved</value>
+          </text>
+        </translation>
       </itext>
       <instance>
         <pcime_c_referral id="pcime_c_referral" prefix="J1!pcime_c_referral!" delimiter="#" version="2017-09-22">
@@ -445,7 +445,7 @@
       <bind nodeset="/pcime_c_referral/inputs/t_last_weight" type="decimal"/>
       <bind nodeset="/pcime_c_referral/inputs/t_last_pb" type="int"/>
       <bind nodeset="/pcime_c_referral/inputs/t_last_temperature" type="decimal"/>
-      <bind nodeset="/pcime_c_referral/inputs/contact/_id" type="db:person" constraint=" /pcime_c_referral/patient_age_in_years  &lt; 5" jr:constraintMsg="jr:itext('/pcime_c_referral/inputs/contact/_id:jr:constraintMsg')"/>
+      <bind nodeset="/pcime_c_referral/inputs/contact/_id" type="db:person" jr:constraintMsg="jr:itext('/pcime_c_referral/inputs/contact/_id:jr:constraintMsg')" constraint=" /pcime_c_referral/patient_age_in_years  &lt; 5"/>
       <bind nodeset="/pcime_c_referral/inputs/contact/name" type="string"/>
       <bind nodeset="/pcime_c_referral/inputs/contact/date_of_birth" type="string"/>
       <bind nodeset="/pcime_c_referral/inputs/contact/sex" type="string"/>
@@ -455,25 +455,25 @@
       <bind nodeset="/pcime_c_referral/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /pcime_c_referral/inputs/contact/date_of_birth ) )"/>
       <bind nodeset="/pcime_c_referral/patient_age_display" type="string" calculate="concat(concat( /pcime_c_referral/patient_age_in_years , if( /pcime_c_referral/patient_age_in_years =1,' year and ',' years and ')),concat( /pcime_c_referral/patient_age_in_months  mod 12, if(( /pcime_c_referral/patient_age_in_months  mod 12)=1,' month old',' months old')))"/>
       <bind nodeset="/pcime_c_referral/patient_age_display_fr" type="string" calculate="concat(concat( /pcime_c_referral/patient_age_in_years , if( /pcime_c_referral/patient_age_in_years =1,' an et ',' ans et ')),concat( /pcime_c_referral/patient_age_in_months  mod 12, if(( /pcime_c_referral/patient_age_in_months  mod 12)=1,' mois',' mois')))"/>
-      <bind nodeset="/pcime_c_referral/patient_id" type="string" required="true()" jr:requiredMsg="jr:itext('/pcime_c_referral/patient_id:jr:requiredMsg')" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/pcime_c_referral/patient_id" type="string" jr:requiredMsg="jr:itext('/pcime_c_referral/patient_id:jr:requiredMsg')" required="true()" calculate="../inputs/contact/_id"/>
       <bind nodeset="/pcime_c_referral/patient_name" type="string" calculate="../inputs/contact/name"/>
       <bind nodeset="/pcime_c_referral/patient_sex" type="string" calculate="../inputs/contact/sex"/>
       <bind nodeset="/pcime_c_referral/patient_sex_en" type="string" calculate="if( /pcime_c_referral/patient_sex  = 'male' or  /pcime_c_referral/patient_sex  = 'homme' or  /pcime_c_referral/patient_sex  = 'Homme', 'Male', if( /pcime_c_referral/patient_sex  = 'female' or  /pcime_c_referral/patient_sex  = 'femme' or  /pcime_c_referral/patient_sex  = 'Femme', 'Female', ''))"/>
       <bind nodeset="/pcime_c_referral/patient_sex_fr" type="string" calculate="if( /pcime_c_referral/patient_sex  = 'male' or  /pcime_c_referral/patient_sex  = 'homme' or  /pcime_c_referral/patient_sex  = 'Homme', 'Homme', if( /pcime_c_referral/patient_sex  = 'female' or  /pcime_c_referral/patient_sex  = 'femme' or  /pcime_c_referral/patient_sex  = 'Femme', 'Femme', ''))"/>
-      <bind nodeset="/pcime_c_referral/visited_contact_uuid" type="string" required="true()" calculate="../inputs/contact/parent"/>
+      <bind nodeset="/pcime_c_referral/visited_contact_uuid" type="string" calculate="../inputs/contact/parent" required="true()"/>
       <bind nodeset="/pcime_c_referral/referal" type="string" calculate="if( /pcime_c_referral/s_child_referal/s_child_go_usp_after_referal  = 'no' or  /pcime_c_referral/s_child_referal/s_child_health_next_referal  = 'no' or  /pcime_c_referral/s_child_referal/s_child_health  = 'worsen','true','false')"/>
       <bind nodeset="/pcime_c_referral/s_child_referal/s_temperature" readonly="true()" type="string" relevant=" /pcime_c_referral/inputs/t_last_weight  != ''"/>
       <bind nodeset="/pcime_c_referral/s_child_referal/s_weight" readonly="true()" type="string" relevant=" /pcime_c_referral/inputs/t_last_pb  != ''"/>
       <bind nodeset="/pcime_c_referral/s_child_referal/s_pb" readonly="true()" type="string" relevant=" /pcime_c_referral/inputs/t_last_temperature  != ''"/>
-      <bind nodeset="/pcime_c_referral/s_child_referal/s_child_go_usp_after_referal" type="select1" required="true()" jr:requiredMsg="jr:itext('/pcime_c_referral/s_child_referal/s_child_go_usp_after_referal:jr:requiredMsg')"/>
-      <bind nodeset="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp" type="select1" relevant=" /pcime_c_referral/s_child_referal/s_child_go_usp_after_referal  = 'no'" required="true()" jr:requiredMsg="jr:itext('/pcime_c_referral/s_child_referal/s_did_child_go_to_usp:jr:requiredMsg')"/>
-      <bind nodeset="/pcime_c_referral/s_child_referal/s_why_not" type="string" relevant=" /pcime_c_referral/s_child_referal/s_did_child_go_to_usp  = 'other'" required="true()" jr:requiredMsg="jr:itext('/pcime_c_referral/s_child_referal/s_why_not:jr:requiredMsg')"/>
-      <bind nodeset="/pcime_c_referral/s_child_referal/s_child_health" type="select1" relevant=" /pcime_c_referral/s_child_referal/s_child_go_usp_after_referal  = 'yes'" required="true()" jr:requiredMsg="jr:itext('/pcime_c_referral/s_child_referal/s_child_health:jr:requiredMsg')"/>
-      <bind nodeset="/pcime_c_referral/s_child_referal/s_child_health_next_referal" type="select1" relevant=" /pcime_c_referral/s_child_referal/s_child_health  = 'unchanged'" required="true()" jr:requiredMsg="jr:itext('/pcime_c_referral/s_child_referal/s_child_health_next_referal:jr:requiredMsg')"/>
+      <bind nodeset="/pcime_c_referral/s_child_referal/s_child_go_usp_after_referal" type="select1" jr:requiredMsg="jr:itext('/pcime_c_referral/s_child_referal/s_child_go_usp_after_referal:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/pcime_c_referral/s_child_referal/s_did_child_go_to_usp" type="select1" jr:requiredMsg="jr:itext('/pcime_c_referral/s_child_referal/s_did_child_go_to_usp:jr:requiredMsg')" required="true()" relevant=" /pcime_c_referral/s_child_referal/s_child_go_usp_after_referal  = 'no'"/>
+      <bind nodeset="/pcime_c_referral/s_child_referal/s_why_not" type="string" jr:requiredMsg="jr:itext('/pcime_c_referral/s_child_referal/s_why_not:jr:requiredMsg')" required="true()" relevant=" /pcime_c_referral/s_child_referal/s_did_child_go_to_usp  = 'other'"/>
+      <bind nodeset="/pcime_c_referral/s_child_referal/s_child_health" type="select1" jr:requiredMsg="jr:itext('/pcime_c_referral/s_child_referal/s_child_health:jr:requiredMsg')" required="true()" relevant=" /pcime_c_referral/s_child_referal/s_child_go_usp_after_referal  = 'yes'"/>
+      <bind nodeset="/pcime_c_referral/s_child_referal/s_child_health_next_referal" type="select1" jr:requiredMsg="jr:itext('/pcime_c_referral/s_child_referal/s_child_health_next_referal:jr:requiredMsg')" required="true()" relevant=" /pcime_c_referral/s_child_referal/s_child_health  = 'unchanged'"/>
       <bind nodeset="/pcime_c_referral/results_page/r_summary" readonly="true()" type="string"/>
       <bind nodeset="/pcime_c_referral/results_page/r_patient_info" readonly="true()" type="string"/>
       <bind nodeset="/pcime_c_referral/results_page/r_referral" readonly="true()" type="string" relevant=" /pcime_c_referral/referal  = 'true'"/>
-      <bind nodeset="/pcime_c_referral/results_page/s_have_you_refer_child" type="select1" relevant=" /pcime_c_referral/referal  = 'true'" required="true()"/>
+      <bind nodeset="/pcime_c_referral/results_page/s_have_you_refer_child" type="select1" required="true()" relevant=" /pcime_c_referral/referal  = 'true'"/>
       <bind nodeset="/pcime_c_referral/results_page/s_why_not" type="string" relevant=" /pcime_c_referral/results_page/s_have_you_refer_child  = 'no'"/>
       <bind nodeset="/pcime_c_referral/results_page/s_next_visit" readonly="true()" type="string"/>
       <bind nodeset="/pcime_c_referral/results_page/r_ref_visit" readonly="true()" type="string" relevant=" /pcime_c_referral/referal  = 'true'"/>

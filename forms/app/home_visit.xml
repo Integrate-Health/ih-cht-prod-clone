@@ -200,7 +200,7 @@
       <bind nodeset="/home_visit/patient_id" type="string" calculate="../inputs/contact/_id"/>
       <bind nodeset="/home_visit/patient_name" type="string" calculate="../inputs/contact/name"/>
       <bind nodeset="/home_visit/home_visit_purpose/s_home_visit_purpose" type="select" required="true()" jr:requiredMsg="jr:itext('/home_visit/home_visit_purpose/s_home_visit_purpose:jr:requiredMsg')"/>
-      <bind nodeset="/home_visit/home_visit_purpose/s_found_someone" type="select1" constraint=". != 'yes_found_sick'" jr:constraintMsg="jr:itext('/home_visit/home_visit_purpose/s_found_someone:jr:constraintMsg')" required="true()" jr:requiredMsg="jr:itext('/home_visit/home_visit_purpose/s_found_someone:jr:requiredMsg')"/>
+      <bind nodeset="/home_visit/home_visit_purpose/s_found_someone" type="select1" jr:requiredMsg="jr:itext('/home_visit/home_visit_purpose/s_found_someone:jr:requiredMsg')" constraint=". != 'yes_found_sick'" jr:constraintMsg="jr:itext('/home_visit/home_visit_purpose/s_found_someone:jr:constraintMsg')" required="true()"/>
       <bind nodeset="/home_visit/home_visit_purpose/submit" readonly="true()" type="string"/>
       <bind nodeset="/home_visit/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>

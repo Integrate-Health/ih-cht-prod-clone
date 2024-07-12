@@ -1,0 +1,1080 @@
+{
+  "locales": [
+    {
+      "code": "en",
+      "name": "English"
+    },
+    {
+      "code": "fr",
+      "name": "Français (French)"
+    }
+  ],
+  "locale": "fr",
+  "locale_outgoing": "fr",
+  "date_format": "ddd, MMM Do, YYYY",
+  "reported_date_format": "ddd, MMM Do, YYYY [at] h:mm A",
+  "forms_only_mode": false,
+  "place_hierarchy_types": [
+    "district_hospital",
+    "health_center"
+  ],
+  "default_responses": {
+    "start_date": "2015-01-01"
+  },
+  "district_admins_access_unallocated_messages": false,
+  "public_access": false,
+  "default_country_code": "228",
+  "gateway_number": "+22892645651",
+  "kujua-reporting": [
+    {
+      "code": "",
+      "reporting_freq": "weekly"
+    }
+  ],
+  "dhis_data_sets": [
+    {
+      "id": "VMuFODsyWaO",
+      "translation_key": "dhis.dataset.monthly.integration"
+    }
+  ],
+  "schedule_morning_hours": 6,
+  "schedule_morning_minutes": 0,
+  "schedule_evening_hours": 23,
+  "schedule_evening_minutes": 0,
+  "synthetic_date": "",
+  "contact_display_short": "family.name",
+  "roles": {
+    "program_manager": {
+      "name": "usertype.program-manager"
+    },
+    "supervisors_manager": {
+      "name": "usertype.supervisors-manager",
+      "offline": true
+    },
+    "chw_supervisor": {
+      "name": "usertype.chw-supervisor",
+      "offline": true
+    },
+    "chw": {
+      "name": "usertype.chw",
+      "offline": true
+    }
+  },
+  "permissions": {
+    "can_export_messages": [
+      "program_manager"
+    ],
+    "can_export_forms": [
+      "program_manager"
+    ],
+    "can_export_contacts": [
+      "program_manager"
+    ],
+    "can_export_devices_details": [
+      "program_manager"
+    ],
+    "can_have_multiple_places": [
+      "program_manager",
+      "chw_supervisor"
+    ],
+    "can_export_feedback": [
+      "program_manager"
+    ],
+    "can_view_analytics": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_data_records": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_unallocated_data_records": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_users": [
+      "program_manager"
+    ],
+    "can_edit": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_log_out_on_android": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager"
+    ],
+    "can_update_messages": [
+      "program_manager"
+    ],
+    "can_update_users": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager"
+    ],
+    "can_update_people": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_update_places": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_create_records": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_access_gateway_api": [
+      "program_manager"
+    ],
+    "can_create_users": [
+      "program_manager"
+    ],
+    "can_create_people": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_create_places": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_tasks": [
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_view_tasks_tab": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_configure": [
+      "program_manager"
+    ],
+    "can_view_messages": [
+      "program_manager"
+    ],
+    "can_view_messages_tab": [
+      "program_manager"
+    ],
+    "can_view_reports": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_tasks_group": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_reports_tab": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_analytics_tab": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_contacts": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_contacts_tab": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_edit_profile": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_delete_reports": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager"
+    ],
+    "can_bulk_delete_reports": [
+      "program_manager"
+    ],
+    "can_update_reports": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_upgrade": [
+      "program_manager"
+    ],
+    "can_delete_contacts": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager"
+    ],
+    "can_delete_messages": [
+      "program_manager"
+    ],
+    "can_delete_users": [
+      "program_manager"
+    ],
+    "can_view_message_action": [
+      "program_manager"
+    ],
+    "can_view_call_action": [
+      "program_manager"
+    ],
+    "can_verify_reports": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager"
+    ],
+    "can_view_last_visited_date": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_write_wealth_quintiles": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_outgoing_messages": [
+      "program_manager"
+    ],
+    "can_export_all": [
+      "program_manager"
+    ],
+    "can_view_uhc_stats": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_edit_verification": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_export_dhis": [
+      "program_manager"
+    ],
+    "can_aggregate_targets": [
+      "program_manager",
+      "chw_supervisor",
+      "supervisors_manager"
+    ],
+    "can_default_facility_filter": [
+      "chw_supervisor",
+      "supervisors_manager",
+      "chw"
+    ],
+    "can_view_old_action_bar": [],
+    "can_view_old_filter_and_search": []
+  },
+  "changes_controller": {
+    "reiterate_changes": true,
+    "changes_limit": 100,
+    "debounce_interval": 200
+  },
+  "uhc": {
+    "contacts_default_sort": "last_visited_date",
+    "visit_count": {
+      "month_start_date": 21,
+      "visit_count_goal": 1
+    }
+  },
+  "death_reporting": {
+    "mark_deceased_forms": [
+      "death_report"
+    ],
+    "undo_deceased_forms": [
+      "undo_death_report"
+    ],
+    "date_field": "fields.s_death.s_death_date"
+  },
+  "contact_types": [
+    {
+      "id": "district_hospital",
+      "name_key": "contact.type.district_hospital",
+      "group_key": "contact.type.district_hospital.plural",
+      "create_key": "contact.type.district_hospital.new",
+      "edit_key": "contact.type.district_hospital.edit",
+      "icon": "medic-district-hospital",
+      "create_form": "form:contact:district_hospital:create",
+      "edit_form": "form:contact:district_hospital:edit"
+    },
+    {
+      "id": "health_center",
+      "name_key": "contact.type.health_center",
+      "group_key": "contact.type.health_center.plural",
+      "create_key": "contact.type.health_center.new",
+      "edit_key": "contact.type.health_center.edit",
+      "parents": [
+        "district_hospital"
+      ],
+      "icon": "medic-health-center",
+      "create_form": "form:contact:health_center:create",
+      "edit_form": "form:contact:health_center:edit"
+    },
+    {
+      "id": "clinic",
+      "name_key": "contact.type.clinic",
+      "group_key": "contact.type.clinic.plural",
+      "create_key": "contact.type.clinic.new",
+      "edit_key": "contact.type.clinic.edit",
+      "parents": [
+        "health_center"
+      ],
+      "icon": "medic-clinic",
+      "create_form": "form:contact:clinic:create",
+      "edit_form": "form:contact:clinic:edit",
+      "count_visits": true
+    },
+    {
+      "id": "person",
+      "name_key": "contact.type.person",
+      "group_key": "contact.type.person.plural",
+      "create_key": "contact.type.person.new",
+      "edit_key": "contact.type.person.edit",
+      "primary_contact_key": "clinic.field.contact",
+      "parents": [
+        "district_hospital",
+        "health_center",
+        "clinic"
+      ],
+      "icon": "person",
+      "create_form": "form:contact:person:create",
+      "edit_form": "form:contact:person:edit",
+      "person": true,
+      "sort_by_dob": true
+    }
+  ],
+  "replications": [
+    {
+      "fromSuffix": "user-[^\\-]+-meta",
+      "toSuffix": "users-meta",
+      "text_expression": "",
+      "cron": "0 2 * * *"
+    }
+  ],
+  "setup_complete": true,
+  "contact_summary": "var ContactSummary = {}; !function(t,e){if('object'==typeof exports&&'object'==typeof module)module.exports=e();else if('function'==typeof define&&define.amd)define([],e);else{var n=e();for(var a in n)('object'==typeof exports?exports:t)[a]=n[a]}}(ContactSummary,(function(){return function(t){var e={};function n(a){if(e[a])return e[a].exports;var _=e[a]={i:a,l:!1,exports:{}};return t[a].call(_.exports,_,_.exports,n),_.l=!0,_.exports}return n.m=t,n.c=e,n.d=function(t,e,a){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:a})},n.r=function(t){'undefined'!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:'Module'}),Object.defineProperty(t,'__esModule',{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&'object'==typeof t&&t&&t.__esModule)return t;var a=Object.create(null);if(n.r(a),Object.defineProperty(a,'default',{enumerable:!0,value:t}),2&e&&'string'!=typeof t)for(var _ in t)n.d(a,_,function(e){return t[e]}.bind(null,_));return a},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,'a',e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p='',n(n.s=1)}([function(t,e){const n=p(Date.now());function a(t,e='en',n=!0){var a=t instanceof Date?t:new Date(t),_=a.getFullYear(),i=String(a.getMonth()).padStart(2,'0'),s=String(a.getDate()).padStart(2,'0'),r=String(a.getHours()).padStart(2,'0'),c=String(a.getMinutes()).padStart(2,'0'),o=String(a.getSeconds()).padStart(2,'0');return'00'===i?new Date(`${_-1}-12-${s} ${r}:${c}:${o}`):new Date(`${_}-${i}-${s} ${r}:${c}:${o}`)}function _(t,e=0,n='en',a=!1){var _=t instanceof Date?t:new Date(t),i=String(_.getMonth()+1).padStart(2,'0'),s=String(0!==e?e:_.getDate()).padStart(2,'0'),r=_.getFullYear(),c=_.getHours(),o=String(_.getMinutes()).padStart(2,'0'),u=String(_.getSeconds()).padStart(2,'0');return!0===a?'fr'===n?`${s}/${i}/${r} ${c}:${o}:${u}`:`${r}-${i}-${s} ${c}:${o}:${u}`:'fr'===n?`${s}/${i}/${r}`:`${r}-${i}-${s}`}function i(t,e){try{const n=t instanceof Date?t.getTime():new Date(t).getTime();if(n>=(e instanceof Date?e.getTime():new Date(e).getTime()))return!0}catch(t){return!1}return!1}function s(t,e){try{const n=t instanceof Date?t.getTime():new Date(t).getTime();if(n<=(e instanceof Date?e.getTime():new Date(e).getTime()))return!0}catch(t){return!1}return!1}function r(t='en'){const e=new Date;var n,i,s,r,c;return e.getDate()<21?(n=_(a(e),21,t),i=_(e,20,t)):(n=_(e,21,t),i=_(e,parseInt((r=(s=e)instanceof Date?s:new Date(s),c=new Date(r.getFullYear(),r.getMonth()+1,0),String(c.getDate()).padStart(2,'0'))),t)),{start_date:n,end_date:i}}function o(t){var e=r();return i(t,e.start_date)&&s(t,e.end_date)}function u(t){const e=new Date(t);return e.setHours(0),e.setMinutes(0),e.setSeconds(0),e.setMilliseconds(0),e}function l(t,e){return['fields',...(e||'').split('.')].reduce((e,n)=>void 0===e?t:e[n],t)}function p(t){if('string'==typeof t){if(''===t)return null;t=getDateISOLocal(t)}return u(t).getTime()}function f(t,e){const n=u(new Date(t));return n.setDate(n.getDate()+e),n}function d(t){return['pregnancy_family_planning'].includes(t.form)}function v(t){return['prenatal_followup'].includes(t.form)}function h(t,e){if(!o(t.reported_date))return!1;if(['pcime_c_asc'].includes(t.form)){if('paludisme'===e&&m(l(t,'has_simple_malaria')))return'true'===l(t,'has_simple_malaria');if('toux_rhume'===e&&m(l(t,'has_cough_cold')))return'true'===l(t,'has_cough_cold');if('pneumonia'===e&&m(l(t,'has_pneumonia')))return'true'===l(t,'has_pneumonia');if('diarrhea'===e&&m(l(t,'has_diarrhea')))return'true'===l(t,'has_diarrhea');if('malnutrition'===e&&m(l(t,'has_malnutrition')))return'true'===l(t,'has_malnutrition')}return!1}function m(t){const e=!!Array.isArray(t)&&0===t.length;return null!==t&&''!==t&&void 0!==t&&void 0!==typeof t&&!1===e}function g(t){return m(t)&&(!0===t||'true'===t||'yes'===t)}const y=function(t){return!(!(t&&t.form&&t.fields&&t.reported_date)||t.deleted)};function w(t,e){var n;return t.forEach((function(t){y(t)&&e.includes(t.form)&&(!n||t.reported_date>n.reported_date)&&(n=t)})),n}const D=function(t){return d(t)&&p(l(t,'g_lmp_date_8601'))};function T(t,e){return t.filter((function(t){var n=D(e);return n||(n=e.reported_date),v(t)&&t.reported_date>e.reported_date&&t.reported_date<f(n,294)}))}function b(t,e){return m(e)?!g(t.contact.deleted)&&!g(e.deleted):!!m(t)&&!g(t.contact.deleted)}function P(t,e){if(m(t)&&m(t.date_of_death))return!1;const n=w(e,['death_report','undo_death_report']);if(y(n)){if('death_report'===n.form)return!1;if('undo_death_report'===n.form)return!0}return!0}function x(t){const e=w(t,['pregnancy_family_planning','prenatal_followup','delivery','postnatal_followup']);if(y(e)){if(['delivery','postnatal_followup'].includes(e.form))return!1;if('prenatal_followup'===e.form&&m(l(e,'reschedule_task'))){const t='close_out'===l(e,'s_today_task.s_task_to_perform'),a=l(e,'reschedule_task.is_woman_available');var n;if('no'===a){const t=l(e,'reschedule_task.s_date_to_reschedule');''!==t&&null!==t&&'null'!==t&&(n=new Date(t))}else'yes'===a&&!0!==t&&(m(l(e,'s_vad_1'))?n=m(l(e,'s_vad_1.s_anc_next_anc'))?f(new Date(l(e,'s_vad_1.s_anc_next_anc')),7):f(new Date(l(e,'s_vad_1.s_anc_1_date')),7):m(l(e,'s_vad_2'))?m(l(e,'s_vad_2.s_anc_2_date'))&&(n=f(new Date(l(e,'s_vad_2.s_anc_2_date')),7)):m(l(e,'s_vad_3'))?m(l(e,'s_vad_3.s_anc_3_date'))&&(n=f(new Date(l(e,'s_vad_3.s_anc_3_date')),7)):m(l(e,'s_vad_4'))&&m(l(e,'s_vad_4.s_anc_4_date'))&&(n=f(new Date(l(e,'s_vad_4.s_anc_4_date')),7)));return!(m(n)&&new Date>f(n,10))&&!0!==t}if('pregnancy_family_planning'===e.form){const t='positive'===l(e,'s_reg_pregnancy_screen.s_reg_urine_result'),n='already_pregnant'===l(e,'s_reg_pregnancy_screen.s_reg_why_urine_test_not_done');return!0===(g(t)||g(n))}}return!1}function A(t,e,n='all'){if(!x(c.reports)){var a=!1;const e=w(t.reports,['fp_follow_up_renewal','fp_followup_danger_sign_check','pregnancy_family_planning']);if(y(e)){const t=l(e,'fp_method');return'fp_followup_danger_sign_check'===e.form?m(l(e,'s_side_effects'))&&(a='yes'===e.fields.continue_with_fp&&'positive'!==e.fields.s_side_effects.s_pregnancy_result):'fp_follow_up_renewal'===e.form?m(e.fields.checklist1)&&(a='yes'===e.fields.checklist1.s_renew_method&&'yes'!==e.fields.stop_fp):'pregnancy_family_planning'===e.form&&m(e.fields.s_fam_plan_screen)&&m(e.fields.family_planning_reg)&&(a='yes'===e.fields.s_fam_plan_screen.s_have_counsel_on_planning&&'yes'===e.fields.family_planning_reg.s_chw_usp),a&&!0==('all'===n||t===n)}}return!1}function S(t){if(m(t.contact.date_of_birth)){const e=new Date(t.contact.date_of_birth);return new Date(Date.now()-e.getTime())}return null}function V(t,e=!1){var n=S(t);if(null!==n){const t=n.getTime()/2592e6;return e?Math.round(t):t}return null}function R(t){var e=S(t);return m(e)?e/864e5:null}t.exports={today:n,MS_IN_DAY:864e5,MAX_DAYS_IN_PREGNANCY:294,getChildPatologie:h,getChildPatologiePromptitude:function(t,e,n){if(!o(t.reported_date))return!1;if(['pcime_c_asc'].includes(t.form)){if('paludisme'===e&&!0===h(t,e)){if(m(l(t,'within_24h'))&&'24h'===n)return'true'===l(t,'within_24h');if(m(l(t,'within_48h'))&&'48h'===n)return'true'===l(t,'within_48h');if(m(l(t,'within_72h'))&&'72h'===n)return'true'===l(t,'within_72h');if(m(l(t,'beyond_72h'))&&'>72h'===n)return'true'===l(t,'beyond_72h')}if('toux_rhume'===e&&!0===h(t,e)){if(m(l(t,'within_24h'))&&'24h'===n)return'true'===l(t,'within_24h');if(m(l(t,'within_48h'))&&'48h'===n)return'true'===l(t,'within_48h');if(m(l(t,'within_72h'))&&'72h'===n)return'true'===l(t,'within_72h');if(m(l(t,'beyond_72h'))&&'>72h'===n)return'true'===l(t,'beyond_72h')}if('pneumonia'===e&&!0===h(t,e)){if(m(l(t,'within_24h'))&&'24h'===n)return'true'===l(t,'within_24h');if(m(l(t,'within_48h'))&&'48h'===n)return'true'===l(t,'within_48h');if(m(l(t,'within_72h'))&&'72h'===n)return'true'===l(t,'within_72h');if(m(l(t,'beyond_72h'))&&'>72h'===n)return'true'===l(t,'beyond_72h')}if('diarrhea'===e&&!0===h(t,e)){if(m(l(t,'within_24h'))&&'24h'===n)return'true'===l(t,'within_24h');if(m(l(t,'within_48h'))&&'48h'===n)return'true'===l(t,'within_48h');if(m(l(t,'within_72h'))&&'72h'===n)return'true'===l(t,'within_72h');if(m(l(t,'beyond_72h'))&&'>72h'===n)return'true'===l(t,'beyond_72h')}if('malnutrition'===e&&!0===h(t,e)){if(m(l(t,'within_24h'))&&'24h'===n)return'true'===l(t,'within_24h');if(m(l(t,'within_48h'))&&'48h'===n)return'true'===l(t,'within_48h');if(m(l(t,'within_72h'))&&'72h'===n)return'true'===l(t,'within_72h');if(m(l(t,'beyond_72h'))&&'>72h'===n)return'true'===l(t,'beyond_72h')}}return!1},previousDate:a,getDateInFormat:_,isBetween21and20:o,isFormBetween21and20:function(t,e){return!!e.includes(t.form)&&o(t.reported_date)},toDateString:function(t){return _(t)},getTimeForMidnight:u,isAlive:P,getField:l,getFollowUpCount:function(t){return m(l(t,'follow_up_count'))?parseInt(l(t,'follow_up_count'),10):0},R_Date:function(t,e,n=!1){return!0===n?f(t,e.end+1).getTime():f(t,-e.start).getTime()},getHouseholdId:function(t){return t.contact&&'clinic'===t.contact.type?t.contact._id:t.contact.parent&&t.contact.parent._id},isPatient:function(t){return t.contact&&'person'===t.contact.type&&t.contact.parent&&t.contact.parent.parent&&t.contact.parent.parent.parent},getDateMS:p,isValidDate:function(t){return t instanceof Date&&!isNaN(t)},addDays:f,canApplies:function(t,e,n){const a=t.contact&&'person'===t.contact.type;var _=e.form===n;return Array.isArray(n)&&(_=n.includes(e.form)),g(a)&&g(_)&&b(t,e)&&P(t.contact,t.reports)},MaxVal:function(t){return Math.max(...t)},isReportValid:y,getTaskStart:function(t,e,n=4){if(Array.isArray(e))for(let n=0;n<e.length;n++){const a=e[n];if(t===a.index)return a.value}return n},isDelivery:function(t){const e=w(t,['pregnancy_family_planning','delivery','postnatal_followup']);return!(!y(e)||!['delivery','postnatal_followup'].includes(e.form))},isPregnancyForm:d,isPregnancyFollowUpForm:v,isPostnatalFollowUpForm:function(t){return['postnatal_followup'].includes(t.form)},getMostRecentReport:w,isFormArraySubmittedInWindow:function(t,e,n,a,_,i){var s=!1,r=0;return'string'==typeof e&&(e=[e]),t.forEach((function(t){e.includes(t.form)&&t.reported_date>=n&&t.reported_date<=a&&(!_||t._id!==_._id)&&(s=!0,i&&r++)})),i?r>=i:s},isFormArraySubmittedInWindowExcludeLastReport:function(t,e,n,a,_){var i=!1,s=0;'string'==typeof e&&(e=[e]);const r=w(t,e);return t.forEach((function(t){e.includes(t.form)&&t.reported_date>=n&&t.reported_date<=a&&(!r||t._id!==r._id)&&(i=!0,_&&s++)})),m(_)?s>=_:i},getLMPDateFromPregnancy:D,getSubsequentPregnancyFollowUps:T,getSubsequentPregnancies:function(t,e){return t.reports.filter((function(t){return d(t)&&t.reported_date>e.reported_date}))},getSubsequentDeliveries:function(t,e,a){return t.reports.filter((function(t){return['delivery'].includes(t.form)&&t.reported_date>e.reported_date&&(!a||e.reported_date>=n-864e5*a)}))},isPregnancyTerminatedByAbortionOrMiscarriage:function(t,e){const n=w(T(t,e),['prenatal_followup']),a=l(n,'s_close_out.s_why_close_out');return n&&('abortion'===a||'miscarriage'===a)},notNull:m,isTrue:g,notDeleted:b,isPregnant:x,isActiveFamilyPlanning:A,isActiveOralCombinationPillFamilyPlanning:function(t,e){return A(t,0,'oral_combination_pill')},isActiveInjectibleFamilyPlanning:function(t,e){return A(t,0,'injectible')},isNewDelivery:function(t){const e=w(t,['delivery']);return!!m(e)&&f(e.reported_date,60).getTime>=(new Date).getTime},getMostRecentVaccinationData:function(t,e){const n=w(e,['vaccination_followup']),a=!!n&&m(l(n,'s_vaccinal_status.s_one_day')),_=!!n&&m(l(n,'s_vaccinal_status.s_six_weeks')),i=!!n&&m(l(n,'s_vaccinal_status.s_ten_weeks')),s=!!n&&m(l(n,'s_vaccinal_status.s_forteen_weeks')),r=!!n&&m(l(n,'s_vaccinal_status.s_nine_months')),c=!!n&&m(l(n,'s_vaccinal_status.s_fifty_months'));return{t_vaccinal_status_BCG:!0===a?l(n,'s_vaccinal_status.s_one_day.s_vaccinal_status_BCG'):void 0,t_vaccinal_status_VPO_0:!0===a?l(n,'s_vaccinal_status.s_one_day.s_vaccinal_status_VPO_0'):void 0,t_vaccinal_status_DTC_B1:!0===_?l(n,'s_vaccinal_status.s_six_weeks.s_vaccinal_status_DTC_B1'):void 0,t_vaccinal_status_VPO_1:!0===_?l(n,'s_vaccinal_status.s_six_weeks.s_vaccinal_status_VPO_1'):void 0,t_vaccinal_status_pneumo_1:!0===_?l(n,'s_vaccinal_status.s_six_weeks.s_vaccinal_status_pneumo_1'):void 0,t_vaccinal_status_rota_1:!0===_?l(n,'s_vaccinal_status.s_six_weeks.s_vaccinal_status_rota_1'):void 0,t_vaccinal_status_DTC_B2:!0===i?l(n,'s_vaccinal_status.s_ten_weeks.s_vaccinal_status_DTC_B2'):void 0,t_vaccinal_status_VPO_2:!0===i?l(n,'s_vaccinal_status.s_ten_weeks.s_vaccinal_status_VPO_2'):void 0,t_vaccinal_status_pneumo_2:!0===i?l(n,'s_vaccinal_status.s_ten_weeks.s_vaccinal_status_pneumo_2'):void 0,t_vaccinal_status_rota_2:!0===i?l(n,'s_vaccinal_status.s_ten_weeks.s_vaccinal_status_rota_2'):void 0,t_vaccinal_status_DTC_B3:!0===s?l(n,'s_vaccinal_status.s_forteen_weeks.s_vaccinal_status_DTC_B3'):void 0,t_vaccinal_status_VPO_3:!0===s?l(n,'s_vaccinal_status.s_forteen_weeks.s_vaccinal_status_VPO_3'):void 0,t_vaccinal_status_pneumo_3:!0===s?l(n,'s_vaccinal_status.s_forteen_weeks.s_vaccinal_status_pneumo_3'):void 0,t_vaccinal_status_vpi:!0===s?l(n,'s_vaccinal_status.s_forteen_weeks.s_vaccinal_status_vpi'):void 0,t_vaccinal_status_RR1:!0===r?l(n,'s_vaccinal_status.s_nine_months.s_vaccinal_status_RR1'):void 0,t_vaccinal_status_VAA:!0===r?l(n,'s_vaccinal_status.s_nine_months.s_vaccinal_status_VAA'):void 0,t_vaccinal_status_vit_A:!0===r?l(n,'s_vaccinal_status.s_nine_months.s_vaccinal_status_vit_A'):void 0,t_vaccinal_status_RR2:!0===c?l(n,'s_vaccinal_status.s_fifty_months.s_vaccinal_status_RR2'):void 0,t_vaccinal_status_MEG:!0===c?l(n,'s_vaccinal_status.s_fifty_months.s_vaccinal_status_MEG'):void 0}},isChildUnder5:function(t){var e=V(t);return null!==e&&e<60},getAgeInMonths:V,getAgeInDays:R,isVaccinAgeLimit:function(t){var e=R(t);return null!==e&&e<517},isChws:function(t){return m(t.parent)&&'chw'===t.role},isSupervisor:function(t){return m(t.parent)&&'chw_supervisor'===t.role},startEnd21and20Date:r,isGreaterOrEqual:i,isLessOrEqual:s}},function(t,e,n){var a=n(2),_=n(4);t.exports=_(a,contact,reports)},function(t,e,n){const{getPcimeConstantsValue:a}=n(3),{isAlive:_,getMostRecentReport:i,getField:s,notNull:r,isPregnant:c,isDelivery:o,getMostRecentVaccinationData:u,isNewDelivery:l,getDateInFormat:p,isReportValid:f}=n(0),d=contact,v=lineage,h=reports,m=_(d,h),g=c(h),y=o(h),w=l(h),D=i(h,['death_report']),T=a(h),b=u(d,h);var P={alive:m,muted:!1,is_family_person:function(){try{if(r(v))return r(d.parent)?'clinic'===v[0].type&&v[0]._id===d.parent._id:'clinic'===v[0].type}catch(t){return!1}return!1}(),show_pregnancy_form:!g,show_delivery_form:!w,show_women_emergency_form:g||y,t_vaccinal_status_BCG:b.t_vaccinal_status_BCG,t_vaccinal_status_VPO_0:b.t_vaccinal_status_VPO_0,t_vaccinal_status_DTC_B1:b.t_vaccinal_status_DTC_B1,t_vaccinal_status_VPO_1:b.t_vaccinal_status_VPO_1,t_vaccinal_status_pneumo_1:b.t_vaccinal_status_pneumo_1,t_vaccinal_status_rota_1:b.t_vaccinal_status_rota_1,t_vaccinal_status_DTC_B2:b.t_vaccinal_status_DTC_B2,t_vaccinal_status_VPO_2:b.t_vaccinal_status_VPO_2,t_vaccinal_status_pneumo_2:b.t_vaccinal_status_pneumo_2,t_vaccinal_status_rota_2:b.t_vaccinal_status_rota_2,t_vaccinal_status_DTC_B3:b.t_vaccinal_status_DTC_B3,t_vaccinal_status_VPO_3:b.t_vaccinal_status_VPO_3,t_vaccinal_status_pneumo_3:b.t_vaccinal_status_pneumo_3,t_vaccinal_status_vpi:b.t_vaccinal_status_vpi,t_vaccinal_status_RR1:b.t_vaccinal_status_RR1,t_vaccinal_status_VAA:b.t_vaccinal_status_VAA,t_vaccinal_status_vit_A:b.t_vaccinal_status_vit_A,t_vaccinal_status_RR2:b.t_vaccinal_status_RR2,t_vaccinal_status_MEG:b.t_vaccinal_status_MEG},x=[{appliesToType:'person',appliesIf:()=>r(d.date_of_birth),label:'contact.age',value:d.date_of_birth,width:4,filter:'age'},{appliesToType:'person',appliesIf:()=>r(d.sex),label:'contact.sex',value:'contact.sex.'+d.sex,translate:!0,width:4},{appliesToType:'person',appliesIf:()=>r(d.phone)||r(d.phone_alternate),label:'person.field.phone',value:`${d.phone} \\n ${d.phone_alternate}`,width:4},{appliesToType:'person',appliesIf:()=>r(d.external_id),label:'contact.external_id',value:d.external_id,width:4},{appliesToType:'person',appliesIf:()=>r(v),label:'contact.parent',value:v,filter:'lineage'},{appliesToType:'person',appliesIf:()=>r(d.notes),label:'contact.notes',value:d.notes,width:12},{appliesToType:'!person',appliesIf:()=>'clinic'!==d.type&&r(d.external_id),label:'contact.external_id',value:d.external_id,width:4},{appliesToType:'!person',appliesIf:()=>r(d.notes),label:'contact.notes',value:d.notes,width:12},{appliesToType:'!person',appliesIf:()=>r(d.parent)&&r(v),label:'contact.parent',value:v,filter:'lineage'}];d.short_name&&x.unshift({appliesToType:'person',label:'contact.short_name',value:d.short_name,width:4});var A=[{appliesToType:'person',appliesIf:()=>!m,label:'contact.person.death',value:'',width:6}],S=[{label:'contact.profile.death.title',appliesToType:'person',appliesIf:()=>!m,fields:function(){var t,e,n=[];return f(D)?(e=s(D,'death_place'),r(e)&&n.push({label:'contact.profile.death.place',value:e,translate:!0,width:6}),r(s(D,'s_death'))&&(t=s(D,'s_death.s_death_date'))):d.date_of_death&&(t=d.date_of_death),r(t)&&n.push({label:'contact.profile.death.date',value:p(t,0,'fr'),translate:!0,width:6}),n}},{label:'contact.patient.constants',appliesToType:'person',appliesIf:function(){return m&&T.appliesIf},fields:function(){var t=[];return r(T.pb)&&t.push({label:'contact.patient.pb',value:T.pb,translate:!0,width:5,icon:t=>'risk'}),r(T.temperature)&&t.push({label:'contact.patient.temperature',value:T.temperature,translate:!0,width:4}),r(T.weight)&&t.push({label:'contact.patient.weight',value:T.weight,translate:!0,width:3}),t},modifyContext:function(t,e){t.t_vaccinal_status_BCG=b.t_vaccinal_status_BCG,t.t_vaccinal_status_VPO_0=b.t_vaccinal_status_VPO_0,t.t_vaccinal_status_DTC_B1=b.t_vaccinal_status_DTC_B1,t.t_vaccinal_status_VPO_1=b.t_vaccinal_status_VPO_1,t.t_vaccinal_status_pneumo_1=b.t_vaccinal_status_pneumo_1,t.t_vaccinal_status_rota_1=b.t_vaccinal_status_rota_1,t.t_vaccinal_status_DTC_B2=b.t_vaccinal_status_DTC_B2,t.t_vaccinal_status_VPO_2=b.t_vaccinal_status_VPO_2,t.t_vaccinal_status_pneumo_2=b.t_vaccinal_status_pneumo_2,t.t_vaccinal_status_rota_2=b.t_vaccinal_status_rota_2,t.t_vaccinal_status_DTC_B3=b.t_vaccinal_status_DTC_B3,t.t_vaccinal_status_VPO_3=b.t_vaccinal_status_VPO_3,t.t_vaccinal_status_pneumo_3=b.t_vaccinal_status_pneumo_3,t.t_vaccinal_status_vpi=b.t_vaccinal_status_vpi,t.t_vaccinal_status_RR1=b.t_vaccinal_status_RR1,t.t_vaccinal_status_VAA=b.t_vaccinal_status_VAA,t.t_vaccinal_status_vit_A=b.t_vaccinal_status_vit_A,t.t_vaccinal_status_RR2=b.t_vaccinal_status_RR2,t.t_vaccinal_status_MEG=b.t_vaccinal_status_MEG}}];t.exports={context:P,cards:S,fields:m?x:A}},function(t,e,n){const{getMostRecentReport:a,notNull:_,isReportValid:i}=n(0);t.exports={getPcimeConstantsValue:function(t){const e=a(t,['pcime_c_asc','usp_pcime_followup']);var n,s,r;return i(e)&&_(e.fields.s_constant)&&(n=e.fields.s_constant.s_constant_child_brachial_perimeter,s=e.fields.s_constant.s_constant_child_weight,r=e.fields.s_constant.s_constant_child_temperature),{appliesIf:!0,pb:n,weight:s,temperature:r}}}},function(t,e){function n(t){return t?Array.isArray(t)?t:[t]:[]}function a(t,e){switch(typeof t){case'undefined':return!0;case'function':return t(e);default:return t}}function _(t,e,n){if(a(t.appliesIf,n)){var _='function'==typeof t.fields?t.fields(n):t.fields.filter((function(t){return a(t.appliesIf,n)})).map((function(t){var e={};return i(t,e,'label'),i(t,e,'value'),i(t,e,'translate'),i(t,e,'filter'),i(t,e,'width'),i(t,e,'icon'),t.context&&(e.context={},i(t.context,e.context,'count'),i(t.context,e.context,'total')),e}));return t.modifyContext&&t.modifyContext(e,n),{label:t.label,fields:_}}function i(t,e,a){switch(typeof t[a]){case'undefined':return;case'function':e[a]=t[a](n);break;default:e[a]=t[a]}}}t.exports=function(t,e,a){var i=t.fields||[],s=t.context||{},r=t.cards||[],c=e&&('contact'===e.type?e.contact_type:e.type),o={cards:[],fields:i.filter((function(t){var e=n(t.appliesToType),a=e.filter((function(t){return t&&'!'===t.charAt(0)}));if((0===e.length||e.includes(c)||a.length>0&&!a.includes('!'+c))&&(!t.appliesIf||t.appliesIf()))return delete t.appliesToType,delete t.appliesIf,!0}))};return r.forEach((function(t){var e,i,r,u,l=n(t.appliesToType);if(l.includes('report')&&l.length>1)throw new Error('You cannot set appliesToType to an array which includes the type \\'report\\' and another type.');if(l.includes('report'))for(e=0;e<a.length;++e)i=a[e],!(u=i)||u.errors&&u.errors.length||(r=_(t,s,i))&&o.cards.push(r);else{if(!l.includes(c)&&l.length>0)return;(r=_(t,s))&&o.cards.push(r)}})),o.context=s,o}}])})); return ContactSummary;",
+  "tasks": {
+    "rules": "define Target { _id: null, contact: null, deleted: null, type: null, pass: null, date: null, groupBy: null }\ndefine Contact { contact: null, reports: null, tasks: null }\ndefine Task { _id: null, deleted: null, doc: null, contact: null, icon: null, date: null, readyStart: null, readyEnd: null, title: null, fields: null, resolved: null, priority: null, priorityLabel: null, reports: null, actions: null }\nrule GenerateEvents {\n  when { c: Contact } then { !function(t){var e={};function n(o){if(e[o])return e[o].exports;var a=e[o]={i:o,l:!1,exports:{}};return t[o].call(a.exports,a,a.exports,n),a.l=!0,a.exports}n.m=t,n.c=e,n.d=function(t,e,o){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:o})},n.r=function(t){'undefined'!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:'Module'}),Object.defineProperty(t,'__esModule',{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&'object'==typeof t&&t&&t.__esModule)return t;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,'default',{enumerable:!0,value:t}),2&e&&'string'!=typeof t)for(var a in t)n.d(o,a,function(e){return t[e]}.bind(null,a));return o},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,'a',e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p='',n(n.s=2)}([function(t,e){const n=p(Date.now());function o(t,e='en',n=!0){var o=t instanceof Date?t:new Date(t),a=o.getFullYear(),r=String(o.getMonth()).padStart(2,'0'),i=String(o.getDate()).padStart(2,'0'),_=String(o.getHours()).padStart(2,'0'),s=String(o.getMinutes()).padStart(2,'0'),l=String(o.getSeconds()).padStart(2,'0');return'00'===r?new Date(`${a-1}-12-${i} ${_}:${s}:${l}`):new Date(`${a}-${r}-${i} ${_}:${s}:${l}`)}function a(t,e=0,n='en',o=!1){var a=t instanceof Date?t:new Date(t),r=String(a.getMonth()+1).padStart(2,'0'),i=String(0!==e?e:a.getDate()).padStart(2,'0'),_=a.getFullYear(),s=a.getHours(),l=String(a.getMinutes()).padStart(2,'0'),c=String(a.getSeconds()).padStart(2,'0');return!0===o?'fr'===n?`${i}/${r}/${_} ${s}:${l}:${c}`:`${_}-${r}-${i} ${s}:${l}:${c}`:'fr'===n?`${i}/${r}/${_}`:`${_}-${r}-${i}`}function r(t,e){try{const n=t instanceof Date?t.getTime():new Date(t).getTime();if(n>=(e instanceof Date?e.getTime():new Date(e).getTime()))return!0}catch(t){return!1}return!1}function i(t,e){try{const n=t instanceof Date?t.getTime():new Date(t).getTime();if(n<=(e instanceof Date?e.getTime():new Date(e).getTime()))return!0}catch(t){return!1}return!1}function _(t='en'){const e=new Date;var n,r,i,_,s;return e.getDate()<21?(n=a(o(e),21,t),r=a(e,20,t)):(n=a(e,21,t),r=a(e,parseInt((_=(i=e)instanceof Date?i:new Date(i),s=new Date(_.getFullYear(),_.getMonth()+1,0),String(s.getDate()).padStart(2,'0'))),t)),{start_date:n,end_date:r}}function s(t){var e=_();return r(t,e.start_date)&&i(t,e.end_date)}function l(t){const e=new Date(t);return e.setHours(0),e.setMinutes(0),e.setSeconds(0),e.setMilliseconds(0),e}function u(t,e){return['fields',...(e||'').split('.')].reduce((e,n)=>void 0===e?t:e[n],t)}function p(t){if('string'==typeof t){if(''===t)return null;t=getDateISOLocal(t)}return l(t).getTime()}function f(t,e){const n=l(new Date(t));return n.setDate(n.getDate()+e),n}function d(t){return['pregnancy_family_planning'].includes(t.form)}function m(t){return['prenatal_followup'].includes(t.form)}function g(t,e){if(!s(t.reported_date))return!1;if(['pcime_c_asc'].includes(t.form)){if('paludisme'===e&&h(u(t,'has_simple_malaria')))return'true'===u(t,'has_simple_malaria');if('toux_rhume'===e&&h(u(t,'has_cough_cold')))return'true'===u(t,'has_cough_cold');if('pneumonia'===e&&h(u(t,'has_pneumonia')))return'true'===u(t,'has_pneumonia');if('diarrhea'===e&&h(u(t,'has_diarrhea')))return'true'===u(t,'has_diarrhea');if('malnutrition'===e&&h(u(t,'has_malnutrition')))return'true'===u(t,'has_malnutrition')}return!1}function h(t){const e=!!Array.isArray(t)&&0===t.length;return null!==t&&''!==t&&void 0!==t&&void 0!==typeof t&&!1===e}function y(t){return h(t)&&(!0===t||'true'===t||'yes'===t)}const w=function(t){return!(!(t&&t.form&&t.fields&&t.reported_date)||t.deleted)};function v(t,e){var n;return t.forEach((function(t){w(t)&&e.includes(t.form)&&(!n||t.reported_date>n.reported_date)&&(n=t)})),n}const b=function(t){return d(t)&&p(u(t,'g_lmp_date_8601'))};function D(t,e){return t.filter((function(t){var n=b(e);return n||(n=e.reported_date),m(t)&&t.reported_date>e.reported_date&&t.reported_date<f(n,294)}))}function k(t,e){return h(e)?!y(t.contact.deleted)&&!y(e.deleted):!!h(t)&&!y(t.contact.deleted)}function T(t,e){if(h(t)&&h(t.date_of_death))return!1;const n=v(e,['death_report','undo_death_report']);if(w(n)){if('death_report'===n.form)return!1;if('undo_death_report'===n.form)return!0}return!0}function I(t){const e=v(t,['pregnancy_family_planning','prenatal_followup','delivery','postnatal_followup']);if(w(e)){if(['delivery','postnatal_followup'].includes(e.form))return!1;if('prenatal_followup'===e.form&&h(u(e,'reschedule_task'))){const t='close_out'===u(e,'s_today_task.s_task_to_perform'),o=u(e,'reschedule_task.is_woman_available');var n;if('no'===o){const t=u(e,'reschedule_task.s_date_to_reschedule');''!==t&&null!==t&&'null'!==t&&(n=new Date(t))}else'yes'===o&&!0!==t&&(h(u(e,'s_vad_1'))?n=h(u(e,'s_vad_1.s_anc_next_anc'))?f(new Date(u(e,'s_vad_1.s_anc_next_anc')),7):f(new Date(u(e,'s_vad_1.s_anc_1_date')),7):h(u(e,'s_vad_2'))?h(u(e,'s_vad_2.s_anc_2_date'))&&(n=f(new Date(u(e,'s_vad_2.s_anc_2_date')),7)):h(u(e,'s_vad_3'))?h(u(e,'s_vad_3.s_anc_3_date'))&&(n=f(new Date(u(e,'s_vad_3.s_anc_3_date')),7)):h(u(e,'s_vad_4'))&&h(u(e,'s_vad_4.s_anc_4_date'))&&(n=f(new Date(u(e,'s_vad_4.s_anc_4_date')),7)));return!(h(n)&&new Date>f(n,10))&&!0!==t}if('pregnancy_family_planning'===e.form){const t='positive'===u(e,'s_reg_pregnancy_screen.s_reg_urine_result'),n='already_pregnant'===u(e,'s_reg_pregnancy_screen.s_reg_why_urine_test_not_done');return!0===(y(t)||y(n))}}return!1}function P(t,e,n='all'){if(!I(c.reports)){var o=!1;const e=v(t.reports,['fp_follow_up_renewal','fp_followup_danger_sign_check','pregnancy_family_planning']);if(w(e)){const t=u(e,'fp_method');return'fp_followup_danger_sign_check'===e.form?h(u(e,'s_side_effects'))&&(o='yes'===e.fields.continue_with_fp&&'positive'!==e.fields.s_side_effects.s_pregnancy_result):'fp_follow_up_renewal'===e.form?h(e.fields.checklist1)&&(o='yes'===e.fields.checklist1.s_renew_method&&'yes'!==e.fields.stop_fp):'pregnancy_family_planning'===e.form&&h(e.fields.s_fam_plan_screen)&&h(e.fields.family_planning_reg)&&(o='yes'===e.fields.s_fam_plan_screen.s_have_counsel_on_planning&&'yes'===e.fields.family_planning_reg.s_chw_usp),o&&!0==('all'===n||t===n)}}return!1}function F(t){if(h(t.contact.date_of_birth)){const e=new Date(t.contact.date_of_birth);return new Date(Date.now()-e.getTime())}return null}function x(t,e=!1){var n=F(t);if(null!==n){const t=n.getTime()/2592e6;return e?Math.round(t):t}return null}function C(t){var e=F(t);return h(e)?e/864e5:null}t.exports={today:n,MS_IN_DAY:864e5,MAX_DAYS_IN_PREGNANCY:294,getChildPatologie:g,getChildPatologiePromptitude:function(t,e,n){if(!s(t.reported_date))return!1;if(['pcime_c_asc'].includes(t.form)){if('paludisme'===e&&!0===g(t,e)){if(h(u(t,'within_24h'))&&'24h'===n)return'true'===u(t,'within_24h');if(h(u(t,'within_48h'))&&'48h'===n)return'true'===u(t,'within_48h');if(h(u(t,'within_72h'))&&'72h'===n)return'true'===u(t,'within_72h');if(h(u(t,'beyond_72h'))&&'>72h'===n)return'true'===u(t,'beyond_72h')}if('toux_rhume'===e&&!0===g(t,e)){if(h(u(t,'within_24h'))&&'24h'===n)return'true'===u(t,'within_24h');if(h(u(t,'within_48h'))&&'48h'===n)return'true'===u(t,'within_48h');if(h(u(t,'within_72h'))&&'72h'===n)return'true'===u(t,'within_72h');if(h(u(t,'beyond_72h'))&&'>72h'===n)return'true'===u(t,'beyond_72h')}if('pneumonia'===e&&!0===g(t,e)){if(h(u(t,'within_24h'))&&'24h'===n)return'true'===u(t,'within_24h');if(h(u(t,'within_48h'))&&'48h'===n)return'true'===u(t,'within_48h');if(h(u(t,'within_72h'))&&'72h'===n)return'true'===u(t,'within_72h');if(h(u(t,'beyond_72h'))&&'>72h'===n)return'true'===u(t,'beyond_72h')}if('diarrhea'===e&&!0===g(t,e)){if(h(u(t,'within_24h'))&&'24h'===n)return'true'===u(t,'within_24h');if(h(u(t,'within_48h'))&&'48h'===n)return'true'===u(t,'within_48h');if(h(u(t,'within_72h'))&&'72h'===n)return'true'===u(t,'within_72h');if(h(u(t,'beyond_72h'))&&'>72h'===n)return'true'===u(t,'beyond_72h')}if('malnutrition'===e&&!0===g(t,e)){if(h(u(t,'within_24h'))&&'24h'===n)return'true'===u(t,'within_24h');if(h(u(t,'within_48h'))&&'48h'===n)return'true'===u(t,'within_48h');if(h(u(t,'within_72h'))&&'72h'===n)return'true'===u(t,'within_72h');if(h(u(t,'beyond_72h'))&&'>72h'===n)return'true'===u(t,'beyond_72h')}}return!1},previousDate:o,getDateInFormat:a,isBetween21and20:s,isFormBetween21and20:function(t,e){return!!e.includes(t.form)&&s(t.reported_date)},toDateString:function(t){return a(t)},getTimeForMidnight:l,isAlive:T,getField:u,getFollowUpCount:function(t){return h(u(t,'follow_up_count'))?parseInt(u(t,'follow_up_count'),10):0},R_Date:function(t,e,n=!1){return!0===n?f(t,e.end+1).getTime():f(t,-e.start).getTime()},getHouseholdId:function(t){return t.contact&&'clinic'===t.contact.type?t.contact._id:t.contact.parent&&t.contact.parent._id},isPatient:function(t){return t.contact&&'person'===t.contact.type&&t.contact.parent&&t.contact.parent.parent&&t.contact.parent.parent.parent},getDateMS:p,isValidDate:function(t){return t instanceof Date&&!isNaN(t)},addDays:f,canApplies:function(t,e,n){const o=t.contact&&'person'===t.contact.type;var a=e.form===n;return Array.isArray(n)&&(a=n.includes(e.form)),y(o)&&y(a)&&k(t,e)&&T(t.contact,t.reports)},MaxVal:function(t){return Math.max(...t)},isReportValid:w,getTaskStart:function(t,e,n=4){if(Array.isArray(e))for(let n=0;n<e.length;n++){const o=e[n];if(t===o.index)return o.value}return n},isDelivery:function(t){const e=v(t,['pregnancy_family_planning','delivery','postnatal_followup']);return!(!w(e)||!['delivery','postnatal_followup'].includes(e.form))},isPregnancyForm:d,isPregnancyFollowUpForm:m,isPostnatalFollowUpForm:function(t){return['postnatal_followup'].includes(t.form)},getMostRecentReport:v,isFormArraySubmittedInWindow:function(t,e,n,o,a,r){var i=!1,_=0;return'string'==typeof e&&(e=[e]),t.forEach((function(t){e.includes(t.form)&&t.reported_date>=n&&t.reported_date<=o&&(!a||t._id!==a._id)&&(i=!0,r&&_++)})),r?_>=r:i},isFormArraySubmittedInWindowExcludeLastReport:function(t,e,n,o,a){var r=!1,i=0;'string'==typeof e&&(e=[e]);const _=v(t,e);return t.forEach((function(t){e.includes(t.form)&&t.reported_date>=n&&t.reported_date<=o&&(!_||t._id!==_._id)&&(r=!0,a&&i++)})),h(a)?i>=a:r},getLMPDateFromPregnancy:b,getSubsequentPregnancyFollowUps:D,getSubsequentPregnancies:function(t,e){return t.reports.filter((function(t){return d(t)&&t.reported_date>e.reported_date}))},getSubsequentDeliveries:function(t,e,o){return t.reports.filter((function(t){return['delivery'].includes(t.form)&&t.reported_date>e.reported_date&&(!o||e.reported_date>=n-864e5*o)}))},isPregnancyTerminatedByAbortionOrMiscarriage:function(t,e){const n=v(D(t,e),['prenatal_followup']),o=u(n,'s_close_out.s_why_close_out');return n&&('abortion'===o||'miscarriage'===o)},notNull:h,isTrue:y,notDeleted:k,isPregnant:I,isActiveFamilyPlanning:P,isActiveOralCombinationPillFamilyPlanning:function(t,e){return P(t,0,'oral_combination_pill')},isActiveInjectibleFamilyPlanning:function(t,e){return P(t,0,'injectible')},isNewDelivery:function(t){const e=v(t,['delivery']);return!!h(e)&&f(e.reported_date,60).getTime>=(new Date).getTime},getMostRecentVaccinationData:function(t,e){const n=v(e,['vaccination_followup']),o=!!n&&h(u(n,'s_vaccinal_status.s_one_day')),a=!!n&&h(u(n,'s_vaccinal_status.s_six_weeks')),r=!!n&&h(u(n,'s_vaccinal_status.s_ten_weeks')),i=!!n&&h(u(n,'s_vaccinal_status.s_forteen_weeks')),_=!!n&&h(u(n,'s_vaccinal_status.s_nine_months')),s=!!n&&h(u(n,'s_vaccinal_status.s_fifty_months'));return{t_vaccinal_status_BCG:!0===o?u(n,'s_vaccinal_status.s_one_day.s_vaccinal_status_BCG'):void 0,t_vaccinal_status_VPO_0:!0===o?u(n,'s_vaccinal_status.s_one_day.s_vaccinal_status_VPO_0'):void 0,t_vaccinal_status_DTC_B1:!0===a?u(n,'s_vaccinal_status.s_six_weeks.s_vaccinal_status_DTC_B1'):void 0,t_vaccinal_status_VPO_1:!0===a?u(n,'s_vaccinal_status.s_six_weeks.s_vaccinal_status_VPO_1'):void 0,t_vaccinal_status_pneumo_1:!0===a?u(n,'s_vaccinal_status.s_six_weeks.s_vaccinal_status_pneumo_1'):void 0,t_vaccinal_status_rota_1:!0===a?u(n,'s_vaccinal_status.s_six_weeks.s_vaccinal_status_rota_1'):void 0,t_vaccinal_status_DTC_B2:!0===r?u(n,'s_vaccinal_status.s_ten_weeks.s_vaccinal_status_DTC_B2'):void 0,t_vaccinal_status_VPO_2:!0===r?u(n,'s_vaccinal_status.s_ten_weeks.s_vaccinal_status_VPO_2'):void 0,t_vaccinal_status_pneumo_2:!0===r?u(n,'s_vaccinal_status.s_ten_weeks.s_vaccinal_status_pneumo_2'):void 0,t_vaccinal_status_rota_2:!0===r?u(n,'s_vaccinal_status.s_ten_weeks.s_vaccinal_status_rota_2'):void 0,t_vaccinal_status_DTC_B3:!0===i?u(n,'s_vaccinal_status.s_forteen_weeks.s_vaccinal_status_DTC_B3'):void 0,t_vaccinal_status_VPO_3:!0===i?u(n,'s_vaccinal_status.s_forteen_weeks.s_vaccinal_status_VPO_3'):void 0,t_vaccinal_status_pneumo_3:!0===i?u(n,'s_vaccinal_status.s_forteen_weeks.s_vaccinal_status_pneumo_3'):void 0,t_vaccinal_status_vpi:!0===i?u(n,'s_vaccinal_status.s_forteen_weeks.s_vaccinal_status_vpi'):void 0,t_vaccinal_status_RR1:!0===_?u(n,'s_vaccinal_status.s_nine_months.s_vaccinal_status_RR1'):void 0,t_vaccinal_status_VAA:!0===_?u(n,'s_vaccinal_status.s_nine_months.s_vaccinal_status_VAA'):void 0,t_vaccinal_status_vit_A:!0===_?u(n,'s_vaccinal_status.s_nine_months.s_vaccinal_status_vit_A'):void 0,t_vaccinal_status_RR2:!0===s?u(n,'s_vaccinal_status.s_fifty_months.s_vaccinal_status_RR2'):void 0,t_vaccinal_status_MEG:!0===s?u(n,'s_vaccinal_status.s_fifty_months.s_vaccinal_status_MEG'):void 0}},isChildUnder5:function(t){var e=x(t);return null!==e&&e<60},getAgeInMonths:x,getAgeInDays:C,isVaccinAgeLimit:function(t){var e=C(t);return null!==e&&e<517},isChws:function(t){return h(t.parent)&&'chw'===t.role},isSupervisor:function(t){return h(t.parent)&&'chw_supervisor'===t.role},startEnd21and20Date:_,isGreaterOrEqual:r,isLessOrEqual:i}},function(t,e){t.exports=function(t){var e={};!function t(e,n){var o=Object.keys(e);for(var a in o){var r=o[a];switch(typeof e[r]){case'object':t(e[r],n);break;case'function':e[r]=e[r].bind(n)}}}(t,e),e.definition=function t(e){var n=Object.assign({},e),o=Object.keys(n);for(var a in o){var r=o[a];if(Array.isArray(n[r])){n[r]=n[r].slice(0);for(var i=0;i<n[r].length;++i)'object'==typeof n[r][i]&&(n[r][i]=t(n[r][i]))}else'object'==typeof n[r]&&(n[r]=t(n[r]))}return n}(t)}},function(t,e,n){var o=n(3),a=n(5),r=n(7);n(9)(a,c,Utils,Target,emit),r(o,c,Utils,Task,emit),emit('_complete',{_id:!0})},function(t,e,n){const{getNewbornConfig:o,getPcimeTreatmentFollowUpConfig:a,getReferalFollowUpConfig:r,getPcimeTreatmentMalnutritionConfig:i,getPostnatalConfig:_,getPrenatalConfig:s,getFamilyPlanningFirstFollowupConfig:l,getFamilyPlanningFollowupConfig:c,getPriority:u,isFormArraySubmittedInWindow:p,getMostRecentReport:f,R_Date:d,isPregnant:m,isChildUnder5:g}=n(4),{notNull:h,canApplies:y,isChws:w}=n(0);t.exports=[{name:'newborn-followup',icon:'newborn',title:'newborn.followup',appliesTo:'reports',contactLabel:(t,e)=>t.contact.name,appliesIf:function(t,e){return w(user)&&g(t)&&y(t,e,['newborn_followup'])&&o(t,e).displayIf},actions:[{type:'report',form:'newborn_followup',label:'newborn.followup',modifyContent:function(t,e,n,a){const r=o(e,n).content;t.source=r.source,t.source_id=r.source_id,t.contact=r.contact,t.t_has_danger_signs=r.t_has_danger_signs,t.t_follow_up_count=r.t_follow_up_count}}],events:[{id:'newborn-followup',start:3,end:3,dueDate:function(t,e,n){return o(e,n).nextVisitDate}}],priority:(t,e)=>u(o(t,e)),resolvedIf:function(t,e,n,o){return p(t.reports,['newborn_followup'],d(o,n),d(o,n,!0))}},{name:'pcime-treatment-followup',icon:'treatment',title:'pcime.followup',appliesTo:'reports',appliesIf:function(t,e){return w(user)&&g(t)&&y(t,e,['pcime_c_asc','usp_pcime_followup','pcime_c_followup'])&&a(t,e).displayIf},contactLabel:(t,e)=>t.contact.name,actions:[{type:'report',form:'pcime_c_followup',label:'pcime.followup',modifyContent:function(t,e,n,o){const r=a(e,n).content;t.source=r.source,t.source_id=r.source_id,t.contact=r.contact,t.t_follow_up_type=r.t_follow_up_type,t.t_follow_up_count=r.t_follow_up_count,t.t_treat_for_diarrhea=r.t_treat_for_diarrhea,t.t_treat_for_fever=r.t_treat_for_fever,t.t_treat_for_pneumonia=r.t_treat_for_pneumonia,t.t_has_cough_cold=r.t_has_cough_cold,t.t_has_been_referred=r.t_has_been_referred,t.t_non_malaria_fever=r.t_non_malaria_fever,t.t_malaria_fever=r.t_malaria_fever,t.t_resp_rate=r.t_resp_rate,t.t_last_visit_temperature=r.t_last_visit_temperature,t.t_last_visit_weight=r.t_last_visit_weight,t.t_last_visit_child_brachial_perimeter=r.t_last_visit_child_brachial_perimeter,t.t_has_been_malnutrition_referred=r.t_has_been_malnutrition_referred,t.t_has_malnutrition=r.t_has_malnutrition}}],events:[{id:'pcime-treatment-followup',start:0,end:4,dueDate:function(t,e,n){return a(e,n).nextVisitDate}}],priority:(t,e)=>u(a(t,e)),resolvedIf:function(t,e,n,o){return p(t.reports,['pcime_c_followup'],d(o,n),d(o,n,!0))}},{name:'pcime-referal-followup',icon:'treatment',title:'referal.followup',appliesTo:'reports',appliesIf:function(t,e){return w(user)&&g(t)&&y(t,e,['pcime_c_asc','usp_pcime_followup','pcime_c_followup','pcime_c_referral','malnutrition_followup'])&&r(t,e).displayIf},contactLabel:(t,e)=>t.contact.name,actions:[{type:'report',form:'pcime_c_referral',label:'referal.followup',modifyContent:function(t,e,n,o){const a=r(e,n).content;t.source=a.source,t.source_id=a.source_id,t.contact=a.contact,t.t_follow_up_type=a.t_follow_up_type,t.t_follow_up_count=a.t_follow_up_count,t.t_last_weight=a.t_last_weight,t.t_last_pb=a.t_last_pb,t.t_last_temperature=a.t_last_temperature}}],events:[{id:'pcime-referal-followup',start:0,end:4,dueDate:function(t,e,n){return r(e,n).nextVisitDate}}],priority:(t,e)=>u(r(t,e)),resolvedIf:function(t,e,n,o){return p(t.reports,['pcime_c_referral'],d(o,n),d(o,n,!0))}},{name:'treatment-malnutrition-followup',icon:'followup',title:'malnutrition.followup',appliesTo:'reports',contactLabel:(t,e)=>t.contact.name,appliesIf:function(t,e){return w(user)&&g(t)&&y(t,e,['pcime_c_asc','malnutrition_followup'])&&i(t,e).displayIf},actions:[{type:'report',form:'malnutrition_followup',label:'malnutrition.followup',modifyContent:function(t,e,n,o){const a=i(e,n).content;t.source=a.source,t.source_id=a.source_id,t.contact=a.contact,t.t_follow_up_type=a.t_follow_up_type,t.t_follow_up_count=a.t_follow_up_count,t.t_weight_from_assessment=a.t_weight_from_assessment,t.t_pb_from_assessment=a.t_pb_from_assessment,t.t_assessment_date=a.t_assessment_date,t.t_atpe_given_quantity=a.t_atpe_given_quantity}}],events:[{id:'malnutrition-followup',start:0,end:4,dueDate:function(t,e,n){return i(e,n).nextVisitDate}}],priority:(t,e)=>u(i(t,e)),resolvedIf:function(t,e,n,o){var a=!1;const r=f(t.reports,['malnutrition_followup']);return h(r)&&h(r.fields)&&(a='true'===r.fields.close_out),a||p(t.reports,['malnutrition_followup'],d(o,n),d(o,n,!0))}},{name:'postnatal-followup',icon:'newborn',title:'postnatal.followup',appliesTo:'reports',contactLabel:(t,e)=>t.contact.name,appliesIf:function(t,e){return w(user)&&!m(t.reports)&&y(t,e,['delivery','postnatal_followup'])&&_(t,e).displayIf},actions:[{type:'report',form:'postnatal_followup',label:'postnatal.followup',modifyContent:function(t,e,n,o){const a=_(e,n).content;t.source=a.source,t.source_id=a.source_id,t.event_id=a.event_id,t.contact=a.contact,t.t_delivery_date=a.t_delivery_date,t.t_follow_up_count=a.t_follow_up_count,t.t_child_alive=a.t_child_alive,t.t_close_out=a.t_close_out}}],events:[{id:'postnatal-followup',start:3,end:10,dueDate:function(t,e,n){return _(e,n).nextVisitDate}}],priority:(t,e)=>u(_(t,e)),resolvedIf:function(t,e,n,o){return'true'===_(t,e).close_out||m(t.reports)||p(t.reports,['postnatal_followup'],d(o,n),d(o,n,!0))}},{name:'prenatal-followup',icon:'pregnant',title:'prenatal.followup',appliesTo:'reports',contactLabel:(t,e)=>t.contact.name,appliesIf:function(t,e){return w(user)&&m(t.reports)&&y(t,e,['prenatal_followup','pregnancy_family_planning'])&&s(t,e).displayIf},actions:[{type:'report',form:'prenatal_followup',label:'prenatal.followup',modifyContent:function(t,e,n,o){const a=s(e,n).content;t.source=a.source,t.source_id=a.source_id,t.event_id=a.event_id,t.contact=a.contact,t.t_follow_up_count=a.t_follow_up_count,t.t_anc_visit=a.t_anc_visit,t.t_follow_up_type=a.t_follow_up_type}}],events:[{id:'prenatal-followup',start:3,end:10,dueDate:function(t,e,n){return s(e,n).nextVisitDate}}],priority:(t,e)=>u(s(t,e)),resolvedIf:function(t,e,n,o){return'true'===s(t,e).close_out||!m(t.reports)||p(t.reports,['prenatal_followup'],d(o,n),d(o,n,!0))}},{name:'fp-followup-danger-sign-check',icon:'treatment',title:'fp.followup.danger.sign.check',appliesTo:'reports',contactLabel:(t,e)=>t.contact.name,appliesIf:function(t,e){return w(user)&&!m(t.reports)&&y(t,e,['pregnancy_family_planning','fp_followup_danger_sign_check','fp_follow_up_renewal'])&&l(t,e).displayIf},actions:[{type:'report',form:'fp_followup_danger_sign_check',label:'fp.followup.danger.sign.check',modifyContent:function(t,e,n,o){const a=l(e,n).content;t.source=a.source,t.source_id=a.source_id,t.contact=a.contact,t.t_fp_method=a.t_fp_method,t.t_follow_up_count=a.t_follow_up_count}}],events:[{id:'danger-signs-check',start:4,end:5,dueDate:function(t,e,n){return l(e,n).nextVisitDate}}],priority:(t,e)=>u(l(t,e)),resolvedIf:function(t,e,n,o){return m(t.reports)||p(t.reports,['fp_followup_danger_sign_check'],d(o,n),d(o,n,!0))}},{name:'family-planning-followup',icon:'treatment',title:'fp.followup.renewal',appliesTo:'reports',contactLabel:(t,e)=>t.contact.name,appliesIf:function(t,e){return w(user)&&!m(t.reports)&&y(t,e,['pregnancy_family_planning','fp_follow_up_renewal'])&&c(t,e).displayIf},actions:[{type:'report',form:'fp_follow_up_renewal',label:'fp.followup.renewal',modifyContent:function(t,e,n,o){const a=c(e,n).content;t.source=a.source,t.source_id=a.source_id,t.contact=a.contact,t.t_fp_method=a.t_fp_method,t.t_follow_up_count=a.t_follow_up_count}}],events:[{id:'fp-follow-up-renewal',start:4,end:5,dueDate:function(t,e,n){return c(e,n).nextVisitDate}}],priority:(t,e)=>u(c(t,e)),resolvedIf:function(t,e,n,o){return m(t.reports)||p(t.reports,['fp_follow_up_renewal'],d(o,n),d(o,n,!0))}}]},function(t,e,n){const{getMostRecentReport:o,isFormArraySubmittedInWindow:a,notNull:r,getField:i,getFollowUpCount:_,R_Date:s,isValidDate:l,addDays:c,isPregnancyForm:u,isPregnancyFollowUpForm:p,isPregnant:f,isChildUnder5:d,getAgeInMonths:m,getAgeInDays:g,isReportValid:h}=n(0),y=new Date('2000-01-01');t.exports={getPriority:function(t){return r(t)?{level:r(t.priority_level)?t.priority_level:'',label:t.priority_label}:{level:'',label:''}},getNewbornConfig:function(t,e){var n,o,a=[],s=!1,l='newborn.followup';const u=_(e),p=i(e,'has_danger_signs');if('true'!==i(e,'close_out')){const t=i(e,'s_pnc.s_pnc_1_date'),a=i(e,'s_pnc.s_pnc_2_date');var f=r(t)?t:'',d=r(a)?a:'';1===u&&'true'===p?(s=!0,l='newborn.danger.signs.followup',o=0,n=c(new Date(e.reported_date),1)):2===u&&''!==f?(s=!0,l='newborn.followup.2',o=1,n=c(new Date(f),7)):3===u&&''!==d&&(s=!0,l='newborn.followup.3',o=2,n=c(new Date(d),14))}return!0===s&&a.push({source:'task',source_id:e._id,contact:t.contact,t_has_danger_signs:p,t_follow_up_count:u+1}),{nextVisitDate:n,eventIndex:o,priority_label:l,displayIf:s&&a.length>0,content:a.length>0?a[0]:{}}},getPcimeTreatmentFollowUpConfig:function(t,e){var n,a,s,l,u,p,f,d,m,g,w,v,b,D=[],k=[],T=!1,I=y,P='',F='',x='',C='',A=!1,S='pcime.followup';if(h(e)){w=i(e,'followup_type'),a=i(e,'has_diarrhea'),s=i(e,'has_fever'),l=i(e,'has_pneumonia'),g=i(e,'s_have_you_refer_child'),d=i(e,'has_cough_cold');const y=i(e,'accompaniment');if(r(y)&&(T=y),'true'===s&&k.push('fever'),'true'===a&&k.push('diarrhea'),'true'===l&&k.push('pneumonia'),'true'===d&&k.push('cough_cold'),r(i(e,'s_cough_cold'))){const t=i(e,'s_cough_cold.s_cough_cold_breathing_freq');r(t)&&(C=t)}if(r(i(e,'s_constant'))){const t=i(e,'s_constant.s_constant_child_temperature'),n=i(e,'s_constant.s_constant_child_weight'),o=i(e,'s_constant.s_constant_child_brachial_perimeter');r(t)&&(P=t),r(n)&&(F=n),r(o)&&(x=o)}u='true'===T||'yes'===g,f='true'===i(e,'has_malnutrition');const D=o(t.reports,['malnutrition_followup']),M='true'===i(D,'referral'),R='true'===i(e,'referral');p=null!==D&&M||R,n=_(e)+1,m=i(e,'fever_with_malaria');const V='pcime_c_asc'===e.form,O='usp_pcime_followup'===e.form,$='pcime_c_followup'===e.form,j=r(i(e,'s_fever_child_TDR'));if((V||O||$)&&(1===n&&(V||O)&&(v=0),2===n&&$&&(v=1),(0===v||1===v)&&k.length>0)){if(A=!0,1===k.length?(w=''+k[0],S='treatment.'+k[0]):(w='multiple',S='treatment.multiple'),(V||O)&&j){const t=i(e,'s_fever_child_TDR.s_fever_child_TDR_result');r(t)&&(b=t)}if('treatment.fever'!==S||'positive'!==b&&'true'!==m||(S='treatment.malaria.fever'),'pcime_c_followup'===e.form&&'yes'===i(e,'danger_signs.s_continue_followup')){const a=i(e,'disease_progress.s_condition_worsen'),r=i(e,'disease_progress.s_state_improved'),_=o(t.reports,['pcime_c_followup']),s=h(_)&&_._id===e._id,l=!0===('true'===i(e,'has_danger_signs')||'yes'===g)&&!0===s;'no'===a&&'no'===r&&2===n&&!1===l&&(P=i(e,'temperature.s_temperature'))}}I=c(new Date(e.reported_date),1)}return A&&D.push({source:'task',source_id:e._id,contact:t.contact,t_follow_up_type:w,t_follow_up_count:n,t_treat_for_diarrhea:a,t_treat_for_fever:s,t_treat_for_pneumonia:l,t_has_been_referred:!0===u?'yes':'no',t_has_been_malnutrition_referred:!0===p?'yes':'no',t_has_malnutrition:!0===f?'yes':'no',t_has_cough_cold:!0===d?'yes':'no',t_non_malaria_fever:i(e,'non_malaria_fever'),t_malaria_fever:m,t_resp_rate:C,t_last_visit_temperature:P,t_last_visit_weight:F,t_last_visit_child_brachial_perimeter:x}),{nextVisitDate:I,priority_label:S,displayIf:A&&D.length>0,content:D.length>0?D[0]:{}}},getReferalFollowUpConfig:function(t,e){var n=[],a=[],s='',l='',u='',p=!1,f=1,d=y;const m=i(e,'s_have_you_refer_child'),g=!!i(e,'accompaniment')&&i(e,'accompaniment');if('true'===i(e,'has_fever')&&a.push('fever'),'true'===i(e,'has_diarrhea')&&a.push('diarrhea'),'true'===i(e,'has_pneumonia')&&a.push('pneumonia'),r(i(e,'s_constant'))){const t=i(e,'s_constant.s_constant_child_temperature'),n=i(e,'s_constant.s_constant_child_weight'),o=i(e,'s_constant.s_constant_child_brachial_perimeter');r(t)&&(s=t),r(n)&&(l=n),r(o)&&(u=o)}const w=o(t.reports,['pcime_c_followup']),v=h(w)&&w._id===e._id,b=i(e,'disease_progress.s_condition_worsen'),D=i(e,'disease_progress.s_state_improved'),k=('true'===i(e,'has_danger_signs')||'yes'===m)&&!0===v,T=o(t.reports,['malnutrition_followup']),I=null!==T&&'true'===i(T,'referral')||'true'===i(e,'referral'),P=!('pcime_c_asc'!==e.form&&'usp_pcime_followup'!==e.form||0!==a.length||'true'!==g&&'yes'!==m&&!0!==I),F='pcime_c_followup'===e.form&&0===a.length&&(!0===k||'yes'===b||'no'===b&&'no'===D&&2===followupCount||'no'===D),x='pcime_c_referral'===e.form&&'true'===i(e,'referal'),C='malnutrition_followup'===e.form&&'true'===i(e,'referral');return(P||F||x||C)&&(p=!0,f=0,d=c(new Date(e.reported_date),1),n.push({source:'task',source_id:e._id,contact:t.contact,t_follow_up_type:'referral',t_follow_up_count:_(e)+1,t_last_weight:l,t_last_pb:u,t_last_temperature:s})),{nextVisitDate:d,eventIndex:f,priority_label:'pcime.referal',displayIf:p&&n.length>0,content:n.length>0?n[0]:{}}},getPcimeTreatmentMalnutritionConfig:function(t,e){var n,o,a,s=!1,u=[],p='',f=_(e),d=y,m=0;if(p='malnutrition.followup.'+f,'pcime_c_asc'===e.form&&'true'===i(e,'has_malnutrition')&&1===f){if(s=!0,d=c(new Date(e.reported_date),7),p='malnutrition.followup.1',r(i(e,'group_review'))&&r(i(e,'group_review.r_nutritional_treatment'))){const t=i(e,'group_review.r_nutritional_treatment.s_atpe_given_quantity');r(t)&&(m=t)}}else if('malnutrition_followup'===e.form&&f>1&&f<7&&(p='malnutrition.followup.'+(f-1),s=!0,d=c(new Date(e.reported_date),6===f||7===f?14:7),r(i(e,'s_atpe_quantity')))){const t=i(e,'s_atpe_quantity.s_atpe_given_quantity');r(t)&&(m=t)}if(r(i(e,'s_constant'))){const t=i(e,'s_constant.s_constant_child_temperature'),_=i(e,'s_constant.s_constant_child_weight'),s=i(e,'s_constant.s_constant_child_brachial_perimeter');r(t)&&(n=t),r(_)&&(o=_),r(s)&&(a=s)}return s&&u.push({source:'task',source_id:e._id,contact:t.contact,t_follow_up_type:'malnutrition',t_follow_up_count:f+1,t_temperature_from_assessment:n,t_weight_from_assessment:o,t_pb_from_assessment:a,t_assessment_date:l(d)?d.toISOString():'',t_atpe_given_quantity:m}),{nextVisitDate:d,eventIndex:f,priority_label:p,displayIf:s&&u.length>0,content:u.length>0?u[0]:{}}},getPostnatalConfig:function(t,e){var n,o,a,s=!1,u=[],p=y,d=parseInt(i(e,'follow_up_count'),10),m=0;if(!f(t.reports)&&h(e))if('delivery'===e.form&&'true'===i(e,'has_delivered')&&r(i(e,'s_delivery'))){a=new Date(i(e,'s_delivery.s_delivery_date'));var g=parseInt(i(e,'s_delivery.c_delivery_dif'),10);r(i(e,'s_delivery.s_child_alive_rest'))&&(m=i(e,'s_delivery.s_child_alive_rest')),g>=7?(s=!0,n='postnatal.followup.1','no'===i(e,'s_delivery.s_pnc_today')?p=new Date(i(e,'s_delivery.s_next_pnc')):'yes'===i(e,'s_delivery.s_pnc_today')&&(p=new Date(e.reported_date))):(s=!0,n='postnatal.followup.1',p=c(a,7-g))}else if('postnatal_followup'===e.form&&d>0&&d<3&&r(i(e,'reschedule_task'))){o=i(e,'close_out');const t=i(e,'reschedule_task.is_woman_available');if('no'===t){const t=i(e,'reschedule_task.s_date_to_reschedule');''!==t&&null!==t&&'null'!==t&&(s=!0,n='postnatal.followup.'+d,p=new Date(t))}else if('yes'===t&&'true'!==o&&(r(i(e,'s_child_alive'))&&(m=i(e,'s_child_alive')),r(i(e,'usp_follow_up_visit'))&&r(i(e,'usp_follow_up_visit.date_next_visit_mother_newborn')))){s=!0,n='postnatal.followup.'+(d+1);var w=new Date(i(e,'usp_follow_up_visit.date_next_visit_mother_newborn'));p=c(w,7)}}return s&&u.push({source:'task',source_id:e._id,contact:t.contact,t_follow_up_count:_(e)+1,t_delivery_date:l(a)?a.toISOString().substring(0,10):'',t_child_alive:m,t_close_out:o}),{close_out:o,nextVisitDate:p,priority_label:n,displayIf:s&&u.length>0,content:u.length>0?u[0]:{}}},getPrenatalConfig:function(t,e){var n,o,a,s=!1,l=[],d=y,m=!1;if(f(t.reports)&&h(e))if(p(e)&&r(i(e,'reschedule_task'))){m='close_out'===i(e,'s_today_task.s_task_to_perform');const t=i(e,'reschedule_task.is_woman_available');if('no'===t){const t=i(e,'reschedule_task.s_date_to_reschedule');''!==t&&null!==t&&'null'!==t&&(s=!0,a=1,d=new Date(t))}else'yes'===t&&!0!==m&&(r(i(e,'s_vad_1'))?(s=!0,a=0,d=r(i(e,'s_vad_1.s_anc_next_anc'))?new Date(i(e,'s_vad_1.s_anc_next_anc')):new Date(i(e,'s_vad_1.s_anc_1_date'))):r(i(e,'s_vad_2'))?r(i(e,'s_vad_2.s_anc_2_date'))&&(s=!0,a=0,d=new Date(i(e,'s_vad_2.s_anc_2_date'))):r(i(e,'s_vad_3'))?r(i(e,'s_vad_3.s_anc_3_date'))&&(s=!0,a=0,d=new Date(i(e,'s_vad_3.s_anc_3_date'))):r(i(e,'s_vad_4'))&&r(i(e,'s_vad_4.s_anc_4_date'))&&(s=!0,a=0,d=new Date(i(e,'s_vad_4.s_anc_4_date'))))}else if(u(e)){var g,w,v;if(r(i(e,'s_reg_pregnancy_screen'))&&(r(i(e,'s_reg_pregnancy_screen.s_reg_urine_result'))&&(g=i(e,'s_reg_pregnancy_screen.s_reg_urine_result')),r(i(e,'s_reg_pregnancy_screen.s_reg_why_urine_test_not_done'))&&(w=i(e,'s_reg_pregnancy_screen.s_reg_why_urine_test_not_done'))),r(i(e,'s_reg_pregnancy'))&&r(i(e,'s_reg_pregnancy.first_prenatal_followup_today'))&&(v=i(e,'s_reg_pregnancy.first_prenatal_followup_today')),r(v)&&r(i(e,'s_vad_1')))s=!0,a=0,d=r(i(e,'s_vad_1.s_anc_next_anc'))?new Date(i(e,'s_vad_1.s_anc_next_anc')):new Date(i(e,'s_vad_1.s_anc_1_date')),n='yes'===i(e,'s_vad_1.s_anc_1_visit')?i(e,'s_vad_1.s_anc_number')+1:1,o='prenatal-followup';else if('positive'===g||'already_pregnant'===w){var b;const t=i(e,'next_anc_visit_follow_up_date');b=r(t)?new Date(t):new Date(i(e,'next_visit')),r(b)&&'Invalid Date'!==b&&(s=!0,a=1,d=b)}}const D=0===a?c(d,7):d;return s&&l.push({source:'task',source_id:e._id,contact:t.contact,t_follow_up_count:_(e)+1,t_follow_up_type:o,t_anc_visit:n,t_close_out:''+m}),{nextVisitDate:D,close_out:''+m,priority_label:'treatment.prenatal',displayIf:s&&l.length>0,content:l.length>0?l[0]:{}}},getFamilyPlanningFirstFollowupConfig:function(t,e){var n,a,s=!1,l=[],u=y,p=0;if(!f(t.reports)&&h(e))if(n=i(e,'fp_method'),'fp_followup_danger_sign_check'===e.form&&r(n)&&r(i(e,'s_side_effects'))&&'yes'===i(e,'s_side_effects.s_woman_new_packet')){s=!0;const t=new Date(e.reported_date);'oral_combination_pill'===n?(a='oral.combination.pill',u=c(t,7)):'injectible'===n&&(a='injectible',u=c(t,30))}else if('fp_follow_up_renewal'===e.form&&r(n)&&'no'===i(e,'stop_fp')&&r(i(e,'checklist1'))&&r(i(e,'s_side_effects'))&&'yes'===i(e,'checklist1.s_renew_method')&&'yes'===i(e,'s_side_effects.s_woman_new_packet')){s=!0,p=_(e);const t=new Date(e.reported_date);'oral_combination_pill'===n?(a='oral.combination.pill',u=c(t,7)):'injectible'===n&&(a='injectible',u=c(t,30))}else if('pregnancy_family_planning'===e.form&&r(i(e,'start_method'))){n=i(e,'chosen_fp_method');const _=o(t.reports,['fp_follow_up_renewal']);if(!0===(!r(_)||new Date(_.reported_date)<new Date(e.reported_date))){const t=i(e,'start_method.s_ren_start_date_fam_plan'),o=i(e,'start_method.s_scheduled_start_date');(r(t)||r(o))&&(renewDate=r(t)?new Date(t):new Date(o),s=!0,'oral_combination_pill'===n?(a='oral.combination.pill',u=c(renewDate,7)):'injectible'===n&&(a='injectible',u=c(renewDate,30)))}}return s&&l.push({source:'task',source_id:e._id,contact:t.contact,t_follow_up_count:p+1,t_fp_method:n}),{eventIndex:void 0,nextVisitDate:u,priority_label:a,displayIf:s&&l.length>0,content:l.length>0?l[0]:{}}},getFamilyPlanningFollowupConfig:function(t,e){var n,a=!1,s=[],l=1,u=y,p=y,d='';if(!f(t.reports)&&h(e))if('fp_follow_up_renewal'===e.form){d=i(e,'fp_method');const t=r(i(e,'fp_method')),o='no'===i(e,'stop_fp'),s='yes'===i(e,'checklist1.s_renew_method');!1===(t&&o&&s)&&(l=_(e),u=new Date(i(e,'checklist1.s_when_renew_method')),'oral_combination_pill'===d?(a=!0,p=c(u,28),n='oral.combination.pill'):'injectible'===d&&(a=!0,p=c(u,90),n='injectible'))}else if('pregnancy_family_planning'===e.form&&r(i(e,'start_method'))){d=i(e,'chosen_fp_method');const _=o(t.reports,['fp_follow_up_renewal']);if(!0===(!r(_)||new Date(_.reported_date)<new Date(e.reported_date))){const t=i(e,'start_method.s_ren_start_date_fam_plan'),o=i(e,'start_method.s_scheduled_start_date');(r(t)||r(o))&&(u=r(t)?new Date(t):new Date(o),a=!0,'oral_combination_pill'===d?(n='oral.combination.pill',p=c(u,19)):'injectible'===d&&(n='injectible',p=c(u,90)))}}return a&&s.push({source:'task',source_id:e._id,contact:t.contact,t_follow_up_count:l+1,t_fp_method:d}),{nextVisitDate:p,eventIndex:void 0,priority_label:n,displayIf:a&&s.length>0,content:s.length>0?s[0]:{}}},isFormArraySubmittedInWindow:a,getMostRecentReport:o,R_Date:s,isPregnant:f,isChildUnder5:d,getAgeInMonths:m,getAgeInDays:g,fackDate:y}},function(t,e,n){const{hasAllVisitActionsMonthly:o,isConsultationAndFollowupMonthly:a,isPcimeReferalFollowupMonthly:r,toDateString:i,isBetween21and20:_,isPregnantMonthly:s,isPregnancyUrineTestMonthly:l,isFeverTdrGivenMonthly:c,isPregnant:u,isActiveFamilyPlanning:p}=n(6),{isFormBetween21and20:f,getChildPatologie:d,isAlive:m}=n(0),g='21 au 20';t.exports=[{id:'deaths-monthly',type:'count',icon:'clinic-lg',translation_key:'targets.all_death',goal:-1,appliesTo:'reports',appliesIf:function(t,e){return!m(t.contact,t.reports)},dhis:{dataSet:'VMuFODsyWAO',dataElement:'kB0ZBFisD0e'},aggregate:!0},{id:'consultation-followup-monthly',type:'count',icon:'clinic-lg',translation_key:'targets.consultation_and_followup_monthly',subtitle_translation_key:g,goal:-1,appliesTo:'reports',appliesIf:function(t,e){return a(e)},aggregate:!0},{id:'active-research-monthly',type:'count',icon:'home-visit',translation_key:'targets.active_research_monthly',subtitle_translation_key:g,goal:-1,appliesTo:'reports',appliesIf:function(t,e){return m(t.contact,t.reports)&&f(e,['home_visit','death_report'])},aggregate:!0},{id:'home-actions-monthly',type:'count',icon:'clinic-lg',translation_key:'targets.all_visit_actions_monthly',subtitle_translation_key:g,goal:180,appliesTo:'reports',appliesIf:function(t,e){return m(t.contact,t.reports)&&o(e)},aggregate:!0},{id:'child-paludisme-monthly',type:'count',icon:'clinic-lg',translation_key:'targets.child_paludisme_monthly',subtitle_translation_key:g,goal:-1,appliesTo:'reports',appliesIf:function(t,e){return m(t.contact,t.reports)&&d(e,'paludisme')},aggregate:!0},{id:'child-toux_rhume-monthly',type:'count',icon:'clinic-lg',translation_key:'targets.child_toux_rhume_monthly',subtitle_translation_key:g,goal:-1,appliesTo:'reports',appliesIf:function(t,e){return m(t.contact,t.reports)&&d(e,'toux_rhume')},aggregate:!0},{id:'child-pneumonia-monthly',type:'count',icon:'clinic-lg',translation_key:'targets.child_pneumonia_monthly',subtitle_translation_key:g,goal:-1,appliesTo:'reports',appliesIf:function(t,e){return m(t.contact,t.reports)&&d(e,'pneumonia')},aggregate:!0},{id:'child-diarrhea-monthly',type:'count',icon:'clinic-lg',translation_key:'targets.child_diarrhea_monthly',subtitle_translation_key:g,goal:-1,appliesTo:'reports',appliesIf:function(t,e){return m(t.contact,t.reports)&&d(e,'diarrhea')},aggregate:!0},{id:'child-malnutrition-monthly',type:'count',icon:'clinic-lg',translation_key:'targets.child_malnutrition_monthly',subtitle_translation_key:g,goal:-1,appliesTo:'reports',appliesIf:function(t,e){return m(t.contact,t.reports)&&d(e,'malnutrition')},aggregate:!0},{id:'child-tdr-given-monthly',type:'count',icon:'clinic-lg',translation_key:'targets.child_tdr_given_monthly',subtitle_translation_key:g,goal:-1,appliesTo:'reports',appliesIf:function(t,e){return m(t.contact,t.reports)&&c(e)},aggregate:!0},{id:'positive-tdr-given-monthly',type:'count',icon:'clinic-lg',translation_key:'targets.child_positive_tdr_given_monthly',subtitle_translation_key:g,goal:-1,appliesTo:'reports',appliesIf:function(t,e){return m(t.contact,t.reports)&&c(e,'positive')},aggregate:!0},{id:'active-family-planning',type:'count',icon:'clinic-lg',translation_key:'targets.active_family_planning',subtitle_translation_key:'targets.active_family_planning.subtitle',goal:-1,appliesTo:'reports',appliesIf:function(t,e){return m(t.contact,t.reports)&&p(t,e)},aggregate:!0},{id:'home-visits-per-family-monthly',icon:'home-visit',type:'count',goal:-1,translation_key:'targets.home_visits_per_family_monthly',subtitle_translation_key:g,date:'reported',appliesTo:'reports',appliesIf:function(t,e){return m(t.contact,t.reports)&&_(e.reported_date)&&('clinic'===t.contact.type||'person'===t.contact.type&&'patient'===t.contact.role)},idType:(t,e)=>{const n=new Set(t.reports.map(t=>i(t.reported_date)));var o=t.contact.parent._id;return'clinic'===t.contact.type&&(o=t.contact._id),Array.from(n).map(t=>`${o}~${t}`)},groupBy:function(t,e){return'clinic'===t.contact.type?t.contact._id:t.contact.parent._id},passesIfGroupCount:{gte:1},aggregate:!0},{id:'number-of-family-registered',icon:'home-visit',type:'count',goal:-1,translation_key:'targets.number_of_family_registered',subtitle_translation_key:'targets.number_of_family_registered.subtitle',date:'now',appliesTo:'contacts',appliesToType:['clinic','person'],appliesIf:function(t,e){return m(t.contact,t.reports)&&('clinic'===t.contact.type||'person'===t.contact.type&&'patient'===t.contact.role)},groupBy:function(t,e){return'clinic'===t.contact.type?t.contact._id:t.contact.parent._id},passesIfGroupCount:{gte:1},aggregate:!0},{id:'total_pregnancy_registered-monthly',type:'count',icon:'pcime_c-visit',translation_key:'targets.total_pregnancy_registered_monthly',subtitle_translation_key:g,goal:-1,appliesTo:'reports',appliesIf:function(t,e){return m(t.contact,t.reports)&&s(e)},aggregate:!0},{id:'pregnancy_active_registered-monthly',type:'count',icon:'pcime_c-visit',translation_key:'targets.pregnancy_active_registered_monthly',subtitle_translation_key:g,goal:-1,appliesTo:'reports',appliesIf:function(t,e){return m(t.contact,t.reports)&&u(t.reports)&&_(e.reported_date)},aggregate:!0},{id:'total_pregnancy_urine_test-monthly',type:'count',icon:'pcime_c-visit',translation_key:'targets.total_pregnancy_urine_test_monthly',subtitle_translation_key:g,goal:-1,appliesTo:'reports',appliesIf:function(t,e){return m(t.contact,t.reports)&&l(e)&&f(e,['pregnancy_family_planning','fp_follow_up_renewal'])},aggregate:!0},{id:'total_prenatal_followup-monthly',type:'count',icon:'home-visit',translation_key:'targets.total_prenatal_followup_monthly',subtitle_translation_key:g,goal:-1,appliesTo:'reports',appliesIf:function(t,e){return m(t.contact,t.reports)&&f(e,['prenatal_followup'])},aggregate:!0},{id:'total_postnatal_followup-monthly',type:'count',icon:'home-visit',translation_key:'targets.total_postnatal_followup_monthly',subtitle_translation_key:g,goal:-1,appliesTo:'reports',appliesIf:function(t,e){return m(t.contact,t.reports)&&f(e,['postnatal_followup'])},aggregate:!0},{id:'pcime_referal-monthly',type:'count',icon:'clinic-lg',translation_key:'targets.pcime_referal_followup_monthly',subtitle_translation_key:g,goal:-1,appliesTo:'reports',appliesIf:function(t,e){return r(e)},aggregate:!0}]},function(t,e,n){const{notNull:o,getField:a,isPregnant:r,isActiveFamilyPlanning:i,isActiveOralCombinationPillFamilyPlanning:_,isActiveInjectibleFamilyPlanning:s,isBetween21and20:l,getMostRecentReport:c,toDateString:u,getDateInFormat:p}=n(0),f=['pcime_c_asc','pcime_c_referral','pcime_c_followup','malnutrition_followup','pregnancy_family_planning','delivery','prenatal_followup','postnatal_followup','newborn_followup','home_visit','death_report','women_emergency_followup','fp_followup_danger_sign_check','fp_follow_up_renewal','usp_pcime_followup'],d=['pcime_c_asc','pregnancy_family_planning','delivery','pcime_c_followup','pcime_c_referral','malnutrition_followup','prenatal_followup','postnatal_followup','newborn_followup','women_emergency_followup','fp_followup_danger_sign_check','fp_follow_up_renewal','usp_pcime_followup'],m=['pcime_c_asc','pregnancy_family_planning','delivery'],g=['pcime_c_followup','pcime_c_referral','malnutrition_followup','prenatal_followup','postnatal_followup','newborn_followup','women_emergency_followup','fp_followup_danger_sign_check','fp_follow_up_renewal','usp_pcime_followup'],h=['pcime_c_asc','pcime_c_followup','newborn_followup','pcime_c_referral','malnutrition_followup','usp_pcime_followup'],y=['pcime_c_followup','newborn_followup','pcime_c_referral','malnutrition_followup','usp_pcime_followup'];t.exports={isBetween21and20:l,toDateString:u,hasAllVisitActionsMonthly:function(t){return!!f.includes(t.form)&&l(t.reported_date)},isConsultationAndFollowupMonthly:function(t){return!!d.includes(t.form)&&l(t.reported_date)},isConsultationMonthly:function(t){return!!m.includes(t.form)&&l(t.reported_date)},isFollowupMonthly:function(t){return!!g.includes(t.form)&&(!!l(t.reported_date)||(console.log(p(t.reported_date)),!1))},isPcimeReferalFollowupMonthly:function(t){return!!['pcime_c_referral'].includes(t.form)&&l(t.reported_date)},isTotalPcimeCMonthly:function(t){return!!h.includes(t.form)&&l(t.reported_date)},isTotalPcimeCFollowupMonthly:function(t){return!!y.includes(t.form)&&l(t.reported_date)},isPregnantMonthly:function(t){if('pregnancy_family_planning'===t.form&&!0===l(t.reported_date))try{const e='positive'===a(t,'s_reg_pregnancy_screen.s_reg_urine_result'),n='already_pregnant'===a(t,'s_reg_pregnancy_screen.s_reg_why_urine_test_not_done');return!0===e||!0===n}catch(t){console.log(t)}return!1},isPregnancyUrineTestMonthly:function(t){if('pregnancy_family_planning'===t.form)return'yes'===a(t,'s_reg_pregnancy_screen.s_reg_urine_test');if('fp_follow_up_renewal'===t.form){const e=a(t,'s_side_effects.s_pregnancy_result');return'positive'===e||'negative'===e}return!1},isFeverTdrGivenMonthly:function(t,e='all'){if(['pcime_c_asc'].includes(t.form)&&l(t.reported_date)&&o(a(t,'s_fever_child_TDR'))&&o(a(t,'s_fever_child_TDR.s_fever_child_TDR_result'))){const n=a(t,'s_fever_child_TDR.s_fever_child_TDR_result');return'positive'===e?'positive'===n:'negative'===e?'negative'===n:'positive'===n||'negative'===n}return!1},isPregnant:r,isActiveFamilyPlanning:i,isActiveOralCombinationPillFamilyPlanning:_,isActiveInjectibleFamilyPlanning:s,getMostRecentReport:c,home_actions_forms:f}},function(t,e,n){var o=n(1),a=n(8);function r(t,e,n,o,a,r){var i;if(t.appliesToType){var _;if('contacts'===t.appliesTo){if(!a.contact)return;_='contact'===a.contact.type?a.contact.contact_type:a.contact.type}else{if(!r)return;_=r.form}if(-1===t.appliesToType.indexOf(_))return}if('scheduled_tasks'===t.appliesTo||!t.appliesIf||t.appliesIf(a,r))if('scheduled_tasks'===t.appliesTo){if(r&&t.appliesIf){if(!r.scheduled_tasks)return;for(i=0;i<r.scheduled_tasks.length;i++)t.appliesIf(a,r,i)&&l(i)}}else l();function s(t,e,n){var o;return(o='function'==typeof t.contactLabel?t.contactLabel(e,n):t.contactLabel)?{name:o}:e.contact}function l(i){var _,l,u,p,f=null;for(_=0;_<t.events.length;_++){if((l=t.events[_]).dueDate)f=l.dueDate(l,a,r,i);else if(r)f=void 0!==i?new Date(e.addDate(new Date(r.scheduled_tasks[i].due),l.days)):new Date(e.addDate(new Date(r.reported_date),l.days));else if(l.dueDate)f=l.dueDate(l,a);else{var d=a.contact&&a.contact.reported_date?new Date(a.contact.reported_date):new Date;f=new Date(e.addDate(d,l.days))}e.isTimely(f,l)&&(p={_id:(r?r._id:a.contact&&a.contact._id)+'~'+(l.id||_)+'~'+t.name,deleted:!(!(a.contact&&a.contact.deleted||r)||!r.deleted),doc:a,contact:s(t,a,r),icon:t.icon,date:f,readyStart:l.start||0,readyEnd:l.end||0,title:t.title,resolved:t.resolvedIf(a,r,l,f,i),actions:c(t.actions,l)},void 0!==i&&(p._id+='-'+i),'function'==typeof(u=t.priority)&&(u=u(a,r)),u&&(p.priority=u.level,p.priorityLabel=u.label),o('task',new n(p)))}}function c(e,n){return t.actions.map((function(t){return function(t,e){var n={source:'task',source_id:r?r._id:a.contact&&a.contact._id,contact:a.contact};t.modifyContent&&t.modifyContent(n,a,r,e);return{type:t.type||'report',form:t.form,label:t.label||'Follow up',content:n}}(t,n)}))}}t.exports=function(t,e,n,i,_){if(t)for(var s,l,c=0;c<t.length;++c)switch('function'!=typeof(s=Object.assign({},t[c],a)).resolvedIf&&(s.resolvedIf=function(t,e,o,a){return s.defaultResolvedIf(t,e,o,a,n)}),o(s),s.appliesTo){case'reports':case'scheduled_tasks':for(var u=0;u<e.reports.length;++u)l=e.reports[u],r(s,n,i,_,e,l);break;case'contacts':e.contact&&r(s,n,i,_,e);break;default:throw new Error('Unrecognised task.appliesTo: '+s.appliesTo)}}},function(t,e){t.exports={defaultResolvedIf:function(t,e,n,o,a){var r,i;a||(a=Utils);var _=function(t){var e;if(!t||!t.actions)return;return(e=t.actions.find((function(t){return!t.type||'report'===t.type})))&&e.form}(this.definition);if(!_)throw new Error('Could not find the default resolving form!');return r=0,r=e?Math.max(a.addDate(o,-n.start).getTime(),e.reported_date+1):a.addDate(o,-n.start).getTime(),i=a.addDate(o,n.end+1).getTime(),a.isFormSubmittedInWindow(t.reports,_,r,i)}}},function(t,e,n){var o=n(1);function a(t,e,n,o,a,r){var i=!!r;if(a.contact){var _='contact'===a.contact.type?a.contact.contact_type:a.contact.type,s=i?r.form:_;if(!(t.appliesToType&&t.appliesToType.indexOf(s)<0)&&(!t.appliesIf||t.appliesIf(a,r)))for(var l=i?r:a.contact,c=function(t,e,n){var o;return o='function'==typeof t.idType?t.idType(e,n):'report'===t.idType?n&&n._id:e.contact&&e.contact._id,Array.isArray(o)||(o=[o]),o}(t,a,r),u=!t.passesIf||!!t.passesIf(a,r),p=function(t,e,n,o){if('function'==typeof t.date)return t.date(n,o)||e.now().getTime();if(void 0===t.date||null===t.date||'now'===t.date)return e.now().getTime();if('reported'===t.date)return o?o.reported_date:n.contact.reported_date;throw new Error('Unrecognised value for target.date: '+t.date)}(t,n,a,r),f=t.groupBy&&t.groupBy(a,r),d=0;d<c.length;++d){var m=new e({_id:c[d]+'~'+t.id,contact:a.contact,deleted:!!l.deleted,type:t.id,pass:u,groupBy:f,date:p});t.emitCustom?t.emitCustom(g,m,a,r):g(m)}}function g(t){o('target',t)}}t.exports=function(t,e,n,r,i){for(var _=0;_<t.length;++_){var s=t[_];switch(o(s),s.appliesTo){case'contacts':a(s,r,n,i,e);break;case'reports':for(var l=0;l<e.reports.length;++l){a(s,r,n,i,e,e.reports[l])}break;default:throw new Error('Unrecognised target.appliesTo: '+s.appliesTo)}}}}]); }\n}",
+    "targets": {
+      "enabled": true,
+      "items": [
+        {
+          "id": "deaths-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.all_death",
+          "icon": "clinic-lg",
+          "dhis": {
+            "dataSet": "VMuFODsyWAO",
+            "dataElement": "kB0ZBFisD0e"
+          },
+          "aggregate": true
+        },
+        {
+          "id": "consultation-followup-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.consultation_and_followup_monthly",
+          "icon": "clinic-lg",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        },
+        {
+          "id": "active-research-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.active_research_monthly",
+          "icon": "home-visit",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        },
+        {
+          "id": "home-actions-monthly",
+          "type": "count",
+          "goal": 180,
+          "translation_key": "targets.all_visit_actions_monthly",
+          "icon": "clinic-lg",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        },
+        {
+          "id": "child-paludisme-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.child_paludisme_monthly",
+          "icon": "clinic-lg",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        },
+        {
+          "id": "child-toux_rhume-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.child_toux_rhume_monthly",
+          "icon": "clinic-lg",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        },
+        {
+          "id": "child-pneumonia-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.child_pneumonia_monthly",
+          "icon": "clinic-lg",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        },
+        {
+          "id": "child-diarrhea-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.child_diarrhea_monthly",
+          "icon": "clinic-lg",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        },
+        {
+          "id": "child-malnutrition-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.child_malnutrition_monthly",
+          "icon": "clinic-lg",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        },
+        {
+          "id": "child-tdr-given-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.child_tdr_given_monthly",
+          "icon": "clinic-lg",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        },
+        {
+          "id": "positive-tdr-given-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.child_positive_tdr_given_monthly",
+          "icon": "clinic-lg",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        },
+        {
+          "id": "active-family-planning",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.active_family_planning",
+          "icon": "clinic-lg",
+          "subtitle_translation_key": "targets.active_family_planning.subtitle",
+          "aggregate": true
+        },
+        {
+          "id": "home-visits-per-family-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.home_visits_per_family_monthly",
+          "passesIfGroupCount": {
+            "gte": 1
+          },
+          "icon": "home-visit",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        },
+        {
+          "id": "number-of-family-registered",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.number_of_family_registered",
+          "passesIfGroupCount": {
+            "gte": 1
+          },
+          "icon": "home-visit",
+          "subtitle_translation_key": "targets.number_of_family_registered.subtitle",
+          "aggregate": true
+        },
+        {
+          "id": "total_pregnancy_registered-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.total_pregnancy_registered_monthly",
+          "icon": "pcime_c-visit",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        },
+        {
+          "id": "pregnancy_active_registered-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.pregnancy_active_registered_monthly",
+          "icon": "pcime_c-visit",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        },
+        {
+          "id": "total_pregnancy_urine_test-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.total_pregnancy_urine_test_monthly",
+          "icon": "pcime_c-visit",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        },
+        {
+          "id": "total_prenatal_followup-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.total_prenatal_followup_monthly",
+          "icon": "home-visit",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        },
+        {
+          "id": "total_postnatal_followup-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.total_postnatal_followup_monthly",
+          "icon": "home-visit",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        },
+        {
+          "id": "pcime_referal-monthly",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.pcime_referal_followup_monthly",
+          "icon": "clinic-lg",
+          "subtitle_translation_key": "21 au 20",
+          "aggregate": true
+        }
+      ]
+    }
+  },
+  "transitions": {
+    "accept_patient_reports": {
+      "load": "./transitions/accept_patient_reports.js"
+    },
+    "conditional_alerts": {
+      "load": "./transitions/conditional_alerts.js"
+    },
+    "default_responses": {
+      "load": "./transitions/default_responses.js"
+    },
+    "update_sent_by": {
+      "load": "./transitions/update_sent_by.js"
+    },
+    "registration": {
+      "load": "./transitions/registration.js"
+    },
+    "update_clinics": {
+      "load": "./transitions/update_clinics.js"
+    },
+    "muting": {
+      "load": "./transitions/muting.js"
+    },
+    "update_scheduled_reports": {
+      "load": "./transitions/update_scheduled_reports.js"
+    },
+    "update_sent_forms": {
+      "load": "./transitions/update_sent_forms.js"
+    },
+    "generate_shortcode_on_contacts": true,
+    "death_reporting": true
+  },
+  "muvuku_webapp_url": "/medic-reporter/_design/medic-reporter/_rewrite/?_embed_mode=2&_locale=en#/generic-anc.json",
+  "anc_forms": {
+    "registration": "R",
+    "registrationLmp": "P",
+    "visit": "V",
+    "delivery": "D",
+    "flag": "F"
+  },
+  "care_coordinator": "chw",
+  "anc_registration_lmp": true,
+  "statistics_submission": "none",
+  "outgoing_phone_replace": {
+    "match": "",
+    "replace": ""
+  },
+  "outgoing_phone_filters": [
+    {
+      "match": "",
+      "replace": ""
+    }
+  ],
+  "id_format": "1111",
+  "statistics_submission_number": "",
+  "replication_depth": [
+    {
+      "role": "chw_supervisor",
+      "depth": 3,
+      "report_depth": 2
+    }
+  ],
+  "alerts": [
+    {
+      "form": "",
+      "condition": "",
+      "message": "",
+      "recipient": ""
+    }
+  ],
+  "reminders": [
+    {
+      "form": "",
+      "text_expression": "",
+      "cron": "",
+      "mute_after_form_for": "",
+      "message": ""
+    }
+  ],
+  "registrations": [
+    {
+      "form": "P",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_patient_id",
+          "params": "",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "add_expected_date",
+          "params": "lmp_date",
+          "bool_expr": "doc.fields.last_menstrual_period"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "ANC Reminders LMP",
+          "bool_expr": "doc.fields.last_menstrual_period"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_name",
+            "rule": "lenMin(1) && lenMax(30)",
+            "message": [
+              {
+                "content": "{{#patient_name}}The registration format is incorrect. Please try again with a name of 30 characters or less.{{/patient_name}}{{^patient_name}}The registration format is incorrect. Please try again ensuring that the message ends with the mother's name.{{/patient_name}}.",
+                "locale": "en"
+              },
+              {
+                "content": "{{#patient_name}}Le format d'enregistrement est incorrect. SVP réessayer avec le nom de la mère ayant un maximum de 30 caractères.{{/patient_name}}{{^patient_name}}Le format d'enregistrement est incorrect. SVP réessayer en incluant le nom de la mère à la fin du message.{{/patient_name}}.",
+                "locale": "fr"
+              }
+            ]
+          },
+          {
+            "property": "last_menstrual_period",
+            "rule": "(integer && min(0) && max(42))",
+            "message": [
+              {
+                "content": "The registration format for '{{patient_name}}' is incorrect, please ensure that LMP is a number between 0 and 42.",
+                "locale": "en"
+              },
+              {
+                "content": "L'inscription pour '{{patient_name}}' n'est pas valide. Assurez vous que le nombre de semaines depuis les dernières règles est entre 0 et 42.",
+                "locale": "fr"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "message": [
+            {
+              "content": "Thank you for registering {{patient_name}}. Their pregnancy ID is {{patient_id}}, and EDD is {{#date}}{{expected_date}}{{/date}}",
+              "locale": "en"
+            },
+            {
+              "content": "Merci pour avoir inscrit {{patient_name}}. Son code est le {{patient_id}}, et la date présumée de l'accouchement est le {{#date}}{{expected_date}}{{/date}}",
+              "locale": "fr"
+            }
+          ],
+          "recipient": "reporting_unit"
+        }
+      ]
+    },
+    {
+      "form": "R",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_patient_id",
+          "params": "",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "ANC Reminders",
+          "bool_expr": ""
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_name",
+            "rule": "lenMin(1) && lenMax(30)",
+            "message": [
+              {
+                "content": "{{#patient_name}}The registration format is incorrect, ensure the message starts with R followed by space and the mother's name (maximum of 30 characters).{{/patient_name}}{{^patient_name}}The registration format is incorrect. ensure the message starts with R followed by space and the mother's name.{{/patient_name}}.",
+                "locale": "en"
+              },
+              {
+                "content": "{{#patient_name}}Le format d'enregistrement est incorrect. SVP réessayer avec le nom de la mère ayant un maximum de 30 caractères.{{/patient_name}}{{^patient_name}}Le format d'enregistrement est incorrect. SVP réessayer en incluant le nom de la mère à la fin du message.{{/patient_name}}.",
+                "locale": "fr"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "message": [
+            {
+              "content": "Thank you {{contact.name}} for registering {{patient_name}}. Pregnancy ID is {{patient_id}}.",
+              "locale": "en"
+            },
+            {
+              "content": "Merci {{contact.name}} pour avoir inscrit {{patient_name}}. Son code d'identification pour cette grossesse est le {{patient_id}}.",
+              "locale": "fr"
+            }
+          ],
+          "recipient": "reporting_unit"
+        }
+      ]
+    }
+  ],
+  "patient_reports": [
+    {
+      "form": "V",
+      "name": "Visits (SMS)",
+      "format": "V <patientid>",
+      "silence_type": "ANC Reminders, ANC Reminders LMP",
+      "silence_for": "8 days",
+      "fields": [
+        {
+          "field_name": "",
+          "title": ""
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5}$')",
+            "message": [
+              {
+                "content": "{{#patient_id}}The ID number submitted is incorrect, it should be 5 numbers, please submit a valid ID.{{/patient_id}}{{^patient_id}}The message format is incorrect. Please ensure send a message start with V followed by space then the woman's ID.{{/patient_id}}",
+                "locale": "en"
+              },
+              {
+                "content": "{{#patient_id}}Le numéro d'identification doit être 5 chiffres. SVP réessayez avec un code d'identification valide.{{/patient_id}}{{^patient_id}}Le message manque le numéro d'identification. SVP réessayez avec la lettre V suivi d'un espace ensuite le code d'identification du patient.{{/patient_id}}",
+                "locale": "fr"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "message": [
+            {
+              "content": "Thank you {{contact.name}}, visit for {{patient_name}} ({{patient_id}}) has been recorded.",
+              "locale": "en"
+            },
+            {
+              "content": "Merci {{contact.name}}, nous avons pris note de la visite de {{patient_name}} ({{patient_id}}).",
+              "locale": "fr"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        },
+        {
+          "message": [
+            {
+              "content": "No woman with ID number '{{patient_id}}' found. Verify the ID and resend the message.",
+              "locale": "en"
+            },
+            {
+              "content": "Aucun patient a été trouvé avec le numéro d'identification '{{patient_id}}'. Vérifier le code d'identification et réessayer",
+              "locale": "fr"
+            }
+          ],
+          "event_type": "registration_not_found",
+          "recipient": "reporting_unit"
+        }
+      ]
+    },
+    {
+      "form": "D",
+      "name": "Visits",
+      "format": "D <patientid>",
+      "silence_type": "ANC Reminders, ANC Reminders LMP",
+      "silence_for": "",
+      "fields": [
+        {
+          "field_name": "",
+          "title": ""
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5}$')",
+            "message": [
+              {
+                "content": "{{#patient_id}}The ID number submitted is incorrect, it should be 5 numbers, please submit a valid ID.{{/patient_id}}{{^patient_id}}The message format is incorrect. Please ensure the message ends with the woman's 5 digit ID.{{/patient_id}}",
+                "locale": "en"
+              },
+              {
+                "content": "{{#patient_id}}Le numéro d'identification doit être 5 chiffres. SVP réessayez avec un code d'identification valide.{{/patient_id}}{{^patient_id}}Le message manque le numéro d'identification. SVP réessayez avec la lettre D suivi d'un espace ensuite le code d'identification du patient.{{/patient_id}}",
+                "locale": "fr"
+              }
+            ]
+          },
+          {
+            "property": "delivery_code",
+            "rule": "regex('^(F|f|S|s|Ns|NS|ns|nS)$')",
+            "message": [
+              {
+                "content": "{{#delivery_code}}The delivery code was not understood. Please use code 'F' for facility, 'S' for homebirth with Skilled Birth Attendant, 'NS' for birth without SBA.{{/delivery_code}}{{^delivery_code}}The delivery code was missing. Please use code 'F' for facility, 'S' for homebirth with Skilled Birth Attendant, 'NS' for birth without SBA.{{/delivery_code}}",
+                "locale": "en"
+              },
+              {
+                "content": "{{#delivery_code}}Le code pour l'accouchement est invalide. Utilisez 'F' si en clinique, 'S' si avec sagefemme, sinon 'NS'.{{/delivery_code}}{{^delivery_code}}Il manque le code pour l'accouchement. Utilisez 'F' si en clinique, 'S' si avec sagefemme, sinon 'NS'.{{/delivery_code}}",
+                "locale": "fr"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "message": [
+            {
+              "content": "Thank you {{contact.name}} for reporting on {{patient_name}} ({{patient_id}}).",
+              "locale": "en"
+            },
+            {
+              "content": "Merci {{contact.name}} pour l'information concernant {{patient_name}} ({{patient_id}}).",
+              "locale": "fr"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        },
+        {
+          "message": [
+            {
+              "content": "No woman with ID number '{{patient_id}}' found. Verify the ID and resend the message.",
+              "locale": "en"
+            },
+            {
+              "content": "Aucun patient a été trouvé avec le numéro d'identification '{{patient_id}}'. Vérifier le code d'identification et réessayer",
+              "locale": "fr"
+            }
+          ],
+          "event_type": "registration_not_found",
+          "recipient": "reporting_unit"
+        }
+      ]
+    },
+    {
+      "form": "F",
+      "name": "Flag",
+      "format": "F <patientid>",
+      "silence_type": "",
+      "silence_for": "",
+      "fields": [
+        {
+          "field_name": "",
+          "title": ""
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5}$')",
+            "message": [
+              {
+                "content": "{{#patient_id}}The ID number submitted is incorrect, it should be 5 numbers, please submit a valid ID.{{/patient_id}}{{^patient_id}}The message format is incorrect. Please ensure send a message start with F followed by space then the woman's ID.{{/patient_id}}",
+                "locale": "en"
+              },
+              {
+                "content": "{{#patient_id}}Le numéro d'identification doit être 5 chiffres. SVP réessayez avec un code d'identification valide.{{/patient_id}}{{^patient_id}}Le message manque le numéro d'identification. SVP réessayez avec la lettre F suivi d'un espace ensuite le code d'identification du patient.{{/patient_id}}",
+                "locale": "fr"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "message": [
+            {
+              "content": "We have added {{patient_name}} ({{patient_id}}) to the flagged pregnancy list. If this is an emergency, please refer her to the clinic immediately.",
+              "locale": "en"
+            },
+            {
+              "content": "Nous avons pris note du statut de {{patient_name}} ({{patient_id}}). Si ceci est une urgence assurez vous qu'elle va à la clinique immédiatement.",
+              "locale": "fr"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        },
+        {
+          "message": [
+            {
+              "content": "No woman with ID number '{{patient_id}}' found. Verify the ID and resend the message.",
+              "locale": "en"
+            },
+            {
+              "content": "Aucun patient a été trouvé avec le numéro d'identification '{{patient_id}}'. Vérifier le code d'identification et réessayer",
+              "locale": "fr"
+            }
+          ],
+          "event_type": "registration_not_found",
+          "recipient": "reporting_unit"
+        }
+      ]
+    }
+  ],
+  "schedules": [],
+  "notifications": {
+    "off_form": "OFF",
+    "on_form": "ON",
+    "confirm_deactivation": false,
+    "validations": {
+      "join_responses": false,
+      "list": [
+        {
+          "property": "patient_id",
+          "rule": "regex('^[0-9]{5}$')",
+          "message": [
+            {
+              "content": "{{#patient_id}}The ID number submitted is incorrect, it should be 5 numbers, please submit a valid ID.{{/patient_id}}{{^patient_id}}The message format is incorrect. Please ensure the message begins with ON or OFF followed by space then the woman's ID.{{/patient_id}}",
+              "locale": "en"
+            },
+            {
+              "content": "{{#patient_id}}Le numéro d'identification doit être 5 chiffres. SVP réessayez avec un code d'identification valide.{{/patient_id}}{{^patient_id}}Le message manque le numéro d'identification. SVP réessayez avec le mot ON ou OFF suivi d'un espace ensuite le code d'identification du patient.{{/patient_id}}",
+              "locale": "fr"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message": [
+          {
+            "content": "No further notifications regarding {{patient_name}} will be sent until you submit 'ON {{patient_id}}'.",
+            "locale": "en"
+          },
+          {
+            "content": "Les messages pour {{patient_name}} ont été arrêtés. Pour réactiver envoyez 'ON {{patient_id}}'.",
+            "locale": "fr"
+          }
+        ],
+        "event_type": "on_mute",
+        "recipient": "reporting_unit"
+      },
+      {
+        "message": [
+          {
+            "content": "Thank you {{contact.name}}, record for {{patient_name}} ({{patient_id}}) has been reactivated. Notifications regarding this patient will resume.",
+            "locale": "en"
+          },
+          {
+            "content": "Merci {{contact.name}}, les messages pour {{patient_name}} ({{patient_id}}) ont été réactivés.",
+            "locale": "fr"
+          }
+        ],
+        "event_type": "on_unmute",
+        "recipient": "reporting_unit"
+      },
+      {
+        "message": [
+          {
+            "content": "No patient with ID number '{{patient_id}}' found.",
+            "locale": "en"
+          },
+          {
+            "content": "Aucun patient a été trouvé avec le numéro d'identification '{{patient_id}}'.",
+            "locale": "fr"
+          }
+        ],
+        "event_type": "patient_not_found",
+        "recipient": "reporting_unit"
+      }
+    ]
+  },
+  "forms": {},
+  "_version": "2.9.0-alpha.4523",
+  "purge": {
+    "text_expression": "at 11 pm on Friday",
+    "cron": "0 23 * * SUN",
+    "run_every_days": 7,
+    "fn": "function (userCtx, contact, reports, messages) {\n   \n    //Purging time frames\n    const old30 = Date.now() - (1000 * 60 * 60 * 24 * 30);\n    const old40 = Date.now() - (1000 * 60 * 60 * 24 * 40);\n    const old60 = Date.now() - (1000 * 60 * 60 * 24 * 60);\n    const old90 = Date.now() - (1000 * 60 * 60 * 24 * 90);\n    const old120 = Date.now() - (1000 * 60 * 60 * 24 * 120);\n    const old180 = Date.now() - (1000 * 60 * 60 * 24 * 180);\n    const old365 = Date.now() - (1000 * 60 * 60 * 24 * 365);\n    const old518 = Date.now() - (1000 * 60 * 60 * 24 * 518);\n    const old2year = Date.now() - (1000 * 60 * 60 * 24 * 365 * 2);\n    const USER_ROLES = ['supervisors_manager','chw_supervisor', 'chw'];\n    \n\n    if (userCtx.roles.includes(\"supervisors_manager\") || userCtx.roles.includes(\"chw_supervisor\")) {\n      // const allDocsToPurge = reports.filter(r => r.reported_date < old30).map(r => r._id);\n      // return [...allDocsToPurge];\n      return [];\n    }\n      \n    if (userCtx.roles.includes(\"chw\")) {\n      // ########## Rules ##########\n      // const UndoDeathReportToPurge = reports.filter(r => r.form === 'undo_death_report' && r.reported_date < old30).map(r => r._id);\n      // const DeathReportToPurge = reports.filter((r) => r.form === `death_report` && r.reported_date < old40).map((r) => r._id);\n\n      const homeVisitToPurge = reports.filter((r) => r.form === `home_visit` && r.reported_date < old40).map((r) => r._id);\n      const newbornFollowupToPurge = reports.filter((r) => r.form === `newborn_followup` && r.reported_date < old40).map((r) => r._id);\n      const womenEmergencyFollowupToPurge = reports.filter((r) => r.form === `women_emergency_followup` && r.reported_date < old40).map((r) => r._id);\n      const pcimeChwToPurge = reports.filter((r) => r.form === `pcime_c_asc` && r.reported_date < old40).map((r) => r._id);\n      const pcimeFollowupToPurge = reports.filter((r) => r.form === `pcime_c_followup` && r.reported_date < old40).map((r) => r._id);\n      const uspPcimeFollowupToPurge = reports.filter((r) => r.form === `usp_pcime_followup` && r.reported_date < old40).map((r) => r._id);\n      const pcimeReferralToPurge = reports.filter((r) => r.form === `pcime_c_referral` && r.reported_date < old40).map((r) => r._id);\n      const fPfollowUpToPurge = reports.filter((r) => r.form === `fp_followup_danger_sign_check` && r.reported_date < old40).map((r) => r._id);\n      const malnutritionFollowUpToPurge = reports.filter((r) => r.form === `malnutrition_followup` && r.reported_date < old40).map((r) => r._id);\n      const drugStockInToPurge = reports.filter(r => r.form === 'stock_in' && r.reported_date < old60).map(r => r._id);\n      const deliveryToPurge = reports.filter((r) => r.form === `delivery` && r.reported_date < old90).map((r) => r._id);\n      const postnatalFollowupToPurge = reports.filter((r) => r.form === `postnatal_followup` && r.reported_date < old90).map((r) => r._id);\n      const pregnancyFamilyPlanningToPurge = reports.filter((r) => r.form === `pregnancy_family_planning` && r.reported_date < old180).map((r) => r._id);\n      const fPfollowUpRenewalToPurge = reports.filter((r) => r.form === `fp_follow_up_renewal` && r.reported_date < old180).map((r) => r._id);\n      const prenatalFollowupToPurge = reports.filter((r) => r.form === `prenatal_followup` && r.reported_date < old365).map((r) => r._id);\n      const vaccinationFollowupToPurge = reports.filter(r => r.form === 'vaccination_followup' && r.reported_date < old518).map(r => r._id);\n\n      // const messagesToPurge = messages.filter(m => m.reported_date < old120).map(m => m._id);\n\n      return [\n        ...homeVisitToPurge, \n        ...deliveryToPurge,\n        ...postnatalFollowupToPurge,\n        ...newbornFollowupToPurge,\n        ...pregnancyFamilyPlanningToPurge,\n        ...prenatalFollowupToPurge,\n        ...womenEmergencyFollowupToPurge,\n        ...pcimeChwToPurge,\n        ...pcimeFollowupToPurge,\n        ...uspPcimeFollowupToPurge,\n        ...pcimeReferralToPurge,\n        ...fPfollowUpToPurge,\n        ...malnutritionFollowUpToPurge,\n        ...fPfollowUpRenewalToPurge,\n        ...drugStockInToPurge,\n        ...vaccinationFollowupToPurge\n      ];\n      // ...UndoDeathReportToPurge,\n      // ...DeathReportToPurge,\n    } \n\n    if(!userCtx.roles.some(role => USER_ROLES.includes(role))) {\n      return [];\n    }\n  \n  }"
+  },
+  "purging": {
+    "fn": "function(userCtx, contact, reports) {\n\n var filteredReports = [];\n\n function add_if_not_filtered (ids){\n  for(i=0;i<ids.length;i++){\n   if (!filteredReports.includes(ids[i])){\n    filteredReports.push(ids[i]);\n   }\n  }\n }\n\n\n //Purging time frames\n const old30 = Date.now() - (1000 * 60 * 60 * 24 * 30);\n const old60 = Date.now() - (1000 * 60 * 60 * 24 * 60);\n const old90 = Date.now() - (1000 * 60 * 60 * 24 * 90);\n const old120 = Date.now() - (1000 * 60 * 60 * 24 * 120);\n const old180 = Date.now() - (1000 * 60 * 60 * 24 * 180);\n const old365 = Date.now() - (1000 * 60 * 60 * 24 * 365);\n\n //Rules\n\n //usp supervisor service reporting\n\n add_if_not_filtered(reports.filter(r => r.form === \"usp_supervisor_services_reporting\" && r.reported_date  < old60).map(r => r._id));\n\n//Educative talks supervision\n add_if_not_filtered(reports.filter(r => r.form === \"educative_talks_supervision\" && r.reported_date  < old60).map(r => r._id));\n\n //Family planning supervisor\n add_if_not_filtered(reports.filter(r => r.form === \"family_planning_c_supervision\" && r.reported_date  < old60).map(r => r._id));\n \n //Maternal supervision\n add_if_not_filtered(reports.filter(r => r.form === \"maternal_health_supervision\" && r.reported_date  < old60).map(r => r._id));\n\n//Curative cares supervision\nadd_if_not_filtered(reports.filter(r => r.form === \"curative_cares_supervision\" && r.reported_date  < old60).map(r => r._id));\n\n//Program manager services supervision\nadd_if_not_filtered(reports.filter(r => r.form === \"program_manager_services_reporting\" && r.reported_date  < old60).map(r => r._id));\n\n //PCIME Supervision\n add_if_not_filtered(reports.filter(r => r.form === \"pcime_supervision\" && r.reported_date  < old60).map(r => r._id));\n\n //Pharmacy Supervision\n add_if_not_filtered(reports.filter(r => r.form === \"pharmacy_supervision\" && r.reported_date  < old60).map(r => r._id));\n\n //Postnatal Supervision\n add_if_not_filtered(reports.filter(r => r.form === \"postnatal_supervision\" &&  r.reported_date  < old60).map(r => r._id));\n\n //Prenatal Supervision\n add_if_not_filtered(reports.filter(r => r.form === \"prenatal_supervision\" && r.reported_date  < old60).map(r => r._id));\n\n //CHW supervision services reporting\n add_if_not_filtered(reports.filter(r => r.form === \"chw_supervisor_services_reporting\" && r.reported_date  < old60).map(r => r._id));\n\n //PCIME C followup supervision\n add_if_not_filtered(reports.filter(r => r.form === \"pcime_c_followup_supervision\" && r.reported_date  < old60).map(r => r._id));\n\n //Delivery supervision\n add_if_not_filtered(reports.filter(r => r.form === \"delivery_supervision\" && r.reported_date  < old60).map(r => r._id));\n\n //PCIME usp\n add_if_not_filtered(reports.filter(r => r.form === \"pcime_usp\" && r.reported_date  < old60).map(r => r._id));\n\n //Midwife service reporting\n add_if_not_filtered(reports.filter(r => r.form === \"midwife_services_reporting\" && r.reported_date  < old60).map(r => r._id));\n\n //Home visit \n add_if_not_filtered(reports.filter(r => r.form === \"home_visit\" && r.reported_date  < old60).map(r => r._id));\n\n //Delivery\n add_if_not_filtered(reports.filter(r => r.form === \"delivery\" && r.reported_date  < old90).map(r => r._id));\n\n //Postnatal Followup\n add_if_not_filtered(reports.filter(r => r.form === \"postnatal_followup\" && r.reported_date  < old90).map(r => r._id));\n\n //Newborn Followup\n add_if_not_filtered(reports.filter(r => r.form === \"newborn_followup\" && r.reported_date  < old180).map(r => r._id));\n\n //Death report\n add_if_not_filtered(reports.filter(r => r.form === \"death_report\" && r.reported_date  < old60).map(r => r._id));\n\n//Pregnancy family planning\n add_if_not_filtered(reports.filter(r => r.form === \"pregnancy_family_planning\" && r.reported_date  < old180).map(r => r._id));\n\n //Prenatal followup\n add_if_not_filtered(reports.filter(r => r.form === \"prenatal_followup\" && r.reported_date  < old365).map(r => r._id));\n\n//Pregnancy family planning\n add_if_not_filtered(reports.filter(r => r.form === \"women_emergency_followup\" && r.reported_date  < old60).map(r => r._id));\n\n//PCIME Asc \n add_if_not_filtered(reports.filter(r => r.form === \"pcime_c_asc\" && r.reported_date  < old60).map(r => r._id));\n\n//PCIME followup\n add_if_not_filtered(reports.filter(r => r.form === \"pcime_c_followup\" && r.reported_date  < old60).map(r => r._id));\n\n//PCIME C Referral\n add_if_not_filtered(reports.filter(r => r.form === \"pcime_c_referral\" && r.reported_date  < old60).map(r => r._id));\n\n//FP follow up\n add_if_not_filtered(reports.filter(r => r.form === \"fp_followup_danger_sign_check\" && r.reported_date  < old60).map(r => r._id));\n\n// Malnutrition follow up\n add_if_not_filtered(reports.filter(r => r.form === \"malnutrition_followup\" && r.reported_date  < old60).map(r => r._id));\n\n//FP follow up referral\n add_if_not_filtered(reports.filter(r => r.form === \"fp_follow_up_renewal\" && r.reported_date  < old180).map(r => r._id));\n\n//Family planning supervision\n add_if_not_filtered(reports.filter(r => r.form === \"family_planning_supervision\" && r.reported_date  < old60).map(r => r._id));\n\n add_if_not_filtered(reports.filter( r => (r.form !== \"delivery_supervision\" && r.form !== \"family_planning_supervision\" && r.form !== \"postnatal_supervision\" && r.form !== \"pcime_supervision\" && r.form !== \"program_manager_services_reporting\" && r.form !== \"pharmacy_supervision\" && r.form !== \"prenatal_supervision\" && r.form !== \"usp_supervisor_services_reporting\") && userCtx.roles.includes('clinic_mentor')).map(r => r._id));\n \n add_if_not_filtered(reports.filter(r => (r.form !== \"pcime_usp\" && r.form !== \"midwife_services_reporting\") && userCtx.roles.includes('nurse')).map(r => r._id));\n \n add_if_not_filtered(reports.filter(r => (r.form !== \"educative_talks_supervision\" && r.form !== \"family_planning_c_supervision\" && r.form !== \"maternal_health_supervision\" && r.form !== \"curative_cares_supervision\" && r.form !== \"pcime_c_followup_supervision\") && (userCtx.roles.includes('supervisor') || userCtx.roles.includes('chw_supervisor'))).map(r => r._id));\n\n return filteredReports;\n}"
+  },
+  "task_days_overdue": true,
+  "create_user_for_contacts": {
+    "replace_forms": [
+      "replace_user"
+    ]
+  }
+}

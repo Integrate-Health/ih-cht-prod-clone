@@ -57,6 +57,13 @@
     "can_export_contacts": [
       "program_manager"
     ],
+    "can_export_devices_details": [
+      "program_manager"
+    ],
+    "can_have_multiple_places": [
+      "program_manager",
+      "chw_supervisor"
+    ],
     "can_export_feedback": [
       "program_manager"
     ],
@@ -301,8 +308,8 @@
   "replication_depth": [
     {
       "role": "chw_supervisor",
-      "depth": 3,
-      "report_depth": 2
+      "depth": 2,
+      "report_depth": 1
     }
   ],
   "alerts": [

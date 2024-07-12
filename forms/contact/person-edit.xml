@@ -598,12 +598,12 @@
       <bind nodeset="/data/inputs/user/facility_id" type="string"/>
       <bind nodeset="/data/inputs/user/type" type="string"/>
       <bind nodeset="/data/inputs/user/name" type="string"/>
-      <bind nodeset="/data/inputs/contact/_id" type="db:person" readonly="true()" calculate=" /data/user_id "/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person" calculate=" /data/user_id " readonly="true()"/>
       <bind nodeset="/data/inputs/contact/role" readonly="true()" type="string" calculate=" /data/user_role "/>
       <bind nodeset="/data/inputs/contact/username" readonly="1" type="string" calculate=" /data/user_name "/>
       <bind nodeset="/data/inputs/contact/name" readonly="1" type="string" calculate=" /data/user_contact_name "/>
       <bind nodeset="/data/inputs/contact/external_id" readonly="1" type="string" calculate=" /data/user_external_id "/>
-      <bind nodeset="/data/inputs/contact/access_info" type="select1" jr:constraintMsg="jr:itext('/data/inputs/contact/access_info:jr:constraintMsg')" required="true()" constraint=".='yesForAccess'" relevant=" /data/user_role =&quot;chw&quot; and  /data/person/place_contact ='yes'"/>
+      <bind nodeset="/data/inputs/contact/access_info" type="select1" relevant=" /data/user_role =&quot;chw&quot; and  /data/person/place_contact ='yes'" constraint=".='yesForAccess'" required="true()" jr:constraintMsg="jr:itext('/data/inputs/contact/access_info:jr:constraintMsg')"/>
       <bind nodeset="/data/inputs/meta/location/lat" type="string"/>
       <bind nodeset="/data/inputs/meta/location/long" type="string"/>
       <bind nodeset="/data/user_id" type="string" calculate="../inputs/user/contact_id"/>
@@ -618,38 +618,38 @@
       <bind nodeset="/data/init" relevant=" /data/user_role !='chw' and  /data/user_role !='chw_supervisor' or  /data/user_role ='chw' and  /data/person/place_contact ='no' and  /data/person/family_contact !='yes' or  /data/user_role ='chw_supervisor' and  /data/person/family_contact !='yes'"/>
       <bind nodeset="/data/init/person_name" type="string" calculate="/data/person/name"/>
       <bind nodeset="/data/init/person_place_name" type="string" calculate="../name"/>
-      <bind nodeset="/data/init/person_parent" type="db:district_hospital" readonly="true()" calculate=" /data/person/parent "/>
+      <bind nodeset="/data/init/person_parent" type="db:district_hospital" calculate=" /data/person/parent " readonly="true()"/>
       <bind nodeset="/data/init/type" type="string" calculate="."/>
       <bind nodeset="/data/init/name" type="string" calculate="."/>
       <bind nodeset="/data/init/note_place" readonly="true()" type="string"/>
       <bind nodeset="/data/init/change_parent" type="select1" required="true()"/>
-      <bind nodeset="/data/init/edited_place_type" type="select1" required="true()" relevant="selected( /data/init/change_parent , 'yes') and  /data/user_role !='chw'"/>
-      <bind nodeset="/data/init/id_district_hospital" type="db:district_hospital" required="true()" relevant="selected( /data/init/change_parent , 'yes') and selected( /data/init/edited_place_type , 'district_hospital')"/>
-      <bind nodeset="/data/init/id_health_center" type="db:health_center" required="true()" relevant="selected( /data/init/change_parent , 'yes') and selected( /data/init/edited_place_type , 'health_center')"/>
-      <bind nodeset="/data/init/id_clinic" type="db:clinic" required="true()" relevant="selected( /data/init/change_parent , 'yes') and (selected( /data/init/edited_place_type , 'clinic') or  /data/user_role ='chw')"/>
+      <bind nodeset="/data/init/edited_place_type" type="select1" relevant="selected( /data/init/change_parent , 'yes') and  /data/user_role !='chw'" required="true()"/>
+      <bind nodeset="/data/init/id_district_hospital" type="db:district_hospital" relevant="selected( /data/init/change_parent , 'yes') and selected( /data/init/edited_place_type , 'district_hospital')" required="true()"/>
+      <bind nodeset="/data/init/id_health_center" type="db:health_center" relevant="selected( /data/init/change_parent , 'yes') and selected( /data/init/edited_place_type , 'health_center')" required="true()"/>
+      <bind nodeset="/data/init/id_clinic" type="db:clinic" relevant="selected( /data/init/change_parent , 'yes') and (selected( /data/init/edited_place_type , 'clinic') or  /data/user_role ='chw')" required="true()"/>
       <bind nodeset="/data/person/type" type="string" calculate="."/>
       <bind nodeset="/data/person/_id" type="string" calculate="."/>
       <bind nodeset="/data/person/parent" type="string" calculate="coalesce(coalesce(coalesce( /data/init/id_district_hospital ,  /data/init/id_health_center ),  /data/init/id_clinic ), /data/person/parent )"/>
-      <bind nodeset="/data/person/place_contact_select" type="select1" required="true()" relevant=" /data/user_role  !='chw'"/>
-      <bind nodeset="/data/person/family_contact_select" type="select1" required="true()" relevant=" /data/user_role  !='chw' and  /data/user_role !='chw_supervisor'"/>
+      <bind nodeset="/data/person/place_contact_select" type="select1" relevant=" /data/user_role  !='chw'" required="true()"/>
+      <bind nodeset="/data/person/family_contact_select" type="select1" relevant=" /data/user_role  !='chw' and  /data/user_role !='chw_supervisor'" required="true()"/>
       <bind nodeset="/data/person/place_contact" type="string" calculate="coalesce( /data/person/place_contact_select ,coalesce( /data/person/place_contact ,'no'))"/>
       <bind nodeset="/data/person/family_contact" type="string" calculate="coalesce( /data/person/family_contact_select ,coalesce( /data/person/family_contact ,'no'))"/>
       <bind nodeset="/data/person/name" type="string" required="true()"/>
       <bind nodeset="/data/person/dob_method" type="select1" required="true()"/>
-      <bind nodeset="/data/person/dob_calendar" type="date" jr:constraintMsg="jr:itext('/data/person/dob_calendar:jr:constraintMsg')" required="true()" constraint=". &lt;= today()" relevant="selected(../dob_method,'calendar')"/>
-      <bind nodeset="/data/person/age_years" type="int" jr:constraintMsg="jr:itext('/data/person/age_years:jr:constraintMsg')" required="true()" constraint=". &gt;= 0 and . &lt; 100" relevant="selected(../dob_method,'approx')"/>
-      <bind nodeset="/data/person/age_months" type="int" jr:constraintMsg="jr:itext('/data/person/age_months:jr:constraintMsg')" required="true()" constraint=". &gt;= 0 and . &lt;= 11" relevant="selected(../dob_method,'approx')"/>
+      <bind nodeset="/data/person/dob_calendar" type="date" relevant="selected(../dob_method,'calendar')" constraint=". &lt;= today()" required="true()" jr:constraintMsg="jr:itext('/data/person/dob_calendar:jr:constraintMsg')"/>
+      <bind nodeset="/data/person/age_years" type="int" relevant="selected(../dob_method,'approx')" constraint=". &gt;= 0 and . &lt; 100" required="true()" jr:constraintMsg="jr:itext('/data/person/age_years:jr:constraintMsg')"/>
+      <bind nodeset="/data/person/age_months" type="int" relevant="selected(../dob_method,'approx')" constraint=". &gt;= 0 and . &lt;= 11" required="true()" jr:constraintMsg="jr:itext('/data/person/age_months:jr:constraintMsg')"/>
       <bind nodeset="/data/person/date_of_birth" type="string" calculate="format-date-time(if(not(selected( ../dob_method,'approx')), ../dob_calendar, format-date-time( decimal-date-time( today() ) - (365.25 * ../age_years) - (30.5 * ../age_months ) - 0, &quot;%Y-%m-%d&quot; ) ),&quot;%Y-%m-%d&quot;)"/>
       <bind nodeset="/data/person/sex" type="select1" required="true()"/>
-      <bind nodeset="/data/person/code_type" type="select1" required="true()" relevant=" /data/user_role  !=&quot;chw&quot;"/>
-      <bind nodeset="/data/person/code_w" type="string" jr:constraintMsg="jr:itext('/data/person/code_w:jr:constraintMsg')" required="true()" constraint="regex(.,'^[A-Z]{6}-\d{9}$')" relevant=" /data/user_role !=&quot;chw&quot; and concat(../code_type,'')='yes'"/>
-      <bind nodeset="/data/person/code_x" type="string" jr:constraintMsg="jr:itext('/data/person/code_x:jr:constraintMsg')" required="true()" constraint="regex(.,'^[A-Z]{0}\d{4}$')" relevant=" /data/user_role =&quot;chw&quot; and  /data/person/place_contact  !='yes'"/>
-      <bind nodeset="/data/person/code_y" type="string" jr:constraintMsg="jr:itext('/data/person/code_y:jr:constraintMsg')" required="true()" constraint="regex(.,'^[A-Z]{6}-\d{3}$')" relevant=" /data/user_role  !=&quot;chw&quot; and concat(../code_type,'')='no'"/>
+      <bind nodeset="/data/person/code_type" type="select1" relevant=" /data/user_role  !=&quot;chw&quot;" required="true()"/>
+      <bind nodeset="/data/person/code_w" type="string" relevant=" /data/user_role !=&quot;chw&quot; and concat(../code_type,'')='yes'" constraint="regex(.,'^[A-Z]{6}-\d{9}$')" required="true()" jr:constraintMsg="jr:itext('/data/person/code_w:jr:constraintMsg')"/>
+      <bind nodeset="/data/person/code_x" type="string" relevant=" /data/user_role =&quot;chw&quot; and  /data/person/place_contact  !='yes'" constraint="regex(.,'^[A-Z]{0}\d{4}$')" required="true()" jr:constraintMsg="jr:itext('/data/person/code_x:jr:constraintMsg')"/>
+      <bind nodeset="/data/person/code_y" type="string" relevant=" /data/user_role  !=&quot;chw&quot; and concat(../code_type,'')='no'" constraint="regex(.,'^[A-Z]{6}-\d{3}$')" required="true()" jr:constraintMsg="jr:itext('/data/person/code_y:jr:constraintMsg')"/>
       <bind nodeset="/data/person/unique_code" type="string" calculate="if( /data/user_role !=&quot;chw&quot; and concat(../code_type,'')='yes',concat(../code_w,''),if( /data/user_role =&quot;chw&quot; and  /data/person/place_contact  !='yes',concat(../code_x,''),if( /data/user_role  !=&quot;chw&quot; and concat(../code_type,'')='no',concat(../code_y,''),'')))"/>
       <bind nodeset="/data/person/external_id" type="string" calculate="coalesce(if( /data/user_role =&quot;chw&quot; and  /data/person/place_contact  !='yes',concat( /data/user_external_id ,'00',../unique_code),concat(../unique_code,'')),concat(../external_id,''))"/>
       <bind nodeset="/data/person/code" type="string" calculate="../external_id"/>
-      <bind nodeset="/data/person/role_x" type="select1" required="true()" relevant=" /data/user_role !='chw'" calculate="coalesce(../role_x,../role)"/>
-      <bind nodeset="/data/person/role" type="string" required="true()" calculate="coalesce(concat(../role,''),if( /data/user_role ='chw','patient',concat(../role_x,'')))"/>
+      <bind nodeset="/data/person/role_x" type="select1" relevant=" /data/user_role !='chw'" calculate="coalesce(../role_x,../role)" required="true()"/>
+      <bind nodeset="/data/person/role" type="string" calculate="coalesce(concat(../role,''),if( /data/user_role ='chw','patient',concat(../role_x,'')))" required="true()"/>
       <bind nodeset="/data/person/phone" type="string" constraint="regex(.,'^(\d{2}\s?){4}$')" jr:constraintMsg="jr:itext('/data/person/phone:jr:constraintMsg')"/>
       <bind nodeset="/data/person/phone_alternate" type="string" constraint="regex(.,'^(\d{2}\s?){4}$')" jr:constraintMsg="jr:itext('/data/person/phone_alternate:jr:constraintMsg')"/>
       <bind nodeset="/data/person/meta/created_by" type="string" calculate="."/>

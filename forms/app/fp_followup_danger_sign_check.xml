@@ -4,734 +4,6 @@
     <h:title>Recherche signes de danger PF</h:title>
     <model>
       <itext>
-        <translation lang="en">
-          <text id="/fp_followup_danger_sign_check/inputs:label">
-            <value>Patient</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/inputs/source:label">
-            <value>Source</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/inputs/source_id:label">
-            <value>Source ID</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/inputs/t_follow_up_type:label">
-            <value>Follow up type</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/inputs/t_follow_up_count:label">
-            <value>Follow up count</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/inputs/t_fp_method:label">
-            <value>FP Method</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/inputs/contact/_id:label">
-            <value>What is the patient name?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/inputs/contact/_id:hint">
-            <value>select a person from the list</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/inputs/contact/name:label">
-            <value>Name</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/inputs/contact/date_of_birth:label">
-            <value>Date of birth</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/inputs/contact/sex:label">
-            <value>Sex</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/inputs/contact/parent:label">
-            <value>Parent</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/patient_age_in_years:label">
-            <value>Years</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/patient_age_in_months:label">
-            <value>Months</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/patient_age_in_days:label">
-            <value>Days old</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/patient_id:label">
-            <value>Patient ID</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/patient_name:label">
-            <value>Patient Name</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/patient_sex:label">
-            <value>Patient Sex</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/patient_sex_en:label">
-            <value>Patient Sex</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/patient_sex_fr:label">
-            <value>Patient Sex</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/visited_contact_uuid:label">
-            <value>Family Id</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/follow_up_count:label">
-            <value>Follow up count</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral:label">
-            <value>Referral</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_referral:label">
-            <value>REFERRAL</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_referral/s_woman_referred:label">
-            <value>Had the woman been referred?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_referral/s_woman_referred/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_referral/s_woman_referred/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_referral/s_woman_referred/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_referral/s_woman_go_usp:label">
-            <value>Did the woman go to the USP?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_referral/s_woman_go_usp/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_referral/s_woman_go_usp/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_referral/s_woman_go_usp/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_referral/s_reason_not_go_usp:label">
-            <value>Reason for not going to the USP</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects:label">
-            <value>SIDE EFFECTS CHECK 1</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_take_pill_correct:label">
-            <value>Has the woman been taking her pills correctly?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_take_pill_correct/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_take_pill_correct/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_take_pill_correct/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_missing_pills:label">
-            <value>How do you evaluate the importance of missing the pills?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_missing_pills/minor:label">
-            <value>Minor (1 to 2pills)</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_missing_pills/major:label">
-            <value>Major (more than 2 pills)</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_advice_pills:label">
-            <value>**Please advise the woman on the importance of taking her pills**</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_counsel_pills_correctly:label">
-            <value>**Please conduct a pregnancy test**</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result:label">
-            <value>What is the result of the pregnancy test?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result/positive:label">
-            <value>Positive</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result/negative:label">
-            <value>Negative</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_refer_preg_followup:label">
-            <value>**Please refer the patient for the pregnancy follow up**</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_counsel_pills_correctly_2:label">
-            <value>**Please remove the old tablet and give a new one to the patient**</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_woman_new_packet:label">
-            <value>Have you given a new packet to the patient?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_woman_new_packet/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_woman_new_packet/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_woman_new_packet/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/fp_side_effects_note:label">
-            <value>Go through each one of below side effects and select all that apply</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_weight:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_weight:label">
-            <value>Weight gain or loss</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_weight/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_weight/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_weight/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lower_libido:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lower_libido:label">
-            <value>Low libido and mood swing</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lower_libido/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lower_libido/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lower_libido/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_nausea:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_nausea:label">
-            <value>Nausea</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_nausea/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_nausea/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_nausea/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_headaches:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_headaches:label">
-            <value>Headaches</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_headaches/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_headaches/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_headaches/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_breast_pain:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_breast_pain:label">
-            <value>Pain or tenderness of the breasts</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_breast_pain/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_breast_pain/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_breast_pain/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_abdominal_pain:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_abdominal_pain:label">
-            <value>Abdominal Pain</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_abdominal_pain/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_abdominal_pain/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_abdominal_pain/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_vertigo:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_vertigo:label">
-            <value>Vertigo</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_vertigo/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_vertigo/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_vertigo/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_light_bleeding:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_light_bleeding:label">
-            <value>Light and irregular bleeding</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_light_bleeding/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_light_bleeding/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_light_bleeding/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding:label">
-            <value>Small amount of bleeding during the mentrual period</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_amenorrhea:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_amenorrhea:label">
-            <value>Amenorrhea</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_amenorrhea/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_amenorrhea/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_amenorrhea/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_dizziness:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_dizziness:label">
-            <value>Dizziness</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_dizziness/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_dizziness/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_dizziness/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_pressure:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_pressure:label">
-            <value>High blood pressure</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_pressure/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_pressure/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_pressure/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_effect_duration:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_effect_duration:label">
-            <value>How many months has she been using this FP method?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_effect_duration/more_than_3_months:label">
-            <value>More than 3 months</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_side_effects/s_effect_duration/less_than_3_months:label">
-            <value>Less than 3 months</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects:label">
-            <value>SIDE EFFECTS FOR REFERRAL</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_chest_pain:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_chest_pain:label">
-            <value>Chest pain with or without shortness of breath</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_chest_pain/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_chest_pain/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_chest_pain/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_severe_headaches:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_severe_headaches:label">
-            <value>Severe headaches</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_severe_headaches/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_severe_headaches/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_severe_headaches/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_strong_leg_pain:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_strong_leg_pain:label">
-            <value>Strong leg pain</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_strong_leg_pain/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_strong_leg_pain/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_strong_leg_pain/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abdominal_bloating:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abdominal_bloating:label">
-            <value>Abdominal Bloating</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abdominal_bloating/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abdominal_bloating/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abdominal_bloating/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abundant_bleeding:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abundant_bleeding:label">
-            <value>Heavy bleeding outside menses</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abundant_bleeding/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abundant_bleeding/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abundant_bleeding/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_refer_serious_side_effects:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_refer_serious_side_effects:label">
-            <value>Are you going to refer the woman for serious side effects?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_refer_serious_side_effects/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_refer_serious_side_effects/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_refer_serious_side_effects/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2:label">
-            <value>SIDE EFFECTS CHECK 2</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache:label">
-            <value>Do you have frequent and very severe headaches with blurred vision or loss of vision?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_jaundice:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_jaundice:label">
-            <value>Do you have jaundice (yellow eyes or skin)?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_jaundice/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_jaundice/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_jaundice/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_chest_pains:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_chest_pains:label">
-            <value>Did you have chest pains?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_chest_pains/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_chest_pains/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_chest_pains/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_breast_lesions:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_breast_lesions:label">
-            <value>Do you currently have or have you had swelling or other lesions in the breasts?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_breast_lesions/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_breast_lesions/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_breast_lesions/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35:label">
-            <value>Do you smoke, and are you over 35?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_menstruation_late:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_menstruation_late:label">
-            <value>Are your menstruations late?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_menstruation_late/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_menstruation_late/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_menstruation_late/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen:label">
-            <value>Do you have swollen or very painful legs?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure:label">
-            <value>Do you have high blood pressure?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose:label">
-            <value>Are you currently on modern treatment for tuberculosis or epilepsy?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_diabete:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_diabete:label">
-            <value>Do you have diabetes (high blood sugar level)?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_diabete/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_diabete/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/checklist2/s_have_diabete/do_not_know:label">
-            <value>Don't Know</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary:label">
-            <value>Summary</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/s_sum_submission:label">
-            <value>&lt;h4 style="text-align:center;"&gt;Make sure to submit the report to complete this action &lt;/h4&gt;</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_summary:label">
-            <value>Patient Summary&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_patient_info:label">
-            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /fp_followup_danger_sign_check/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /fp_followup_danger_sign_check/patient_sex_en "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /fp_followup_danger_sign_check/patient_age_display "/> &lt;/h5&gt;</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_pregnancy_followup:label">
-            <value>Refer to USP for Pregnancy Followup&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_referral:label">
-            <value>Refer to USP&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_time_period_more_than_3:label">
-            <value>**These effects have persisted less than 3 months. Counsel the woman and verify if the effects continue for more than 3 months**</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_time_period_less_than_3:label">
-            <value>**These effects have persisted more than 3 months. Refer the patient to the health facility**</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_weight:label">
-            <value>weight gain or loss</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_lower_libido:label">
-            <value>Low libido</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_nausea:label">
-            <value>Nausea</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_headaches:label">
-            <value>Headaches</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_breast_pain:label">
-            <value>Pain or tenderness of the breasts</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_abdominal_pain:label">
-            <value>Abdominal Pain</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_vertigo:label">
-            <value>Vertigo</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_light_bleeding:label">
-            <value>Light and irregular bleeding</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_lilttle_bleeding:label">
-            <value>small amount of bleeding during the mentrual period</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_amenorrhea:label">
-            <value>Amenorrhea</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_dizziness:label">
-            <value>Dizziness</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_pressure:label">
-            <value>Hight blood pressure</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_chest_pain:label">
-            <value>Chest pain with or without shortness of breath</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_severe_headaches:label">
-            <value>Severe headaches</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_strong_leg_pain:label">
-            <value>Strong leg pain</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_abdominal_bloating:label">
-            <value>Abdominal Bloating</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_abundant_bleeding:label">
-            <value>Heavy bleeding outside menses</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_frequent_severe_headache:label">
-            <value>Frequent and very severe headaches with blurred vision or loss of vision</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_have_jaundice:label">
-            <value>Jaundice (yellow eyes or skin)</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_have_chest_pains:label">
-            <value>Chest pains?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_have_breast_lesions:label">
-            <value>Swelling or other lesions in the breasts</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_do_smoke_over_35:label">
-            <value>Smoke, and over 35</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_menstruation_late:label">
-            <value>Menstruations late</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_have_painful_legr_swollen:label">
-            <value>Swollen or very painful legs</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_have_high_blood_pressure:label">
-            <value>High blood pressure</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_on_modern_treatment_tuberculose:label">
-            <value>Currently on modern treatment for tuberculosis or epilepsy</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_have_diabete:label">
-            <value>Have diabetes (high blood sugar level)</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_special_instructions_2:label">
-            <value>Follow Up&lt;i class="fa fa-medkit"&gt;&lt;/i&gt;</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_follow_up_patient:label">
-            <value>Please follow-up to with the patient to renew their FP method (date :<output value=" /fp_followup_danger_sign_check/s_referral/when_renew_method_date "/> )</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_follow_up_new_packet:label">
-            <value>Please follow-up to check danger signs : (date :<output value=" /fp_followup_danger_sign_check/when_danger_signs "/> )</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_have_you_refer_child:label">
-            <value>Did you refer the patient to the USP?</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_have_you_refer_child/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/r_have_you_refer_child/no:label">
-            <value>No</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/s_why_not:jr:requiredMsg">
-            <value><output value=" /fp_followup_danger_sign_check/s_summary/r_have_you_refer_child "/> = 'no'</value>
-          </text>
-          <text id="/fp_followup_danger_sign_check/s_summary/s_why_not:label">
-            <value>Why?</value>
-          </text>
-        </translation>
         <translation lang="fr">
           <text id="/fp_followup_danger_sign_check/inputs:label">
             <value>Patient</value>
@@ -1469,6 +741,734 @@
             <value>-</value>
           </text>
         </translation>
+        <translation lang="en">
+          <text id="/fp_followup_danger_sign_check/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/inputs/t_follow_up_type:label">
+            <value>Follow up type</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/inputs/t_follow_up_count:label">
+            <value>Follow up count</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/inputs/t_fp_method:label">
+            <value>FP Method</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/inputs/contact/_id:label">
+            <value>What is the patient name?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/inputs/contact/_id:hint">
+            <value>select a person from the list</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/inputs/contact/date_of_birth:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/patient_age_in_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/patient_age_in_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/patient_age_in_days:label">
+            <value>Days old</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/patient_name:label">
+            <value>Patient Name</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/patient_sex:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/patient_sex_en:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/patient_sex_fr:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/visited_contact_uuid:label">
+            <value>Family Id</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/follow_up_count:label">
+            <value>Follow up count</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral:label">
+            <value>Referral</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_referral:label">
+            <value>REFERRAL</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_referral/s_woman_referred:label">
+            <value>Had the woman been referred?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_referral/s_woman_referred/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_referral/s_woman_referred/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_referral/s_woman_referred/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_referral/s_woman_go_usp:label">
+            <value>Did the woman go to the USP?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_referral/s_woman_go_usp/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_referral/s_woman_go_usp/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_referral/s_woman_go_usp/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_referral/s_reason_not_go_usp:label">
+            <value>Reason for not going to the USP</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects:label">
+            <value>SIDE EFFECTS CHECK 1</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_take_pill_correct:label">
+            <value>Has the woman been taking her pills correctly?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_take_pill_correct/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_take_pill_correct/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_take_pill_correct/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_missing_pills:label">
+            <value>How do you evaluate the importance of missing the pills?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_missing_pills/minor:label">
+            <value>Minor (1 to 2pills)</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_missing_pills/major:label">
+            <value>Major (more than 2 pills)</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_advice_pills:label">
+            <value>**Please advise the woman on the importance of taking her pills**</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_counsel_pills_correctly:label">
+            <value>**Please conduct a pregnancy test**</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result:label">
+            <value>What is the result of the pregnancy test?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result/positive:label">
+            <value>Positive</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result/negative:label">
+            <value>Negative</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_refer_preg_followup:label">
+            <value>**Please refer the patient for the pregnancy follow up**</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_counsel_pills_correctly_2:label">
+            <value>**Please remove the old tablet and give a new one to the patient**</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_woman_new_packet:label">
+            <value>Have you given a new packet to the patient?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_woman_new_packet/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_woman_new_packet/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_woman_new_packet/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/fp_side_effects_note:label">
+            <value>Go through each one of below side effects and select all that apply</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_weight:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_weight:label">
+            <value>Weight gain or loss</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_weight/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_weight/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_weight/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lower_libido:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lower_libido:label">
+            <value>Low libido and mood swing</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lower_libido/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lower_libido/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lower_libido/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_nausea:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_nausea:label">
+            <value>Nausea</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_nausea/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_nausea/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_nausea/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_headaches:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_headaches:label">
+            <value>Headaches</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_headaches/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_headaches/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_headaches/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_breast_pain:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_breast_pain:label">
+            <value>Pain or tenderness of the breasts</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_breast_pain/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_breast_pain/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_breast_pain/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_abdominal_pain:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_abdominal_pain:label">
+            <value>Abdominal Pain</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_abdominal_pain/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_abdominal_pain/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_abdominal_pain/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_vertigo:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_vertigo:label">
+            <value>Vertigo</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_vertigo/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_vertigo/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_vertigo/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_light_bleeding:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_light_bleeding:label">
+            <value>Light and irregular bleeding</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_light_bleeding/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_light_bleeding/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_light_bleeding/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding:label">
+            <value>Small amount of bleeding during the mentrual period</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_amenorrhea:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_amenorrhea:label">
+            <value>Amenorrhea</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_amenorrhea/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_amenorrhea/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_amenorrhea/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_dizziness:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_dizziness:label">
+            <value>Dizziness</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_dizziness/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_dizziness/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_dizziness/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_pressure:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_pressure:label">
+            <value>High blood pressure</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_pressure/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_pressure/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_pressure/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_effect_duration:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_effect_duration:label">
+            <value>How many months has she been using this FP method?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_effect_duration/more_than_3_months:label">
+            <value>More than 3 months</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_side_effects/s_effect_duration/less_than_3_months:label">
+            <value>Less than 3 months</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects:label">
+            <value>SIDE EFFECTS FOR REFERRAL</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_chest_pain:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_chest_pain:label">
+            <value>Chest pain with or without shortness of breath</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_chest_pain/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_chest_pain/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_chest_pain/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_severe_headaches:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_severe_headaches:label">
+            <value>Severe headaches</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_severe_headaches/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_severe_headaches/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_severe_headaches/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_strong_leg_pain:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_strong_leg_pain:label">
+            <value>Strong leg pain</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_strong_leg_pain/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_strong_leg_pain/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_strong_leg_pain/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abdominal_bloating:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abdominal_bloating:label">
+            <value>Abdominal Bloating</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abdominal_bloating/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abdominal_bloating/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abdominal_bloating/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abundant_bleeding:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abundant_bleeding:label">
+            <value>Heavy bleeding outside menses</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abundant_bleeding/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abundant_bleeding/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_abundant_bleeding/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_refer_serious_side_effects:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_refer_serious_side_effects:label">
+            <value>Are you going to refer the woman for serious side effects?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_refer_serious_side_effects/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_refer_serious_side_effects/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/referral_side_effects/s_refer_serious_side_effects/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2:label">
+            <value>SIDE EFFECTS CHECK 2</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache:label">
+            <value>Do you have frequent and very severe headaches with blurred vision or loss of vision?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_jaundice:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_jaundice:label">
+            <value>Do you have jaundice (yellow eyes or skin)?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_jaundice/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_jaundice/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_jaundice/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_chest_pains:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_chest_pains:label">
+            <value>Did you have chest pains?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_chest_pains/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_chest_pains/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_chest_pains/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_breast_lesions:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_breast_lesions:label">
+            <value>Do you currently have or have you had swelling or other lesions in the breasts?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_breast_lesions/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_breast_lesions/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_breast_lesions/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35:label">
+            <value>Do you smoke, and are you over 35?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_menstruation_late:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_menstruation_late:label">
+            <value>Are your menstruations late?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_menstruation_late/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_menstruation_late/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_menstruation_late/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen:label">
+            <value>Do you have swollen or very painful legs?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure:label">
+            <value>Do you have high blood pressure?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose:label">
+            <value>Are you currently on modern treatment for tuberculosis or epilepsy?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_diabete:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_diabete:label">
+            <value>Do you have diabetes (high blood sugar level)?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_diabete/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_diabete/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/checklist2/s_have_diabete/do_not_know:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/s_sum_submission:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Make sure to submit the report to complete this action &lt;/h4&gt;</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_summary:label">
+            <value>Patient Summary&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /fp_followup_danger_sign_check/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /fp_followup_danger_sign_check/patient_sex_en "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /fp_followup_danger_sign_check/patient_age_display "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_pregnancy_followup:label">
+            <value>Refer to USP for Pregnancy Followup&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_referral:label">
+            <value>Refer to USP&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_time_period_more_than_3:label">
+            <value>**These effects have persisted less than 3 months. Counsel the woman and verify if the effects continue for more than 3 months**</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_time_period_less_than_3:label">
+            <value>**These effects have persisted more than 3 months. Refer the patient to the health facility**</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_weight:label">
+            <value>weight gain or loss</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_lower_libido:label">
+            <value>Low libido</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_nausea:label">
+            <value>Nausea</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_headaches:label">
+            <value>Headaches</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_breast_pain:label">
+            <value>Pain or tenderness of the breasts</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_abdominal_pain:label">
+            <value>Abdominal Pain</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_vertigo:label">
+            <value>Vertigo</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_light_bleeding:label">
+            <value>Light and irregular bleeding</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_lilttle_bleeding:label">
+            <value>small amount of bleeding during the mentrual period</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_amenorrhea:label">
+            <value>Amenorrhea</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_dizziness:label">
+            <value>Dizziness</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_pressure:label">
+            <value>Hight blood pressure</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_chest_pain:label">
+            <value>Chest pain with or without shortness of breath</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_severe_headaches:label">
+            <value>Severe headaches</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_strong_leg_pain:label">
+            <value>Strong leg pain</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_abdominal_bloating:label">
+            <value>Abdominal Bloating</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_abundant_bleeding:label">
+            <value>Heavy bleeding outside menses</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_frequent_severe_headache:label">
+            <value>Frequent and very severe headaches with blurred vision or loss of vision</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_have_jaundice:label">
+            <value>Jaundice (yellow eyes or skin)</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_have_chest_pains:label">
+            <value>Chest pains?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_have_breast_lesions:label">
+            <value>Swelling or other lesions in the breasts</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_do_smoke_over_35:label">
+            <value>Smoke, and over 35</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_menstruation_late:label">
+            <value>Menstruations late</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_have_painful_legr_swollen:label">
+            <value>Swollen or very painful legs</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_have_high_blood_pressure:label">
+            <value>High blood pressure</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_on_modern_treatment_tuberculose:label">
+            <value>Currently on modern treatment for tuberculosis or epilepsy</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_have_diabete:label">
+            <value>Have diabetes (high blood sugar level)</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_special_instructions_2:label">
+            <value>Follow Up&lt;i class="fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_follow_up_patient:label">
+            <value>Please follow-up to with the patient to renew their FP method (date :<output value=" /fp_followup_danger_sign_check/s_referral/when_renew_method_date "/> )</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_follow_up_new_packet:label">
+            <value>Please follow-up to check danger signs : (date :<output value=" /fp_followup_danger_sign_check/when_danger_signs "/> )</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_have_you_refer_child:label">
+            <value>Did you refer the patient to the USP?</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_have_you_refer_child/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/r_have_you_refer_child/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/s_why_not:jr:requiredMsg">
+            <value><output value=" /fp_followup_danger_sign_check/s_summary/r_have_you_refer_child "/> = 'no'</value>
+          </text>
+          <text id="/fp_followup_danger_sign_check/s_summary/s_why_not:label">
+            <value>Why?</value>
+          </text>
+        </translation>
       </itext>
       <instance>
         <fp_followup_danger_sign_check id="fp_followup_danger_sign_check" prefix="J1!fp_followup_danger_sign_check!" delimiter="#" version="2018-12-11">
@@ -1656,20 +1656,20 @@
       <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_counsel_pills_correctly_2" readonly="true()" type="string" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  = 'negative' and  /fp_followup_danger_sign_check/s_side_effects/s_missing_pills  = 'major'"/>
       <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_woman_new_packet" type="select1" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  = 'negative' and  /fp_followup_danger_sign_check/s_side_effects/s_missing_pills  = 'major'"/>
       <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/fp_side_effects_note" readonly="true()" type="string" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'"/>
-      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_weight" type="select1" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_weight:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_lower_libido" type="select1" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_lower_libido:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_nausea" type="select1" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_nausea:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_headaches" type="select1" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_headaches:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_breast_pain" type="select1" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_breast_pain:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_abdominal_pain" type="select1" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_abdominal_pain:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_vertigo" type="select1" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_vertigo:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_light_bleeding" type="select1" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_light_bleeding:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding" type="select1" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_amenorrhea" type="select1" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_amenorrhea:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_dizziness" type="select1" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_dizziness:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_pressure" type="select1" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_pressure:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/red_side_effects_1" type="string" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" calculate="if( /fp_followup_danger_sign_check/s_side_effects/s_weight  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_lower_libido  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_nausea  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_headaches  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_breast_pain  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_abdominal_pain  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_vertigo  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_light_bleeding  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_amenorrhea  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_dizziness  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_pressure  = 'yes', 'yes', 'no')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_effect_duration" type="select1" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_weight  = 'yes' or
+      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_weight" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_weight:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_lower_libido" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_lower_libido:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_nausea" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_nausea:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_headaches" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_headaches:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_breast_pain" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_breast_pain:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_abdominal_pain" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_abdominal_pain:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_vertigo" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_vertigo:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_light_bleeding" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_light_bleeding:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_amenorrhea" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_amenorrhea:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_dizziness" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_dizziness:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_pressure" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_pressure:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/red_side_effects_1" type="string" calculate="if( /fp_followup_danger_sign_check/s_side_effects/s_weight  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_lower_libido  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_nausea  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_headaches  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_breast_pain  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_abdominal_pain  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_vertigo  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_light_bleeding  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_amenorrhea  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_dizziness  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_pressure  = 'yes', 'yes', 'no')" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'"/>
+      <bind nodeset="/fp_followup_danger_sign_check/s_side_effects/s_effect_duration" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_effect_duration:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_weight  = 'yes' or
  /fp_followup_danger_sign_check/s_side_effects/s_lower_libido  = 'yes' or
  /fp_followup_danger_sign_check/s_side_effects/s_nausea  = 'yes' or
  /fp_followup_danger_sign_check/s_side_effects/s_headaches  = 'yes' or
@@ -1680,26 +1680,26 @@
  /fp_followup_danger_sign_check/s_side_effects/s_lilttle_bleeding  = 'yes' or
  /fp_followup_danger_sign_check/s_side_effects/s_amenorrhea  = 'yes' or
  /fp_followup_danger_sign_check/s_side_effects/s_dizziness  = 'yes' or
- /fp_followup_danger_sign_check/s_side_effects/s_pressure  = 'yes'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/s_side_effects/s_effect_duration:jr:requiredMsg')"/>
+ /fp_followup_danger_sign_check/s_side_effects/s_pressure  = 'yes'" required="true()"/>
       <bind nodeset="/fp_followup_danger_sign_check/referral_side_effects" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'"/>
-      <bind nodeset="/fp_followup_danger_sign_check/referral_side_effects/s_chest_pain" type="select1" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/referral_side_effects/s_chest_pain:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/referral_side_effects/s_severe_headaches" type="select1" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/referral_side_effects/s_severe_headaches:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/referral_side_effects/s_strong_leg_pain" type="select1" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/referral_side_effects/s_strong_leg_pain:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/referral_side_effects/s_abdominal_bloating" type="select1" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/referral_side_effects/s_abdominal_bloating:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/referral_side_effects/s_abundant_bleeding" type="select1" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/referral_side_effects/s_abundant_bleeding:jr:requiredMsg')"/>
+      <bind nodeset="/fp_followup_danger_sign_check/referral_side_effects/s_chest_pain" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/referral_side_effects/s_chest_pain:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/referral_side_effects/s_severe_headaches" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/referral_side_effects/s_severe_headaches:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/referral_side_effects/s_strong_leg_pain" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/referral_side_effects/s_strong_leg_pain:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/referral_side_effects/s_abdominal_bloating" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/referral_side_effects/s_abdominal_bloating:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/referral_side_effects/s_abundant_bleeding" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/referral_side_effects/s_abundant_bleeding:jr:requiredMsg')" required="true()"/>
       <bind nodeset="/fp_followup_danger_sign_check/referral_side_effects/ref_side_effects" type="string" calculate="if( /fp_followup_danger_sign_check/referral_side_effects/s_chest_pain  = 'yes' or  /fp_followup_danger_sign_check/referral_side_effects/s_severe_headaches  = 'yes' or  /fp_followup_danger_sign_check/referral_side_effects/s_strong_leg_pain  = 'yes' or  /fp_followup_danger_sign_check/referral_side_effects/s_abdominal_bloating  = 'yes' or  /fp_followup_danger_sign_check/referral_side_effects/s_abundant_bleeding  = 'yes' or  /fp_followup_danger_sign_check/s_side_effects/s_effect_duration  = 'more_than_3_months', 'true', 'false')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/referral_side_effects/s_refer_serious_side_effects" type="select1" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/referral_side_effects/s_refer_serious_side_effects:jr:requiredMsg')"/>
+      <bind nodeset="/fp_followup_danger_sign_check/referral_side_effects/s_refer_serious_side_effects" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/referral_side_effects/s_refer_serious_side_effects:jr:requiredMsg')" required="true()"/>
       <bind nodeset="/fp_followup_danger_sign_check/checklist2" relevant=" /fp_followup_danger_sign_check/s_side_effects/s_pregnancy_result  != 'positive'"/>
-      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache" type="select1" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_have_jaundice" type="select1" relevant=" /fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache  = 'no'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_have_jaundice:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_have_chest_pains" type="select1" relevant=" /fp_followup_danger_sign_check/checklist2/s_have_jaundice  = 'no'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_have_chest_pains:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_have_breast_lesions" type="select1" relevant=" /fp_followup_danger_sign_check/checklist2/s_have_chest_pains  = 'no'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_have_breast_lesions:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35" type="select1" relevant=" /fp_followup_danger_sign_check/checklist2/s_have_breast_lesions  = 'no'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_menstruation_late" type="select1" relevant=" /fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35  = 'no'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_menstruation_late:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen" type="select1" relevant=" /fp_followup_danger_sign_check/checklist2/s_menstruation_late  = 'no'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure" type="select1" relevant=" /fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen  = 'no'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose" type="select1" relevant=" /fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure  = 'no'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose:jr:requiredMsg')"/>
-      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_have_diabete" type="select1" relevant=" /fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose  = 'no'" required="true()" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_have_diabete:jr:requiredMsg')"/>
+      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_have_jaundice" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_have_jaundice:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache  = 'no'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_have_chest_pains" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_have_chest_pains:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/checklist2/s_have_jaundice  = 'no'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_have_breast_lesions" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_have_breast_lesions:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/checklist2/s_have_chest_pains  = 'no'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/checklist2/s_have_breast_lesions  = 'no'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_menstruation_late" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_menstruation_late:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35  = 'no'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/checklist2/s_menstruation_late  = 'no'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen  = 'no'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure  = 'no'" required="true()"/>
+      <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_have_diabete" type="select1" jr:requiredMsg="jr:itext('/fp_followup_danger_sign_check/checklist2/s_have_diabete:jr:requiredMsg')" relevant=" /fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose  = 'no'" required="true()"/>
       <bind nodeset="/fp_followup_danger_sign_check/checklist2/s_refer_for_health_state" type="string" calculate="if( /fp_followup_danger_sign_check/checklist2/s_frequent_severe_headache  = 'yes' or  /fp_followup_danger_sign_check/checklist2/s_have_jaundice  = 'yes' or  /fp_followup_danger_sign_check/checklist2/s_have_chest_pains  = 'yes' or  /fp_followup_danger_sign_check/checklist2/s_have_breast_lesions  = 'yes' or  /fp_followup_danger_sign_check/checklist2/s_do_smoke_over_35  = 'yes' or  /fp_followup_danger_sign_check/checklist2/s_menstruation_late  = 'yes' or  /fp_followup_danger_sign_check/checklist2/s_have_painful_legs_swollen  = 'yes' or  /fp_followup_danger_sign_check/checklist2/s_have_high_blood_pressure  = 'yes' or  /fp_followup_danger_sign_check/checklist2/s_on_modern_treatment_tuberculose  = 'yes' or  /fp_followup_danger_sign_check/checklist2/s_have_diabete  = 'yes', 'true', 'false')"/>
       <bind nodeset="/fp_followup_danger_sign_check/s_summary/s_sum_submission" readonly="true()" type="string"/>
       <bind nodeset="/fp_followup_danger_sign_check/s_summary/r_summary" readonly="true()" type="string"/>

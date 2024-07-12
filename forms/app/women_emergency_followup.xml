@@ -4,6 +4,515 @@
     <h:title>Suivi d'Urgence des Femmes</h:title>
     <model>
       <itext>
+        <translation lang="fr">
+          <text id="/women_emergency_followup/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/women_emergency_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/women_emergency_followup/inputs/source_id:label">
+            <value>Source de l'ID</value>
+          </text>
+          <text id="/women_emergency_followup/inputs/contact/_id:jr:constraintMsg">
+            <value>L'âge du patient doit être supérieur à 5 ans</value>
+          </text>
+          <text id="/women_emergency_followup/inputs/contact/_id:label">
+            <value>Quel est le nom du patient?</value>
+          </text>
+          <text id="/women_emergency_followup/inputs/contact/_id:hint">
+            <value>Séléctionner une personne dans la liste</value>
+          </text>
+          <text id="/women_emergency_followup/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/women_emergency_followup/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/women_emergency_followup/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/women_emergency_followup/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/women_emergency_followup/patient_age_in_years:label">
+            <value>Années</value>
+          </text>
+          <text id="/women_emergency_followup/patient_age_in_months:label">
+            <value>Mois</value>
+          </text>
+          <text id="/women_emergency_followup/patient_age_in_days:label">
+            <value>Jours</value>
+          </text>
+          <text id="/women_emergency_followup/visited_contact_uuid:label">
+            <value>Identifiant de la famille</value>
+          </text>
+          <text id="/women_emergency_followup/patient_id:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/patient_id:label">
+            <value>Identifiant du patient</value>
+          </text>
+          <text id="/women_emergency_followup/patient_name:label">
+            <value>Nom du patient</value>
+          </text>
+          <text id="/women_emergency_followup/patient_sex:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/women_emergency_followup/patient_sex_en:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/women_emergency_followup/patient_sex_fr:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/women_emergency_followup/initial:label">
+            <value>Vérification</value>
+          </text>
+          <text id="/women_emergency_followup/initial/woman_status:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/initial/woman_status:label">
+            <value>Quel est le statut de la femme?</value>
+          </text>
+          <text id="/women_emergency_followup/initial/woman_status/pregnant:label">
+            <value>Femme enceinte</value>
+          </text>
+          <text id="/women_emergency_followup/initial/woman_status/postpartum:label">
+            <value>Femme postpartum</value>
+          </text>
+          <text id="/women_emergency_followup/initial/s_was_a_referral:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/initial/s_was_a_referral:label">
+            <value>Aviez-vous déjà référé la femme dans le passé</value>
+          </text>
+          <text id="/women_emergency_followup/initial/s_was_a_referral/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/initial/s_was_a_referral/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/initial/s_did_go:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/initial/s_did_go:label">
+            <value>La femme est-elle allée à l'USP?</value>
+          </text>
+          <text id="/women_emergency_followup/initial/s_did_go/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/initial/s_did_go/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/initial/s_take_treatment:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/initial/s_take_treatment:label">
+            <value>La femme a t-elle pris ses traitements?</value>
+          </text>
+          <text id="/women_emergency_followup/initial/s_take_treatment/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/initial/s_take_treatment/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/initial/s_take_treatment/no_applicable:label">
+            <value>Non applicable</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/s_danger_signs:label">
+            <value>&lt;i&gt;Merci de demander si la femme présente un ou plusieurs de ces signes de danger&lt;/i&gt;</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/s_danger_signs:hint">
+            <value>Vérifier un après un et sélectionner tout ce qui s'applique</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_edema:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_edema:label">
+            <value>Œdèmes des membres ou du visage</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_edema/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_edema/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_fever:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_fever:label">
+            <value>Fièvre</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_fever/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_fever/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_headaches:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_headaches:label">
+            <value>Maux de tête persistants</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_headaches/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_headaches/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_upper_abdominal_pain:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_upper_abdominal_pain:label">
+            <value>Douleur de l'abdomen supérieur</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_upper_abdominal_pain/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_upper_abdominal_pain/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_swelling_abdominal_pain:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_swelling_abdominal_pain:label">
+            <value>Gonflement ou douleur du bas ventre</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_swelling_abdominal_pain/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_swelling_abdominal_pain/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_fetal_movement:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_fetal_movement:label">
+            <value>Mouvements du fœtus deviennent absents</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_fetal_movement/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_fetal_movement/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_vertigo:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_vertigo:label">
+            <value>Vertige</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_vertigo/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_vertigo/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_water_losses:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_water_losses:label">
+            <value>Pertes d'eau</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_water_losses/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_water_losses/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_vaginal_bleeding:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_vaginal_bleeding:label">
+            <value>Saignements vaginaux</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_vaginal_bleeding/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_vaginal_bleeding/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_vaginal_discharge:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_vaginal_discharge:label">
+            <value>Pertes vaginales malodorantes ou anormales</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_vaginal_discharge/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_vaginal_discharge/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_pain_urinating:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_pain_urinating:label">
+            <value>Douleur quand elle urine</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_pain_urinating/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_pain_urinating/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_extreme_fatigue:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_extreme_fatigue:label">
+            <value>Fatigue extrême</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_extreme_fatigue/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_extreme_fatigue/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_fast_breathing:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_fast_breathing:label">
+            <value>Respiration difficile ou rapide</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_fast_breathing/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_fast_breathing/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_pallor_conjunctiva:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_pallor_conjunctiva:label">
+            <value>Pâleur des conjonctives</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_pallor_conjunctiva/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_pallor_conjunctiva/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_stool_color:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_stool_color:label">
+            <value>Changement de la couleur des selles</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_stool_color/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_stool_color/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_cold_skin:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_cold_skin:label">
+            <value>Peau froide</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_cold_skin/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_cold_skin/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_convulsions:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_convulsions/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_convulsions/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_breast_abscess:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_breast_abscess:label">
+            <value>Abcès au sein</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_breast_abscess/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_breast_abscess/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_blurred_vision:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_blurred_vision:label">
+            <value>Vision floue</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_blurred_vision/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_blurred_vision/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_calves_pain:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_calves_pain:label">
+            <value>Douleurs aux mollets</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_calves_pain/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_calves_pain/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_low_abdomnal_pain:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_low_abdomnal_pain:label">
+            <value>Maux de bas ventre</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_low_abdomnal_pain/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_low_abdomnal_pain/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_bleeding:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_bleeding:label">
+            <value>Saignement qui ne s'arrête pas</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_bleeding/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/danger_signs_bleeding/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/other:label">
+            <value>Autres problèmes</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/other/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/other/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/specify_other:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/women_emergency_followup/s_ds/specify_other:label">
+            <value>Spécifier</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_details:label">
+            <value>Détails du Patient</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /women_emergency_followup/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /women_emergency_followup/patient_sex_fr "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /women_emergency_followup/patient_age_display_fr "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_signs_symptoms:label">
+            <value>Signes et Symptômes&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/mother_danger_signs:label">
+            <value>Signes de danger</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_edema:label">
+            <value>Œdèmes des membres ou du visage</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_fever:label">
+            <value>Fièvre</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_headaches:label">
+            <value>Maux de tête persistants</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_upper_abdominal_pain:label">
+            <value>Douleur de l'abdomen supérieur</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_swelling_abdominal_pain:label">
+            <value>Gonflement ou douleur du bas ventre</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_fetal_movement:label">
+            <value>Mouvements du fœtus sont absents</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_vertigo:label">
+            <value>Vertige</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_water_losses:label">
+            <value>Pertes d'eau</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_vaginal_bleeding:label">
+            <value>Saignements vaginaux</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_vaginal_discharge:label">
+            <value>Pertes vaginales malodorantes ou anormales</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_pain_urinating:label">
+            <value>Douleur quand elle urine</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_extreme_fatigue:label">
+            <value>Fatigue extrême</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_fast_breathing:label">
+            <value>Respiration difficile ou rapide</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_pallor_conjunctiva:label">
+            <value>Pâleur des conjonctives</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_stool_color:label">
+            <value>Changement de la couleur des selles</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_cold_skin:label">
+            <value>Peau froide</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_breast_abscess:label">
+            <value>Abcès au sein</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_blurred_vision:label">
+            <value>Vision floue</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_calves_pain:label">
+            <value>Douleurs aux mollets</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_low_abdomnal_pain:label">
+            <value>Maux de bas ventre</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_bleeding:label">
+            <value>Saignement qui ne s'arrête pas</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_signs/r_refer_other_signs:label">
+            <value>Autre problèmes de santé</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_referral/summary_referral:label">
+            <value>Referer a l'USP&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_referral/mother_referral_note_1:label">
+            <value>&lt;b&gt;Référer <output value=" /women_emergency_followup/patient_name "/> à l'USP pour signes de danger ci-dessus&lt;/b&gt;</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/s_have_you_refer_child:label">
+            <value>Est-ce que vous avez référé la femme ?</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/s_have_you_refer_child/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/s_have_you_refer_child/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/s_why_not:label">
+            <value>Pour quelle raison?</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_instructions/summary_special_instructions:label">
+            <value>Spéciales Instructions&lt;i class = "fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/women_emergency_followup/group_summary/r_instructions/r_car_advices:label">
+            <value>Merci de référer la femme à l'USP</value>
+          </text>
+        </translation>
         <translation lang="en">
           <text id="/women_emergency_followup/inputs:label">
             <value>Patient</value>
@@ -517,515 +1026,6 @@ Malodorous or abnormal vaginal discharge</value>
             <value>Please refer the woman to the USP</value>
           </text>
         </translation>
-        <translation lang="fr">
-          <text id="/women_emergency_followup/inputs:label">
-            <value>Patient</value>
-          </text>
-          <text id="/women_emergency_followup/inputs/source:label">
-            <value>Source</value>
-          </text>
-          <text id="/women_emergency_followup/inputs/source_id:label">
-            <value>Source de l'ID</value>
-          </text>
-          <text id="/women_emergency_followup/inputs/contact/_id:jr:constraintMsg">
-            <value>L'âge du patient doit être supérieur à 5 ans</value>
-          </text>
-          <text id="/women_emergency_followup/inputs/contact/_id:label">
-            <value>Quel est le nom du patient?</value>
-          </text>
-          <text id="/women_emergency_followup/inputs/contact/_id:hint">
-            <value>Séléctionner une personne dans la liste</value>
-          </text>
-          <text id="/women_emergency_followup/inputs/contact/name:label">
-            <value>Nom</value>
-          </text>
-          <text id="/women_emergency_followup/inputs/contact/date_of_birth:label">
-            <value>Date de naissance</value>
-          </text>
-          <text id="/women_emergency_followup/inputs/contact/sex:label">
-            <value>Sexe</value>
-          </text>
-          <text id="/women_emergency_followup/inputs/contact/parent:label">
-            <value>Parent</value>
-          </text>
-          <text id="/women_emergency_followup/patient_age_in_years:label">
-            <value>Années</value>
-          </text>
-          <text id="/women_emergency_followup/patient_age_in_months:label">
-            <value>Mois</value>
-          </text>
-          <text id="/women_emergency_followup/patient_age_in_days:label">
-            <value>Jours</value>
-          </text>
-          <text id="/women_emergency_followup/visited_contact_uuid:label">
-            <value>Identifiant de la famille</value>
-          </text>
-          <text id="/women_emergency_followup/patient_id:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/patient_id:label">
-            <value>Identifiant du patient</value>
-          </text>
-          <text id="/women_emergency_followup/patient_name:label">
-            <value>Nom du patient</value>
-          </text>
-          <text id="/women_emergency_followup/patient_sex:label">
-            <value>Sexe du patient</value>
-          </text>
-          <text id="/women_emergency_followup/patient_sex_en:label">
-            <value>Sexe du patient</value>
-          </text>
-          <text id="/women_emergency_followup/patient_sex_fr:label">
-            <value>Sexe du patient</value>
-          </text>
-          <text id="/women_emergency_followup/initial:label">
-            <value>Vérification</value>
-          </text>
-          <text id="/women_emergency_followup/initial/woman_status:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/initial/woman_status:label">
-            <value>Quel est le statut de la femme?</value>
-          </text>
-          <text id="/women_emergency_followup/initial/woman_status/pregnant:label">
-            <value>Femme enceinte</value>
-          </text>
-          <text id="/women_emergency_followup/initial/woman_status/postpartum:label">
-            <value>Femme postpartum</value>
-          </text>
-          <text id="/women_emergency_followup/initial/s_was_a_referral:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/initial/s_was_a_referral:label">
-            <value>Aviez-vous déjà référé la femme dans le passé</value>
-          </text>
-          <text id="/women_emergency_followup/initial/s_was_a_referral/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/initial/s_was_a_referral/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/initial/s_did_go:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/initial/s_did_go:label">
-            <value>La femme est-elle allée à l'USP?</value>
-          </text>
-          <text id="/women_emergency_followup/initial/s_did_go/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/initial/s_did_go/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/initial/s_take_treatment:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/initial/s_take_treatment:label">
-            <value>La femme a t-elle pris ses traitements?</value>
-          </text>
-          <text id="/women_emergency_followup/initial/s_take_treatment/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/initial/s_take_treatment/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/initial/s_take_treatment/no_applicable:label">
-            <value>Non applicable</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds:label">
-            <value>Signes de danger</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/s_danger_signs:label">
-            <value>&lt;i&gt;Merci de demander si la femme présente un ou plusieurs de ces signes de danger&lt;/i&gt;</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/s_danger_signs:hint">
-            <value>Vérifier un après un et sélectionner tout ce qui s'applique</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_edema:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_edema:label">
-            <value>Œdèmes des membres ou du visage</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_edema/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_edema/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_fever:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_fever:label">
-            <value>Fièvre</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_fever/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_fever/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_headaches:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_headaches:label">
-            <value>Maux de tête persistants</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_headaches/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_headaches/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_upper_abdominal_pain:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_upper_abdominal_pain:label">
-            <value>Douleur de l'abdomen supérieur</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_upper_abdominal_pain/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_upper_abdominal_pain/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_swelling_abdominal_pain:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_swelling_abdominal_pain:label">
-            <value>Gonflement ou douleur du bas ventre</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_swelling_abdominal_pain/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_swelling_abdominal_pain/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_fetal_movement:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_fetal_movement:label">
-            <value>Mouvements du fœtus deviennent absents</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_fetal_movement/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_fetal_movement/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_vertigo:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_vertigo:label">
-            <value>Vertige</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_vertigo/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_vertigo/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_water_losses:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_water_losses:label">
-            <value>Pertes d'eau</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_water_losses/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_water_losses/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_vaginal_bleeding:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_vaginal_bleeding:label">
-            <value>Saignements vaginaux</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_vaginal_bleeding/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_vaginal_bleeding/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_vaginal_discharge:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_vaginal_discharge:label">
-            <value>Pertes vaginales malodorantes ou anormales</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_vaginal_discharge/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_vaginal_discharge/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_pain_urinating:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_pain_urinating:label">
-            <value>Douleur quand elle urine</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_pain_urinating/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_pain_urinating/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_extreme_fatigue:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_extreme_fatigue:label">
-            <value>Fatigue extrême</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_extreme_fatigue/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_extreme_fatigue/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_fast_breathing:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_fast_breathing:label">
-            <value>Respiration difficile ou rapide</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_fast_breathing/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_fast_breathing/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_pallor_conjunctiva:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_pallor_conjunctiva:label">
-            <value>Pâleur des conjonctives</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_pallor_conjunctiva/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_pallor_conjunctiva/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_stool_color:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_stool_color:label">
-            <value>Changement de la couleur des selles</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_stool_color/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_stool_color/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_cold_skin:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_cold_skin:label">
-            <value>Peau froide</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_cold_skin/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_cold_skin/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_convulsions:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_convulsions:label">
-            <value>Convulsions</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_convulsions/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_convulsions/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_breast_abscess:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_breast_abscess:label">
-            <value>Abcès au sein</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_breast_abscess/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_breast_abscess/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_blurred_vision:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_blurred_vision:label">
-            <value>Vision floue</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_blurred_vision/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_blurred_vision/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_calves_pain:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_calves_pain:label">
-            <value>Douleurs aux mollets</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_calves_pain/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_calves_pain/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_low_abdomnal_pain:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_low_abdomnal_pain:label">
-            <value>Maux de bas ventre</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_low_abdomnal_pain/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_low_abdomnal_pain/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_bleeding:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_bleeding:label">
-            <value>Saignement qui ne s'arrête pas</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_bleeding/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/danger_signs_bleeding/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/other:label">
-            <value>Autres problèmes</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/other/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/other/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/specify_other:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/women_emergency_followup/s_ds/specify_other:label">
-            <value>Spécifier</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_details:label">
-            <value>Détails du Patient</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_patient_info:label">
-            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /women_emergency_followup/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /women_emergency_followup/patient_sex_fr "/> &lt;/h5&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /women_emergency_followup/patient_age_display_fr "/> &lt;/h5&gt;</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_signs_symptoms:label">
-            <value>Signes et Symptômes&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/mother_danger_signs:label">
-            <value>Signes de danger</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_edema:label">
-            <value>Œdèmes des membres ou du visage</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_fever:label">
-            <value>Fièvre</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_headaches:label">
-            <value>Maux de tête persistants</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_upper_abdominal_pain:label">
-            <value>Douleur de l'abdomen supérieur</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_swelling_abdominal_pain:label">
-            <value>Gonflement ou douleur du bas ventre</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_fetal_movement:label">
-            <value>Mouvements du fœtus sont absents</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_vertigo:label">
-            <value>Vertige</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_water_losses:label">
-            <value>Pertes d'eau</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_vaginal_bleeding:label">
-            <value>Saignements vaginaux</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_vaginal_discharge:label">
-            <value>Pertes vaginales malodorantes ou anormales</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_pain_urinating:label">
-            <value>Douleur quand elle urine</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_extreme_fatigue:label">
-            <value>Fatigue extrême</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_fast_breathing:label">
-            <value>Respiration difficile ou rapide</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_pallor_conjunctiva:label">
-            <value>Pâleur des conjonctives</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_stool_color:label">
-            <value>Changement de la couleur des selles</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_cold_skin:label">
-            <value>Peau froide</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_convulsions:label">
-            <value>Convulsions</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_breast_abscess:label">
-            <value>Abcès au sein</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_blurred_vision:label">
-            <value>Vision floue</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_calves_pain:label">
-            <value>Douleurs aux mollets</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_low_abdomnal_pain:label">
-            <value>Maux de bas ventre</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_danger_signs_bleeding:label">
-            <value>Saignement qui ne s'arrête pas</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_signs/r_refer_other_signs:label">
-            <value>Autre problèmes de santé</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_referral/summary_referral:label">
-            <value>Referer a l'USP&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_referral/mother_referral_note_1:label">
-            <value>&lt;b&gt;Référer <output value=" /women_emergency_followup/patient_name "/> à l'USP pour signes de danger ci-dessus&lt;/b&gt;</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/s_have_you_refer_child:label">
-            <value>Est-ce que vous avez référé la femme ?</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/s_have_you_refer_child/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/s_have_you_refer_child/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/s_why_not:label">
-            <value>Pour quelle raison?</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_instructions/summary_special_instructions:label">
-            <value>Spéciales Instructions&lt;i class = "fa fa-medkit"&gt;&lt;/i&gt;</value>
-          </text>
-          <text id="/women_emergency_followup/group_summary/r_instructions/r_car_advices:label">
-            <value>Merci de référer la femme à l'USP</value>
-          </text>
-        </translation>
       </itext>
       <instance>
         <women_emergency_followup id="women_emergency_followup" prefix="J1!women_emergency_followup!" delimiter="#" version="2018-01-31">
@@ -1143,7 +1143,7 @@ Malodorous or abnormal vaginal discharge</value>
       <bind nodeset="/women_emergency_followup/inputs" relevant="./source = 'user'"/>
       <bind nodeset="/women_emergency_followup/inputs/source" type="string"/>
       <bind nodeset="/women_emergency_followup/inputs/source_id" type="string"/>
-      <bind nodeset="/women_emergency_followup/inputs/contact/_id" type="db:person" jr:constraintMsg="jr:itext('/women_emergency_followup/inputs/contact/_id:jr:constraintMsg')" constraint=" /women_emergency_followup/patient_age_in_years  &lt; 5"/>
+      <bind nodeset="/women_emergency_followup/inputs/contact/_id" type="db:person" constraint=" /women_emergency_followup/patient_age_in_years  &lt; 5" jr:constraintMsg="jr:itext('/women_emergency_followup/inputs/contact/_id:jr:constraintMsg')"/>
       <bind nodeset="/women_emergency_followup/inputs/contact/name" type="string"/>
       <bind nodeset="/women_emergency_followup/inputs/contact/date_of_birth" type="string"/>
       <bind nodeset="/women_emergency_followup/inputs/contact/sex" type="string"/>
@@ -1160,33 +1160,33 @@ Malodorous or abnormal vaginal discharge</value>
       <bind nodeset="/women_emergency_followup/patient_sex_en" type="string" calculate="if( /women_emergency_followup/patient_sex  = 'male' or  /women_emergency_followup/patient_sex  = 'homme' or  /women_emergency_followup/patient_sex  = 'Homme', 'Male', if( /women_emergency_followup/patient_sex  = 'female' or  /women_emergency_followup/patient_sex  = 'femme' or  /women_emergency_followup/patient_sex  = 'Femme', 'Female', ''))"/>
       <bind nodeset="/women_emergency_followup/patient_sex_fr" type="string" calculate="if( /women_emergency_followup/patient_sex  = 'male' or  /women_emergency_followup/patient_sex  = 'homme' or  /women_emergency_followup/patient_sex  = 'Homme', 'Homme', if( /women_emergency_followup/patient_sex  = 'female' or  /women_emergency_followup/patient_sex  = 'femme' or  /women_emergency_followup/patient_sex  = 'Femme', 'Femme', ''))"/>
       <bind nodeset="/women_emergency_followup/has_danger_signs" type="string" calculate="if( /women_emergency_followup/s_ds/danger_signs_edema  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_fever  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_headaches  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_upper_abdominal_pain  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_swelling_abdominal_pain  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_fetal_movement  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_vertigo  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_water_losses  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_vaginal_bleeding  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_vaginal_discharge  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_pain_urinating  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_extreme_fatigue  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_fast_breathing  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_pallor_conjunctiva  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_stool_color  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_cold_skin  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_convulsions  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_breast_abscess  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_blurred_vision  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_calves_pain  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_low_abdomnal_pain  = 'yes' or  /women_emergency_followup/s_ds/danger_signs_bleeding  = 'yes', 'true', 'false')"/>
-      <bind nodeset="/women_emergency_followup/initial/woman_status" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/initial/woman_status:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/initial/s_was_a_referral" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/initial/s_was_a_referral:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/initial/s_did_go" type="select1" relevant=" /women_emergency_followup/initial/s_was_a_referral  = 'yes'" jr:requiredMsg="jr:itext('/women_emergency_followup/initial/s_did_go:jr:requiredMsg')"/>
+      <bind nodeset="/women_emergency_followup/initial/woman_status" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/initial/woman_status:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/initial/s_was_a_referral" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/initial/s_was_a_referral:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/initial/s_did_go" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/initial/s_did_go:jr:requiredMsg')" relevant=" /women_emergency_followup/initial/s_was_a_referral  = 'yes'"/>
       <bind nodeset="/women_emergency_followup/initial/s_take_treatment" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/initial/s_take_treatment:jr:requiredMsg')" relevant=" /women_emergency_followup/initial/s_did_go  = 'yes'" required="true()"/>
       <bind nodeset="/women_emergency_followup/s_ds/s_danger_signs" readonly="true()" type="string"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_edema" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_edema:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_fever" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_fever:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_headaches" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_headaches:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_upper_abdominal_pain" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_upper_abdominal_pain:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_swelling_abdominal_pain" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_swelling_abdominal_pain:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_fetal_movement" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_fetal_movement:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_vertigo" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_vertigo:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_water_losses" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_water_losses:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_vaginal_bleeding" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_vaginal_bleeding:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_vaginal_discharge" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_vaginal_discharge:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_pain_urinating" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_pain_urinating:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_extreme_fatigue" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_extreme_fatigue:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_fast_breathing" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_fast_breathing:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_pallor_conjunctiva" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_pallor_conjunctiva:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_stool_color" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_stool_color:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_cold_skin" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_cold_skin:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_convulsions" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_convulsions:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_breast_abscess" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_breast_abscess:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_blurred_vision" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_blurred_vision:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_calves_pain" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_calves_pain:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_low_abdomnal_pain" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_low_abdomnal_pain:jr:requiredMsg')"/>
-      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_bleeding" type="select1" required="true()" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_bleeding:jr:requiredMsg')"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_edema" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_edema:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_fever" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_fever:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_headaches" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_headaches:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_upper_abdominal_pain" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_upper_abdominal_pain:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_swelling_abdominal_pain" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_swelling_abdominal_pain:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_fetal_movement" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_fetal_movement:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_vertigo" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_vertigo:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_water_losses" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_water_losses:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_vaginal_bleeding" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_vaginal_bleeding:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_vaginal_discharge" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_vaginal_discharge:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_pain_urinating" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_pain_urinating:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_extreme_fatigue" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_extreme_fatigue:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_fast_breathing" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_fast_breathing:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_pallor_conjunctiva" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_pallor_conjunctiva:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_stool_color" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_stool_color:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_cold_skin" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_cold_skin:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_convulsions" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_convulsions:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_breast_abscess" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_breast_abscess:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_blurred_vision" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_blurred_vision:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_calves_pain" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_calves_pain:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_low_abdomnal_pain" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_low_abdomnal_pain:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/women_emergency_followup/s_ds/danger_signs_bleeding" type="select1" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/danger_signs_bleeding:jr:requiredMsg')" required="true()"/>
       <bind nodeset="/women_emergency_followup/s_ds/other" type="select1"/>
       <bind nodeset="/women_emergency_followup/s_ds/specify_other" type="string" jr:requiredMsg="jr:itext('/women_emergency_followup/s_ds/specify_other:jr:requiredMsg')" relevant=" /women_emergency_followup/s_ds/other  = 'yes'" required="true()"/>
       <bind nodeset="/women_emergency_followup/group_summary/r_details" readonly="true()" type="string"/>
